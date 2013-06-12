@@ -3,7 +3,6 @@
 \usepackage{graphicx}
 \usepackage{array}
 \usepackage{amsmath}
-\usepackage{amssymb}
 \usepackage{multicol}%plusierus colones
 \usepackage{fancyheadings} %%%%logo
 \renewcommand{\baselinestretch}{1.5}%%%%interligne
@@ -41,12 +40,16 @@
 \author{Sven Borden\\ \small Travail de maturité \and \normalsize Eric Brunner\\ \small Gymnase de Morges}
 
 \date{\today}
-
 \maketitle
 \begin{center}
+\begin{figure}[h!]
+\caption{UGV, \small Image de couverture}
 \includegraphics[scale=0.5]{photo_titre.JPG}
+\end{figure}
 \end{center}
+
 \clearpage
+\part*{}
 
 \section*{Avant-propos}
 \addcontentsline{toc}{section}{\protect\numberline{}Avant-propos}
@@ -74,6 +77,17 @@ Chaque chapitre de ce dossier traite d'une partie du drone, le premier expliquer
 \addcontentsline{toc}{section}{\protect\numberline{}Introduction}
 Le but de ce projet était de construire un véhicule roulant que l'on peut commander à distance. Plus qu'une simple voiture télécommandée, ce drone est capable d'être contrôlé sans avoir une vue directe sur celui-ci, car il possède des capteurs ainsi qu'une caméra. Ce types d'engins se nomment \textit{UGV (Unmanned Ground Vehicle)} soit: véhicule roulant commandé à distance. Surtout utilisés dans l'amée, les modèles qu'on peut trouver sur le marché sont très coûteux, ils varient entre trois cents et mille trois cents francs. Notre but est donc de pouvoir construire un appareil semblable pour moins de cent septante-cinq francs. 
 
+\part*{La mécanique et l'électronique}
+\addcontentsline{toc}{part}{\protect\numberline{}La mécanique et l'électronique}
+
+
+
+
+
+
+\part*{Hardware}
+\addcontentsline{toc}{part}{\protect\numberline{}Hardware}
+
 \section*{Choix du hardware}
 \addcontentsline{toc}{section}{\protect\numberline{}Choix du hardware}
 Pour réaliser ce projet, nous avons dû faire des choix au niveau du hardware. Notre choix s'est porté sur deux système. Le premier, l'Arduino, est un microcontrolleur qui permet de contrôler presque ce qu'on veut grâce à un language de programation proche du C. Le second est le Raspberry Pi, qui est un ordinateur bon marché (trente-cinq francs) qui est récemment sorti sur les marchés. 
@@ -87,10 +101,7 @@ L'arduino est un microcontrolleur \textit{Open Source}, ce qui veut dire que tou
 \subsubsection*{Choix du type d'Arduino}
 \addcontentsline{toc}{subsubsection}{\protect\numberline{}Choix du type d'Arduino}
 
-\begin{figure}[h!]
-\caption{julie for lof}
-\centering \includegraphics[scale=1]{1362431895957.jpg}
-\end{figure}
+
 
 \subsection*{Raspberry Pi}
 \addcontentsline{toc}{subsection}{\protect\numberline{}Raspberry Pi}
@@ -129,8 +140,8 @@ Plusieurs types de systèmes d'exploitations fonctionnant sur le Raspberry Pi ex
 Notre choix à été porté sur Raspbian, qui est un dérivé de Debian, pour plusieurs raisons. Tout d'abord, cet OS à été dévellopé spécialement pour le Raspberry Pi et il est donc continuellement dévellopé par la communauté du Raspberry Pi. Cet OS étant basé sur un environnement Linux, cela offre un grand nombre de liberté afin de travailler dessus. Raspbian est aussi gratuit, se qui rentre en compte puisque nous essayons de réduire les coûts.  
 
 
-
-
+\part*{Software}
+\addcontentsline{toc}{part}{\protect\numberline{}Software}
 
 
 
