@@ -1,0 +1,125 @@
+\documentclass[a4paper,12pt]{article}
+\usepackage[french]{babel}
+\usepackage{graphicx}
+\usepackage{array}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{multicol}%plusierus colones
+\usepackage{fancyheadings} %%%%logo
+\renewcommand{\baselinestretch}{1.5}%%%%interligne
+\usepackage{fancyhdr} %%%%%%en-tête
+\usepackage[utf8]{inputenc}%%%%utp-8 accents
+\pagestyle{fancy} %: Numérotation des pages.
+\lhead{Sven Borden et Eric Brunner}% :	On personnalisera cette en-tête. haut de page gauche
+\chead{2M03} %: On personnalisera cette en-tête. haut de page centre
+\rhead{\today} %: On personnalisera cette en-tête. haut de page droite
+\lfoot{Travail de Maturité} %:	On personnalisera cette en-tête. pied de page gauche
+\cfoot{\textbf{Page \thepage/\pageref{LastPage}}} %: On personnalisera cette en-tête. pied de page centre
+\rfoot{Robotique} %: On personnalisera cette en-tête. pied de page droite
+\renewcommand{\headrulewidth}{0.4pt} % Trace un trait de séparation de largeur 0,4 point. Mettre 0pt pour supprimer le trait.
+\renewcommand{\footrulewidth}{0.4pt} %: Trace un trait de séparation de largeur 0,4 point. Mettre 0pt pour supprimer le trait.
+\usepackage{lastpage} %%%% conteur de page, ( 1/3 ,2/3...)
+\usepackage{ucs}%%%peut être pour la fraction continue
+\setlength{\hoffset}{-18pt}         
+\setlength{\oddsidemargin}{2.5cm} % Marge gauche sur pages impaires
+\setlength{\evensidemargin}{2.5cm} % Marge gauche sur pages paires
+\setlength{\marginparwidth}{0pt} % Largeur de note dans la marge
+\setlength{\textwidth}{13.3cm} % Largeur de la zone de texte (17cm)
+\setlength{\marginparsep}{7pt} % Séparation de la marge
+\setlength{\topmargin}{0cm} % Pas de marge en haut
+\setlength{\headheight}{13pt} % Haut de page
+\setlength{\headsep}{10pt} % Entre le haut de page et le texte
+\setlength{\footskip}{3cm} % Bas de page + séparation
+%\setlength{\textheight}{708pt} % Hauteur de la zone de texte (25cm)
+\renewcommand{\baselinestretch}{1.5}
+
+ \begin{document}
+
+
+{\fontfamily{pnc}\selectfont %%%% attention, ne pas oublier la dernière accolade en fin de texte!!!!
+\title{UGV bon marché}
+\author{Sven Borden et Eric Brunner\\2M03}
+\date{\today}
+\maketitle
+\clearpage
+
+\section*{Avant-propos}
+\addcontentsline{toc}{section}{\protect\numberline{}Avant-propos}
+
+\clearpage
+
+\section*{Remerciements}
+\addcontentsline{toc}{section}{\protect\numberline{}Remerciements}
+Ce projet n'aurait pu aboutir sans l'aide de nombreuses personnes. Voici l'occasion de les remercier: Mr. Denis Rochat et Mr. Phillipe Rochat pour leur disponibilité, leurs renseignements ainsi que les prêts matériels. Mr. Frederic Genevey ainsi que son site edurobot.ch pour avoir promouvu notre projet sur son site internet. Mme Pauline Pidoux pour nous avoir aidé lors de la rédaction de ce travail et nous tenions aussi à remercier Stefano Varricchio, du Laboratoire LIS pour ses informations très utiles.
+
+\clearpage
+
+\tableofcontents
+\clearpage
+
+
+
+\section*{Introduction}
+\addcontentsline{toc}{section}{\protect\numberline{}Introduction}
+Le but de ce projet était de construire un véhicule roulant que l'on peut commander à distance. Plus qu'une simple voiture télécommandée, ce drone est capable d'être contrôlé sans avoir une vue directe sur celui-ci, car il possède des capteurs ainsi qu'une caméra. Ce types d'engins se nomment \textit{UGV (Unmanned Ground Vehicle)} soit: véhicule roulant commandé à distance. Surtout utilisés dans l'amée, les modèles qu'on peut trouver sur le marché sont très coûteux, ils varient entre trois cents et mille trois cents francs. Notre but est donc de pouvoir construire un appareil semblable pour moins de cent septante-cinq francs. 
+
+\section*{Choix du hardware}
+\addcontentsline{toc}{section}{\protect\numberline{}Choix du hardware}
+Pour réaliser ce projet, nous avons dû faire des choix au niveau du hardware. Notre choix s'est porté sur deux système. Le premier, l'Arduino, est un microcontrolleur qui permet de contrôler presque ce qu'on veut grâce à un language de programation proche du C. Le second est le Raspberry Pi, qui est un ordinateur bon marché (trente-cinq francs) qui est récemment sorti sur les marchés. 
+
+
+\subsection*{Arduino}
+\addcontentsline{toc}{subsection}{\protect\numberline{}Arduino}
+L'arduino est un microcontrolleur \textit{Open Source}, ce qui veut dire que tout le monde peut non seulement avoir accès aux plans et aux codes, mais peut aussi les modifier. Ce microcontrolleur se programme avec un language proche du C. 
+
+
+\subsubsection*{Choix du type d'Arduino}
+\addcontentsline{toc}{subsubsection}{\protect\numberline{}Choix du type d'Arduino}
+
+
+
+\subsection*{Raspberry Pi}
+\addcontentsline{toc}{subsection}{\protect\numberline{}Raspberry Pi}
+Le Raspberry Pi est un ordinateur de la taille d'une carte de crédit sur lequel on peut installer différents systèmes d'exploitations dérivés de UNIX/Linux. Le Raspberry Pi est acheté nu, c'est-à-dire que cet ordinateur ne possède pas d'écran, ni de clavier ou de souris, néanmoins le Raspberry Pi possède plusieurs ports où on peut brancher écran (via l'interface HDMI ou Composite), un câble Ethernet et presque ce qu'on veut grâce aux deux ports USB. Le Raspberry Pi est très interressant non pas du point de vue de sa puissance calculatoire, mais du point de vue rapport qualité-prix. En effet, pour trente-cinq francs, il a les caractéristiques suivantes: 
+\begin{enumerate}
+\item poid de 45g environ
+\item Processeur ARM1176JZF-S (ARMv6) 700MHz Broadcom 2835
+\item 512Mo de RAM (sur la version B, soit celle que nous avons choisie)
+\item 2 sorties vidéo (HDMI et Composite) 
+\item Sortie audio stéréo Jack (3.5mm) (le son passe aussi par le HDMI en sortie 5.1)
+\item Ecriture et lecture possible sur une carte mémoire sous forme de carte SD (supporte les formats: SDHC, MMC et SDIO)
+\item 2 ports USB 2.0 et 1 port Ethernet
+\item Alimentation par câble micro USB
+\item Faible consommation (5W, 5V, 1A)
+\item Communication possible via les Pin GPIO
+\item Décodeur permettant de lire le FullHD  1080p
+\item API logiciel vidéo (OpenGL)
+\end{enumerate}
+Bien qu'à première vue la Framboise ne semble pas très performante, il faut prendre en compte son prix qui est bas, sa taille ainsi que les possibilités qui sont presque infinies.
+
+\subsubsection*{Choix de l'OS}
+\addcontentsline{toc}{subsubsection}{\protect\numberline{}Choix de l'OS}
+Plusieurs types de systèmes d'exploitations fonctionnant sur le Raspberry Pi existent. Pour n'en citer que quelques-uns:
+\begin{multicols}{2}
+\begin{itemize}
+\item Androïd
+\item Firefox OS
+\item RISC OS
+\item Fedora
+\item Debian
+\item ArchLinux
+\item Gentoo
+\item Raspbian
+\end{itemize}
+\end{multicols}
+Notre choix à été porté sur Raspbian, qui est un dérivé de Debian, pour plusieurs raisons. Tout d'abord, cet OS à été dévellopé spécialement pour le Raspberry Pi et il est donc continuellement dévellopé par la communauté du Raspberry Pi. Cet OS étant basé sur un environnement Linux, cela offre un grand nombre de liberté afin de travailler dessus. Raspbian est aussi gratuit, se qui rentre en compte puisque nous essayons de réduire les coûts.  
+
+
+
+
+
+
+
+}
+
+\end{document}
