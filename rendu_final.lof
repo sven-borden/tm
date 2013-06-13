@@ -1,4 +1,4 @@
 \select@language {french}
-\contentsline {figure}{\numberline {1}{\ignorespaces UGV, \relax \fontsize {10.95}{13.6}\selectfont \abovedisplayskip 11\p@ plus3\p@ minus6\p@ \abovedisplayshortskip \z@ plus3\p@ \belowdisplayshortskip 6.5\p@ plus3.5\p@ minus3\p@ \def \leftmargin \leftmargini \parsep 5\p@ plus2.5\p@ minus\p@ \topsep 10\p@ plus4\p@ minus6\p@ \itemsep 5\p@ plus2.5\p@ minus\p@ {\leftmargin \leftmargini \topsep 9\p@ plus3\p@ minus5\p@ \parsep 4.5\p@ plus2\p@ minus\p@ \itemsep \parsep }\belowdisplayskip \abovedisplayskip Image de couverture}}{1}
-\contentsline {figure}{\numberline {2}{\ignorespaces Sch\'ema de la modulation du signal \'electrique \cite {WikiServo} }}{9}
-\contentsline {figure}{\numberline {3}{\ignorespaces Sch\'ema d'un H-bridge}}{12}
+\contentsline {figure}{\numberline {1}{\ignorespaces Sch\'ema de la modulation du signal \'electrique \cite {WikiServo} }}{9}
+\contentsline {figure}{\numberline {2}{\ignorespaces Sch\'ema d'un H-bridge}}{13}
+\contentsline {figure}{\numberline {3}{\ignorespaces Sch\IeC {\'e}ma du l293d. \footnotemark }}{14}
