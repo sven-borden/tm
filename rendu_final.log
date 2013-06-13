@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2013.1.2)  13 JUN 2013 19:46
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2013.1.2)  13 JUN 2013 20:35
 entering extended mode
 **rendu_final.tex
 (C:\Users\Sven\Documents\GitHub\tm\rendu_final.tex
@@ -101,6 +101,38 @@ Package: array 2008/09/09 v2.4c Tabular extension package (FMi)
 \extratabsurround=\skip43
 \backup@length=\skip44
 )
+(C:\Users\Sven\Documents\GitHub\tm\listings.sty
+
+LaTeX Warning: You have requested package `listings',
+               but the package provides `listing'.
+
+Package: listing 1999/05/25
+Package `listing', V1.2, <1999/05/25>
+\c@listing=\count91
+)
+! Undefined control sequence.
+<recently read> \listingspath 
+                              
+l.7 \listingspath
+                 {{code}}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.7 \listingspath{{c
+                    ode}}
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
 (C:\Users\Sven\AppData\Roaming\MiKTeX\2.9\tex\latex\amsmath\amsmath.sty
 Package: amsmath 2013/01/14 v2.14 AMS math features
 \@mathmargin=\skip45
@@ -121,13 +153,13 @@ Package: amsbsy 1999/11/29 v1.2d
 (C:\Users\Sven\AppData\Roaming\MiKTeX\2.9\tex\latex\amsmath\amsopn.sty
 Package: amsopn 1999/12/14 v2.01 operator names
 )
-\inf@bad=\count91
+\inf@bad=\count92
 LaTeX Info: Redefining \frac on input line 210.
-\uproot@=\count92
-\leftroot@=\count93
+\uproot@=\count93
+\leftroot@=\count94
 LaTeX Info: Redefining \overline on input line 306.
-\classnum@=\count94
-\DOTSCASE@=\count95
+\classnum@=\count95
+\DOTSCASE@=\count96
 LaTeX Info: Redefining \ldots on input line 378.
 LaTeX Info: Redefining \dots on input line 381.
 LaTeX Info: Redefining \cdots on input line 466.
@@ -136,15 +168,15 @@ LaTeX Info: Redefining \cdots on input line 466.
 \big@size=\dimen112
 LaTeX Font Info:    Redeclaring font encoding OML on input line 566.
 LaTeX Font Info:    Redeclaring font encoding OMS on input line 567.
-\macc@depth=\count96
-\c@MaxMatrixCols=\count97
+\macc@depth=\count97
+\c@MaxMatrixCols=\count98
 \dotsspace@=\muskip10
-\c@parentequation=\count98
-\dspbrk@lvl=\count99
+\c@parentequation=\count99
+\dspbrk@lvl=\count100
 \tag@help=\toks17
-\row@=\count100
-\column@=\count101
-\maxfields@=\count102
+\row@=\count101
+\column@=\count102
+\maxfields@=\count103
 \andhelp@=\toks18
 \eqnshift@=\dimen113
 \alignsep@=\dimen114
@@ -161,14 +193,14 @@ LaTeX Info: Redefining \] on input line 2666.
 )
 ("C:\Program Files\MiKTeX 2.9\tex\latex\tools\multicol.sty"
 Package: multicol 2011/06/27 v1.7a multicolumn formatting (FMi)
-\c@tracingmulticols=\count103
+\c@tracingmulticols=\count104
 \mult@box=\box28
 \multicol@leftmargin=\dimen119
-\c@unbalance=\count104
-\c@collectmore=\count105
-\doublecol@number=\count106
-\multicoltolerance=\count107
-\multicolpretolerance=\count108
+\c@unbalance=\count105
+\c@collectmore=\count106
+\doublecol@number=\count107
+\multicoltolerance=\count108
+\multicolpretolerance=\count109
 \full@width=\dimen120
 \page@free=\dimen121
 \premulticols=\dimen122
@@ -198,14 +230,14 @@ Package: multicol 2011/06/27 v1.7a multicolumn formatting (FMi)
 \@tempa=\box49
 \@tempa=\box50
 \@tempa=\box51
-\c@columnbadness=\count109
-\c@finalcolumnbadness=\count110
+\c@columnbadness=\count110
+\c@finalcolumnbadness=\count111
 \last@try=\dimen124
 \multicolovershoot=\dimen125
 \multicolundershoot=\dimen126
 \mult@nat@firstbox=\box52
 \colbreak@box=\box53
-\multicol@sort@counter=\count111
+\multicol@sort@counter=\count112
 )
 ("C:\Program Files\MiKTeX 2.9\tex\latex\multirow\multirow.sty"
 \bigstrutjot=\dimen127
@@ -463,45 +495,45 @@ Package: ucs 2004/10/17 UCS: Unicode input support
 ("C:\Program Files\MiKTeX 2.9\tex\latex\ucs\uni-global.def"
 File: uni-global.def 2012/08/28 UCS: Unicode global data
 )
-\uc@secondtry=\count112
+\uc@secondtry=\count113
 \uc@combtoks=\toks23
 \uc@combtoksb=\toks24
 \uc@temptokena=\toks25
 )
 (C:\Users\Sven\Documents\GitHub\tm\rendu_final.aux)
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 40.
-LaTeX Font Info:    ... okay on input line 40.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 40.
-LaTeX Font Info:    ... okay on input line 40.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 40.
-LaTeX Font Info:    ... okay on input line 40.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 40.
-LaTeX Font Info:    ... okay on input line 40.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 40.
-LaTeX Font Info:    ... okay on input line 40.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 40.
-LaTeX Font Info:    ... okay on input line 40.
-LaTeX Info: Redefining \degres on input line 40.
-LaTeX Info: Redefining \dots on input line 40.
-LaTeX Info: Redefining \up on input line 40.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 42.
+LaTeX Font Info:    ... okay on input line 42.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 42.
+LaTeX Font Info:    ... okay on input line 42.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 42.
+LaTeX Font Info:    ... okay on input line 42.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 42.
+LaTeX Font Info:    ... okay on input line 42.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 42.
+LaTeX Font Info:    ... okay on input line 42.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 42.
+LaTeX Font Info:    ... okay on input line 42.
+LaTeX Info: Redefining \degres on input line 42.
+LaTeX Info: Redefining \dots on input line 42.
+LaTeX Info: Redefining \up on input line 42.
 
 
 Package frenchb.ldf Warning: OT1 encoding should not be used for French. 
 (frenchb.ldf)                Add \usepackage[T1]{fontenc} to the preamble
-(frenchb.ldf)                of your document, on input line 40.
+(frenchb.ldf)                of your document, on input line 42.
 
 ("C:\Program Files\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count113
+\scratchcounter=\count114
 \scratchdimen=\dimen128
 \scratchbox=\box54
-\nofMPsegments=\count114
-\nofMParguments=\count115
+\nofMPsegments=\count115
+\nofMParguments=\count116
 \everyMPshowfont=\toks26
-\MPscratchCnt=\count116
+\MPscratchCnt=\count117
 \MPscratchDim=\dimen129
-\MPnumerator=\count117
-\makeMPintoPDFobject=\count118
+\MPnumerator=\count118
+\makeMPintoPDFobject=\count119
 \everyMPtoPDFconversion=\toks27
 )
 Package lastpage Info: Please have a look at the pageslts package at
@@ -510,7 +542,7 @@ Package lastpage Info: Please have a look at the pageslts package at
 (lastpage)             or
 (lastpage)             http://www.ctan.org/tex-archive/ 
 (lastpage)             install/macros/latex/contrib/pageslts.tds.zip
-(lastpage)             ! on input line 40.
+(lastpage)             ! on input line 42.
  ("C:\Program Files\MiKTeX 2.9\tex\latex\ucs\ucsencs.def"
 File: ucsencs.def 2011/01/21 Fixes to fontencodings LGR, T3
 )
@@ -530,55 +562,53 @@ Package ucs Warning: ***************************
 (ucs)                ***************************
 (ucs)                Activating compatibility mode.
 (ucs)                ***************************
-(ucs)                 on input line 40.
+(ucs)                 on input line 42.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\ucs\utf8x.def"
 File: utf8x.def 2004/10/17 UCS: Input encoding UTF-8
 )
-LaTeX Font Info:    Try loading font information for OT1+pnc on input line 43.
+LaTeX Font Info:    Try loading font information for OT1+pnc on input line 45.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\psnfss\ot1pnc.fd"
 File: ot1pnc.fd 2001/06/04 font definitions for OT1/pnc.
 )
-("C:\Program Files\MiKTeX 2.9\tex\latex\ucs\uni-0.def"
-File: uni-0.def 2012/08/28 UCS: Unicode data U+0000..U+00FF
-)
-<figures/image_titre.JPG, id=1, 1003.75pt x 289.08pt>
-File: figures/image_titre.JPG Graphic file (type jpg)
-
-<use figures/image_titre.JPG>
-Package pdftex.def Info: figures/image_titre.JPG used on input line 52.
-(pdftex.def)             Requested size: 501.87378pt x 144.53964pt.
-
-Overfull \hbox (123.45204pt too wide) in paragraph at lines 52--53
-[][] 
- []
-
-[1
-
-{C:/Users/Sven/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map} <C:/Users/Sve
-n/Documents/GitHub/tm/figures/image_titre.JPG>]
 
 Package Fancyhdr Warning: \headheight is too small (13.0pt): 
  Make it at least 14.49998pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[2
+("C:\Program Files\MiKTeX 2.9\tex\latex\ucs\uni-0.def"
+File: uni-0.def 2012/08/28 UCS: Unicode data U+0000..U+00FF
+) [1{C:/Users/Sven/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}
 
 ]
-Overfull \hbox (1.14352pt too wide) in paragraph at lines 66--67
+<figures/image_titre.JPG, id=7, 1003.75pt x 289.08pt>
+File: figures/image_titre.JPG Graphic file (type jpg)
+
+<use figures/image_titre.JPG>
+Package pdftex.def Info: figures/image_titre.JPG used on input line 54.
+(pdftex.def)             Requested size: 501.87378pt x 144.53964pt.
+
+Overfull \hbox (123.45204pt too wide) in paragraph at lines 54--55
+[][] 
+ []
+
+[2 <C:/Users/Sven/Documents/GitHub/tm/figures/image_titre.JPG>] [3
+
+]
+Overfull \hbox (1.14352pt too wide) in paragraph at lines 68--69
 []\OT1/pnc/m/n/12 Ce pro-jet n'au-rait pu abou-tir sans l'aide de nom-breuses p
 er-sonnes.
  []
 
-[3
+[4
 
 ]
 LaTeX Font Info:    Font shape `OT1/pnc/bx/n' in size <10.95> not available
-(Font)              Font shape `OT1/pnc/b/n' tried instead on input line 69.
+(Font)              Font shape `OT1/pnc/b/n' tried instead on input line 71.
 
-Overfull \hbox (22.74498pt too wide) in paragraph at lines 70--71
+Overfull \hbox (22.74498pt too wide) in paragraph at lines 72--73
 \OT1/pnc/m/n/10.95 fonc-tion-ne-ment de l'UGV ainsi que son fonc-tion-ne-ment. 
 Le troisi[]eme
  []
@@ -588,7 +618,7 @@ LaTeX Font Info:    Font shape `OT1/pnc/bx/n' in size <14.4> not available
 (Font)              Font shape `OT1/pnc/b/n' tried instead on input line 2.
 LaTeX Font Info:    Font shape `OT1/pnc/bx/n' in size <12> not available
 (Font)              Font shape `OT1/pnc/b/n' tried instead on input line 3.
- [4
+ [5
 
 ])
 \tf@toc=\write3
@@ -598,32 +628,22 @@ LaTeX Font Info:    Font shape `OT1/pnc/bx/n' in size <12> not available
 
 (C:\Users\Sven\Documents\GitHub\tm\rendu_final.lot)
 \tf@lot=\write5
- [5]
-Overfull \hbox (14.85533pt too wide) in paragraph at lines 80--81
+ [6]
+Overfull \hbox (14.85533pt too wide) in paragraph at lines 82--83
 \OT1/pnc/m/n/12 peut com-man-der []a dis-tance. Plus qu'une simple voi-ture t[]
 el[]ecommand[]ee,
  []
 
 
-Overfull \hbox (2.87639pt too wide) in paragraph at lines 80--81
+Overfull \hbox (2.87639pt too wide) in paragraph at lines 82--83
 \OT1/pnc/m/n/12 d'en-gins se nomment \OT1/pnc/m/it/12 UGV (Un-man-ned Ground Ve
 -hicle) \OT1/pnc/m/n/12 soit : v[]ehicule
  []
 
 
-Overfull \hbox (9.86346pt too wide) in paragraph at lines 80--81
+Overfull \hbox (9.86346pt too wide) in paragraph at lines 82--83
 \OT1/pnc/m/n/12 rou-lant com-mand[]e []a dis-tance. Sur-tout uti-lis[]es dans l
 'am[]ee, les mod[]eles
- []
-
-
-Underfull \hbox (badness 7238) in paragraph at lines 95--95
-\OT1/pnc/m/n/12 roue []a centre de
- []
-
-
-Underfull \hbox (badness 1043) in paragraph at lines 97--97
-[]|\OT1/pnc/m/n/12 largeure (centre de
  []
 
 
@@ -632,42 +652,52 @@ Underfull \hbox (badness 7238) in paragraph at lines 97--97
  []
 
 
-Overfull \hbox (5.2879pt too wide) in paragraph at lines 99--100
+Underfull \hbox (badness 1043) in paragraph at lines 99--99
+[]|\OT1/pnc/m/n/12 largeure (centre de
+ []
+
+
+Underfull \hbox (badness 7238) in paragraph at lines 99--99
+\OT1/pnc/m/n/12 roue []a centre de
+ []
+
+
+Overfull \hbox (5.2879pt too wide) in paragraph at lines 101--102
 []|[]| 
  []
 
 
-Underfull \hbox (badness 1939) in paragraph at lines 101--101
+Underfull \hbox (badness 1939) in paragraph at lines 103--103
 []|\OT1/pnc/m/n/12 Courant min (roue
  []
 
 
-Underfull \hbox (badness 1038) in paragraph at lines 102--102
+Underfull \hbox (badness 1038) in paragraph at lines 104--104
 []|\OT1/pnc/m/n/12 Courant max (roue
  []
 
 
-Overfull \hbox (5.93494pt too wide) in paragraph at lines 91--111
+Overfull \hbox (5.93494pt too wide) in paragraph at lines 93--113
  [] 
  []
 
-[6
+[7
 
-] [7]
-Overfull \hbox (10.11223pt too wide) in paragraph at lines 137--148
+] [8]
+Overfull \hbox (10.11223pt too wide) in paragraph at lines 139--150
 \OT1/pnc/m/n/12 tard (voir : http ://en.wikipedia.org/wiki/Ackermann[]steering[
 ]geometry
  []
 
-[8] <figures/ServoPwm.pdf, id=35, 501.875pt x 200.75pt>
+[9] <figures/ServoPwm.pdf, id=38, 501.875pt x 200.75pt>
 File: figures/ServoPwm.pdf Graphic file (type pdf)
 
 <use figures/ServoPwm.pdf>
-Package pdftex.def Info: figures/ServoPwm.pdf used on input line 159.
+Package pdftex.def Info: figures/ServoPwm.pdf used on input line 161.
 (pdftex.def)             Requested size: 378.42174pt x 151.37692pt.
- [9 <C:/Users/Sven/Documents/GitHub/tm/figures/ServoPwm.pdf>]
+ [10 <C:/Users/Sven/Documents/GitHub/tm/figures/ServoPwm.pdf>]
 ! Undefined control sequence.
-l.188 \lstinputlisting
+l.190 \lstinputlisting
                       [language=Java]{code/ServoExample.java}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -675,23 +705,23 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-[10] <figures/H-bridge.pdf, id=47, 297.49544pt x 144.53197pt>
+[11] <figures/H-bridge.pdf, id=50, 297.49544pt x 144.53197pt>
 File: figures/H-bridge.pdf Graphic file (type pdf)
 
 <use figures/H-bridge.pdf>
-Package pdftex.def Info: figures/H-bridge.pdf used on input line 234.
+Package pdftex.def Info: figures/H-bridge.pdf used on input line 236.
 (pdftex.def)             Requested size: 378.42174pt x 183.86229pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[11]
+[12]
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[12 <C:/Users/Sven/Documents/GitHub/tm/figures/H-bridge.pdf>]
+[13 <C:/Users/Sven/Documents/GitHub/tm/figures/H-bridge.pdf>]
 ! Undefined control sequence.
-l.290 \lstinputlisting
+l.292 \lstinputlisting
                       [language=Java]{code/motor.java}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -699,44 +729,47 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-[13]
-Overfull \hbox (3.40771pt too wide) in paragraph at lines 302--303
+[14]
+Overfull \hbox (3.40771pt too wide) in paragraph at lines 304--305
 \OT1/pnc/m/n/12 codes, mais peut aussi les mo-di-fier. Ce mi-cro-con-trol-leur 
 se pro-gramme
  []
 
 
-Overfull \hbox (4.34912pt too wide) in paragraph at lines 316--317
+Overfull \hbox (4.34912pt too wide) in paragraph at lines 318--319
 []\OT1/pnc/m/n/12 Sortie au-dio st[]er[]eo Jack (3.5mm) (le son passe aussi par
  le HDMI
  []
 
-[14] [15] (C:\Users\Sven\Documents\GitHub\tm\rendu_final.bbl)
+[15] [16] (C:\Users\Sven\Documents\GitHub\tm\rendu_final.bbl)
 
 AED: lastpage setting LastPage
-[16] (C:\Users\Sven\Documents\GitHub\tm\rendu_final.aux) ) 
+[17] (C:\Users\Sven\Documents\GitHub\tm\rendu_final.aux)
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+ ) 
 Here is how much of TeX's memory you used:
- 3774 strings out of 494045
- 48741 string characters out of 3148391
- 119835 words of memory out of 3000000
- 6985 multiletter control sequences out of 15000+200000
+ 3799 strings out of 494045
+ 49100 string characters out of 3148391
+ 120056 words of memory out of 3000000
+ 7007 multiletter control sequences out of 15000+200000
  23127 words of font info for 57 fonts, out of 3000000 for 9000
  715 hyphenation exceptions out of 8191
- 30i,11n,45p,719b,603s stack positions out of 5000i,500n,10000p,200000b,50000s
-{C:/Program Files/MiK
-TeX 2.9/fonts/enc/dvips/fontname/8r.enc}<C:/Program Files/MiKTeX 2.9/fonts/type
-1/public/amsfonts/cm/cmbx12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public
-/amsfonts/cm/cmcsc10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfon
-ts/cm/cmmi12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cm
-r10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><
-C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Progra
-m Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:/Program Files/
-MiKTeX 2.9/fonts/type1/urw/ncntrsbk/uncb8a.pfb><C:/Program Files/MiKTeX 2.9/fon
-ts/type1/urw/ncntrsbk/uncr8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/n
-cntrsbk/uncri8a.pfb>
-Output written on rendu_final.pdf (16 pages, 234171 bytes).
+ 30i,11n,45p,719b,720s stack positions out of 5000i,500n,10000p,200000b,50000s
+{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/fontname/8r.enc}<C:/Program File
+s/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Program Files/MiKTeX
+ 2.9/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><C:/Program Files/MiKTeX 2.9/fo
+nts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type
+1/public/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/
+amsfonts/cm/cmr12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/
+cm/cmsy8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti12
+.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/ncntrsbk/uncb8a.pfb><C:/Progr
+am Files/MiKTeX 2.9/fonts/type1/urw/ncntrsbk/uncr8a.pfb><C:/Program Files/MiKTe
+X 2.9/fonts/type1/urw/ncntrsbk/uncri8a.pfb>
+Output written on rendu_final.pdf (17 pages, 234811 bytes).
 PDF statistics:
- 107 PDF objects out of 1000 (max. 8388607)
+ 110 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  16 words of extra memory for PDF output out of 10000 (max. 10000000)
 
