@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2013.1.2)  13 JUN 2013 21:01
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2013.1.2)  13 JUN 2013 21:32
 entering extended mode
 **rendu_final.tex
 (C:\Users\Sven\Documents\GitHub\tm\rendu_final.tex
@@ -800,13 +800,7 @@ Overfull \hbox (89.58302pt too wide) in paragraph at lines 64--65
 [][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
-[16])
-Overfull \hbox (3.40771pt too wide) in paragraph at lines 303--304
-\OT1/pnc/m/n/12 codes, mais peut aussi les mo-di-fier. Ce mi-cro-con-trol-leur 
-se pro-gramme
- []
-
-[17]
+[16]) [17]
 Overfull \hbox (4.34912pt too wide) in paragraph at lines 317--318
 []\OT1/pnc/m/n/12 Sortie au-dio st[]er[]eo Jack (3.5mm) (le son passe aussi par
  le HDMI
@@ -817,13 +811,13 @@ Overfull \hbox (4.34912pt too wide) in paragraph at lines 317--318
 AED: lastpage setting LastPage
 [20] (C:\Users\Sven\Documents\GitHub\tm\rendu_final.aux) ) 
 Here is how much of TeX's memory you used:
- 5539 strings out of 494045
- 72067 string characters out of 3148391
- 174043 words of memory out of 3000000
- 8721 multiletter control sequences out of 15000+200000
+ 5541 strings out of 494045
+ 72105 string characters out of 3148391
+ 174051 words of memory out of 3000000
+ 8723 multiletter control sequences out of 15000+200000
  23127 words of font info for 57 fonts, out of 3000000 for 9000
  715 hyphenation exceptions out of 8191
- 36i,11n,45p,719b,1864s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 36i,11n,45p,760b,1864s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files/MiK
 TeX 2.9/fonts/enc/dvips/fontname/8r.enc}<C:/Program Files/MiKTeX 2.9/fonts/type
 1/public/amsfonts/cm/cmbx12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public
@@ -836,7 +830,7 @@ MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:/Program Files/MiKTeX 2
 .9/fonts/type1/urw/ncntrsbk/uncb8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1
 /urw/ncntrsbk/uncr8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/ncntrsbk/
 uncri8a.pfb>
-Output written on rendu_final.pdf (20 pages, 196702 bytes).
+Output written on rendu_final.pdf (20 pages, 196786 bytes).
 PDF statistics:
  123 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
