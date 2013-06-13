@@ -8,6 +8,8 @@
 \renewcommand{\baselinestretch}{1.5}%%%%interligne
 \usepackage{fancyhdr} %%%%%%en-tête
 \usepackage[utf8]{inputenc}%%%%utp-8 accents
+\usepackage{multirow}
+\usepackage{listings}
 \pagestyle{fancy} %: Numérotation des pages.
 \lhead{Sven Borden et Eric Brunner}% :	On personnalisera cette en-tête. haut de page gauche
 \chead{2M03} %: On personnalisera cette en-tête. haut de page centre
@@ -44,12 +46,12 @@
 
 \date{\today}
 \maketitle
-\begin{center}
-\begin{figure}[h!]
-\caption{UGV, \small Image de couverture}
-\includegraphics[scale=0.5]{photo_titre.JPG}
-\end{figure}
-\end{center}
+%% \begin{center}
+%% \begin{figure}[h!]
+%% \caption{UGV, \small Image de couverture}
+%% \includegraphics[scale=0.5]{photo_titre.JPG}
+%% \end{figure}
+%% \end{center}
 
 \clearpage
 \part{}
@@ -243,8 +245,6 @@ diff\'erents (en grande partie pour clarifier le sch\'ema), mais l'on pourrait
 tr\`es bien utiliser uniquement des transistors du m\^eme type. On obtiendrait
 le m\^eme r\'esultat en connectant les \emph{INPUT} \`a des transistors
 diagonalement oppos\'es\cite{RobotRoom}.
-%\footnote{Explications inspir\'ees par les informations
-%trouv\'ees sur le site suivant: http://www.robotroom.com/BipolarHBridge.html}
 
 On peut voir que selon le \emph{INPUT}, on obtiendra des tensions au bornes du
 moteur ou \emph{OUTPUT} variables.
@@ -275,7 +275,40 @@ ou dans l'autre.
 \end{table}
 
 \subsection{L293d}
-Nous avons d;cid; d'utiliser un H
+Nous avons décidé de ne pas construire notre propre H-Bridge, mais plutôt
+exploiter un chip qui sert le même but. Le chip en question est dénommé
+L293D. Pour commencer, une synthèse de la feuille de spécifications:
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.5\textwidth]{figures/l293d}
+    \caption{\label{l293d} Schéma du l293d.}
+\end{figure}
+
+
+\begin{center}
+  \begin{tabular}{|p{4cm}|p{4cm}|c|}
+    \hline
+    \multirow{5}{*}{Grandeurs}
+    &longueure & 35 cm \\ \cline{2-3}
+    &longueure (centre de roue \`a centre de roue)& 17 cm \\ \cline{2-3}
+    &largeure & 22 cm \\ \cline{2-3}
+    &largeure (centre de roue \`a centre de roue) & 17 cm \\ \cline{2-3}
+    & hauteur au sol & 4 cm\\ \hline
+    \multirow{3}{*}{Moteur de propulsion}
+    & Voltage de marche & \~{}5V - \~{}10V  \\ \cline{2-3}
+    & Courant min (roue libre) & \~{}2A \\ \cline{2-3}
+    & Courant max (roue bloqu\'ee) & \~{}3A \\ \hline
+    \multirow{5}{*}{Servo de guidage}
+    & Fabriquant & Corona \\ \cline{2 - 3}
+    & Model & Metal gear DS558HV\\ \cline{2-3}
+    & Voltage de marche & \~{}6V - \~{}7.4V  \\ \cline{2-3}
+    & Courant & 300mA - 400mA \\ \cline{2-3}
+    & Charge maximale & 12kg - 14kg \\  
+ \hline
+	\end{tabular}
+\end{center}
+
 
 \subsection{Code}
 
