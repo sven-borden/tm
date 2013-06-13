@@ -1,5 +1,9 @@
 \begin{thebibliography}{1}
 
+\bibitem{RaspberryPiCaracteristiques}
+the free~encyclopedia From~Wikipedia.
+\newblock Raspberry pi, ??
+
 \bibitem{WikiServo}
 the free~encyclopedia From~Wikipedia.
 \newblock Servo control, Octobre 2012.
@@ -7,5 +11,9 @@ the free~encyclopedia From~Wikipedia.
 \bibitem{RobotRoom}
 Robot Room.
 \newblock H-bridge motor driver using bipolar transistors, ??
+
+\bibitem{Arduino}
+Arduino Team.
+\newblock Arduino spec., ??
 
 \end{thebibliography}

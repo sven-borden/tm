@@ -1,24 +1,25 @@
+<<<<<<< HEAD
 This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/TeX Live for SUSE Linux) (format=pdflatex 2013.4.22)  13 JUN 2013 23:47
+=======
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2013.1.2)  13 JUN 2013 21:32
+>>>>>>> 8189d3263080005542b8491d77e55cb78fbfcdb6
 entering extended mode
- restricted \write18 enabled.
- %&-line parsing enabled.
 **rendu_final.tex
-(./rendu_final.tex
+(C:\Users\Sven\Documents\GitHub\tm\rendu_final.tex
 LaTeX2e <2011/06/27>
-Babel <v3.8m> and hyphenation patterns for english, dumylang, nohyphenation, ge
-rman-x-2011-07-01, ngerman-x-2011-07-01, afrikaans, ancientgreek, ibycus, arabi
-c, armenian, basque, bulgarian, catalan, pinyin, coptic, croatian, czech, danis
-h, dutch, ukenglish, usenglishmax, esperanto, estonian, ethiopic, farsi, finnis
-h, french, friulan, galician, german, ngerman, swissgerman, monogreek, greek, h
-ungarian, icelandic, assamese, bengali, gujarati, hindi, kannada, malayalam, ma
-rathi, oriya, panjabi, tamil, telugu, indonesian, interlingua, irish, italian, 
-kurmanji, lao, latin, latvian, lithuanian, mongolian, mongolianlmc, bokmal, nyn
-orsk, polish, portuguese, romanian, romansh, russian, sanskrit, serbian, serbia
-nc, slovak, slovenian, spanish, swedish, turkish, turkmen, ukrainian, uppersorb
-ian, welsh, loaded.
-(/usr/share/texmf/tex/latex/base/article.cls
+Babel <v3.8m> and hyphenation patterns for english, afrikaans, ancientgreek, ar
+abic, armenian, assamese, basque, bengali, bokmal, bulgarian, catalan, coptic, 
+croatian, czech, danish, dutch, esperanto, estonian, farsi, finnish, french, ga
+lician, german, german-x-2009-06-19, greek, gujarati, hindi, hungarian, iceland
+ic, indonesian, interlingua, irish, italian, kannada, kurmanji, lao, latin, lat
+vian, lithuanian, malayalam, marathi, mongolian, mongolianlmc, monogreek, ngerm
+an, ngerman-x-2009-06-19, nynorsk, oriya, panjabi, pinyin, polish, portuguese, 
+romanian, russian, sanskrit, serbian, slovak, slovenian, spanish, swedish, swis
+sgerman, tamil, telugu, turkish, turkmen, ukenglish, ukrainian, uppersorbian, u
+senglishmax, welsh, loaded.
+("C:\Program Files\MiKTeX 2.9\tex\latex\base\article.cls"
 Document Class: article 2007/10/19 v1.4h Standard LaTeX document class
-(/usr/share/texmf/tex/latex/base/size12.clo
+("C:\Program Files\MiKTeX 2.9\tex\latex\base\size12.clo"
 File: size12.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
 )
 \c@part=\count79
@@ -33,21 +34,27 @@ File: size12.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
 \belowcaptionskip=\skip42
 \bibindent=\dimen102
 )
-(/usr/share/texmf/tex/generic/babel/babel.sty
+("C:\Program Files\MiKTeX 2.9\tex\generic\babel\babel.sty"
 Package: babel 2008/07/08 v3.8m The Babel package
 
-(/usr/share/texmf/tex/generic/babel/frenchb.ldf
-Language: frenchb 2010/08/21 v2.5a French support from the babel system
+*************************************
+* Local config file bblopts.cfg used
+*
+("C:\Program Files\MiKTeX 2.9\tex\latex\00miktex\bblopts.cfg"
+File: bblopts.cfg 2006/07/31 v1.0 MiKTeX 'babel' configuration
+)
+("C:\Program Files\MiKTeX 2.9\tex\generic\babel\frenchb.ldf"
+Language: frenchb 2009/03/16 v2.3d French support from the babel system
 
-(/usr/share/texmf/tex/generic/babel/babel.def
+("C:\Program Files\MiKTeX 2.9\tex\generic\babel\babel.def"
 File: babel.def 2008/07/08 v3.8m Babel common definitions
 \babel@savecnt=\count87
 \U@D=\dimen103
 )
-Package babel Info: Making : an active character on input line 234.
-Package babel Info: Making ; an active character on input line 235.
-Package babel Info: Making ! an active character on input line 236.
-Package babel Info: Making ? an active character on input line 237.
+Package babel Info: Making : an active character on input line 120.
+Package babel Info: Making ; an active character on input line 121.
+Package babel Info: Making ! an active character on input line 122.
+Package babel Info: Making ? an active character on input line 123.
 \FB@Mht=\dimen104
 \std@mcc=\count88
 \dec@mcc=\count89
@@ -56,33 +63,33 @@ Package babel Info: Making ? an active character on input line 237.
 *************************************
 * Local config file frenchb.cfg used
 *
-(/usr/share/texmf/tex/generic/babel/frenchb.cfg)))
-(/usr/share/texmf/tex/latex/carlisle/scalefnt.sty)
-(/usr/share/texmf/tex/latex/graphics/keyval.sty
+("C:\Program Files\MiKTeX 2.9\tex\generic\babel\frenchb.cfg")))
+("C:\Program Files\MiKTeX 2.9\tex\latex\carlisle\scalefnt.sty")
+("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\keyval.sty"
 Package: keyval 1999/03/16 v1.13 key=value parser (DPC)
 \KV@toks@=\toks14
 )
-(/usr/share/texmf/tex/latex/graphics/graphicx.sty
+("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\graphicx.sty"
 Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
 
-(/usr/share/texmf/tex/latex/graphics/graphics.sty
+("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\graphics.sty"
 Package: graphics 2009/02/05 v1.0o Standard LaTeX Graphics (DPC,SPQR)
 
-(/usr/share/texmf/tex/latex/graphics/trig.sty
+("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\trig.sty"
 Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
 )
-(/usr/share/texmf/tex/latex/latexconfig/graphics.cfg
-File: graphics.cfg 2010/04/23 v1.9 graphics configuration of TeX Live
+("C:\Program Files\MiKTeX 2.9\tex\latex\00miktex\graphics.cfg"
+File: graphics.cfg 2007/01/18 v1.5 graphics configuration of teTeX/TeXLive
 )
 Package graphics Info: Driver file: pdftex.def on input line 91.
 
-(/usr/share/texmf/tex/latex/pdftex-def/pdftex.def
+("C:\Program Files\MiKTeX 2.9\tex\latex\pdftex-def\pdftex.def"
 File: pdftex.def 2011/05/27 v0.06d Graphics/color for pdfTeX
 
-(/usr/share/texmf/tex/generic/oberdiek/infwarerr.sty
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\infwarerr.sty"
 Package: infwarerr 2010/04/08 v1.3 Providing info/warning/error messages (HO)
 )
-(/usr/share/texmf/tex/generic/oberdiek/ltxcmds.sty
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\ltxcmds.sty"
 Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
 )
 \Gread@gobject=\count90
@@ -90,7 +97,7 @@ Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
 \Gin@req@height=\dimen106
 \Gin@req@width=\dimen107
 )
-(/usr/share/texmf/tex/latex/tools/array.sty
+("C:\Program Files\MiKTeX 2.9\tex\latex\tools\array.sty"
 Package: array 2008/09/09 v2.4c Tabular extension package (FMi)
 \col@sep=\dimen108
 \extrarowheight=\dimen109
@@ -98,88 +105,111 @@ Package: array 2008/09/09 v2.4c Tabular extension package (FMi)
 \extratabsurround=\skip43
 \backup@length=\skip44
 )
-(/usr/share/texmf/tex/latex/amsmath/amsmath.sty
-Package: amsmath 2000/07/18 v2.13 AMS math features
+(C:\Users\Sven\AppData\Roaming\MiKTeX\2.9\tex\latex\listings\listings.sty
+\lst@mode=\count91
+\lst@gtempboxa=\box26
+\lst@token=\toks16
+\lst@length=\count92
+\lst@currlwidth=\dimen110
+\lst@column=\count93
+\lst@pos=\count94
+\lst@lostspace=\dimen111
+\lst@width=\dimen112
+\lst@newlines=\count95
+\lst@lineno=\count96
+\lst@maxwidth=\dimen113
+
+(C:\Users\Sven\AppData\Roaming\MiKTeX\2.9\tex\latex\listings\lstmisc.sty
+File: lstmisc.sty 2007/02/22 1.4 (Carsten Heinz)
+\c@lstnumber=\count97
+\lst@skipnumbers=\count98
+\lst@framebox=\box27
+)
+(C:\Users\Sven\AppData\Roaming\MiKTeX\2.9\tex\latex\listings\listings.cfg
+File: listings.cfg 2007/02/22 1.4 listings configuration
+))
+Package: listings 2007/02/22 1.4 (Carsten Heinz)
+
+(C:\Users\Sven\AppData\Roaming\MiKTeX\2.9\tex\latex\amsmath\amsmath.sty
+Package: amsmath 2013/01/14 v2.14 AMS math features
 \@mathmargin=\skip45
 
 For additional information on amsmath, use the `?' option.
-(/usr/share/texmf/tex/latex/amsmath/amstext.sty
+(C:\Users\Sven\AppData\Roaming\MiKTeX\2.9\tex\latex\amsmath\amstext.sty
 Package: amstext 2000/06/29 v2.01
 
-(/usr/share/texmf/tex/latex/amsmath/amsgen.sty
+(C:\Users\Sven\AppData\Roaming\MiKTeX\2.9\tex\latex\amsmath\amsgen.sty
 File: amsgen.sty 1999/11/30 v2.0
-\@emptytoks=\toks16
-\ex@=\dimen110
+\@emptytoks=\toks17
+\ex@=\dimen114
 ))
-(/usr/share/texmf/tex/latex/amsmath/amsbsy.sty
+(C:\Users\Sven\AppData\Roaming\MiKTeX\2.9\tex\latex\amsmath\amsbsy.sty
 Package: amsbsy 1999/11/29 v1.2d
-\pmbraise@=\dimen111
+\pmbraise@=\dimen115
 )
-(/usr/share/texmf/tex/latex/amsmath/amsopn.sty
+(C:\Users\Sven\AppData\Roaming\MiKTeX\2.9\tex\latex\amsmath\amsopn.sty
 Package: amsopn 1999/12/14 v2.01 operator names
 )
-\inf@bad=\count91
-LaTeX Info: Redefining \frac on input line 211.
-\uproot@=\count92
-\leftroot@=\count93
-LaTeX Info: Redefining \overline on input line 307.
-\classnum@=\count94
-\DOTSCASE@=\count95
-LaTeX Info: Redefining \ldots on input line 379.
-LaTeX Info: Redefining \dots on input line 382.
-LaTeX Info: Redefining \cdots on input line 467.
-\Mathstrutbox@=\box26
-\strutbox@=\box27
-\big@size=\dimen112
-LaTeX Font Info:    Redeclaring font encoding OML on input line 567.
-LaTeX Font Info:    Redeclaring font encoding OMS on input line 568.
-\macc@depth=\count96
-\c@MaxMatrixCols=\count97
+\inf@bad=\count99
+LaTeX Info: Redefining \frac on input line 210.
+\uproot@=\count100
+\leftroot@=\count101
+LaTeX Info: Redefining \overline on input line 306.
+\classnum@=\count102
+\DOTSCASE@=\count103
+LaTeX Info: Redefining \ldots on input line 378.
+LaTeX Info: Redefining \dots on input line 381.
+LaTeX Info: Redefining \cdots on input line 466.
+\Mathstrutbox@=\box28
+\strutbox@=\box29
+\big@size=\dimen116
+LaTeX Font Info:    Redeclaring font encoding OML on input line 566.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 567.
+\macc@depth=\count104
+\c@MaxMatrixCols=\count105
 \dotsspace@=\muskip10
-\c@parentequation=\count98
-\dspbrk@lvl=\count99
-\tag@help=\toks17
-\row@=\count100
-\column@=\count101
-\maxfields@=\count102
-\andhelp@=\toks18
-\eqnshift@=\dimen113
-\alignsep@=\dimen114
-\tagshift@=\dimen115
-\tagwidth@=\dimen116
-\totwidth@=\dimen117
-\lineht@=\dimen118
-\@envbody=\toks19
+\c@parentequation=\count106
+\dspbrk@lvl=\count107
+\tag@help=\toks18
+\row@=\count108
+\column@=\count109
+\maxfields@=\count110
+\andhelp@=\toks19
+\eqnshift@=\dimen117
+\alignsep@=\dimen118
+\tagshift@=\dimen119
+\tagwidth@=\dimen120
+\totwidth@=\dimen121
+\lineht@=\dimen122
+\@envbody=\toks20
 \multlinegap=\skip46
 \multlinetaggap=\skip47
-\mathdisplay@stack=\toks20
-LaTeX Info: Redefining \[ on input line 2666.
-LaTeX Info: Redefining \] on input line 2667.
+\mathdisplay@stack=\toks21
+LaTeX Info: Redefining \[ on input line 2665.
+LaTeX Info: Redefining \] on input line 2666.
 )
-(/usr/share/texmf/tex/latex/tools/multicol.sty
+("C:\Program Files\MiKTeX 2.9\tex\latex\tools\multicol.sty"
 Package: multicol 2011/06/27 v1.7a multicolumn formatting (FMi)
-\c@tracingmulticols=\count103
-\mult@box=\box28
-\multicol@leftmargin=\dimen119
-\c@unbalance=\count104
-\c@collectmore=\count105
-\doublecol@number=\count106
-\multicoltolerance=\count107
-\multicolpretolerance=\count108
-\full@width=\dimen120
-\page@free=\dimen121
-\premulticols=\dimen122
-\postmulticols=\dimen123
+\c@tracingmulticols=\count111
+\mult@box=\box30
+\multicol@leftmargin=\dimen123
+\c@unbalance=\count112
+\c@collectmore=\count113
+\doublecol@number=\count114
+\multicoltolerance=\count115
+\multicolpretolerance=\count116
+\full@width=\dimen124
+\page@free=\dimen125
+\premulticols=\dimen126
+\postmulticols=\dimen127
 \multicolsep=\skip48
 \multicolbaselineskip=\skip49
-\partial@page=\box29
-\last@line=\box30
-\mult@rightbox=\box31
-\mult@grightbox=\box32
-\mult@gfirstbox=\box33
-\mult@firstbox=\box34
-\@tempa=\box35
-\@tempa=\box36
+\partial@page=\box31
+\last@line=\box32
+\mult@rightbox=\box33
+\mult@grightbox=\box34
+\mult@gfirstbox=\box35
+\mult@firstbox=\box36
 \@tempa=\box37
 \@tempa=\box38
 \@tempa=\box39
@@ -195,16 +225,21 @@ Package: multicol 2011/06/27 v1.7a multicolumn formatting (FMi)
 \@tempa=\box49
 \@tempa=\box50
 \@tempa=\box51
-\c@columnbadness=\count109
-\c@finalcolumnbadness=\count110
-\last@try=\dimen124
-\multicolovershoot=\dimen125
-\multicolundershoot=\dimen126
-\mult@nat@firstbox=\box52
-\colbreak@box=\box53
-\multicol@sort@counter=\count111
+\@tempa=\box52
+\@tempa=\box53
+\c@columnbadness=\count117
+\c@finalcolumnbadness=\count118
+\last@try=\dimen128
+\multicolovershoot=\dimen129
+\multicolundershoot=\dimen130
+\mult@nat@firstbox=\box54
+\colbreak@box=\box55
+\multicol@sort@counter=\count119
 )
-(/usr/share/texmf/tex/latex/fancyhdr/fancyheadings.sty
+("C:\Program Files\MiKTeX 2.9\tex\latex\multirow\multirow.sty"
+\bigstrutjot=\dimen131
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\fancyhdr\fancyheadings.sty"
 Package: fancyheadings 2008/02/04 1.99 Dummy package to call fancyhdr
 
 
@@ -220,7 +255,7 @@ Package fancyheadings Warning: Please stop using fancyheadings!
 (fancyheadings)                parameters, but normal macros (to be changed
 (fancyheadings)                with \renewcommand rather than \setlength)..
 
-(/usr/share/texmf/tex/latex/fancyhdr/fancyhdr.sty
+("C:\Program Files\MiKTeX 2.9\tex\latex\fancyhdr\fancyhdr.sty"
 \fancy@headwidth=\skip50
 \f@ncyO@elh=\skip51
 \f@ncyO@erh=\skip52
@@ -231,19 +266,19 @@ Package fancyheadings Warning: Please stop using fancyheadings!
 \f@ncyO@olf=\skip57
 \f@ncyO@orf=\skip58
 ))
-(/usr/share/texmf/tex/latex/base/inputenc.sty
+("C:\Program Files\MiKTeX 2.9\tex\latex\base\inputenc.sty"
 Package: inputenc 2008/03/30 v1.1d Input encoding file
-\inpenc@prehook=\toks21
-\inpenc@posthook=\toks22
+\inpenc@prehook=\toks22
+\inpenc@posthook=\toks23
 
-(/usr/share/texmf/tex/latex/base/utf8.def
+("C:\Program Files\MiKTeX 2.9\tex\latex\base\utf8.def"
 File: utf8.def 2008/04/05 v1.1m UTF-8 support for inputenc
 Now handling font encoding OML ...
 ... no UTF-8 mapping file for font encoding OML
 Now handling font encoding T1 ...
 ... processing UTF-8 mapping file for font encoding T1
 
-(/usr/share/texmf/tex/latex/base/t1enc.dfu
+("C:\Program Files\MiKTeX 2.9\tex\latex\base\t1enc.dfu"
 File: t1enc.dfu 2008/04/05 v1.1m UTF-8 support for inputenc
    defining Unicode char U+00A1 (decimal 161)
    defining Unicode char U+00A3 (decimal 163)
@@ -393,7 +428,7 @@ File: t1enc.dfu 2008/04/05 v1.1m UTF-8 support for inputenc
 Now handling font encoding OT1 ...
 ... processing UTF-8 mapping file for font encoding OT1
 
-(/usr/share/texmf/tex/latex/base/ot1enc.dfu
+("C:\Program Files\MiKTeX 2.9\tex\latex\base\ot1enc.dfu"
 File: ot1enc.dfu 2008/04/05 v1.1m UTF-8 support for inputenc
    defining Unicode char U+00A1 (decimal 161)
    defining Unicode char U+00A3 (decimal 163)
@@ -424,7 +459,7 @@ File: ot1enc.dfu 2008/04/05 v1.1m UTF-8 support for inputenc
 Now handling font encoding OMS ...
 ... processing UTF-8 mapping file for font encoding OMS
 
-(/usr/share/texmf/tex/latex/base/omsenc.dfu
+("C:\Program Files\MiKTeX 2.9\tex\latex\base\omsenc.dfu"
 File: omsenc.dfu 2008/04/05 v1.1m UTF-8 support for inputenc
    defining Unicode char U+00A7 (decimal 167)
    defining Unicode char U+00B6 (decimal 182)
@@ -448,6 +483,7 @@ Now handling font encoding U ...
    defining Unicode char U+2122 (decimal 8482)
    defining Unicode char U+2423 (decimal 9251)
 ))
+<<<<<<< HEAD
 (/usr/share/texmf/tex/latex/multirow/multirow.sty
 \bigstrutjot=\dimen127
 )
@@ -477,14 +513,23 @@ File: listings.cfg 2007/02/22 1.4 listings configuration
 Package: listings 2007/02/22 1.4 (Carsten Heinz)
 
 (/usr/share/texmf/tex/latex/lastpage/lastpage.sty
+=======
+("C:\Program Files\MiKTeX 2.9\tex\latex\lastpage\lastpage.sty"
+>>>>>>> 8189d3263080005542b8491d77e55cb78fbfcdb6
 Package: lastpage 2011/09/01 v1.2k Refers to last page's name (HMM; JPG)
 )
-(/usr/share/texmf/tex/latex/ucs/ucs.sty
+("C:\Program Files\MiKTeX 2.9\tex\latex\ucs\ucs.sty"
 Package: ucs 2004/10/17 UCS: Unicode input support
 
-(/usr/share/texmf/tex/latex/ucs/data/uni-global.def
-File: uni-global.def 2012/04/20 UCS: Unicode global data
+("C:\Program Files\MiKTeX 2.9\tex\latex\ucs\uni-global.def"
+File: uni-global.def 2012/08/28 UCS: Unicode global data
 )
+\uc@secondtry=\count120
+\uc@combtoks=\toks24
+\uc@combtoksb=\toks25
+\uc@temptokena=\toks26
+)
+<<<<<<< HEAD
 \uc@secondtry=\count120
 \uc@combtoks=\toks24
 \uc@combtoksb=\toks25
@@ -507,13 +552,35 @@ LaTeX Font Info:    ... okay on input line 40.
 LaTeX Info: Redefining \degres on input line 40.
 LaTeX Info: Redefining \dots on input line 40.
 LaTeX Info: Redefining \up on input line 40.
+=======
+(C:\Users\Sven\Documents\GitHub\tm\rendu_final.aux)
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 41.
+LaTeX Font Info:    ... okay on input line 41.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 41.
+LaTeX Font Info:    ... okay on input line 41.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 41.
+LaTeX Font Info:    ... okay on input line 41.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 41.
+LaTeX Font Info:    ... okay on input line 41.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 41.
+LaTeX Font Info:    ... okay on input line 41.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 41.
+LaTeX Font Info:    ... okay on input line 41.
+LaTeX Info: Redefining \degres on input line 41.
+LaTeX Info: Redefining \dots on input line 41.
+LaTeX Info: Redefining \up on input line 41.
+>>>>>>> 8189d3263080005542b8491d77e55cb78fbfcdb6
 
 
 Package frenchb.ldf Warning: OT1 encoding should not be used for French. 
 (frenchb.ldf)                Add \usepackage[T1]{fontenc} to the preamble
+<<<<<<< HEAD
 (frenchb.ldf)                of your document, on input line 40.
+=======
+(frenchb.ldf)                of your document, on input line 41.
+>>>>>>> 8189d3263080005542b8491d77e55cb78fbfcdb6
 
-(/usr/share/texmf/tex/context/base/supp-pdf.mkii
+("C:\Program Files\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count121
 \scratchdimen=\dimen132
@@ -526,6 +593,7 @@ Package frenchb.ldf Warning: OT1 encoding should not be used for French.
 \MPnumerator=\count125
 \makeMPintoPDFobject=\count126
 \everyMPtoPDFconversion=\toks28
+<<<<<<< HEAD
 ) (/usr/share/texmf/tex/generic/oberdiek/pdftexcmds.sty
 Package: pdftexcmds 2011/11/29 v0.20 Utility functions of pdfTeX for LuaTeX (HO
 )
@@ -574,6 +642,9 @@ G,.JBIG2,.JB2,.eps]
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
+=======
+)
+>>>>>>> 8189d3263080005542b8491d77e55cb78fbfcdb6
 \c@lstlisting=\count127
 Package lastpage Info: Please have a look at the pageslts package at
 (lastpage)             http://www.ctan.org/tex-archive/ 
@@ -581,9 +652,14 @@ Package lastpage Info: Please have a look at the pageslts package at
 (lastpage)             or
 (lastpage)             http://www.ctan.org/tex-archive/ 
 (lastpage)             install/macros/latex/contrib/pageslts.tds.zip
+<<<<<<< HEAD
 (lastpage)             ! on input line 40.
 
 (/usr/share/texmf/tex/latex/ucs/ucsencs.def
+=======
+(lastpage)             ! on input line 41.
+ ("C:\Program Files\MiKTeX 2.9\tex\latex\ucs\ucsencs.def"
+>>>>>>> 8189d3263080005542b8491d77e55cb78fbfcdb6
 File: ucsencs.def 2011/01/21 Fixes to fontencodings LGR, T3
 )
 
@@ -602,21 +678,37 @@ Package ucs Warning: ***************************
 (ucs)                ***************************
 (ucs)                Activating compatibility mode.
 (ucs)                ***************************
+<<<<<<< HEAD
 (ucs)                 on input line 40.
+=======
+(ucs)                 on input line 41.
+>>>>>>> 8189d3263080005542b8491d77e55cb78fbfcdb6
 
-(/usr/share/texmf/tex/latex/ucs/utf8x.def
+("C:\Program Files\MiKTeX 2.9\tex\latex\ucs\utf8x.def"
 File: utf8x.def 2004/10/17 UCS: Input encoding UTF-8
 )
+<<<<<<< HEAD
 LaTeX Font Info:    Try loading font information for OT1+pnc on input line 43.
+=======
+LaTeX Font Info:    Try loading font information for OT1+pnc on input line 44.
+>>>>>>> 8189d3263080005542b8491d77e55cb78fbfcdb6
 
-(/usr/share/texmf/tex/latex/psnfss/ot1pnc.fd
+("C:\Program Files\MiKTeX 2.9\tex\latex\psnfss\ot1pnc.fd"
 File: ot1pnc.fd 2001/06/04 font definitions for OT1/pnc.
 )
+<<<<<<< HEAD
 (/usr/share/texmf/tex/latex/ucs/data/uni-0.def
 File: uni-0.def 2012/04/20 UCS: Unicode data U+0000..U+00FF
 ) [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
+=======
+("C:\Program Files\MiKTeX 2.9\tex\latex\ucs\uni-0.def"
+File: uni-0.def 2012/08/28 UCS: Unicode data U+0000..U+00FF
+) [1
+
+{C:/Users/Sven/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}]
+>>>>>>> 8189d3263080005542b8491d77e55cb78fbfcdb6
 
 Package Fancyhdr Warning: \headheight is too small (13.0pt): 
  Make it at least 14.49998pt.
@@ -626,7 +718,11 @@ Package Fancyhdr Warning: \headheight is too small (13.0pt):
 [2
 
 ]
+<<<<<<< HEAD
 Overfull \hbox (1.14352pt too wide) in paragraph at lines 66--67
+=======
+Overfull \hbox (1.14352pt too wide) in paragraph at lines 67--68
+>>>>>>> 8189d3263080005542b8491d77e55cb78fbfcdb6
 []\OT1/pnc/m/n/12 Ce pro-jet n'au-rait pu abou-tir sans l'aide de nom-breuses p
 er-sonnes.
  []
@@ -635,14 +731,20 @@ er-sonnes.
 
 ]
 LaTeX Font Info:    Font shape `OT1/pnc/bx/n' in size <10.95> not available
+<<<<<<< HEAD
 (Font)              Font shape `OT1/pnc/b/n' tried instead on input line 69.
 
 Overfull \hbox (22.74498pt too wide) in paragraph at lines 70--71
+=======
+(Font)              Font shape `OT1/pnc/b/n' tried instead on input line 70.
+
+Overfull \hbox (22.74498pt too wide) in paragraph at lines 71--72
+>>>>>>> 8189d3263080005542b8491d77e55cb78fbfcdb6
 \OT1/pnc/m/n/10.95 fonc-tion-ne-ment de l'UGV ainsi que son fonc-tion-ne-ment. 
 Le troisi[]eme
  []
 
-(./rendu_final.toc
+(C:\Users\Sven\Documents\GitHub\tm\rendu_final.toc
 LaTeX Font Info:    Font shape `OT1/pnc/bx/n' in size <14.4> not available
 (Font)              Font shape `OT1/pnc/b/n' tried instead on input line 2.
 LaTeX Font Info:    Font shape `OT1/pnc/bx/n' in size <12> not available
@@ -651,73 +753,113 @@ LaTeX Font Info:    Font shape `OT1/pnc/bx/n' in size <12> not available
 
 ])
 \tf@toc=\write3
-\openout3 = `rendu_final.toc'.
 
- (./rendu_final.lof)
+(C:\Users\Sven\Documents\GitHub\tm\rendu_final.lof)
 \tf@lof=\write4
-\openout4 = `rendu_final.lof'.
 
- (./rendu_final.lot)
+(C:\Users\Sven\Documents\GitHub\tm\rendu_final.lot)
 \tf@lot=\write5
-\openout5 = `rendu_final.lot'.
-
  [5]
+<<<<<<< HEAD
 Overfull \hbox (14.85533pt too wide) in paragraph at lines 80--81
+=======
+Overfull \hbox (14.85533pt too wide) in paragraph at lines 81--82
+>>>>>>> 8189d3263080005542b8491d77e55cb78fbfcdb6
 \OT1/pnc/m/n/12 peut com-man-der []a dis-tance. Plus qu'une simple voi-ture t[]
 el[]ecommand[]ee,
  []
 
 
+<<<<<<< HEAD
 Overfull \hbox (2.87639pt too wide) in paragraph at lines 80--81
+=======
+Overfull \hbox (2.87639pt too wide) in paragraph at lines 81--82
+>>>>>>> 8189d3263080005542b8491d77e55cb78fbfcdb6
 \OT1/pnc/m/n/12 d'en-gins se nomment \OT1/pnc/m/it/12 UGV (Un-man-ned Ground Ve
 -hicle) \OT1/pnc/m/n/12 soit : v[]ehicule
  []
 
 
+<<<<<<< HEAD
 Overfull \hbox (9.86346pt too wide) in paragraph at lines 80--81
+=======
+Overfull \hbox (9.86346pt too wide) in paragraph at lines 81--82
+>>>>>>> 8189d3263080005542b8491d77e55cb78fbfcdb6
 \OT1/pnc/m/n/12 rou-lant com-mand[]e []a dis-tance. Sur-tout uti-lis[]es dans l
 'am[]ee, les mod[]eles
  []
 
 
+<<<<<<< HEAD
 Underfull \hbox (badness 7238) in paragraph at lines 95--95
+=======
+Underfull \hbox (badness 7238) in paragraph at lines 96--96
+>>>>>>> 8189d3263080005542b8491d77e55cb78fbfcdb6
 \OT1/pnc/m/n/12 roue []a centre de
  []
 
 
+<<<<<<< HEAD
 Underfull \hbox (badness 1043) in paragraph at lines 97--97
+=======
+Underfull \hbox (badness 1043) in paragraph at lines 98--98
+>>>>>>> 8189d3263080005542b8491d77e55cb78fbfcdb6
 []|\OT1/pnc/m/n/12 largeure (centre de
  []
 
 
+<<<<<<< HEAD
 Underfull \hbox (badness 7238) in paragraph at lines 97--97
+=======
+Underfull \hbox (badness 7238) in paragraph at lines 98--98
+>>>>>>> 8189d3263080005542b8491d77e55cb78fbfcdb6
 \OT1/pnc/m/n/12 roue []a centre de
  []
 
 
+<<<<<<< HEAD
 Overfull \hbox (5.2879pt too wide) in paragraph at lines 99--100
+=======
+Overfull \hbox (5.2879pt too wide) in paragraph at lines 100--101
+>>>>>>> 8189d3263080005542b8491d77e55cb78fbfcdb6
 []|[]| 
  []
 
 
+<<<<<<< HEAD
 Underfull \hbox (badness 1939) in paragraph at lines 101--101
+=======
+Underfull \hbox (badness 1939) in paragraph at lines 102--102
+>>>>>>> 8189d3263080005542b8491d77e55cb78fbfcdb6
 []|\OT1/pnc/m/n/12 Courant min (roue
  []
 
 
+<<<<<<< HEAD
 Underfull \hbox (badness 1038) in paragraph at lines 102--102
+=======
+Underfull \hbox (badness 1038) in paragraph at lines 103--103
+>>>>>>> 8189d3263080005542b8491d77e55cb78fbfcdb6
 []|\OT1/pnc/m/n/12 Courant max (roue
  []
 
 
+<<<<<<< HEAD
 Overfull \hbox (5.93494pt too wide) in paragraph at lines 91--111
+=======
+Overfull \hbox (5.93494pt too wide) in paragraph at lines 92--112
+>>>>>>> 8189d3263080005542b8491d77e55cb78fbfcdb6
  [] 
  []
 
 [6
 
 ] [7]
+<<<<<<< HEAD
 Overfull \hbox (10.11223pt too wide) in paragraph at lines 137--148
+=======
+Overfull \hbox (10.11223pt too wide) in paragraph at lines 138--149
+>>>>>>> 8189d3263080005542b8491d77e55cb78fbfcdb6
 \OT1/pnc/m/n/12 tard (voir : http ://en.wikipedia.org/wiki/Ackermann[]steering[
 ]geometry
  []
@@ -726,6 +868,7 @@ Overfull \hbox (10.11223pt too wide) in paragraph at lines 137--148
 File: figures/ServoPwm.pdf Graphic file (type pdf)
 
 <use figures/ServoPwm.pdf>
+<<<<<<< HEAD
 Package pdftex.def Info: figures/ServoPwm.pdf used on input line 159.
 (pdftex.def)             Requested size: 378.42174pt x 151.37692pt.
  [9 <./figures/ServoPwm.pdf>]
@@ -735,6 +878,18 @@ File: lstlang1.sty 2004/09/05 1.3 listings language file
 LaTeX Font Info:    Try loading font information for OML+pnc on input line 2.
 
 (/usr/share/texmf/tex/latex/psnfss/omlpnc.fd
+=======
+Package pdftex.def Info: figures/ServoPwm.pdf used on input line 160.
+(pdftex.def)             Requested size: 378.42174pt x 151.37692pt.
+ [9 <C:/Users/Sven/Documents/GitHub/tm/figures/ServoPwm.pdf>]
+(C:\Users\Sven\AppData\Roaming\MiKTeX\2.9\tex\latex\listings\lstlang1.sty
+File: lstlang1.sty 2004/09/05 1.3 listings language file
+)
+(C:\Users\Sven\Documents\GitHub\tm\code/ServoExample.java
+LaTeX Font Info:    Try loading font information for OML+pnc on input line 2.
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\psnfss\omlpnc.fd"
+>>>>>>> 8189d3263080005542b8491d77e55cb78fbfcdb6
 File: omlpnc.fd 
 )
 LaTeX Font Info:    Font shape `OML/pnc/m/it' in size <12> not available
@@ -757,7 +912,11 @@ Overfull \hbox (17.58229pt too wide) in paragraph at lines 11--13
  []
 
 LaTeX Font Info:    Try loading font information for OMS+pnc on input line 14.
+<<<<<<< HEAD
 (/usr/share/texmf/tex/latex/psnfss/omspnc.fd
+=======
+("C:\Program Files\MiKTeX 2.9\tex\latex\psnfss\omspnc.fd"
+>>>>>>> 8189d3263080005542b8491d77e55cb78fbfcdb6
 File: omspnc.fd 
 )
 LaTeX Font Info:    Font shape `OMS/pnc/m/n' in size <12> not available
@@ -803,16 +962,25 @@ Overfull \hbox (154.38368pt too wide) in paragraph at lines 28--29
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
+<<<<<<< HEAD
 ) [11] <figures/H-bridge.pdf, id=52, 297.49544pt x 144.53197pt>
 File: figures/H-bridge.pdf Graphic file (type pdf)
 
 <use figures/H-bridge.pdf>
 Package pdftex.def Info: figures/H-bridge.pdf used on input line 234.
+=======
+) [11] <figures/H-bridge.pdf, id=51, 297.49544pt x 144.53197pt>
+File: figures/H-bridge.pdf Graphic file (type pdf)
+
+<use figures/H-bridge.pdf>
+Package pdftex.def Info: figures/H-bridge.pdf used on input line 235.
+>>>>>>> 8189d3263080005542b8491d77e55cb78fbfcdb6
 (pdftex.def)             Requested size: 378.42174pt x 183.86229pt.
  [12]
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
+<<<<<<< HEAD
 [13 <./figures/H-bridge.pdf>]
 <figures/l293d.jpg, id=64, 371.3875pt x 351.3125pt>
 File: figures/l293d.jpg Graphic file (type jpg)
@@ -868,10 +1036,51 @@ se pro-gramme
 
 [18]
 Overfull \hbox (4.34912pt too wide) in paragraph at lines 342--343
+=======
+[13 <C:/Users/Sven/Documents/GitHub/tm/figures/H-bridge.pdf>]
+(C:\Users\Sven\Documents\GitHub\tm\code/motor.java
+Overfull \hbox (75.18288pt too wide) in paragraph at lines 9--11
+[][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+[14]
+Overfull \hbox (139.98354pt too wide) in paragraph at lines 18--20
+[][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+[15]
+Overfull \hbox (39.18251pt too wide) in paragraph at lines 38--39
+[][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (139.98354pt too wide) in paragraph at lines 56--57
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (82.38295pt too wide) in paragraph at lines 57--58
+[][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (139.98354pt too wide) in paragraph at lines 63--64
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (89.58302pt too wide) in paragraph at lines 64--65
+[][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+[16]) [17]
+Overfull \hbox (4.34912pt too wide) in paragraph at lines 317--318
+>>>>>>> 8189d3263080005542b8491d77e55cb78fbfcdb6
 []\OT1/pnc/m/n/12 Sortie au-dio st[]er[]eo Jack (3.5mm) (le son passe aussi par
  le HDMI
  []
 
+<<<<<<< HEAD
 [19] (./rendu_final.bbl [20]) 
 AED: lastpage setting LastPage
 [21] (./rendu_final.aux) ) 
@@ -898,6 +1107,35 @@ Output written on rendu_final.pdf (21 pages, 246372 bytes).
 PDF statistics:
  136 PDF objects out of 1000 (max. 8388607)
  94 compressed objects within 1 object stream
+=======
+[18] [19] (C:\Users\Sven\Documents\GitHub\tm\rendu_final.bbl)
+
+AED: lastpage setting LastPage
+[20] (C:\Users\Sven\Documents\GitHub\tm\rendu_final.aux) ) 
+Here is how much of TeX's memory you used:
+ 5541 strings out of 494045
+ 72105 string characters out of 3148391
+ 174051 words of memory out of 3000000
+ 8723 multiletter control sequences out of 15000+200000
+ 23127 words of font info for 57 fonts, out of 3000000 for 9000
+ 715 hyphenation exceptions out of 8191
+ 36i,11n,45p,760b,1864s stack positions out of 5000i,500n,10000p,200000b,50000s
+{C:/Program Files/MiK
+TeX 2.9/fonts/enc/dvips/fontname/8r.enc}<C:/Program Files/MiKTeX 2.9/fonts/type
+1/public/amsfonts/cm/cmbx12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public
+/amsfonts/cm/cmcsc10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfon
+ts/cm/cmmi12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cm
+r10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><
+C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Progr
+am Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Program Files/
+MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:/Program Files/MiKTeX 2
+.9/fonts/type1/urw/ncntrsbk/uncb8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1
+/urw/ncntrsbk/uncr8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/ncntrsbk/
+uncri8a.pfb>
+Output written on rendu_final.pdf (20 pages, 196786 bytes).
+PDF statistics:
+ 123 PDF objects out of 1000 (max. 8388607)
+>>>>>>> 8189d3263080005542b8491d77e55cb78fbfcdb6
  0 named destinations out of 1000 (max. 500000)
  16 words of extra memory for PDF output out of 10000 (max. 10000000)
 

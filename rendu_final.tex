@@ -1,9 +1,12 @@
 \documentclass[a4paper,12pt]{article}
 \usepackage[french]{babel}
 \usepackage{graphicx}
+\graphicspath{{figures/}}
 \usepackage{array}
+\usepackage{listings}
 \usepackage{amsmath}
 \usepackage{multicol}%plusierus colones
+\usepackage{multirow}
 \usepackage{fancyheadings} %%%%logo
 \renewcommand{\baselinestretch}{1.5}%%%%interligne
 \usepackage{fancyhdr} %%%%%%en-tête
@@ -46,12 +49,21 @@
 
 \date{\today}
 \maketitle
+<<<<<<< HEAD
 %% \begin{center}
 %% \begin{figure}[h!]
 %% \caption{UGV, \small Image de couverture}
 %% \includegraphics[scale=0.5]{photo_titre.JPG}
 %% \end{figure}
 %% \end{center}
+=======
+\begin{center}
+\begin{figure}[h!]
+\caption{UGV, \small Image de couverture}
+%\includegraphics[scale=0.5]{}
+\end{figure}
+\end{center}
+>>>>>>> 8189d3263080005542b8491d77e55cb78fbfcdb6
 
 \clearpage
 \part{}
@@ -325,7 +337,7 @@ Pour réaliser ce projet, nous avons dû faire des choix au niveau du hardware. 
 
 
 \subsection{Arduino}
-L'arduino est un microcontrolleur \textit{Open Source}, ce qui veut dire que tout le monde peut non seulement avoir accès aux plans et aux codes, mais peut aussi les modifier. Ce microcontrolleur se programme avec un language proche du C. 
+L'Arduino \cite{Arduino} est un microcontrolleur \textit{Open Source}, ce qui veut dire que tout le monde peut non seulement avoir accès aux plans et aux codes, mais peut aussi les modifier. Ce microcontrolleur se programme avec un language proche du C. 
 
 
 \subsubsection{Choix du type d'Arduino}
@@ -333,7 +345,7 @@ L'arduino est un microcontrolleur \textit{Open Source}, ce qui veut dire que tou
 
 
 \subsection{Raspberry Pi}
-Le Raspberry Pi est un ordinateur de la taille d'une carte de crédit sur lequel on peut installer différents systèmes d'exploitations dérivés de UNIX/Linux. Le Raspberry Pi est acheté nu, c'est-à-dire que cet ordinateur ne possède pas d'écran, ni de clavier ou de souris, néanmoins le Raspberry Pi possède plusieurs ports où on peut brancher écran (via l'interface HDMI ou Composite), un câble Ethernet et presque ce qu'on veut grâce aux deux ports USB. Le Raspberry Pi est très interressant non pas du point de vue de sa puissance calculatoire, mais du point de vue rapport qualité-prix. En effet, pour trente-cinq francs, il a les caractéristiques suivantes: 
+Le Raspberry Pi\cite{RaspberryPiCaracteristiques} est un ordinateur de la taille d'une carte de crédit sur lequel on peut installer différents systèmes d'exploitations dérivés de UNIX/Linux. Le Raspberry Pi est acheté nu, c'est-à-dire que cet ordinateur ne possède pas d'écran, ni de clavier ou de souris, néanmoins le Raspberry Pi possède plusieurs ports où on peut brancher écran (via l'interface HDMI ou Composite), un câble Ethernet et presque ce qu'on veut grâce aux deux ports USB. Le Raspberry Pi est très interressant non pas du point de vue de sa puissance calculatoire, mais du point de vue rapport qualité-prix. En effet, pour trente-cinq francs, il a les caractéristiques suivantes: 
 \begin{enumerate}
 \item poid de 45g environ
 \item Processeur ARM1176JZF-S (ARMv6) 700MHz Broadcom 2835
