@@ -70,8 +70,11 @@ Ce projet n'aurait pu aboutir sans l'aide de nombreuses personnes. Voici l'occas
 \begin{abstract}
 Chaque chapitre de ce dossier traite d'une partie du drone, le premier expliquera la mécanique et l'éléctronique du véhicule, le deuxième chapitre traitera le \textit{Hardware} nécessaire au bon fonctionnement de l'UGV ainsi que son fonctionnement. Le troisième chapitre parlera du \textit{Software} utilisé dans le \textit{Hardware} et le denier chapitre concernera [à venir]
 \end{abstract}
+\clearpage
 \tableofcontents
+\clearpage
 \listoffigures
+\clearpage
 \listoftables 
 \clearpage
 
@@ -84,26 +87,26 @@ Le but de ce projet était de construire un véhicule roulant que l'on peut comm
 
 
 \section{Description du v\'ehicule \label{TableDesc}}
-La voiture sur laquelle nous nous basons est un model r\'eduit
-t\'el\'ecomand\'e de type 4x4. Le tableau suivant est un inventaire de 
-ses caractéristiques en son \'etat actuel:
+La voiture sur laquelle nous nous basons est un modèlel r\'eduit
+t\'el\'ecommand\'e de type 4x4. Le tableau suivant est un inventaire de 
+ses caractéristiques dans son \'etat actuel:
 
 \begin{center}
   \begin{tabular}{|p{4cm}|p{4cm}|c|}
     \hline
     \multirow{5}{*}{Grandeurs}
-    &longueure & 35 cm \\ \cline{2-3}
-    &longueure (centre de roue \`a centre de roue)& 17 cm \\ \cline{2-3}
-    &largeure & 22 cm \\ \cline{2-3}
-    &largeure (centre de roue \`a centre de roue) & 17 cm \\ \cline{2-3}
-    & hauteur au sol & 4 cm\\ \hline
+    &Longueur & 35 cm \\ \cline{2-3}
+    &Longueur (centre de roue \`a centre de roue)& 17 cm \\ \cline{2-3}
+    &Largeur & 22 cm \\ \cline{2-3}
+    &Largeur (centre de roue \`a centre de roue) & 17 cm \\ \cline{2-3}
+    & Hauteur au sol & 4 cm\\ \hline
     \multirow{3}{*}{Moteur de propulsion}
     & Voltage de marche & \~{}5V - \~{}10V  \\ \cline{2-3}
     & Courant min (roue libre) & \~{}2A \\ \cline{2-3}
     & Courant max (roue bloqu\'ee) & \~{}3A \\ \hline
     \multirow{5}{*}{Servo de guidage}
     & Fabriquant & Corona \\ \cline{2 - 3}
-    & Model & Metal gear DS558HV\\ \cline{2-3}
+    & Modèle & Metal gear DS558HV\\ \cline{2-3}
     & Voltage de marche & \~{}6V - \~{}7.4V  \\ \cline{2-3}
     & Courant & 300mA - 400mA \\ \cline{2-3}
     & Charge maximale & 12kg - 14kg \\  
@@ -111,47 +114,47 @@ ses caractéristiques en son \'etat actuel:
 	\end{tabular}
 \end{center}
 
-\subsection{System directionel initial}
+\subsection{Système directionel initial}
 Dans son \'etat initial, le syst\`eme de guidage pouvait se comparer \`a un
 servo tr\`es rudimentaire. Il en comptait toutes les caractéristiques, mais en
 un état simplifié, en particulier le système de positionnement. Dans un servo
-classique, il s'agit d'un potentiomètre (variateur de résistance) qui permet
+classique, il s'agit d'un potentiomètre (résistance variable) qui permet
 de savoir en tout moment la position de la corne. Par contre, dans le cas de
 la voiture, un système de balais (voir image) assure cette tâche. Il en
-résulte une identification de position très basique: gauche, droit ou
+résulte une identification de position très basique: gauche, tout droit ou
 droite.\\
 (ins\'erer images)\\
-Sachant que nous avons retir\'e l\'electronique de la voiture, il nous restait
+Sachant que nous avons retir\'e l'\'electronique de la voiture, il nous restait
 deux possibilit\'es: utiliser le syst\`eme de guidage rudimentaire, mais
-d\'ej\`a en place ou tout remplacer avec un servo conventionel.\\
+d\'ej\`a en place ou tout remplacer avec un servo plus conventionel.\\
 Apr\`es beaucoup de temps perdu \`a tenter de contr\^oler le guidage de base
-avec notre \'electronique import\'ee, on d\'ecide de passer \`a un servo. On
-ach\`ete un puissant servo de haute qualit\'e chez une connaissance qui en
+avec notre \'electronique import\'ee, nous avons d\'ecidé de passer \`a un servo. Nous avons
+ach\`eté un puissant servo de haute qualit\'e chez une connaissance qui en
 avait command\'e un gros lot pour la modique somme de 10.- CHF.
 
-\subsection{Remplacement du System de guidage}
+\subsection{Remplacement du Système de guidage}
 Une instalation fiable d'un objet \'etranger dans un ensemble usin\'e tel la
-voiture n'est pas t\^ache facile. Il fallait pourtant que le r\'esultat final
-soit solide, si l'on voulait compter dessus. C'est pour cela que nous avons
-cr\'e\'e une base en contreplaqu\'e pour y loger le Servo.
+voiture n'est pas une t\^ache facile. Il fallait pourtant que le r\'esultat final
+soit solide, si l'on voulait pouvoir compter dessus. C'est pour cela que nous avons
+cr\'e\'e une base en contreplaqu\'e pour y loger le servo.
 
 Ce montage permet de retirer le servo en cas de besoin, donc de pouvoir le
-remplacer. En effet, la plaque sup\'erieure est fix\'ee au moyen de vices \`a
+remplacer. En effet, la plaque sup\'erieure est fix\'ee au moyen de vis \`a
 bois. Le servo est accompagn\'e, dans son logement, d'un morceau de gomme
 adh\'erante (morceau de chambre \`a air). La structure \'epouse les formes de
 la voiture pour un maximum de rigidit\'e. La transmission de la force aux
-roues se fait par l'interm\'ediare d'une tige de m\'etal. Celle-ci, est
-fix\'ee \`a la corne du servo et \`a une boucle soud\'ee \`a l'ancien axe de
+roues se fait par l'interm\'ediare d'une tige métallique. Celle-ci est
+fix\'ee \`a la corne du servo et possède une boucle soud\'ee \`a l'ancien axe de
 transmission. Nous utilisons justement l'ancien axe de transmission pour une
-raison d\'evelop\'ee plus tard (voir :
+raison d\'evelop\'ee plus tard.\footnote{voir :
 http://en.wikipedia.org/wiki/Ackermann\_steering\_geometry sur
-``Ackerman steering'').
+``Ackerman steering''}
 
-\subsection{contr\^ole du servo}
+\subsection{Contr\^ole du servo}
 Le contr\^ole d'un servo est un devoir qu'un microcontr\^oleur tel que
-l'arduino effectue avec aise. On peut indiquer \`a un servo de se rendre vers
+l'arduino effectue avec aisance. On peut indiquer \`a un servo de se rendre vers
 un de ses $180^{\circ}$ de libert\'e en lui envoyant un signal \'electrique dit
-modul\'e. Ce signal est modul\'e d'une mani\`ere comprh\'ensible pour le
+modul\'e. Ce signal est modul\'e d'une mani\`ere compréh\'ensible pour le
 servo. L'illustration suivante
 pourrait d'avantage \'eclairer le lecteur:
 
@@ -168,7 +171,7 @@ Comme l'on peut voir, le dit signal, est form\'e de hauts et de
 bas. Lorsqu'il est ``bas'', cela veut dire que la tension est basse ou \'egale
 \`a 0V. Lorsqu'il est
 ``haut'', cela veut dire que la tension est a une valeure d\'efinie auparavant,
-standard, diff\'erente de 0V. Dans notre cas, ``haut'' est \`a 5V (standard
+standard, diff\'erente de 0V. Dans notre cas, le ``haut'' est \`a 5V (standard
 pour le mod\'elisme et l'\'electronique en g\'en\'eral). On appelle la
 p\'eriode pendant laquelle le signal est ``haut'' une pulsation.
 
@@ -190,11 +193,11 @@ Les commentaires sont en anglais, mais le code sera expliqu\'e tout de suite:
 
 \textbf{Commentaires:}
 
-On commence par inclure la class Servo, puis on cr\'ee un objet
-\emph{Servo}. Dans la partie emph{setup} du programme, on lie l'objet
-\emph{myservo} au pin 9 de l'arduino. Ensuite, dans la partie \emph{loop}, on
+On commence par inclure la classe Servo, puis on cr\'ee un objet
+\emph{Servo}. Dans la fonction \emph{setup} du programme, on lie l'objet
+\emph{myservo} au pin 9 de l'arduino. Ensuite, dans la fonction \emph{loop}, on
 fait varier la position du servo gr\^ace \`a la m\'ethode \emph{write}. Un
-d\'elai(le programme s'arr\^ete en ce point) de 15ms pour permettre au servo
+d\'elai (le programme s'arr\^ete en ce point) de 15ms pour permettre au servo
 d'atteindre la position demand\'ee. Etant donn\'e que cette op\'eration est
 itt\'er\'ee plusieurs fois au moyen d'une boucle \emph{for}, on pourra voir le
 servo d\'ecrire un mouvement de balayage.
@@ -205,20 +208,20 @@ D'ailleur, ce programme est tr\`es pratique pour tester le fonctionement d'un se
 
 \subsection{Descriptif}
 
-Le moteur de propulsion, au contraire du servo, est l'original de la
-voiture. Ses caract\'eristiques \'electriques (donn\'ees que nous avon mesur\'e \`a l'aide
+Le moteur de propulsion, au contraire du servo, n'a pas été changé.
+ Ses caract\'eristiques \'electriques (donn\'ees que nous avon mesur\'e \`a l'aide
 d'un multim\`etre du gymnase) se trouvent \`a la section
 (\ref{TableDesc}). Le moteur est muni d'une boite \`a vitesse ainsi qu'un
 diff\'erentiel. Nous avons estim\'e qu'il aurait \'et\'e
-inutilement compliqu\'e d'y apporter quelques modifications qu'ils soient. La
+inutilement compliqu\'e d'y apporter des modifications. La
 configuration d\'ej\`a existente, \`a l'exception de l'\'electronique,
 subvient tout \`a fait \`a nos besoins.  
 
 \subsection{H-bridge}
 Faire tourner l'axe d'un moteur \'electrique pose peu de probl\`emes. Il
-suffit de connecter l'un des p\^oles \`a la tention positive et l'autre \`a la
+suffit de connecter l'un des p\^oles \`a la tention positive et l'autre \`a la tension
 n\'egative. Ceci fera tourner l'axe du moteur dans un sens. Si vous souhaitez le
-faire tourner dans le sens inverse, il suffit d'\'echanger les fils
+faire tourner dans le sens inverse, il vous suffira d'\'echanger les fils
 \'electriques aux p\^oles du moteur.
 
 Le probl\`eme suivant se pose alors: comment inverser le sens de marche du
@@ -246,14 +249,13 @@ diff\'erents (en grande partie pour clarifier le sch\'ema), mais l'on pourrait
 tr\`es bien utiliser uniquement des transistors du m\^eme type. On obtiendrait
 le m\^eme r\'esultat en connectant les \emph{INPUT} \`a des transistors
 diagonalement oppos\'es\cite{RobotRoom}.
-%\footnote{Explications inspir\'ees par les informations
-%trouv\'ees sur le site suivant: http://www.robotroom.com/BipolarHBridge.html}
+
 
 On peut voir que selon le \emph{INPUT}, on obtiendra des tensions au bornes du
 moteur ou \emph{OUTPUT} variables.
 \subsection{Table de V\'erit\'e}
 R\'edigeons un tableau de v\'erit\'e pour mieux illustrer la situation, o\`u H
-(high) signifie haut et L (low) signifie bas :
+(\textit{high}) signifie haut et L (\textit{low}) signifie bas :
 
 \begin{table}[h]
 \begin{center}
@@ -278,7 +280,7 @@ ou dans l'autre.
 \end{table}
 
 \subsection{L293d}
-Nous avons d;cid; d'utiliser un H
+Nous avons décidé d'utiliser un H
 
 \subsection{Code}
 
@@ -286,7 +288,7 @@ Maintenant que nous avons compris le fonctionement d'un H-bridge, en
 particulier les cons\'equences d'\emph{INPUT} diff\'erents, on pourra cr\'eer
 un petit programme Arduino pour contr\^oler un moteur.
 
-Le code suivant a \'et\'e r\'edig\'e par Eric:
+Le code suivant a \'et\'e r\'edig\'e par nos soins:
 
 \lstinputlisting[language=Java]{code/motor.java}
 
