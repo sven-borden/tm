@@ -31,16 +31,13 @@
 \setlength{\textwidth}{13.3cm} % Largeur de la zone de texte (17cm)
 \setlength{\marginparsep}{7pt} % Séparation de la marge
 \setlength{\topmargin}{0cm} % Pas de marge en haut
-\setlength{\headheight}{13pt} % Haut de page
+\setlength{\headheight}{14.5pt} % Haut de page
 \setlength{\headsep}{10pt} % Entre le haut de page et le texte
 \setlength{\footskip}{3cm} % Bas de page + séparation
 %\setlength{\textheight}{708pt} % Hauteur de la zone de texte (25cm)
 \renewcommand{\baselinestretch}{1.5}
 
-
-
-
- \begin{document}
+\begin{document}
 
 
 {\fontfamily{pnc}\selectfont %%%% attention, ne pas oublier la dernière accolade en fin de texte!!!!
@@ -286,6 +283,7 @@ L293D. Pour commencer, une synthèse de la feuille de spécifications:
 Spécifications max:
 
 \begin{center}
+\begin{figure}[ht]
   \begin{tabular}{|c|c|}
     \hline
     $V_{logic}$ & $36V$\\
@@ -298,9 +296,11 @@ Spécifications max:
     \hline
     Température max & $70°$\\
     \hline
+   
   \end{tabular}
-  \caption{\label{l293dMax} Informations tirées des fiches téchniques publiées
-  par TI \cite{l293dDataSheet}}
+ \caption{\label{l293dMax} Informations tirées des fiches téchniques publiées
+      par TI \cite{l293dDataSheet}}
+  \end{figure}
 \end{center}
 
 
