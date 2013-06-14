@@ -2,23 +2,23 @@
 \contentsline {part}{I\hspace {1em}}{2}
 \contentsline {section}{\numberline {1}Avant-propos}{2}
 \contentsline {section}{\numberline {2}Remerciements}{3}
-\contentsline {section}{\numberline {3}Introduction}{6}
-\contentsline {part}{II\hspace {1em}La m\IeC {\'e}canique et l'\IeC {\'e}lectronique}{6}
-\contentsline {section}{\numberline {4}Description du v\'ehicule }{6}
-\contentsline {subsection}{\numberline {4.1}System directionel initial}{7}
-\contentsline {subsection}{\numberline {4.2}Remplacement du System de guidage}{8}
-\contentsline {subsection}{\numberline {4.3}contr\^ole du servo}{9}
-\contentsline {subsection}{\numberline {4.4}Programmation pour contr\^oler un servo}{10}
-\contentsline {section}{\numberline {5}Moteur de propulsion}{12}
-\contentsline {subsection}{\numberline {5.1}Descriptif}{12}
-\contentsline {subsection}{\numberline {5.2}H-bridge}{12}
-\contentsline {subsection}{\numberline {5.3}Table de V\'erit\'e}{13}
-\contentsline {subsection}{\numberline {5.4}L293d}{14}
-\contentsline {subsection}{\numberline {5.5}Code}{15}
-\contentsline {part}{III\hspace {1em}Hardware}{18}
-\contentsline {section}{\numberline {6}Choix du hardware}{18}
-\contentsline {subsection}{\numberline {6.1}Arduino}{18}
-\contentsline {subsubsection}{\numberline {6.1.1}Choix du type d'Arduino}{19}
-\contentsline {subsection}{\numberline {6.2}Raspberry Pi}{19}
-\contentsline {subsubsection}{\numberline {6.2.1}Choix de l'OS}{20}
-\contentsline {part}{IV\hspace {1em}Software}{20}
+\contentsline {section}{\numberline {3}Introduction}{9}
+\contentsline {part}{II\hspace {1em}La m\IeC {\'e}canique et l'\IeC {\'e}lectronique}{9}
+\contentsline {section}{\numberline {4}Description du v\'ehicule }{9}
+\contentsline {subsection}{\numberline {4.1}Syst\IeC {\`e}me directionel initial}{10}
+\contentsline {subsection}{\numberline {4.2}Remplacement du Syst\IeC {\`e}me de guidage}{11}
+\contentsline {subsection}{\numberline {4.3}Contr\^ole du servo}{12}
+\contentsline {subsection}{\numberline {4.4}Programmation pour contr\^oler un servo}{13}
+\contentsline {section}{\numberline {5}Moteur de propulsion}{15}
+\contentsline {subsection}{\numberline {5.1}Descriptif}{15}
+\contentsline {subsection}{\numberline {5.2}H-bridge}{15}
+\contentsline {subsection}{\numberline {5.3}Table de V\'erit\'e}{17}
+\contentsline {subsection}{\numberline {5.4}L293d}{17}
+\contentsline {subsection}{\numberline {5.5}Code}{17}
+\contentsline {part}{III\hspace {1em}Hardware}{21}
+\contentsline {section}{\numberline {6}Choix du hardware}{21}
+\contentsline {subsection}{\numberline {6.1}Arduino}{22}
+\contentsline {subsubsection}{\numberline {6.1.1}Choix du type d'Arduino}{22}
+\contentsline {subsection}{\numberline {6.2}Raspberry Pi}{22}
+\contentsline {subsubsection}{\numberline {6.2.1}Choix de l'OS}{23}
+\contentsline {part}{IV\hspace {1em}Software}{24}

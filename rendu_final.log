@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/TeX Live for SUSE Linux) (format=pdflatex 2013.4.22)  14 JUN 2013 17:41
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/TeX Live for SUSE Linux) (format=pdflatex 2013.4.22)  14 JUN 2013 17:59
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -635,99 +635,110 @@ Overfull \hbox (22.74498pt too wide) in paragraph at lines 64--65
 Le troisi[]eme
  []
 
-(./rendu_final.toc
+[4
+
+] (./rendu_final.toc
 LaTeX Font Info:    Font shape `OT1/pnc/bx/n' in size <14.4> not available
 (Font)              Font shape `OT1/pnc/b/n' tried instead on input line 2.
 LaTeX Font Info:    Font shape `OT1/pnc/bx/n' in size <12> not available
 (Font)              Font shape `OT1/pnc/b/n' tried instead on input line 3.
- [4
+ [5
 
 ])
 \tf@toc=\write3
 \openout3 = `rendu_final.toc'.
 
- (./rendu_final.lof)
+ [6] (./rendu_final.lof)
 \tf@lof=\write4
 \openout4 = `rendu_final.lof'.
 
- (./rendu_final.lot)
+ [7
+
+] (./rendu_final.lot)
 \tf@lot=\write5
 \openout5 = `rendu_final.lot'.
 
- [5]
-Overfull \hbox (14.85533pt too wide) in paragraph at lines 74--75
+
+[8
+
+]
+Overfull \hbox (14.85533pt too wide) in paragraph at lines 77--78
 \OT1/pnc/m/n/12 peut com-man-der []a dis-tance. Plus qu'une simple voi-ture t[]
 el[]ecommand[]ee,
  []
 
 
-Overfull \hbox (2.87639pt too wide) in paragraph at lines 74--75
+Overfull \hbox (2.87639pt too wide) in paragraph at lines 77--78
 \OT1/pnc/m/n/12 d'en-gins se nomment \OT1/pnc/m/it/12 UGV (Un-man-ned Ground Ve
 -hicle) \OT1/pnc/m/n/12 soit : v[]ehicule
  []
 
 
-Overfull \hbox (9.86346pt too wide) in paragraph at lines 74--75
+Overfull \hbox (9.86346pt too wide) in paragraph at lines 77--78
 \OT1/pnc/m/n/12 rou-lant com-mand[]e []a dis-tance. Sur-tout uti-lis[]es dans l
 'am[]ee, les mod[]eles
  []
 
 
-Underfull \hbox (badness 7238) in paragraph at lines 89--89
+Underfull \hbox (badness 7238) in paragraph at lines 92--92
 \OT1/pnc/m/n/12 roue []a centre de
  []
 
 
-Underfull \hbox (badness 1043) in paragraph at lines 91--91
-[]|\OT1/pnc/m/n/12 largeure (centre de
+Underfull \hbox (badness 1824) in paragraph at lines 94--94
+[]|\OT1/pnc/m/n/12 Largeur (centre de
  []
 
 
-Underfull \hbox (badness 7238) in paragraph at lines 91--91
+Underfull \hbox (badness 7238) in paragraph at lines 94--94
 \OT1/pnc/m/n/12 roue []a centre de
  []
 
 
-Overfull \hbox (5.2879pt too wide) in paragraph at lines 93--94
+Overfull \hbox (5.2879pt too wide) in paragraph at lines 96--97
 []|[]| 
  []
 
 
-Underfull \hbox (badness 1939) in paragraph at lines 95--95
+Underfull \hbox (badness 1939) in paragraph at lines 98--98
 []|\OT1/pnc/m/n/12 Courant min (roue
  []
 
 
-Underfull \hbox (badness 1038) in paragraph at lines 96--96
+Underfull \hbox (badness 1038) in paragraph at lines 99--99
 []|\OT1/pnc/m/n/12 Courant max (roue
  []
 
 
-Overfull \hbox (5.93494pt too wide) in paragraph at lines 85--105
+Overfull \hbox (5.93494pt too wide) in paragraph at lines 88--108
  [] 
  []
 
-[6
+[9
 
-] [7]
-Overfull \hbox (10.11223pt too wide) in paragraph at lines 131--142
-\OT1/pnc/m/n/12 tard (voir : http ://en.wikipedia.org/wiki/Ackermann[]steering[
-]geometry
+]
+Overfull \hbox (2.42332pt too wide) in paragraph at lines 111--127
+\OT1/pnc/m/n/12 ment. Dans un servo clas-sique, il s'agit d'un po-ten-tiom[]etr
+e (r[]esistance
  []
 
-[8] <figures/ServoPwm.pdf, id=34, 501.875pt x 200.75pt>
-File: figures/ServoPwm.pdf Graphic file (type pdf)
+[10] [11]
+Overfull \hbox (26.26718pt too wide) in paragraph at lines 147--153
+[]\OT1/pnc/m/n/12 electrique dit mo-dul[]e. Ce si-gnal est mo-dul[]e d'une mani
+[]ere compr[]eh[]ensible
+ []
 
-<use figures/ServoPwm.pdf>
-Package pdftex.def Info: figures/ServoPwm.pdf used on input line 153.
+<figures/ServoPwm.pdf, id=43, 501.875pt x 200.75pt>
+File: figures/ServoPwm.pdf Graphic file (type pdf)
+ <use figures/ServoPwm.pdf>
+Package pdftex.def Info: figures/ServoPwm.pdf used on input line 156.
 (pdftex.def)             Requested size: 378.42174pt x 151.37692pt.
- [9 <./figures/ServoPwm.pdf>]
-(/usr/share/texmf/tex/latex/listings/lstlang1.sty
+
+[12 <./figures/ServoPwm.pdf>] (/usr/share/texmf/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2004/09/05 1.3 listings language file
 ) (./code/ServoExample.java
 LaTeX Font Info:    Try loading font information for OML+pnc on input line 2.
-
-(/usr/share/texmf/tex/latex/psnfss/omlpnc.fd
+ (/usr/share/texmf/tex/latex/psnfss/omlpnc.fd
 File: omlpnc.fd 
 )
 LaTeX Font Info:    Font shape `OML/pnc/m/it' in size <12> not available
@@ -749,8 +760,9 @@ Overfull \hbox (17.58229pt too wide) in paragraph at lines 11--13
 [][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
+[13]
 LaTeX Font Info:    Try loading font information for OMS+pnc on input line 14.
-(/usr/share/texmf/tex/latex/psnfss/omspnc.fd
+ (/usr/share/texmf/tex/latex/psnfss/omspnc.fd
 File: omspnc.fd 
 )
 LaTeX Font Info:    Font shape `OMS/pnc/m/n' in size <12> not available
@@ -760,7 +772,7 @@ Overfull \hbox (139.98354pt too wide) in paragraph at lines 15--16
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
-[10]
+
 Overfull \hbox (154.38368pt too wide) in paragraph at lines 21--22
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
 ] 
@@ -796,44 +808,58 @@ Overfull \hbox (154.38368pt too wide) in paragraph at lines 28--29
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
-) [11] <figures/H-bridge.pdf, id=52, 297.49544pt x 144.53197pt>
+) [14]
+Overfull \hbox (1.99765pt too wide) in paragraph at lines 204--212
+[]\OT1/pnc/m/n/12 Le mo-teur de pro-pul-sion, au contraire du servo, n'a pas []
+et[]e chang[]e.
+ []
+
+
+Overfull \hbox (39.67168pt too wide) in paragraph at lines 204--212
+\OT1/pnc/m/n/12 mo-di-fi-ca-tions. La confi-gu-ra-tion d[]ej[]a exis-tente, []a
+ l'ex-cep-tion de l'[]electronique,
+ []
+
+[15] <figures/H-bridge.pdf, id=66, 297.49544pt x 144.53197pt>
 File: figures/H-bridge.pdf Graphic file (type pdf)
 
 <use figures/H-bridge.pdf>
-Package pdftex.def Info: figures/H-bridge.pdf used on input line 228.
+Package pdftex.def Info: figures/H-bridge.pdf used on input line 231.
 (pdftex.def)             Requested size: 378.42174pt x 183.86229pt.
- [12]
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[13 <./figures/H-bridge.pdf>]
-<figures/l293d.jpg, id=64, 371.3875pt x 351.3125pt>
+ [16 <./figures/H-bridge.pdf>]
+<figures/l293d.jpg, id=74, 371.3875pt x 351.3125pt>
 File: figures/l293d.jpg Graphic file (type jpg)
  <use figures/l293d.jpg>
-Package pdftex.def Info: figures/l293d.jpg used on input line 278.
+Package pdftex.def Info: figures/l293d.jpg used on input line 281.
 (pdftex.def)             Requested size: 189.21086pt x 178.98474pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
 Package frenchb.ldf Warning: Degrees would look better in TS1-encoding: 
 (frenchb.ldf)                add \usepackage{textcomp} to the preamble. 
-(frenchb.ldf)                Degrees used on input line 295.
+(frenchb.ldf)                Degrees used on input line 299.
 
-[14 <./figures/l293d.jpg>] (./code/motor.java
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[17] (./code/motor.java
 Overfull \hbox (75.18288pt too wide) in paragraph at lines 9--11
 [][][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
-[15]
+[18 <./figures/l293d.jpg>]
 Overfull \hbox (139.98354pt too wide) in paragraph at lines 18--20
 [][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
-
+[19]
 Overfull \hbox (39.18251pt too wide) in paragraph at lines 38--39
 [][][][][][][][][][][][][][][][][][][][][] 
  []
 
-[16]
+
 Overfull \hbox (139.98354pt too wide) in paragraph at lines 56--57
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
@@ -848,43 +874,47 @@ Overfull \hbox (139.98354pt too wide) in paragraph at lines 63--64
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
-
+[20]
 Overfull \hbox (89.58302pt too wide) in paragraph at lines 64--65
 [][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
-[17]) [18]
-Overfull \hbox (4.34912pt too wide) in paragraph at lines 341--342
+) [21]
+Overfull \hbox (4.34912pt too wide) in paragraph at lines 345--346
 []\OT1/pnc/m/n/12 Sortie au-dio st[]er[]eo Jack (3.5mm) (le son passe aussi par
  le HDMI
  []
 
-[19] (./rendu_final.bbl [20]) 
+[22] [23] (./rendu_final.bbl) 
 AED: lastpage setting LastPage
-[21] (./rendu_final.aux) ) 
+[24] (./rendu_final.aux)
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+ ) 
 Here is how much of TeX's memory you used:
  5920 strings out of 493607
  76745 string characters out of 3149945
- 182048 words of memory out of 3500000
+ 182254 words of memory out of 3500000
  9089 multiletter control sequences out of 15000+200000
  22827 words of font info for 56 fonts, out of 3000000 for 9000
  831 hyphenation exceptions out of 8191
- 38i,11n,45p,760b,1864s stack positions out of 5000i,500n,10000p,200000b,50000s
-{/usr/share/texmf/fonts/enc/dvips/base/8r.enc}</usr/s
-hare/texmf/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texmf/fonts/ty
-pe1/public/amsfonts/cm/cmcsc10.pfb></usr/share/texmf/fonts/type1/public/amsfont
-s/cm/cmmi12.pfb></usr/share/texmf/fonts/type1/public/amsfonts/cm/cmmi8.pfb></us
-r/share/texmf/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texmf/fonts/
-type1/public/amsfonts/cm/cmr12.pfb></usr/share/texmf/fonts/type1/public/amsfont
-s/cm/cmr8.pfb></usr/share/texmf/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr
-/share/texmf/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texmf/fonts/t
-ype1/public/amsfonts/cm/cmti12.pfb></usr/share/texmf/fonts/type1/urw/ncntrsbk/u
-ncb8a.pfb></usr/share/texmf/fonts/type1/urw/ncntrsbk/uncr8a.pfb></usr/share/tex
-mf/fonts/type1/urw/ncntrsbk/uncri8a.pfb>
-Output written on rendu_final.pdf (21 pages, 247670 bytes).
+ 38i,11n,45p,760b,1862s stack positions out of 5000i,500n,10000p,200000b,50000s
+{/usr/share/texmf/fonts/enc/dvips/base/8r.enc}</usr/share/texmf/fonts/type1/p
+ublic/amsfonts/cm/cmbx12.pfb></usr/share/texmf/fonts/type1/public/amsfonts/cm/c
+mcsc10.pfb></usr/share/texmf/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/sh
+are/texmf/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texmf/fonts/type
+1/public/amsfonts/cm/cmr10.pfb></usr/share/texmf/fonts/type1/public/amsfonts/cm
+/cmr12.pfb></usr/share/texmf/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/shar
+e/texmf/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf/fonts/type1
+/public/amsfonts/cm/cmsy8.pfb></usr/share/texmf/fonts/type1/public/amsfonts/cm/
+cmti12.pfb></usr/share/texmf/fonts/type1/urw/ncntrsbk/uncb8a.pfb></usr/share/te
+xmf/fonts/type1/urw/ncntrsbk/uncr8a.pfb></usr/share/texmf/fonts/type1/urw/ncntr
+sbk/uncri8a.pfb>
+Output written on rendu_final.pdf (24 pages, 250629 bytes).
 PDF statistics:
- 136 PDF objects out of 1000 (max. 8388607)
- 94 compressed objects within 1 object stream
+ 145 PDF objects out of 1000 (max. 8388607)
+ 100 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  16 words of extra memory for PDF output out of 10000 (max. 10000000)
 
