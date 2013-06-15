@@ -40,50 +40,58 @@
 \begin{document}
 
 
-%{\fontfamily{pnc}\selectfont %%%% attention, ne pas oublier la dernière accolade en fin de texte!!!!
-\title{UGV bon marché}
+{\fontfamily{pnc}\selectfont %%%% attention, ne pas oublier la dernière accolade en fin de texte!!!!
+\title{UGV (Unmanned Ground Vehicle)}
 \author{Sven Borden\\ \small Travail de maturité \and  Eric Brunner\\ \small Gymnase de Morges}
-
 \date{\today}
 \maketitle
 
-\clearpage
-\part{}
+\begin{centering}
+\includegraphics[width=1.0\textwidth]{figures/DSC_8469res}
+\end{centering}
 
-\section{Avant-propos}
+
+\clearpage
+
+
+\section*{Avant-propos}
+\addcontentsline{toc}{section}{\protect\numberline{}Avant-propos}
 
 Ce dossier est le résultat de onze mois de recherches éffectuées dans le cadre du travail de maturité du gymnase de Morges. Ayant déjà quelques notions en informatiques, nous nous sommes redirigés  vers un domaine parrallèle, la robotique. Le choix de ce sujet est issu de...
 
 \clearpage
 
-\section{Remerciements}
+\section*{Remerciements}
+\addcontentsline{toc}{section}{\protect\numberline{}Remerciements}
 Ce projet n'aurait pu aboutir sans l'aide de nombreuses personnes. Voici l'occasion de les remercier: Mr. Denis Rochat et Mr. Phillipe Rochat pour leur disponibilité, leurs renseignements ainsi que les prêts matériels. Mr. Frederic Genevey ainsi que son site edurobot.ch pour avoir promouvu notre projet sur son site internet. Mme Pauline Pidoux pour nous avoir aidé lors de la rédaction de ce travail et nous tenions aussi à remercier Stefano Varricchio, du Laboratoire LIS pour ses informations très utiles.
 
 \clearpage
 \begin{abstract}
 Chaque chapitre de ce dossier traite d'une partie du drone, le premier expliquera la mécanique et l'éléctronique du véhicule, le deuxième chapitre traitera le \textit{Hardware} nécessaire au bon fonctionnement de l'UGV ainsi que son fonctionnement. Le troisième chapitre parlera du \textit{Software} utilisé dans le \textit{Hardware} et le denier chapitre concernera [à venir]
 \end{abstract}
+\addcontentsline{toc}{section}{\protect\numberline{}Résumé}
 \clearpage
 \tableofcontents
 \clearpage
 \listoffigures
-\clearpage
+%\clearpage
 \listoftables 
 \clearpage
 
 
 
-\section{Introduction}
+\section*{Introduction}
+\addcontentsline{toc}{section}{\protect\numberline{}Introduction}
 Le but de ce projet était de construire un véhicule roulant que l'on peut commander à distance. Plus qu'une simple voiture télécommandée, ce drone est capable d'être contrôlé sans avoir une vue directe sur celui-ci, car il possède des capteurs ainsi qu'une caméra. Ce types d'engins se nomment \textit{UGV (Unmanned Ground Vehicle)} soit: véhicule roulant commandé à distance. Surtout utilisés dans l'amée, les modèles qu'on peut trouver sur le marché sont très coûteux, ils varient entre trois cents et mille trois cents francs. Notre but est donc de pouvoir construire un appareil semblable pour moins de cent septante-cinq francs. 
-
+\clearpage
 \part{La mécanique et l'électronique}
 
 
-\section{Description du v\'ehicule \label{TableDesc}}
+\section{Description du véhicule \label{TableDesc}}
 La voiture sur laquelle nous nous basons est un modèlel r\'eduit
 t\'el\'ecommand\'e de type 4x4. Le tableau suivant est un inventaire de 
 ses caractéristiques dans son \'etat actuel:
-
+\begin{table}[h!]
 \begin{center}
   \begin{tabular}{|p{4cm}|p{4cm}|c|}
     \hline
@@ -106,8 +114,9 @@ ses caractéristiques dans son \'etat actuel:
  \hline
 	\end{tabular}
 \end{center}
-
-\section{Système directionel initial}
+\caption{Caractéristiques du véhicule}
+\end{table}
+\subsection{Système directionel initial}
 Dans son \'etat initial, le syst\`eme de guidage pouvait se comparer \`a un
 servo tr\`es rudimentaire. Il en comptait toutes les caractéristiques, mais en
 un état simplifié, en particulier le système de positionnement. Dans un servo
@@ -143,7 +152,7 @@ raison d\'evelop\'ee plus tard.\footnote{voir :
 http://en.wikipedia.org/wiki/Ackermann\_steering\_geometry sur
 ``Ackerman steering''}
 
-\subsection{Contr\^ole du servo}
+\subsection{Contrôle du servo}
 Le contr\^ole d'un servo est un devoir qu'un microcontr\^oleur tel que
 l'arduino effectue avec aisance. On peut indiquer \`a un servo de se rendre vers
 un de ses $180^{\circ}$ de libert\'e en lui envoyant un signal \'electrique dit
@@ -245,11 +254,12 @@ diagonalement oppos\'es\cite{RobotRoom}.
 
 On peut voir que selon le \emph{INPUT}, on obtiendra des tensions au bornes du
 moteur ou \emph{OUTPUT} variables.
-\subsection{Table de V\'erit\'e}
+\subsubsection{Table de V\'erit\'e}
 R\'edigeons un tableau de v\'erit\'e pour mieux illustrer la situation, o\`u H
 (\textit{high}) signifie haut et L (\textit{low}) signifie bas :
+\clearpage
 
-\begin{table}[h]
+\begin{table}%[!h]
 \begin{center}
   \begin{tabular}{c|c||c}  
     \emph{INPUT1} & \emph{INPUT2}
@@ -265,60 +275,13 @@ R\'edigeons un tableau de v\'erit\'e pour mieux illustrer la situation, o\`u H
 \caption{\label{tableDeVerite} Table de v\'erit\'e accompagnant le sch\'ema du
 H-bridge (fig.(\ref{H-bridge}))}
 
-Quand les signaux \emph{INPUT} sont oppos\'es, le moteur est \`a
+\small Quand les signaux \emph{INPUT} sont oppos\'es, le moteur est \`a
 l'arr\^et. Quand ils sont \'equivalents, le moteur est en marche, dans un sens
-ou dans l'autre.
-
+ou dans l'autre.\normalsize
 \end{table}
 
-\subsection{l293d}
-Nous avons décidé de ne pas construire notre propre H-Bridge, mais plutôt
-exploiter un chip qui sert le même but. Le chip en question est dénommé
-l293d. Pour commencer, une synthèse de la feuille de spécifications.
-
-\subsubsection{Spécifications}
-
-\begin{figure}[h!]
-\centering
-\includegraphics[width=0.5\textwidth]{figures/l293d}
-    \caption{\label{l293d} Schéma du l293d.
-    \protect\footnotemark }
-\end{figure}
-\footnotetext{http://ikalogic.cluster006.ovh.net/wp-content/uploads/l293d.jpg}
-
-
-\begin{table}[h!]
-\begin{center}
-  \begin{tabular}{|c|c|}
-    \hline
-    $V_{logic}$ & $36V$\\
-    \hline
-    $V_{power}$ & $36V$\\
-    \hline
-    Peak output current & $\pm 2A$\\
-    \hline
-    Dissipation de chaleur à température ambiante (25°) & $2075mW$\\
-    \hline
-    Température max & $70°$\\
-    \hline
-   
-  \end{tabular}
-\end{center}
-\caption{\label{l293dMax}Spécifications max du l293d:}
-Informations tirées des fiches téchniques publiées
-par Texas Instruments \cite{l293dDataSheet}.
-\end{table}
-
-
-\subsubsection{Fonctionnement}
-
-Le chip fonctionne sur les mêmes principes que le circuit illustré
-précédemment(\ref{H-bridge}). Il a en plus l'avantage d'être un double
-H-bridge ce qui sera utile plus tard. Son comportement en fonction du signal
-reçu peut également être illustré grâce au tableau de vérité
-(\ref{tableDeVerite}). Le premier circuit dépend de INPUT1 (In1), INPUT2
-(In2), OUTPUT1 (Out1) et OUTPUT2 (Out2), le deuxième se trouve du côté opposé
-et a un comportement symétrique.
+\subsubsection{L293d}
+Nous avons décidé d'utiliser un H-Bridge qui se nomme L293d.
 
 \subsection{Code}
 
@@ -343,8 +306,27 @@ L'Arduino \cite{Arduino} est un microcontrolleur \textit{Open Source}, ce qui ve
 
 
 \subsubsection{Choix du type d'Arduino}
+Pour ce projet, nous avons choisi l'Arduino Uno, c'est l'Arduino de base. En effet, Arduino possède de nombreux produits afin de subvenir aux différents besoin. Nous avons hésité à prendre l'Arduino Mega, mais les avantages qu'il offre ne sont pas très utiles pour notre projet. L'Arduino Uno est un microcontrolleur qui ressemble à ceci:\\
 
-
+\begin{figure}[h]
+\begin{center}
+\includegraphics[scale=0.38]{arduino_uno.jpg}
+\caption{Arduino Uno R3}
+\end{center}
+\end{figure}
+L'Arduino Uno possède les caractéristiques suivantes:
+\begin{enumerate}
+\item 14 pin digitaux (signal 1 ou 0) où on définit INPUT ou OUPUT dont 6 d'entres eux peuvent être analogique en OUTPUT.
+\item  6 analogiques INPUT
+\item Connection USB
+\item Oscillateur à quartz cadencé à 16MHz
+\item Courant continu sur les pin digitaux (40mA)
+\item Une sortie 3.3V et une sortie 5V en courant continu
+\item 32KB de mémoire flash
+\item 2KB de RAM
+\item Microcontrôleur ATmega328
+\end{enumerate}
+Bien qu'à première vue on pourrait se dire qu'il n'est pas très performant. Il faut se rappeler qu'il ne dois pas faire fonctionner un système d'exploitation, mais qu'il dois simplement traiter des mesures et envoyer des signaux digitaux ou analogiques. L'avantahe de l'Arduino Uno est qu'il n'y a pas besoin de faire de soudure, les pin sont directements accessibles grâce à des trous (les pin) où on peut y glisser un fil métallique. Dans le cas où nous souhaiterions commercialiser notre produit, nous choisirons probablement l'Arduino mini car il est encore plus petit et nous pouvons directement souder les fils sur le microcontrôleur.
 
 \subsection{Raspberry Pi}
 Le Raspberry Pi\cite{RaspberryPiCaracteristiques} est un ordinateur de la taille d'une carte de crédit sur lequel on peut installer différents systèmes d'exploitations dérivés de UNIX/Linux. Le Raspberry Pi est acheté nu, c'est-à-dire que cet ordinateur ne possède pas d'écran, ni de clavier ou de souris, néanmoins le Raspberry Pi possède plusieurs ports où on peut brancher écran (via l'interface HDMI ou Composite), un câble Ethernet et presque ce qu'on veut grâce aux deux ports USB. Le Raspberry Pi est très interressant non pas du point de vue de sa puissance calculatoire, mais du point de vue rapport qualité-prix. En effet, pour trente-cinq francs, il a les caractéristiques suivantes: 
