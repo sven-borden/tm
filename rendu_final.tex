@@ -40,9 +40,9 @@
 \begin{document}
 
 
-{\fontfamily{pnc}\selectfont %%%% attention, ne pas oublier la dernière accolade en fin de texte!!!!
+%{\fontfamily{pnc}\selectfont %%%% attention, ne pas oublier la dernière accolade en fin de texte!!!!
 \title{UGV bon marché}
-\author{Sven Borden\\ \small Travail de maturité \and \normalsize Eric Brunner\\ \small Gymnase de Morges}
+\author{Sven Borden\\ \small Travail de maturité \and  Eric Brunner\\ \small Gymnase de Morges}
 
 \date{\today}
 \maketitle
@@ -107,7 +107,7 @@ ses caractéristiques dans son \'etat actuel:
 	\end{tabular}
 \end{center}
 
-\subsection{Système directionel initial}
+\section{Système directionel initial}
 Dans son \'etat initial, le syst\`eme de guidage pouvait se comparer \`a un
 servo tr\`es rudimentaire. Il en comptait toutes les caractéristiques, mais en
 un état simplifié, en particulier le système de positionnement. Dans un servo
@@ -271,20 +271,21 @@ ou dans l'autre.
 
 \end{table}
 
-\subsection{L293d}
+\subsection{l293d}
 Nous avons décidé de ne pas construire notre propre H-Bridge, mais plutôt
 exploiter un chip qui sert le même but. Le chip en question est dénommé
-L293D. Pour commencer, une synthèse de la feuille de spécifications:
+l293d. Pour commencer, une synthèse de la feuille de spécifications.
+
+\subsubsection{Spécifications}
 
 \begin{figure}[h!]
 \centering
 \includegraphics[width=0.5\textwidth]{figures/l293d}
     \caption{\label{l293d} Schéma du l293d.
-    \protect\footnotemark}
+    \protect\footnotemark }
 \end{figure}
 \footnotetext{http://ikalogic.cluster006.ovh.net/wp-content/uploads/l293d.jpg}
 
-Spécifications max:
 
 \begin{table}[h!]
 \begin{center}
@@ -303,10 +304,21 @@ Spécifications max:
    
   \end{tabular}
 \end{center}
-\caption{\label{l293dMax} Informations tirées des fiches téchniques publiées
-      par TI \cite{l293dDataSheet}}
+\caption{\label{l293dMax}Spécifications max du l293d:}
+Informations tirées des fiches téchniques publiées
+par Texas Instruments \cite{l293dDataSheet}.
 \end{table}
 
+
+\subsubsection{Fonctionnement}
+
+Le chip fonctionne sur les mêmes principes que le circuit illustré
+précédemment(\ref{H-bridge}). Il a en plus l'avantage d'être un double
+H-bridge ce qui sera utile plus tard. Son comportement en fonction du signal
+reçu peut également être illustré grâce au tableau de vérité
+(\ref{tableDeVerite}). Le premier circuit dépend de INPUT1 (In1), INPUT2
+(In2), OUTPUT1 (Out1) et OUTPUT2 (Out2), le deuxième se trouve du côté opposé
+et a un comportement symétrique.
 
 \subsection{Code}
 
@@ -317,7 +329,6 @@ un petit programme Arduino pour contr\^oler un moteur.
 Le code suivant a \'et\'e r\'edig\'e par nos soins:
 
 \lstinputlisting[language=Java]{code/motor.java}
-
 
 
 
@@ -377,6 +388,6 @@ Notre choix à été porté sur Raspbian, qui est un dérivé de Debian, pour pl
 \bibliography{references}
 
 
-}
+%}
 
 \end{document}
