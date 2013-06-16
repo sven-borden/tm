@@ -14,7 +14,7 @@
 \usepackage{multirow}
 \usepackage{listings}
 \pagestyle{fancy} %: Numérotation des pages.
-\lhead{Sven Borden et Eric Brunner}% :	On personnalisera cette en-tête. haut de page gauche
+\lhead{Sven Borden \& Eric Brunner}% :	On personnalisera cette en-tête. haut de page gauche
 \chead{2M03} %: On personnalisera cette en-tête. haut de page centre
 \rhead{\today} %: On personnalisera cette en-tête. haut de page droite
 \lfoot{Travail de Maturité} %:	On personnalisera cette en-tête. pied de page gauche
@@ -41,13 +41,13 @@
 
 
 {\fontfamily{pnc}\selectfont %%%% attention, ne pas oublier la dernière accolade en fin de texte!!!!
-\title{UGV (Unmanned Ground Vehicle)}
+\title{UGV \\(Unmanned Ground Vehicle)}
 \author{Sven Borden\\ \small Travail de maturité \and  Eric Brunner\\ \small Gymnase de Morges}
 \date{\today}
 \maketitle
 
 \begin{centering}
-\includegraphics[width=1.0\textwidth]{figures/DSC_8469res}
+%\includegraphics[width=1.0\textwidth]{DSC_8469res}
 \end{centering}
 
 
@@ -67,7 +67,7 @@ Ce projet n'aurait pu aboutir sans l'aide de nombreuses personnes. Voici l'occas
 
 \clearpage
 \begin{abstract}
-Chaque chapitre de ce dossier traite d'une partie du drone, le premier expliquera la mécanique et l'éléctronique du véhicule, le deuxième chapitre traitera le \textit{Hardware} nécessaire au bon fonctionnement de l'UGV ainsi que son fonctionnement. Le troisième chapitre parlera du \textit{Software} utilisé dans le \textit{Hardware} et le denier chapitre concernera [à venir]
+Chaque chapitre de ce dossier traite d'une partie du drone, le premier expliquera la mécanique et l'éléctronique du véhicule, le deuxième chapitre traitera le \textit{Hardware} nécessaire au bon fonctionnement de l'UGV ainsi que son fonctionnement. Le troisième chapitre parlera du \textit{Software} utilisé dans le \textit{Hardware} et le denier chapitre concernera les champs d'application. 
 \end{abstract}
 \addcontentsline{toc}{section}{\protect\numberline{}Résumé}
 \clearpage
@@ -316,7 +316,7 @@ Pour ce projet, nous avons choisi l'Arduino Uno, c'est l'Arduino de base. En eff
 \end{figure}
 L'Arduino Uno possède les caractéristiques suivantes:
 \begin{enumerate}
-\item 14 pin digitaux (signal 1 ou 0) où on définit INPUT ou OUPUT dont 6 d'entres eux peuvent être analogique en OUTPUT.
+\item 14 pin digitaux (signal haut ou bas) où on définit INPUT ou OUPUT dont 6 d'entres eux peuvent être analogique en OUTPUT.
 \item  6 analogiques INPUT
 \item Connection USB
 \item Oscillateur à quartz cadencé à 16MHz
@@ -336,7 +336,7 @@ Le Raspberry Pi\cite{RaspberryPiCaracteristiques} est un ordinateur de la taille
 \item 512Mo de RAM (sur la version B, soit celle que nous avons choisie)
 \item 2 sorties vidéo (HDMI et Composite) 
 \item Sortie audio stéréo Jack (3.5mm) (le son passe aussi par le HDMI en sortie 5.1)
-\item Ecriture et lecture possible sur une carte mémoire sous forme de carte SD (supporte les formats: SDHC, MMC et SDIO)
+\item criture et lecture possible sur une carte mémoire sous forme de carte SD (supporte les formats: SDHC, MMC et SDIO)
 \item 2 ports USB 2.0 et 1 port Ethernet
 \item Alimentation par câble micro USB
 \item Faible consommation (5W, 5V, 1A)
@@ -344,7 +344,7 @@ Le Raspberry Pi\cite{RaspberryPiCaracteristiques} est un ordinateur de la taille
 \item Décodeur permettant de lire le FullHD  1080p
 \item API logiciel vidéo (OpenGL)
 \end{enumerate}
-Bien qu'à première vue la Framboise ne semble pas très performante, il faut prendre en compte son prix qui est bas, sa taille ainsi que les possibilités qui sont presque infinies.
+Bien qu'à première vue la Framboise ne semble pas très performante, il faut prendre en compte son prix qui est bas, sa taille ainsi que les possibilités qui sont presque infinies. Les projets qu'on peut mener grâce au Raspberry Pi sont des plus varié. En effet, il peut être utilisé pour la photographie, comme base centrale d'un système de surveillance. 
 
 \subsubsection{Choix de l'OS}
 Plusieurs types de systèmes d'exploitations fonctionnant sur le Raspberry Pi existent. Pour n'en citer que quelques-uns:
@@ -360,10 +360,13 @@ Plusieurs types de systèmes d'exploitations fonctionnant sur le Raspberry Pi ex
 \item Raspbian
 \end{itemize}
 \end{multicols}
-Notre choix à été porté sur Raspbian, qui est un dérivé de Debian, pour plusieurs raisons. Tout d'abord, cet OS à été dévellopé spécialement pour le Raspberry Pi et il est donc continuellement dévellopé par la communauté du Raspberry Pi. Cet OS étant basé sur un environnement Linux, cela offre un grand nombre de liberté afin de travailler dessus. Raspbian est aussi gratuit, se qui rentre en compte puisque nous essayons de réduire les coûts.  
+Notre choix à été porté sur Raspbian, qui est un dérivé de Debian, pour plusieurs raisons. Tout d'abord, cet OS à été dévellopé spécialement pour le Raspberry Pi et il est donc continuellement dévellopé par la communauté du Raspberry Pi. Cet OS étant basé sur un environnement Linux, cela offre un grand nombre de liberté afin de travailler dessus. Raspbian est aussi gratuit, se qui est à prendre en compte puisque nous essayons de réduire les coûts.  
 
 
 \part{Software}
+
+
+\part{Champs d'application}
 
 
 \bibliographystyle{plain}
