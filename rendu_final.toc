@@ -9,6 +9,7 @@
 \contentsline {subsection}{\numberline {1.2}Remplacement du Syst\IeC {\`e}me de guidage}{10}
 \contentsline {subsection}{\numberline {1.3}Contr\IeC {\^o}le du servo}{11}
 \contentsline {subsection}{\numberline {1.4}Programmation pour contr\^oler un servo}{12}
+<<<<<<< HEAD
 \contentsline {section}{\numberline {2}Moteur de propulsion}{13}
 \contentsline {subsection}{\numberline {2.1}Descriptif}{13}
 \contentsline {subsection}{\numberline {2.2}H-bridge}{13}
@@ -24,3 +25,18 @@
 \contentsline {section}{\numberline {A}Sketchbook}{19}
 \contentsline {subsection}{\numberline {A.1}Sketch exemple pour le moteur}{19}
 \contentsline {subsection}{\numberline {A.2}Sketch exemple pour le servo }{22}
+=======
+\contentsline {section}{\numberline {2}Moteur de propulsion}{14}
+\contentsline {subsection}{\numberline {2.1}Descriptif}{14}
+\contentsline {subsection}{\numberline {2.2}H-bridge}{15}
+\contentsline {subsubsection}{\numberline {2.2.1}Table de V\'erit\'e}{16}
+\contentsline {subsubsection}{\numberline {2.2.2}L293d}{17}
+\contentsline {subsection}{\numberline {2.3}Code}{17}
+\contentsline {part}{II\hspace {1em}Hardware}{20}
+\contentsline {section}{\numberline {3}Choix du hardware}{20}
+\contentsline {subsection}{\numberline {3.1}Arduino}{21}
+\contentsline {subsubsection}{\numberline {3.1.1}Choix du type d'Arduino}{21}
+\contentsline {subsection}{\numberline {3.2}Raspberry Pi}{22}
+\contentsline {subsubsection}{\numberline {3.2.1}Choix de l'OS}{24}
+\contentsline {part}{III\hspace {1em}Software}{24}
+>>>>>>> origin/master
