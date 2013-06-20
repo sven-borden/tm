@@ -8,13 +8,13 @@ the free~encyclopedia From~Wikipedia.
 the free~encyclopedia From~Wikipedia.
 \newblock Servo control, Octobre 2012.
 
-\bibitem{l293dDataSheet}
-Texas Instrument.
-\newblock L293, l293d quadruple half-h drivers, Juin 2002.
-
 \bibitem{RobotRoom}
 Robot Room.
 \newblock H-bridge motor driver using bipolar transistors, ??
+
+\bibitem{ServoSweep}
+Barragan Studio.
+\newblock Servo sweep, Septembre 2010.
 
 \bibitem{Arduino}
 Arduino Team.
