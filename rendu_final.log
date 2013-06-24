@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2013.1.2)  16 JUN 2013 21:41
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2013.1.2)  20 JUN 2013 10:49
 entering extended mode
 **rendu_final.tex
 (C:\Users\Sven\Documents\GitHub\tm\rendu_final.tex
@@ -568,9 +568,17 @@ File: ot1pnc.fd 2001/06/04 font definitions for OT1/pnc.
 )
 ("C:\Program Files\MiKTeX 2.9\tex\latex\ucs\uni-0.def"
 File: uni-0.def 2012/08/28 UCS: Unicode data U+0000..U+00FF
-) [1
+)
+<figures/DSC_8469res.jpg, id=1, 1027.84pt x 682.55pt>
+File: figures/DSC_8469res.jpg Graphic file (type jpg)
 
-{C:/Users/Sven/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}] [2
+<use figures/DSC_8469res.jpg>
+Package pdftex.def Info: figures/DSC_8469res.jpg used on input line 50.
+(pdftex.def)             Requested size: 378.42174pt x 251.30017pt.
+ [1
+
+{C:/Users/Sven/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map} <C:/Users/Sve
+n/Documents/GitHub/tm/figures/DSC_8469res.jpg>] [2
 
 ]
 Overfull \hbox (1.14352pt too wide) in paragraph at lines 66--67
@@ -665,7 +673,7 @@ Overfull \hbox (26.26718pt too wide) in paragraph at lines 156--162
 []ere compr[]eh[]ensible
  []
 
-<figures/ServoPwm.pdf, id=39, 501.875pt x 200.75pt>
+<figures/ServoPwm.pdf, id=40, 501.875pt x 200.75pt>
 File: figures/ServoPwm.pdf Graphic file (type pdf)
  <use figures/ServoPwm.pdf>
 Package pdftex.def Info: figures/ServoPwm.pdf used on input line 165.
@@ -761,7 +769,7 @@ Overfull \hbox (39.67168pt too wide) in paragraph at lines 213--221
  l'ex-cep-tion de l'[]electronique,
  []
 
-[14] <figures/H-bridge.pdf, id=62, 297.49544pt x 144.53197pt>
+[14] <figures/H-bridge.pdf, id=63, 297.49544pt x 144.53197pt>
 File: figures/H-bridge.pdf Graphic file (type pdf)
 
 <use figures/H-bridge.pdf>
@@ -810,7 +818,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 309--310
 
  []
 
-<figures/arduino_uno.jpg, id=89, 856.19875pt x 643.40375pt>
+<figures/arduino_uno.jpg, id=90, 856.19875pt x 643.40375pt>
 File: figures/arduino_uno.jpg Graphic file (type jpg)
 
 <use figures/arduino_uno.jpg>
@@ -831,10 +839,10 @@ AED: lastpage setting LastPage
 ### simple group (level 1) entered at line 43 ({)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 5548 strings out of 494045
- 72248 string characters out of 3148391
- 176416 words of memory out of 3000000
- 8727 multiletter control sequences out of 15000+200000
+ 5553 strings out of 494045
+ 72374 string characters out of 3148391
+ 176466 words of memory out of 3000000
+ 8731 multiletter control sequences out of 15000+200000
  23473 words of font info for 58 fonts, out of 3000000 for 9000
  715 hyphenation exceptions out of 8191
  35i,11n,45p,760b,1862s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -851,9 +859,9 @@ msy8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti10.pfb
 gram Files/MiKTeX 2.9/fonts/type1/urw/ncntrsbk/uncb8a.pfb><C:/Program Files/MiK
 TeX 2.9/fonts/type1/urw/ncntrsbk/uncr8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/
 type1/urw/ncntrsbk/uncri8a.pfb>
-Output written on rendu_final.pdf (25 pages, 437573 bytes).
+Output written on rendu_final.pdf (25 pages, 591411 bytes).
 PDF statistics:
- 148 PDF objects out of 1000 (max. 8388607)
+ 149 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 16 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 21 words of extra memory for PDF output out of 10000 (max. 10000000)
 
