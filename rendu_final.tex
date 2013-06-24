@@ -183,26 +183,14 @@ servo en quel angle il doit se positionner, est la longueur de la
 pulsation. Comme indiqu\'e, celle-ci peut varier de 1ms \`a 2ms.
 
 \subsection{Programmation pour contr\^oler un servo}
-Le programme suivant est un exemple propos\'e dans la section
-``apprentissage'' du site officiel d'Arduino. Il utilise la librairie
+Le programme se trouvant en annexe (\ref{SketchExServo}) est un exemple propos\'e dans la section
+``apprentissage''\cite{ServoSweep} du site officiel d'Arduino. Il utilise la librairie
 ``Servo'' install\'ee avec l'IDE Arduino. Ce que font les m\'ethodes de cette
 classe est de produire un signal comme celui discut\'e \`a la section
-pr\'ec\'edente et l'\'emettre par le pin choisi.
+pr\'ec\'edente en l'émettant par un des pins de l'arduino capable de cette
+modulation. 
 
-Les commentaires sont en anglais, mais le code sera expliqu\'e tout de suite:
 
-\lstinputlisting[language=Java]{code/ServoExample.java}
-
-\textbf{Commentaires:}
-
-On commence par inclure la classe Servo, puis on cr\'ee un objet
-\emph{Servo}. Dans la fonction \emph{setup} du programme, on lie l'objet
-\emph{myservo} au pin 9 de l'arduino. Ensuite, dans la fonction \emph{loop}, on
-fait varier la position du servo gr\^ace \`a la m\'ethode \emph{write}. Un
-d\'elai (le programme s'arr\^ete en ce point) de 15ms pour permettre au servo
-d'atteindre la position demand\'ee. Etant donn\'e que cette op\'eration est
-itt\'er\'ee plusieurs fois au moyen d'une boucle \emph{for}, on pourra voir le
-servo d\'ecrire un mouvement de balayage.
 
 D'ailleur, ce programme est tr\`es pratique pour tester le fonctionement d'un servo. 
 
@@ -282,6 +270,8 @@ ou dans l'autre.\normalsize
 
 \subsubsection{L293d}
 Nous avons décidé d'utiliser un H-Bridge qui se nomme L293d.
+<<<<<<< HEAD
+=======
 
 \subsection{Code}
 
@@ -292,6 +282,7 @@ un petit programme Arduino pour contr\^oler un moteur.
 Le code suivant a \'et\'e r\'edig\'e par nos soins:
 
 \lstinputlisting[language=Java]{code/motor.java}
+>>>>>>> origin/master
 
 
 
@@ -365,6 +356,26 @@ Notre choix à été porté sur Raspbian, qui est un dérivé de Debian, pour pl
 
 \part{Software}
 
+\appendix
+
+\section{Sketchbook}
+
+\subsection{Sketch exemple pour le moteur}
+\lstinputlisting[language=Java]{code/motor.java}
+
+\subsection{Sketch exemple pour le servo \label{SketchExServo}}\cite{ServoSweep}
+\lstinputlisting[language=Java]{code/ServoExample.java}
+
+\textbf{Commentaires:}
+
+On commence par inclure la classe Servo, puis on cr\'ee un objet
+\emph{Servo}. Dans la fonction \emph{setup} du programme, on lie l'objet
+\emph{myservo} au pin 9 de l'arduino. Ensuite, dans la fonction \emph{loop}, on
+fait varier la position du servo gr\^ace \`a la m\'ethode \emph{write}. Un
+d\'elai (le programme s'arr\^ete en ce point) de 15ms pour permettre au servo
+d'atteindre la position demand\'ee. Etant donn\'e que cette op\'eration est
+itt\'er\'ee plusieurs fois au moyen d'une boucle \emph{for}, on pourra voir le
+servo d\'ecrire un mouvement de balayage.
 
 \part{Champs d'application}
 

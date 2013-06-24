@@ -12,6 +12,10 @@ the free~encyclopedia From~Wikipedia.
 Robot Room.
 \newblock H-bridge motor driver using bipolar transistors, ??
 
+\bibitem{ServoSweep}
+Barragan Studio.
+\newblock Servo sweep, Septembre 2010.
+
 \bibitem{Arduino}
 Arduino Team.
 \newblock Arduino spec., ??
