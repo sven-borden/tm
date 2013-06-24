@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2013.1.2)  24 JUN 2013 12:33
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2013.1.2)  24 JUN 2013 12:38
 entering extended mode
 **rendu_final.tex
 (C:\Users\Sven\Documents\GitHub\tm\rendu_final.tex
@@ -709,8 +709,38 @@ Package pdftex.def Info: figures/H-bridge.pdf used on input line 229.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[13] [14 <C:/Users/Sven/Documents/GitHub/tm/figures/H-bridge.pdf>]
-(C:\Users\Sven\AppData\Roaming\MiKTeX\2.9\tex\latex\listings\lstlang1.sty
+[13] [14 <C:/Users/Sven/Documents/GitHub/tm/figures/H-bridge.pdf>] [15
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 291--292
+
+ []
+
+<figures/arduino_uno.jpg, id=73, 856.19875pt x 643.40375pt>
+File: figures/arduino_uno.jpg Graphic file (type jpg)
+
+<use figures/arduino_uno.jpg>
+Package pdftex.def Info: figures/arduino_uno.jpg used on input line 295.
+(pdftex.def)             Requested size: 325.3589pt x 244.49596pt.
+ [16 <C:/Users/Sven/Documents/GitHub/tm/figures/arduino_uno.jpg>] [17]
+Overfull \hbox (4.34912pt too wide) in paragraph at lines 320--321
+[]\OT1/pnc/m/n/12 Sortie au-dio st[]er[]eo Jack (3.5mm) (le son passe aussi par
+ le HDMI
+ []
+
+[18] <figures/arduino-environnement-1.png, id=83, 511.15968pt x 543.53062pt>
+File: figures/arduino-environnement-1.png Graphic file (type png)
+
+<use figures/arduino-environnement-1.png>
+Package pdftex.def Info: figures/arduino-environnement-1.png used on input line
+ 355.
+(pdftex.def)             Requested size: 306.69817pt x 326.12088pt.
+ [19]
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[20] [21 <C:/Users/Sven/Documents/GitHub/tm/figures/arduino-environnement-1.png
+>] (C:\Users\Sven\AppData\Roaming\MiKTeX\2.9\tex\latex\listings\lstlang1.sty
 File: lstlang1.sty 2004/09/05 1.3 listings language file
 )
 (C:\Users\Sven\Documents\GitHub\tm\code/motor.java
@@ -726,9 +756,7 @@ Overfull \hbox (75.18288pt too wide) in paragraph at lines 9--11
 [][][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
-[15
 
-]
 Overfull \hbox (139.98354pt too wide) in paragraph at lines 18--20
 [][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
@@ -739,78 +767,14 @@ File: omlpnc.fd
 )
 LaTeX Font Info:    Font shape `OML/pnc/m/n' in size <12> not available
 (Font)              Font shape `OML/cmm/m/it' tried instead on input line 20.
- [16]
-Overfull \hbox (39.18251pt too wide) in paragraph at lines 38--39
-[][][][][][][][][][][][][][][][][][][][][] 
- []
-
-
-Overfull \hbox (139.98354pt too wide) in paragraph at lines 56--57
-[][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
- []
-
-
-Overfull \hbox (82.38295pt too wide) in paragraph at lines 57--58
-[][][][][][][][][][][][][][][][][][][][][][][][][] 
- []
-
-
-Overfull \hbox (139.98354pt too wide) in paragraph at lines 63--64
-[][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
- []
-
-[17]
-Overfull \hbox (89.58302pt too wide) in paragraph at lines 64--65
-[][][][][][][][][][][][][][][][][][][][][][][][][] 
- []
-
-) [18]
-Underfull \hbox (badness 10000) in paragraph at lines 301--302
-
- []
-
-<figures/arduino_uno.jpg, id=83, 856.19875pt x 643.40375pt>
-File: figures/arduino_uno.jpg Graphic file (type jpg)
-
-<use figures/arduino_uno.jpg>
-Package pdftex.def Info: figures/arduino_uno.jpg used on input line 305.
-(pdftex.def)             Requested size: 325.3589pt x 244.49596pt.
- [19 <C:/Users/Sven/Documents/GitHub/tm/figures/arduino_uno.jpg>] [20]
-Overfull \hbox (4.34912pt too wide) in paragraph at lines 330--331
-[]\OT1/pnc/m/n/12 Sortie au-dio st[]er[]eo Jack (3.5mm) (le son passe aussi par
- le HDMI
- []
-
-[21] <figures/arduino-environnement-1.png, id=94, 511.15968pt x 543.53062pt>
-File: figures/arduino-environnement-1.png Graphic file (type png)
-
-<use figures/arduino-environnement-1.png>
-Package pdftex.def Info: figures/arduino-environnement-1.png used on input line
- 365.
-(pdftex.def)             Requested size: 306.69817pt x 326.12088pt.
- [22]
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[23] [24 <C:/Users/Sven/Documents/GitHub/tm/figures/arduino-environnement-1.png
->] (C:\Users\Sven\Documents\GitHub\tm\code/motor.java
-Overfull \hbox (75.18288pt too wide) in paragraph at lines 9--11
-[][][][][][][][][][][][][][][][][][][][][][][][][][][] 
- []
-
-
-Overfull \hbox (139.98354pt too wide) in paragraph at lines 18--20
-[][][][][][][][][][][][][][][][][][][][][][][][][] 
- []
-
-[25
+ [22
 
 ]
 Overfull \hbox (39.18251pt too wide) in paragraph at lines 38--39
 [][][][][][][][][][][][][][][][][][][][][] 
  []
 
-[26]
+[23]
 Overfull \hbox (139.98354pt too wide) in paragraph at lines 56--57
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
@@ -833,7 +797,7 @@ Overfull \hbox (89.58302pt too wide) in paragraph at lines 64--65
 ) (C:\Users\Sven\Documents\GitHub\tm\code/ServoExample.java
 LaTeX Font Info:    Font shape `OML/pnc/m/it' in size <12> not available
 (Font)              Font shape `OML/cmm/m/it' tried instead on input line 2.
- [27]
+ [24]
 Overfull \hbox (31.98244pt too wide) in paragraph at lines 8--9
 [][][][][][][][][][][][][][][][][][][][][][][][] 
  []
@@ -889,18 +853,18 @@ Overfull \hbox (154.38368pt too wide) in paragraph at lines 28--29
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
-[28]) (C:\Users\Sven\Documents\GitHub\tm\rendu_final.bbl [29])
+[25]) (C:\Users\Sven\Documents\GitHub\tm\rendu_final.bbl [26])
 
 AED: lastpage setting LastPage
-[30] (C:\Users\Sven\Documents\GitHub\tm\rendu_final.aux) )
+[27] (C:\Users\Sven\Documents\GitHub\tm\rendu_final.aux) )
 (\end occurred inside a group at level 1)
 
 ### simple group (level 1) entered at line 44 ({)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 5637 strings out of 494045
- 73600 string characters out of 3148391
- 177219 words of memory out of 3000000
+ 5635 strings out of 494045
+ 73502 string characters out of 3148391
+ 176811 words of memory out of 3000000
  8807 multiletter control sequences out of 15000+200000
  23642 words of font info for 59 fonts, out of 3000000 for 9000
  715 hyphenation exceptions out of 8191
@@ -919,9 +883,9 @@ gram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt12.pfb><C:/Program Fil
 es/MiKTeX 2.9/fonts/type1/urw/ncntrsbk/uncb8a.pfb><C:/Program Files/MiKTeX 2.9/
 fonts/type1/urw/ncntrsbk/uncr8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/ur
 w/ncntrsbk/uncri8a.pfb>
-Output written on rendu_final.pdf (30 pages, 820828 bytes).
+Output written on rendu_final.pdf (27 pages, 815554 bytes).
 PDF statistics:
- 171 PDF objects out of 1000 (max. 8388607)
+ 162 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  26 words of extra memory for PDF output out of 10000 (max. 10000000)
 
