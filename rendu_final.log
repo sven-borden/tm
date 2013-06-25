@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2013.1.2)  25 JUN 2013 17:23
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2013.1.2)  25 JUN 2013 18:42
 entering extended mode
 **rendu_final.tex
 (C:\Users\Sven\Documents\GitHub\tm\rendu_final.tex
@@ -484,6 +484,27 @@ Now handling font encoding U ...
    defining Unicode char U+2122 (decimal 8482)
    defining Unicode char U+2423 (decimal 9251)
 ))
+(C:\Users\Sven\AppData\Roaming\MiKTeX\2.9\tex\latex\lettrine\lettrine.sty
+File: lettrine.sty 2013/03/14 v1.64 (Daniel Flipo)
+\c@DefaultLines=\count121
+\DefaultFindent=\dimen132
+\DefaultNindent=\dimen133
+\DefaultSlope=\dimen134
+\L@lbox=\box56
+\L@tbox=\box57
+\c@L@lines=\count122
+\L@Pindent=\dimen135
+\L@Findent=\dimen136
+\L@Nindent=\dimen137
+\L@lraise=\dimen138
+\L@first=\dimen139
+\L@next=\dimen140
+\L@slope=\dimen141
+\L@height=\dimen142
+\LettrineWidth=\dimen143
+
+Loading lettrine.cfg
+(C:\Users\Sven\AppData\Roaming\MiKTeX\2.9\tex\latex\lettrine\lettrine.cfg))
 ("C:\Program Files\MiKTeX 2.9\tex\latex\lastpage\lastpage.sty"
 Package: lastpage 2011/09/01 v1.2k Refers to last page's name (HMM; JPG)
 )
@@ -493,55 +514,55 @@ Package: ucs 2004/10/17 UCS: Unicode input support
 ("C:\Program Files\MiKTeX 2.9\tex\latex\ucs\uni-global.def"
 File: uni-global.def 2012/08/28 UCS: Unicode global data
 )
-\uc@secondtry=\count121
+\uc@secondtry=\count123
 \uc@combtoks=\toks24
 \uc@combtoksb=\toks25
 \uc@temptokena=\toks26
 )
 (C:\Users\Sven\Documents\GitHub\tm\rendu_final.aux)
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 41.
-LaTeX Font Info:    ... okay on input line 41.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 41.
-LaTeX Font Info:    ... okay on input line 41.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 41.
-LaTeX Font Info:    ... okay on input line 41.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 41.
-LaTeX Font Info:    ... okay on input line 41.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 41.
-LaTeX Font Info:    ... okay on input line 41.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 41.
-LaTeX Font Info:    ... okay on input line 41.
-LaTeX Info: Redefining \degres on input line 41.
-LaTeX Info: Redefining \dots on input line 41.
-LaTeX Info: Redefining \up on input line 41.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 42.
+LaTeX Font Info:    ... okay on input line 42.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 42.
+LaTeX Font Info:    ... okay on input line 42.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 42.
+LaTeX Font Info:    ... okay on input line 42.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 42.
+LaTeX Font Info:    ... okay on input line 42.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 42.
+LaTeX Font Info:    ... okay on input line 42.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 42.
+LaTeX Font Info:    ... okay on input line 42.
+LaTeX Info: Redefining \degres on input line 42.
+LaTeX Info: Redefining \dots on input line 42.
+LaTeX Info: Redefining \up on input line 42.
 
 
 Package frenchb.ldf Warning: OT1 encoding should not be used for French. 
 (frenchb.ldf)                Add \usepackage[T1]{fontenc} to the preamble
-(frenchb.ldf)                of your document, on input line 41.
+(frenchb.ldf)                of your document, on input line 42.
 
 ("C:\Program Files\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count122
-\scratchdimen=\dimen132
-\scratchbox=\box56
-\nofMPsegments=\count123
-\nofMParguments=\count124
+\scratchcounter=\count124
+\scratchdimen=\dimen144
+\scratchbox=\box58
+\nofMPsegments=\count125
+\nofMParguments=\count126
 \everyMPshowfont=\toks27
-\MPscratchCnt=\count125
-\MPscratchDim=\dimen133
-\MPnumerator=\count126
-\makeMPintoPDFobject=\count127
+\MPscratchCnt=\count127
+\MPscratchDim=\dimen145
+\MPnumerator=\count128
+\makeMPintoPDFobject=\count129
 \everyMPtoPDFconversion=\toks28
 )
-\c@lstlisting=\count128
+\c@lstlisting=\count130
 Package lastpage Info: Please have a look at the pageslts package at
 (lastpage)             http://www.ctan.org/tex-archive/ 
 (lastpage)             macros/latex/contrib/pageslts/ 
 (lastpage)             or
 (lastpage)             http://www.ctan.org/tex-archive/ 
 (lastpage)             install/macros/latex/contrib/pageslts.tds.zip
-(lastpage)             ! on input line 41.
+(lastpage)             ! on input line 42.
  ("C:\Program Files\MiKTeX 2.9\tex\latex\ucs\ucsencs.def"
 File: ucsencs.def 2011/01/21 Fixes to fontencodings LGR, T3
 )
@@ -561,12 +582,12 @@ Package ucs Warning: ***************************
 (ucs)                ***************************
 (ucs)                Activating compatibility mode.
 (ucs)                ***************************
-(ucs)                 on input line 41.
+(ucs)                 on input line 42.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\ucs\utf8x.def"
 File: utf8x.def 2004/10/17 UCS: Input encoding UTF-8
 )
-LaTeX Font Info:    Try loading font information for OT1+pnc on input line 44.
+LaTeX Font Info:    Try loading font information for OT1+pnc on input line 45.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\psnfss\ot1pnc.fd"
 File: ot1pnc.fd 2001/06/04 font definitions for OT1/pnc.
@@ -580,12 +601,12 @@ File: uni-0.def 2012/08/28 UCS: Unicode data U+0000..U+00FF
 File: figures/DSC_8469res.jpg Graphic file (type jpg)
 
 <use figures/DSC_8469res.jpg>
-Package pdftex.def Info: figures/DSC_8469res.jpg used on input line 51.
+Package pdftex.def Info: figures/DSC_8469res.jpg used on input line 52.
 (pdftex.def)             Requested size: 378.42174pt x 251.30017pt.
  [1 <C:/Users/Sven/Documents/GitHub/tm/figures/DSC_8469res.jpg>] [2
 
 ]
-Overfull \hbox (1.14352pt too wide) in paragraph at lines 67--68
+Overfull \hbox (1.14352pt too wide) in paragraph at lines 68--69
 []\OT1/pnc/m/n/12 Ce pro-jet n'au-rait pu abou-tir sans l'aide de nom-breuses p
 er-sonnes.
  []
@@ -594,7 +615,7 @@ er-sonnes.
 
 ]
 LaTeX Font Info:    Font shape `OT1/pnc/bx/n' in size <12> not available
-(Font)              Font shape `OT1/pnc/b/n' tried instead on input line 70.
+(Font)              Font shape `OT1/pnc/b/n' tried instead on input line 71.
  [1
 
 ] (C:\Users\Sven\Documents\GitHub\tm\rendu_final.toc [1
@@ -614,25 +635,25 @@ LaTeX Font Info:    Font shape `OT1/pnc/bx/n' in size <12> not available
  [4
 
 ]
-Overfull \hbox (14.85533pt too wide) in paragraph at lines 86--87
+Overfull \hbox (14.85533pt too wide) in paragraph at lines 87--88
 \OT1/pnc/m/n/12 peut com-man-der []a dis-tance. Plus qu'une simple voi-ture t[]
 el[]ecommand[]ee,
  []
 
 
-Overfull \hbox (2.87639pt too wide) in paragraph at lines 86--87
+Overfull \hbox (2.87639pt too wide) in paragraph at lines 87--88
 \OT1/pnc/m/n/12 d'en-gins se nomment \OT1/pnc/m/it/12 UGV (Un-man-ned Ground Ve
 -hicle) \OT1/pnc/m/n/12 soit : v[]ehicule
  []
 
 
-Overfull \hbox (2.09961pt too wide) in paragraph at lines 86--87
+Overfull \hbox (2.09961pt too wide) in paragraph at lines 87--88
 \OT1/pnc/m/n/12 rou-lant sans []equipage. Sur-tout uti-lis[]es dans l'am[]ee, l
 es mod[]eles qu'on
  []
 
 
-Overfull \hbox (14.66269pt too wide) in paragraph at lines 86--87
+Overfull \hbox (14.66269pt too wide) in paragraph at lines 87--88
 \OT1/pnc/m/n/12 cents et mille trois cents francs. Notre but est donc de pou-vo
 ir construire
  []
@@ -642,7 +663,13 @@ ir construire
 ]
 Chapitre 1.
 
-Underfull \hbox (badness 10000) in paragraph at lines 101--102
+Overfull \hbox (13.68805pt too wide) in paragraph at lines 94--95
+\OT1/pnc/m/n/12 mier, l'Ar-duino, est un mi-cro-con-trol-leur qui per-met de co
+ntr[]oler presque
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 102--103
 
  []
 
@@ -653,10 +680,10 @@ Underfull \hbox (badness 10000) in paragraph at lines 101--102
 File: figures/arduino_uno.jpg Graphic file (type jpg)
 
 <use figures/arduino_uno.jpg>
-Package pdftex.def Info: figures/arduino_uno.jpg used on input line 105.
+Package pdftex.def Info: figures/arduino_uno.jpg used on input line 106.
 (pdftex.def)             Requested size: 325.3589pt x 244.49596pt.
  [7 <C:/Users/Sven/Documents/GitHub/tm/figures/arduino_uno.jpg>] [8]
-Overfull \hbox (4.34912pt too wide) in paragraph at lines 130--131
+Overfull \hbox (4.34912pt too wide) in paragraph at lines 131--132
 []\OT1/pnc/m/n/12 Sortie au-dio st[]er[]eo Jack (3.5mm) (le son passe aussi par
  le HDMI
  []
@@ -664,30 +691,36 @@ Overfull \hbox (4.34912pt too wide) in paragraph at lines 130--131
 [9] [10] [11]
 Chapitre 2.
 
-Underfull \hbox (badness 1755) in paragraph at lines 206--206
+Underfull \hbox (badness 1755) in paragraph at lines 207--207
 []|\OT1/cmr/m/n/12 Longueur (centre de
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 208--208
+Underfull \hbox (badness 10000) in paragraph at lines 209--209
 []|\OT1/cmr/m/n/12 Largeur (centre de
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 212--212
+Underfull \hbox (badness 10000) in paragraph at lines 213--213
 []|\OT1/cmr/m/n/12 Courant min (roue
  []
 
 
-Underfull \hbox (badness 5878) in paragraph at lines 213--213
+Underfull \hbox (badness 5878) in paragraph at lines 214--214
 []|\OT1/cmr/m/n/12 Courant max (roue
+ []
+
+
+Overfull \hbox (9.56763pt too wide) in paragraph at lines 198--226
+\OT1/pnc/m/n/12 4x4. Le ta-bleau sui-vant est un in-ven-taire de ses ca-ract[]e
+ristiques
  []
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
-Overfull \hbox (2.42332pt too wide) in paragraph at lines 226--242
+Overfull \hbox (2.42332pt too wide) in paragraph at lines 227--243
 \OT1/pnc/m/n/12 ment. Dans un servo clas-sique, il s'agit d'un po-ten-tiom[]etr
 e (r[]esistance
  []
@@ -695,7 +728,7 @@ e (r[]esistance
 [12
 
 ] [13]
-Overfull \hbox (26.26718pt too wide) in paragraph at lines 262--268
+Overfull \hbox (26.26718pt too wide) in paragraph at lines 263--269
 []\OT1/pnc/m/n/12 electrique dit mo-dul[]e. Ce si-gnal est mo-dul[]e d'une mani
 []ere compr[]eh[]ensible
  []
@@ -704,10 +737,10 @@ Overfull \hbox (26.26718pt too wide) in paragraph at lines 262--268
 File: figures/ServoPwm.pdf Graphic file (type pdf)
 
 <use figures/ServoPwm.pdf>
-Package pdftex.def Info: figures/ServoPwm.pdf used on input line 271.
+Package pdftex.def Info: figures/ServoPwm.pdf used on input line 272.
 (pdftex.def)             Requested size: 378.42174pt x 151.37692pt.
  [15 <C:/Users/Sven/Documents/GitHub/tm/figures/ServoPwm.pdf>]
-Overfull \hbox (1.99765pt too wide) in paragraph at lines 307--315
+Overfull \hbox (1.99765pt too wide) in paragraph at lines 308--316
 []\OT1/pnc/m/n/12 Le mo-teur de pro-pul-sion, au contraire du servo, n'a pas []
 et[]e chang[]e.
  []
@@ -716,7 +749,7 @@ et[]e chang[]e.
 File: figures/H-bridge.pdf Graphic file (type pdf)
 
 <use figures/H-bridge.pdf>
-Package pdftex.def Info: figures/H-bridge.pdf used on input line 334.
+Package pdftex.def Info: figures/H-bridge.pdf used on input line 335.
 (pdftex.def)             Requested size: 378.42174pt x 183.86229pt.
  [17 <C:/Users/Sven/Documents/GitHub/tm/figures/H-bridge.pdf>] [18]
 Chapitre 3.
@@ -725,7 +758,7 @@ File: figures/arduino-environnement-1.png Graphic file (type png)
 
 <use figures/arduino-environnement-1.png>
 Package pdftex.def Info: figures/arduino-environnement-1.png used on input line
- 393.
+ 394.
 (pdftex.def)             Requested size: 255.57921pt x 271.76463pt.
 
 
@@ -858,16 +891,16 @@ AED: lastpage setting LastPage
 ] (C:\Users\Sven\Documents\GitHub\tm\rendu_final.aux) )
 (\end occurred inside a group at level 1)
 
-### simple group (level 1) entered at line 44 ({)
+### simple group (level 1) entered at line 45 ({)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 5640 strings out of 494045
- 73547 string characters out of 3148391
- 177126 words of memory out of 3000000
- 8815 multiletter control sequences out of 15000+200000
- 20031 words of font info for 54 fonts, out of 3000000 for 9000
+ 5716 strings out of 494045
+ 74714 string characters out of 3148391
+ 178257 words of memory out of 3000000
+ 8882 multiletter control sequences out of 15000+200000
+ 23405 words of font info for 59 fonts, out of 3000000 for 9000
  715 hyphenation exceptions out of 8191
- 35i,11n,45p,800b,1876s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 35i,11n,45p,800b,1926s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/fontname/8r.enc}<C
 :/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Progra
 m Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><C:/Program Files
@@ -882,7 +915,7 @@ gram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt12.pfb><C:/Program Fil
 es/MiKTeX 2.9/fonts/type1/urw/ncntrsbk/uncb8a.pfb><C:/Program Files/MiKTeX 2.9/
 fonts/type1/urw/ncntrsbk/uncr8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/ur
 w/ncntrsbk/uncri8a.pfb>
-Output written on rendu_final.pdf (32 pages, 818785 bytes).
+Output written on rendu_final.pdf (32 pages, 818848 bytes).
 PDF statistics:
  178 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)

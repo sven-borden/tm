@@ -14,6 +14,7 @@
 \usepackage[utf8]{inputenc}%%%%utp-8 accents
 \usepackage{multirow}
 \usepackage{listings}
+\usepackage{lettrine}%%lettrine (grosse lettre d'entrée de chapitre)
 \pagestyle{fancy} %: Numérotation des pages.
 \lhead{Sven Borden \& Eric Brunner}% :	On personnalisera cette en-tête. haut de page gauche
 \chead{2M03} %: On personnalisera cette en-tête. haut de page centre
@@ -83,14 +84,14 @@ Parti dans l'idée de concevoir un objet déjà existant mais à moindre prix, n
 
 \section*{Introduction}
 \addcontentsline{toc}{section}{\protect\numberline{}Introduction}
-Le but de ce projet était de construire un véhicule roulant que l'on peut commander à distance. Plus qu'une simple voiture télécommandée, ce drone est capable d'être contrôlé sans avoir une vue directe sur celui-ci, car il possède des capteurs ainsi qu'une caméra. Ce types d'engins se nomment \textit{UGV (Unmanned Ground Vehicle)} soit: véhicule roulant sans équipage. Surtout utilisés dans l'amée, les modèles qu'on peut trouver sur le marché sont très coûteux, ils varient entre trois cents et mille trois cents francs. Notre but est donc de pouvoir construire un appareil semblable pour moins de deux cent francs. 
+Le but de ce projet est de construire un véhicule roulant que l'on peut commander à distance. Plus qu'une simple voiture télécommandée, ce drone est capable d'être contrôlé sans avoir une vue directe sur celui-ci, car il possède des capteurs ainsi qu'une caméra. Ce types d'engins se nomment \textit{UGV (Unmanned Ground Vehicle)} soit: véhicule roulant sans équipage. Surtout utilisés dans l'amée, les modèles qu'on peut trouver sur le marché sont très coûteux, ils varient entre trois cents et mille trois cents francs. Notre but est donc de pouvoir construire un appareil semblable pour moins de deux cent francs. 
 \clearpage
 
 
 \chapter{Hardware}
 
 \section{Choix du hardware}
-Pour réaliser ce projet, nous avons dû faire des choix au niveau du hardware. Notre choix s'est porté sur deux système. Le premier, l'Arduino, est un microcontrolleur qui permet de contrôler presque ce qu'on veut grâce à un language de programation proche du C. Le second est le Raspberry Pi, qui est un ordinateur bon marché (trente-cinq francs) qui est récemment sorti sur les marchés. 
+\lettrine{P}{our} réaliser ce projet, nous avons dû faire des choix au niveau du hardware. Notre choix s'est porté sur deux système. Le premier, l'Arduino, est un microcontrolleur qui permet de contrôler presque ce qu'on veut grâce à un language de programation proche du C. Le second est le Raspberry Pi, qui est un ordinateur bon marché (trente-cinq francs) qui est récemment sorti sur les marchés. 
 
 
 \subsection{Arduino}
@@ -194,7 +195,7 @@ total & 9& 183.60\\
 
 
 \section{Description du véhicule \label{TableDesc}}
-La voiture sur laquelle nous nous basons est un modèlel r\'eduit
+\lettrine{N}{ous} nous basons est un modèlel r\'eduit
 t\'el\'ecommand\'e de type 4x4. Le tableau suivant est un inventaire de 
 ses caractéristiques dans son \'etat actuel:
 \begin{table}[h!]
@@ -387,7 +388,7 @@ Nous avons décidé d'utiliser un H-Bridge qui se nomme L293d.
 
 
 \section{Software de l'Arduino}
-Pour programmer l'Arduino, nous utilisons le logiciel dédié, \textit{Arduino}, C'est un environnement \textit{open-source} qui fonctionne sur Windows, Linux et Mac OS X. Il a été écrit en Java et est basé sur le logiciel Processing.
+\lettrine{P}{our} programmer l'Arduino, nous utilisons le logiciel dédié, \textit{Arduino}, C'est un environnement \textit{open-source} qui fonctionne sur Windows, Linux et Mac OS X. Il a été écrit en Java et est basé sur le logiciel Processing.
 \begin{figure}[h!]
 \begin{center}
 \includegraphics[scale=0.5]{arduino-environnement-1}\\
