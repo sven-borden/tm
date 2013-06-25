@@ -26,7 +26,7 @@
 \contentsline {section}{\numberline {3.2}Software du Raspberry Pi}{19}
 \contentsline {subsection}{\numberline {3.2.1}Edimax}{19}
 \contentsline {subsection}{\numberline {3.2.2}Guvcview}{19}
-\contentsline {section}{\numberline {.1}Sketchbook}{21}
-\contentsline {subsection}{\numberline {.1.1}Sketch exemple pour le moteur}{21}
-\contentsline {subsection}{\numberline {.1.2}Sketch exemple pour le servo }{23}
-\contentsline {chapter}{\numberline {A}Champs d'application}{26}
+\contentsline {chapter}{\numberline {4}Champs d'application}{21}
+\contentsline {section}{\numberline {.1}Sketchbook}{22}
+\contentsline {subsection}{\numberline {.1.1}Sketch exemple pour le moteur}{22}
+\contentsline {subsection}{\numberline {.1.2}Sketch exemple pour le servo }{24}
