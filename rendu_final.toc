@@ -24,8 +24,8 @@
 \contentsline {chapter}{\numberline {3}Software}{19}
 \contentsline {section}{\numberline {3.1}Software de l'Arduino}{19}
 \contentsline {section}{\numberline {3.2}Software du Raspberry Pi}{19}
-\contentsline {subsection}{\numberline {3.2.1}Edimax}{19}
-\contentsline {subsection}{\numberline {3.2.2}Guvcview}{19}
+\contentsline {subsection}{\numberline {3.2.1}Edimax}{20}
+\contentsline {subsection}{\numberline {3.2.2}Guvcview}{20}
 \contentsline {chapter}{\numberline {4}Champs d'application}{21}
 \contentsline {section}{\numberline {.1}Sketchbook}{22}
 \contentsline {subsection}{\numberline {.1.1}Sketch exemple pour le moteur}{22}

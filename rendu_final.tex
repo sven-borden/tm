@@ -95,18 +95,18 @@ Le but de ce projet est de construire un véhicule roulant que l'on peut command
 
 
 \subsection{Arduino}
-L'Arduino \cite{Arduino} est un microcontrolleur \textit{Open Source}, ce qui veut dire que tout le monde peut non seulement avoir accès aux plans et aux codes, mais peut aussi les modifier. Ce microcontrolleur se programme avec un language proche du C. 
+L'Arduino \label{Arduino} \cite{Arduino} est un microcontrolleur \textit{Open Source}, ce qui veut dire que tout le monde peut non seulement avoir accès aux plans et aux codes, mais peut aussi les modifier. Ce microcontrolleur se programme avec un language proche du C. 
 
 
 \subsubsection{Choix du type d'Arduino}
-Pour ce projet, nous avons choisi l'Arduino Uno, c'est l'Arduino de base. En effet, Arduino possède de nombreux produits afin de subvenir aux différents besoin. Nous avons hésité à prendre l'Arduino Mega, mais les avantages qu'il offre ne sont pas très utiles pour notre projet. L'Arduino Uno est un microcontrolleur qui ressemble à ceci.\\
+Pour ce projet, nous avons choisi l'Arduino Uno, c'est l'Arduino de base. En effet, Arduino possède de nombreux produits afin de subvenir aux différents besoin. Nous avons hésité à prendre l'Arduino Mega, mais les avantages qu'il offre ne sont pas très utiles pour notre projet. En effet, l'Arduino Mega est similaire à l'Aruino Uno , sauf qu'il est possède des ressources de calculs plus puissantes et il est aussi deux fois plus grand. Puisque nous n'avons pas besoin d'une grande pusisance de calcul, nous avons choisi l'Arduino Uno. L'Arduino Uno est un microcontrolleur qui ressemble à ceci.\\
 
 \begin{figure}[h]
 \begin{center}
 \includegraphics[scale=0.38]{arduino_uno.jpg}
-\caption{Arduino Uno R3}
+\caption{Arduino Uno R3, On peut remarquer les pin  \label{pin} qui se trouvent de part et d'autre de l'Arduino. On peut remarquer au centre le microcontrôleur ATmega328 ainsi que le port USB tout en haut de l'image}
 \end{center}
-\end{figure}
+\end{figure}\footnote{Les pin sont des trous où on peut y glisser des fils metalliques. Ce sont les liaisons entre le contrôleur et les senseurs}
 L'Arduino Uno possède les caractéristiques suivantes:
 \begin{enumerate}
 \item 14 pin digitaux (signal haut ou bas) où on définit INPUT ou OUPUT dont 6 d'entres eux peuvent être analogique en OUTPUT.
@@ -119,7 +119,7 @@ L'Arduino Uno possède les caractéristiques suivantes:
 \item 2KB de RAM
 \item Microcontrôleur ATmega328
 \end{enumerate}
-Bien qu'à première vue on pourrait se dire qu'il n'est pas très performant. Il faut se rappeler qu'il ne dois pas faire fonctionner un système d'exploitation, mais qu'il dois simplement traiter des mesures et envoyer des signaux digitaux ou analogiques. L'avantage de l'Arduino Uno est qu'il n'y a pas besoin de faire de soudure, les pin\footnote{Les pin sont des trous où on peut y glisser des fils metalliques. Ce sont les liaisons entre le contrôleur et les senseurs} sont directements accessibles et on peut y glisser un fil métallique. Dans le cas où nous souhaiterions commercialiser notre produit, nous choisirons probablement l'Arduino mini car il est encore plus petit et nous pouvons directement souder les fils sur le microcontrôleur.
+Bien qu'à première vue on pourrait se dire qu'il n'est pas très performant. Il faut se rappeler qu'il ne dois pas faire fonctionner un système d'exploitation, mais qu'il dois simplement traiter des mesures et envoyer des signaux digitaux ou analogiques. L'avantage de l'Arduino Uno est qu'il n'y a pas besoin de faire de soudure, les pin sont directements accessibles et on peut y glisser un fil métallique. Dans le cas où nous souhaiterions commercialiser notre produit, nous choisirons probablement l'Arduino mini car il est encore plus petit et nous pouvons directement souder les fils sur le microcontrôleur.
 
 \subsection{Raspberry Pi}
 Le Raspberry Pi\cite{RaspberryPiCaracteristiques}, ou la Framboise pour les francophones, est un ordinateur de la taille d'une carte de crédit sur lequel on peut installer différents systèmes d'exploitations dérivés de UNIX/Linux. Le Raspberry Pi est acheté nu, c'est-à-dire que cet ordinateur ne possède pas d'écran, ni de clavier ou de souris, néanmoins le Raspberry Pi possède plusieurs ports où on peut brancher écran (via l'interface HDMI ou Composite), un câble Ethernet et presque ce qu'on veut grâce aux deux ports USB. Le Raspberry Pi est très interressant non pas du point de vue de sa puissance calculatoire, mais du point de vue rapport qualité-prix. En effet, pour trente-cinq francs, il a les caractéristiques suivantes: 
@@ -230,7 +230,7 @@ un état simplifié, en particulier le système de positionnement. Dans un servo
 classique, il s'agit d'un potentiomètre (résistance variable) qui permet
 de savoir en tout moment la position de la corne. Par contre, dans le cas de
 la voiture, un système de balais (voir image) assure cette tâche. Il en
-résulte une identification de position très basique: gauche, tout droit ou
+résulte une identification de position très basique: gauche,devant ou
 droite.\\
 (ins\'erer images)\\
 Sachant que nous avons retir\'e l'\'electronique de la voiture, il nous restait
@@ -260,8 +260,8 @@ http://en.wikipedia.org/wiki/Ackermann\_steering\_geometry sur
 ``Ackerman steering''}
 
 \subsection{Contrôle du servo}
-Le contr\^ole d'un servo est un devoir qu'un microcontr\^oleur tel que
-l'arduino effectue avec aisance. On peut indiquer \`a un servo de se rendre vers
+Le contr\^ole d'un servo est une tâche qu'un microcontr\^oleur tel que
+l'arduino \ref{Arduino} effectue avec aisance. On peut indiquer \`a un servo de se rendre vers
 un de ses $180^{\circ}$ de libert\'e en lui envoyant un signal \'electrique dit
 modul\'e. Ce signal est modul\'e d'une mani\`ere compréh\'ensible pour le
 servo. L'illustration suivante
@@ -291,7 +291,7 @@ pulsation. Comme indiqu\'e, celle-ci peut varier de 1ms \`a 2ms.
 
 \subsection{Programmation pour contr\^oler un servo}
 Le programme se trouvant en annexe (\ref{SketchExServo}) est un exemple propos\'e dans la section
-``apprentissage''\cite{ServoSweep} du site officiel d'Arduino. Il utilise la librairie
+``apprentissage'' du site officiel d'Arduino \cite{ServoSweep}. Il utilise la librairie
 ``Servo'' install\'ee avec l'IDE Arduino. Ce que font les m\'ethodes de cette
 classe est de produire un signal comme celui discut\'e \`a la section
 pr\'ec\'edente en l'émettant par un des pins de l'arduino capable de cette
@@ -338,7 +338,7 @@ Le sch\'ema suivant pourra d'avantage \'eclairer le lecteur.
 
 \textbf{Explications}
 
-Tout d'abord, que sont des transistors NPN et PNP? La diff\'erence pratique
+Pour fabriquer un H-bridge, il faut utiliser entre autres des transistor NPN \footnote{Négatif-Positif-Négatif} et PNP \footnote{Positif-Négatif-Positif}.  La diff\'erence pratique
 entre ces deux types de transistors est que l'un demande un signal
 d\'eclencheur haut pour \^etre ouvert tandis que l'autre en demande un
 bas ou la terre. Dans ce cas, on utilise deux types de transistors
@@ -388,19 +388,19 @@ Nous avons décidé d'utiliser un H-Bridge qui se nomme L293d.
 
 
 \section{Software de l'Arduino}
-\lettrine{P}{our} programmer l'Arduino, nous utilisons le logiciel dédié, \textit{Arduino}, C'est un environnement \textit{open-source} qui fonctionne sur Windows, Linux et Mac OS X. Il a été écrit en Java et est basé sur le logiciel Processing.
+\lettrine{P}{our} programmer l'Arduino, nous utilisons le logiciel dédié, \textit{Arduino} \ref{Environnement Arduino}, C'est un environnement \textit{open-source} qui fonctionne sur Windows, Linux et Mac OS X. Il a été écrit en Java et est basé sur le logiciel Processing.
 \begin{figure}[h!]
 \begin{center}
 \includegraphics[scale=0.5]{arduino-environnement-1}\\
-\caption{Environnement Arduino}
+\caption{Environnement Arduino\label{Environnement Arduino}}
 \end{center}
 \end{figure}
-Ce logiciel nous permet de programmer, de compiler et de téléverser un code à un arduino. Il possède aussi des exemples de codes afin de pouvoir apprendre à utiliser un arduino sans avoir à chercher sur le web. Il prend en compte des classes qu'on peux rajouter simplement en mettant la classe dans le dossier arduino 
+Ce logiciel nous permet de programmer, de compiler et de téléverser un code à un arduino. Il possède aussi des exemples de codes afin de pouvoir apprendre à utiliser un arduino sans avoir à chercher sur le web. Il prend en compte des classes qu'on peux rajouter simplement en mettant la classe dans le dossier arduino. Ce software permet aussi à l'utilisateur d'envoyer des caractères à l'arduino par le biai du port \textit{Serial}. 
 
 
 
 \section{Software du Raspberry Pi}
-
+Sans les logiciels, notre projet aurait bien du mal à se réaliser. Dans cette section, nous allons parler de tout les softwares que nous utilisons sur la Framboise afin de rendre le drone fonctionnel.
 
 \subsection{Edimax}
 
@@ -426,7 +426,7 @@ Ce logiciel nous permet de programmer, de compiler et de téléverser un code à
 
 On commence par inclure la classe Servo, puis on cr\'ee un objet
 \emph{Servo}. Dans la fonction \emph{setup} du programme, on lie l'objet
-\emph{myservo} au pin 9 de l'arduino. Ensuite, dans la fonction \emph{loop}, on
+\emph{myservo} au pin neuf de l'arduino. Ensuite, dans la fonction \emph{loop}, on
 fait varier la position du servo gr\^ace \`a la m\'ethode \emph{write}. Un
 d\'elai (le programme s'arr\^ete en ce point) de 15ms pour permettre au servo
 d'atteindre la position demand\'ee. Etant donn\'e que cette op\'eration est
