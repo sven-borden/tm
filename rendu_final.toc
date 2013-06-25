@@ -1,29 +1,32 @@
 \select@language {french}
 \contentsline {section}{\numberline {}Avant-propos}{2}
 \contentsline {section}{\numberline {}Remerciements}{3}
-\contentsline {section}{\numberline {}R\IeC {\'e}sum\IeC {\'e}}{4}
-\contentsline {section}{\numberline {}Introduction}{8}
-\contentsline {part}{I\hspace {1em}La m\IeC {\'e}canique et l'\IeC {\'e}lectronique}{9}
-\contentsline {section}{\numberline {1}Description du v\IeC {\'e}hicule }{9}
-\contentsline {subsection}{\numberline {1.1}Syst\IeC {\`e}me directionel initial}{9}
-\contentsline {subsection}{\numberline {1.2}Remplacement du Syst\IeC {\`e}me de guidage}{10}
-\contentsline {subsection}{\numberline {1.3}Contr\IeC {\^o}le du servo}{11}
-\contentsline {subsection}{\numberline {1.4}Programmation pour contr\^oler un servo}{12}
-\contentsline {section}{\numberline {2}Moteur de propulsion}{13}
-\contentsline {subsection}{\numberline {2.1}Descriptif}{13}
-\contentsline {subsection}{\numberline {2.2}H-bridge}{13}
-\contentsline {subsubsection}{\numberline {2.2.1}Table de V\'erit\'e}{14}
-\contentsline {subsubsection}{\numberline {2.2.2}L293d}{15}
-\contentsline {part}{II\hspace {1em}Hardware}{15}
-\contentsline {section}{\numberline {3}Choix du hardware}{15}
-\contentsline {subsection}{\numberline {3.1}Arduino}{16}
-\contentsline {subsubsection}{\numberline {3.1.1}Choix du type d'Arduino}{16}
-\contentsline {subsection}{\numberline {3.2}Raspberry Pi}{17}
-\contentsline {subsubsection}{\numberline {3.2.1}Choix de l'OS}{19}
-\contentsline {part}{III\hspace {1em}Software}{19}
-\contentsline {section}{\numberline {4}Software de l'Arduino}{20}
-\contentsline {section}{\numberline {5}Software du Raspberry Pi}{20}
-\contentsline {section}{\numberline {A}Sketchbook}{22}
-\contentsline {subsection}{\numberline {A.1}Sketch exemple pour le moteur}{22}
-\contentsline {subsection}{\numberline {A.2}Sketch exemple pour le servo }{24}
-\contentsline {part}{IV\hspace {1em}Champs d'application}{26}
+\contentsline {section}{\numberline {}R\IeC {\'e}sum\IeC {\'e}}{1}
+\contentsline {section}{\numberline {}Introduction}{5}
+\contentsline {chapter}{\numberline {1}Hardware}{6}
+\contentsline {section}{\numberline {1.1}Choix du hardware}{6}
+\contentsline {subsection}{\numberline {1.1.1}Arduino}{6}
+\contentsline {subsubsection}{Choix du type d'Arduino}{7}
+\contentsline {subsection}{\numberline {1.1.2}Raspberry Pi}{8}
+\contentsline {subsubsection}{Choix de l'OS}{10}
+\contentsline {section}{\numberline {1.2}Co\IeC {\^u}t des composants}{10}
+\contentsline {chapter}{\numberline {2}La m\IeC {\'e}canique et l'\IeC {\'e}lectronique}{12}
+\contentsline {section}{\numberline {2.1}Description du v\IeC {\'e}hicule }{12}
+\contentsline {subsection}{\numberline {2.1.1}Syst\IeC {\`e}me directionel initial}{12}
+\contentsline {subsection}{\numberline {2.1.2}Remplacement du Syst\IeC {\`e}me de guidage}{14}
+\contentsline {subsection}{\numberline {2.1.3}Contr\IeC {\^o}le du servo}{14}
+\contentsline {subsection}{\numberline {2.1.4}Programmation pour contr\^oler un servo}{15}
+\contentsline {section}{\numberline {2.2}Moteur de propulsion}{16}
+\contentsline {subsection}{\numberline {2.2.1}Descriptif}{16}
+\contentsline {subsection}{\numberline {2.2.2}H-bridge}{16}
+\contentsline {subsubsection}{Table de V\'erit\'e}{18}
+\contentsline {subsubsection}{L293d}{18}
+\contentsline {chapter}{\numberline {3}Software}{19}
+\contentsline {section}{\numberline {3.1}Software de l'Arduino}{19}
+\contentsline {section}{\numberline {3.2}Software du Raspberry Pi}{19}
+\contentsline {subsection}{\numberline {3.2.1}Edimax}{19}
+\contentsline {subsection}{\numberline {3.2.2}Guvcview}{19}
+\contentsline {section}{\numberline {.1}Sketchbook}{21}
+\contentsline {subsection}{\numberline {.1.1}Sketch exemple pour le moteur}{21}
+\contentsline {subsection}{\numberline {.1.2}Sketch exemple pour le servo }{23}
+\contentsline {chapter}{\numberline {A}Champs d'application}{26}

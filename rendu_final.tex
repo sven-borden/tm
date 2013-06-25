@@ -1,4 +1,4 @@
-\documentclass[a4paper,12pt]{article}
+\documentclass[a4paper,12pt]{report}
 \usepackage[french]{babel}
 \usepackage{graphicx}
 \graphicspath{{figures/}}
@@ -64,7 +64,7 @@ Ce dossier est le résultat de onze mois de recherches éffectuées dans le cadr
 
 \section*{Remerciements}
 \addcontentsline{toc}{section}{\protect\numberline{}Remerciements}
-Ce projet n'aurait pu aboutir sans l'aide de nombreuses personnes. Voici l'occasion de les remercier: Mr. Denis Rochat et Mr. Phillipe Rochat pour leur disponibilité, leurs renseignements ainsi que les prêts matériels. Mr. Frederic Genevey ainsi que son site edurobot.ch pour avoir promouvu notre projet sur son site internet. Mme Pauline Pidoux pour nous avoir aidé lors de la rédaction de ce travail et nous tenions aussi à remercier Stefano Varricchio, du Laboratoire LIS pour ses informations très utiles.
+Ce projet n'aurait pu aboutir sans l'aide de nombreuses personnes. Voici l'occasion de les remercier: Mr. Denis Rochat et Mr. Phillipe Rochat pour leur disponibilité, leurs renseignements ainsi que les prêts matériels. Mr. Frederic Genevey ainsi que son site edurobot.ch pour avoir promouvu notre projet sur son site internet. Merci à Mr. Frédéric Chaberlot pour ses prêts matériels. Mme Pauline Pidoux pour nous avoir aidé lors de la rédaction de ce travail et nous tenions aussi à remercier Stefano Varricchio, du Laboratoire LIS pour ses informations très utiles.
 
 \clearpage
 \begin{abstract}
@@ -83,9 +83,114 @@ Chaque chapitre de ce dossier traite d'une partie du drone, le premier expliquer
 
 \section*{Introduction}
 \addcontentsline{toc}{section}{\protect\numberline{}Introduction}
-Le but de ce projet était de construire un véhicule roulant que l'on peut commander à distance. Plus qu'une simple voiture télécommandée, ce drone est capable d'être contrôlé sans avoir une vue directe sur celui-ci, car il possède des capteurs ainsi qu'une caméra. Ce types d'engins se nomment \textit{UGV (Unmanned Ground Vehicle)} soit: véhicule roulant commandé à distance. Surtout utilisés dans l'amée, les modèles qu'on peut trouver sur le marché sont très coûteux, ils varient entre trois cents et mille trois cents francs. Notre but est donc de pouvoir construire un appareil semblable pour moins de cent septante-cinq francs. 
+Le but de ce projet était de construire un véhicule roulant que l'on peut commander à distance. Plus qu'une simple voiture télécommandée, ce drone est capable d'être contrôlé sans avoir une vue directe sur celui-ci, car il possède des capteurs ainsi qu'une caméra. Ce types d'engins se nomment \textit{UGV (Unmanned Ground Vehicle)} soit: véhicule roulant sans équipage. Surtout utilisés dans l'amée, les modèles qu'on peut trouver sur le marché sont très coûteux, ils varient entre trois cents et mille trois cents francs. Notre but est donc de pouvoir construire un appareil semblable pour moins de deux cent francs. 
 \clearpage
-\part{La mécanique et l'électronique}
+
+
+\chapter{Hardware}
+
+\section{Choix du hardware}
+Pour réaliser ce projet, nous avons dû faire des choix au niveau du hardware. Notre choix s'est porté sur deux système. Le premier, l'Arduino, est un microcontrolleur qui permet de contrôler presque ce qu'on veut grâce à un language de programation proche du C. Le second est le Raspberry Pi, qui est un ordinateur bon marché (trente-cinq francs) qui est récemment sorti sur les marchés. 
+
+
+\subsection{Arduino}
+L'Arduino \cite{Arduino} est un microcontrolleur \textit{Open Source}, ce qui veut dire que tout le monde peut non seulement avoir accès aux plans et aux codes, mais peut aussi les modifier. Ce microcontrolleur se programme avec un language proche du C. 
+
+
+\subsubsection{Choix du type d'Arduino}
+Pour ce projet, nous avons choisi l'Arduino Uno, c'est l'Arduino de base. En effet, Arduino possède de nombreux produits afin de subvenir aux différents besoin. Nous avons hésité à prendre l'Arduino Mega, mais les avantages qu'il offre ne sont pas très utiles pour notre projet. L'Arduino Uno est un microcontrolleur qui ressemble à ceci.\\
+
+\begin{figure}[h]
+\begin{center}
+\includegraphics[scale=0.38]{arduino_uno.jpg}
+\caption{Arduino Uno R3}
+\end{center}
+\end{figure}
+L'Arduino Uno possède les caractéristiques suivantes:
+\begin{enumerate}
+\item 14 pin digitaux (signal haut ou bas) où on définit INPUT ou OUPUT dont 6 d'entres eux peuvent être analogique en OUTPUT.
+\item  6 analogiques INPUT
+\item Connection USB
+\item Oscillateur à quartz cadencé à 16MHz
+\item Courant continu sur les pin digitaux (40mA)
+\item Une sortie 3.3V et une sortie 5V en courant continu
+\item 32KB de mémoire flash
+\item 2KB de RAM
+\item Microcontrôleur ATmega328
+\end{enumerate}
+Bien qu'à première vue on pourrait se dire qu'il n'est pas très performant. Il faut se rappeler qu'il ne dois pas faire fonctionner un système d'exploitation, mais qu'il dois simplement traiter des mesures et envoyer des signaux digitaux ou analogiques. L'avantage de l'Arduino Uno est qu'il n'y a pas besoin de faire de soudure, les pin\footnote{Les pin sont des trous où on peut y glisser des fils metalliques. Ce sont les liaisons entre le contrôleur et les senseurs} sont directements accessibles et on peut y glisser un fil métallique. Dans le cas où nous souhaiterions commercialiser notre produit, nous choisirons probablement l'Arduino mini car il est encore plus petit et nous pouvons directement souder les fils sur le microcontrôleur.
+
+\subsection{Raspberry Pi}
+Le Raspberry Pi\cite{RaspberryPiCaracteristiques}, ou la Framboise pour les francophones, est un ordinateur de la taille d'une carte de crédit sur lequel on peut installer différents systèmes d'exploitations dérivés de UNIX/Linux. Le Raspberry Pi est acheté nu, c'est-à-dire que cet ordinateur ne possède pas d'écran, ni de clavier ou de souris, néanmoins le Raspberry Pi possède plusieurs ports où on peut brancher écran (via l'interface HDMI ou Composite), un câble Ethernet et presque ce qu'on veut grâce aux deux ports USB. Le Raspberry Pi est très interressant non pas du point de vue de sa puissance calculatoire, mais du point de vue rapport qualité-prix. En effet, pour trente-cinq francs, il a les caractéristiques suivantes: 
+\begin{enumerate}
+\item poid de 45g environ
+\item Processeur ARM1176JZF-S (ARMv6) 700MHz Broadcom 2835
+\item 512Mo de RAM (sur la version B, soit celle que nous avons choisie)
+\item 2 sorties vidéo (HDMI et Composite) 
+\item Sortie audio stéréo Jack (3.5mm) (le son passe aussi par le HDMI en sortie 5.1)
+\item criture et lecture possible sur une carte mémoire sous forme de carte SD (supporte les formats: SDHC, MMC et SDIO)
+\item 2 ports USB 2.0 et 1 port Ethernet
+\item Alimentation par câble micro USB
+\item Faible consommation (5W, 5V, 1A)
+\item Communication possible via les Pin GPIO
+\item Décodeur permettant de lire le FullHD  1080p
+\item API logiciel vidéo (OpenGL)
+\end{enumerate}
+Bien qu'à première vue la Framboise ne semble pas très performante, il faut prendre en compte son prix qui est bas, sa taille ainsi que les possibilités qui sont presque infinies. Les projets qu'on peut mener grâce au Raspberry Pi sont des plus varié. En effet, il peut être utilisé pour la photographie, comme base centrale d'un système de surveillance. 
+
+\subsubsection{Choix de l'OS}
+Plusieurs types de systèmes d'exploitations fonctionnant sur le Raspberry Pi existent. Pour n'en citer que quelques-uns:
+\begin{multicols}{2}
+\begin{itemize}
+\item Androïd
+\item Firefox OS
+\item RISC OS
+\item Fedora
+\item Debian
+\item ArchLinux
+\item Gentoo
+\item Raspbian
+\end{itemize}
+\end{multicols}
+Notre choix à été porté sur Raspbian, qui est un dérivé de Debian, pour plusieurs raisons. Tout d'abord, cet OS à été dévellopé spécialement pour le Raspberry Pi et il est donc continuellement dévellopé par la communauté du Raspberry Pi. Cet OS étant basé sur un environnement Linux, cela offre un grand nombre de liberté afin de travailler dessus. Raspbian est aussi gratuit, se qui est à prendre en compte puisque nous essayons de réduire les coûts.  
+
+
+
+\section{Coût des composants}
+Voici un tableux contenant tout ce dont nous avons utiliser pour construire notre drone.
+\begin{table}
+\begin{tabular}{| l | c | r |}
+\hline
+Composant & Quantité & Prix [CHF] \\
+\hline
+Voiture radio-commandée & 1 & 30\\
+\hline
+Arduino Uno & 1 & 25 \\
+\hline
+Raspberry Pi& 1 & 35 \\
+\hline
+Batterie externe (7000mAh) &1 & 35 \\
+\hline
+Webcam & 1 & 35\\
+\hline
+Edimax EW7811Un (wi-fi) & 1 & 18.40\\
+\hline
+Hub USB & 1 & 5.60\\
+\hline
+Capteur de distance (HC-SR04) & 1 & 3.20\\
+\hline
+Câble micro USB & 1 & 1.40\\
+\hline
+
+
+\hline
+\hline
+total & 9& 188.60\\
+\hline
+
+\end{tabular}
+\end{table}
+\chapter{La mécanique et l'électronique}
 
 
 \section{Description du véhicule \label{TableDesc}}
@@ -159,7 +264,7 @@ l'arduino effectue avec aisance. On peut indiquer \`a un servo de se rendre vers
 un de ses $180^{\circ}$ de libert\'e en lui envoyant un signal \'electrique dit
 modul\'e. Ce signal est modul\'e d'une mani\`ere compréh\'ensible pour le
 servo. L'illustration suivante
-pourrait d'avantage \'eclairer le lecteur:
+pourrait d'avantage \'eclairer le lecteur.
 
 \begin{figure}[h]
 \centering
@@ -222,7 +327,7 @@ La r\'eponse est donn\'ee par un astucieux circuit compos\'e de
 transistors. Il permet, au moyen de deux signaux actionnant les transistors,
 de contr\^oler le sens du courrant passant dans le moteur.
 
-Le sch\'ema suivant pourra d'avantage \'eclairer le lecteur:
+Le sch\'ema suivant pourra d'avantage \'eclairer le lecteur.
 
 \begin{figure}[h]
 \centering
@@ -230,7 +335,7 @@ Le sch\'ema suivant pourra d'avantage \'eclairer le lecteur:
     \caption{\label{H-bridge}Sch\'ema d'un H-bridge}
 \end{figure}
 
-\textbf{Explications:}
+\textbf{Explications}
 
 Tout d'abord, que sont des transistors NPN et PNP? La diff\'erence pratique
 entre ces deux types de transistors est que l'un demande un signal
@@ -246,7 +351,7 @@ moteur ou \emph{OUTPUT} variables.
 \subsubsection{Table de V\'erit\'e}
 R\'edigeons un tableau de v\'erit\'e pour mieux illustrer la situation, o\`u H
 (\textit{high}) signifie haut et L (\textit{low}) signifie bas :
-\clearpage
+
 
 \begin{table}%[!h]
 \begin{center}
@@ -277,82 +382,15 @@ Nous avons décidé d'utiliser un H-Bridge qui se nomme L293d.
 
 
 
-\part{Hardware}
 
-\section{Choix du hardware}
-Pour réaliser ce projet, nous avons dû faire des choix au niveau du hardware. Notre choix s'est porté sur deux système. Le premier, l'Arduino, est un microcontrolleur qui permet de contrôler presque ce qu'on veut grâce à un language de programation proche du C. Le second est le Raspberry Pi, qui est un ordinateur bon marché (trente-cinq francs) qui est récemment sorti sur les marchés. 
-
-
-\subsection{Arduino}
-L'Arduino \cite{Arduino} est un microcontrolleur \textit{Open Source}, ce qui veut dire que tout le monde peut non seulement avoir accès aux plans et aux codes, mais peut aussi les modifier. Ce microcontrolleur se programme avec un language proche du C. 
-
-
-\subsubsection{Choix du type d'Arduino}
-Pour ce projet, nous avons choisi l'Arduino Uno, c'est l'Arduino de base. En effet, Arduino possède de nombreux produits afin de subvenir aux différents besoin. Nous avons hésité à prendre l'Arduino Mega, mais les avantages qu'il offre ne sont pas très utiles pour notre projet. L'Arduino Uno est un microcontrolleur qui ressemble à ceci:\\
-
-\begin{figure}[h]
-\begin{center}
-\includegraphics[scale=0.38]{arduino_uno.jpg}
-\caption{Arduino Uno R3}
-\end{center}
-\end{figure}
-L'Arduino Uno possède les caractéristiques suivantes:
-\begin{enumerate}
-\item 14 pin digitaux (signal haut ou bas) où on définit INPUT ou OUPUT dont 6 d'entres eux peuvent être analogique en OUTPUT.
-\item  6 analogiques INPUT
-\item Connection USB
-\item Oscillateur à quartz cadencé à 16MHz
-\item Courant continu sur les pin digitaux (40mA)
-\item Une sortie 3.3V et une sortie 5V en courant continu
-\item 32KB de mémoire flash
-\item 2KB de RAM
-\item Microcontrôleur ATmega328
-\end{enumerate}
-Bien qu'à première vue on pourrait se dire qu'il n'est pas très performant. Il faut se rappeler qu'il ne dois pas faire fonctionner un système d'exploitation, mais qu'il dois simplement traiter des mesures et envoyer des signaux digitaux ou analogiques. L'avantahe de l'Arduino Uno est qu'il n'y a pas besoin de faire de soudure, les pin sont directements accessibles grâce à des trous (les pin) où on peut y glisser un fil métallique. Dans le cas où nous souhaiterions commercialiser notre produit, nous choisirons probablement l'Arduino mini car il est encore plus petit et nous pouvons directement souder les fils sur le microcontrôleur.
-
-\subsection{Raspberry Pi}
-Le Raspberry Pi\cite{RaspberryPiCaracteristiques} est un ordinateur de la taille d'une carte de crédit sur lequel on peut installer différents systèmes d'exploitations dérivés de UNIX/Linux. Le Raspberry Pi est acheté nu, c'est-à-dire que cet ordinateur ne possède pas d'écran, ni de clavier ou de souris, néanmoins le Raspberry Pi possède plusieurs ports où on peut brancher écran (via l'interface HDMI ou Composite), un câble Ethernet et presque ce qu'on veut grâce aux deux ports USB. Le Raspberry Pi est très interressant non pas du point de vue de sa puissance calculatoire, mais du point de vue rapport qualité-prix. En effet, pour trente-cinq francs, il a les caractéristiques suivantes: 
-\begin{enumerate}
-\item poid de 45g environ
-\item Processeur ARM1176JZF-S (ARMv6) 700MHz Broadcom 2835
-\item 512Mo de RAM (sur la version B, soit celle que nous avons choisie)
-\item 2 sorties vidéo (HDMI et Composite) 
-\item Sortie audio stéréo Jack (3.5mm) (le son passe aussi par le HDMI en sortie 5.1)
-\item criture et lecture possible sur une carte mémoire sous forme de carte SD (supporte les formats: SDHC, MMC et SDIO)
-\item 2 ports USB 2.0 et 1 port Ethernet
-\item Alimentation par câble micro USB
-\item Faible consommation (5W, 5V, 1A)
-\item Communication possible via les Pin GPIO
-\item Décodeur permettant de lire le FullHD  1080p
-\item API logiciel vidéo (OpenGL)
-\end{enumerate}
-Bien qu'à première vue la Framboise ne semble pas très performante, il faut prendre en compte son prix qui est bas, sa taille ainsi que les possibilités qui sont presque infinies. Les projets qu'on peut mener grâce au Raspberry Pi sont des plus varié. En effet, il peut être utilisé pour la photographie, comme base centrale d'un système de surveillance. 
-
-\subsubsection{Choix de l'OS}
-Plusieurs types de systèmes d'exploitations fonctionnant sur le Raspberry Pi existent. Pour n'en citer que quelques-uns:
-\begin{multicols}{2}
-\begin{itemize}
-\item Androïd
-\item Firefox OS
-\item RISC OS
-\item Fedora
-\item Debian
-\item ArchLinux
-\item Gentoo
-\item Raspbian
-\end{itemize}
-\end{multicols}
-Notre choix à été porté sur Raspbian, qui est un dérivé de Debian, pour plusieurs raisons. Tout d'abord, cet OS à été dévellopé spécialement pour le Raspberry Pi et il est donc continuellement dévellopé par la communauté du Raspberry Pi. Cet OS étant basé sur un environnement Linux, cela offre un grand nombre de liberté afin de travailler dessus. Raspbian est aussi gratuit, se qui est à prendre en compte puisque nous essayons de réduire les coûts.  
-
-
-\part{Software}
+\chapter{Software}
 
 
 \section{Software de l'Arduino}
 Pour programmer l'Arduino, nous utilisons le logiciel dédié, \textit{Arduino}, C'est un environnement \textit{open-source} qui fonctionne sur Windows, Linux et Mac OS X. Il a été écrit en Java et est basé sur le logiciel Processing.
-\begin{figure}[h]
+\begin{figure}[h!]
 \begin{center}
-\includegraphics[scale=0.6]{arduino-environnement-1}
+\includegraphics[scale=0.5]{arduino-environnement-1}\\
 \caption{Environnement Arduino}
 \end{center}
 \end{figure}
@@ -363,7 +401,9 @@ Ce logiciel nous permet de programmer, de compiler et de téléverser un code à
 \section{Software du Raspberry Pi}
 
 
+\subsection{Edimax}
 
+\subsection{Guvcview}
 
 \clearpage
 \appendix
@@ -376,7 +416,7 @@ Ce logiciel nous permet de programmer, de compiler et de téléverser un code à
 \subsection{Sketch exemple pour le servo \label{SketchExServo}}\cite{ServoSweep}
 \lstinputlisting[language=Java]{code/ServoExample.java}
 
-\textbf{Commentaires:}
+\textbf{Commentaires}
 
 On commence par inclure la classe Servo, puis on cr\'ee un objet
 \emph{Servo}. Dans la fonction \emph{setup} du programme, on lie l'objet
@@ -387,7 +427,7 @@ d'atteindre la position demand\'ee. Etant donn\'e que cette op\'eration est
 itt\'er\'ee plusieurs fois au moyen d'une boucle \emph{for}, on pourra voir le
 servo d\'ecrire un mouvement de balayage.
 
-\part{Champs d'application}
+\chapter{Champs d'application}
 
 
 \bibliographystyle{plain}
