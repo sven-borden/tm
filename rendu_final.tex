@@ -388,7 +388,7 @@ Nous avons décidé d'utiliser un H-Bridge qui se nomme L293d.
 
 
 \section{Software de l'Arduino}
-\lettrine{P}{our} programmer l'Arduino, nous utilisons le logiciel dédié, \textit{Arduino} \ref{Environnement Arduino}, C'est un environnement \textit{open-source} qui fonctionne sur Windows, Linux et Mac OS X. Il a été écrit en Java et est basé sur le logiciel Processing.
+\lettrine{P}{our} programmer l'Arduino, nous utilisons le logiciel dédié, \textit{Arduino} (fig:\ref{Environnement Arduino}), C'est un environnement \textit{open-source} qui fonctionne sur Windows, Linux et Mac OS X. Il a été écrit en Java et est basé sur le logiciel Processing.
 \begin{figure}[h!]
 \begin{center}
 \includegraphics[scale=0.5]{arduino-environnement-1}\\
@@ -404,10 +404,11 @@ Sans les logiciels, notre projet aurait bien du mal à se réaliser. Dans cette 
 
 \subsection{Sans fil}
 
-Afin que le Raspberry Pi puisse se connecter sur le réseau sans fil, nous utilisons un \textit{dongle} Wi-Fi \footnote{Le modèle utilisé est le suivant: EW7811Un fabriqué par Edimax}. Cet accessoire ne nécéssite pas de \textit{driver} \footnote{Un driver est un petit logiciel permettant d'exploiter le Hardware}. On est donc directement reconnu et peut rapidement être configurer par le Raspberry Pi. 
+Afin que le Raspberry Pi puisse se connecter sur le réseau sans fil, nous utilisons un \textit{dongle} \ref{Edimax} Wi-Fi \footnote{Le modèle utilisé est le suivant: EW7811Un fabriqué par Edimax}. Cet accessoire ne nécessitant pas de \textit{driver} \footnote{Un driver est un petit logiciel permettant d'exploiter le Hardware},il est donc directement reconnu et peut rapidement être configurer par le Raspberry Pi. 
 \begin{figure}[!h]
 \begin{center}
 \includegraphics[scale=0.38, trim=300 300 300 0, clip=true]{Edimax}
+\caption{\textit{Dongle} Edimax EW7811Un. Connecté par USB à la Framboise, il permet au Raspberry Pi de se connecter via Wi-Fi à une borne\label{Edimax}}
 \end{center}
 \end{figure} 
 
