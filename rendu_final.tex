@@ -394,7 +394,7 @@ Sans les logiciels, notre projet aurait bien du mal à se réaliser. Dans cette 
 
 \subsection{Sans fil}
 
-Afin que le Raspberry Pi puisse se connecter sur le réseau sans fil, nous utilisons un \textit{dongle} \ref{Edimax} Wi-Fi \footnote{Le modèle utilisé est le suivant: EW7811Un fabriqué par Edimax}. Cet accessoire ne nécessitant pas de \textit{driver} \footnote{Un driver est un petit logiciel permettant d'exploiter le Hardware},il est donc directement reconnu et peut rapidement être configurer par le Raspberry Pi. 
+Afin que le Raspberry Pi puisse se connecter sur le réseau sans fil, nous utilisons un \textit{dongle} (fig:\ref{Edimax}) Wi-Fi \footnote{Le modèle utilisé est le suivant: EW7811Un fabriqué par Edimax}. Cet accessoire ne nécessitant pas de \textit{driver} \footnote{Un driver est un petit logiciel permettant d'exploiter le Hardware},il est donc directement reconnu et peut rapidement être configurer par le Raspberry Pi. 
 \begin{figure}[!h]
 \begin{center}
 \includegraphics[scale=0.38, trim=300 300 300 0, clip=true]{Edimax}
@@ -406,7 +406,25 @@ Afin que le Raspberry Pi puisse se connecter sur le réseau sans fil, nous utili
 
 \clearpage
 
-\chapter{Champs d'application}
+\chapter{Java \& Python}
+\lettrine{D}{ans} notre projet, nous avons commencé par faire nous programmes en python avant de recommencer en Java, bien que le code en python fonctionne. 
+
+\section{Python}
+Notre code python (annexe: \ref{code python}) est dans la mémoire du Raspberry Pi et lorsqu'on éxécute ce code, il ouvre une fenêtre (fig:\ref{python environnement}) où nous pouvons interéagir avec l'arduino.
+
+\begin{center}
+\begin{figure}[!h]
+\includegraphics[scale=1]{python-environnement}\label{python environnement}
+\caption{Fenêtre X du code python qui permet la lecture du clavier. Cette fenêtre permet de contrôler le drone.}
+\end{figure}
+\end{center}
+
+\section{Java}
+
+
+
+
+
 
 \clearpage
 
@@ -430,6 +448,11 @@ d\'elai (le programme s'arr\^ete en ce point) de 15ms pour permettre au servo
 d'atteindre la position demand\'ee. Etant donn\'e que cette op\'eration est
 itt\'er\'ee plusieurs fois au moyen d'une boucle \emph{for}, on pourra voir le
 servo d\'ecrire un mouvement de balayage.
+
+\subsection{Code python sur le Raspberry Pi \label{code python}}
+\lstinputlisting[language=python]{code/gui_1.1.py}
+
+
 
 
 \bibliographystyle{plain}
