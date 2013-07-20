@@ -45,14 +45,13 @@
 {\fontfamily{pnc}\selectfont %%%% attention, ne pas oublier la dernière accolade en fin de texte!!!!
 \title{UGV \\(Unmanned Ground Vehicle)}
 \author{Sven Borden\\ \small Travail de maturité \and  Eric Brunner\\ \small Gymnase de Morges}
-\date{\today}
-\maketitle
-
+\date{\today \\ ~\\
 \begin{centering}
 \includegraphics[width=1.0\textwidth]{DSC_8469res}
 \end{centering}
 \addcontentsline{lof}{figure}{\protect\numberline{}Image de courverture}
-
+}
+\maketitle
 \clearpage
 
 
@@ -65,11 +64,12 @@ Ce dossier est le résultat de onze mois de recherches éffectuées dans le cadr
 
 \section*{Remerciements}
 \addcontentsline{toc}{section}{\protect\numberline{}Remerciements}
-Ce projet n'aurait pu aboutir sans l'aide de nombreuses personnes. Voici l'occasion de les remercier: Mr. Denis Rochat et Mr. Phillipe Rochat pour leur disponibilité, leurs renseignements ainsi que les prêts matériels. Mr. Julien Dominski pour son aide précieuse dans le codage. Mr. Jean Rossier et Mr. Marco Pagnamenta pour leur conseils techniques. Mr. Frederic Genevey ainsi que son site edurobot.ch pour avoir promouvu notre projet sur son site internet. Merci à Mr. Frédéric Chaberlot pour ses prêts matériels. Mme Pauline Pidoux pour nous avoir aidé lors de la rédaction de ce travail et nous tenions aussi à remercier Stefano Varricchio, du Laboratoire LIS pour ses informations très utiles.
+Ce projet n'aurait pu aboutir sans l'aide de nombreuses personnes. Voici l'occasion de les remercier: Mr. Denis Rochat et Mr. Phillipe Rochat pour leur disponibilité, leurs renseignements ainsi que les prêts matériels. Mr. Julien Dominski pour son aide précieuse dans le codage. Mr. Jean Rossier, Karl Kangur, Michaël Bolay et Mr. Marco Pagnamenta pour leur conseils techniques. Mr. Frederic Genevey ainsi que son site edurobot.ch pour avoir promouvu notre projet sur son site internet. Merci à Mr. Frédéric Chaberlot pour ses prêts matériels. Mme Pauline Pidoux pour nous avoir aidé lors de la rédaction de ce travail et nous tenions aussi à remercier Stefano Varricchio, du Laboratoire LIS pour ses informations très utiles.
 
 \clearpage
 \begin{abstract}
 Parti dans l'idée de concevoir un objet déjà existant mais à moindre prix, nous avons choisi des technologies récemment sorties, ce qui fait que nous étions dans les premiers à évoluer dans ce millieu. Néanmoins, un support de devellopeur à toujours été là pour nous débloquer en cas de pépin. C'est entre autre grâce à eux que nous sommes parvenu a atteindre l'objectif souhaité.
+Les UGV sont des drones roulants qui sont principalement utilisés par les militaires ou la police. Ils permettent de remplir des missions qu'il serait difficile voire impossible à faire pour l'homme. Notre projet ne consiste pas à fabriquer un drone ayant un fusil permettant de "dégommer" tous ce qui bouge, mais de faire un drone de reconnaissance à moindre coûts. Les drones existant sont soit trop cher, soit peu performants. Par exemple le Beewi WiFi Camera Buggy BWZ200-A1, qui coûte septante-neuf francs est un bon jouet, mais dans notre travail de maturité, son autonomie est insuffisante (une dixaine de minute tout au plus) et sa portée ne dépasse guère les 25 mètres, ce qui rend la caméra inutile. 
 \end{abstract}
 \addcontentsline{toc}{section}{\protect\numberline{}Résumé}
 \clearpage
@@ -95,7 +95,7 @@ Le but de ce projet est de construire un véhicule roulant que l'on peut command
 
 
 \subsection{Arduino}
-L'Arduino \label{Arduino} \cite{Arduino} est un microcontrolleur \textit{Open Source}, ce qui veut dire que tout le monde peut non seulement avoir accès aux plans et aux codes, mais peut aussi les modifier. Ce microcontrolleur se programme avec un language proche du C. 
+L'Arduino \label{Arduino} \cite{Arduino} est un microcontrôleur \textit{Open Source}, ce qui veut dire que tout le monde peut non seulement avoir accès aux plans et aux codes, mais peut aussi les modifier. Ce microcontrolleur se programme avec un language proche du C. 
 
 
 \subsubsection{Choix du type d'Arduino}
@@ -109,8 +109,8 @@ Pour ce projet, nous avons choisi l'Arduino Uno (fig:\ref{fig:ArduinoUnoR3}), c'
 \end{figure}\footnote{Les pin sont des trous où on peut y glisser des fils metalliques. Ce sont les liaisons entre le contrôleur et les senseurs}
 L'Arduino Uno possède les caractéristiques suivantes:
 \begin{enumerate}
-\item 14 pin digitaux (signal haut ou bas) où on définit INPUT ou OUPUT dont 6 d'entres eux peuvent être analogique en OUTPUT.
-\item  6 analogiques INPUT
+\item 14 pin digitaux (signal haut ou bas) qu'on peut définit en INPUT ou en OUPUT dont 6 d'entres eux peuvent moduler le signal lorsqu'ils sont utilisé en OUTPUT
+\item  6 pin analogiques  en INPUT
 \item Connection USB
 \item Oscillateur à quartz cadencé à 16MHz
 \item Courant continu sur les pin digitaux (40mA)
@@ -152,15 +152,15 @@ Voici un tableux contenant tout ce dont nous avons utiliser pour construire notr
 \hline
 Composant & Quantité & Prix [CHF] \\
 \hline
-Voiture radio-commandée & 1 & 30\\
+Voiture radio-commandée & 1 & 30.00\\
 \hline
-Arduino Uno & 1 & 20 \\
+Arduino Uno & 1 & 20.00 \\
 \hline
-Raspberry Pi& 1 & 35 \\
+Raspberry Pi& 1 & 35.00 \\
 \hline
-Batterie externe (7000mAh) &1 & 35 \\
+Batterie externe (7000mAh) &1 & 28.00 \\
 \hline
-Webcam & 1 & 35\\
+Webcam & 1 & 35.00\\
 \hline
 Edimax EW7811Un (wi-fi) & 1 & 18.40\\
 \hline
@@ -176,7 +176,7 @@ Câble micro USB & 1 & 1.40\\
 
 \hline
 \hline
-total & 10 & 186.60\\
+total & 10 & 179.60\\
 \hline
 
 \end{tabular}
@@ -218,7 +218,7 @@ Dans son \'etat initial, le syst\`eme de guidage pouvait se comparer \`a un
 servo tr\`es rudimentaire. Il en comptait toutes les caractéristiques, mais en
 un état simplifié, en particulier le système de positionnement. Dans un servo
 classique, il s'agit d'un potentiomètre (résistance variable) qui permet
-de savoir en tout moment la position de la corne. Par contre, dans le cas de
+de savoir en tout moment la position de la corne \footnote{La corne est le bras qui resort du servo-moteur et qui permet de deplacer des masses}. Par contre, dans le cas de
 la voiture, un système de balais (voir image) assure cette tâche. Il en
 résulte une identification de position très basique: gauche,devant ou
 droite.\\
@@ -404,6 +404,7 @@ Afin que le Raspberry Pi puisse se connecter sur le réseau sans fil, nous utili
 
 \subsection{Guvcview}
 
+Guvcview est un software permettant d'enregistrer des séquences vidéos ou des images, il fourni aussi une image de contrôle, que nous utilisions durant une bonne partie du projet afin d'avoir l'image. Le point faible de ce logiciel et qu'avec celui-ci, le nombre d'images par seconde est faible, trois à quatre images. Avec d'autres logiciels, tel que OpenCV permet d'obtenir plus de 25 images par seconde. 
 \clearpage
 
 \chapter{Java \& Python}
@@ -421,7 +422,7 @@ Notre code python (annexe: \ref{code python}) est dans la mémoire du Raspberry 
 
 \section{Java}
 
-
+\section{OpenCV}
 
 
 
