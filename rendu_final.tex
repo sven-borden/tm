@@ -58,18 +58,18 @@
 \section*{Avant-propos}
 \addcontentsline{toc}{section}{\protect\numberline{}Avant-propos}
 
-Ce dossier est le résultat de onze mois de recherches éffectuées dans le cadre du travail de maturité du gymnase de Morges. Ayant déjà quelques notions en informatique, nous nous sommes dirigés  vers un domaine parallèle, la robotique. Le choix de ce sujet est issu de...
+Ce dossier est le résultat de onze mois de recherches éffectuées dans le cadre du travail de maturité du gymnase de Morges. Ayant déjà quelques notions en informatique, nous nous sommes dirigés  vers un domaine parallèle, la robotique. Le choix de ce sujet est dérivé des quadcoptères (hélicoptères à quatres hélices). Plutot que de ce lancer dans un projet dont nous savons que nous n'allons pas réussir à terminer dans les délais, nous nous sommes plutôt focalisé sur les véhicules terrestres ce qui nous a permis d'aller beaucoup plus loin que le quadcopter.
 
 \clearpage
 
 \section*{Remerciements}
 \addcontentsline{toc}{section}{\protect\numberline{}Remerciements}
-Ce projet n'aurait pu aboutir sans l'aide de nombreuses personnes. Voici l'occasion de les remercier: Mr. Denis Rochat et Mr. Phillipe Rochat pour leur disponibilité, leurs renseignements ainsi que les prêts matériels. Mr. Julien Dominski pour son aide précieuse dans le codage. Mr. Jean Rossier, Karl Kangur, Michaël Bolay et Mr. Marco Pagnamenta pour leur conseils techniques. Mr. Frederic Genevey ainsi que son site edurobot.ch pour avoir promouvu notre projet sur son site internet. Merci à Mr. Frédéric Chaberlot pour ses prêts matériels. Mme Pauline Pidoux pour nous avoir aidé lors de la rédaction de ce travail et nous tenions aussi à remercier Stefano Varricchio, du Laboratoire LIS pour ses informations très utiles.
+Ce projet n'aurait pu aboutir sans l'aide de nombreuses personnes. Voici l'occasion de les remercier: Mr. Denis Rochat et Mr. Phillipe Rochat pour leur disponibilité, leurs renseignements ainsi que les prêts matériels. Mr. Julien Dominski pour son aide précieuse dans le codage. Mr. Jean Rossier, Karl Kangur, Michaël Bolay et Mr. Marco Pagnamenta pour leur conseils techniques, surtout à propos des plaques éléctronique à imprimer. Mr. Frederic Genevey ainsi que son site edurobot.ch pour avoir promouvu notre projet sur son site internet. Merci à Mr. Frédéric Chaberlot pour ses prêts matériels. Mme Pauline Pidoux pour nous avoir aidé lors de la rédaction de ce travail et nous tenions aussi à remercier Stefano Varricchio, du Laboratoire LIS pour ses informations très utiles.
 
 \clearpage
 \begin{abstract}
-Parti dans l'idée de concevoir un objet déjà existant mais à moindre prix, nous avons choisi des technologies récemment sorties, ce qui fait que nous étions dans les premiers à évoluer dans ce millieu. Néanmoins, un support de devellopeur à toujours été là pour nous débloquer en cas de pépin. C'est entre autre grâce à eux que nous sommes parvenu a atteindre l'objectif souhaité.
-Les UGV sont des drones roulants qui sont principalement utilisés par les militaires ou la police. Ils permettent de remplir des missions qu'il serait difficile voire impossible à faire pour l'homme. Notre projet ne consiste pas à fabriquer un drone ayant un fusil permettant de "dégommer" tous ce qui bouge, mais de faire un drone de reconnaissance à moindre coûts. Les drones existant sont soit trop cher, soit peu performants. Par exemple le Beewi WiFi Camera Buggy BWZ200-A1, qui coûte septante-neuf francs est un bon jouet, mais dans notre travail de maturité, son autonomie est insuffisante (une dixaine de minute tout au plus) et sa portée ne dépasse guère les 25 mètres, ce qui rend la caméra inutile. 
+Parti dans l'idée de concevoir un objet déjà existant mais à moindre prix, nous avons choisi des technologies récemment sorties, ce qui fait que nous étions dans les premiers à évoluer dans ce millieu. Néanmoins, un support de dévelopeur à toujours été là pour nous débloquer en cas de pépin. C'est entre autre grâce à eux que nous sommes parvenu a atteindre l'objectif souhaité.
+Les UGV sont des drones roulants qui sont principalement utilisés par les militaires ou la police. Ils permettent de remplir des missions qu'il serait difficile voire impossible à faire pour l'homme. Notre projet ne consiste pas à fabriquer un drone ayant un fusil permettant de "dégommer" tous ce qui bouge, mais de faire un drone de reconnaissance à moindre coûts. Les drones existant sont soit trop cher, soit peu performants. Par exemple le Beewi WiFi Camera Buggy BWZ200-A1, qui coûte septante-neuf francs est un bon jouet, mais dans notre travail de maturité, son autonomie est insuffisante (une dixaine de minute tout au plus) et sa portée ne dépasse guère les 25 mètres, ce qui rend la caméra inutile. L'objectif de se projet n'est pas d'avoir simplement un prototype, mais d'avoir un produit finit qui serait en phase finale de commercialisation. En effet, si nous parvenons avoir un ensemble possèdant un véhicule tout terrain, une interface claire et un guidage simple et efficace, nous arions des arguments de poids face aux autres produits disponibles sur le marché. Dans la lancée de ce projet, nous nous sommes inscrit au concours suisse de science \textit{La science appelle les jeunes}\footnote{[site à insérer]}. Ce concours réunis presque tout les domaines, pourvu que certains critères soient respéctés. Tous les concurents continuent un projets qu'ils avait fait durant leur travail de maturité/diplôme et la démarche utilisée doit être scientifique. Ce concours pourrait, selon les résultats, nous aider à promouvoir notre drone. 
 \end{abstract}
 \addcontentsline{toc}{section}{\protect\numberline{}Résumé}
 \clearpage
@@ -84,14 +84,15 @@ Les UGV sont des drones roulants qui sont principalement utilisés par les milit
 
 \section*{Introduction}
 \addcontentsline{toc}{section}{\protect\numberline{}Introduction}
-Le but de ce projet est de construire un véhicule roulant que l'on peut commander à distance. Plus qu'une simple voiture télécommandée, ce drone est capable d'être contrôlé sans avoir une vue directe sur celui-ci, car il possède des capteurs ainsi qu'une caméra. Ce types d'engins se nomment \textit{UGV (Unmanned Ground Vehicle)} soit: véhicule roulant sans équipage. Surtout utilisés dans l'amée, les modèles qu'on peut trouver sur le marché sont très coûteux, ils varient entre trois cents et mille trois cents francs. Notre but est donc de pouvoir construire un appareil semblable pour moins de deux cent francs. 
+Le but de ce projet est de construire un véhicule roulant que l'on peut commander à distance. Plus qu'une simple voiture télécommandée, ce drone est capable d'être contrôlé sans avoir une vue directe sur celui-ci, car il possède des capteurs incluant une caméra. Ce types d'engins se nomment \textit{UGV (Unmanned Ground Vehicle)} soit "véhicule roulant sans équipage". Surtout utilisés dans l'amée, les modèles qu'on peut trouver sur le marché sont très coûteux, ils varient entre trois cents et mille trois cents francs. Notre but est donc de pouvoir construire un appareil semblable pour moins de deux cent francs. Equipé d'un répétiteur, un groupe d'UGV peut couvrir une grande surface sans mettre en danger son pilote puisqu'il reste à l'écart. Il peut servir en cas de catastrophe naturelle, néanmoins, notre modèle ne peut pas rouger sur les terrains trop accidentés, mais pour corriger ce problème, il suffit tout simplement d'implémenter notre système dans un autre type de véhicule. L'interface est aussi un des buts, tout comme la simplicité d'utilisation. En effet, cela de ne sert pas à grand chose d'avoir un drone que personne ne sait utiliser à moins de s'être entraîné durant des mois, c'est pourquoi le but de ce projet est d'avoir un programme qu'il suffit d'exécuter pour pouvoir utiliser le drone. 
 \clearpage
 
 
 \chapter{Hardware}
 
 \section{Choix du hardware}
-\lettrine{P}{our} réaliser ce projet, nous avons dû faire des choix au niveau du hardware. Notre choix s'est porté sur deux système. Le premier, l'Arduino, est un microcontrolleur qui permet de contrôler presque ce qu'on veut grâce à un language de programation proche du C. Le second est le Raspberry Pi, qui est un ordinateur bon marché (trente-cinq francs) qui est récemment sorti sur les marchés. 
+\lettrine{P}{our} réaliser ce projet, nous avons dû faire des choix au niveau du hardware.Le harware est tout ce qui touche la partie physique du drone, néanmoins, dans ce chapitre, nous ne traiterons pas de la mécanique, ce sujet sera abordé dans le chapitre 2. Notre choix s'est porté sur deux système. Le premier, l'Arduino, est un microcontrolleur qui permet de contrôler presque ce qu'on veut grâce à un language de programation proche du C.\\
+Le second est le Raspberry Pi, qui est un ordinateur bon marché (trente-cinq francs) qui est récemment sorti sur le marché. 
 
 
 \subsection{Arduino}
@@ -374,7 +375,7 @@ Nous avons décidé d'utiliser un H-Bridge qui se nomme L293d.
 
 
 
-\chapter{Software}
+\chapter{Software \\ \Large Première version des systèmes embarqués}
 
 
 \section{Software de l'Arduino}
@@ -390,7 +391,12 @@ Ce logiciel nous permet de programmer, de compiler et de téléverser un code à
 
 
 \section{Software du Raspberry Pi}
-Sans les logiciels, notre projet aurait bien du mal à se réaliser. Dans cette section, nous allons parler de tout les softwares que nous utilisons sur la Framboise afin de rendre le drone fonctionnel.
+Sans les logiciels, notre projet aurait bien du mal à se réaliser. Dans cette section, nous allons parler de tout les softwares que nous utilisons sur la Framboise afin de rendre le drone fonctionnel. Dans un premier temps, nous allons parler de notre première version, fonctionnant sous python avec comme logiciel de vidéo Guvcview (sec:\ref{Guvcview}). Dans un second temps, nous allons aborder la deuxième version du drone, plus complexe et fonctionnant grâce au language de programmation Java
+
+
+%%%%%%%%%%%%	si OpenCV utilisé =======>>>>> à Rajouter, non incus pour l'instant %%%%%%%%%%%%%%%%%%%
+
+
 
 \subsection{Sans fil}
 
@@ -402,16 +408,16 @@ Afin que le Raspberry Pi puisse se connecter sur le réseau sans fil, nous utili
 \end{center}
 \end{figure} 
 
+\subsubsection{Partage sécurisé}
+
+Le partage sécurisé entre deux ordinateurs, que nous allons appeler ici \textit{ssh} pour \textit{Secutity Share} est un protocole permettant à un ordinateur de faire une connnection sécurisée avec un autre afin de le contrôler. Meilleur que VNC (\textit{Virtual Network Computing}) dans le sens où il ne demande pas au Raspberry Pi de duppliquer le \textit{Desktop} (bureau), ce qui nous permet d'améliorer les performances, tant du côté de la réactivité des commandes, que du nombre d'images par secondes affiché par le Raspberry Pi. Il y a deux inconvénients majeurs à ces solutions, la première, c'est qu'à moins d'avoir un \textit{Shell Script}, il faut établir la connexion et lancer les programmes manuellement., la deuxième, c'est qu'ils ne sont utilisable que sous les système UNIX, c'est à dire que sous cette version, notre drone ne toucherais pas le grand public, mais seulement les professionnels qui auraient plutot tendance à choisir des modèles plus chers, mais aussi plus performants. 
+
 \subsection{Guvcview}
 
-Guvcview est un software permettant d'enregistrer des séquences vidéos ou des images, il fourni aussi une image de contrôle, que nous utilisions durant une bonne partie du projet afin d'avoir l'image. Le point faible de ce logiciel et qu'avec celui-ci, le nombre d'images par seconde est faible, trois à quatre images. Avec d'autres logiciels, tel que OpenCV permet d'obtenir plus de 25 images par seconde. 
-\clearpage
-
-\chapter{Java \& Python}
-\lettrine{D}{ans} notre projet, nous avons commencé par faire nous programmes en python avant de recommencer en Java, bien que le code en python fonctionne. 
+Guvcview\label{Guvcview} est un software permettant d'enregistrer des séquences vidéos ou des images, il fournit aussi une image de contrôle, que nous utilisons dans la première version du drone. Ce logiciel très facile d'utilisation permet d'avoir près de dix-huit images par secondes lors d'une connexion \textit{ssh} avec une résolution d'envrion 600x380 pixels. L'inconvénient de ce logiciel est que l'image de contrôle ne peut pas être affichée seule, elle s'acoompagne toujours du panneau de réglages. 
 
 \section{Python}
-Notre code python (annexe: \ref{code python}) est dans la mémoire du Raspberry Pi et lorsqu'on éxécute ce code, il ouvre une fenêtre (fig:\ref{python environnement}) où nous pouvons interéagir avec l'arduino.
+Outre les programmes mentionnés ci-dessus, nous avons développé notre propre code python (annexe: \ref{code python}) qui permet de contrôler le véhicule. Le code est  Visuellement, l'interface graphique est très simple (fig:\ref{python environnement}). Il s'agit simplement d'une fenêtre qui est à l'écoute du clavier et qui, lorsque l'utilisateur presse une touche, va envoyer le caractère à l'arduino via le port de communication Sérial. L'arduino va ensuite, grâce à son propre code définir quelle action le véhicule doit faire. Ce programme permet non seulement de choisir la direction à prendre, mais aussi de régler l'angle de braquage ou la vitesse maximale. Il affiche entre autre les messages d'erreur ainsi que des informations à propos de la vitesse maximale ou du braquage maximal. Ce programme ne prend pas en compte l'utilisation de capteur, tel que capteur de distance. Il permet simplement de diriger le véhicule.
 
 \begin{center}
 \begin{figure}[!h]
@@ -419,6 +425,23 @@ Notre code python (annexe: \ref{code python}) est dans la mémoire du Raspberry 
 \caption{Fenêtre X du code python qui permet la lecture du clavier. Cette fenêtre permet de contrôler le drone.}
 \end{figure}
 \end{center}
+
+
+
+\clearpage
+
+\chapter{Software \\ \Large Deuxième version des système embarqués}
+\lettrine{D}{ans} notre projet, nous avons prévu une deuxième une version du drone, dans le sens ou la première version ne remplissait pas tout à fait les buts que nous nous étions fixés. Cette version, principalement programmée avec le language Java, nous permet de faire nous même la connexion entre l'ordinateur et le Raspberry Pi. Nous avons choisis ce language pour plusieurs raisons. Tout d'abord, nous avions des notions en Java, ce qui n'est pas négligeable quand on doit choisir un programme, c'est aussi un language constament mis à jour et il possède une large communauté, ce qui a fait que de nombreuses classes existent, notamment du côté des interfaces graphiques, sans lesquelles nous aurions de la peine à rendre le programme agréable à utiliser. Dans ce chapitre, nous allons aborder tout d'abord le choix de transmission sans fil que nous avons adopté, nous allons ensuite voir à quoi ressemble notre programme Java et ce qu'il fait. Avant de parler de la vidéo avec OpenCV. 
+
+
+
+\section{UDP ou TCP}
+
+Avant de parler de notre choix, expliquons un peu que sont les protocoles UDP et TCP et leurs différences. UDP et TCP sont deux protocoles de connection wi-fi qui permettent d'envoyer des données (\textit{Packets}) d'un ordinateur à un autre. Un des deux ordinateur sera considéré comme étant un serveur tandis que l'autre sera considéré comme un client. %%%%%%% A COMPLETER%%%%%%%%%%%%%%%%
+Le protocole UDP est un protocole qui n'est pas orienté connection. En effet, dans notre cas, l'ordinateur envoie des paquets au Raspberry Pi sans le prévenir, ce dernier ne va pas non plus confirmer la réception des paquets. C'est un flux unidirectionnel qui est dû à l'encapsulation des données. En effet, les paquets qui transitent via un protocole UDP ne contiennent que l'adresse IP et pas d'autres informations concernant l'émetteur. Ce qui voudrait dire que le Raspberry Pi ne s'est pas s'il est toujours à portée de l'ordinateur. \\
+Le protocole TCP est l'opposé de l'UDP, il est orienté connection. Lorsque l'ordinateur envoie des données au Raspberry Pi, ce dernier est informé de l'arrivée des dites données. Il donne aussi une sorte de reçu qui confirme la reception des packets. S'il y a des fichiers corrompus, l'ordinateur va renvoyer les fichiers manquants. On peut, par analogie, comparer ce protocole comme la communication directe téléphonique.\\
+Dans notre cas, nous choix s'est porté sur le protocole TCP. En effet, il est plus pratique de savoir que l'ordinateur n'envoie plus de données et qu'il faut stopper le véhicule car la connection est simplement perdue, tandis qu'avec le protocole UDP, nous ne savons pas s'il y a une perte de connection, puisqu'il n'y a pas eut de connection. 
+
 
 \section{Java}
 
