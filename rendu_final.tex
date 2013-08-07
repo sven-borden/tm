@@ -437,13 +437,20 @@ Outre les programmes mentionnés ci-dessus, nous avons développé notre propre 
 
 \section{UDP ou TCP}
 
-Avant de parler de notre choix, expliquons un peu que sont les protocoles UDP et TCP et leurs différences. UDP et TCP sont deux protocoles de connection wi-fi qui permettent d'envoyer des données (\textit{Packets}) d'un ordinateur à un autre. Un des deux ordinateur sera considéré comme étant un serveur tandis que l'autre sera considéré comme un client. %%%%%%% A COMPLETER%%%%%%%%%%%%%%%%
-Le protocole UDP est un protocole qui n'est pas orienté connection. En effet, dans notre cas, l'ordinateur envoie des paquets au Raspberry Pi sans le prévenir, ce dernier ne va pas non plus confirmer la réception des paquets. C'est un flux unidirectionnel qui est dû à l'encapsulation des données. En effet, les paquets qui transitent via un protocole UDP ne contiennent que l'adresse IP et pas d'autres informations concernant l'émetteur. Ce qui voudrait dire que le Raspberry Pi ne s'est pas s'il est toujours à portée de l'ordinateur. \\
-Le protocole TCP est l'opposé de l'UDP, il est orienté connection. Lorsque l'ordinateur envoie des données au Raspberry Pi, ce dernier est informé de l'arrivée des dites données. Il donne aussi une sorte de reçu qui confirme la reception des packets. S'il y a des fichiers corrompus, l'ordinateur va renvoyer les fichiers manquants. On peut, par analogie, comparer ce protocole comme la communication directe téléphonique.\\
+Avant de parler de notre choix, expliquons un peu que sont les protocoles UDP et TCP et leurs différences. UDP et TCP sont deux protocoles de connection wi-fi qui permettent d'envoyer des données (\textit{Packets}) d'un ordinateur à un autre. Un des deux ordinateur sera considéré comme étant un serveur tandis que l'autre sera considéré comme un client.
+
+
+ %%%%%%% A COMPLETER%%%%%%%%%%%%%%%%
+
+
+
+Le protocole UDP\footnote{\textit{User Datagram Portocol}, soit protocole des datagrammes d'utilisateurs} est un protocole qui n'est pas orienté connection. En effet, dans notre cas, l'ordinateur envoie des paquets au Raspberry Pi sans le prévenir, ce dernier ne va pas non plus confirmer la réception des paquets. C'est un flux unidirectionnel qui est dû à l'encapsulation des données. En effet, les paquets qui transitent via un protocole UDP ne contiennent que l'adresse IP et pas d'autres informations concernant l'émetteur. Ce qui voudrait dire que le Raspberry Pi ne s'est pas s'il est toujours à portée de l'ordinateur. \\
+Le protocole TCP\footnote{\textit{Transmission Control Protocol}, soit protocole de contrôle des transmissions} est l'opposé de l'UDP, il est orienté connection. Lorsque l'ordinateur envoie des données au Raspberry Pi, ce dernier est informé de l'arrivée des dites données. Il donne aussi une sorte de reçu qui confirme la reception des packets. S'il y a des fichiers corrompus, l'ordinateur va renvoyer les fichiers manquants. On peut, par analogie, comparer ce protocole comme la communication directe téléphonique.\\
 Dans notre cas, nous choix s'est porté sur le protocole TCP. En effet, il est plus pratique de savoir que l'ordinateur n'envoie plus de données et qu'il faut stopper le véhicule car la connection est simplement perdue, tandis qu'avec le protocole UDP, nous ne savons pas s'il y a une perte de connection, puisqu'il n'y a pas eut de connection. 
 
 
 \section{Java}
+
 
 \section{OpenCV}
 
