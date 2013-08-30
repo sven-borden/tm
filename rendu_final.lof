@@ -1,4 +1,12 @@
 \select@language {french}
-\contentsline {figure}{\numberline {1}{\ignorespaces Sch\'ema de la modulation du signal \'electrique \cite {WikiServo} }}{12}
-\contentsline {figure}{\numberline {2}{\ignorespaces Sch\'ema d'un H-bridge}}{14}
-\contentsline {figure}{\numberline {3}{\ignorespaces Arduino Uno R3}}{16}
+\contentsline {figure}{\numberline {}Image de courverture}{1}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {1.1}{\ignorespaces Arduino Uno R3, On peut remarquer les pin qui se trouvent de part et d'autre de l'Arduino. On peut remarquer au centre le microcontr\IeC {\^o}leur ATmega328 ainsi que le port USB tout en haut de l'image}}{8}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {2.1}{\ignorespaces Sch\'ema de la modulation du signal \'electrique \cite {WikiServo} }}{15}
+\contentsline {figure}{\numberline {2.2}{\ignorespaces Sch\'ema d'un H-bridge}}{17}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Environnement Arduino}}{20}
+\contentsline {figure}{\numberline {3.2}{\ignorespaces \textit {Dongle} Edimax EW7811Un. Connect\IeC {\'e} par USB \IeC {\`a} la Framboise, il permet au Raspberry Pi de se connecter via Wi-Fi \IeC {\`a} une borne}}{21}
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Fen\IeC {\^e}tre X du code python qui permet la lecture du clavier. Cette fen\IeC {\^e}tre permet de contr\IeC {\^o}ler le drone.}}{24}
+\addvspace {10\p@ }

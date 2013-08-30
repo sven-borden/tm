@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/TeX Live for SUSE Linux) (format=pdflatex 2013.8.11)  30 AUG 2013 18:20
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/TeX Live for SUSE Linux) (format=pdflatex 2013.8.11)  30 AUG 2013 18:34
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -16,19 +16,20 @@ kurmanji, lao, latin, latvian, lithuanian, mongolian, mongolianlmc, bokmal, nyn
 orsk, polish, portuguese, romanian, romansh, russian, sanskrit, serbian, serbia
 nc, slovak, slovenian, spanish, swedish, turkish, turkmen, ukrainian, uppersorb
 ian, welsh, loaded.
-(/usr/share/texmf/tex/latex/base/article.cls
-Document Class: article 2007/10/19 v1.4h Standard LaTeX document class
+(/usr/share/texmf/tex/latex/base/report.cls
+Document Class: report 2007/10/19 v1.4h Standard LaTeX document class
 (/usr/share/texmf/tex/latex/base/size12.clo
 File: size12.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
 )
 \c@part=\count79
-\c@section=\count80
-\c@subsection=\count81
-\c@subsubsection=\count82
-\c@paragraph=\count83
-\c@subparagraph=\count84
-\c@figure=\count85
-\c@table=\count86
+\c@chapter=\count80
+\c@section=\count81
+\c@subsection=\count82
+\c@subsubsection=\count83
+\c@paragraph=\count84
+\c@subparagraph=\count85
+\c@figure=\count86
+\c@table=\count87
 \abovecaptionskip=\skip41
 \belowcaptionskip=\skip42
 \bibindent=\dimen102
@@ -41,7 +42,7 @@ Language: frenchb 2010/08/21 v2.5a French support from the babel system
 
 (/usr/share/texmf/tex/generic/babel/babel.def
 File: babel.def 2008/07/08 v3.8m Babel common definitions
-\babel@savecnt=\count87
+\babel@savecnt=\count88
 \U@D=\dimen103
 )
 Package babel Info: Making : an active character on input line 234.
@@ -49,8 +50,8 @@ Package babel Info: Making ; an active character on input line 235.
 Package babel Info: Making ! an active character on input line 236.
 Package babel Info: Making ? an active character on input line 237.
 \FB@Mht=\dimen104
-\std@mcc=\count88
-\dec@mcc=\count89
+\std@mcc=\count89
+\dec@mcc=\count90
 \parindentFFN=\dimen105
 
 *************************************
@@ -85,7 +86,7 @@ Package: infwarerr 2010/04/08 v1.3 Providing info/warning/error messages (HO)
 (/usr/share/texmf/tex/generic/oberdiek/ltxcmds.sty
 Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
 )
-\Gread@gobject=\count90
+\Gread@gobject=\count91
 ))
 \Gin@req@height=\dimen106
 \Gin@req@width=\dimen107
@@ -99,23 +100,23 @@ Package: array 2008/09/09 v2.4c Tabular extension package (FMi)
 \backup@length=\skip44
 )
 (/usr/share/texmf/tex/latex/listings/listings.sty
-\lst@mode=\count91
+\lst@mode=\count92
 \lst@gtempboxa=\box26
 \lst@token=\toks16
-\lst@length=\count92
+\lst@length=\count93
 \lst@currlwidth=\dimen110
-\lst@column=\count93
-\lst@pos=\count94
+\lst@column=\count94
+\lst@pos=\count95
 \lst@lostspace=\dimen111
 \lst@width=\dimen112
-\lst@newlines=\count95
-\lst@lineno=\count96
+\lst@newlines=\count96
+\lst@lineno=\count97
 \lst@maxwidth=\dimen113
 
 (/usr/share/texmf/tex/latex/listings/lstmisc.sty
 File: lstmisc.sty 2007/02/22 1.4 (Carsten Heinz)
-\c@lstnumber=\count97
-\lst@skipnumbers=\count98
+\c@lstnumber=\count98
+\lst@skipnumbers=\count99
 \lst@framebox=\box27
 )
 (/usr/share/texmf/tex/latex/listings/listings.cfg
@@ -123,6 +124,10 @@ File: listings.cfg 2007/02/22 1.4 listings configuration
 ))
 Package: listings 2007/02/22 1.4 (Carsten Heinz)
 
+(/usr/share/texmf/tex/latex/url/url.sty
+\Urlmuskip=\muskip10
+Package: url 2006/04/12  ver 3.3  Verb mode for urls, etc.
+)
 (/usr/share/texmf/tex/latex/amsmath/amsmath.sty
 Package: amsmath 2000/07/18 v2.13 AMS math features
 \@mathmargin=\skip45
@@ -143,13 +148,13 @@ Package: amsbsy 1999/11/29 v1.2d
 (/usr/share/texmf/tex/latex/amsmath/amsopn.sty
 Package: amsopn 1999/12/14 v2.01 operator names
 )
-\inf@bad=\count99
+\inf@bad=\count100
 LaTeX Info: Redefining \frac on input line 211.
-\uproot@=\count100
-\leftroot@=\count101
+\uproot@=\count101
+\leftroot@=\count102
 LaTeX Info: Redefining \overline on input line 307.
-\classnum@=\count102
-\DOTSCASE@=\count103
+\classnum@=\count103
+\DOTSCASE@=\count104
 LaTeX Info: Redefining \ldots on input line 379.
 LaTeX Info: Redefining \dots on input line 382.
 LaTeX Info: Redefining \cdots on input line 467.
@@ -158,15 +163,15 @@ LaTeX Info: Redefining \cdots on input line 467.
 \big@size=\dimen116
 LaTeX Font Info:    Redeclaring font encoding OML on input line 567.
 LaTeX Font Info:    Redeclaring font encoding OMS on input line 568.
-\macc@depth=\count104
-\c@MaxMatrixCols=\count105
-\dotsspace@=\muskip10
-\c@parentequation=\count106
-\dspbrk@lvl=\count107
+\macc@depth=\count105
+\c@MaxMatrixCols=\count106
+\dotsspace@=\muskip11
+\c@parentequation=\count107
+\dspbrk@lvl=\count108
 \tag@help=\toks18
-\row@=\count108
-\column@=\count109
-\maxfields@=\count110
+\row@=\count109
+\column@=\count110
+\maxfields@=\count111
 \andhelp@=\toks19
 \eqnshift@=\dimen117
 \alignsep@=\dimen118
@@ -183,14 +188,14 @@ LaTeX Info: Redefining \] on input line 2667.
 )
 (/usr/share/texmf/tex/latex/tools/multicol.sty
 Package: multicol 2011/06/27 v1.7a multicolumn formatting (FMi)
-\c@tracingmulticols=\count111
+\c@tracingmulticols=\count112
 \mult@box=\box30
 \multicol@leftmargin=\dimen123
-\c@unbalance=\count112
-\c@collectmore=\count113
-\doublecol@number=\count114
-\multicoltolerance=\count115
-\multicolpretolerance=\count116
+\c@unbalance=\count113
+\c@collectmore=\count114
+\doublecol@number=\count115
+\multicoltolerance=\count116
+\multicolpretolerance=\count117
 \full@width=\dimen124
 \page@free=\dimen125
 \premulticols=\dimen126
@@ -220,14 +225,14 @@ Package: multicol 2011/06/27 v1.7a multicolumn formatting (FMi)
 \@tempa=\box51
 \@tempa=\box52
 \@tempa=\box53
-\c@columnbadness=\count117
-\c@finalcolumnbadness=\count118
+\c@columnbadness=\count118
+\c@finalcolumnbadness=\count119
 \last@try=\dimen128
 \multicolovershoot=\dimen129
 \multicolundershoot=\dimen130
 \mult@nat@firstbox=\box54
 \colbreak@box=\box55
-\multicol@sort@counter=\count119
+\multicol@sort@counter=\count120
 )
 (/usr/share/texmf/tex/latex/multirow/multirow.sty
 \bigstrutjot=\dimen131
@@ -476,10 +481,27 @@ Now handling font encoding U ...
    defining Unicode char U+2122 (decimal 8482)
    defining Unicode char U+2423 (decimal 9251)
 ))
-(/usr/share/texmf/tex/latex/url/url.sty
-\Urlmuskip=\muskip11
-Package: url 2006/04/12  ver 3.3  Verb mode for urls, etc.
-)
+(/usr/share/texmf/tex/latex/lettrine/lettrine.sty
+File: lettrine.sty 2007/08/08 v1.62 (Daniel Flipo)
+\c@DefaultLines=\count121
+\DefaultFindent=\dimen132
+\DefaultNindent=\dimen133
+\DefaultSlope=\dimen134
+\L@lbox=\box56
+\L@tbox=\box57
+\c@L@lines=\count122
+\L@Pindent=\dimen135
+\L@Findent=\dimen136
+\L@Nindent=\dimen137
+\L@lraise=\dimen138
+\L@first=\dimen139
+\L@next=\dimen140
+\L@slope=\dimen141
+\L@height=\dimen142
+\LettrineWidth=\dimen143
+
+Loading lettrine.cfg
+(/usr/share/texmf/tex/latex/lettrine/lettrine.cfg))
 (/usr/share/texmf/tex/latex/lastpage/lastpage.sty
 Package: lastpage 2011/09/01 v1.2k Refers to last page's name (HMM; JPG)
 )
@@ -489,46 +511,46 @@ Package: ucs 2004/10/17 UCS: Unicode input support
 (/usr/share/texmf/tex/latex/ucs/data/uni-global.def
 File: uni-global.def 2012/04/20 UCS: Unicode global data
 )
-\uc@secondtry=\count120
+\uc@secondtry=\count123
 \uc@combtoks=\toks24
 \uc@combtoksb=\toks25
 \uc@temptokena=\toks26
 ) (./rendu_final.aux)
 \openout1 = `rendu_final.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 41.
-LaTeX Font Info:    ... okay on input line 41.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 41.
-LaTeX Font Info:    ... okay on input line 41.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 41.
-LaTeX Font Info:    ... okay on input line 41.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 41.
-LaTeX Font Info:    ... okay on input line 41.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 41.
-LaTeX Font Info:    ... okay on input line 41.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 41.
-LaTeX Font Info:    ... okay on input line 41.
-LaTeX Info: Redefining \degres on input line 41.
-LaTeX Info: Redefining \dots on input line 41.
-LaTeX Info: Redefining \up on input line 41.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 42.
+LaTeX Font Info:    ... okay on input line 42.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 42.
+LaTeX Font Info:    ... okay on input line 42.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 42.
+LaTeX Font Info:    ... okay on input line 42.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 42.
+LaTeX Font Info:    ... okay on input line 42.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 42.
+LaTeX Font Info:    ... okay on input line 42.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 42.
+LaTeX Font Info:    ... okay on input line 42.
+LaTeX Info: Redefining \degres on input line 42.
+LaTeX Info: Redefining \dots on input line 42.
+LaTeX Info: Redefining \up on input line 42.
 
 
 Package frenchb.ldf Warning: OT1 encoding should not be used for French. 
 (frenchb.ldf)                Add \usepackage[T1]{fontenc} to the preamble
-(frenchb.ldf)                of your document, on input line 41.
+(frenchb.ldf)                of your document, on input line 42.
 
 (/usr/share/texmf/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count121
-\scratchdimen=\dimen132
-\scratchbox=\box56
-\nofMPsegments=\count122
-\nofMParguments=\count123
+\scratchcounter=\count124
+\scratchdimen=\dimen144
+\scratchbox=\box58
+\nofMPsegments=\count125
+\nofMParguments=\count126
 \everyMPshowfont=\toks27
-\MPscratchCnt=\count124
-\MPscratchDim=\dimen133
-\MPnumerator=\count125
-\makeMPintoPDFobject=\count126
+\MPscratchCnt=\count127
+\MPscratchDim=\dimen145
+\MPnumerator=\count128
+\makeMPintoPDFobject=\count129
 \everyMPtoPDFconversion=\toks28
 ) (/usr/share/texmf/tex/generic/oberdiek/pdftexcmds.sty
 Package: pdftexcmds 2011/11/29 v0.20 Utility functions of pdfTeX for LuaTeX (HO
@@ -578,14 +600,14 @@ G,.JBIG2,.JB2,.eps]
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-\c@lstlisting=\count127
+\c@lstlisting=\count130
 Package lastpage Info: Please have a look at the pageslts package at
 (lastpage)             http://www.ctan.org/tex-archive/ 
 (lastpage)             macros/latex/contrib/pageslts/ 
 (lastpage)             or
 (lastpage)             http://www.ctan.org/tex-archive/ 
 (lastpage)             install/macros/latex/contrib/pageslts.tds.zip
-(lastpage)             ! on input line 41.
+(lastpage)             ! on input line 42.
 
 (/usr/share/texmf/tex/latex/ucs/ucsencs.def
 File: ucsencs.def 2011/01/21 Fixes to fontencodings LGR, T3
@@ -606,12 +628,12 @@ Package ucs Warning: ***************************
 (ucs)                ***************************
 (ucs)                Activating compatibility mode.
 (ucs)                ***************************
-(ucs)                 on input line 41.
+(ucs)                 on input line 42.
 
 (/usr/share/texmf/tex/latex/ucs/utf8x.def
 File: utf8x.def 2004/10/17 UCS: Input encoding UTF-8
 )
-LaTeX Font Info:    Try loading font information for OT1+pnc on input line 44.
+LaTeX Font Info:    Try loading font information for OT1+pnc on input line 45.
 
 (/usr/share/texmf/tex/latex/psnfss/ot1pnc.fd
 File: ot1pnc.fd 2001/06/04 font definitions for OT1/pnc.
@@ -623,17 +645,18 @@ File: uni-0.def 2012/04/20 UCS: Unicode data U+0000..U+00FF
 File: figures/DSC_8469res.jpg Graphic file (type jpg)
 
 <use figures/DSC_8469res.jpg>
-Package pdftex.def Info: figures/DSC_8469res.jpg used on input line 51.
+Package pdftex.def Info: figures/DSC_8469res.jpg used on input line 54.
 (pdftex.def)             Requested size: 378.42174pt x 251.30017pt.
+ [1
 
-Underfull \hbox (badness 10000) in paragraph at lines 51--53
-
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <./figures/DSC_8469res.jpg>
+] [2]
+Overfull \hbox (0.27643pt too wide) in paragraph at lines 61--62
+\OT1/pnc/m/n/12 vers un do-maine pa-rall[]ele, la ro-bo-tique. Le choix de ce s
+u-jet est d[]eriv[]e
  []
 
 [1
-
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <./figures/DSC_8469res.jpg>
-] [2
 
 ]
 Overfull \hbox (1.14352pt too wide) in paragraph at lines 67--68
@@ -641,153 +664,253 @@ Overfull \hbox (1.14352pt too wide) in paragraph at lines 67--68
 er-sonnes.
  []
 
-[3
+[2
 
 ]
-LaTeX Font Info:    Font shape `OT1/pnc/bx/n' in size <10.95> not available
+LaTeX Font Info:    Font shape `OT1/pnc/bx/n' in size <12> not available
 (Font)              Font shape `OT1/pnc/b/n' tried instead on input line 70.
+ [1
 
-Overfull \hbox (22.74498pt too wide) in paragraph at lines 71--72
-\OT1/pnc/m/n/10.95 fonc-tion-ne-ment de l'UGV ainsi que son fonc-tion-ne-ment. 
-Le troisi[]eme
+] [2] (./rendu_final.toc
+LaTeX Font Info:    Font shape `OT1/pnc/bx/n' in size <17.28> not available
+(Font)              Font shape `OT1/pnc/b/n' tried instead on input line 24.
+
+Overfull \hbox (41.49223pt too wide) in paragraph at lines 24--24
+ \OT1/pnc/b/n/17.28 Premi[]ere ver-sion des syst[]emes em-barqu[]es []  
  []
 
-[4
+[1
 
-] (./rendu_final.toc
-LaTeX Font Info:    Font shape `OT1/pnc/bx/n' in size <12> not available
-(Font)              Font shape `OT1/pnc/b/n' tried instead on input line 2.
-LaTeX Font Info:    Font shape `OT1/pnc/bx/n' in size <14.4> not available
-(Font)              Font shape `OT1/pnc/b/n' tried instead on input line 6.
- [5
 
-])
+]
+Overfull \hbox (38.58932pt too wide) in paragraph at lines 31--31
+ \OT1/pnc/b/n/17.28 Deuxi[]eme ver-sion des syst[]eme em-barqu[]es []  
+ []
+
+)
 \tf@toc=\write3
 \openout3 = `rendu_final.toc'.
 
- [6] (./rendu_final.lof)
+ [2] (./rendu_final.lof
+Overfull \hbox (1.05144pt too wide) in paragraph at lines 4--4
+ \OT1/pnc/m/n/12 mar-quer au centre le mi-cro-contr[]oleur AT-mega328 ainsi 
+ []
+
+)
 \tf@lof=\write4
 \openout4 = `rendu_final.lof'.
 
- (./rendu_final.lot)
+ [3
+
+
+] (./rendu_final.lot)
 \tf@lot=\write5
 \openout5 = `rendu_final.lot'.
 
-
-[7
+ [4
 
 ]
-Overfull \hbox (14.85533pt too wide) in paragraph at lines 86--87
+Overfull \hbox (14.85533pt too wide) in paragraph at lines 87--88
 \OT1/pnc/m/n/12 peut com-man-der []a dis-tance. Plus qu'une simple voi-ture t[]
 el[]ecommand[]ee,
  []
 
 
-Overfull \hbox (2.87639pt too wide) in paragraph at lines 86--87
+Overfull \hbox (1.66202pt too wide) in paragraph at lines 87--88
 \OT1/pnc/m/n/12 d'en-gins se nomment \OT1/pnc/m/it/12 UGV (Un-man-ned Ground Ve
--hicle) \OT1/pnc/m/n/12 soit : v[]ehicule
+-hicle) \OT1/pnc/m/n/12 soit "v[]ehicule
  []
 
 
-Overfull \hbox (9.86346pt too wide) in paragraph at lines 86--87
-\OT1/pnc/m/n/12 rou-lant com-mand[]e []a dis-tance. Sur-tout uti-lis[]es dans l
-'am[]ee, les mod[]eles
+Overfull \hbox (7.14706pt too wide) in paragraph at lines 87--88
+\OT1/pnc/m/n/12 ger ce probl[]eme, il suf-fit tout sim-ple-ment d'impl[]ementer
+ notre syst[]eme
  []
 
-[8
+[5
 
 ]
-Underfull \hbox (badness 1755) in paragraph at lines 101--101
+Chapitre 1.
+[6
+
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 103--104
+
+ []
+
+<figures/arduino_uno.jpg, id=48, 856.19875pt x 643.40375pt>
+File: figures/arduino_uno.jpg Graphic file (type jpg)
+
+<use figures/arduino_uno.jpg>
+Package pdftex.def Info: figures/arduino_uno.jpg used on input line 107.
+(pdftex.def)             Requested size: 325.3589pt x 244.49596pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[7] [8 <./figures/arduino_uno.jpg>]
+Overfull \hbox (4.34912pt too wide) in paragraph at lines 132--133
+[]\OT1/pnc/m/n/12 Sortie au-dio st[]er[]eo Jack (3.5mm) (le son passe aussi par
+ le HDMI
+ []
+
+[9]
+Overfull \hbox (6.42062pt too wide) in paragraph at lines 144--146
+\OT1/pnc/m/n/12 bian, qui est un d[]eriv[]e de De-bian, pour plu-sieurs rai-son
+s. Tout d'abord,
+ []
+
+[10] [11]
+Chapitre 2.
+
+Underfull \hbox (badness 1755) in paragraph at lines 198--198
 []|\OT1/cmr/m/n/12 Longueur (centre de
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 103--103
+Underfull \hbox (badness 10000) in paragraph at lines 200--200
 []|\OT1/cmr/m/n/12 Largeur (centre de
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 107--107
+Underfull \hbox (badness 10000) in paragraph at lines 204--204
 []|\OT1/cmr/m/n/12 Courant min (roue
  []
 
 
-Underfull \hbox (badness 5878) in paragraph at lines 108--108
+Underfull \hbox (badness 5878) in paragraph at lines 205--205
 []|\OT1/cmr/m/n/12 Courant max (roue
+ []
+
+
+Overfull \hbox (10.40163pt too wide) in paragraph at lines 189--217
+\OT1/pnc/m/n/12 4x4. Le ta-bleau sui-vant est un in-ven-taire de ses ca-ract[]e
+ristiques
  []
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
-Overfull \hbox (2.42332pt too wide) in paragraph at lines 121--137
+Overfull \hbox (2.42332pt too wide) in paragraph at lines 218--234
 \OT1/pnc/m/n/12 ment. Dans un servo clas-sique, il s'agit d'un po-ten-tiom[]etr
 e (r[]esistance
  []
 
-[9
 
-] [10]
-Overfull \hbox (26.26718pt too wide) in paragraph at lines 157--163
+Overfull \hbox (4.53712pt too wide) in paragraph at lines 218--234
+\OT1/pnc/m/n/12 va-riable) qui per-met de sa-voir en tout mo-ment la po-si-tion
+ de la corne[].
+ []
+
+[12
+
+] [13]
+Overfull \hbox (26.26718pt too wide) in paragraph at lines 254--260
 []\OT1/pnc/m/n/12 electrique dit mo-dul[]e. Ce si-gnal est mo-dul[]e d'une mani
 []ere compr[]eh[]ensible
  []
 
-<figures/ServoPwm.pdf, id=41, 501.875pt x 200.75pt>
+[14] <figures/ServoPwm.pdf, id=77, 501.875pt x 200.75pt>
 File: figures/ServoPwm.pdf Graphic file (type pdf)
- <use figures/ServoPwm.pdf>
-Package pdftex.def Info: figures/ServoPwm.pdf used on input line 166.
+
+<use figures/ServoPwm.pdf>
+Package pdftex.def Info: figures/ServoPwm.pdf used on input line 263.
 (pdftex.def)             Requested size: 378.42174pt x 151.37692pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[11]
-Overfull \hbox (1.99765pt too wide) in paragraph at lines 202--210
+ [15 <./figures/ServoPwm.pdf>]
+Overfull \hbox (1.99765pt too wide) in paragraph at lines 299--307
 []\OT1/pnc/m/n/12 Le mo-teur de pro-pul-sion, au contraire du servo, n'a pas []
 et[]e chang[]e.
  []
 
-
-Overfull \hbox (39.67168pt too wide) in paragraph at lines 202--210
-\OT1/pnc/m/n/12 mo-di-fi-ca-tions. La confi-gu-ra-tion d[]ej[]a exis-tente, []a
- l'ex-cep-tion de l'[]electronique,
- []
-
-[12 <./figures/ServoPwm.pdf>]
-<figures/H-bridge.pdf, id=55, 297.49544pt x 144.53197pt>
+[16] <figures/H-bridge.pdf, id=88, 297.49544pt x 144.53197pt>
 File: figures/H-bridge.pdf Graphic file (type pdf)
 
 <use figures/H-bridge.pdf>
-Package pdftex.def Info: figures/H-bridge.pdf used on input line 229.
+Package pdftex.def Info: figures/H-bridge.pdf used on input line 326.
 (pdftex.def)             Requested size: 378.42174pt x 183.86229pt.
 
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[13] [14 <./figures/H-bridge.pdf>] [15
-
-]
-Underfull \hbox (badness 10000) in paragraph at lines 288--289
-
+Overfull \hbox (1.08539pt too wide) in paragraph at lines 332--340
+\OT1/pnc/m/n/12 en connec-tant les \OT1/pnc/m/it/12 IN-PUT []\OT1/pnc/m/n/12 a 
+des tran-sis-tors dia-go-na-le-ment op-pos[]es[[]]. 
  []
 
-<figures/arduino_uno.jpg, id=73, 856.19875pt x 643.40375pt>
-File: figures/arduino_uno.jpg Graphic file (type jpg)
+[17 <./figures/H-bridge.pdf>] [18]
+Chapitre 3.
+<figures/arduino-environnement-1.PNG, id=102, 511.15968pt x 543.53062pt>
+File: figures/arduino-environnement-1.PNG Graphic file (type png)
 
-<use figures/arduino_uno.jpg>
-Package pdftex.def Info: figures/arduino_uno.jpg used on input line 292.
-(pdftex.def)             Requested size: 325.3589pt x 244.49596pt.
- [16 <./figures/arduino_uno.jpg>] [17]
-Overfull \hbox (4.34912pt too wide) in paragraph at lines 317--318
-[]\OT1/pnc/m/n/12 Sortie au-dio st[]er[]eo Jack (3.5mm) (le son passe aussi par
- le HDMI
+<use figures/arduino-environnement-1.PNG>
+Package pdftex.def Info: figures/arduino-environnement-1.PNG used on input line
+ 385.
+(pdftex.def)             Requested size: 255.57921pt x 271.76463pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+Overfull \hbox (14.02243pt too wide) in paragraph at lines 394--395
+\OT1/pnc/m/n/12 tion-nant sous py-thon avec comme lo-gi-ciel de vid[]eo Guvc-vi
+ew (sec :3.2.2[]).
  []
 
-[18] (/usr/share/texmf/tex/latex/listings/lstlang1.sty
+[19
+
+] <figures/Edimax.jpg, id=108, 1283.79625pt x 962.59625pt>
+File: figures/Edimax.jpg Graphic file (type jpg)
+
+<use figures/Edimax.jpg>
+Package pdftex.def Info: figures/Edimax.jpg used on input line 406.
+(pdftex.def)             Requested size: 258.9897pt x 251.3614pt.
+
+Overfull \hbox (6.08942pt too wide) in paragraph at lines 403--410
+\OT1/pnc/m/n/12 nous uti-li-sons un \OT1/pnc/m/it/12 dongle \OT1/pnc/m/n/12 (fi
+g :3.2[]) Wi-Fi[]. Cet ac-ces-soire ne n[]ecessitant
+ []
+
+[20 <./figures/arduino-environnement-1.PNG>] [21 <./figures/Edimax.jpg>]
+Overfull \hbox (6.76405pt too wide) in paragraph at lines 417--418
+[]\OT1/pnc/m/n/12 etre af-fich[]ee seule, elle s'acoom-pagne tou-jours du pan-n
+eau de r[]eglages. 
+ []
+
+
+Overfull \hbox (5.24852pt too wide) in paragraph at lines 420--421
+[]\OT1/pnc/m/n/12 Outre les pro-grammes men-tionn[]es ci-dessus, nous avons d[]
+evelopp[]e
+ []
+
+
+Overfull \hbox (10.9436pt too wide) in paragraph at lines 420--421
+\OT1/pnc/m/n/12 v[]ehicule. Le code est Vi-suel-le-ment, l'in-ter-face gra-phiq
+ue est tr[]es simple
+ []
+
+[22] <figures/python-environnement.PNG, id=121, 386.94562pt x 291.33844pt>
+File: figures/python-environnement.PNG Graphic file (type png)
+
+<use figures/python-environnement.PNG>
+Package pdftex.def Info: figures/python-environnement.PNG used on input line 42
+4.
+(pdftex.def)             Requested size: 386.94467pt x 291.33772pt.
+
+Overfull \hbox (8.52293pt too wide) in paragraph at lines 424--425
+[][][] 
+ []
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[23] [24 <./figures/python-environnement.PNG>]
+Chapitre 4.
+[25
+
+
+] [26] [27] (/usr/share/texmf/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2004/09/05 1.3 listings language file
-) (./code/motor.java
-[19]
+)
+(./code/motor.java
 LaTeX Font Info:    Try loading font information for OMS+pnc on input line 7.
  (/usr/share/texmf/tex/latex/psnfss/omspnc.fd
 File: omspnc.fd 
@@ -810,12 +933,14 @@ File: omlpnc.fd
 )
 LaTeX Font Info:    Font shape `OML/pnc/m/n' in size <12> not available
 (Font)              Font shape `OML/cmm/m/it' tried instead on input line 20.
- [20]
+ [28
+
+]
 Overfull \hbox (39.18251pt too wide) in paragraph at lines 38--39
 [][][][][][][][][][][][][][][][][][][][][] 
  []
 
-
+[29]
 Overfull \hbox (139.98354pt too wide) in paragraph at lines 56--57
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
@@ -825,7 +950,7 @@ Overfull \hbox (82.38295pt too wide) in paragraph at lines 57--58
 [][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
-[21]
+
 Overfull \hbox (139.98354pt too wide) in paragraph at lines 63--64
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
@@ -838,12 +963,12 @@ Overfull \hbox (89.58302pt too wide) in paragraph at lines 64--65
 ) (./code/ServoExample.java
 LaTeX Font Info:    Font shape `OML/pnc/m/it' in size <12> not available
 (Font)              Font shape `OML/cmm/m/it' tried instead on input line 2.
-
+ [30]
 Overfull \hbox (31.98244pt too wide) in paragraph at lines 8--9
 [][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
-[22]
+
 Overfull \hbox (96.7831pt too wide) in paragraph at lines 9--11
 [][][][][][][][][][][][][][][][][][][][][][] 
  []
@@ -894,21 +1019,216 @@ Overfull \hbox (154.38368pt too wide) in paragraph at lines 28--29
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
-) [23] (./rendu_final.bbl) 
+[31]) (/usr/share/texmf/tex/latex/listings/lstlang1.sty
+File: lstlang1.sty 2004/09/05 1.3 listings language file
+) (./code/gui_1.1.py
+[32]
+Overfull \hbox (183.18398pt too wide) in paragraph at lines 14--15
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (96.7831pt too wide) in paragraph at lines 35--36
+[][][][][][][][][][][][][] 
+ []
+
+[33]
+Overfull \hbox (161.58376pt too wide) in paragraph at lines 40--41
+[][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (10.38222pt too wide) in paragraph at lines 54--55
+[][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (147.18361pt too wide) in paragraph at lines 55--56
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (75.18288pt too wide) in paragraph at lines 58--59
+[][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (10.38222pt too wide) in paragraph at lines 59--60
+[][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (190.38405pt too wide) in paragraph at lines 62--63
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (46.38258pt too wide) in paragraph at lines 65--66
+[][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+[34]
+Overfull \hbox (53.58266pt too wide) in paragraph at lines 66--67
+[][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (31.98244pt too wide) in paragraph at lines 67--70
+[][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (10.38222pt too wide) in paragraph at lines 76--77
+[][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (10.38222pt too wide) in paragraph at lines 79--80
+[][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (24.78236pt too wide) in paragraph at lines 80--81
+[][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (10.38222pt too wide) in paragraph at lines 81--82
+[][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (10.38222pt too wide) in paragraph at lines 82--83
+[][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (39.18251pt too wide) in paragraph at lines 83--84
+[][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (53.58266pt too wide) in paragraph at lines 84--85
+[][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (39.18251pt too wide) in paragraph at lines 85--87
+[][][][][][][][][][][][][][][][][][][][] 
+ []
+
+[35]
+Overfull \hbox (118.38332pt too wide) in paragraph at lines 97--98
+[][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (31.98244pt too wide) in paragraph at lines 98--99
+[][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (125.58339pt too wide) in paragraph at lines 100--101
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (24.78236pt too wide) in paragraph at lines 101--102
+[][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (197.58412pt too wide) in paragraph at lines 102--104
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (118.38332pt too wide) in paragraph at lines 107--108
+[][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (31.98244pt too wide) in paragraph at lines 108--109
+[][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (53.58266pt too wide) in paragraph at lines 110--111
+[][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (226.38441pt too wide) in paragraph at lines 111--113
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (183.18398pt too wide) in paragraph at lines 116--117
+[][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (75.18288pt too wide) in paragraph at lines 117--118
+[][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (46.38258pt too wide) in paragraph at lines 119--120
+[][][][][][][][][][][][][][][][][][][][] 
+ []
+
+[36]
+Overfull \hbox (240.78456pt too wide) in paragraph at lines 120--122
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (183.18398pt too wide) in paragraph at lines 125--126
+[][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (75.18288pt too wide) in paragraph at lines 126--127
+[][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (75.18288pt too wide) in paragraph at lines 128--129
+[][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (269.58485pt too wide) in paragraph at lines 129--132
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+[37]
+Overfull \hbox (75.18288pt too wide) in paragraph at lines 167--168
+[][][][][][][][][][][][] 
+ []
+
+[38]
+Overfull \hbox (17.58229pt too wide) in paragraph at lines 178--179
+[][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+) (./rendu_final.bbl [39]) 
 AED: lastpage setting LastPage
-[24] (./rendu_final.aux) )
+[40
+
+] (./rendu_final.aux) )
 (\end occurred inside a group at level 1)
 
-### simple group (level 1) entered at line 44 ({)
+### simple group (level 1) entered at line 45 ({)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 6002 strings out of 493607
- 77804 string characters out of 3149945
- 185496 words of memory out of 3500000
- 9164 multiletter control sequences out of 15000+200000
- 23642 words of font info for 59 fonts, out of 3000000 for 9000
+ 6226 strings out of 493607
+ 80894 string characters out of 3149945
+ 193447 words of memory out of 3500000
+ 9367 multiletter control sequences out of 15000+200000
+ 24945 words of font info for 62 fonts, out of 3000000 for 9000
  831 hyphenation exceptions out of 8191
- 38i,12n,45p,760b,1876s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 38i,12n,45p,1622b,1926s stack positions out of 5000i,500n,10000p,200000b,50000s
 {/usr/share/texmf/fonts/enc/dvips/base/8r.enc}</usr/share/texmf
 /fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texmf/fonts/type1/public
 /amsfonts/cm/cmcsc10.pfb></usr/share/texmf/fonts/type1/public/amsfonts/cm/cmmi1
@@ -921,10 +1241,10 @@ ic/amsfonts/cm/cmti12.pfb></usr/share/texmf/fonts/type1/public/amsfonts/cm/cmtt
 12.pfb></usr/share/texmf/fonts/type1/urw/ncntrsbk/uncb8a.pfb></usr/share/texmf/
 fonts/type1/urw/ncntrsbk/uncr8a.pfb></usr/share/texmf/fonts/type1/urw/ncntrsbk/
 uncri8a.pfb>
-Output written on rendu_final.pdf (24 pages, 581231 bytes).
+Output written on rendu_final.pdf (46 pages, 1061082 bytes).
 PDF statistics:
- 151 PDF objects out of 1000 (max. 8388607)
- 103 compressed objects within 2 object streams
+ 231 PDF objects out of 1000 (max. 8388607)
+ 155 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
- 21 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 42 words of extra memory for PDF output out of 10000 (max. 10000000)
 
