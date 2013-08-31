@@ -68,8 +68,32 @@ Ce projet n'aurait pu aboutir sans l'aide de nombreuses personnes. Voici l'occas
 
 \clearpage
 \begin{abstract}
-Parti dans l'idée de concevoir un objet déjà existant mais à moindre prix, nous avons choisi des technologies récemment sorties, ce qui fait que nous étions dans les premiers à évoluer dans ce millieu. Néanmoins, un support de dévelopeur à toujours été là pour nous débloquer en cas de pépin. C'est entre autre grâce à eux que nous sommes parvenu a atteindre l'objectif souhaité.
-Les UGV sont des drones roulants qui sont principalement utilisés par les militaires ou la police. Ils permettent de remplir des missions qu'il serait difficile voire impossible à faire pour l'homme. Notre projet ne consiste pas à fabriquer un drone ayant un fusil permettant de "dégommer" tous ce qui bouge, mais de faire un drone de reconnaissance à moindre coûts. Les drones existant sont soit trop cher, soit peu performants. Par exemple le Beewi WiFi Camera Buggy BWZ200-A1, qui coûte septante-neuf francs est un bon jouet, mais dans notre travail de maturité, son autonomie est insuffisante (une dixaine de minute tout au plus) et sa portée ne dépasse guère les 25 mètres, ce qui rend la caméra inutile. L'objectif de se projet n'est pas d'avoir simplement un prototype, mais d'avoir un produit finit qui serait en phase finale de commercialisation. En effet, si nous parvenons avoir un ensemble possèdant un véhicule tout terrain, une interface claire et un guidage simple et efficace, nous arions des arguments de poids face aux autres produits disponibles sur le marché. Dans la lancée de ce projet, nous nous sommes inscrit au concours suisse de science \textit{La science appelle les jeunes}\footnote{[site à insérer]}. Ce concours réunis presque tout les domaines, pourvu que certains critères soient respéctés. Tous les concurents continuent un projets qu'ils avait fait durant leur travail de maturité/diplôme et la démarche utilisée doit être scientifique. Ce concours pourrait, selon les résultats, nous aider à promouvoir notre drone. 
+Parti dans l'idée de concevoir un objet déjà existant mais à moindre prix,
+nous avons choisi des technologies récemment sorties, ce qui fait que nous
+étions dans les premiers à évoluer dans ce millieu. Néanmoins, un support de
+dévelopeur à toujours été là pour nous débloquer en cas de pépin. C'est entre
+autre grâce à eux que nous sommes parvenu a atteindre l'objectif souhaité. 
+Les UGV sont des drones roulants qui sont principalement utilisés par les
+militaires ou la police. Ils permettent de remplir des missions qu'il serait
+difficile voire impossible à faire pour l'homme. Notre projet ne consiste pas
+à fabriquer un drone ayant un fusil permettant de "dégommer" tous ce qui
+bouge, mais de faire un drone de reconnaissance à moindre coûts. Les drones
+existant sont soit trop cher, soit peu performants. Par exemple le Beewi WiFi
+Camera Buggy BWZ200-A1, qui coûte septante-neuf francs est un bon jouet, mais
+dans notre travail de maturité, son autonomie est insuffisante (une dixaine de
+minute tout au plus) et sa portée ne dépasse guère les 25 mètres, ce qui rend
+la caméra inutile. L'objectif de se projet n'est pas d'avoir simplement un
+prototype, mais d'avoir un produit finit qui serait en phase finale de
+commercialisation. En effet, si nous parvenons avoir un ensemble possèdant un
+véhicule tout terrain, une interface claire et un guidage simple et efficace,
+nous arions des arguments de poids face aux autres produits disponibles sur le
+marché. Dans la lancée de ce projet, nous nous sommes inscrit au concours
+suisse de science \textit{La science appelle les jeunes}\footnote{[site à
+    insérer]}. Ce concours réunis presque tout les domaines, pourvu que
+certains critères soient respéctés. Tous les concurents continuent un projets
+qu'ils avait fait durant leur travail de maturité/diplôme et la démarche
+utilisée doit être scientifique. Ce concours pourrait, selon les résultats,
+nous aider à promouvoir notre drone.  
 \end{abstract}
 \addcontentsline{toc}{section}{\protect\numberline{}Résumé}
 \clearpage
@@ -145,6 +169,59 @@ Une quinzaine de systèmes d'exploitations fonctionnant sur le Raspberry Pi exis
 Notre choix à été porté sur Raspbian, qui est un dérivé de Debian, pour plusieurs raisons. Tout d'abord, cet OS à été dévellopé spécialement pour le Raspberry Pi et il est donc continuellement dévellopé par la communauté du Raspberry Pi. Cet OS étant basé sur un environnement Linux, cela offre un grand nombre de liberté afin de travailler dessus. Raspbian est aussi gratuit, se qui est à prendre en compte puisque nous essayons de réduire les coûts.  
 
 
+\section{PCB}
+
+\subsection{Plaque personelle}
+\begin{figure}[h]
+\centering
+\includegraphics[width=1.0\textwidth]{figures/DSC_1116res}
+    \caption{\label{PPFigure}Première plaque rassemblant différents composants électriques. 
+    }
+\end{figure}
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=1.0\textwidth]{figures/SchemaPlaqueMaison}
+    \caption{\label{SchemaPlaqueMaison}Schéma sommaire de la plaque.
+    }
+\end{figure}
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=1.0\textwidth]{figures/StripBoard}
+    \caption{\label{StripBoard}Exemple de dessous de plaque de prototypage
+      similaire à la notre. http://www.verotl.com/images/images/veroboards/l-01-0033.jpg
+    }
+\end{figure}
+
+%TODO text
+\subsection{Schéma}
+%TODO
+\subsection{Design}
+%TODO
+\subsection{Composants}
+%TODO
+\begin{enumerate}
+\item L293D
+\item 7805T
+\item capacités
+\item diode zener
+\item connecteurs senseurs
+\item connecteur servo
+\item prises block
+\end{enumerate}
+\subsection{Commande et conception}
+Une fois le design terminé et les composants choisis, nous pouvons envoyer
+notre projet à une fabrique spécialisée. Des étudiants de l'EPFL, du club
+RoboPoly, nous ont conseillé une compagnie basée en chine, SeeStudio, qui imprime des
+plaques à bon prix. La procédure de perçage et d'impression est évidemment
+standardisée. Le fabriquant requiert donc des fichiers bien précis à donner à
+ses machines, dénommés fichiers Gerber. Ces fichiers contiennent de
+l'information en coordonnées x,y et en commandes que la machine interprète. Il
+serait évidemment très complexe d'écrire un tel fichier à la
+main. Heureusement, le CAD que nous utilisons prévoit des scripts capable de
+transformer notre design en de tels fichiers. Le fabriquant requiert
+exactement huit fichiers différents, stockés dans un zip et envoyés avec la commande.  
 
 \section{Coût des composants}
 Voici un tableux contenant tout ce dont nous avons utiliser pour construire notre drone.
@@ -214,6 +291,10 @@ ses caractéristiques dans son \'etat actuel:
 \end{center}
 \caption{Caractéristiques du véhicule}
 \end{table}
+
+\section{Système de guidage}
+
+
 \subsection{Système directionel initial}
 Dans son \'etat initial, le syst\`eme de guidage pouvait se comparer \`a un
 servo tr\`es rudimentaire. Il en comptait toutes les caractéristiques, mais en
@@ -249,6 +330,10 @@ transmission. Nous utilisons justement l'ancien axe de transmission pour une
 raison d\'evelop\'ee plus tard.\footnote{voir :
 http://en.wikipedia.org/wiki/Ackermann\_steering\_geometry sur
 ``Ackerman steering''}
+
+\subsection{Géométrie d'Ackermann}
+%TODO
+%http://en.wikipedia.org/wiki/Ackermann_steering_geometry
 
 \subsection{Contrôle du servo}
 Le contr\^ole d'un servo est une tâche qu'un microcontr\^oleur tel que
@@ -288,6 +373,13 @@ classe est de produire un signal comme celui discut\'e \`a la section
 pr\'ec\'edente en l'émettant par un des pins de l'arduino capable de cette
 modulation. 
 
+%--------------- Temporaire ---------------%
+% Il ne faut pas oublier de parler de ce problème!!!!
+\subsection{Etat actuel du système de guidage}
+Le servo n'est pas fonctionel sur la plaque électronique que nous avons conçu
+nous-même. Selon nos diagnostiques, il s'agit d'une mauvaise soudure et donc
+le servo ne peut pas être allimenté en courrant. Ce problème devrait se
+résoudre lorsque nous recevrons le PCB.
 
 
 D'ailleur, ce programme est tr\`es pratique pour tester le fonctionement d'un servo. 
@@ -417,7 +509,23 @@ Le partage sécurisé entre deux ordinateurs, que nous allons appeler ici \texti
 Guvcview\label{Guvcview} est un software permettant d'enregistrer des séquences vidéos ou des images, il fournit aussi une image de contrôle, que nous utilisons dans la première version du drone. Ce logiciel très facile d'utilisation permet d'avoir près de dix-huit images par secondes lors d'une connexion \textit{ssh} avec une résolution d'envrion 600x380 pixels. L'inconvénient de ce logiciel est que l'image de contrôle ne peut pas être affichée seule, elle s'acoompagne toujours du panneau de réglages. 
 
 \section{Python}
-Outre les programmes mentionnés ci-dessus, nous avons développé notre propre code python (annexe: \ref{code python}) qui permet de contrôler le véhicule. Le code est  Visuellement, l'interface graphique est très simple (fig:\ref{python environnement}). Il s'agit simplement d'une fenêtre qui est à l'écoute du clavier et qui, lorsque l'utilisateur presse une touche, va envoyer le caractère à l'arduino via le port de communication Sérial. L'arduino va ensuite, grâce à son propre code définir quelle action le véhicule doit faire. Ce programme permet non seulement de choisir la direction à prendre, mais aussi de régler l'angle de braquage ou la vitesse maximale. Il affiche entre autre les messages d'erreur ainsi que des informations à propos de la vitesse maximale ou du braquage maximal. Ce programme ne prend pas en compte l'utilisation de capteur, tel que capteur de distance. Il permet simplement de diriger le véhicule.
+Outre les programmes mentionnés ci-dessus, nous avons développé notre propre
+code python (annexe: \ref{code python}) qui permet de contrôler le
+véhicule. Le code est  Visuellement, l'interface graphique est très simple
+(fig:\ref{python environnement}). Il s'agit simplement d'une fenêtre qui est à
+l'écoute du clavier et qui, lorsque l'utilisateur presse une touche, va
+envoyer le caractère à l'arduino via le port de communication
+Sérial. L'arduino va ensuite, grâce à son propre code définir quelle action le
+véhicule doit faire. Ce programme permet non seulement de choisir la direction
+à prendre, mais aussi de régler l'angle de braquage ou la vitesse maximale. Il
+affiche entre autre les messages d'erreur ainsi que des informations à propos
+de la vitesse maximale ou du braquage maximal. Ce programme ne prend pas en
+compte l'utilisation de capteur, tel que capteur de distance. Il permet
+simplement de diriger le véhicule. Une zone de texte non éditable par
+l'utilisateur permet d'afficher des messages, avertissant, par exemple, que le
+pilote a atteint le braquage maximal. Le programme n'est pas conscient de
+l'état physique de la voiture, mais se base uniquement sur les paramètres
+selectionnés par le pilote pour imprimer de tels messages. 
 
 \begin{center}
 \begin{figure}[!h]
