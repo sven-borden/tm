@@ -1,0 +1,28 @@
+\begin{thebibliography}{1}
+
+\bibitem{RaspberryPiCaracteristiques}
+the free~encyclopedia From~Wikipedia.
+\newblock Raspberry pi, ??
+\newblock \url{http://en.wikipedia.org/wiki/Raspberry_Pi}.
+
+\bibitem{WikiServo}
+the free~encyclopedia From~Wikipedia.
+\newblock Servo control, Octobre 2012.
+\newblock \url{http://en.wikipedia.org/wiki/Servo_control}.
+
+\bibitem{RobotRoom}
+Robot Room.
+\newblock H-bridge motor driver using bipolar transistors, ??
+\newblock \url{http://www.robotroom.com/BipolarHBridge.html}.
+
+\bibitem{ServoSweep}
+Barragan Studio.
+\newblock Servo sweep, Septembre 2010.
+\newblock \url{http://arduino.cc/en/Tutorial/Sweep}.
+
+\bibitem{Arduino}
+Arduino Team.
+\newblock Arduino spec., ??
+\newblock \url{http://arduino.cc/en/Main/ArduinoBoardUno}.
+
+\end{thebibliography}
