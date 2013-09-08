@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2013.8.31)  31 AUG 2013 20:49
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2013.8.31)  8 SEP 2013 22:07
 entering extended mode
 **rendu_final.tex
 (C:\Users\DXS\Documents\GitHub\tm-old\rendu_final.tex
@@ -15,8 +15,8 @@ an, tamil, telugu, turkish, turkmen, ukenglish, ukrainian, uppersorbian, usengl
 ishmax, welsh, loaded.
 ("C:\Program Files\MiKTeX 2.9\tex\latex\base\report.cls"
 Document Class: report 2007/10/19 v1.4h Standard LaTeX document class
-("C:\Program Files\MiKTeX 2.9\tex\latex\base\size12.clo"
-File: size12.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
+("C:\Program Files\MiKTeX 2.9\tex\latex\base\size11.clo"
+File: size11.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
 )
 \c@part=\count79
 \c@chapter=\count80
@@ -505,9 +505,6 @@ File: lettrine.sty 2013/03/14 v1.64 (Daniel Flipo)
 
 Loading lettrine.cfg
 (C:\Users\DXS\AppData\Roaming\MiKTeX\2.9\tex\latex\lettrine\lettrine.cfg))
-(C:\Users\DXS\AppData\Roaming\MiKTeX\2.9\tex\latex\lastpage\lastpage.sty
-Package: lastpage 2013/01/28 v1.2l Refers to last page's name (HMM; JPG)
-)
 (C:\Users\DXS\AppData\Roaming\MiKTeX\2.9\tex\latex\ucs\ucs.sty
 Package: ucs 2013/05/11 v2.2 UCS: Unicode input support
 
@@ -556,13 +553,6 @@ Package frenchb.ldf Warning: OT1 encoding should not be used for French.
 \everyMPtoPDFconversion=\toks28
 )
 \c@lstlisting=\count130
-Package lastpage Info: Please have a look at the pageslts package at
-(lastpage)             http://www.ctan.org/tex-archive/ 
-(lastpage)             macros/latex/contrib/pageslts/ 
-(lastpage)             or
-(lastpage)             http://www.ctan.org/tex-archive/ 
-(lastpage)             install/macros/latex/contrib/pageslts.tds.zip
-(lastpage)             ! on input line 42.
  (C:\Users\DXS\AppData\Roaming\MiKTeX\2.9\tex\latex\ucs\ucsencs.def
 File: ucsencs.def 2011/01/21 Fixes to fontencodings LGR, T3
 )
@@ -604,643 +594,277 @@ Package pdftex.def Info: figures/DSC_8469res.jpg used on input line 54.
  [1
 
 {C:/Users/DXS/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map} <C:/Users/DXS/
-Documents/GitHub/tm-old/figures/DSC_8469res.jpg>] [2]
-Overfull \hbox (0.27643pt too wide) in paragraph at lines 61--62
-\OT1/pnc/m/n/12 vers un do-maine pa-rall[]ele, la ro-bo-tique. Le choix de ce s
-u-jet est d[]eriv[]e
+Documents/GitHub/tm-old/figures/DSC_8469res.jpg>]
+Overfull \hbox (25.11934pt too wide) in paragraph at lines 61--62
+\OT1/pnc/m/n/10.95 rall[]ele, la ro-bo-tique. Le choix de ce su-jet est d[]eriv
+[]e des quad-copt[]eres (h[]elicopt[]eres
  []
 
-[1
+[1] [2
 
 ]
-Overfull \hbox (1.14352pt too wide) in paragraph at lines 67--68
-[]\OT1/pnc/m/n/12 Ce pro-jet n'au-rait pu abou-tir sans l'aide de nom-breuses p
-er-sonnes.
- []
-
-[2
-
-]
-LaTeX Font Info:    Font shape `OT1/pnc/bx/n' in size <12> not available
-(Font)              Font shape `OT1/pnc/b/n' tried instead on input line 70.
+LaTeX Font Info:    Font shape `OT1/pnc/bx/n' in size <10.95> not available
+(Font)              Font shape `OT1/pnc/b/n' tried instead on input line 71.
  [1
 
-] [2] (C:\Users\DXS\Documents\GitHub\tm-old\rendu_final.toc [1
-
-
-])
+] [2] (C:\Users\DXS\Documents\GitHub\tm-old\rendu_final.toc)
 \tf@toc=\write3
- [2]
-(C:\Users\DXS\Documents\GitHub\tm-old\rendu_final.lof
-Overfull \hbox (1.05144pt too wide) in paragraph at lines 4--4
- \OT1/pnc/m/n/12 mar-quer au centre le mi-cro-contr[]oleur AT-mega328 ainsi 
- []
+ [1
 
-
-Overfull \hbox (49.54225pt too wide) in paragraph at lines 5--5
- [][] []\OT1/pnc/m/n/12 Premi[]ere plaque ras-sem-blant diff[]erents com-po-san
-ts []electriques. 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 5--5
- []  
- []
-
-
-Overfull \hbox (38.73456pt too wide) in paragraph at lines 7--7
- []\OT1/pnc/m/n/12 a la notre. http ://www.verotl.com/images/images/veroboards/
-l- 
- []
-
-)
-\tf@lof=\write4
- [3
-
-
-] (C:\Users\DXS\Documents\GitHub\tm-old\rendu_final.lot)
-\tf@lot=\write5
- [4
 
 ]
-Overfull \hbox (14.85533pt too wide) in paragraph at lines 111--112
-\OT1/pnc/m/n/12 peut com-man-der []a dis-tance. Plus qu'une simple voi-ture t[]
-el[]ecommand[]ee,
- []
+(C:\Users\DXS\Documents\GitHub\tm-old\rendu_final.lof)
+\tf@lof=\write4
+ [2
 
 
-Overfull \hbox (1.66202pt too wide) in paragraph at lines 111--112
-\OT1/pnc/m/n/12 d'en-gins se nomment \OT1/pnc/m/it/12 UGV (Un-man-ned Ground Ve
--hicle) \OT1/pnc/m/n/12 soit "v[]ehicule
- []
+]
+(C:\Users\DXS\Documents\GitHub\tm-old\rendu_final.lot)
+\tf@lot=\write5
+ [3
 
-
-Overfull \hbox (7.14706pt too wide) in paragraph at lines 111--112
-\OT1/pnc/m/n/12 ger ce probl[]eme, il suf-fit tout sim-ple-ment d'impl[]ementer
- notre syst[]eme
- []
-
-[5
+] [4
 
 ]
 Chapitre 1.
-[6
+
+Overfull \hbox (11.09995pt too wide) in paragraph at lines 118--120
+\OT1/pnc/m/n/10.95 Le pre-mier, l'Ar-duino, est un mi-cro-con-trol-leur qui per
+-met de contr[]oler presque
+ []
 
 
-]
+LaTeX Warning: Citation `Arduino' on page 5 undefined on input line 123.
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 127--128
 
  []
 
-<figures/arduino_uno.jpg, id=47, 856.19875pt x 643.40375pt>
+[5
+
+
+] <figures/arduino_uno.jpg, id=42, 856.19875pt x 643.40375pt>
 File: figures/arduino_uno.jpg Graphic file (type jpg)
 
 <use figures/arduino_uno.jpg>
 Package pdftex.def Info: figures/arduino_uno.jpg used on input line 131.
 (pdftex.def)             Requested size: 325.3589pt x 244.49596pt.
+ [6 <C:/Users/DXS/Documents/GitHub/tm-old/figures/arduino_uno.jpg>]
+
+LaTeX Warning: Citation `RaspberryPiCaracteristiques' on page 7 undefined on in
+put line 150.
 
 
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[7] [8 <C:/Users/DXS/Documents/GitHub/tm-old/figures/arduino_uno.jpg>]
-Overfull \hbox (4.34912pt too wide) in paragraph at lines 156--157
-[]\OT1/pnc/m/n/12 Sortie au-dio st[]er[]eo Jack (3.5mm) (le son passe aussi par
- le HDMI
- []
-
-[9]
-Overfull \hbox (6.42062pt too wide) in paragraph at lines 168--170
-\OT1/pnc/m/n/12 bian, qui est un d[]eriv[]e de De-bian, pour plu-sieurs rai-son
-s. Tout d'abord,
- []
-
-<figures/DSC_1116res.jpg, id=59, 803.0pt x 530.98375pt>
-File: figures/DSC_1116res.jpg Graphic file (type jpg)
-
-<use figures/DSC_1116res.jpg>
-Package pdftex.def Info: figures/DSC_1116res.jpg used on input line 177.
-(pdftex.def)             Requested size: 378.42174pt x 250.23486pt.
-
-Underfull \hbox (badness 2884) in paragraph at lines 179--179
-[]\OT1/cmr/m/sc/12 Figure \OT1/cmr/m/n/12 1.2 { []Premiere plaque ras-sem-blan
-t differents com-po-sants
+Overfull \hbox (0.93657pt too wide) in paragraph at lines 150--151
+\OT1/pnc/m/n/10.95 na-teur de la taille d'une carte de cr[]edit sur le-quel on 
+peut ins-tal-ler diff[]erents
  []
 
 
-LaTeX Warning: `h' float specifier changed to `ht'.
+Overfull \hbox (0.32765pt too wide) in paragraph at lines 150--151
+\OT1/pnc/m/n/10.95 syst[]emes d'ex-ploi-ta-tions d[]eriv[]es de UNIX/-Li-nux. L
+e Rasp-berry Pi est achet[]e
+ []
 
-<figures/SchemaPlaqueMaison.png, id=60, 597.73312pt x 420.82219pt>
+[7] [8] <figures/SchemaPlaqueMaison.png, id=54, 597.73312pt x 420.82219pt>
 File: figures/SchemaPlaqueMaison.png Graphic file (type png)
 
 <use figures/SchemaPlaqueMaison.png>
-Package pdftex.def Info: figures/SchemaPlaqueMaison.png used on input line 184.
+Package pdftex.def Info: figures/SchemaPlaqueMaison.png used on input line 180.
 
 (pdftex.def)             Requested size: 378.42174pt x 266.42288pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<figures/StripBoard.jpg, id=61, 120.45pt x 118.5228pt>
-File: figures/StripBoard.jpg Graphic file (type jpg)
+<figures/rx2_ex1.jpg, id=55, 770.88pt x 494.59781pt>
+File: figures/rx2_ex1.jpg Graphic file (type jpg)
+ <use figures/rx2_ex1.jpg>
+Package pdftex.def Info: figures/rx2_ex1.jpg used on input line 189.
+(pdftex.def)             Requested size: 378.42174pt x 242.79276pt.
 
-<use figures/StripBoard.jpg>
-Package pdftex.def Info: figures/StripBoard.jpg used on input line 191.
-(pdftex.def)             Requested size: 378.42174pt x 372.40288pt.
+
+LaTeX Warning: Citation `rx2_ex1' on page 9 undefined on input line 191.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[10] [11 <C:/Users/DXS/Documents/GitHub/tm-old/figures/DSC_1116res.jpg>]
-[12 <C:/Users/DXS/Documents/GitHub/tm-old/figures/SchemaPlaqueMaison.png>]
-[13] [14 <C:/Users/DXS/Documents/GitHub/tm-old/figures/StripBoard.jpg>]
+<figures/rx2_ex2.jpg, id=56, 758.835pt x 686.565pt>
+File: figures/rx2_ex2.jpg Graphic file (type jpg)
+ <use figures/rx2_ex2.jpg>
+Package pdftex.def Info: figures/rx2_ex2.jpg used on input line 195.
+(pdftex.def)             Requested size: 378.42174pt x 342.3807pt.
+
+
+LaTeX Warning: Citation `rx2_ex2' on page 9 undefined on input line 197.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<figures/rx2_ex3.jpg, id=57, 494.84875pt x 460.72125pt>
+File: figures/rx2_ex3.jpg Graphic file (type jpg)
+
+<use figures/rx2_ex3.jpg>
+Package pdftex.def Info: figures/rx2_ex3.jpg used on input line 201.
+(pdftex.def)             Requested size: 378.42174pt x 352.32407pt.
+
+
+LaTeX Warning: Citation `rx2_ex3' on page 9 undefined on input line 203.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[9] <figures/DSC_1116res.jpg, id=61, 803.0pt x 530.98375pt>
+File: figures/DSC_1116res.jpg Graphic file (type jpg)
+
+<use figures/DSC_1116res.jpg>
+Package pdftex.def Info: figures/DSC_1116res.jpg used on input line 215.
+(pdftex.def)             Requested size: 378.42174pt x 250.23486pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+Overfull \hbox (8.73898pt too wide) in paragraph at lines 221--223
+[]\OT1/pnc/m/n/10.95 Quelques ex-pli-ca-tions sur le contenu et la concep-tion 
+de la plaque suivent :
+ []
+
+[10 <C:/Users/DXS/Documents/GitHub/tm-old/figures/SchemaPlaqueMaison.png>]
+<figures/StripBoard.jpg, id=65, 120.45pt x 118.5228pt>
+File: figures/StripBoard.jpg Graphic file (type jpg)
+
+<use figures/StripBoard.jpg>
+Package pdftex.def Info: figures/StripBoard.jpg used on input line 236.
+(pdftex.def)             Requested size: 378.42174pt x 372.40288pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<figures/schema_CHI.PNG, id=66, 429.95256pt x 335.67796pt>
+File: figures/schema_CHI.PNG Graphic file (type png)
+
+<use figures/schema_CHI.PNG>
+Package pdftex.def Info: figures/schema_CHI.PNG used on input line 253.
+(pdftex.def)             Requested size: 429.9515pt x 335.67712pt.
+
+Overfull \hbox (37.86583pt too wide) in paragraph at lines 253--255
+ [][] 
+ []
+
+[11 <C:/Users/DXS/Documents/GitHub/tm-old/figures/rx2_ex1.jpg>]
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<figures/board_CHI.PNG, id=70, 214.62827pt x 159.81215pt>
+File: figures/board_CHI.PNG Graphic file (type png)
+
+<use figures/board_CHI.PNG>
+Package pdftex.def Info: figures/board_CHI.PNG used on input line 267.
+(pdftex.def)             Requested size: 378.42174pt x 281.77501pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[12 <C:/Users/DXS/Documents/GitHub/tm-old/figures/rx2_ex2.jpg>] [13 <C:/Users/D
+XS/Documents/GitHub/tm-old/figures/rx2_ex3.jpg>] [14 <C:/Users/DXS/Documents/Gi
+tHub/tm-old/figures/DSC_1116res.jpg>] [15 <C:/Users/DXS/Documents/GitHub/tm-old
+/figures/StripBoard.jpg>]
+Overfull \hbox (8.69531pt too wide) in paragraph at lines 302--337
+[]\OT1/pnc/m/n/10.95 Voici un ta-bleux conte-nant tout ce dont nous avons uti-l
+i-ser pour construire
+ []
+
+[16] [17 <C:/Users/DXS/Documents/GitHub/tm-old/figures/schema_CHI.PNG>]
+[18 <C:/Users/DXS/Documents/GitHub/tm-old/figures/board_CHI.PNG>]
 Chapitre 2.
 
-Underfull \hbox (badness 1755) in paragraph at lines 275--275
-[]|\OT1/cmr/m/n/12 Longueur (centre de
+Underfull \hbox (badness 10000) in paragraph at lines 350--350
+[]|\OT1/cmr/m/n/10.95 Longueur (centre de
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 277--277
-[]|\OT1/cmr/m/n/12 Largeur (centre de
+Underfull \hbox (badness 10000) in paragraph at lines 356--356
+[]|\OT1/cmr/m/n/10.95 Courant min (roue
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 281--281
-[]|\OT1/cmr/m/n/12 Courant min (roue
- []
-
-
-Underfull \hbox (badness 5878) in paragraph at lines 282--282
-[]|\OT1/cmr/m/n/12 Courant max (roue
- []
-
-
-Overfull \hbox (9.56763pt too wide) in paragraph at lines 266--294
-\OT1/pnc/m/n/12 4x4. Le ta-bleau sui-vant est un in-ven-taire de ses ca-ract[]e
-ristiques
+Underfull \hbox (badness 10000) in paragraph at lines 357--357
+[]|\OT1/cmr/m/n/10.95 Courant max (roue
  []
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
+[19
 
-Overfull \hbox (2.42332pt too wide) in paragraph at lines 299--315
-\OT1/pnc/m/n/12 ment. Dans un servo clas-sique, il s'agit d'un po-ten-tiom[]etr
-e (r[]esistance
- []
-
-
-Overfull \hbox (4.53712pt too wide) in paragraph at lines 299--315
-\OT1/pnc/m/n/12 va-riable) qui per-met de sa-voir en tout mo-ment la po-si-tion
- de la corne[].
- []
-
-[15
-
-] [16]
-Overfull \hbox (26.26718pt too wide) in paragraph at lines 339--345
-[]\OT1/pnc/m/n/12 electrique dit mo-dul[]e. Ce si-gnal est mo-dul[]e d'une mani
-[]ere compr[]eh[]ensible
- []
-
-[17] <figures/ServoPwm.pdf, id=87, 501.875pt x 200.75pt>
+] [20] <figures/ServoPwm.pdf, id=100, 501.875pt x 200.75pt>
 File: figures/ServoPwm.pdf Graphic file (type pdf)
 
 <use figures/ServoPwm.pdf>
-Package pdftex.def Info: figures/ServoPwm.pdf used on input line 348.
+Package pdftex.def Info: figures/ServoPwm.pdf used on input line 423.
 (pdftex.def)             Requested size: 378.42174pt x 151.37692pt.
- [18 <C:/Users/DXS/Documents/GitHub/tm-old/figures/ServoPwm.pdf>]
-Overfull \hbox (1.99765pt too wide) in paragraph at lines 391--399
-[]\OT1/pnc/m/n/12 Le mo-teur de pro-pul-sion, au contraire du servo, n'a pas []
-et[]e chang[]e.
- []
 
-[19] <figures/H-bridge.pdf, id=100, 297.49544pt x 144.53197pt>
+
+LaTeX Warning: Citation `WikiServo' on page 21 undefined on input line 427.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[21]
+
+LaTeX Warning: Reference `SketchExServo' on page 22 undefined on input line 444
+.
+
+
+LaTeX Warning: Citation `ServoSweep' on page 22 undefined on input line 445.
+
+[22 <C:/Users/DXS/Documents/GitHub/tm-old/figures/ServoPwm.pdf>]
+<figures/H-bridge.pdf, id=112, 297.49544pt x 144.53197pt>
 File: figures/H-bridge.pdf Graphic file (type pdf)
 
 <use figures/H-bridge.pdf>
-Package pdftex.def Info: figures/H-bridge.pdf used on input line 418.
+Package pdftex.def Info: figures/H-bridge.pdf used on input line 493.
 (pdftex.def)             Requested size: 378.42174pt x 183.86229pt.
- [20 <C:/Users/DXS/Documents/GitHub/tm-old/figures/H-bridge.pdf>]
-Overfull \hbox (1.08539pt too wide) in paragraph at lines 424--432
-\OT1/pnc/m/n/12 en connec-tant les \OT1/pnc/m/it/12 IN-PUT []\OT1/pnc/m/n/12 a 
-des tran-sis-tors dia-go-na-le-ment op-pos[]es[[]]. 
- []
 
-[21] [22]
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+LaTeX Warning: Citation `RobotRoom' on page 23 undefined on input line 506.
+
+[23] [24 <C:/Users/DXS/Documents/GitHub/tm-old/figures/H-bridge.pdf>] [25]
 Chapitre 3.
-<figures/arduino-environnement-1.png, id=117, 511.15968pt x 543.53062pt>
-File: figures/arduino-environnement-1.png Graphic file (type png)
 
-<use figures/arduino-environnement-1.png>
-Package pdftex.def Info: figures/arduino-environnement-1.png used on input line
- 477.
-(pdftex.def)             Requested size: 255.57921pt x 271.76463pt.
+LaTeX Warning: Reference `Environnement Arduino' on page 26 undefined on input 
+line 546.
 
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-
-Overfull \hbox (14.02243pt too wide) in paragraph at lines 486--487
-\OT1/pnc/m/n/12 tion-nant sous py-thon avec comme lo-gi-ciel de vid[]eo Guvc-vi
-ew (sec :3.2.2[]).
- []
-
-[23
-
-] <figures/Edimax.jpg, id=122, 1283.79625pt x 962.59625pt>
-File: figures/Edimax.jpg Graphic file (type jpg)
-
-<use figures/Edimax.jpg>
-Package pdftex.def Info: figures/Edimax.jpg used on input line 498.
-(pdftex.def)             Requested size: 258.9897pt x 251.3614pt.
-
-Overfull \hbox (6.08942pt too wide) in paragraph at lines 495--502
-\OT1/pnc/m/n/12 nous uti-li-sons un \OT1/pnc/m/it/12 dongle \OT1/pnc/m/n/12 (fi
-g :3.2[]) Wi-Fi[]. Cet ac-ces-soire ne n[]ecessitant
- []
-
-[24 <C:/Users/DXS/Documents/GitHub/tm-old/figures/arduino-environnement-1.png>]
-[25 <C:/Users/DXS/Documents/GitHub/tm-old/figures/Edimax.jpg>]
-Overfull \hbox (6.76405pt too wide) in paragraph at lines 509--510
-[]\OT1/pnc/m/n/12 etre af-fich[]ee seule, elle s'acoom-pagne tou-jours du pan-n
-eau de r[]eglages. 
- []
-
-
-Overfull \hbox (5.24852pt too wide) in paragraph at lines 512--529
-[]\OT1/pnc/m/n/12 Outre les pro-grammes men-tionn[]es ci-dessus, nous avons d[]
-evelopp[]e
- []
-
-
-Overfull \hbox (10.9436pt too wide) in paragraph at lines 512--529
-\OT1/pnc/m/n/12 v[]ehicule. Le code est Vi-suel-le-ment, l'in-ter-face gra-phiq
-ue est tr[]es simple
- []
-
-[26] <figures/python-environnement.png, id=136, 386.94562pt x 291.33844pt>
-File: figures/python-environnement.png Graphic file (type png)
-
-<use figures/python-environnement.png>
-Package pdftex.def Info: figures/python-environnement.png used on input line 53
-2.
-(pdftex.def)             Requested size: 386.94467pt x 291.33772pt.
-
-Overfull \hbox (8.52293pt too wide) in paragraph at lines 532--533
-[][][] 
- []
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-[27] [28 <C:/Users/DXS/Documents/GitHub/tm-old/figures/python-environnement.png
->]
-Chapitre 4.
-[29
-
-
-] [30] [31]
-(C:\Users\DXS\AppData\Roaming\MiKTeX\2.9\tex\latex\listings\lstlang1.sty
-File: lstlang1.sty 2013/08/05 1.5a listings language file
 )
-(C:\Users\DXS\Documents\GitHub\tm-old\code/motor.java
-LaTeX Font Info:    Try loading font information for OMS+pnc on input line 7.
-
-("C:\Program Files\MiKTeX 2.9\tex\latex\psnfss\omspnc.fd"
-File: omspnc.fd 
-)
-LaTeX Font Info:    Font shape `OMS/pnc/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 7.
-
-Overfull \hbox (75.18288pt too wide) in paragraph at lines 9--11
-[][][][][][][][][][][][][][][][][][][][][][][][][][][] 
- []
-
-
-Overfull \hbox (139.98354pt too wide) in paragraph at lines 18--20
-[][][][][][][][][][][][][][][][][][][][][][][][][] 
- []
-
-LaTeX Font Info:    Try loading font information for OML+pnc on input line 20.
-("C:\Program Files\MiKTeX 2.9\tex\latex\psnfss\omlpnc.fd"
-File: omlpnc.fd 
-)
-LaTeX Font Info:    Font shape `OML/pnc/m/n' in size <12> not available
-(Font)              Font shape `OML/cmm/m/it' tried instead on input line 20.
- [32
-
-]
-Overfull \hbox (39.18251pt too wide) in paragraph at lines 38--39
-[][][][][][][][][][][][][][][][][][][][][] 
- []
-
-[33]
-Overfull \hbox (139.98354pt too wide) in paragraph at lines 56--57
-[][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
- []
-
-
-Overfull \hbox (82.38295pt too wide) in paragraph at lines 57--58
-[][][][][][][][][][][][][][][][][][][][][][][][][] 
- []
-
-
-Overfull \hbox (139.98354pt too wide) in paragraph at lines 63--64
-[][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
- []
-
-
-Overfull \hbox (89.58302pt too wide) in paragraph at lines 64--65
-[][][][][][][][][][][][][][][][][][][][][][][][][] 
- []
-
-) (C:\Users\DXS\Documents\GitHub\tm-old\code/ServoExample.java
-LaTeX Font Info:    Font shape `OML/pnc/m/it' in size <12> not available
-(Font)              Font shape `OML/cmm/m/it' tried instead on input line 2.
- [34]
-Overfull \hbox (31.98244pt too wide) in paragraph at lines 8--9
-[][][][][][][][][][][][][][][][][][][][][][][][] 
- []
-
-
-Overfull \hbox (96.7831pt too wide) in paragraph at lines 9--11
-[][][][][][][][][][][][][][][][][][][][][][] 
- []
-
-
-Overfull \hbox (17.58229pt too wide) in paragraph at lines 11--13
-[][][][][][][][][][][][][][][][][][][][][][][][][] 
- []
-
-
-Overfull \hbox (139.98354pt too wide) in paragraph at lines 15--16
-[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
- []
-
-
-Overfull \hbox (154.38368pt too wide) in paragraph at lines 21--22
-[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
-] 
- []
-
-
-Overfull \hbox (53.58266pt too wide) in paragraph at lines 22--23
-[][][][][][][][][][][][][][][][][][] 
- []
-
-
-Overfull \hbox (161.58376pt too wide) in paragraph at lines 23--24
-[][][][][][][][][][][][][][][][][][][][][][][][][][][] 
- []
-
-
-Overfull \hbox (31.98244pt too wide) in paragraph at lines 24--25
-[][][][][][][][][][][][] 
- []
-
-
-Overfull \hbox (82.38295pt too wide) in paragraph at lines 25--26
-[][][][][][][][][][][][][][][][][][][][] 
- []
-
-
-Overfull \hbox (60.78273pt too wide) in paragraph at lines 26--27
-[][][][][][][][][][][][] 
- []
-
-
-Overfull \hbox (154.38368pt too wide) in paragraph at lines 28--29
-[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
- []
-
-[35]) (C:\Users\DXS\AppData\Roaming\MiKTeX\2.9\tex\latex\listings\lstlang1.sty
-File: lstlang1.sty 2013/08/05 1.5a listings language file
-) (C:\Users\DXS\Documents\GitHub\tm-old\code/gui_1.1.py [36]
-Overfull \hbox (183.18398pt too wide) in paragraph at lines 14--15
-[][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
- []
-
-
-Overfull \hbox (96.7831pt too wide) in paragraph at lines 35--36
-[][][][][][][][][][][][][] 
- []
-
-[37]
-Overfull \hbox (161.58376pt too wide) in paragraph at lines 40--41
-[][][][][][][][][][][][][][][][][][][][][][][][][][][] 
- []
-
-
-Overfull \hbox (10.38222pt too wide) in paragraph at lines 54--55
-[][][][][][][][][][][][][][][][][][][][] 
- []
-
-
-Overfull \hbox (147.18361pt too wide) in paragraph at lines 55--56
-[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
- []
-
-
-Overfull \hbox (75.18288pt too wide) in paragraph at lines 58--59
-[][][][][][][][][][][][][][][][][][][][][][][] 
- []
-
-
-Overfull \hbox (10.38222pt too wide) in paragraph at lines 59--60
-[][][][][][][][][][] 
- []
-
-
-Overfull \hbox (190.38405pt too wide) in paragraph at lines 62--63
-[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
- []
-
-
-Overfull \hbox (46.38258pt too wide) in paragraph at lines 65--66
-[][][][][][][][][][][][][][][][][][][][][][][] 
- []
-
-[38]
-Overfull \hbox (53.58266pt too wide) in paragraph at lines 66--67
-[][][][][][][][][][][][][][][] 
- []
-
-
-Overfull \hbox (31.98244pt too wide) in paragraph at lines 67--70
-[][][][][][][][][][][][][][][][][][][][][][][] 
- []
-
-
-Overfull \hbox (10.38222pt too wide) in paragraph at lines 76--77
-[][][][][][][][][][][][][][][][][][][][] 
- []
-
-
-Overfull \hbox (10.38222pt too wide) in paragraph at lines 79--80
-[][][][][][][][][][][][][][][][][][][][] 
- []
-
-
-Overfull \hbox (24.78236pt too wide) in paragraph at lines 80--81
-[][][][][][][][][][][][][][][][][][][][] 
- []
-
-
-Overfull \hbox (10.38222pt too wide) in paragraph at lines 81--82
-[][][][][][][][][][][][][][][][][][][][] 
- []
-
-
-Overfull \hbox (10.38222pt too wide) in paragraph at lines 82--83
-[][][][][][][][][][][][][][][][][][][][] 
- []
-
-
-Overfull \hbox (39.18251pt too wide) in paragraph at lines 83--84
-[][][][][][][][][][][][][][][][][][][][] 
- []
-
-
-Overfull \hbox (53.58266pt too wide) in paragraph at lines 84--85
-[][][][][][][][][][][][][][][][][][][][] 
- []
-
-
-Overfull \hbox (39.18251pt too wide) in paragraph at lines 85--87
-[][][][][][][][][][][][][][][][][][][][] 
- []
-
-[39]
-Overfull \hbox (118.38332pt too wide) in paragraph at lines 97--98
-[][][][][][][][][][][][][][][][][][][][][][][][][][][] 
- []
-
-
-Overfull \hbox (31.98244pt too wide) in paragraph at lines 98--99
-[][][][][][][][][][][][][][][][][][][][][][][][][][] 
- []
-
-
-Overfull \hbox (125.58339pt too wide) in paragraph at lines 100--101
-[][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
- []
-
-
-Overfull \hbox (24.78236pt too wide) in paragraph at lines 101--102
-[][][][][][][][][][][][][][][][][][][][] 
- []
-
-
-Overfull \hbox (197.58412pt too wide) in paragraph at lines 102--104
-[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
- []
-
-
-Overfull \hbox (118.38332pt too wide) in paragraph at lines 107--108
-[][][][][][][][][][][][][][][][][][][][][][][][][][][] 
- []
-
-
-Overfull \hbox (31.98244pt too wide) in paragraph at lines 108--109
-[][][][][][][][][][][][][][][][][][][][][][][][][][] 
- []
-
-
-Overfull \hbox (53.58266pt too wide) in paragraph at lines 110--111
-[][][][][][][][][][][][][][][][][][][][] 
- []
-
-
-Overfull \hbox (226.38441pt too wide) in paragraph at lines 111--113
-[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
- []
-
-
-Overfull \hbox (183.18398pt too wide) in paragraph at lines 116--117
-[][][][][][][][][][][][][][][][][][][][][][][][][][][] 
- []
-
-
-Overfull \hbox (75.18288pt too wide) in paragraph at lines 117--118
-[][][][][][][][][][][][][][][][][][][][][][][][][][] 
- []
-
-
-Overfull \hbox (46.38258pt too wide) in paragraph at lines 119--120
-[][][][][][][][][][][][][][][][][][][][] 
- []
-
-[40]
-Overfull \hbox (240.78456pt too wide) in paragraph at lines 120--122
-[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
- []
-
-
-Overfull \hbox (183.18398pt too wide) in paragraph at lines 125--126
-[][][][][][][][][][][][][][][][][][][][][][][][][][][] 
- []
-
-
-Overfull \hbox (75.18288pt too wide) in paragraph at lines 126--127
-[][][][][][][][][][][][][][][][][][][][][][][][][][] 
- []
-
-
-Overfull \hbox (75.18288pt too wide) in paragraph at lines 128--129
-[][][][][][][][][][][][][][][][][][][][] 
- []
-
-
-Overfull \hbox (269.58485pt too wide) in paragraph at lines 129--132
-[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
- []
-
-[41]
-Overfull \hbox (75.18288pt too wide) in paragraph at lines 167--168
-[][][][][][][][][][][][] 
- []
-
-[42]
-Overfull \hbox (17.58229pt too wide) in paragraph at lines 178--179
-[][][][][][][][][][][][][][][][][][][][][][] 
- []
-
-) (C:\Users\DXS\Documents\GitHub\tm-old\rendu_final.bbl [43])
-
-AED: lastpage setting LastPage
-[44
-
-] (C:\Users\DXS\Documents\GitHub\tm-old\rendu_final.aux) )
-(\end occurred inside a group at level 1)
-
-### simple group (level 1) entered at line 45 ({)
-### bottom level 
+Runaway argument?
+{Terme de Open-source\cite {openSource} qui fonctionne sur Windows, L\ETC.
+! File ended while scanning use of \@footnotetext.
+<inserted text> 
+                \par 
+<*> rendu_final.tex
+                   
+I suspect you have forgotten a `}', causing me
+to read past where you wanted me to stop.
+I'll try to recover; but if the error is serious,
+you'd better type `E' or `X' now and fix your file.
+
+! Emergency stop.
+<*> rendu_final.tex
+                   
+*** (job aborted, no legal \end found)
+
+ 
 Here is how much of TeX's memory you used:
- 5868 strings out of 493921
- 77265 string characters out of 3147288
- 184930 words of memory out of 3000000
- 9024 multiletter control sequences out of 15000+200000
- 23751 words of font info for 60 fonts, out of 3000000 for 9000
+ 5299 strings out of 493921
+ 70596 string characters out of 3147288
+ 141857 words of memory out of 3000000
+ 8486 multiletter control sequences out of 15000+200000
+ 23616 words of font info for 59 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
- 36i,12n,45p,1396b,1933s stack positions out of 5000i,500n,10000p,200000b,50000s
-{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/fontname/8r.enc}<C
-:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Progra
-m Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><C:/Program Files
-/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Program Files/MiKTeX 
-2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX 2.9/fonts
-/type1/public/amsfonts/cm/cmr12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/pu
-blic/amsfonts/cm/cmr8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfo
-nts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/c
-msy8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti10.pfb
-><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:/Pro
-gram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt12.pfb><C:/Program Fil
-es/MiKTeX 2.9/fonts/type1/urw/ncntrsbk/uncb8a.pfb><C:/Program Files/MiKTeX 2.9/
-fonts/type1/urw/ncntrsbk/uncr8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/ur
-w/ncntrsbk/uncri8a.pfb>
-Output written on rendu_final.pdf (50 pages, 1408536 bytes).
-PDF statistics:
- 244 PDF objects out of 1000 (max. 8388607)
- 0 named destinations out of 1000 (max. 500000)
- 57 words of extra memory for PDF output out of 10000 (max. 10000000)
-
+ 30i,11n,45p,1423b,699s stack positions out of 5000i,500n,10000p,200000b,50000s
+!  ==> Fatal error occurred, no output PDF file produced!
