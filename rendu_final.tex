@@ -124,7 +124,7 @@ L'Arduino \label{Arduino} \cite{Arduino} est un microcontrôleur \textit{Open So
 
 
 \subsubsection{Choix du type d'Arduino}
-Pour ce projet, nous avons choisi l'Arduino Uno (fig:\ref{fig:ArduinoUnoR3}), c'est l'Arduino de base. En effet, Arduino possède de nombreux produits afin de subvenir aux différents besoin. Nous avons hésité à prendre l'Arduino Mega, mais les avantages qu'il offre ne sont pas très utiles pour notre projet. En effet, l'Arduino Mega est similaire à l'Arduino Uno , sauf qu'il est possède des ressources de calculs plus puissantes et il est aussi deux fois plus grand. Puisque nous n'avons pas besoin d'une grande pusisance de calcul, nous avons choisi l'Arduino Uno. L'Arduino Uno est un microcontrolleur qui ressemble à ceci.\\
+Pour ce projet, nous avons choisi l'Arduino Uno (fig: \ref{fig:ArduinoUnoR3}), c'est l'Arduino de base. En effet, Arduino possède de nombreux produits afin de subvenir aux différents besoin. Nous avons hésité à prendre l'Arduino Mega, mais les avantages qu'il offre ne sont pas très utiles pour notre projet. En effet, l'Arduino Mega est similaire à l'Arduino Uno , sauf qu'il est possède des ressources de calculs plus puissantes et il est aussi deux fois plus grand. Puisque nous n'avons pas besoin d'une grande pusisance de calcul, nous avons choisi l'Arduino Uno. L'Arduino Uno est un microcontrolleur qui ressemble à ceci.\\
 
 \begin{figure}[h]
 \begin{center}
@@ -173,7 +173,7 @@ Notre choix à été porté sur Raspbian, qui est un dérivé de Debian, pour pl
 
 (BELLE PHOTO DU PCB USINE!!!)\\
 La décision de retirer l'électronique de base du véhicule télécommandé provient d'une curiosité de comprendre comment elle est faite et surtout, du besoin d'avoir un degré supérieur de contrôle sur la voiture. A la base, le cerveau de la voiture se trouvait dans un petit chip. Très courant dans les jouets radio caommandés bas de gamme, le RX2 ou similaire, permet d'interpréter un signal radio et émettre un courant pour actionner des moteurs, par exemple. Ce microchip va de paire avec le TX2, qui se trouverait dans la télécommande. Si vous ne l'aviez pas deviné, TX symbolise "Transmit" (transmettre) er RX "Receive".
-Voici un schéma du chip:\ref{SchemaPlaqueMaison}
+Voici un schéma du chip:(fig: \ref{SchemaPlaqueMaison})
 
 \begin{figure}[h]
 \centering
@@ -182,7 +182,7 @@ Voici un schéma du chip:\ref{SchemaPlaqueMaison}
     }
 \end{figure}
 (PHOTO + EXPLICATIONS)
-Et quelques exemples de plaques similaires à celle que nous avons trouvée:\ref{rx2.1} \ref{rx2.2} \ref{rx2.3}
+Et quelques exemples de plaques similaires à celle que nous avons trouvée: (figs\ref{rx2.1} \ref{rx2.2} \ref{rx2.3})
 
 \begin{figure}[h]
 \centering
@@ -208,7 +208,7 @@ La nature simple du chip RX2 ne lui permet que d'émettre un signal bas ou haut 
 
 \subsection{Plaque personnelle}
 En attendant de recevoir la plaque sortie d'usine et pour tester une partie du schéma, nous avons conçu un prototype du design final (ref photo descriptive). Cette version préliminaire nous a permis de faire les premiers pas avec le véhicule. Elle permet de controller le moteur de propulsion ainsi que le servo directionnel.
-(PHOTO DESCRIPTIVE)\ref{PPFigure}
+(PHOTO DESCRIPTIVE)(fig: \ref{PPFigure})
 
 \begin{figure}[h]
 \centering
@@ -229,7 +229,7 @@ liste:
 
 	c.Un chip L293D (H-bridge (ref vers section H-bridge)) contrôle le moteur de propulsion. Ici, deux chips sont empilés, donc en parallèle, pour pouvoir supporter la charge importante du moteur.
 
-Tous ces composants, en plus des câbles et des connecteurs vers les actuateurs et batterie, sont soudés sur une strip board semblable à celle dans la photo ci dessous:\ref{StripBoard}
+Tous ces composants, en plus des câbles et des connecteurs vers les actuateurs et batterie, sont soudés sur une strip board semblable à celle dans la photo ci dessous:(fig: \ref{StripBoard})
 
 \begin{figure}[h!]
 \centering
@@ -247,7 +247,7 @@ Le détail des connexions ne sera pas précisé ici, mais il ressemble évidemme
 
 \subsection{Schema}
 Voici le schéma électronique du PCB usiné. Il a été dessiné à l'aide d'un CAD gratuit (version light), Eagle.
-(PHOTO SCHEMA complet chine arduino)\ref{schemaChineComplet}
+(PHOTO SCHEMA complet chine arduino) (fig: \ref{schemaChineComplet})
 \begin{figure}[h]
 \centering
 \includegraphics[angle=90, width=1.1\textwidth]{figures/schema_CHI.PNG}
@@ -260,14 +260,9 @@ Quelques indications pour le lire:
 - Il y a un circuit 9V et un circuit 5V
 
 \subsection{Design}
-(PHOTO DESIGN CHINE)\ref{board_CHI}
+(PHOTO DESIGN CHINE) (fig: \ref{board_CHI})
 
-\begin{figure}[h]
-\centering
-\includegraphics[width=1.0\textwidth]{board_CHI.PNG}
-    \caption{\label{board_CHI} Design de la plaque imprimée en Chine
-    }
-\end{figure}
+c
 
 Une fois le schéma dessiné, Eagle crée une plaque sur laquelle il faut disposer chaque composant. Le programme se charge de contrôler que tout est relié comme dans le schéma. Il pourrait même faire le "routing" lui-même, mais le résultat est très décevant. Des étudaiants de l'EPFL nous ont conseillé de faire ça nous-mêmes. Ca demande de la patience et de la reflexion, comme un puzzle. Nous voulions essayer d'imprimer une version à l'EPFL, il fallait donc faire un design dont les routes se trouvaient uniquement sur le derrière de la plaque (routes bleues)... Le jeu ce complique! en effet, la meilleure solution que nous avons trouvée nous laisse avec une connexion à faire à la main et un connecteur pour senseur en moins.
 
@@ -275,15 +270,53 @@ D'ailleurs, il faut remarquer que la plaque maison ne permet pas au robot d'int�
 
 
 \subsection{Composants}
-%TODO
+
+Plus que de comprendre comment les composants sont connectés ensemble il est important de bien dicerner à quoi sert chacun d'entre eux. Ici, nous détaillerons, un à un,chaque composant, ses propriétés et sa fonction.
+
+(SCHEMA/PHOTO qui montre où chaque composant est placé)
+
 \begin{enumerate}
 \item L293D
+
+Le L293D est à un chip à seize pattes qui encapsule effectivement deux H-bridge comme illustré dans la section (référance à la section en 
+question). Chaque moitié du pont peut fournir 0.6A de courant continu et 1.2A en pic \cite{l293dDataSheet}. Sachant que le moteur peut tirer jusqu'à 3A lorsque la roue est bloquée, il est clair qu'un seul de ces demi-chip est loin d'être à la hauteur. Les avis sont partagés si il est possible de mettre ces chips en parallèle (certains transistors et autres composants ne se partagent pas la charge comme prévu lorsqu'ils sont mis en parallèle), mais, basé sur les indications d'un grand producteur d'électronique pour amateurs \cite{adafruitMotorShield}, nous avons décidé d'empiler deux L293D et de mettre leurs moitiés en parallèle, ce qui s'additionne à 2.4A de courant continu et 4.8A en pic. Nous avons pu tester et valider cette configuration avec la plaque prototype. 
+
 \item 7805T
-\item capacités
-\item diode zener
+
+Le 7805T est un régulateur 5V. Il approvisionne les composants fonctionnant à 5V en courrant. Il peut prendre jusqu'à 35V de tension en entrée \cite{7805T}. Il faut savoir que c'est un appareil très peu efficace car la tension non utilisée est dissipée en chaleur. Il est donc nécessaire de s'assurer que le composant arrive à dissiper suffisamment de courant. Selon les graphes il a une dissipation d'environ 2.5W. Si on somme les courants des différents composants fonctionnant à 5V on trouve qu'ils requièrent environ 1A au maximum. La plus grande partie de la consommation vient du servo qui ne demande pas un approvisionnemnt continu. On calcule donc une dissipation de 5W (5V*1A) ce qui excède largement les spécification du composant \cite{7805T}. Les tests jusqu'à ce jour montrent que il n'y a pas de problème vu que le servo n'a pas besoin d'un approvisionement régulier. Pour être sûr on pourrait fixer un \textit{heatsink}\footnote{un \textit{heatsink} est une pièce métallique qui permet de dissiper plus rapidement la chaleur d'un composant.} sur le composant.
+
+\item Condensateur $200\mu f$ ou $500\mu f$
+
+Cette capacité travaille en parallèle avec la diode zener pour lisser le signal vers le  moteur et absorber de forts sauts de tension à la suite, par
+exemple, d'un bloquage soudain des roues.
+
+\item Condensateur $100pf$
+
+Ces petites capacités servent surtout à lisser les petites variations dans le signal, connues par exemple en sortie du régulateur de voltage.
+
+\item Diode Zener
+
+La diode zener a la particularité, en plus d'être une diode, d'avoir une tension seuille au-delà de laquelle elle ne remplit plus sa fonction de diode et laisse librement passer le courant. Ceci est très pratique en cas de forts sauts de tension (fig: \ref{zener}). 
+\begin{figure}[h]
+\centering
+\includegraphics[width=1.0\textwidth]{CircuitZener.pdf} 
+    \caption{\label{zener} Shéma d'un circuit ayant une diode Zener qui explique comment cette diode permet d'éviter de griller des composants en cas de sauts de tensions. 
+    }
+\end{figure}
+
+
 \item connecteurs senseurs
+
+Ces connecteurs facilitent simplement la connectique et le remplacement d'un senseur au cas où il était cassé. Il y a quatre pins: deux pour l'alimentation (5v, ~15mA, pour un senseur ultrasonic HC-SR04) \cite{HC-SR04}, un pour envoyer le signal et le dernier pour recevoir l'echo.
+
 \item connecteur servo
+
+Tout comme les connecteurs pour senseurs à la différence qu'il n'y a que trois pins: deux pourl'allimentation (5V, ~600mA) (tab: \ref{caracteristiquesDuVehicule}
+
 \item prises block
+
+Ces connecteurs peuvent connecter de façon provisoire des plus gros câbles (moteur, batterie). Les câbles sont immobilisés au moyen de vis.
+
 \end{enumerate}
 \subsection{Commande et conception}
 Une fois le design terminé et les composants choisis, nous pouvons envoyer
@@ -364,7 +397,7 @@ ses caractéristiques dans son \'etat actuel:
  \hline
 	\end{tabular}
 \end{center}
-\caption{Caractéristiques du véhicule}
+\label{caracteristiquesDuVehicule}\caption{Caractéristiques du véhicule}
 \end{table}
 
 \section{Système de guidage}
@@ -412,7 +445,7 @@ http://en.wikipedia.org/wiki/Ackermann\_steering\_geometry sur
 
 \subsection{Contrôle du servo}
 Le contr\^ole d'un servo est une tâche qu'un microcontr\^oleur tel que
-l'arduino \ref{Arduino} effectue avec aisance. On peut indiquer \`a un servo de se rendre vers
+l'arduino (sec: \ref{Arduino}) effectue avec aisance. On peut indiquer \`a un servo de se rendre vers
 un de ses $180^{\circ}$ de libert\'e en lui envoyant un signal \'electrique dit
 modul\'e. Ce signal est modul\'e d'une mani\`ere compréh\'ensible pour le
 servo. L'illustration suivante
@@ -526,7 +559,7 @@ R\'edigeons un tableau de v\'erit\'e pour mieux illustrer la situation, o\`u H
 \end{center}
 
 \caption{\label{tableDeVerite} Table de v\'erit\'e accompagnant le sch\'ema du
-H-bridge (fig.(\ref{H-bridge}))}
+H-bridge (fig: \ref{H-bridge})}
 
 \small Quand les signaux \emph{INPUT} sont oppos\'es, le moteur est \`a
 l'arr\^et. Quand ils sont \'equivalents, le moteur est en marche, dans un sens
@@ -543,7 +576,7 @@ ou dans l'autre.\normalsize
 %\addcontentsline{toc}{chapter}{\protect\numberline{}\normalsize Software Première version des systèmes embarqués}
 
 \section{Software de l'Arduino}
-\lettrine{P}{our} programmer l'Arduino, nous utilisons le logiciel dédié, \textit{Arduino} (fig:\ref{Environnement Arduino}), C'est un environnement \textit{open-source}\footnote{Terme de Open-source\cite{openSource} qui fonctionne sur Windows, Linux et Mac OS X. Il a été écrit en Java et est basé sur le logiciel Processing.
+\lettrine{P}{our} programmer l'Arduino, nous utilisons le logiciel dédié, \textit{Arduino} (fig: \ref{Environnement Arduino}), C'est un environnement \textit{open source}\footnote{Terme de \textit{Open source}\cite{openSource} signifie littéralement "Libre de droits", ceci indique donc qu'un logiciel \textit{Open source} permet à n'importe qui d'avoir accès au code source dans son intégralité. "L'Open Source est un monde de partages où chacun peut apporter une pierre à l'édifice pour améliorer encore et toujours les solutions retenues"\cite{OpenSourceCit}} qui fonctionne sur Windows, Linux et Mac OS X. Il a été écrit en Java et est basé sur le logiciel Processing.
 \begin{figure}[h!]
 \begin{center}
 \includegraphics[scale=0.5]{arduino-environnement-1}\\
@@ -583,7 +616,7 @@ Guvcview\label{Guvcview} est un software permettant d'enregistrer des séquences
 Outre les programmes mentionnés ci-dessus, nous avons développé notre propre
 code python (annexe: \ref{code python}) qui permet de contrôler le
 véhicule. Le code est  Visuellement, l'interface graphique est très simple
-(fig:\ref{python environnement}). Il s'agit simplement d'une fenêtre qui est à
+(fig: \ref{python environnement}). Il s'agit simplement d'une fenêtre qui est à
 l'écoute du clavier et qui, lorsque l'utilisateur presse une touche, va
 envoyer le caractère à l'arduino via le port de communication
 Sérial. L'arduino va ensuite, grâce à son propre code définir quelle action le
