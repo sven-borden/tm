@@ -71,26 +71,27 @@ Ce projet n'aurait pu aboutir sans l'aide de nombreuses personnes. Voici l'occas
 \begin{abstract}
 Parti dans l'idée de concevoir un objet déjà existant mais à moindre prix,
 nous avons choisi des technologies récemment sorties, ce qui fait que nous
-étions dans les premiers à évoluer dans ce millieu. Néanmoins, un support de
-dévelopeur à toujours été là pour nous débloquer en cas de pépin. C'est entre
+étions dans les premiers à évoluer dans ce milieu. Néanmoins, un support de
+développeur à toujours été là pour nous débloquer en cas de pépin. C'est entre
 autre grâce à eux que nous sommes parvenu a atteindre l'objectif souhaité. 
 Les UGV sont des drones roulants qui sont principalement utilisés par les
 militaires ou la police. Ils permettent de remplir des missions qu'il serait
 difficile voire impossible à faire pour l'homme. Notre projet ne consiste pas
 à fabriquer un drone ayant un fusil permettant de "dégommer" tous ce qui
 bouge, mais de faire un drone de reconnaissance à moindre coûts. Les drones
-existant sont soit trop cher, soit peu performants. Par exemple le Beewi WiFi
-Camera Buggy BWZ200-A1, qui coûte septante-neuf francs est un bon jouet, mais
-dans notre travail de maturité, son autonomie est insuffisante (une dixaine de
-minute tout au plus) et sa portée ne dépasse guère les 25 mètres, ce qui rend
-la caméra inutile. L'objectif de se projet n'est pas d'avoir simplement un
+existants sont soit trop cher, soit peu performants. Par exemple le \textit{Beewi WiFi
+Camera Buggy BWZ200-A1} \cite{beewi}, qui coûte septante-neuf francs est un bon jouet, mais
+pour notre travail de maturité, son autonomie est insuffisante (une dizaine de
+minute tout au plus) et sa portée ne dépasse guère les 25 mètres en extérieur, ce qui rend
+la caméra inutile puisque le Beewi est nettement visible par le pilote. L'objectif de se projet n'est pas d'avoir simplement un
 prototype, mais d'avoir un produit finit qui serait en phase finale de
-commercialisation. En effet, si nous parvenons avoir un ensemble possèdant un
+commercialisation. En effet, si nous parvenons avoir un ensemble possédant un
 véhicule tout terrain, une interface claire et un guidage simple et efficace,
 nous aurions des arguments de poids face aux autres produits disponibles sur le
-marché. Dans la lancée de ce projet, nous nous sommes inscrit au concours
+marché.\\
+Dans la lancée de ce projet, nous nous sommes inscrit au concours
 suisse de science \textit{La science appelle les jeunes}\footnote{http://fr.sjf.ch/}. Ce concours réunis presque tout les domaines, pourvu que
-certains critères soient respéctés. Tous les concurents continuent un projet
+certains critères soient respectés. Tous les concurrents continuent un projet
 qu'ils avait commencé durant leur travail de maturité/diplôme et la démarche
 utilisée doit être scientifique. Ce concours pourrait, selon les résultats,
 nous aider à promouvoir notre drone.  
@@ -108,53 +109,53 @@ nous aider à promouvoir notre drone.
 
 \section*{Introduction}
 \addcontentsline{toc}{section}{\protect\numberline{}Introduction}
-Le but de ce projet est de construire un véhicule roulant que l'on peut commander à distance. Plus qu'une simple voiture télécommandée, ce drone est capable d'être contrôlé sans avoir une vue directe sur celui-ci, car il possède des capteurs tel qu'une caméra et des capteurs de distances. Ce type d'engin se nomme \textit{UGV (Unmanned Ground Vehicle)} soit "véhicule roulant sans équipage". Surtout utilisés dans l'amée, les modèles qu'on peut trouver sur le marché sont très coûteux, ils varient entre trois cents et mille trois cents francs. Notre but est donc de pouvoir construire un appareil semblable pour moins de deux cent francs. Equipé d'un répétiteur, un groupe d'UGV peut couvrir une grande surface sans mettre en danger ses pilotes puisqu'ils restent à l'écart. Il peut servir en cas de catastrophe naturelle, néanmoins, notre modèle ne peut pas rouger sur les terrains trop accidentés, mais pour corriger ce problème, il suffit tout simplement d'implémenter notre système dans un autre type de véhicule. L'interface est aussi un des buts, tout comme la simplicité d'utilisation. En effet, cela de ne sert pas à grand chose d'avoir un drone que personne ne sait utiliser à moins de s'être entraîné durant des mois, c'est pourquoi le but de ce projet est d'avoir un programme qu'il suffit d'exécuter pour pouvoir utiliser le drone. 
+Le but de ce projet est de construire un véhicule roulant que l'on peut commander à distance. Plus qu'une simple voiture télécommandée, ce drone est capable d'être contrôlé sans avoir une vue directe sur celui-ci, car il possède des capteurs tel qu'une caméra et des capteurs de distances. Ce type d'engin se nomme \textit{UGV (Unmanned Ground Vehicle)} soit "véhicule roulant sans équipage". Surtout utilisés dans l'armée, les modèles qu'on peut trouver sur le marché sont très coûteux, ils varient entre trois cents et mille trois cents francs. Notre but est donc de pouvoir construire un appareil semblable pour moins de deux cent francs. Équipé d'un répétiteur, un groupe d'UGV peut couvrir une grande surface sans mettre en danger ses pilotes puisqu'ils restent à l'écart. Il peut servir en cas de catastrophe naturelle, néanmoins, notre modèle ne peut pas rouler sur les terrains trop accidentés, mais pour corriger ce problème, il suffit tout simplement d'implémenter notre système dans un autre type de véhicule. L'interface est aussi un des buts, tout comme la simplicité d'utilisation. En effet, cela de ne sert pas à grand chose d'avoir un drone que personne ne sait utiliser à moins de s'être entraîné durant des mois, c'est pourquoi le but de ce projet est d'avoir un programme qu'il suffit d'exécuter pour pouvoir utiliser le drone. 
 \clearpage
 
 
 \chapter{Hardware}
 
 \section{Choix du hardware}
-\lettrine{P}{our} réaliser ce projet, nous avons dû faire des choix au niveau du hardware.Le harware est tout ce qui touche la partie physique du drone, néanmoins, dans ce chapitre, nous ne traiterons pas de la mécanique, ce sujet sera abordé dans le chapitre 2. Notre choix s'est porté sur deux système. Le premier, l'Arduino, est un microcontrolleur qui permet de contrôler presque ce qu'on veut grâce à un language de programation proche du C.\\
+\lettrine{P}{our} réaliser ce projet, nous avons dû faire des choix au niveau du hardware.Le hardware est tout ce qui touche la partie physique du drone, néanmoins, dans ce chapitre, nous ne traiterons pas de la mécanique, ce sujet sera abordé dans le chapitre 2. Notre choix s'est porté sur deux système. Le premier, l'Arduino, est un micro-contrôleur qui permet de contrôler presque ce qu'on veut grâce à un langage de programmation proche du C.\\
 Le second est le Raspberry Pi, qui est un ordinateur bon marché (trente-cinq francs) qui est récemment sorti sur le marché. 
 
 
 \subsection{Arduino}
-L'Arduino \label{Arduino} \cite{Arduino} est un microcontrôleur \textit{Open Source}, ce qui veut dire que tout le monde peut non seulement avoir accès aux plans et aux codes, mais peut aussi les modifier. Ce microcontrolleur se programme avec un language proche du C. 
+L'Arduino \label{Arduino} \cite{Arduino} est un micro-contrôleur \textit{Open Source}, ce qui veut dire que tout le monde peut non seulement avoir accès aux plans et aux codes, mais peut aussi les modifier. Ce micro-contrôleur se programme avec un langage proche du C. 
 
 
 \subsubsection{Choix du type d'Arduino}
-Pour ce projet, nous avons choisi l'Arduino Uno (fig: \ref{fig:ArduinoUnoR3}), c'est l'Arduino de base. En effet, Arduino possède de nombreux produits afin de subvenir aux différents besoin. Nous avons hésité à prendre l'Arduino Mega, mais les avantages qu'il offre ne sont pas très utiles pour notre projet. En effet, l'Arduino Mega est similaire à l'Arduino Uno , sauf qu'il est possède des ressources de calculs plus puissantes et il est aussi deux fois plus grand. Puisque nous n'avons pas besoin d'une grande pusisance de calcul, nous avons choisi l'Arduino Uno. L'Arduino Uno est un microcontrolleur qui ressemble à ceci.\\
+Pour ce projet, nous avons choisi l'Arduino Uno (fig: \ref{fig:ArduinoUnoR3}), c'est l'Arduino de base. En effet, il possède de nombreux produits afin de subvenir aux différents besoin. Nous avons hésité à prendre l'Arduino Mega, mais les avantages qu'il offre ne sont pas très utiles pour notre projet. En effet, l'Arduino Mega est similaire à l'Arduino Uno , sauf qu'il est possède des ressources de calculs plus puissantes et il est aussi deux fois plus grand. Puisque nous n'avons pas besoin d'une grande puissance de calcul, nous avons choisi l'Arduino Uno. L'Arduino Uno est un micro-contrôleur qui ressemble à ceci.\\
 
 \begin{figure}[h]
 \begin{center}
 \includegraphics[scale=0.38]{arduino_uno.jpg}
-\caption{Arduino Uno R3\label{fig:ArduinoUnoR3}, On peut remarquer les pin  \label{pin} qui se trouvent de part et d'autre de l'Arduino. On peut remarquer au centre le microcontrôleur ATmega328 ainsi que le port USB tout en haut de l'image}
+\caption{Arduino Uno R3\label{fig:ArduinoUnoR3}, On peut remarquer les pin  \label{pin} qui se trouvent de part et d'autre de l'Arduino. On peut remarquer au centre le micro-contrôleur ATmega328 ainsi que le port USB tout en haut de l'image}
 \end{center}
-\end{figure}\footnote{Les pin sont des trous où on peut y glisser des fils metalliques. Ce sont les liaisons entre le contrôleur et les senseurs}
+\end{figure}\footnote{Les pin sont des trous où on peut y glisser des fils métalliques. Ce sont les liaisons entre le contrôleur et les senseurs}
 L'Arduino Uno possède les caractéristiques suivantes:
 \begin{enumerate}
 \item 14 pin digitaux (signal haut ou bas) qu'on peut définit en INPUT ou en OUPUT dont 6 d'entres eux peuvent moduler le signal lorsqu'ils sont utilisé en OUTPUT
 \item  6 pin analogiques  en INPUT
-\item Connection USB
+\item connexion USB
 \item Oscillateur à quartz cadencé à 16MHz
 \item Courant continu sur les pin digitaux (40mA)
 \item Une sortie 3.3V et une sortie 5V en courant continu
 \item 32KB de mémoire flash
 \item 2KB de RAM
-\item Microcontrôleur ATmega328
+\item Micro-contrôleur ATmega328
 \end{enumerate}
-Bien qu'à première vue on pourrait se dire qu'il n'est pas très performant. Il faut se rappeler qu'il ne dois pas faire fonctionner un système d'exploitation, mais qu'il dois simplement traiter des mesures et envoyer des signaux digitaux ou analogiques. L'avantage de l'Arduino Uno est qu'il n'y a pas besoin de faire de soudure, les pin sont directements accessibles et on peut y glisser un fil métallique. Dans le cas où nous souhaiterions commercialiser notre produit, nous choisirons probablement l'Arduino mini car il est encore plus petit et nous pouvons directement souder les fils sur le microcontrôleur.
+Bien qu'à première vue on pourrait se dire qu'il n'est pas très performant. Il faut se rappeler qu'il ne dois pas faire fonctionner un système d'exploitation, mais qu'il dois simplement traiter des mesures et envoyer des signaux digitaux ou analogiques. L'avantage de l'Arduino Uno est qu'il n'y a pas besoin de faire de soudure, les pin sont directement accessibles et on peut y glisser un fil métallique. Dans le cas où nous souhaiterions commercialiser notre produit, nous choisirons probablement l'Arduino mini car il est encore plus petit et nous pouvons directement souder les fils sur le micro-contrôleur.
 
 \subsection{Raspberry Pi}
-Le Raspberry Pi\cite{RaspberryPiCaracteristiques}, ou la Framboise pour les francophones, est un ordinateur de la taille d'une carte de crédit sur lequel on peut installer différents systèmes d'exploitations dérivés de UNIX/Linux. Le Raspberry Pi est acheté nu, c'est-à-dire que cet ordinateur ne possède pas d'écran, ni de clavier ou de souris, néanmoins le Raspberry Pi possède plusieurs ports où on peut brancher écran (via l'interface HDMI ou Composite), un câble Ethernet et presque ce qu'on veut grâce aux deux ports USB. Le Raspberry Pi est très interressant non pas du point de vue de sa puissance calculatoire, mais du point de vue rapport qualité-prix. En effet, pour trente-cinq francs, il a les caractéristiques suivantes: 
+Le Raspberry Pi\cite{RaspberryPiCaracteristiques}, ou la Framboise pour les francophones, est un ordinateur de la taille d'une carte de crédit sur lequel on peut installer différents systèmes d'exploitations dérivés de UNIX/Linux. Le Raspberry Pi est acheté nu, c'est-à-dire que cet ordinateur ne possède pas d'écran, ni de clavier ou de souris, néanmoins le Raspberry Pi possède plusieurs ports où on peut brancher écran (via l'interface HDMI ou Composite), un câble Ethernet et presque ce qu'on veut grâce aux deux ports USB. Le Raspberry Pi est très intéressant non pas du point de vue de sa puissance calculatoire, mais du point de vue rapport qualité-prix. En effet, pour trente-cinq francs, il a les caractéristiques suivantes: 
 \begin{enumerate}
 \item poid de 45g environ
 \item Processeur ARM1176JZF-S (ARMv6) 700MHz Broadcom 2835
 \item 512Mo de RAM (sur la version B, soit celle que nous avons choisie)
 \item 2 sorties vidéo (HDMI et Composite) 
 \item Sortie audio stéréo Jack (3.5mm) (le son passe aussi par le HDMI en sortie 5.1)
-\item criture et lecture possible sur une carte mémoire sous forme de carte SD (supporte les formats: SDHC, MMC et SDIO)
+\item Écriture et lecture possible sur une carte mémoire sous forme de carte SD (supporte les formats: SDHC, MMC et SDIO)
 \item 2 ports USB 2.0 et 1 port Ethernet
 \item Alimentation par câble micro USB
 \item Faible consommation (5W, 5V, 1A)
@@ -165,14 +166,14 @@ Le Raspberry Pi\cite{RaspberryPiCaracteristiques}, ou la Framboise pour les fran
 Bien qu'à première vue la Framboise ne semble pas très performante, il faut prendre en compte son prix qui est bas, sa taille ainsi que les possibilités qui sont presque infinies. Les projets qu'on peut mener grâce au Raspberry Pi sont des plus varié. En effet, il peut être utilisé pour la photographie, comme base centrale d'un système de surveillance. 
 
 \subsubsection{Choix de l'OS}
-Une quinzaine de systèmes d'exploitations fonctionnant sur le Raspberry Pi existent. Parmis les plus connus, il y a Androïd, Arch Linux ARM et Debian/Raspbian. 
-Notre choix à été porté sur Raspbian, qui est un dérivé de Debian, pour plusieurs raisons. Tout d'abord, cet OS à été dévellopé spécialement pour le Raspberry Pi et il est donc continuellement dévellopé par la communauté du Raspberry Pi. Cet OS étant basé sur un environnement Linux, cela offre un grand nombre de liberté afin de travailler dessus. Raspbian est aussi gratuit, se qui est à prendre en compte puisque nous essayons de réduire les coûts.  
+Une quinzaine de systèmes d'exploitations fonctionnant sur le Raspberry Pi existent. Parmi les plus connus, il y a Androïd, Arch Linux ARM et Debian/Raspbian. 
+Notre choix à été porté sur Raspbian, qui est un dérivé de Debian, pour plusieurs raisons. Tout d'abord, cet OS à été développé spécialement pour le Raspberry Pi et il est donc continuellement développé par la communauté du Raspberry Pi. Cet OS étant basé sur un environnement Linux, cela offre un grand nombre de liberté afin de travailler dessus. Raspbian est aussi gratuit, se qui est à prendre en compte puisque nous essayons de réduire les coûts.  
 
 
 \section{PCB}
 
 (BELLE PHOTO DU PCB USINE!!!)\\
-La décision de retirer l'électronique de base du véhicule télécommandé provient d'une curiosité de comprendre comment elle est faite et surtout, du besoin d'avoir un degré supérieur de contrôle sur la voiture. A la base, le cerveau de la voiture se trouvait dans un petit chip. Très courant dans les jouets radio caommandés bas de gamme, le RX2 ou similaire, permet d'interpréter un signal radio et émettre un courant pour actionner des moteurs, par exemple. Ce microchip va de paire avec le TX2, qui se trouverait dans la télécommande. Si vous ne l'aviez pas deviné, TX symbolise "Transmit" (transmettre) er RX "Receive".
+La décision de retirer l'électronique de base du véhicule télécommandé provient d'une curiosité de comprendre comment elle est faite et surtout, du besoin d'avoir un degré supérieur de contrôle sur la voiture. A la base, le cerveau de la voiture se trouvait dans un petit chip. Très courant dans les jouets radio commandés bas de gamme, le RX2 ou similaire, permet d'interpréter un signal radio et émettre un courant pour actionner des moteurs, par exemple. Ce micro-chip va de paire avec le TX2, qui se trouverait dans la télécommande. Si vous ne l'aviez pas deviné, TX symbolise "Transmit" (transmettre) er RX "Receive".
 Voici un schéma du chip:(fig: \ref{SchemaPlaqueMaison})
 
 \begin{figure}[h]
@@ -202,12 +203,12 @@ Et quelques exemples de plaques similaires à celle que nous avons trouvée: (fi
     \caption{\label{rx2.3}Schéma sommaire de la plaque.\cite{rx2_ex3}
     }
 \end{figure}
-La nature simple du chip RX2 ne lui permet que d'émettre un signal bas ou haut (0 ou 5V), à la différence de l'Arduino qui a la possibilité de moduler le signal (voir section sur servo). Cette caractéristique spécifique nous permet d'avoir un large évantail de vitesses du moteur et d'angles de braquage différent.
+La nature simple du chip RX2 ne lui permet que d'émettre un signal bas ou haut (0 ou 5V), à la différence de l'Arduino qui a la possibilité de moduler le signal (sec: \ref{servosection}). Cette caractéristique spécifique nous permet d'avoir un large éventail de vitesses du moteur et d'angles de braquage différent.
 
 
 
 \subsection{Plaque personnelle}
-En attendant de recevoir la plaque sortie d'usine et pour tester une partie du schéma, nous avons conçu un prototype du design final (ref photo descriptive). Cette version préliminaire nous a permis de faire les premiers pas avec le véhicule. Elle permet de controller le moteur de propulsion ainsi que le servo directionnel.
+En attendant de recevoir la plaque sortie d'usine et pour tester une partie du schéma, nous avons conçu un prototype du design final (ref photo descriptive). Cette version préliminaire nous a permis de faire les premiers pas avec le véhicule. Elle permet de contrôler le moteur de propulsion ainsi que le servo-moteur directionnel.
 (PHOTO DESCRIPTIVE)(fig: \ref{PPFigure})
 
 \begin{figure}[h]
@@ -223,13 +224,13 @@ Quelques explications sur le contenu et la conception de la plaque suivent:
 
 
 liste:
-	a.Un régulateur de voltage 5V (7805T) transforme le courrant 9V de la batterie en 5V. Attention! La tension qui n'est pas utilisée par un chaleur!
+	a.Un régulateur de voltage 5V (7805T) transforme le courant 9V de la batterie en 5V. Attention! La tension qui n'est pas utilisée par un chaleur!
 
 	b.Le régulateur est entouré de capacités pour lisser d'éventuels sauts de tension,mais remarquez que ils seraient probablement inutiles lors de hauts sauts de voltage.
 
-	c.Un chip L293D (H-bridge (ref vers section H-bridge)) contrôle le moteur de propulsion. Ici, deux chips sont empilés, donc en parallèle, pour pouvoir supporter la charge importante du moteur.
+	c.Un chip L293D (H-bridge (sec: \ref{h-bridge})) contrôle le moteur de propulsion. Ici, deux chips sont empilés, donc en parallèle, pour pouvoir supporter la charge importante du moteur.
 
-Tous ces composants, en plus des câbles et des connecteurs vers les actuateurs et batterie, sont soudés sur une strip board semblable à celle dans la photo ci dessous:(fig: \ref{StripBoard})
+Tous ces composants, en plus des câbles et des connecteurs vers les actuateurs et batterie, sont soudés sur une \textit{strip-board} semblable à celle dans la photo ci dessous:(fig: \ref{StripBoard})
 
 \begin{figure}[h!]
 \centering
@@ -247,7 +248,7 @@ Le détail des connexions ne sera pas précisé ici, mais il ressemble évidemme
 
 \subsection{Schema}
 Voici le schéma électronique du PCB usiné. Il a été dessiné à l'aide d'un CAD gratuit (version light), Eagle.
-(PHOTO SCHEMA complet chine arduino) (fig: \ref{schemaChineComplet})
+(PHOTO SCHÉMA complet chine Arduino) (fig: \ref{schemaChineComplet})
 \begin{figure}[h]
 \centering
 \includegraphics[angle=90, width=1.1\textwidth]{figures/schema_CHI.PNG}
@@ -264,31 +265,30 @@ Quelques indications pour le lire:
 
 c
 
-Une fois le schéma dessiné, Eagle crée une plaque sur laquelle il faut disposer chaque composant. Le programme se charge de contrôler que tout est relié comme dans le schéma. Il pourrait même faire le "routing" lui-même, mais le résultat est très décevant. Des étudaiants de l'EPFL nous ont conseillé de faire ça nous-mêmes. Ca demande de la patience et de la reflexion, comme un puzzle. Nous voulions essayer d'imprimer une version à l'EPFL, il fallait donc faire un design dont les routes se trouvaient uniquement sur le derrière de la plaque (routes bleues)... Le jeu ce complique! en effet, la meilleure solution que nous avons trouvée nous laisse avec une connexion à faire à la main et un connecteur pour senseur en moins.
+Une fois le schéma dessiné, Eagle crée une plaque sur laquelle il faut disposer chaque composant. Le programme se charge de contrôler que tout est relié comme dans le schéma. Il pourrait même faire le "routing" lui-même, mais le résultat est très décevant. Des étudiants de l'EPFL nous ont conseillé de faire ça nous-mêmes. Ceci demande de la patience et de la réflexion, comme un puzzle. Nous voulions essayer d'imprimer une version à l'EPFL, il fallait donc faire un design dont les routes se trouvaient uniquement sur le derrière de la plaque (routes bleues)... Le jeu ce complique! en effet, la meilleure solution que nous avons trouvée nous laisse avec une connexion à faire à la main et un connecteur pour senseur en moins.
 
-D'ailleurs, il faut remarquer que la plaque maison ne permet pas au robot d'intéragir avec son environnement. En effet, elle peut juste contrôler des moteurs. La plaque usinée prévoit trois connecteurs pour des senseurs de distance.
+D'ailleurs, il faut remarquer que la plaque maison ne permet pas au robot d'interagir avec son environnement. En effet, elle peut juste contrôler des moteurs. La plaque usinée prévoit trois connecteurs pour des senseurs de distance.
 
 
 \subsection{Composants}
 
-Plus que de comprendre comment les composants sont connectés ensemble il est important de bien dicerner à quoi sert chacun d'entre eux. Ici, nous détaillerons, un à un,chaque composant, ses propriétés et sa fonction.
+Plus que de comprendre comment les composants sont connectés ensemble il est important de bien discerner à quoi sert chacun d'entre eux. Ici, nous détaillerons, un à un,chaque composant, ses propriétés et sa fonction.
 
-(SCHEMA/PHOTO qui montre où chaque composant est placé)
+(SCHÉMA/PHOTO qui montre où chaque composant est placé)
 
 \begin{enumerate}
 \item L293D
 
-Le L293D est à un chip à seize pattes qui encapsule effectivement deux H-bridge comme illustré dans la section (référance à la section en 
-question). Chaque moitié du pont peut fournir 0.6A de courant continu et 1.2A en pic \cite{l293dDataSheet}. Sachant que le moteur peut tirer jusqu'à 3A lorsque la roue est bloquée, il est clair qu'un seul de ces demi-chip est loin d'être à la hauteur. Les avis sont partagés si il est possible de mettre ces chips en parallèle (certains transistors et autres composants ne se partagent pas la charge comme prévu lorsqu'ils sont mis en parallèle), mais, basé sur les indications d'un grand producteur d'électronique pour amateurs \cite{adafruitMotorShield}, nous avons décidé d'empiler deux L293D et de mettre leurs moitiés en parallèle, ce qui s'additionne à 2.4A de courant continu et 4.8A en pic. Nous avons pu tester et valider cette configuration avec la plaque prototype. 
+Le L293D est à un chip à seize pattes qui encapsule effectivement deux H-bridge comme illustré dans la section (sec: \ref{h-bridge}). Chaque moitié du pont peut fournir 0.6A de courant continu et 1.2A en pic \cite{l293dDataSheet}. Sachant que le moteur peut tirer jusqu'à 3A lorsque la roue est bloquée, il est clair qu'un seul de ces demi-chip est loin d'être à la hauteur. Les avis sont partagés si il est possible de mettre ces chips en parallèle (certains transistors et autres composants ne se partagent pas la charge comme prévu lorsqu'ils sont mis en parallèle), mais, basé sur les indications d'un grand producteur d'électronique pour amateurs \cite{adafruitMotorShield}, nous avons décidé d'empiler deux L293D et de mettre leurs moitiés en parallèle, ce qui s'additionne à 2.4A de courant continu et 4.8A en pic. Nous avons pu tester et valider cette configuration avec la plaque prototype. 
 
 \item 7805T
 
-Le 7805T est un régulateur 5V. Il approvisionne les composants fonctionnant à 5V en courrant. Il peut prendre jusqu'à 35V de tension en entrée \cite{7805T}. Il faut savoir que c'est un appareil très peu efficace car la tension non utilisée est dissipée en chaleur. Il est donc nécessaire de s'assurer que le composant arrive à dissiper suffisamment de courant. Selon les graphes il a une dissipation d'environ 2.5W. Si on somme les courants des différents composants fonctionnant à 5V on trouve qu'ils requièrent environ 1A au maximum. La plus grande partie de la consommation vient du servo qui ne demande pas un approvisionnemnt continu. On calcule donc une dissipation de 5W (5V*1A) ce qui excède largement les spécification du composant \cite{7805T}. Les tests jusqu'à ce jour montrent que il n'y a pas de problème vu que le servo n'a pas besoin d'un approvisionement régulier. Pour être sûr on pourrait fixer un \textit{heatsink}\footnote{un \textit{heatsink} est une pièce métallique qui permet de dissiper plus rapidement la chaleur d'un composant.} sur le composant.
+Le 7805T est un régulateur 5V. Il approvisionne les composants fonctionnant à 5V en courant. Il peut prendre jusqu'à 35V de tension en entrée \cite{7805T}. Il faut savoir que c'est un appareil très peu efficace car la tension non utilisée est dissipée en chaleur. Il est donc nécessaire de s'assurer que le composant arrive à dissiper suffisamment de courant. Selon les graphes il a une dissipation d'environ 2.5W. Si on somme les courants des différents composants fonctionnant à 5V on trouve qu'ils requièrent environ 1A au maximum. La plus grande partie de la consommation vient du servo-moteur qui ne demande pas un approvisionnent continu. On calcule donc une dissipation de 5W (5V*1A) ce qui excède largement les spécification du composant \cite{7805T}. Les tests jusqu'à ce jour montrent que il n'y a pas de problème vu que le servo-moteur n'a pas besoin d'un approvisionnement régulier. Pour être sûr on pourrait fixer un \textit{heatsink}\footnote{un \textit{heatsink} est une pièce métallique qui permet de dissiper plus rapidement la chaleur d'un composant.} sur le composant.
 
 \item Condensateur $200\mu f$ ou $500\mu f$
 
-Cette capacité travaille en parallèle avec la diode zener pour lisser le signal vers le  moteur et absorber de forts sauts de tension à la suite, par
-exemple, d'un bloquage soudain des roues.
+Cette capacité travaille en parallèle avec la diode Zener pour lisser le signal vers le  moteur et absorber de forts sauts de tension à la suite, par
+exemple, d'un blocage soudain des roues.
 
 \item Condensateur $100pf$
 
@@ -296,22 +296,22 @@ Ces petites capacités servent surtout à lisser les petites variations dans le 
 
 \item Diode Zener
 
-La diode zener a la particularité, en plus d'être une diode, d'avoir une tension seuille au-delà de laquelle elle ne remplit plus sa fonction de diode et laisse librement passer le courant. Ceci est très pratique en cas de forts sauts de tension (fig: \ref{zener}). 
+La diode Zener a la particularité, en plus d'être une diode, d'avoir une tension seuil au-delà de laquelle elle ne remplit plus sa fonction de diode et laisse librement passer le courant. Ceci est très pratique en cas de forts sauts de tension (fig: \ref{zener}). 
 \begin{figure}[h]
 \centering
 \includegraphics[width=1.0\textwidth]{CircuitZener.pdf} 
-    \caption{\label{zener} Shéma d'un circuit ayant une diode Zener qui explique comment cette diode permet d'éviter de griller des composants en cas de sauts de tensions. 
+    \caption{\label{zener} Schéma d'un circuit ayant une diode Zener qui explique comment cette diode permet d'éviter de griller des composants en cas de sauts de tensions. 
     }
 \end{figure}
 
 
 \item connecteurs senseurs
 
-Ces connecteurs facilitent simplement la connectique et le remplacement d'un senseur au cas où il était cassé. Il y a quatre pins: deux pour l'alimentation (5v, ~15mA, pour un senseur ultrasonic HC-SR04) \cite{HC-SR04}, un pour envoyer le signal et le dernier pour recevoir l'echo.
+Ces connecteurs facilitent simplement la connectique et le remplacement d'un senseur au cas où il était cassé. Il y a quatre pins: deux pour l'alimentation (5v, ~15mA, pour un senseur ultrasonic HC-SR04) \cite{HC-SR04}, un pour envoyer le signal et le dernier pour recevoir l'écho.
 
-\item connecteur servo
+\item connecteur servo-moteur
 
-Tout comme les connecteurs pour senseurs à la différence qu'il n'y a que trois pins: deux pourl'allimentation (5V, ~600mA) (tab: \ref{caracteristiquesDuVehicule}
+Tout comme les connecteurs pour senseurs à la différence qu'il n'y a que trois pins: deux pour l'alimentation (5V, ~600mA) (tab: \ref{caracteristiquesDuVehicule}
 
 \item prises block
 
@@ -332,7 +332,7 @@ transformer notre design en de tels fichiers. Le fabriquant requiert
 exactement huit fichiers différents, stockés dans un zip et envoyés avec la commande.  
 
 \section{Coût des composants}
-Voici un tableux contenant tout ce dont nous avons utiliser pour construire notre drone.
+Voici un tableau contenant tout ce dont nous avons utiliser pour construire notre drone.
 \begin{table}
 \begin{tabular}{| l | c | r |}
 \hline
@@ -371,9 +371,9 @@ total & 10 & 179.60\\
 
 
 \section{Description du véhicule \label{TableDesc}}
-\lettrine{N}{ous} nous basons est un modèlel r\'eduit
-t\'el\'ecommand\'e de type 4x4. Le tableau suivant est un inventaire de 
-ses caractéristiques dans son \'etat actuel:
+\lettrine{N}{ous} nous basons est un modèle réduit
+télécommandé de type 4x4. Le tableau suivant est un inventaire de 
+ses caractéristiques dans son état actuel:
 \begin{table}[h!]
 \begin{center}
   \begin{tabular}{|p{4cm}|p{4cm}|c|}
@@ -388,7 +388,7 @@ ses caractéristiques dans son \'etat actuel:
     & Voltage de marche & \~{}5V - \~{}10V  \\ \cline{2-3}
     & Courant min (roue libre) & \~{}2A \\ \cline{2-3}
     & Courant max (roue bloqu\'ee) & \~{}3A \\ \hline
-    \multirow{5}{*}{Servo de guidage}
+    \multirow{5}{*}{Servo-moteur de guidage}
     & Fabriquant & Corona \\ \cline{2 - 3}
     & Modèle & Metal gear DS558HV\\ \cline{2-3}
     & Voltage de marche & \~{}6V - \~{}7.4V  \\ \cline{2-3}
@@ -404,38 +404,38 @@ ses caractéristiques dans son \'etat actuel:
 
 
 \subsection{Système directionel initial}
-Dans son \'etat initial, le syst\`eme de guidage pouvait se comparer \`a un
-servo tr\`es rudimentaire. Il en comptait toutes les caractéristiques, mais en
-un état simplifié, en particulier le système de positionnement. Dans un servo
+Dans son état initial, le système de guidage pouvait se comparer à un
+servo-moteur très rudimentaire. Il en comptait toutes les caractéristiques, mais en
+un état simplifié, en particulier le système de positionnement. Dans un servo-moteur
 classique, il s'agit d'un potentiomètre (résistance variable) qui permet
-de savoir en tout moment la position de la corne \footnote{La corne est le bras qui resort du servo-moteur et qui permet de deplacer des masses}. Par contre, dans le cas de
+de savoir en tout moment la position de la corne \footnote{La corne est le bras qui sort du servo-moteur et qui permet de déplacer des masses}. Par contre, dans le cas de
 la voiture, un système de balais (voir image) assure cette tâche. Il en
 résulte une identification de position très basique: gauche,devant ou
 droite.\\
 (ins\'erer images)\\
-Sachant que nous avons retir\'e l'\'electronique de la voiture, il nous restait
-deux possibilit\'es: utiliser le syst\`eme de guidage rudimentaire, mais
-d\'ej\`a en place ou tout remplacer avec un servo plus conventionel.\\
-Apr\`es beaucoup de temps perdu \`a tenter de contr\^oler le guidage de base
-avec notre \'electronique import\'ee, nous avons d\'ecidé de passer \`a un servo. Nous avons
-ach\`eté un puissant servo de haute qualit\'e chez une connaissance qui en
-avait command\'e un gros lot pour la modique somme de 10.- CHF.
+Sachant que nous avons retiré l'électronique de la voiture, il nous restait
+deux possibilités: utiliser le système de guidage rudimentaire, mais
+déjà en place ou tout remplacer avec un servo-moteur plus conventionnel.\\
+Apr\`es beaucoup de temps perdu à tenter de contrôler le guidage de base
+avec notre électronique importée, nous avons décidé de passer à un servo-moteur. Nous avons
+acheté un puissant servo-moteur de haute qualité chez une connaissance qui en
+avait commandé un gros lot pour la modique somme de 10.- CHF.
 
 \subsection{Remplacement du Système de guidage}
-Une instalation fiable d'un objet \'etranger dans un ensemble usin\'e tel la
-voiture n'est pas une t\^ache facile. Il fallait pourtant que le r\'esultat final
+Une installation fiable d'un objet étranger dans un ensemble usiné tel la
+voiture n'est pas une tâche facile. Il fallait pourtant que le résultat final
 soit solide, si l'on voulait pouvoir compter dessus. C'est pour cela que nous avons
-cr\'e\'e une base en contreplaqu\'e pour y loger le servo.
+créé une base en contreplaqué pour y loger le servo-moteur.
 
-Ce montage permet de retirer le servo en cas de besoin, donc de pouvoir le
-remplacer. En effet, la plaque sup\'erieure est fix\'ee au moyen de vis \`a
-bois. Le servo est accompagn\'e, dans son logement, d'un morceau de gomme
-adh\'erante (morceau de chambre \`a air). La structure \'epouse les formes de
-la voiture pour un maximum de rigidit\'e. La transmission de la force aux
-roues se fait par l'interm\'ediare d'une tige métallique. Celle-ci est
-fix\'ee \`a la corne du servo et possède une boucle soud\'ee \`a l'ancien axe de
+Ce montage permet de retirer le servo-moteur en cas de besoin, donc de pouvoir le
+remplacer. En effet, la plaque supérieure est fixée au moyen de vis \`a
+bois. Le servo-moteur est accompagné, dans son logement, d'un morceau de gomme
+adhérente (morceau de chambre à air). La structure épouse les formes de
+la voiture pour un maximum de rigidité. La transmission de la force aux
+roues se fait par l'intermédiaire d'une tige métallique. Celle-ci est
+fixée à la corne du servo-moteur et possède une boucle soudée à l'ancien axe de
 transmission. Nous utilisons justement l'ancien axe de transmission pour une
-raison d\'evelop\'ee plus tard.\footnote{voir :
+raison développée plus tard.\footnote{voir :
 http://en.wikipedia.org/wiki/Ackermann\_steering\_geometry sur
 ``Ackerman steering''}
 
@@ -443,71 +443,71 @@ http://en.wikipedia.org/wiki/Ackermann\_steering\_geometry sur
 %TODO
 %http://en.wikipedia.org/wiki/Ackermann_steering_geometry
 
-\subsection{Contrôle du servo}
-Le contr\^ole d'un servo est une tâche qu'un microcontr\^oleur tel que
-l'arduino (sec: \ref{Arduino}) effectue avec aisance. On peut indiquer \`a un servo de se rendre vers
-un de ses $180^{\circ}$ de libert\'e en lui envoyant un signal \'electrique dit
-modul\'e. Ce signal est modul\'e d'une mani\`ere compréh\'ensible pour le
-servo. L'illustration suivante
-pourrait d'avantage \'eclairer le lecteur.
+\subsection{Contrôle du servo}\label{servosection}
+Le contrôle d'un servo-moteur est une tâche qu'un micro-contrôleur tel que
+l'Arduino (sec: \ref{Arduino}) effectue avec aisance. On peut indiquer à un servo-moteur de se rendre vers
+un de ses $180^{\circ}$ de liberté en lui envoyant un signal électrique dit
+modulé. Ce signal est modulé d'une manière compréhensible pour le
+servo-moteur. L'illustration suivante
+pourrait d'avantage éclairer le lecteur.
 
 \begin{figure}[h]
 \centering
 \includegraphics[width=1.0\textwidth]{figures/ServoPwm}
-    \caption{\label{ServoPwm}Sch\'ema de la modulation du signal
+    \caption{\label{ServoPwm}Schéma de la modulation du signal
       \'electrique \protect
       \cite{WikiServo}
     }
 \end{figure}
 
 Comme l'on peut voir, le dit signal, est form\'e de hauts et de
-bas. Lorsqu'il est ``bas'', cela veut dire que la tension est basse ou \'egale
-\`a 0V. Lorsqu'il est
-``haut'', cela veut dire que la tension est a une valeure d\'efinie auparavant,
-standard, diff\'erente de 0V. Dans notre cas, le ``haut'' est \`a 5V (standard
-pour le mod\'elisme et l'\'electronique en g\'en\'eral). On appelle la
-p\'eriode pendant laquelle le signal est ``haut'' une pulsation.
+bas. Lorsqu'il est ``bas'', cela veut dire que la tension est basse ou égale
+à 0V. Lorsqu'il est
+``haut'', cela veut dire que la tension est a une valeur définie auparavant,
+standard, différente de 0V. Dans notre cas, le ``haut'' est à 5V (standard
+pour le modélisme et l'électronique en général). On appelle la
+période pendant laquelle le signal est ``haut'' une pulsation.
 
-Chaque d\'ebut de pulsation est s\'epar\'e par un temp bien d\'efini de
+Chaque début de pulsation est séparé par un temps bien défini de
 20ms. Ce qui peut varier d'une pulsation \`a l'autre, donc ce qui informe le
-servo en quel angle il doit se positionner, est la longueur de la
-pulsation. Comme indiqu\'e, celle-ci peut varier de 1ms \`a 2ms.
+servo-moteur en quel angle il doit se positionner, est la longueur de la
+pulsation. Comme indiqué, celle-ci peut varier de 1ms \`a 2ms.
 
 \subsection{Programmation pour contr\^oler un servo}
 Le programme se trouvant en annexe (\ref{SketchExServo}) est un exemple propos\'e dans la section
 ``apprentissage'' du site officiel d'Arduino \cite{ServoSweep}. Il utilise la librairie
-``Servo'' install\'ee avec l'IDE Arduino. Ce que font les m\'ethodes de cette
-classe est de produire un signal comme celui discut\'e \`a la section
-pr\'ec\'edente en l'émettant par un des pins de l'arduino capable de cette
+``Servo'' installée avec l'IDE Arduino. Ce que font les méthodes de cette
+classe est de produire un signal comme celui discuté à la section
+précédente en l'émettant par un des pins de l'Arduino capable de cette
 modulation. 
 
 %--------------- Temporaire ---------------%
 % Il ne faut pas oublier de parler de ce problème!!!!
 \subsection{Etat actuel du système de guidage}
-Le servo n'est pas fonctionel sur la plaque électronique que nous avons conçu
+Le servo-moteur n'est pas fonctionnel sur la plaque électronique que nous avons conçu
 nous-même. Selon nos diagnostiques, il s'agit d'une mauvaise soudure et donc
-le servo ne peut pas être allimenté en courrant. Ce problème devrait se
+le servo-moteur ne peut pas être alimenté en courant. Ce problème devrait se
 résoudre lorsque nous recevrons le PCB.
 
 
-D'ailleur, ce programme est tr\`es pratique pour tester le fonctionement d'un servo. 
+D'ailleurs, ce programme est tr\`es pratique pour tester le fonctionnement d'un servo-moteur. 
 
 \section{Moteur de propulsion}
 
 \subsection{Descriptif}
 
 Le moteur de propulsion, au contraire du servo, n'a pas été changé.
- Ses caract\'eristiques \'electriques (donn\'ees que nous avon mesur\'e \`a l'aide
-d'un multim\`etre du gymnase) se trouvent \`a la section
+ Ses caractéristiques électriques (données que nous avon mesuré à l'aide
+d'un multimètre du gymnase) se trouvent \`a la section
 (\ref{TableDesc}). Le moteur est muni d'une boite \`a vitesse ainsi qu'un
-diff\'erentiel. Nous avons estim\'e qu'il aurait \'et\'e
-inutilement compliqu\'e d'y apporter des modifications. La
-configuration d\'ej\`a existente, \`a l'exception de l'\'electronique,
-subvient tout \`a fait \`a nos besoins.  
+différentiel. Nous avons estimé qu'il aurait été
+inutilement compliqué d'y apporter des modifications. La
+configuration déjà existante, à l'exception de l'éléctronique
+subvient tout à fait à nos besoins.  
 
-\subsection{H-bridge}
+\subsection{H-bridge}\label{h-bridge}
 Faire tourner l'axe d'un moteur \'electrique pose peu de probl\`emes. Il
-suffit de connecter l'un des p\^oles \`a la tention positive et l'autre \`a la tension
+suffit de connecter l'un des p\^oles \`a la tension positive et l'autre \`a la tension
 n\'egative. Ceci fera tourner l'axe du moteur dans un sens. Si vous souhaitez le
 faire tourner dans le sens inverse, il vous suffira d'\'echanger les fils
 \'electriques aux p\^oles du moteur.
@@ -517,9 +517,9 @@ moteur sans intervention manuelle?
 
 La r\'eponse est donn\'ee par un astucieux circuit compos\'e de
 transistors. Il permet, au moyen de deux signaux actionnant les transistors,
-de contr\^oler le sens du courrant passant dans le moteur.
+de contr\^oler le sens du courant passant dans le moteur.
 
-Le sch\'ema suivant pourra d'avantage \'eclairer le lecteur.
+Le schéma suivant pourra d'avantage \'eclairer le lecteur.
 
 \begin{figure}[h]
 \centering
@@ -583,11 +583,11 @@ ou dans l'autre.\normalsize
 \caption{Environnement Arduino\label{Environnement Arduino}, C'est la fenêtre qui nous permet d'écrire un code dans un pseudo C, de le compiler et le téléverser sur l'Arduino. Ce programme a un sorte de petit déboggeur qui est très basique, mais très souvent suffisant.}
 \end{center}
 \end{figure}
-Ce logiciel nous permet de programmer, de compiler et de téléverser un code à un arduino. Il possède aussi des exemples de codes afin de pouvoir apprendre à utiliser un Arduino sans avoir à chercher sur le web. Il prend en compte des librairies qu'on peut rajouter simplement en mettant la librairie dans le dossier "\textit{\textbackslash arduino\textbackslash librairies}". Ce software permet aussi à l'utilisateur d'envoyer des caractères ou des chaînes de caractères à l'arduino par le biai du port \textit{Serial}, il faut néanmoins appuyer sur entrée pour envoyer le caractère ou la chaîne de caractères.
+Ce logiciel nous permet de programmer, de compiler et de téléverser un code à un Arduino. Il possède aussi des exemples de codes afin de pouvoir apprendre à utiliser un Arduino sans avoir à chercher sur le web. Il prend en compte des librairies qu'on peut rajouter simplement en mettant la librairie dans le dossier "\textit{\textbackslash arduino\textbackslash librairies}". Ce software permet aussi à l'utilisateur d'envoyer des caractères ou des chaînes de caractères à l'Arduino par le biai du port \textit{Serial}, il faut néanmoins appuyer sur entrée pour envoyer le caractère ou la chaîne de caractères.
 
 
 \section{Software du Raspberry Pi}
-Sans les logiciels, notre projet aurait bien du mal à se réaliser. Dans cette section, nous allons parler de tout les softwares que nous utilisons sur la Framboise afin de rendre le drone fonctionnel. Dans un premier temps, nous allons parler de notre première version, fonctionnant sous python avec comme logiciel de vidéo Guvcview (sec:\ref{Guvcview}). Dans un second temps, nous allons aborder la deuxième version du drone, plus complexe et fonctionnant grâce au language de programmation Java
+Sans les logiciels, notre projet aurait bien du mal à se réaliser. Dans cette section, nous allons parler de tout les softwares que nous utilisons sur la Framboise afin de rendre le drone fonctionnel. Dans un premier temps, nous allons parler de notre première version, fonctionnant sous python avec comme logiciel de vidéo Guvcview (sec:\ref{Guvcview}). Dans un second temps, nous allons aborder la deuxième version du drone, plus complexe et fonctionnant grâce au langage de programmation Java
 
 
 %%%%%%%%%%%%	si OpenCV utilisé =======>>>>> à Rajouter, non incus pour l'instant %%%%%%%%%%%%%%%%%%%
@@ -606,11 +606,11 @@ Afin que le Raspberry Pi puisse se connecter sur le réseau sans fil, nous utili
 
 \subsubsection{Partage sécurisé}
 
-Le partage sécurisé entre deux ordinateurs, que nous allons appeler ici \textit{ssh} pour \textit{Secure Shell} est un protocole permettant à un ordinateur de faire une connnection sécurisée avec un autre afin de le contrôler. Meilleur que VNC (\textit{Virtual Network Computing}) dans le sens où il ne demande pas au Raspberry Pi de duppliquer le \textit{Desktop} (bureau), ce qui nous permet d'améliorer les performances, tant du côté de la réactivité des commandes, que du nombre d'images par secondes affiché par le Raspberry Pi. Il y a deux inconvénients majeurs à ces solutions, la première, c'est qu'à moins d'avoir un \textit{Shell Script}, il faut établir la connexion et lancer les programmes manuellement., la deuxième, c'est qu'ils ne sont utilisable que sous les système UNIX, c'est à dire que sous cette version, notre drone ne toucherais pas le grand public, mais seulement les professionnels qui auraient plutot tendance à choisir des modèles plus chers, mais aussi plus performants. 
+Le partage sécurisé entre deux ordinateurs, que nous allons appeler ici \textit{ssh} pour \textit{Secure Shell} est un protocole permettant à un ordinateur de faire une connexion sécurisée avec un autre afin de le contrôler. Meilleur que VNC (\textit{Virtual Network Computing}) dans le sens où il ne demande pas au Raspberry Pi de dupliquer le \textit{Desktop} (bureau), ce qui nous permet d'améliorer les performances, tant du côté de la réactivité des commandes, que du nombre d'images par secondes affiché par le Raspberry Pi. Il y a deux inconvénients majeurs à ces solutions, la première, c'est qu'à moins d'avoir un \textit{Shell Script}, il faut établir la connexion et lancer les programmes manuellement., la deuxième, c'est qu'ils ne sont utilisable que sous les système UNIX, c'est à dire que sous cette version, notre drone ne toucherais pas le grand public, mais seulement les professionnels qui auraient plutôt tendance à choisir des modèles plus chers, mais aussi plus performants. 
 
 \subsection{Guvcview}
 
-Guvcview\label{Guvcview} est un software permettant d'enregistrer des séquences vidéos ou des images, il fournit aussi une image de contrôle, que nous utilisons dans la première version du drone. Ce logiciel très facile d'utilisation permet d'avoir près de dix-huit images par secondes lors d'une connexion \textit{ssh} avec une résolution d'envrion 600x380 pixels. L'inconvénient de ce logiciel est que l'image de contrôle ne peut pas être affichée seule, elle s'acoompagne toujours du panneau de réglages. 
+Guvcview\label{Guvcview} est un software permettant d'enregistrer des séquences vidéos ou des images, il fournit aussi une image de contrôle, que nous utilisons dans la première version du drone. Ce logiciel très facile d'utilisation permet d'avoir près de dix-huit images par secondes lors d'une connexion \textit{ssh} avec une résolution d'environ 600x380 pixels. L'inconvénient de ce logiciel est que l'image de contrôle ne peut pas être affichée seule, elle s'accompagne toujours du panneau de réglages. 
 
 \section{Python}
 Outre les programmes mentionnés ci-dessus, nous avons développé notre propre
@@ -618,8 +618,8 @@ code python (annexe: \ref{code python}) qui permet de contrôler le
 véhicule. Le code est  Visuellement, l'interface graphique est très simple
 (fig: \ref{python environnement}). Il s'agit simplement d'une fenêtre qui est à
 l'écoute du clavier et qui, lorsque l'utilisateur presse une touche, va
-envoyer le caractère à l'arduino via le port de communication
-Sérial. L'arduino va ensuite, grâce à son propre code définir quelle action le
+envoyer le caractère à l'Arduino via le port de communication
+\textit{Serial}. L'Arduino va ensuite, grâce à son propre code définir quelle action le
 véhicule doit faire. Ce programme permet non seulement de choisir la direction
 à prendre, mais aussi de régler l'angle de braquage ou la vitesse maximale. Il
 affiche entre autre les messages d'erreur ainsi que des informations à propos
@@ -629,7 +629,7 @@ simplement de diriger le véhicule. Une zone de texte non éditable par
 l'utilisateur permet d'afficher des messages, avertissant, par exemple, que le
 pilote a atteint le braquage maximal. Le programme n'est pas conscient de
 l'état physique de la voiture, mais se base uniquement sur les paramètres
-selectionnés par le pilote pour imprimer de tels messages. 
+sélectionnés par le pilote pour imprimer de tels messages. 
 
 \begin{center}
 \begin{figure}[!h]
@@ -643,22 +643,22 @@ selectionnés par le pilote pour imprimer de tels messages.
 \clearpage
 
 \chapter{Software \\ Deuxième version des système embarqués}
-\lettrine{D}{ans} notre projet, nous avons prévu une deuxième une version du drone, dans le sens ou la première version ne remplissait pas tout à fait les buts que nous nous étions fixés. Cette version, principalement programmée avec le language Java, nous permet de faire nous même la connexion entre l'ordinateur et le Raspberry Pi. Nous avons choisis ce language pour plusieurs raisons. Tout d'abord, nous avions des notions en Java, ce qui n'est pas négligeable quand on doit choisir un programme, c'est aussi un language constament mis à jour et il possède une large communauté, ce qui a fait que de nombreuses classes existent, notamment du côté des interfaces graphiques, sans lesquelles nous aurions de la peine à rendre le programme agréable à utiliser. Dans ce chapitre, nous allons aborder tout d'abord le choix de transmission sans fil que nous avons adopté, nous allons ensuite voir à quoi ressemble notre programme Java et ce qu'il fait. Avant de parler de la vidéo avec OpenCV. 
+\lettrine{D}{ans} notre projet, nous avons prévu une deuxième une version du drone, dans le sens ou la première version ne remplissait pas tout à fait les buts que nous nous étions fixés. Cette version, principalement programmée avec le langage Java, nous permet de faire nous même la connexion entre l'ordinateur et le Raspberry Pi. Nous avons choisis ce langage pour plusieurs raisons. Tout d'abord, nous avions des notions en Java, ce qui n'est pas négligeable quand on doit choisir un programme, c'est aussi un langage constamment mis à jour et il possède une large communauté, ce qui a fait que de nombreuses classes existent, notamment du côté des interfaces graphiques, sans lesquelles nous aurions de la peine à rendre le programme agréable à utiliser. Dans ce chapitre, nous allons aborder tout d'abord le choix de transmission sans fil que nous avons adopté, nous allons ensuite voir à quoi ressemble notre programme Java et ce qu'il fait. Avant de parler de la vidéo avec OpenCV. 
 
 
 
 \section{UDP ou TCP}
 
-Avant de parler de notre choix, expliquons un peu que sont les protocoles UDP et TCP et leurs différences. UDP et TCP sont deux protocoles de connection wi-fi qui permettent d'envoyer des données (\textit{Packets}) d'un ordinateur à un autre. Un des deux ordinateur sera considéré comme étant un serveur tandis que l'autre sera considéré comme un client. La différence entre le client et le serveur à l'air assez simple à première vue, mais est plus complexe lorsque nous devons l'appliquer. Mai revenons tout d'abord aux différences.
+Avant de parler de notre choix, expliquons un peu que sont les protocoles UDP et TCP et leurs différences. UDP et TCP sont deux protocoles de connexion wi-fi qui permettent d'envoyer des données (\textit{Packets}) d'un ordinateur à un autre. Un des deux ordinateur sera considéré comme étant un serveur tandis que l'autre sera considéré comme un client. La différence entre le client et le serveur à l'air assez simple à première vue, mais est plus complexe lorsque nous devons l'appliquer. Mai revenons tout d'abord aux différences.
 
 
  %%%%%%% A COMPLETER%%%%%%%%%%%%%%%%
 
 
 
-Le protocole UDP\footnote{\textit{User Datagram Portocol}, soit protocole des datagrammes d'utilisateurs} est un protocole qui n'est pas orienté connection. En effet, dans notre cas, l'ordinateur envoie des paquets au Raspberry Pi sans le prévenir, ce dernier ne va pas non plus confirmer la réception des paquets. C'est un flux unidirectionnel qui est dû à l'encapsulation des données. En effet, les paquets qui transitent via un protocole UDP ne contiennent que l'adresse IP et pas d'autres informations concernant l'émetteur. Ce qui voudrait dire que le Raspberry Pi ne s'est pas s'il est toujours à portée de l'ordinateur. \\
-Le protocole TCP\footnote{\textit{Transmission Control Protocol}, soit protocole de contrôle des transmissions} est l'opposé de l'UDP, il est orienté connection. Lorsque l'ordinateur envoie des données au Raspberry Pi, ce dernier est informé de l'arrivée des dites données. Il donne aussi une sorte de reçu qui confirme la reception des packets. S'il y a des fichiers corrompus, l'ordinateur va renvoyer les fichiers manquants. On peut, par analogie, comparer ce protocole comme la communication directe téléphonique.\\
-Dans notre cas, nous choix s'est porté sur le protocole TCP. En effet, il est plus pratique de savoir que l'ordinateur n'envoie plus de données et qu'il faille stopper le véhicule car la connection est simplement perdue, tandis qu'avec le protocole UDP, nous ne savons pas s'il y a une perte de connection, puisqu'il n'y a pas eu de connection.  
+Le protocole UDP\footnote{\textit{User Datagram Protocol}, soit protocole des datagrammes d'utilisateurs} est un protocole qui n'est pas orienté connexion. En effet, dans notre cas, l'ordinateur envoie des paquets au Raspberry Pi sans le prévenir, ce dernier ne va pas non plus confirmer la réception des paquets. C'est un flux unidirectionnel qui est dû à l'encapsulation des données. En effet, les paquets qui transitent via un protocole UDP ne contiennent que l'adresse IP et pas d'autres informations concernant l'émetteur. Ce qui voudrait dire que le Raspberry Pi ne s'est pas s'il est toujours à portée de l'ordinateur. \\
+Le protocole TCP\footnote{\textit{Transmission Control Protocol}, soit protocole de contrôle des transmissions} est l'opposé de l'UDP, il est orienté connexion. Lorsque l'ordinateur envoie des données au Raspberry Pi, ce dernier est informé de l'arrivée des dites données. Il donne aussi une sorte de reçu qui confirme la réception des packets. S'il y a des fichiers corrompus, l'ordinateur va renvoyer les fichiers manquants. On peut, par analogie, comparer ce protocole comme la communication directe téléphonique.\\
+Dans notre cas, nous choix s'est porté sur le protocole TCP. En effet, il est plus pratique de savoir que l'ordinateur n'envoie plus de données et qu'il faille stopper le véhicule car la connexion est simplement perdue, tandis qu'avec le protocole UDP, nous ne savons pas s'il y a une perte de connexion, puisqu'il n'y a pas eu de connexion.
 
 
 \section{Java}
@@ -683,14 +683,14 @@ Dans notre cas, nous choix s'est porté sur le protocole TCP. En effet, il est p
 
 \textbf{Commentaires}
 
-On commence par inclure la classe Servo, puis on cr\'ee un objet
+On commence par inclure la classe Servo, puis on crée un objet
 \emph{Servo}. Dans la fonction \emph{setup} du programme, on lie l'objet
 \emph{myservo} au pin neuf de l'arduino. Ensuite, dans la fonction \emph{loop}, on
-fait varier la position du servo gr\^ace \`a la m\'ethode \emph{write}. Un
-d\'elai (le programme s'arr\^ete en ce point) de 15ms pour permettre au servo
-d'atteindre la position demand\'ee. Etant donn\'e que cette op\'eration est
-itt\'er\'ee plusieurs fois au moyen d'une boucle \emph{for}, on pourra voir le
-servo d\'ecrire un mouvement de balayage.
+fait varier la position du servo grâce \`a la méthode \emph{write}. Un
+d\'elai (le programme s'arrête en ce point) de 15ms pour permettre au servo-moteur
+d'atteindre la position demandée. Etant donnée que cette opération est
+ittérée plusieurs fois au moyen d'une boucle \emph{for}, on pourra voir le
+servo décrire un mouvement de balayage.
 
 \subsection{Code python sur le Raspberry Pi \label{code python}}
 \lstinputlisting[language=python]{code/gui_1.1.py}
