@@ -1,0 +1,90 @@
+\begin{thebibliography}{10}
+
+\bibitem{rx2_ex1}
+Atef Akremi.
+\newblock Fastest way to hack rc car h-bridge, juin 2012.
+\newblock
+  \url{http://www.instructables.com/files/deriv/F46/2LOX/H3XME4X0/F462LOXH3XME4X0.LARGE.jpg}.
+
+\bibitem{HC-SR04}
+Cytron Technologies~Sdn. Bhd.
+\newblock User's manual, ??
+\newblock
+  \url{https://docs.google.com/document/d/1Y-yZnNhMYy7rwhAgyL_pfa39RsB-x2qR4vP8saG73rE/edit}.
+
+\bibitem{OpenSourceCit}
+Metycea blog.
+\newblock Définition : Qu’est-ce que l’open source ? (1/4), Septembre
+  2008.
+\newblock
+  \url{http://blog.metycea.com/actus-internet/definition-qu-est-ce-que-l-open-source-1-4.html}.
+
+\bibitem{rx2_ex3}
+Talking Electronics.
+\newblock Transmitters, Juillet 2011.
+\newblock
+  \url{http://www.talkingelectronics.com/projects/27MHz%20Transmitters/imagesP2/4ChRx2B.jpg}.
+
+\bibitem{rx2_ex2}
+Jon from jbproject.
+\newblock Wifi robot, août 2008.
+\newblock \url{http://www.jbprojects.net/projects/wifirobot/rx2.jpg}.
+
+\bibitem{7805T}
+Futurlec.
+\newblock Technical information - national semiconductor 7805t datasheet,
+  Novembre 2004.
+\newblock \url{www.futurlec.com/Linear/7805T.shtml} (voir partie TO-220).
+
+\bibitem{openSource}
+From The Open~Source Initiative.
+\newblock Open source definition, ??
+\newblock \url{http://opensource.org/osd}.
+
+\bibitem{l293dDataSheet}
+Texas Instrument.
+\newblock L293, l293d quadruple half-h drivers, Juin 2002.
+
+\bibitem{adafruitMotorShield}
+Ladyada.
+\newblock Adafuit motor shield, power usage, août 2012.
+\newblock
+  \url{http://learn.adafruit.com/adafruit-motor-shield/power-requirements}.
+
+\bibitem{RobotRoom}
+Robot Room.
+\newblock H-bridge motor driver using bipolar transistors, ??
+\newblock \url{http://www.robotroom.com/BipolarHBridge.html}.
+
+\bibitem{ServoSweep}
+Barragan Studio.
+\newblock Servo sweep, Septembre 2010.
+\newblock \url{http://arduino.cc/en/Tutorial/Sweep}.
+
+\bibitem{Arduino}
+Arduino Team.
+\newblock Arduino spec., ??
+\newblock \url{http://arduino.cc/en/Main/ArduinoBoardUno}.
+
+\bibitem{microcontroleur}
+From~Wikipedia the~free encyclopedia.
+\newblock Microcontrôleur, ??
+\newblock \url{http://fr.wikipedia.org/wiki/Microcontr%C3%B4leur}.
+
+\bibitem{RaspberryPiCaracteristiques}
+From~Wikipedia the~free encyclopedia.
+\newblock Raspberry pi, ??
+\newblock \url{http://en.wikipedia.org/wiki/Raspberry_Pi}.
+
+\bibitem{WikiServo}
+From~Wikipedia the~free encyclopedia.
+\newblock Servo control, Octobre 2012.
+\newblock \url{http://en.wikipedia.org/wiki/Servo_control}.
+
+\bibitem{beewi}
+BeeWi~Simply wireless.
+\newblock Bwz200 - buggy wifi avec camera, 2013.
+\newblock
+  \url{http://www.bee-wi.com/buggy-wifi-avec-camera-bwz200-a1-beewi,fr,4,BWZ200-A1.cfm}.
+
+\end{thebibliography}
