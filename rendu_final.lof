@@ -3,18 +3,16 @@
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {1.1}{\ignorespaces Arduino Uno R3, On peut remarquer les pin qui se trouvent de part et d'autre de l'Arduino. On peut remarquer au centre le micro-contr\IeC {\^o}leur ATmega328 ainsi que le port USB tout en haut de l'image}}{8}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {2.1}{\ignorespaces Sch\IeC {\'e}ma sommaire de la plaque. }}{14}
-\contentsline {figure}{\numberline {2.2}{\ignorespaces Sch\IeC {\'e}ma sommaire de la plaque.\cite {rx2_ex1} }}{15}
-\contentsline {figure}{\numberline {2.3}{\ignorespaces Sch\IeC {\'e}ma sommaire de la plaque.\cite {rx2_ex2} }}{16}
-\contentsline {figure}{\numberline {2.4}{\ignorespaces Sch\IeC {\'e}ma sommaire de la plaque.\cite {rx2_ex3} }}{17}
-\contentsline {figure}{\numberline {2.5}{\ignorespaces Premi\IeC {\`e}re plaque rassemblant diff\IeC {\'e}rents composants \IeC {\'e}lectriques. }}{18}
-\contentsline {figure}{\numberline {2.6}{\ignorespaces Exemple de dessous de plaque de prototypage similaire \IeC {\`a} la notre. http://www.verotl.com/images/images/veroboards/l-01-0033.jpg }}{19}
-\contentsline {figure}{\numberline {2.7}{\ignorespaces Sch\IeC {\'e}ma complet du shield }}{28}
-\contentsline {figure}{\numberline {2.8}{\ignorespaces Sch\IeC {\'e}ma d'un circuit ayant une diode Zener qui explique comment cette diode permet d'\IeC {\'e}viter de griller des composants en cas de sauts de tensions. }}{29}
-\contentsline {figure}{\numberline {2.9}{\ignorespaces Sch\IeC {\'e}ma de la modulation du signal \'electrique \cite {WikiServo} }}{29}
-\contentsline {figure}{\numberline {2.10}{\ignorespaces Sch\'ema d'un H-bridge}}{30}
+\contentsline {figure}{\numberline {2.1}{\ignorespaces Exemple de plaque RX2}}{14}
+\contentsline {figure}{\numberline {2.2}{\ignorespaces Premi\IeC {\`e}re plaque rassemblant diff\IeC {\'e}rents composants \IeC {\'e}lectriques. }}{15}
+\contentsline {figure}{\numberline {2.3}{\ignorespaces Sch\IeC {\'e}ma sommaire de la plaque. }}{16}
+\contentsline {figure}{\numberline {2.4}{\ignorespaces Exemple de dessous de plaque de prototypage similaire \IeC {\`a} la notre. http://www.verotl.com/images/images/veroboards/l-01-0033.jpg }}{16}
+\contentsline {figure}{\numberline {2.5}{\ignorespaces Sch\IeC {\'e}ma complet du shield }}{17}
+\contentsline {figure}{\numberline {2.6}{\ignorespaces Sch\IeC {\'e}ma d'un circuit ayant une diode Zener qui explique comment cette diode permet d'\IeC {\'e}viter de griller des composants en cas de sauts de tensions. }}{21}
+\contentsline {figure}{\numberline {2.7}{\ignorespaces Sch\IeC {\'e}ma de la modulation du signal \'electrique \cite {WikiServo} }}{24}
+\contentsline {figure}{\numberline {2.8}{\ignorespaces Sch\'ema d'un H-bridge}}{27}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {3.1}{\ignorespaces Environnement Arduino, C'est la fen\IeC {\^e}tre qui nous permet d'\IeC {\'e}crire un code dans un pseudo C, de le compiler et le t\IeC {\'e}l\IeC {\'e}verser sur l'Arduino. Ce programme a un sorte de petit d\IeC {\'e}boggeur qui est tr\IeC {\`e}s basique, mais tr\IeC {\`e}s souvent suffisant.}}{32}
-\contentsline {figure}{\numberline {3.2}{\ignorespaces \textit {Dongle} Edimax EW7811Un. Connect\IeC {\'e} par USB \IeC {\`a} la Framboise, il permet au Raspberry Pi de se connecter via Wi-Fi \IeC {\`a} une borne}}{33}
-\contentsline {figure}{\numberline {3.3}{\ignorespaces Fen\IeC {\^e}tre X du code python qui permet la lecture du clavier. Cette fen\IeC {\^e}tre permet de contr\IeC {\^o}ler le drone.}}{36}
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Environnement Arduino, C'est la fen\IeC {\^e}tre qui nous permet d'\IeC {\'e}crire un code dans un pseudo C, de le compiler et le t\IeC {\'e}l\IeC {\'e}verser sur l'Arduino. Ce programme a un sorte de petit d\IeC {\'e}boggeur qui est tr\IeC {\`e}s basique, mais tr\IeC {\`e}s souvent suffisant.}}{30}
+\contentsline {figure}{\numberline {3.2}{\ignorespaces \textit {Dongle} Edimax EW7811Un. Connect\IeC {\'e} par USB \IeC {\`a} la Framboise, il permet au Raspberry Pi de se connecter via Wi-Fi \IeC {\`a} une borne}}{31}
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Fen\IeC {\^e}tre X du code python qui permet la lecture du clavier. Cette fen\IeC {\^e}tre permet de contr\IeC {\^o}ler le drone.}}{34}
 \addvspace {10\p@ }

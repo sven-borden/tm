@@ -50,7 +50,6 @@
 \end{centering}
 \addcontentsline{lof}{figure}{\protect\numberline{}Image de courverture}
 }
-\frontmatter
 \maketitle
 
 
@@ -103,7 +102,6 @@ nous aider à promouvoir notre drone.  \\
 \clearpage
 
 
-\mainmatter
 \section*{Introduction}
 \addcontentsline{toc}{section}{\protect\numberline{}Introduction}
 Le but de ce projet est de construire un véhicule roulant que l'on peut commander à distance. Plus qu'une simple voiture télécommandée, ce drone est capable d'être contrôlé sans avoir une vue directe sur celui-ci, car il possède des capteurs tel qu'une caméra et des capteurs de distances. Ce type d'engin se nomme \textit{UGV (Unmanned Ground Vehicle)} soit "véhicule roulant sans équipage". Surtout utilisés dans l'armée, les modèles qu'on peut trouver sur le marché sont très coûteux, ils varient entre trois cents et mille trois cents francs. Notre but est donc de pouvoir construire un appareil semblable pour moins de deux cent francs. Équipé d'un répétiteur, un groupe d'UGV peut couvrir une grande surface sans mettre en danger ses pilotes puisqu'ils restent à l'écart. Il peut servir en cas de catastrophe naturelle, néanmoins, notre modèle ne peut pas rouler sur les terrains trop accidentés, mais pour corriger ce problème, il suffit tout simplement d'implémenter notre système dans un autre type de véhicule. Le développement d'une interface graphique simplifiant l'utilisation est également un but du projet. En effet, cela ne sert pas à grand chose d'avoir un drone que personne ne sait utiliser à moins de s'être entraîné durant des mois.\\
@@ -220,43 +218,40 @@ total & 10 & 179.60\\
 \section{PCB}
 
 (BELLE PHOTO DU PCB USINE!!!)\\
-La décision de retirer l'électronique de base du véhicule télécommandé provient d'une curiosité de comprendre comment elle est faite et surtout, du besoin d'avoir un degré supérieur de contrôle sur la voiture. A la base, le cerveau de la voiture se trouvait dans un petit chip. Très courant dans les jouets radio commandés bas de gamme, le RX2 ou similaire, permet d'interpréter un signal radio et émettre un courant pour actionner des moteurs, par exemple. Ce micro-chip va de paire avec le TX2, qui se trouverait dans la télécommande. Si vous ne l'aviez pas deviné, TX symbolise "Transmit" (transmettre) er RX "Receive".
-Voici un schéma du chip:(fig: \ref{SchemaPlaqueMaison})
+La décision de retirer l'électronique de base du véhicule télécommandé
+provient d'une curiosité de comprendre comment elle est faite et surtout, du
+besoin d'avoir un degré supérieur de contrôle sur la voiture. A la base, le
+cerveau de la voiture se trouvait dans un petit chip. Très courant dans les
+jouets radio-commandés bas de gamme, le RX2 ou similaire (fig. \ref{rx2.2}), permet d'interpréter
+un signal radio et émettre des signaux pour actionner des moteurs, par
+exemple. Ce micro-chip va de paire avec le TX2, qui se trouverait dans la
+télécommande (TX pour "Transmit" et RX pour "Receive").
 
-\begin{figure}[h]
-\centering
-\includegraphics[width=1.0\textwidth]{figures/SchemaPlaqueMaison}
-    \caption{\label{SchemaPlaqueMaison}Schéma sommaire de la plaque.
-    }
-\end{figure}
-(PHOTO + EXPLICATIONS)
-Et quelques exemples de plaques similaires à celle que nous avons trouvée: (figs\ref{rx2.1} \ref{rx2.2} \ref{rx2.3})
 
-\begin{figure}[h]
-\centering
-\includegraphics[width=1.0\textwidth]{figures/rx2_ex1.jpg}
-    \caption{\label{rx2.1}Schéma sommaire de la plaque.\cite{rx2_ex1}
-    }
-\end{figure}
 \begin{figure}[h]
 \centering
 \includegraphics[width=1.0\textwidth]{figures/rx2_ex2.jpg}
-    \caption{\label{rx2.2}Schéma sommaire de la plaque.\cite{rx2_ex2}
-    }
+    \caption[Exemple de plaque RX2]{\label{rx2.2}Exemple de plaque similaire à ce qu'on a pu trouver
+      dans le véhicule.}
 \end{figure}
-\begin{figure}[h]
-\centering
-\includegraphics[width=1.0\textwidth]{figures/rx2_ex3.jpg}
-    \caption{\label{rx2.3}Schéma sommaire de la plaque.\cite{rx2_ex3}
-    }
-\end{figure}
-La nature simple du chip RX2 ne lui permet que d'émettre un signal bas ou haut (0 ou 5V), à la différence de l'Arduino qui a la possibilité de moduler le signal (sec: \ref{servosection}). Cette caractéristique spécifique nous permet d'avoir un large éventail de vitesses du moteur et d'angles de braquage différent.
+
+La nature simple du chip RX2 ne lui permet que d'émettre un signal bas ou haut
+(0 ou 5V), à la différence de l'Arduino qui a la possibilité de moduler le
+signal (voir: \ref{servosection}). Cette caractéristique spécifique nous permet
+d'avoir un large éventail de vitesses du moteur et d'angles de braquage
+différents. 
 
 
 
 \subsection{Plaque personnelle}
-En attendant de recevoir la plaque sortie d'usine et pour tester une partie du schéma, nous avons conçu un prototype du design final (ref photo descriptive). Cette version préliminaire nous a permis de faire les premiers pas avec le véhicule. Elle permet de contrôler le moteur de propulsion ainsi que le servo-moteur directionnel.
-(PHOTO DESCRIPTIVE)(fig: \ref{PPFigure})
+En attendant de recevoir la plaque sortie d'usine et pour tester une partie
+design, nous avons conçu un prototype du résultat final
+(fig.\ref{PPFigure}). Cette version préliminaire nous a permis de faire les
+premiers
+pas avec le véhicule. Elle permet de contrôler le moteur de propulsion ainsi
+que le servo-moteur directionnel.
+Pour une vue plus claire du prototype et une description des composants
+principaux, voir la figure \ref{SchemaPlaqueMaison}. 
 
 \begin{figure}[h]
 \centering
@@ -264,48 +259,64 @@ En attendant de recevoir la plaque sortie d'usine et pour tester une partie du s
     \caption{\label{PPFigure}Première plaque rassemblant différents composants électriques. 
     }
 \end{figure}
+ 
+\begin{figure}[h]
+\centering
+\includegraphics[width=1.0\textwidth]{figures/SchemaPlaqueMaison}
+    \caption{\label{SchemaPlaqueMaison}Schéma sommaire de la plaque.
+    }
+\end{figure}
 
+Quelques explications sur le contenu et la conception de la plaque prototype:
 
-Quelques explications sur le contenu et la conception de la plaque suivent:
-(PHOTO SCHEMA PLAQUE)
+\begin{enumerate}
+	\item Un régulateur de voltage 5V (7805T) transforme le courant 9V de
+          la batterie en 5V. Attention! La tension qui n'est pas utilisée par
+          un chaleur! 
 
+	\item Le régulateur est entouré de capacités pour lisser d'éventuels
+          sauts de tension,mais remarquez que ils seraient probablement
+          inutiles lors de hauts sauts de voltage. 
 
-liste:
-	a.Un régulateur de voltage 5V (7805T) transforme le courant 9V de la batterie en 5V. Attention! La tension qui n'est pas utilisée par un chaleur!
+	\item Un chip L293D (H-bridge (sec: \ref{h-bridge})) contrôle le
+          moteur de propulsion. Ici, deux chips sont empilés, donc en
+          parallèle, pour pouvoir supporter la charge importante du moteur. 
+\end{enumerate}
 
-	b.Le régulateur est entouré de capacités pour lisser d'éventuels sauts de tension,mais remarquez que ils seraient probablement inutiles lors de hauts sauts de voltage.
-
-	c.Un chip L293D (H-bridge (sec: \ref{h-bridge})) contrôle le moteur de propulsion. Ici, deux chips sont empilés, donc en parallèle, pour pouvoir supporter la charge importante du moteur.
-
-Tous ces composants, en plus des câbles et des connecteurs vers les actuateurs et batterie, sont soudés sur une \textit{strip-board} semblable à celle dans la photo ci dessous:(fig: \ref{StripBoard})
+Tous ces composants, en plus des câbles et des connecteurs vers les actuateurs
+et batterie, sont soudés sur une \textit{strip-board} semblable à celle dans
+la photo \ref{StripBoard}.C'est essentiellement des bandes conductrices avec des trous pour placer les
+composants. les trous ont une distance standard de 0.5 pouces. Le détail des
+connexions ne sera pas précisé ici, mais il ressemble évidemment 
+au design de la plaque qui est illustré plus tard.   
 
 \begin{figure}[h!]
 \centering
-\includegraphics[width=1.0\textwidth]{figures/StripBoard}
+\includegraphics[width=0.3\textwidth]{figures/StripBoard}
     \caption{\label{StripBoard}Exemple de dessous de plaque de prototypage
       similaire à la notre. http://www.verotl.com/images/images/veroboards/l-01-0033.jpg
     }
 \end{figure}
 
+\subsection{Schema électronique}
+Le schéma a été dessiné à l'aide d'un programme dédié gratuit (version light),
+Eagle. Les symbols utilisés sont donc le standard en usine.
+(voir fig: \ref{schemaChineComplet})
 
-C'est essentiellement des bandes conductrices avec des trous pour placer les composants. les trous ont une distance standard de 0.5 pouces.
-Le détail des connexions ne sera pas précisé ici, mais il ressemble évidemment au design de la plaque qui est illustré plus tard.
-
-
-
-\subsection{Schema}
-Voici le schéma électronique du PCB usiné. Il a été dessiné à l'aide d'un CAD gratuit (version light), Eagle.
-(PHOTO SCHÉMA complet chine Arduino) (fig: \ref{schemaChineComplet})
-\begin{figure}[h]
+\begin{figure}[h!]
 \centering
-\includegraphics[angle=90, width=1.1\textwidth]{figures/schema_CHI.PNG}
+\includegraphics[angle=90, width=1.1\textwidth]{figures/schema_CHI.png}
 \caption{\label{schemaChineComplet}Schéma complet du shield
 }
 \end{figure}
-Quelques indications pour le lire:
-- les fils portant le même nom sont connectés
-- toutes les terres sont connectées ensemble
-- Il y a un circuit 9V et un circuit 5V
+
+Quelques indications pour lire le schéma:
+
+\begin{itemize}
+\item les fils portant le même nom sont connectés
+\item toutes les terres sont connectées ensemble
+\item Il y a un circuit 9V et un circuit 5V
+\end{itemize}
 
 \subsection{Design}
 (PHOTO DESIGN CHINE) (fig: \ref{board_CHI})
