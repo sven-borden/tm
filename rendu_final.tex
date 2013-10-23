@@ -723,10 +723,8 @@ que nous avons adopté, nous allons ensuite voir à
 quoi ressemble notre programme Java et ce qu'il fait. Avant de parler
 de la vidéo avec OpenCV. 
 
-\section{Java}
-Le code complet Java est très long et est composé de beaucoup de classes. Plutôt que de tout détailler ou pire, juste mettre le code cru, nous avons sélectionné les thèmes les plus intéressants que nous avons rencontré pendant l'écriture du programme. Nous allons expliquer comment nous avons structuré le système, selon quelles lois et discuter des avantages et des inconvénients.
 
-\subsection{Client/Serveur\label{ClientServeur}}
+\section{Client/Serveur\label{ClientServeur}}
 Le model client-serveur est composé de deux partis: les serveurs qui fournissent un service et les clients qui bénéficient de celui-ci. Un client ne partage pas ses ressources avec les autres, mais profite de celles du serveur. Le Serveur attend qu'un client vienne se connecter et faire des requêtes auxquels il répond. Il doit généralement être capable de gérer plusieurs clients à la fois.
 
 \begin{figure}[h]
@@ -744,7 +742,7 @@ Un Thread est initié pour chaque nouvelle demande de connexion. C'est à dire q
 \end{figure}
 
 
-\subsection{UDP ou TCP\label{UDPTCP}}
+\section{UDP ou TCP\label{UDPTCP}}
 Avant de parler de notre choix, nous allons un peu expliquer ce que sont les protocoles UDP et TCP et leurs différences. UDP et TCP sont deux protocoles de connexion réseau qui permettent d'envoyer des données, (\textit{Packets}), d'un ordinateur à un autre.
 
 e protocole UDP\footnote{\textit{User Datagram Protocol}, soit protocole des datagrammes d'utilisateurs} est un protocole qui n'est pas orienté connexion. Les paquets qui transitent via un protocole UDP ont l'adresse IP du récepteur, comme la poste, mais il n'y a aucune garantie que les paquets soient bien arrivés sans parler de leur ordre. Par contre, il n'y a pas le souci de perte de connexion puisque il n'y en a pas. Ce protocol est particulièrement adapté pour la transmission de vidéo. Pour contrôler les mouvements du véhicule il est impératif qu'il sache à tous moment si il y a au moins un client qui est au contrôle, au risque que le véhicule soit livré à lui même. Ici rentre en jeu le protocole TCP. 
@@ -773,7 +771,7 @@ De l'autre côté, le serveur attend les demandes de connexion, ceci grâce à l
  Ce qui voudrait dire: "Rouler vers l'avant à 20cm/s".  Pour bien comprendre la demande d'un client le serveur a également cette même liste de requêtes prédéfinies dont il sait s'occuper. Une fois que le serveur a trouvé la requête dans sa liste, il exécute l'opération prévue pour cette situation. Le schéma \ref{RequestHandler} illustre cette procédure.
   Le tableau de requêtes est enfait un HashMap, les identifiants des requêtes se trouvent à gauche en majuscule et les références aux fonctions à exécuter se trouvent à droite.
  
- \lstinputlisting[language=Java]{code/JavaExRequestList}
+ \lstinputlisting[language=Java]{code/JavaExRequestList.txt}
  
  \begin{figure}[!h]
 \includegraphics[width=1.0\textwidth]{figures/RequestHandler.pdf}
