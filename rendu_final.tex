@@ -607,7 +607,7 @@ total & 10 & 179.60\\
 %\addcontentsline{toc}{chapter}{\protect\numberline{}\normalsize Software Première version des systèmes embarqués}
 
 \section{Software de l'Arduino}
-\lettrine{P}{our} programmer l'Arduino, nous utilisons le logiciel dédié, \textit{Arduino} (fig: \ref{Environnement Arduino}), C'est un environnement \textit{open source}\footnote{Terme de \textit{Open source}\cite{openSource} signifie littéralement "Libre de droits", ceci indique donc qu'un logiciel \textit{Open source} permet à n'importe qui d'avoir accès au code source dans son intégralité. "L'Open Source est un monde de partages où chacun peut apporter une pierre à l'édifice pour améliorer encore et toujours les solutions retenues"\cite{OpenSourceCit}} qui fonctionne sur Windows, Linux et Mac OS X. Il a été écrit en Java et est basé sur le logiciel Processing.
+\lettrine{P}{our} programmer l'Arduino, nous utilisons le logiciel dédié, \textit{Arduino IDE}\footnote{IDE signifie \textit{Integrated Development Environment}. C'est une ensemble d'outils qui sont mis à la disposition des programmeurs afin de simplifier et augmenter leur productivité.} (fig: \ref{Environnement Arduino}). C'est un environnement \textit{open source}\footnote{Terme de \textit{Open source}\cite{openSource} signifie littéralement "Libre de droits", ceci indique donc qu'un logiciel \textit{Open source} permet à n'importe qui d'avoir accès au code source dans son intégralité. "L'Open Source est un monde de partages où chacun peut apporter une pierre à l'édifice pour améliorer encore et toujours les solutions retenues"\cite{OpenSourceCit}} qui fonctionne sur Windows, Linux et Mac OS X. Il a été écrit en Java et est basé sur le logiciel Processing.
 \begin{figure}[h!]
 \begin{center}
 \includegraphics[scale=0.5]{arduino-environnement-1}\\
@@ -618,16 +618,15 @@ Ce logiciel nous permet de programmer, de compiler et de téléverser un code à
 
 
 \section{Software du Raspberry Pi}
-Sans les logiciels, notre projet aurait bien du mal à se réaliser. Dans cette section, nous allons parler de tout les softwares que nous utilisons sur la Framboise afin de rendre le drone fonctionnel. Dans un premier temps, nous allons parler de notre première version, fonctionnant sous python avec comme logiciel de vidéo Guvcview (sec:\ref{Guvcview}). Dans un second temps, nous allons aborder la deuxième version du drone, plus complexe et fonctionnant grâce au langage de programmation Java
 
+Sans les logiciels, notre projet aurait bien du mal à se réaliser. Dans cette section, nous allons parler de tout les softwares que nous utilisons sur la Framboise pour la première version du drone. Dans un premier temps, nous allons rapidement aborder la question du sans fil et de la connexion que nous avons mise en place afin de contrôler le drone, avant de continuer sur le logiciel Guvcview, qui permet d'afficher une image. Par la suite, nous allons brièvement parler de notre programme python qui permet de contrôler le véhicule avant de finir le chapitre avec un résumé de points forts ou moins forts de cette première version.
 
-%%%%%%%%%%%%	si OpenCV utilisé =======>>>>> à Rajouter, non incus pour l'instant %%%%%%%%%%%%%%%%%%%
 
 
 
 \subsection{Sans fil}
 
-Afin que le Raspberry Pi puisse se connecter sur le réseau sans fil, nous utilisons un \textit{dongle} (fig:\ref{Edimax}) Wi-Fi \footnote{Le modèle utilisé est le suivant: EW7811Un fabriqué par Edimax}. Cet accessoire ne nécessitant pas de \textit{driver} \footnote{Un driver est un petit logiciel permettant d'exploiter le Hardware},il est donc directement reconnu et peut rapidement être configurer par le Raspberry Pi. 
+Au niveau hardware, afin que le Raspberry Pi puisse se connecter sur le réseau sans fil, nous utilisons un \textit{dongle} (fig:\ref{Edimax}) Wi-Fi \footnote{Le modèle utilisé est le suivant: EW7811Un fabriqué par Edimax}. Cet accessoire ne nécessitant pas de \textit{driver} \footnote{Un driver est un petit logiciel permettant d'exploiter le Hardware},il est donc directement reconnu et peut rapidement être configurer par le Raspberry Pi. 
 \begin{figure}[!h]
 \begin{center}
 \includegraphics[scale=0.38, trim=300 300 300 0, clip=true]{Edimax}
@@ -637,16 +636,16 @@ Afin que le Raspberry Pi puisse se connecter sur le réseau sans fil, nous utili
 
 \subsubsection{Partage sécurisé}
 
-Le partage sécurisé entre deux ordinateurs, que nous allons appeler ici \textit{ssh} pour \textit{Secure Shell} est un protocole permettant à un ordinateur de faire une connexion sécurisée avec un autre afin de le contrôler. Meilleur que VNC (\textit{Virtual Network Computing}) dans le sens où il ne demande pas au Raspberry Pi de dupliquer le \textit{Desktop} (bureau), ce qui nous permet d'améliorer les performances, tant du côté de la réactivité des commandes, que du nombre d'images par secondes affiché par le Raspberry Pi. Il y a deux inconvénients majeurs à ces solutions, la première, c'est qu'à moins d'avoir un \textit{Shell Script}, il faut établir la connexion et lancer les programmes manuellement., la deuxième, c'est qu'ils ne sont utilisable que sous les système UNIX, c'est à dire que sous cette version, notre drone ne toucherais pas le grand public, mais seulement les professionnels qui auraient plutôt tendance à choisir des modèles plus chers, mais aussi plus performants. 
+Au niveau software, nous utilisons un type de partage sécurisé entre deux ordinateurs, qui se nomme \textit{ssh} pour \textit{Secure Shell}. C'est un protocole permettant à un ordinateur de faire une connexion sécurisée avec un autre afin de le contrôler. Meilleur que VNC (\textit{Virtual Network Computing}) dans le sens où il ne demande pas au Raspberry Pi de dupliquer le \textit{Desktop} (bureau), ce qui nous permet d'améliorer les performances, tant du côté de la réactivité des commandes, que du nombre d'images par secondes de la caméra envoyées par le Raspberry Pi. Il y a deux inconvénients majeurs à ces solutions, la première, c'est qu'il faut établir la connexion et lancer les programmes manuellement. Le deuxième inconvénient, c'est qu'il est beaucoup plus compliqué, voire impossible à un utilisateur n'utilisant pas un système UNIX de se connecter au Raspberry Pi. Ce qui fait en sorte que notre drone ne toucherais pas un grand public.
 
 \subsection{Guvcview}
 
-Guvcview\label{Guvcview} est un software permettant d'enregistrer des séquences vidéos ou des images, il fournit aussi une image de contrôle, que nous utilisons dans la première version du drone. Ce logiciel très facile d'utilisation permet d'avoir près de dix-huit images par secondes lors d'une connexion \textit{ssh} avec une résolution d'environ 600x380 pixels. L'inconvénient de ce logiciel est que l'image de contrôle ne peut pas être affichée seule, elle s'accompagne toujours du panneau de réglages. 
+Guvcview\label{Guvcview} est un software permettant d'enregistrer des séquences vidéos ou des images, il fournit aussi une image de contrôle, que nous utilisons dans la première version du drone. Ce logiciel très facile d'utilisation permet d'avoir près de sept images par secondes lors d'une connexion \textit{ssh} avec une résolution d'environ 240x160 pixels. L'inconvénient de ce logiciel est que l'image de contrôle ne peut pas être affichée seule, elle s'accompagne toujours du panneau de réglages. De plus, il y a un temps de latence d'environ 700ms. 
 
 \section{Python}
 Outre les programmes mentionnés ci-dessus, nous avons développé notre propre
 code python (annexe: \ref{code python}) qui permet de contrôler le
-véhicule. Le code est  Visuellement, l'interface graphique est très simple
+véhicule. L'interface graphique est très simple
 (fig: \ref{python environnement}). Il s'agit simplement d'une fenêtre qui est à
 l'écoute du clavier et qui, lorsque l'utilisateur presse une touche, va
 envoyer le caractère à l'Arduino via le port de communication
@@ -665,32 +664,30 @@ sélectionnés par le pilote pour imprimer de tels messages.
 \begin{center}
 \begin{figure}[!h]
 \includegraphics[scale=1]{python-environnement}\label{python environnement}
-\caption[Interface graphique Python]{Fenêtre X du code python qui permet la lecture du clavier. Cette fenêtre permet de contrôler le drone.}
+\caption[Interface graphique Python]{Fenêtre X du code python qui permet la lecture du clavier. Cette fenêtre permet de contrôler le drone. Le programme affiche sud la colonne de droite l'angle de rotation des roues ainsi que la vitesse maximale du drone.}
 \end{figure}
 \end{center}
 
 
+\section{Évaluation de la première version}
+
+Avant de commencer à parler de la deuxième version, nous allons analyser quels sont les points forts ou points faibles de cette première version. Les avantages de cette versions sont surtout au niveau des programmeurs. En effet, cette version est assez simple à programmer, dans le sens où nous utilisons déjà des programmes qui existent déjà et nous nous sommes surtout occupé de l'interface humain machine. Les communications (ssh ou serial) sont très simple a utiliser. Les inconvénients se placent surtout au niveau de l'utilisateur. En effet, il n'est pas très pratique de devoir ouvrir un Terminal, se connecter au drone via ssh, lancer trois programmes manuellement avant de pouvoir utiliser le drone. De plus, la connexion cryptée fait baisser la rapidité de la connexion (qui est surtout visible avec l'image de la caméra). C'est pourquoi nous nous sommes lancés dans une deuxième version du drone, qui, en plus d'avoir de nouvelles fonctions, est plus simple d'utilisation et plus fluide. 
 
 \clearpage
 
 \chapter{Software \\ Deuxième version des système embarqués}
 \lettrine{D}{ans} notre projet, nous avons prévu une deuxième version du drone, 
 dans le sens où la première version ne remplissait pas tout à fait les buts que nous 
-nous étions fixés. Cette version, principalement programmée avec le langage Java, 
-nous permet de faire nous même la connexion entre l'ordinateur et le Raspberry Pi.
-Nous avons choisis ce langage pour plusieurs raisons. Tout d'abord, nous avions des notions en Java, 
-ce qui n'est pas négligeable quand on doit choisir un programme, c'est aussi un 
-langage constamment mis à jour et il possède une large communauté, ce qui fait
-que de nombreuses classes existent, notamment du côté des interfaces graphiques,
-sans lesquelles nous aurions de la peine à rendre le programme agréable à 
-utiliser. Dans ce chapitre, nous allons tout d'abord aborder le type de structure employée et le choix de protocole
-que nous avons adopté, nous allons ensuite voir à 
-quoi ressemble notre programme Java et ce qu'il fait. Avant de parler
-de la vidéo avec OpenCV. 
+nous étions fixés. Cette version, principalement programmée en Java et en C++, 
+nous permet de faire nous même la connexion entre l'ordinateur et le Raspberry Pi. Le C++ a été utilisé dans tout ce qui touche la caméra. Il a été choisi car il est beaucoup plus rapide que le Java, et donc essentiel au niveau de l'image, où nous cherchons les meilleures performances. Le reste à été codé en Java. Nous avons choisis ce langage pour plusieurs raisons. Tout d'abord, nous avions des notions en Java, 
+ce qui n'est pas négligeable quand on doit choisir un programme, c'est aussi un langage constamment mis à jour et il possède une large communauté, ce qui fait que de nombreuses classes existent, notamment du côté des interfaces graphiques,
+sans lesquelles nous aurions de la peine à rendre le programme agréable à utiliser. Dans ce chapitre, nous allons tout d'abord aborder le type de structure employée et le choix de protocole
+que nous avons adopté, nous allons ensuite voir à quoi ressemble notre programme Java et ce qu'il fait. Avant de parler
+de la vidéo avec le programme en C++ ainsi que OpenCV.
 
+\section{Java}
 
-
-\section{UDP ou TCP}
+\subsection{UDP ou TCP}
 
 Avant de parler de notre choix, expliquons un peu que sont les protocoles UDP et TCP et leurs différences. UDP et TCP sont deux protocoles de connexion wi-fi qui permettent d'envoyer des données (\textit{Packets}) d'un ordinateur à un autre. Un des deux ordinateur sera considéré comme étant un serveur tandis que l'autre sera considéré comme un client. La différence entre le client et le serveur à l'air assez simple à première vue, mais est plus complexe lorsque nous devons l'appliquer. Mai revenons tout d'abord aux différences.
 
@@ -704,10 +701,10 @@ Le protocole TCP\footnote{\textit{Transmission Control Protocol}, soit protocole
 Dans notre cas, nous choix s'est porté sur le protocole TCP. En effet, il est plus pratique de savoir que l'ordinateur n'envoie plus de données et qu'il faille stopper le véhicule car la connexion est simplement perdue, tandis qu'avec le protocole UDP, nous ne savons pas s'il y a une perte de connexion, puisqu'il n'y a pas eu de connexion.
 
 
-\section{Java}
 
+\section{C++}
 
-\section{OpenCV}
+\subsection{OpenCV}
 
 
 
