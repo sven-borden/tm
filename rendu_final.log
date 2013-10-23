@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/Debian) (format=pdflatex 2013.1.6)  22 OCT 2013 14:53
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/Debian) (format=pdflatex 2013.1.6)  23 OCT 2013 14:08
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -668,19 +668,18 @@ Underfull \hbox (badness 10000) in paragraph at lines 75--90
 \tf@toc=\write3
 \openout3 = `rendu_final.toc'.
 
- [2] (./rendu_final.lof)
+ [2] [3] (./rendu_final.lof)
 \tf@lof=\write4
 \openout4 = `rendu_final.lof'.
 
- [3
+ [4
 
 
 ] (./rendu_final.lot)
 \tf@lot=\write5
 \openout5 = `rendu_final.lot'.
 
-
-[4
+[5
 
 ]
 Overfull \hbox (18.27028pt too wide) in paragraph at lines 107--109
@@ -700,7 +699,7 @@ Overfull \hbox (21.785pt too wide) in paragraph at lines 107--109
 s []a la voiture radio-command[]ee
  []
 
-[5
+[6
 
 ]
 Chapitre 1.
@@ -715,16 +714,16 @@ Underfull \hbox (badness 10000) in paragraph at lines 124--125
 
  []
 
-[6
+[7
 
 
-] <figures/arduino_uno.jpg, id=42, 856.19875pt x 643.40375pt>
+] <figures/arduino_uno.jpg, id=45, 856.19875pt x 643.40375pt>
 File: figures/arduino_uno.jpg Graphic file (type jpg)
 
 <use figures/arduino_uno.jpg>
 Package pdftex.def Info: figures/arduino_uno.jpg used on input line 128.
 (pdftex.def)             Requested size: 325.3589pt x 244.49596pt.
- [7 <./figures/arduino_uno.jpg>] [8] [9] [10]
+ [8 <./figures/arduino_uno.jpg>] [9] [10] [11]
 Chapitre 2.
 
 Underfull \hbox (badness 10000) in paragraph at lines 191--191
@@ -744,7 +743,7 @@ Overfull \hbox (4.87494pt too wide) in paragraph at lines 199--200
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<figures/PCB.jpg, id=57, 1282.7925pt x 722.7pt>
+<figures/PCB.jpg, id=60, 1282.7925pt x 722.7pt>
 File: figures/PCB.jpg Graphic file (type jpg)
  <use figures/PCB.jpg>
 Package pdftex.def Info: figures/PCB.jpg used on input line 215.
@@ -753,7 +752,7 @@ Package pdftex.def Info: figures/PCB.jpg used on input line 215.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<figures/rx2_ex2.jpg, id=58, 758.835pt x 686.565pt>
+<figures/rx2_ex2.jpg, id=61, 758.835pt x 686.565pt>
 File: figures/rx2_ex2.jpg Graphic file (type jpg)
  <use figures/rx2_ex2.jpg>
 Package pdftex.def Info: figures/rx2_ex2.jpg used on input line 232.
@@ -762,9 +761,9 @@ Package pdftex.def Info: figures/rx2_ex2.jpg used on input line 232.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[11
+[12
 
-] <figures/DSC_1116res.jpg, id=62, 803.0pt x 530.98375pt>
+] <figures/DSC_1116res.jpg, id=65, 803.0pt x 530.98375pt>
 File: figures/DSC_1116res.jpg Graphic file (type jpg)
 
 <use figures/DSC_1116res.jpg>
@@ -774,7 +773,7 @@ Package pdftex.def Info: figures/DSC_1116res.jpg used on input line 257.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<figures/SchemaPlaqueMaison.png, id=63, 597.73312pt x 420.82219pt>
+<figures/SchemaPlaqueMaison.png, id=66, 597.73312pt x 420.82219pt>
 File: figures/SchemaPlaqueMaison.png Graphic file (type png)
 
 <use figures/SchemaPlaqueMaison.png>
@@ -785,7 +784,7 @@ Package pdftex.def Info: figures/SchemaPlaqueMaison.png used on input line 264.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[12] <figures/StripBoard.jpg, id=67, 120.45pt x 118.5228pt>
+[13] <figures/StripBoard.jpg, id=70, 120.45pt x 118.5228pt>
 File: figures/StripBoard.jpg Graphic file (type jpg)
 
 <use figures/StripBoard.jpg>
@@ -795,7 +794,7 @@ Package pdftex.def Info: figures/StripBoard.jpg used on input line 293.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<figures/schema_CHI.png, id=68, 429.95256pt x 335.67796pt>
+<figures/schema_CHI.png, id=71, 429.95256pt x 335.67796pt>
 File: figures/schema_CHI.png Graphic file (type png)
 
 <use figures/schema_CHI.png>
@@ -806,11 +805,11 @@ Overfull \hbox (37.86583pt too wide) in paragraph at lines 306--308
  [][] 
  []
 
-[13 <./figures/PCB.jpg>]
+[14 <./figures/PCB.jpg>]
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<figures/board_CHI.png, id=72, 214.62827pt x 159.81215pt>
+<figures/board_CHI.png, id=75, 214.62827pt x 159.81215pt>
 File: figures/board_CHI.png Graphic file (type png)
 
 <use figures/board_CHI.png>
@@ -820,13 +819,13 @@ Package pdftex.def Info: figures/board_CHI.png used on input line 322.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[14 <./figures/rx2_ex2.jpg>] [15 <./figures/DSC_1116res.jpg>] [16 <./figures/Sc
-hemaPlaqueMaison.png>] [17 <./figures/StripBoard.jpg>]
+[15 <./figures/rx2_ex2.jpg>] [16 <./figures/DSC_1116res.jpg>] [17 <./figures/Sc
+hemaPlaqueMaison.png>] [18 <./figures/StripBoard.jpg>]
 
-LaTeX Warning: Text page 18 contains only floats.
+LaTeX Warning: Text page 19 contains only floats.
 
-[18 <./figures/schema_CHI.png>]
-<figures/CircuitZener.pdf, id=91, 597.23125pt x 421.575pt>
+[19 <./figures/schema_CHI.png>]
+<figures/CircuitZener.pdf, id=94, 597.23125pt x 421.575pt>
 File: figures/CircuitZener.pdf Graphic file (type pdf)
 
 <use figures/CircuitZener.pdf>
@@ -836,34 +835,34 @@ Package pdftex.def Info: figures/CircuitZener.pdf used on input line 361.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[19 <./figures/board_CHI.png>]
+[20 <./figures/board_CHI.png>]
 Overfull \hbox (3.53636pt too wide) in paragraph at lines 381--392
 \OT1/pnc/m/n/10.95 ma-chine in-terpr[]ete. Il serait []evidemment tr[]es com-pl
 exe d'[]ecrire un tel fichier
  []
 
-[20 <./figures/CircuitZener.pdf>]
+[21 <./figures/CircuitZener.pdf>]
 Overfull \hbox (2.57988pt too wide) in paragraph at lines 398--414
 \OT1/pnc/m/n/10.95 une con-nais-sance qui en avait com-mand[]e un gros lot pour
  la mod-ique somme
  []
 
-[21] [22] <figures/ServoPwm.pdf, id=115, 501.875pt x 200.75pt>
+[22] [23] <figures/ServoPwm.pdf, id=118, 501.875pt x 200.75pt>
 File: figures/ServoPwm.pdf Graphic file (type pdf)
 
 <use figures/ServoPwm.pdf>
 Package pdftex.def Info: figures/ServoPwm.pdf used on input line 447.
 (pdftex.def)             Requested size: 378.42174pt x 151.37692pt.
- [23 <./figures/ServoPwm.pdf>] [24]
-<figures/H-bridge.pdf, id=126, 297.49544pt x 144.53197pt>
+ [24 <./figures/ServoPwm.pdf>] [25]
+<figures/H-bridge.pdf, id=129, 297.49544pt x 144.53197pt>
 File: figures/H-bridge.pdf Graphic file (type pdf)
 
 <use figures/H-bridge.pdf>
 Package pdftex.def Info: figures/H-bridge.pdf used on input line 517.
 (pdftex.def)             Requested size: 378.42174pt x 183.86229pt.
- [25 <./figures/H-bridge.pdf>] [26] [27]
+ [26 <./figures/H-bridge.pdf>] [27] [28]
 Chapitre 3.
-<figures/arduino-environnement-1.PNG, id=143, 511.15968pt x 543.53062pt>
+<figures/arduino-environnement-1.PNG, id=146, 511.15968pt x 543.53062pt>
 File: figures/arduino-environnement-1.PNG Graphic file (type png)
 
 <use figures/arduino-environnement-1.PNG>
@@ -882,10 +881,10 @@ LaTeX Font Info:    Font shape `OMS/pnc/m/it' in size <10.95> not available
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[28
+[29
 
-] [29 <./figures/arduino-environnement-1.PNG>]
-<figures/Edimax.jpg, id=153, 1283.79625pt x 962.59625pt>
+] [30 <./figures/arduino-environnement-1.PNG>]
+<figures/Edimax.jpg, id=156, 1283.79625pt x 962.59625pt>
 File: figures/Edimax.jpg Graphic file (type jpg)
 
 <use figures/Edimax.jpg>
@@ -903,13 +902,13 @@ Overfull \hbox (14.24573pt too wide) in paragraph at lines 640--641
 . Il y a deux in-conv[]enients
  []
 
-[30 <./figures/Edimax.jpg>]
+[31 <./figures/Edimax.jpg>]
 Overfull \hbox (1.67732pt too wide) in paragraph at lines 647--664
 []\OT1/pnc/m/n/10.95 Outre les pro-grammes men-tionn[]es ci-dessus, nous avons 
 d[]evelopp[]e notre
  []
 
-[31] <figures/python-environnement.PNG, id=162, 386.94562pt x 291.33844pt>
+[32] <figures/python-environnement.PNG, id=165, 386.94562pt x 291.33844pt>
 File: figures/python-environnement.PNG Graphic file (type png)
 
 <use figures/python-environnement.PNG>
@@ -924,12 +923,26 @@ Overfull \hbox (8.52293pt too wide) in paragraph at lines 667--668
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[32] [33 <./figures/python-environnement.PNG>]
+[33] [34 <./figures/python-environnement.PNG>]
 Chapitre 4.
-[34
+[35
 
 
-] [35] [36] (/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
+] <figures/Client_Server1.pdf, id=177, 597.23125pt x 285.065pt>
+File: figures/Client_Server1.pdf Graphic file (type pdf)
+
+<use figures/Client_Server1.pdf>
+Package pdftex.def Info: figures/Client_Server1.pdf used on input line 699.
+(pdftex.def)             Requested size: 378.42174pt x 180.62714pt.
+ [36 <./figures/Client_Server1.pdf>]
+<figures/Client_Server2.pdf, id=195, 597.23125pt x 421.575pt>
+File: figures/Client_Server2.pdf Graphic file (type pdf)
+
+<use figures/Client_Server2.pdf>
+Package pdftex.def Info: figures/Client_Server2.pdf used on input line 708.
+(pdftex.def)             Requested size: 378.42174pt x 267.12463pt.
+ [37 <./figures/Client_Server2.pdf>] [38]
+(/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2004/09/05 1.3 listings language file
 )
 (./code/motor.java
@@ -951,7 +964,7 @@ File: omlpnc.fd
 )
 LaTeX Font Info:    Font shape `OML/pnc/m/n' in size <10.95> not available
 (Font)              Font shape `OML/cmm/m/it' tried instead on input line 20.
- [37
+ [39
 
 ]
 Overfull \hbox (2.64134pt too wide) in paragraph at lines 38--39
@@ -963,7 +976,7 @@ Overfull \hbox (94.62209pt too wide) in paragraph at lines 56--57
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
-[38]
+[40]
 Overfull \hbox (42.06166pt too wide) in paragraph at lines 57--58
 [][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
@@ -981,7 +994,7 @@ Overfull \hbox (48.63171pt too wide) in paragraph at lines 64--65
 ) (./code/ServoExample.java
 LaTeX Font Info:    Font shape `OML/pnc/m/it' in size <10.95> not available
 (Font)              Font shape `OML/cmm/m/it' tried instead on input line 2.
- [39]
+ [41]
 Overfull \hbox (55.20177pt too wide) in paragraph at lines 9--11
 [][][][][][][][][][][][][][][][][][][][][][] 
  []
@@ -1022,7 +1035,7 @@ Overfull \hbox (107.76219pt too wide) in paragraph at lines 28--29
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
-) [40] (/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
+) [42] (/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2004/09/05 1.3 listings language file
 )
 (./code/gui_1.1.py
@@ -1030,7 +1043,7 @@ Overfull \hbox (134.0424pt too wide) in paragraph at lines 14--15
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
-[41]
+[43]
 Overfull \hbox (55.20177pt too wide) in paragraph at lines 35--36
 [][][][][][][][][][][][][] 
  []
@@ -1040,7 +1053,7 @@ Overfull \hbox (114.33224pt too wide) in paragraph at lines 40--41
 [][][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
-[42]
+[44]
 Overfull \hbox (101.19214pt too wide) in paragraph at lines 55--56
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
@@ -1065,7 +1078,7 @@ Overfull \hbox (15.78145pt too wide) in paragraph at lines 66--67
 [][][][][][][][][][][][][][][] 
  []
 
-[43]
+[45]
 Overfull \hbox (2.64134pt too wide) in paragraph at lines 83--84
 [][][][][][][][][][][][][][][][][][][][] 
  []
@@ -1105,7 +1118,7 @@ Overfull \hbox (15.78145pt too wide) in paragraph at lines 110--111
 [][][][][][][][][][][][][][][][][][][][] 
  []
 
-[44]
+[46]
 Overfull \hbox (173.46272pt too wide) in paragraph at lines 111--113
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
@@ -1150,12 +1163,12 @@ Overfull \hbox (212.88304pt too wide) in paragraph at lines 129--132
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
-[45]
+[47]
 Overfull \hbox (35.49161pt too wide) in paragraph at lines 167--168
 [][][][][][][][][][][][] 
  []
 
-[46]) (./rendu_final.bbl [47]
+[48]) (./rendu_final.bbl [49]
 Underfull \hbox (badness 1248) in paragraph at lines 4--8
 []\OT1/pnc/m/n/10.95 Atef Akremi.  Fastest way to hack rc car h-bridge, juin 20
 12.
@@ -1211,7 +1224,7 @@ Underfull \hbox (badness 1062) in paragraph at lines 34--38
 -duc-tor 7805t
  []
 
-[48
+[50
 
 ]
 Underfull \hbox (badness 1365) in paragraph at lines 65--68
@@ -1225,16 +1238,16 @@ Underfull \hbox (badness 10000) in paragraph at lines 85--89
 wz200-[]a1-[]beewi ,[] fr ,[]
  []
 
-) [49] (./rendu_final.aux) )
+) [51] (./rendu_final.aux) )
 (\end occurred inside a group at level 1)
 
 ### simple group (level 1) entered at line 44 ({)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 6511 strings out of 495059
- 86137 string characters out of 3182031
- 191370 words of memory out of 3000000
- 9516 multiletter control sequences out of 15000+200000
+ 6523 strings out of 495059
+ 86449 string characters out of 3182031
+ 191502 words of memory out of 3000000
+ 9526 multiletter control sequences out of 15000+200000
  24129 words of font info for 61 fonts, out of 3000000 for 9000
  14 hyphenation exceptions out of 8191
  38i,11n,45p,1334b,1823s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -1253,10 +1266,10 @@ fb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></u
 sr/share/texlive/texmf-dist/fonts/type1/urw/ncntrsbk/uncb8a.pfb></usr/share/tex
 live/texmf-dist/fonts/type1/urw/ncntrsbk/uncr8a.pfb></usr/share/texlive/texmf-d
 ist/fonts/type1/urw/ncntrsbk/uncri8a.pfb>
-Output written on rendu_final.pdf (53 pages, 1869234 bytes).
+Output written on rendu_final.pdf (55 pages, 1896506 bytes).
 PDF statistics:
- 274 PDF objects out of 1000 (max. 8388607)
- 179 compressed objects within 2 object streams
+ 309 PDF objects out of 1000 (max. 8388607)
+ 200 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
- 82 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 92 words of extra memory for PDF output out of 10000 (max. 10000000)
 

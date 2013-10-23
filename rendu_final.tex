@@ -674,12 +674,13 @@ sélectionnés par le pilote pour imprimer de tels messages.
 \clearpage
 
 \chapter{Software \\ Deuxième version des système embarqués}
+
 \lettrine{D}{ans} notre projet, nous avons prévu une deuxième version du drone, 
 dans le sens où la première version ne remplissait pas tout à fait les buts que nous 
 nous étions fixés. Cette version, principalement programmée avec le langage Java, 
 nous permet de faire nous même la connexion entre l'ordinateur et le Raspberry Pi.
 Nous avons choisis ce langage pour plusieurs raisons. Tout d'abord, nous avions des notions en Java, 
-ce qui n'est pas négligeable quand on doit choisir un programme, c'est aussi un 
+ce qui n'est pas négligeable. C'est aussi un 
 langage constamment mis à jour et il possède une large communauté, ce qui fait
 que de nombreuses classes existent, notamment du côté des interfaces graphiques,
 sans lesquelles nous aurions de la peine à rendre le programme agréable à 
@@ -688,23 +689,36 @@ que nous avons adopté, nous allons ensuite voir à
 quoi ressemble notre programme Java et ce qu'il fait. Avant de parler
 de la vidéo avec OpenCV. 
 
+\section{Java}
+Le code complet Java est très long et est composé de beaucoup de classes. Plutôt que de tout détailler ou pire, juste mettre le code cru, nous avons sélectionné les thèmes les plus intéressants que nous avons rencontré pendant l'écriture du programme. Nous allons expliquer comment nous avons structuré le système, selon quelles lois et discuter des avantages et des inconvénients.
+
+\subsection{Client/Serveur}
+Le model client-serveur est composé de deux partis: les serveurs qui fournissent un service et les clients qui bénéficient de celui-ci. Un client ne partage pas ses ressources avec les autres, mais profite de celles du serveur. Le Serveur attend qu'un client vienne se connecter et faire des requêtes auxquels il répond. Il doit généralement être capable de gérer plusieurs clients à la fois.
+
+\begin{figure}[h]
+\includegraphics[width=1.0\textwidth]{figures/Client_Server1.pdf}
+\caption[Structure client-serveur]{\label{ClientServer1}Structure client-serveur.}
+\end{figure}
+
+Nous avons établi que la voiture occupe le rôle de serveur qui est exécuté sur le RaspberryPi. Il contrôle les mouvements de la voiture par l'intermède de l'Arduino. Le client peut être n'importe quelle machine sur le réseau local utilisant le côté client du code. Le code est effectivement constitué de deux "main class", c'est à dire des applets, "Server" et "Client". 
+
+Un Thread est initié pour chaque nouvelle demande de connexion. C'est à dire que le serveur peut s'occuper en parallèle des requêtes de différents clients (voir fig. \ref{ClientServer2}). 
+
+\begin{figure}[h]
+\includegraphics[width=1.0\textwidth]{figures/Client_Server2.pdf}
+\caption[Connexion d'un nouveau client]{\label{ClientServer2}Schéma de la procédure suivie à chaque nouvelle connexion.}
+\end{figure}
 
 
-\section{UDP ou TCP}
+\subsection{UDP ou TCP}
+Avant de parler de notre choix, nous allons un peu expliquer ce que sont les protocoles UDP et TCP et leurs différences. UDP et TCP sont deux protocoles de connexion réseau qui permettent d'envoyer des données, (\textit{Packets}), d'un ordinateur à un autre.
 
-Avant de parler de notre choix, expliquons un peu que sont les protocoles UDP et TCP et leurs différences. UDP et TCP sont deux protocoles de connexion wi-fi qui permettent d'envoyer des données (\textit{Packets}) d'un ordinateur à un autre. Un des deux ordinateur sera considéré comme étant un serveur tandis que l'autre sera considéré comme un client. La différence entre le client et le serveur à l'air assez simple à première vue, mais est plus complexe lorsque nous devons l'appliquer. Mai revenons tout d'abord aux différences.
-
-
- %%%%%%% A COMPLETER%%%%%%%%%%%%%%%%
-
-
-
-Le protocole UDP\footnote{\textit{User Datagram Protocol}, soit protocole des datagrammes d'utilisateurs} est un protocole qui n'est pas orienté connexion. En effet, dans notre cas, l'ordinateur envoie des paquets au Raspberry Pi sans le prévenir, ce dernier ne va pas non plus confirmer la réception des paquets. C'est un flux unidirectionnel qui est dû à l'encapsulation des données. En effet, les paquets qui transitent via un protocole UDP ne contiennent que l'adresse IP et pas d'autres informations concernant l'émetteur. Ce qui voudrait dire que le Raspberry Pi ne s'est pas s'il est toujours à portée de l'ordinateur. \\
+Le protocole UDP\footnote{\textit{User Datagram Protocol}, soit protocole des datagrammes d'utilisateurs} est un protocole qui n'est pas orienté connexion.  En effet, dans notre cas, l'ordinateur envoie des paquets au Raspberry Pi sans le prévenir et ce dernier ne confirme pas la réception des paquets. Les paquets qui transitent via un protocole UDP ne contiennent que l'adresse IP et pas d'autres informations concernant l'émetteur. Ce qui voudrait dire que le Raspberry Pi ne sait pas s'il est toujours à portée de l'ordinateur. \\
 Le protocole TCP\footnote{\textit{Transmission Control Protocol}, soit protocole de contrôle des transmissions} est l'opposé de l'UDP, il est orienté connexion. Lorsque l'ordinateur envoie des données au Raspberry Pi, ce dernier est informé de l'arrivée des dites données. Il donne aussi une sorte de reçu qui confirme la réception des packets. S'il y a des fichiers corrompus, l'ordinateur va renvoyer les fichiers manquants. On peut, par analogie, comparer ce protocole comme la communication directe téléphonique.\\
 Dans notre cas, nous choix s'est porté sur le protocole TCP. En effet, il est plus pratique de savoir que l'ordinateur n'envoie plus de données et qu'il faille stopper le véhicule car la connexion est simplement perdue, tandis qu'avec le protocole UDP, nous ne savons pas s'il y a une perte de connexion, puisqu'il n'y a pas eu de connexion.
 
 
-\section{Java}
+
 
 
 \section{OpenCV}
