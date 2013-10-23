@@ -1,11 +1,5 @@
 \begin{thebibliography}{10}
 
-\bibitem{rx2_ex1}
-Atef Akremi.
-\newblock Fastest way to hack rc car h-bridge, juin 2012.
-\newblock
-  \url{http://www.instructables.com/files/deriv/F46/2LOX/H3XME4X0/F462LOXH3XME4X0.LARGE.jpg}.
-
 \bibitem{HC-SR04}
 Cytron Technologies~Sdn. Bhd.
 \newblock User's manual, ??
@@ -18,17 +12,6 @@ Metycea blog.
   2008.
 \newblock
   \url{http://blog.metycea.com/actus-internet/definition-qu-est-ce-que-l-open-source-1-4.html}.
-
-\bibitem{rx2_ex3}
-Talking Electronics.
-\newblock Transmitters, Juillet 2011.
-\newblock
-  \url{http://www.talkingelectronics.com/projects/27MHz%20Transmitters/imagesP2/4ChRx2B.jpg}.
-
-\bibitem{rx2_ex2}
-Jon from jbproject.
-\newblock Wifi robot, août 2008.
-\newblock \url{http://www.jbprojects.net/projects/wifirobot/rx2.jpg}.
 
 \bibitem{7805T}
 Futurlec.
