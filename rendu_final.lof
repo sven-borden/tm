@@ -18,5 +18,8 @@
 \contentsline {figure}{\numberline {3.2}{\ignorespaces \textit {Dongle} Edimax EW7811Un}}{31}
 \contentsline {figure}{\numberline {3.3}{\ignorespaces Interface graphique Python}}{34}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {4.1}{\ignorespaces Structure client-serveur}}{36}
-\contentsline {figure}{\numberline {4.2}{\ignorespaces Connexion d'un nouveau client}}{37}
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Structure client-serveur}}{37}
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Connexion d'un nouveau client}}{38}
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Gestion de requ\IeC {\^e}te au serveur}}{41}
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Analogie \IeC {\`a} la programmation \IeC {\'e}v\IeC {\'e}nementielle}}{42}
+\contentsline {figure}{\numberline {4.5}{\ignorespaces Ev\IeC {\'e}nements dans notr architecture}}{43}

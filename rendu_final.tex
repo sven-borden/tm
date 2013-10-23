@@ -1,4 +1,5 @@
 \documentclass[a4paper,11pt]{report}
+\usepackage{color}
 \usepackage[french]{babel}
 \usepackage{graphicx}
 \graphicspath{{figures/}}
@@ -14,6 +15,7 @@
 \usepackage{multirow}
 \usepackage{listings}%%pour faire des listes
 \usepackage{lettrine}%%lettrine (grosse lettre d'entrée de chapitre)
+
 %\pagestyle{fancy} %: Numérotation des pages.
 \lhead{Sven Borden \& Eric Brunner}% :	On personnalisera cette en-tête. haut de page gauche
 \chead{2M03} %: On personnalisera cette en-tête. haut de page centre
@@ -37,6 +39,34 @@
 \setlength{\footskip}{3cm} % Bas de page + séparation
 %\setlength{\textheight}{708pt} % Hauteur de la zone de texte (25cm)
 \renewcommand{\baselinestretch}{1.5}
+
+\definecolor{colKeys}{rgb}{0,0,1} 
+\definecolor{colIdentifier}{rgb}{0,0,0} 
+\definecolor{colComments}{rgb}{0,0.5,1} 
+\definecolor{colString}{rgb}{0.6,0.1,0.1} 
+
+\lstset{%configuration de listings 
+float=hbp,% 
+basicstyle=\ttfamily\small, % 
+identifierstyle=\color{colIdentifier}, % 
+keywordstyle=\color{colKeys}, % 
+stringstyle=\color{colString}, % 
+commentstyle=\color{colComments}, % 
+columns=flexible, % 
+tabsize=2, % 
+frame=trBL, % 
+frameround=tttt, % 
+extendedchars=true, % 
+showspaces=false, % 
+showstringspaces=false, % 
+numbers=left, % 
+numberstyle=\tiny, % 
+breaklines=true, % 
+breakautoindent=true, % 
+captionpos=b,% 
+xrightmargin=-2cm, % 
+xleftmargin=-2cm 
+} 
 
 \begin{document}
 
@@ -696,7 +726,7 @@ de la vidéo avec OpenCV.
 \section{Java}
 Le code complet Java est très long et est composé de beaucoup de classes. Plutôt que de tout détailler ou pire, juste mettre le code cru, nous avons sélectionné les thèmes les plus intéressants que nous avons rencontré pendant l'écriture du programme. Nous allons expliquer comment nous avons structuré le système, selon quelles lois et discuter des avantages et des inconvénients.
 
-\subsection{Client/Serveur}
+\subsection{Client/Serveur\label{ClientServeur}}
 Le model client-serveur est composé de deux partis: les serveurs qui fournissent un service et les clients qui bénéficient de celui-ci. Un client ne partage pas ses ressources avec les autres, mais profite de celles du serveur. Le Serveur attend qu'un client vienne se connecter et faire des requêtes auxquels il répond. Il doit généralement être capable de gérer plusieurs clients à la fois.
 
 \begin{figure}[h]
@@ -714,17 +744,96 @@ Un Thread est initié pour chaque nouvelle demande de connexion. C'est à dire q
 \end{figure}
 
 
-\subsection{UDP ou TCP}
+\subsection{UDP ou TCP\label{UDPTCP}}
 Avant de parler de notre choix, nous allons un peu expliquer ce que sont les protocoles UDP et TCP et leurs différences. UDP et TCP sont deux protocoles de connexion réseau qui permettent d'envoyer des données, (\textit{Packets}), d'un ordinateur à un autre.
 
-Le protocole UDP\footnote{\textit{User Datagram Protocol}, soit protocole des datagrammes d'utilisateurs} est un protocole qui n'est pas orienté connexion.  En effet, dans notre cas, l'ordinateur envoie des paquets au Raspberry Pi sans le prévenir et ce dernier ne confirme pas la réception des paquets. Les paquets qui transitent via un protocole UDP ne contiennent que l'adresse IP et pas d'autres informations concernant l'émetteur. Ce qui voudrait dire que le Raspberry Pi ne sait pas s'il est toujours à portée de l'ordinateur. \\
-Le protocole TCP\footnote{\textit{Transmission Control Protocol}, soit protocole de contrôle des transmissions} est l'opposé de l'UDP, il est orienté connexion. Lorsque l'ordinateur envoie des données au Raspberry Pi, ce dernier est informé de l'arrivée des dites données. Il donne aussi une sorte de reçu qui confirme la réception des packets. S'il y a des fichiers corrompus, l'ordinateur va renvoyer les fichiers manquants. On peut, par analogie, comparer ce protocole comme la communication directe téléphonique.\\
-Dans notre cas, nous choix s'est porté sur le protocole TCP. En effet, il est plus pratique de savoir que l'ordinateur n'envoie plus de données et qu'il faille stopper le véhicule car la connexion est simplement perdue, tandis qu'avec le protocole UDP, nous ne savons pas s'il y a une perte de connexion, puisqu'il n'y a pas eu de connexion.
+e protocole UDP\footnote{\textit{User Datagram Protocol}, soit protocole des datagrammes d'utilisateurs} est un protocole qui n'est pas orienté connexion. Les paquets qui transitent via un protocole UDP ont l'adresse IP du récepteur, comme la poste, mais il n'y a aucune garantie que les paquets soient bien arrivés sans parler de leur ordre. Par contre, il n'y a pas le souci de perte de connexion puisque il n'y en a pas. Ce protocol est particulièrement adapté pour la transmission de vidéo. Pour contrôler les mouvements du véhicule il est impératif qu'il sache à tous moment si il y a au moins un client qui est au contrôle, au risque que le véhicule soit livré à lui même. Ici rentre en jeu le protocole TCP. 
+
+Le protocole TCP\footnote{\textit{Transmission Control Protocol}, soit protocole de contrôle des transmissions} est l'opposé de l'UDP, il est orienté connexion. Lorsque le client envoie des données au serveur, ce premier est informé de l'arrivée des dites données. Il y a donc un système de reçu qui confirme la réception des packets. S'il y a des fichiers corrompus, l'expéditeur va renvoyer les fichiers manquants. On peut, par analogie, comparer ce protocole à la communication téléphonique. On remarque assez rapidement quand il y a une coupure dans la ligne.\\
+
+\section{Java}
+Le code complet Java est très long et est composé de beaucoup de classes. Plutôt que de tout détailler ou pire, juste mettre le code cru, nous avons sélectionné les thèmes les plus intéressants que nous avons rencontré pendant l'écriture du programme. Nous allons expliquer comment nous avons structuré le système, selon l'architecture et le protocole discutés en section \ref{ClientServeur} et \ref{UDPTCP}.
+
+\subsection{Gestion des Requêtes de connexion}
+Pour établir une connexion avec le serveur, un client va ouvrir un port de communication avec les serveur, appelé "Socket". Une fois cette opération complétée avec succès, il sera possible d'obtenir les "Streams"\footnote{Tuyau pour transmettre des bytes} entrant et sortant pour effectivement envoyer des données.
+
+\lstinputlisting[language=Java]{code/JavaExConnection.txt}
+
+De l'autre côté, le serveur attend les demandes de connexion, ceci grâce à la classe welcomeSocket qui s'occupe de ce genre de requêtes. Une fois la requête de connexion acceptée le socket de communication est récupéré et un thread est lancé avec en argument le socket de communication pour pouvoir poursuivre l'échange de données. Finalement, le thread est stocké dans une liste, ainsi quand le serveur doit envoyer un message aux clients il itère simplement à travers la liste de thread.
+
+ \lstinputlisting[language=Java]{code/JavaExConnectionServer.txt}
+ 
+ Puisque il est dans une boucle while, il se remet en attente de la prochaine requête.
+ 
+ \subsection{gestion des Requêtes suivantes}
+ Le Client dispose d'une variété de requêtes prédifinies. A titre d'exemple on va définir des pseudos requêtes avancer, reculer et s'arrêter. De plus, lié à la requête vient s'ajouter une option pour donner plus de précision sur, dans ce cas, la vitesse. Une pseudo requête se présenterait alors sous cette forme:
+ 
+ \indent{Avancer(20)}
+ 
+ Ce qui voudrait dire: "Rouler vers l'avant à 20cm/s".  Pour bien comprendre la demande d'un client le serveur a également cette même liste de requêtes prédéfinies dont il sait s'occuper. Une fois que le serveur a trouvé la requête dans sa liste, il exécute l'opération prévue pour cette situation. Le schéma \ref{RequestHandler} illustre cette procédure.
+  Le tableau de requêtes est enfait un HashMap, les identifiants des requêtes se trouvent à gauche en majuscule et les références aux fonctions à exécuter se trouvent à droite.
+ 
+ \lstinputlisting[language=Java]{code/JavaExRequestList}
+ 
+ \begin{figure}[!h]
+\includegraphics[width=1.0\textwidth]{figures/RequestHandler.pdf}
+\caption[Gestion de requête au serveur]{\label{RequestHandler}Schéma de la procédure suivie pour une requête au serveur.}
+\end{figure}
+ 
+\subsection{librxtx}
+
+Afin de pouvoir communiquer entre l'Arduino et le RaspberryPi via USB, nous avons fait appel à une librairie java supplémentaire qu'il a fallu installer. librxtx s'occupe de gérer les ports de communication usb et d'effectivement établir une communication avec un appareil connecté par ce moyen.
+
+Grâce à cette librairie nous avons pu écrire notre propre classe qui permet de facilement sonder le système pour un appareil tel que l'arduino, établir une connection à cette appareil et lui envoyer des données. Le système de réception de messages usb est basé sur un model évènementiel, expliqué dans la section \ref{Event}.
+
+\subsection{Evènements usb et écoute d'un Stream\label{Event}}
+
+La programmation événementielle permet dans certains cas d'améliorer l'efficacité d'une application. Elle est basée sur des évènements ou changements d'états qui déclenchent des autres morceaux de code. Ce type de programmation s'oppose à la programmation dite séquentielle.
+
+Pour illustrer cette architecture, imaginons deux téléphones, l'un est dépourvu de haut-parleurs (voir fig.\ref{ChatExample}). Pour chatter, l'utilisateur du téléphone déféctueux devra régulièrment contrôler si il a reçu un nouveau message et souvent il contrôlera pour rien, tandis que l'autre sera averti d'un nouveau message (changement d'état, événement!) et contrôlera uniquement à ce moment là.  
+
+\begin{figure}[h]
+\includegraphics[width=1.0\textwidth]{figures/EventProgramming1.pdf}
+\caption[Analogie à la programmation événementielle]{\label{ChatExample}L'utilisateur du téléphone sans haut-parleur contrôlera régulièrement son téléphone et souvent pour rien.}
+\end{figure}
+
+Notre code java utilise ce système pour tout ce qui concerne la réception de message, donc l'écoute de Stream, c'est à dire que dès qu'un message est reçu, aussi bien par le client que par le serveur, le code pour gérer ce message est exécuté. L'interface graphique (GUI) est basée par principe sur des événements, par exemple: "boutton pressé", "champ de text modifié", "touche enfoncée".
+
+\begin{figure}[h]
+\includegraphics[width=1.0\textwidth]{figures/EventProgramming2.pdf}
+\caption[Evénements dans notr architecture]{\label{SuiteEvent}Cette figure illustre la suite d'événements possible dans l'architecture de notre projet}
+\end{figure}
+\section{C++ et vidéo}
+
+Après avoir parlé de ce que faisait notre code Java, nous allons ici aborder la partie touchant à la vidéo, et par conséquent, au code C++.  Comme dit précédemment, nous utilisons le protocole de réseau UDP  pour transmettre la vidéo. La raison du choix de ce langage réside dans le fait que c'est un langage qui est exécuté beaucoup plus rapidement que un langage de haut niveau tel que Java (la communauté considère que cette différence de rapidité équivaut à un facteur trois). Le programme en C++ est un programme invisible par l'utilisateur. En effet, il fonctionne en arrière plan. Voici le plan du programme:
+\begin{enumerate}
+\item Ouverture d'une socket du côté du Raspberry Pi et de l'ordinateur distant
+\item Capture du flux vidéo de la caméra connectée à la Framboise
+\item Compression du flux video
+\item Envoi du flux vers l'ordinateur distant
+\item Réception et décompression des packets reçus
+\item Affichage de l'image dans le programme Java
+\end{enumerate}
 
 
 
+\subsection{Client serveur}
 
-\section{C++}
+Nous allons maintenant aborder une petite présentation du code pour comprendre comment fonctionne notre client serveur. Par soucis de simplicité, nous n'allons que parler du code écrit pour Windows. Mais nous avons annexé le code fonctionnant avec les système UNIX en annexe [annexe à venir].
+%TODO Rajouter l'annexe du code client serveur en c++ pour UNIX
+
+Tout d'abord, il faut indiquer quelles librairies nous utilisons, c'est les lignes suivantes. La première ligne permet d'utiliser les socket Windows. Les autres lignes sont des librairies standards en C++.
+\lstinputlisting[language=C++, firstline=3, lastline=6]{code/client-exemple.cpp}
+
+Une fois que ceci est fait, nous initialisions quelques variables dont il n'est pas utile de préciser à quoi elle vont servir. Ensuite, nous initialisons deux objets aux deux lignes ci-dessous. Nous verrons un peu plus tard à quoi elle servent. 
+\lstinputlisting[language=C++, firstline=16, lastline=17]{code/client-exemple.cpp}
+Le premier objet va se voir attribuer les données contenues dans la fonction \textbf{socket()}
+\lstinputlisting[language=C++, firstline=34, lastline=35]{code/client-exemple.cpp}
+La fonction \textbf{socket(famille, type, protocole)} possède 3 arguments. Le premier, \textbf{AF\_INET} est la famille de protocole utilisée, elle utilise une adresse internet IPV4, c'est a dire qui est encapsulée sur 4 octets. Le deuxième argument détermine le type de communication à faire, dans notre cas, \textbf{SOCK\_DGRAM} signifie que nous sommes en UDP. Le troisième argument permet de spécifier un protocole qui permet de fournir un service désiré, dans notre cas, nous n'avons besoin de rien, il est donc à $0$. \textbf{socketId} va donc recevoir les argument de la fonction \textbf{socket()}. Ils seront utilisés un peu plus tard.\\
+
+\lstinputlisting[language=C++, firstline=43, lastline=45]{code/client-exemple.cpp}
+
+
 
 \subsection{OpenCV}
 
@@ -737,25 +846,25 @@ Dans notre cas, nous choix s'est porté sur le protocole TCP. En effet, il est p
 
 \section{Sketchbook}
 
-\subsection{Sketch exemple pour le moteur}
-\lstinputlisting[language=Java]{code/motor.java}
-
-\subsection{Sketch exemple pour le servo \label{SketchExServo}}\cite{ServoSweep}
-\lstinputlisting[language=Java]{code/ServoExample.java}
-
-\textbf{Commentaires}
-
-On commence par inclure la classe Servo, puis on crée un objet
-\emph{Servo}. Dans la fonction \emph{setup} du programme, on lie l'objet
-\emph{myservo} au pin neuf de l'arduino. Ensuite, dans la fonction \emph{loop}, on
-fait varier la position du servo grâce \`a la méthode \emph{write}. Un
-d\'elai (le programme s'arrête en ce point) de 15ms pour permettre au servo-moteur
-d'atteindre la position demandée. Etant donnée que cette opération est
-ittérée plusieurs fois au moyen d'une boucle \emph{for}, on pourra voir le
-servo décrire un mouvement de balayage.
-
-\subsection{Code python sur le Raspberry Pi \label{code python}}
-\lstinputlisting[language=python]{code/gui_1.1.py}
+%\subsection{Sketch exemple pour le moteur}
+%\lstinputlisting[language=Java]{code/motor.java}
+%
+%\subsection{Sketch exemple pour le servo \label{SketchExServo}}\cite{ServoSweep}
+%\lstinputlisting[language=Java]{code/ServoExample.java}
+%
+%\textbf{Commentaires}
+%
+%On commence par inclure la classe Servo, puis on crée un objet
+%\emph{Servo}. Dans la fonction \emph{setup} du programme, on lie l'objet
+%\emph{myservo} au pin neuf de l'arduino. Ensuite, dans la fonction \emph{loop}, on
+%fait varier la position du servo grâce \`a la méthode \emph{write}. Un
+%d\'elai (le programme s'arrête en ce point) de 15ms pour permettre au servo-moteur
+%d'atteindre la position demandée. Etant donnée que cette opération est
+%ittérée plusieurs fois au moyen d'une boucle \emph{for}, on pourra voir le
+%servo décrire un mouvement de balayage.
+%
+%\subsection{Code python sur le Raspberry Pi \label{code python}}
+%\lstinputlisting[language=python]{code/gui_1.1.py}
 
 
 
@@ -765,5 +874,7 @@ servo décrire un mouvement de balayage.
 
 
 %}
+
+\end{document}
 
 \end{document}
