@@ -27,6 +27,7 @@ From The Open~Source Initiative.
 \bibitem{l293dDataSheet}
 Texas Instrument.
 \newblock L293, l293d quadruple half-h drivers, Juin 2002.
+\newblock \url{http://idmax.free.fr/Aide/Stepper/l293.pdf}.
 
 \bibitem{adafruitMotorShield}
 Ladyada.
@@ -52,7 +53,7 @@ Arduino Team.
 \bibitem{microcontroleur}
 From~Wikipedia the~free encyclopedia.
 \newblock Microcontrôleur, ??
-\newblock \url{http://fr.wikipedia.org/wiki/Microcontr%C3%B4leur}.
+\newblock \url{http://fr.wikipedia.org/wiki/Microcontr\%C3\%B4leur}.
 
 \bibitem{RaspberryPiCaracteristiques}
 From~Wikipedia the~free encyclopedia.
@@ -63,6 +64,11 @@ From~Wikipedia the~free encyclopedia.
 From~Wikipedia the~free encyclopedia.
 \newblock Servo control, Octobre 2012.
 \newblock \url{http://en.wikipedia.org/wiki/Servo_control}.
+
+\bibitem{EventProgramming}
+From~Wikipedia the~free encyclopedia.
+\newblock Event-driven programming, Octobre 2013.
+\newblock \url{http://en.wikipedia.org/wiki/Event-driven_programming}.
 
 \bibitem{beewi}
 BeeWi~Simply wireless.
