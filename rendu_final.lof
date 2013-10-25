@@ -13,14 +13,18 @@
 \contentsline {figure}{\numberline {2.6}{\ignorespaces Sch\IeC {\'e}ma complet du PCB }}{22}
 \contentsline {figure}{\numberline {2.7}{\ignorespaces Design final du PCB}}{23}
 \contentsline {figure}{\numberline {2.8}{\ignorespaces Utilisation de la diode Zener}}{24}
-\contentsline {figure}{\numberline {2.9}{\ignorespaces Signal modul\IeC {\'e}}}{27}
-\contentsline {figure}{\numberline {2.10}{\ignorespaces H-Bridge}}{29}
+\contentsline {figure}{\numberline {2.9}{\ignorespaces Installation du servo (1)}}{27}
+\contentsline {figure}{\numberline {2.10}{\ignorespaces Installation du servo (2)}}{28}
+\contentsline {figure}{\numberline {2.11}{\ignorespaces Signal modul\IeC {\'e}}}{29}
+\contentsline {figure}{\numberline {2.12}{\ignorespaces H-Bridge}}{30}
+\contentsline {figure}{\numberline {2.13}{\ignorespaces HC-SR04, senseur de distance}}{31}
+\contentsline {figure}{\numberline {2.14}{\ignorespaces Fonctionnement du HC-SR04 en fonction du temps}}{33}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {3.1}{\ignorespaces Environnement de programmation Arduino}}{33}
-\contentsline {figure}{\numberline {3.2}{\ignorespaces Interface graphique Python}}{36}
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Environnement de programmation Arduino}}{36}
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Interface graphique Python}}{39}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {4.1}{\ignorespaces Structure client-serveur}}{39}
-\contentsline {figure}{\numberline {4.2}{\ignorespaces Connexion d'un nouveau client}}{40}
-\contentsline {figure}{\numberline {4.3}{\ignorespaces Gestion de requ\IeC {\^e}te au serveur}}{43}
-\contentsline {figure}{\numberline {4.4}{\ignorespaces Analogie \IeC {\`a} la programmation \IeC {\'e}v\IeC {\'e}nementielle}}{44}
-\contentsline {figure}{\numberline {4.5}{\ignorespaces Ev\IeC {\'e}nements dans notr architecture}}{45}
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Structure client-serveur}}{43}
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Connexion d'un nouveau client}}{44}
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Gestion de requ\IeC {\^e}te au serveur}}{47}
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Analogie \IeC {\`a} la programmation \IeC {\'e}v\IeC {\'e}nementielle}}{48}
+\contentsline {figure}{\numberline {4.5}{\ignorespaces Ev\IeC {\'e}nements dans notr architecture}}{49}

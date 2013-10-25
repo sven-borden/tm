@@ -87,7 +87,7 @@ xleftmargin=-2cm
 \section*{Avant-propos}
 \addcontentsline{toc}{section}{\protect\numberline{}Avant-propos}
 
-Ce dossier est le résultat de onze mois de recherches effectuées dans le cadre du travail de maturité du gymnase de Morges. Ayant déjà quelques notions en informatique, nous nous sommes dirigés  vers un domaine parallèle, la robotique. Le choix de ce sujet est dérivé des quadcopter (hélicoptères à quatres hélices). Bien que très attrayant, nous avons estimé que le travail de réalisation mécanique d'un drone volant risquait de demander trop de ressources économiques et temporelles. Nous avons préféré garder du temps pour l'aspect informatique.
+Ce dossier est le résultat de onze mois de recherches effectuées dans le cadre du travail de maturité du gymnase de Morges. Ayant déjà quelques notions en informatique, nous nous sommes dirigés  vers un domaine parallèle, la robotique. Le choix de ce sujet est dérivé des quadcopter (hélicoptères à quatre hélices). Bien que très attrayant, nous avons estimé que le travail de réalisation mécanique d'un drone volant risquait de demander trop de ressources économiques et temporelles. Nous avons préféré garder du temps pour l'aspect informatique.
 
 %Plutot que de se lancer dans un projet dont nous savons que nous n'allons pas réussir à terminer dans les délais, nous nous sommes plutôt focalisé sur les véhicules terrestres ce qui nous a permis d'aller beaucoup plus loin que le quadcopter.
 
@@ -95,7 +95,7 @@ Ce dossier est le résultat de onze mois de recherches effectuées dans le cadre
 
 \section*{Remerciements}
 \addcontentsline{toc}{section}{\protect\numberline{}Remerciements}
-Ce projet n'aurait pu aboutir sans l'aide de nombreuses personnes. Voici l'occasion de les remercier:  Mr. Julien Dominski pour le suivi qu'il a fait pour nous ainsi que pour ses conseils en informatiques qui nous ont été grandement utiles. Mr. Denis Rochat et Mr. Phillipe Rochat pour leur disponibilité, leurs renseignements ainsi que les prêts matériels. Mr. Jean Rossier, Karl Kangur, Michaël Bolay et Mr. Marco Pagnamenta pour leurs conseils techniques, surtout à propos des plaques électroniques à imprimer. Mr. Frederic Genevey ainsi que son site edurobot.ch pour avoir promu notre projet sur son site internet. Merci à Mr. Frédéric Chaberlot pour ses prêts matériels. Mme Pauline Pidoux pour nous avoir aidé lors de la rédaction de ce travail et nous tenions aussi à remercier Stefano Varricchio pour ses informations utiles.
+Ce projet n'aurait pu aboutir sans l'aide de nombreuses personnes. Voici l'occasion de les remercier:  Mr. Julien Dominski pour le suivi qu'il a fait pour nous ainsi que pour ses conseils en informatiques qui nous ont été grandement utiles. Mr. Denis Rochat et Mr. Phillipe Rochat pour leur disponibilité, leurs renseignements ainsi que les prêts matériels. Mr. Jean Rossier, Karl Kangur, Michaël Bolay et Mr. Marco Pagnamenta pour leurs conseils techniques, surtout à propos de la plaque électronique à imprimer. Mr. Frederic Genevey ainsi que son site edurobot.ch pour avoir promu notre projet sur son site internet. Merci à Mr. Frédéric Chaberlot pour ses prêts matériels. Merci à Chloé Berthet pour ses corrections orthographiques. Nous tenions aussi à remercier Stefano Varricchio pour ses informations utiles.
 
 \clearpage
 
@@ -163,7 +163,7 @@ servo et senseurs sera spécifié dans le chapitre suivant.
 \end{figure}
 
 \section{Arduino}
-L'Arduino \label{Arduino} \cite{Arduino} est un micro-contrôleur \textit{Open Source}, ce qui veut dire que tout le monde peut non seulement avoir accès aux plans et aux codes, mais peut aussi les modifier. Ce micro-contrôleur se programme avec un langage proche du C. 
+L'Arduino \label{Arduino} \cite{Arduino} est un micro-contrôleur \textit{Open Source}, ce qui veut dire que tout le monde peut non seulement avoir accès aux plans et aux codes, mais peut aussi les modifier.\cite{openSource} Ce micro-contrôleur se programme avec un langage proche du C. 
 
 
 \subsection{Choix du type d'Arduino}
@@ -236,7 +236,9 @@ Wi-Fi \footnote{Le modèle utilisé est le suivant: EW7811Un fabriqué par
 \end{center}
 \end{figure} 
 
+\section{Webcam}
 
+La webcam utilisée dans notre projet est tout à fait standard. D'ailleurs, la grande majorité des caméras usb récentes pourraient fonctionner. Il faut juste s'assurer qu'elles utilisent le driver uvc (Usb Vidéo Class)\cite{uvc}. Le model est la c270 de Logitech qui a une résolution de 720p.
 
 \chapter{La mécanique et l'électronique}
 
@@ -497,6 +499,21 @@ raison de géométrie.\footnote{voir :
 http://en.wikipedia.org/wiki/Ackermann\_steering\_geometry sur
 ``Ackerman steering''}
 
+Le montage final est illustré par les figures (\ref{InstallServo}) et (\ref{InstallServo2}).
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.9\textwidth]{figures/InstallationServo.jpg}
+    \caption[Installation du servo (1)]{\label{InstallServo} Vue frontale du montage pour le système de direction. 
+    }
+\end{figure}
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.6\textwidth, angle = 90]{figures/InstallationServo2.jpg}
+    \caption[Installation du servo (2)]{\label{InstallServo2} Vue aérienne du montage pour le système de direction, avec le couvercle entr'ouvert. 
+    }
+\end{figure}
 %\subsection{Géométrie d'Ackermann}
 %%TODO
 %http://en.wikipedia.org/wiki/Ackermann_steering_geometry
@@ -519,12 +536,12 @@ pourrait d'avantage éclairer le lecteur.
 \end{figure}
 
 Comme l'on peut voir, le dit signal, est form\'e de hauts et de
-bas. Lorsqu'il est ``bas'', cela veut dire que la tension est basse ou égale
+bas. Lorsqu'il est \emph{BAS}, cela veut dire que la tension est basse ou égale
 à 0V. Lorsqu'il est
-``haut'', cela veut dire que la tension est a une valeur définie auparavant,
-standard, différente de 0V. Dans notre cas, le ``haut'' est à 5V (standard
+\emph{HAUT}, cela veut dire que la tension est a une valeur définie auparavant,
+standard, différente de 0V. Dans notre cas, le \emph{HAUT} est à 5V (standard
 pour le modélisme et l'électronique en général). On appelle la
-période pendant laquelle le signal est ``haut'' une pulsation.
+période pendant laquelle le signal est \emph{HAUT} une pulsation.
 
 Chaque début de pulsation est séparé par un temps bien défini de
 20ms. Ce qui peut varier d'une pulsation \`a l'autre, donc ce qui informe le
@@ -611,12 +628,52 @@ l'arr\^et. Quand ils sont \'equivalents, le moteur est en marche, dans un sens
 ou dans l'autre.\normalsize
 \end{table}
 
+\section{Senseur de Distance}
+
+\begin{figure}[h!]
+\centering
+\includegraphics[width=0.5\textwidth]{figures/HC-SR04.jpg}
+    \caption[HC-SR04, senseur de distance]{\label{PingSensor}Le senseur de distance ultrasonic HC-SR04}
+\end{figure}
+
+Nous utilisons un senseur de distance nommé HC-SR04. Son fonctionnement est basé sur l'émission puis la détection d'ultrassons. En d'autres termes, c'est un sonar. Les dauphins et les chauve-souris utilisent le même système pour s'orienter. Son spectre d'oppération s'étend de 2 à 400cm et n'est pas influencé par les conditions de lumière. Une matière avec des propriétés sonores particulières, tel que le tissus, peuvent biaiser les mesures du senseur.\cite{HC-SR04}
+
+L'idée, c'est que les senseurs puissent nous apporter des informations supplémentaires à celles apportées par la caméra sur l'environnement dans lequel se trouve le véhicule. De plus, c'est de l'information simple, juste une distance, un entier, donc la transmission de cette donnée est très rapide par rapport à celle d'une image vidéo.
+
+Quelques caractéristiques intéressantes:
+\begin{enumerate}
+\item Voltage de fonctionnement: 5V
+\item Courrant en veille: $<$ 2mA
+\item Courrant en utilisation: 15mA
+\item Angle de mesure efficace: $<$ 15°
+\item Angle de mesure total: 30°
+\item Spectre d'opération: 2-400cm
+\item résolution: 0.3cm
+\item Dimensions: 45mm x 20mm x 15mm
+\end{enumerate}
+
+La figure (\ref{PingSensorTimingDiagram}) montre tout d'abord le signal à donner au senseur pour qu'il lance l'émission de la pulsation ultrasson, soit un signal \emph{HAUT} de 10$u$s. Ensuite, le senseur va effectivement émettre un signal ultrassonic modulé. Lorsqu'il reçoit le son en retour, le senseur va donner un signal \emph{HAUT} de longueure proportionelle au temps qu'il a attendu pour recevoir l'écho.
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.9\textwidth]{figures/HC-SR04-timing-diagram.png}
+    \caption[Fonctionnement du HC-SR04 en fonction du temps]{\label{PingSensorTimingDiagram}Fonctionnement du HC-SR04 en fonction du temps}
+\end{figure}
+
+\subsection{programmation pour utiliser le senseur}
+
+Le code Arduino exemple se trouve en annexe, section \ref{EXcodeHC-SR04}. Comme expliqué précédemment, l'Arduino va recevoir un signal d'une longueure dans le temps proportionelle à la distance mesurée par le senseur. Plus précisément, c'est le temps $t$ en microsecondes que le senseur a pris pour recevoir l'écho en retour. Sachant que la vitesse du son est de 343.5m/s (donc le temps pour franchir 1cm équivaut à 29.1 us)  et que il doit faire un allé retour du véhicule à l'obstacle, on en déduit que la distance $d$ en fonction du temps s'écrit comme suit:
+
+\begin{equation}
+d(t)=\frac{t}{2*29.1}
+\end{equation}
+
 
 \section{Coût des composants}
 Le tableau \ref{TableCout} contient les éléments clefs que nous avons utilisé pour construire notre drone.
 
 \begin{centering}
-\begin{table}
+\begin{table}[ht]
 \begin{tabular}{| l | c | r |}
 \hline
 Composant & Quantité & Prix [CHF] \\
@@ -660,8 +717,10 @@ total & 10 & 179.60\\
 \chapter{Software \\  Première version des systèmes embarqués}
 %\addcontentsline{toc}{chapter}{\protect\numberline{}\normalsize Software Première version des systèmes embarqués}
 
+\lettrine{L}{a} première version du software consistait en une étape préliminaire dont le but était de prouver qu'on pouvait contrôler la voiture à distance par un réseau local wi-fi. Sa simplicité relative réside dans le fait que nous avons légué tout ce qui est transmission de donées par le réseau à un logiciel tierce. Nous nous sommes surtout occupés ici de la communication Raspberry Pi, Arduino par USB et de trouver une première solution pour transmettre la vidéo.
+
 \section{Software de l'Arduino}
-\lettrine{P}{our} programmer l'Arduino, nous utilisons le logiciel dédié, \textit{Arduino IDE}\footnote{IDE signifie \textit{Integrated Development Environment}. C'est une ensemble d'outils qui sont mis à la disposition des programmeurs afin de simplifier et augmenter leur productivité.} (fig: \ref{Environnement Arduino}). C'est un environnement \textit{open source}\footnote{Terme de \textit{Open source}\cite{openSource} signifie littéralement "Libre de droits", ceci indique donc qu'un logiciel \textit{Open source} permet à n'importe qui d'avoir accès au code source dans son intégralité. "L'Open Source est un monde de partages où chacun peut apporter une pierre à l'édifice pour améliorer encore et toujours les solutions retenues"\cite{OpenSourceCit}} qui fonctionne sur Windows, Linux et Mac OS X. Il a été écrit en Java et est basé sur le logiciel Processing.
+Pour programmer l'Arduino, nous utilisons le logiciel dédié, \textit{Arduino IDE}\footnote{IDE signifie \textit{Integrated Development Environment}. C'est une ensemble d'outils qui sont mis à la disposition des programmeurs afin de simplifier et augmenter leur productivité.} (fig: \ref{Environnement Arduino}). C'est un environnement \textit{open source} qui fonctionne sur Windows, Linux et Mac OS X. Il a été écrit en Java et est basé sur le logiciel Processing.
 \begin{figure}[h!]
 \begin{center}
 \includegraphics[scale=0.5]{arduino-environnement-1}\\
@@ -688,18 +747,16 @@ Au niveau software, nous utilisons un type de partage sécurisé entre deux ordi
 Guvcview\label{Guvcview} est un software permettant d'enregistrer des séquences vidéos ou des images, il fournit aussi une image de contrôle, que nous utilisons dans la première version du drone. Ce logiciel très facile d'utilisation permet d'avoir près de sept images par secondes lors d'une connexion \textit{ssh} avec une résolution d'environ 240x160 pixels. L'inconvénient de ce logiciel est que l'image de contrôle ne peut pas être affichée seule, elle s'accompagne toujours du panneau de réglages. De plus, il y a un temps de latence d'environ 700ms. 
 
 \section{Python}
-Outre les programmes mentionnés ci-dessus, nous avons développé notre propre
-code python (annexe: \ref{code python}) qui permet de contrôler le
+Outre les programmes mentionnés auparavant, nous avons développé notre propre
+code python qui permet de contrôler le
 véhicule. L'interface graphique est très simple
 (fig: \ref{python environnement}). Il s'agit simplement d'une fenêtre qui est à
 l'écoute du clavier et qui, lorsque l'utilisateur presse une touche, va
 envoyer le caractère à l'Arduino via le port de communication
 \textit{Serial}. L'Arduino va ensuite, grâce à son propre code définir quelle action le
 véhicule doit faire. Ce programme permet non seulement de choisir la direction
-à prendre, mais aussi de régler l'angle de braquage ou la vitesse maximale. Il
-affiche entre autre les messages d'erreur ainsi que des informations à propos
-de la vitesse maximale ou du braquage maximal. Ce programme ne prend pas en
-compte l'utilisation de capteur, tel que capteur de distance. Il permet
+à prendre, mais aussi de régler l'angle de braquage ou la vitesse maximale. Le programme ne prend pas en
+compte l'utilisation de capteurs, tel que le capteur de distance. Il permet
 simplement de diriger le véhicule. Une zone de texte non éditable par
 l'utilisateur permet d'afficher des messages, avertissant, par exemple, que le
 pilote a atteint le braquage maximal. Le programme n'est pas conscient de
@@ -709,7 +766,7 @@ sélectionnés par le pilote pour imprimer de tels messages.
 \begin{center}
 \begin{figure}[!h]
 \includegraphics[scale=1]{python-environnement}\label{python environnement}
-\caption[Interface graphique Python]{Fenêtre X du code python qui permet la lecture du clavier. Cette fenêtre permet de contrôler le drone. Le programme affiche sud la colonne de droite l'angle de rotation des roues ainsi que la vitesse maximale du drone.}
+\caption[Interface graphique Python]{Fenêtre X du code python qui permet la lecture du clavier. Cette fenêtre permet de contrôler le drone. Le programme affiche sur la colonne de droite l'angle de rotation des roues ainsi que la vitesse maximale du drone fixée par le pilot.}
 \end{figure}
 \end{center}
 
@@ -800,7 +857,7 @@ Afin de pouvoir communiquer entre l'Arduino et le RaspberryPi via USB, nous avon
 
 Grâce à cette librairie nous avons pu écrire notre propre classe qui permet de facilement sonder le système pour un appareil tel que l'arduino, établir une connection à cette appareil et lui envoyer des données. Le système de réception de messages usb est basé sur un model évènementiel, expliqué dans la section \ref{Event}.
 
-\subsection{Evènements usb et écoute d'un Stream\label{Event}}
+\subsection{Evénements et écoute d'un Stream\label{Event}}
 
 La programmation événementielle permet dans certains cas d'améliorer l'efficacité d'une application. Elle est basée sur des évènements ou changements d'états qui déclenchent des autres morceaux de code. Ce type de programmation s'oppose à la programmation dite séquentielle.\cite{EventProgramming}
 
@@ -811,7 +868,9 @@ Pour illustrer cette architecture, imaginons deux téléphones, l'un est dépour
 \caption[Analogie à la programmation événementielle]{\label{ChatExample}L'utilisateur du téléphone sans haut-parleur contrôlera régulièrement son téléphone et souvent pour rien.}
 \end{figure}
 
-Notre code java utilise ce système pour tout ce qui concerne la réception de message, donc l'écoute de Stream, c'est à dire que dès qu'un message est reçu, aussi bien par le client que par le serveur, le code pour gérer ce message est exécuté. L'interface graphique (GUI) est basée par principe sur des événements, par exemple: "boutton pressé", "champ de text modifié", "touche enfoncée".
+Notre code java utilise ce système pour tout ce qui concerne la réception de message, donc l'écoute de Stream, c'est à dire que dès qu'un message est reçu, aussi bien par le client que par le serveur, le code pour gérer ce message est exécuté. L'interface graphique (GUI) est basée par principe sur des événements, par exemple: "boutton pressé", "champ de text modifié", "touche enfoncée". Voici justement un exemple de programmation événementielle pour l'interface graphique:
+
+\lstinputlisting[language=Java]{code/JavaExEvent.txt}
 
 \begin{figure}[h]
 \includegraphics[width=1.0\textwidth]{figures/EventProgramming2.pdf}
@@ -833,26 +892,38 @@ Après avoir parlé de ce que faisait notre code Java, nous allons ici aborder l
 
 \subsection{Client serveur}
 
-Nous allons maintenant aborder une petite présentation du code pour comprendre comment fonctionne notre client serveur. Par soucis de simplicité, nous n'allons que parler du code écrit pour Windows, mais nous avons annexé le code fonctionnant avec les système UNIX en annexe [annexe à venir].
+Nous allons maintenant aborder une petite présentation du code pour comprendre comment fonctionne notre client serveur. Par soucis de simplicité, nous n'allons que parler du code écrit pour Windows. Mais nous avons annexé le code fonctionnant avec les système UNIX en annexe [annexe à venir].
 %TODO Rajouter l'annexe du code client serveur en c++ pour UNIX
 
 Tout d'abord, il faut indiquer quelles librairies nous utilisons, c'est les lignes suivantes. La première ligne permet d'utiliser les socket Windows. Les autres lignes sont des librairies standards en C++.
-\lstinputlisting[language=C++, firstline=3, lastline=6]{code/client-exemple.cpp}
+\lstinputlisting[language=C++, firstline=3, lastline=7]{code/client.cpp}
 
 Une fois que ceci est fait, nous initialisions quelques variables dont il n'est pas utile de préciser à quoi elle vont servir. Ensuite, nous initialisons deux objets aux deux lignes ci-dessous. Nous verrons un peu plus tard à quoi elle servent. 
-\lstinputlisting[language=C++, firstline=16, lastline=17]{code/client-exemple.cpp}
+\lstinputlisting[language=C++, firstline=19, lastline=20]{code/client.cpp}
 Le premier objet va se voir attribuer les données contenues dans la fonction \textbf{socket()}
-\lstinputlisting[language=C++, firstline=34, lastline=35]{code/client-exemple.cpp}
+\lstinputlisting[language=C++, firstline=55, lastline=56]{code/client.cpp}
 La fonction \textbf{socket(famille, type, protocole)} possède 3 arguments. Le premier, \textbf{AF\_INET} est la famille de protocole utilisée, elle utilise une adresse internet IPV4, c'est a dire qui est encapsulée sur 4 octets. Le deuxième argument détermine le type de communication à faire, dans notre cas, \textbf{SOCK\_DGRAM} signifie que nous sommes en UDP. Le troisième argument permet de spécifier un protocole qui permet de fournir un service désiré, dans notre cas, nous n'avons besoin de rien, il est donc à $0$. \textbf{socketId} va donc recevoir les argument de la fonction \textbf{socket()}. Ils seront utilisés un peu plus tard.\\
 
-\lstinputlisting[language=C++, firstline=43, lastline=45]{code/client-exemple.cpp}
+Le code suivant explique comment envoyer des données à une adresse et un port donné. La première ligne appelle la fonction \textbf{strcpy} qui copie le contenu du pointeur qui se trouve dans le tableau de caractères \textbf{Image} dans le tableau de caractères \textbf{buffer}. La deuxième ligne est à proprement parler la ligne qui envoie des données au serveur. Le \textbf{numberChar} en début de ligne ne sert à rien dans le processus d'envoi, mais il sert à contrôler par la suite si les données ont été correctement envoyées. 
+
+\lstinputlisting[language=C++, firstline=79, lastline=81]{code/client.cpp}
+
+Vient en suite la fonction \textbf{sendto()} qui prend les argument comme mentionné à la ligne 3 du code. Une petite explication sur les arguments. Comme vu précédemment, l'argument \textbf{socketId} contient les indications sur la destination. L'argument buffer représente un tampon\footnote{Un tampon, ou plutôt une mémoire tampon est une allocation d'une partie de la mémoire vive (RAM) qui est utilisée pour stocker temporairement les données. Il est utilisé dans ce cas car le processus d'envoi est plus lent que le processus d'écriture} qui contient les octets à envoyer. L'argument \textbf{strlen(buffer)} indique le nombre d'octets à envoyer, soit la taille du tableau. Le quatrième argument spécifie le type d'envoi, dans notre cas, l'envoi est normal, donc nous assignons la valeur $0$ à cet argument. L'argument suivant (soit le cinquième) permet de pointer sur la structure \textbf{destInfo} qui contient des informations sur la destination. Enfin, le dernier argument spécifie la longueur de la structure \textbf{destInfo}.
+
+Nous allons maintenant voir la fonction qui permet au serveur d'ouvrir une socket et se mettre en écoute. Le code suivant permet de créer une socket. Elle se construit de la manière suivante, \textbf{bind(int socket, socketaddr * description, int len)}. En d'autres termes, ces arguments permettent de savoir sur quel port il faut ouvrir une socket et quel type d'adresse utiliser. 
+
+\lstinputlisting[language=C++, firstline=44, lastline=44]{code/serveur.cpp}
+
+Le code suivant correspond a la réception de donnée. Nous utilison la fonction \textbf{recvfrom()} qui contient les arguments comme écrit à la ligne 3 du code. Le nombre maximum de bytes que le serveur va accepter de lire en un envoie à été arbitrairement choisi puisqu'il est plus grand que un bloc de bytes (soit 1024 bytes). 
+
+\lstinputlisting[language=C++, firstline=55, lastline=58]{code/serveur.cpp}
+La dernière ligne du code permet de fermer le tableu après avoir reçu les données car la fonction \textbf{recvfrom()} ne le fait pas.
+
 
 
 
 \subsection{OpenCV}
-
-
-
+Ces programmes client/serveur ont pour but de transmettre l'image de la caméra, mais jusqu'ici, nous n'avons pas parlé de l'image en soit, c'est ce dont nous allons aborder maintenant. Ce sujet n'a pas encore abouti pour l'instant, c'est pourquoi le conditionnel sera utilisé dans cette section. Nous aimerions utiliser OpenCV pour pouvoir capturer le flux vidéo de la caméra. OpenCV est un ensemble de librairies qui sont utilisées pour le traitement d'image. Ces librairies sont écrites en C et C++. Non seulement, elle nous permettraient d'avoir l'image de la caméra, mais en plus, de pouvoir faire du traitement sur celle-ci (aucun traitement d'image ne se ferait sur le Raspberry Pi car il ne possède pas la puissance nécessaire  pour le faire). Un problème que nous avons rencontré est la difficulté d'installer ces libraries sur les ordinateur, en particulier sur l'OS Raspbian où chaque compilation dure plusieurs heures. Néanmoins, nous comptons continuer dans cette voie car ce sont les meilleures librairies que nous avons trouvés.
 
 \clearpage
 
@@ -860,11 +931,14 @@ La fonction \textbf{socket(famille, type, protocole)} possède 3 arguments. Le p
 
 \section{Sketchbook}
 
-%\subsection{Sketch exemple pour le moteur}
-%\lstinputlisting[language=Java]{code/motor.java}
-%
-%\subsection{Sketch exemple pour le servo \label{SketchExServo}}\cite{ServoSweep}
-%\lstinputlisting[language=Java]{code/ServoExample.java}
+\subsection{Sketch exemple pour le moteur}
+\lstinputlisting[language=Java]{code/motor.java}
+
+\subsection{Sketch exemple pour le servo \label{SketchExServo}}\cite{ServoSweep}
+\lstinputlisting[language=Java]{code/ServoExample.java}
+
+\subsection{Sketch exemple pour le senseur HC-SR04 \label{EXcodeHC-SR04}}
+\lstinputlisting[language=Java]{code/HC_SR04.java}
 %
 %\textbf{Commentaires}
 %
