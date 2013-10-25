@@ -110,16 +110,16 @@ bouge, mais de faire un drone de reconnaissance à moindre coûts. Les drones
 existants sont soit trop cher, soit peu performants.  L'objectif de ce projet est de développer un prototype qui aurait des avantages face à un produit tel que le Beewi\cite{beewi} (une portée améliorée, une meilleure autonomie et une meilleure qualité vidéo) . En effet, si nous parvenons avoir un ensemble possédant un
 véhicule tout terrain, une interface graphique claire et un guidage simple et efficace, à un prix abordable,  
 nous aurions des arguments de poids face aux autres produits disponibles sur le
-marché.\\
+marché.
+
 Dans la lancée de ce projet, nous nous sommes inscrit au concours
 suisse de science \textit{La science appelle les jeunes}\footnote{http://fr.sjf.ch/}. Ce concours réunis presque tous les domaines, pourvu que
 certains critères soient respectés. Tous les concurrents continuent un projet
-qu'ils avait commencé durant leur travail de maturité/diplôme et la démarche
+qu'ils avaient commencé durant leur travail de maturité/diplôme et la démarche
 utilisée doit être scientifique. Ce concours pourrait, selon les résultats,
-nous aider à promouvoir notre drone.  \\
+nous aider à promouvoir notre drone.
 
-%TODO
-%%%%%%%%%%CONCLUSION%%%%%%%%%%%%%%%%%%%%
+Au terme de ce projet nous avons acquis des connaissances dans plusieurs domaines de l'informatique, de l'électronique et de la mécanique. Le résultat final est un véhicule contrôlable à distance, avec une caméra et des senseurs, en plus d'un programme client-serveur Java et C++ pour le transfert du flux vidéo, des commandes de direction et des informations reccueillies par les senseurs.  
 
 \end{abstract}
 \addcontentsline{toc}{section}{\protect\numberline{}Résumé}
@@ -924,6 +924,12 @@ La dernière ligne du code permet de fermer le tableu après avoir reçu les don
 
 \subsection{OpenCV}
 Ces programmes client/serveur ont pour but de transmettre l'image de la caméra, mais jusqu'ici, nous n'avons pas parlé de l'image en soit, c'est ce dont nous allons aborder maintenant. Ce sujet n'a pas encore abouti pour l'instant, c'est pourquoi le conditionnel sera utilisé dans cette section. Nous aimerions utiliser OpenCV pour pouvoir capturer le flux vidéo de la caméra. OpenCV est un ensemble de librairies qui sont utilisées pour le traitement d'image. Ces librairies sont écrites en C et C++. Non seulement, elle nous permettraient d'avoir l'image de la caméra, mais en plus, de pouvoir faire du traitement sur celle-ci (aucun traitement d'image ne se ferait sur le Raspberry Pi car il ne possède pas la puissance nécessaire  pour le faire). Un problème que nous avons rencontré est la difficulté d'installer ces libraries sur les ordinateur, en particulier sur l'OS Raspbian où chaque compilation dure plusieurs heures. Néanmoins, nous comptons continuer dans cette voie car ce sont les meilleures librairies que nous avons trouvés.
+
+\chapter{Conclusion}
+
+\lettrine{}{} Débuté il y a maintenant une année, ce projet n'était qu'un rêve avant de devenir un travail de maturité pour finalement se concrétiser. Le véhicule a beaucoup évolué depuis sa première ébauche et a pris autant de directions aussi inattendues qu'intéressantes et instructives. Bien que le résultat final ne soit pas aussi rafiné qu'on l'espérait, il est tout de même le témoin de l'important investissement de temps et d'énergie dans ce travail.
+
+Au point où nous en sommes, le drone ne pourrait pas mener de vrais missions de reconnaissance ou de recherche. Limité par sa construction fragile et sa portée qui laisse à désirer. Par contre, grâce à ce prototype, nous avons pu comprendre, en profondeur, ce que ça demande de construire un engin pareil. Nous avons développé une structure informatique et appris à concevoir des circuits imprimés. De ce fait, nous pouvons transposer ces connaissances à un autre véhicule plus solide que le notre. De plus, ce travail nous ouvre des portes sur des projets plus complexes, tel que des véhicules colaborateurs qui étendraient la zone de couverture wi-fi avec des répétiteurs mobiles et donc d'élargir... 
 
 \clearpage
 

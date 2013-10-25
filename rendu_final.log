@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/Debian) (format=pdflatex 2013.1.6)  25 OCT 2013 15:25
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/Debian) (format=pdflatex 2013.1.6)  25 OCT 2013 16:25
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -671,13 +671,26 @@ s or-thographiques. Nous
 LaTeX Font Info:    Font shape `OT1/pnc/bx/n' in size <10.95> not available
 (Font)              Font shape `OT1/pnc/b/n' tried instead on input line 102.
 
-Underfull \hbox (badness 10000) in paragraph at lines 105--120
+Overfull \hbox (5.0599pt too wide) in paragraph at lines 122--123
+[]\OT1/pnc/m/n/10.95 Au terme de ce pro-jet nous avons ac-quis des con-nais-san
+ces dans plusieurs
+ []
 
+
+Overfull \hbox (0.31757pt too wide) in paragraph at lines 122--123
+\OT1/pnc/m/n/10.95 do-maines de l'in-for-ma-tique, de l'[]electronique et de la
+ m[]ecanique. Le r[]esultat
+ []
+
+
+Overfull \hbox (1.6932pt too wide) in paragraph at lines 122--123
+\OT1/pnc/m/n/10.95 fi-nal est un v[]ehicule contr[]olable []a dis-tance, avec u
+ne cam[]era et des senseurs,
  []
 
 [1
 
-] (./rendu_final.toc [1
+] [2] (./rendu_final.toc [1
 
 
 ] [2])
@@ -744,14 +757,14 @@ Underfull \hbox (badness 10000) in paragraph at lines 170--171
 [8
 
 
-] [9] <figures/arduino_uno.jpg, id=54, 856.19875pt x 643.40375pt>
+] [9] <figures/arduino_uno.jpg, id=57, 856.19875pt x 643.40375pt>
 File: figures/arduino_uno.jpg Graphic file (type jpg)
 
 <use figures/arduino_uno.jpg>
 Package pdftex.def Info: figures/arduino_uno.jpg used on input line 174.
 (pdftex.def)             Requested size: 325.3589pt x 244.49596pt.
  [10 <./figures/arduino_uno.jpg>] [11] [12]
-<figures/Edimax.jpg, id=64, 1283.79625pt x 962.59625pt>
+<figures/Edimax.jpg, id=67, 1283.79625pt x 962.59625pt>
 File: figures/Edimax.jpg Graphic file (type jpg)
 
 <use figures/Edimax.jpg>
@@ -781,7 +794,7 @@ Overfull \hbox (4.87494pt too wide) in paragraph at lines 268--269
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<figures/PCB.jpg, id=74, 1282.7925pt x 722.7pt>
+<figures/PCB.jpg, id=78, 1282.7925pt x 722.7pt>
 File: figures/PCB.jpg Graphic file (type jpg)
  <use figures/PCB.jpg>
 Package pdftex.def Info: figures/PCB.jpg used on input line 284.
@@ -790,7 +803,7 @@ Package pdftex.def Info: figures/PCB.jpg used on input line 284.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<figures/rx2_ex2.jpg, id=75, 758.835pt x 686.565pt>
+<figures/rx2_ex2.jpg, id=79, 758.835pt x 686.565pt>
 File: figures/rx2_ex2.jpg Graphic file (type jpg)
  <use figures/rx2_ex2.jpg>
 Package pdftex.def Info: figures/rx2_ex2.jpg used on input line 301.
@@ -801,7 +814,7 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 
 [15
 
-] <figures/DSC_1116res.jpg, id=80, 803.0pt x 530.98375pt>
+] <figures/DSC_1116res.jpg, id=83, 803.0pt x 530.98375pt>
 File: figures/DSC_1116res.jpg Graphic file (type jpg)
 
 <use figures/DSC_1116res.jpg>
@@ -811,7 +824,7 @@ Package pdftex.def Info: figures/DSC_1116res.jpg used on input line 326.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<figures/SchemaPlaqueMaison.png, id=84, 597.73312pt x 420.82219pt>
+<figures/SchemaPlaqueMaison.png, id=87, 597.73312pt x 420.82219pt>
 File: figures/SchemaPlaqueMaison.png Graphic file (type png)
 
 <use figures/SchemaPlaqueMaison.png>
@@ -822,7 +835,7 @@ Package pdftex.def Info: figures/SchemaPlaqueMaison.png used on input line 333.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<figures/StripBoard.jpg, id=85, 120.45pt x 118.5228pt>
+<figures/StripBoard.jpg, id=88, 120.45pt x 118.5228pt>
 File: figures/StripBoard.jpg Graphic file (type jpg)
 
 <use figures/StripBoard.jpg>
@@ -832,7 +845,7 @@ Package pdftex.def Info: figures/StripBoard.jpg used on input line 362.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<figures/schema_CHI.png, id=89, 429.95256pt x 335.67796pt>
+<figures/schema_CHI.png, id=92, 429.95256pt x 335.67796pt>
 File: figures/schema_CHI.png Graphic file (type png)
 
 <use figures/schema_CHI.png>
@@ -846,7 +859,7 @@ Overfull \hbox (37.86583pt too wide) in paragraph at lines 375--377
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<figures/board_CHI.png, id=90, 214.62827pt x 159.81215pt>
+<figures/board_CHI.png, id=93, 214.62827pt x 159.81215pt>
 File: figures/board_CHI.png Graphic file (type png)
 
 <use figures/board_CHI.png>
@@ -862,7 +875,7 @@ hemaPlaqueMaison.png>] [21 <./figures/StripBoard.jpg>]
 LaTeX Warning: Text page 22 contains only floats.
 
 [22 <./figures/schema_CHI.png>]
-<figures/CircuitZener.pdf, id=107, 597.23125pt x 421.575pt>
+<figures/CircuitZener.pdf, id=110, 597.23125pt x 421.575pt>
 File: figures/CircuitZener.pdf Graphic file (type pdf)
 
 <use figures/CircuitZener.pdf>
@@ -880,7 +893,7 @@ Overfull \hbox (2.57988pt too wide) in paragraph at lines 476--483
  la mod-ique somme
  []
 
-[25] <figures/InstallationServo.jpg, id=128, 1281.78876pt x 720.6925pt>
+[25] <figures/InstallationServo.jpg, id=131, 1281.78876pt x 720.6925pt>
 File: figures/InstallationServo.jpg Graphic file (type jpg)
 
 <use figures/InstallationServo.jpg>
@@ -890,7 +903,7 @@ Package pdftex.def Info: figures/InstallationServo.jpg used on input line 506.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<figures/InstallationServo2.jpg, id=129, 722.7pt x 1282.7925pt>
+<figures/InstallationServo2.jpg, id=132, 722.7pt x 1282.7925pt>
 File: figures/InstallationServo2.jpg Graphic file (type jpg)
 
 <use figures/InstallationServo2.jpg>
@@ -905,7 +918,7 @@ Overfull \hbox (24.60306pt too wide) in paragraph at lines 513--515
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[26] <figures/ServoPwm.pdf, id=133, 501.875pt x 200.75pt>
+[26] <figures/ServoPwm.pdf, id=137, 501.875pt x 200.75pt>
 File: figures/ServoPwm.pdf Graphic file (type pdf)
 
 <use figures/ServoPwm.pdf>
@@ -923,7 +936,7 @@ LaTeX Warning: Reference `TableDesc' on page 28 undefined on input line 567.
 
 LaTeX Warning: Reference `H-Bridge' on page 29 undefined on input line 585.
 
-<figures/H-bridge.pdf, id=142, 297.49544pt x 144.53197pt>
+<figures/H-bridge.pdf, id=145, 297.49544pt x 144.53197pt>
 File: figures/H-bridge.pdf Graphic file (type pdf)
 
 <use figures/H-bridge.pdf>
@@ -937,7 +950,7 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 LaTeX Warning: Reference `H-Bridge' on page 29 undefined on input line 600.
 
 [29 <./figures/ServoPwm.pdf>]
-<figures/HC-SR04.jpg, id=151, 631.35875pt x 631.35875pt>
+<figures/HC-SR04.jpg, id=154, 631.35875pt x 631.35875pt>
 File: figures/HC-SR04.jpg Graphic file (type jpg)
 
 <use figures/HC-SR04.jpg>
@@ -953,7 +966,7 @@ Package frenchb.ldf Warning: Degrees would look better in TS1-encoding:
 (frenchb.ldf)                add \usepackage{textcomp} to the preamble. 
 (frenchb.ldf)                Degrees used on input line 648.
 
-<figures/HC-SR04-timing-diagram.png, id=162, 410.2828pt x 264.23718pt>
+<figures/HC-SR04-timing-diagram.png, id=165, 410.2828pt x 264.23718pt>
 File: figures/HC-SR04-timing-diagram.png Graphic file (type png)
 
 <use figures/HC-SR04-timing-diagram.png>
@@ -972,7 +985,7 @@ senseur. Plus pr[]ecis[]ement,
 
 [32] [33 <./figures/HC-SR04-timing-diagram.png>] [34]
 Chapitre 3.
-<figures/arduino-environnement-1.PNG, id=174, 511.15968pt x 543.53062pt>
+<figures/arduino-environnement-1.PNG, id=177, 511.15968pt x 543.53062pt>
 File: figures/arduino-environnement-1.PNG Graphic file (type png)
 
 <use figures/arduino-environnement-1.PNG>
@@ -990,7 +1003,7 @@ LaTeX Font Info:    Font shape `OMS/pnc/m/it' in size <10.95> not available
  [35
 
 ] [36 <./figures/arduino-environnement-1.PNG>] [37]
-<figures/python-environnement.PNG, id=186, 386.94562pt x 291.33844pt>
+<figures/python-environnement.PNG, id=189, 386.94562pt x 291.33844pt>
 File: figures/python-environnement.PNG Graphic file (type png)
 
 <use figures/python-environnement.PNG>
@@ -1010,7 +1023,7 @@ Chapitre 4.
 [41
 
 
-] <figures/Client_Server1.pdf, id=202, 597.23125pt x 285.065pt>
+] <figures/Client_Server1.pdf, id=205, 597.23125pt x 285.065pt>
 File: figures/Client_Server1.pdf Graphic file (type pdf)
 
 <use figures/Client_Server1.pdf>
@@ -1020,7 +1033,7 @@ Package pdftex.def Info: figures/Client_Server1.pdf used on input line 804.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<figures/Client_Server2.pdf, id=203, 597.23125pt x 421.575pt>
+<figures/Client_Server2.pdf, id=206, 597.23125pt x 421.575pt>
 File: figures/Client_Server2.pdf Graphic file (type pdf)
 
 <use figures/Client_Server2.pdf>
@@ -1052,7 +1065,7 @@ nte de la prochaine
  []
 
 (./code/JavaExRequestList.txt)
-<figures/RequestHandler.pdf, id=245, 597.23125pt x 285.065pt>
+<figures/RequestHandler.pdf, id=248, 597.23125pt x 285.065pt>
 File: figures/RequestHandler.pdf Graphic file (type pdf)
 
 <use figures/RequestHandler.pdf>
@@ -1081,7 +1094,7 @@ Overfull \hbox (16.56744pt too wide) in paragraph at lines 864--865
  []
 
 [47 <./figures/RequestHandler.pdf>]
-<figures/EventProgramming1.pdf, id=268, 597.23125pt x 285.065pt>
+<figures/EventProgramming1.pdf, id=271, 597.23125pt x 285.065pt>
 File: figures/EventProgramming1.pdf Graphic file (type pdf)
 
 <use figures/EventProgramming1.pdf>
@@ -1100,7 +1113,7 @@ ram-ma-tion []ev[]enementielle
  []
 
 (./code/JavaExEvent.txt [48 <./figures/EventProgramming1.pdf>])
-<figures/EventProgramming2.pdf, id=281, 597.23125pt x 421.575pt>
+<figures/EventProgramming2.pdf, id=284, 597.23125pt x 421.575pt>
 File: figures/EventProgramming2.pdf Graphic file (type pdf)
 
 <use figures/EventProgramming2.pdf>
@@ -1145,11 +1158,14 @@ Overfull \hbox (0.4967pt too wide) in paragraph at lines 911--912
 sur les ar-gu-ments. Comme
  []
 
-(./code/serveur.cpp) [52] (./code/serveur.cpp) [53] (./code/motor.java [54
+(./code/serveur.cpp) [52] (./code/serveur.cpp) [53]
+Chapitre 5.
+[54
 
-]
-[55]) (./code/ServoExample.java [56]) (./code/HC_SR04.java [57])
-(./rendu_final.bbl [58]
+] (./code/motor.java [55
+
+] [56]) (./code/ServoExample.java [57])
+(./code/HC_SR04.java [58]) (./rendu_final.bbl [59]
 Underfull \hbox (badness 1062) in paragraph at lines 13--17
 []\OT1/pnc/m/n/10.95 Futurlec.  Tech-ni-cal in-for-ma-tion - na-tional semi-con
 -duc-tor 7805t
@@ -1161,7 +1177,7 @@ Underfull \hbox (badness 1365) in paragraph at lines 45--48
 p : / / arduino . cc / en / Main /
  []
 
-[59
+[60
 
 ]
 Underfull \hbox (badness 1902) in paragraph at lines 65--68
@@ -1175,7 +1191,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 70--74
 wz200-[]a1-[]beewi ,[] fr ,[]
  []
 
-) [60] (./rendu_final.aux)
+) [61] (./rendu_final.aux)
 
 LaTeX Warning: There were undefined references.
 
@@ -1209,10 +1225,10 @@ b></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti9.pfb></usr
 re/texlive/texmf-dist/fonts/type1/urw/ncntrsbk/uncb8a.pfb></usr/share/texlive/t
 exmf-dist/fonts/type1/urw/ncntrsbk/uncr8a.pfb></usr/share/texlive/texmf-dist/fo
 nts/type1/urw/ncntrsbk/uncri8a.pfb>
-Output written on rendu_final.pdf (64 pages, 2506187 bytes).
+Output written on rendu_final.pdf (66 pages, 2508557 bytes).
 PDF statistics:
- 394 PDF objects out of 1000 (max. 8388607)
- 249 compressed objects within 3 object streams
+ 400 PDF objects out of 1000 (max. 8388607)
+ 253 compressed objects within 3 object streams
  0 named destinations out of 1000 (max. 500000)
  127 words of extra memory for PDF output out of 10000 (max. 10000000)
 

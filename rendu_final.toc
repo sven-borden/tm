@@ -51,7 +51,8 @@
 \contentsline {section}{\numberline {4.4}C++ et vid\IeC {\'e}o}{50}
 \contentsline {subsection}{\numberline {4.4.1}Client serveur}{50}
 \contentsline {subsection}{\numberline {4.4.2}OpenCV}{53}
-\contentsline {section}{\numberline {.1}Sketchbook}{54}
-\contentsline {subsection}{\numberline {.1.1}Sketch exemple pour le moteur}{54}
-\contentsline {subsection}{\numberline {.1.2}Sketch exemple pour le servo }{56}
-\contentsline {subsection}{\numberline {.1.3}Sketch exemple pour le senseur HC-SR04 }{57}
+\contentsline {chapter}{\numberline {5}Conclusion}{54}
+\contentsline {section}{\numberline {.1}Sketchbook}{55}
+\contentsline {subsection}{\numberline {.1.1}Sketch exemple pour le moteur}{55}
+\contentsline {subsection}{\numberline {.1.2}Sketch exemple pour le servo }{57}
+\contentsline {subsection}{\numberline {.1.3}Sketch exemple pour le senseur HC-SR04 }{58}
