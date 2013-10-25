@@ -723,10 +723,7 @@ que nous avons adopté, nous allons ensuite voir à
 quoi ressemble notre programme Java et ce qu'il fait. Avant de parler
 de la vidéo avec OpenCV. 
 
-\section{Java}
-Le code complet Java est très long et est composé de beaucoup de classes. Plutôt que de tout détailler ou pire, juste mettre le code cru, nous avons sélectionné les thèmes les plus intéressants que nous avons rencontré pendant l'écriture du programme. Nous allons expliquer comment nous avons structuré le système, selon quelles lois et discuter des avantages et des inconvénients.
-
-\subsection{Client/Serveur\label{ClientServeur}}
+\section{Client/Serveur\label{ClientServeur}}
 Le model client-serveur est composé de deux partis: les serveurs qui fournissent un service et les clients qui bénéficient de celui-ci. Un client ne partage pas ses ressources avec les autres, mais profite de celles du serveur. Le Serveur attend qu'un client vienne se connecter et faire des requêtes auxquels il répond. Il doit généralement être capable de gérer plusieurs clients à la fois.
 
 \begin{figure}[h]
@@ -744,18 +741,18 @@ Un Thread est initié pour chaque nouvelle demande de connexion. C'est à dire q
 \end{figure}
 
 
-\subsection{UDP ou TCP\label{UDPTCP}}
-Avant de parler de notre choix, nous allons un peu expliquer ce que sont les protocoles UDP et TCP et leurs différences. UDP et TCP sont deux protocoles de connexion réseau qui permettent d'envoyer des données, (\textit{Packets}), d'un ordinateur à un autre.
+\section{UDP ou TCP\label{UDPTCP}}
+Avant de parler de notre choix, nous allons un peu expliquer ce que sont les protocoles UDP et TCP et leurs différences. UDP et TCP sont deux protocoles de communication réseau qui permettent d'envoyer des données, (\textit{Packets}), d'un ordinateur à un autre.
 
-e protocole UDP\footnote{\textit{User Datagram Protocol}, soit protocole des datagrammes d'utilisateurs} est un protocole qui n'est pas orienté connexion. Les paquets qui transitent via un protocole UDP ont l'adresse IP du récepteur, comme la poste, mais il n'y a aucune garantie que les paquets soient bien arrivés sans parler de leur ordre. Par contre, il n'y a pas le souci de perte de connexion puisque il n'y en a pas. Ce protocol est particulièrement adapté pour la transmission de vidéo. Pour contrôler les mouvements du véhicule il est impératif qu'il sache à tous moment si il y a au moins un client qui est au contrôle, au risque que le véhicule soit livré à lui même. Ici rentre en jeu le protocole TCP. 
+Le protocole UDP\footnote{\textit{User Datagram Protocol}, soit protocole des datagrammes d'utilisateurs} est un protocole qui n'est pas orienté connexion. Les paquets qui transitent via un protocole UDP ont l'adresse IP du récepteur, comme la poste, mais il n'y a aucune garantie que les paquets soient bien arrivés sans parler de leur ordre. Par contre, il n'y a pas le souci de perte de connexion puisque il n'y en a pas. Ce protocol est particulièrement adapté pour la transmission de vidéo. Tandis que, our contrôler les mouvements du véhicule il est impératif qu'il sache à tous moment si il y a au moins un client qui est au contrôle, au risque que le véhicule soit livré à lui même. Ici rentre en jeu le protocole TCP. 
 
-Le protocole TCP\footnote{\textit{Transmission Control Protocol}, soit protocole de contrôle des transmissions} est l'opposé de l'UDP, il est orienté connexion. Lorsque le client envoie des données au serveur, ce premier est informé de l'arrivée des dites données. Il y a donc un système de reçu qui confirme la réception des packets. S'il y a des fichiers corrompus, l'expéditeur va renvoyer les fichiers manquants. On peut, par analogie, comparer ce protocole à la communication téléphonique. On remarque assez rapidement quand il y a une coupure dans la ligne.\\
+Le protocole TCP\footnote{\textit{Transmission Control Protocol}, soit protocole de contrôle des transmissions} est l'opposé de l'UDP, il est orienté connexion. Lorsque le client envoie des données au serveur, ce premier est informé de l'arrivée des dites données. Il y a donc un système de reçu qui confirme la réception des packets. S'il y a des fichiers corrompus, l'expéditeur va renvoyer les fichiers manquants. On peut, par analogie, comparer ce protocole à la communication téléphonique: on remarque assez rapidement quand il y a une coupure dans la ligne.\\
 
 \section{Java}
 Le code complet Java est très long et est composé de beaucoup de classes. Plutôt que de tout détailler ou pire, juste mettre le code cru, nous avons sélectionné les thèmes les plus intéressants que nous avons rencontré pendant l'écriture du programme. Nous allons expliquer comment nous avons structuré le système, selon l'architecture et le protocole discutés en section \ref{ClientServeur} et \ref{UDPTCP}.
 
 \subsection{Gestion des Requêtes de connexion}
-Pour établir une connexion avec le serveur, un client va ouvrir un port de communication avec les serveur, appelé "Socket". Une fois cette opération complétée avec succès, il sera possible d'obtenir les "Streams"\footnote{Tuyau pour transmettre des bytes} entrant et sortant pour effectivement envoyer des données.
+Pour établir une connexion avec le serveur, un client va ouvrir un port de communication avec lui, appelé "Socket". Une fois cette opération complétée avec succès, il sera possible d'obtenir les "Streams"\footnote{Tuyau pour transmettre des bytes} entrant et sortant pour effectivement envoyer des données.
 
 \lstinputlisting[language=Java]{code/JavaExConnection.txt}
 
@@ -819,7 +816,7 @@ Après avoir parlé de ce que faisait notre code Java, nous allons ici aborder l
 
 \subsection{Client serveur}
 
-Nous allons maintenant aborder une petite présentation du code pour comprendre comment fonctionne notre client serveur. Par soucis de simplicité, nous n'allons que parler du code écrit pour Windows. Mais nous avons annexé le code fonctionnant avec les système UNIX en annexe [annexe à venir].
+Nous allons maintenant aborder une petite présentation du code pour comprendre comment fonctionne notre client serveur. Par soucis de simplicité, nous n'allons que parler du code écrit pour Windows, mais nous avons annexé le code fonctionnant avec les système UNIX en annexe [annexe à venir].
 %TODO Rajouter l'annexe du code client serveur en c++ pour UNIX
 
 Tout d'abord, il faut indiquer quelles librairies nous utilisons, c'est les lignes suivantes. La première ligne permet d'utiliser les socket Windows. Les autres lignes sont des librairies standards en C++.

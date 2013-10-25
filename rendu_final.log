@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/Debian) (format=pdflatex 2013.1.6)  23 OCT 2013 18:21
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/Debian) (format=pdflatex 2013.1.6)  23 OCT 2013 18:44
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -939,76 +939,81 @@ Chapitre 4.
 File: figures/Client_Server1.pdf Graphic file (type pdf)
 
 <use figures/Client_Server1.pdf>
-Package pdftex.def Info: figures/Client_Server1.pdf used on input line 733.
+Package pdftex.def Info: figures/Client_Server1.pdf used on input line 730.
 (pdftex.def)             Requested size: 378.42174pt x 180.62714pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[36] <figures/Client_Server2.pdf, id=181, 597.23125pt x 421.575pt>
+<figures/Client_Server2.pdf, id=178, 597.23125pt x 421.575pt>
 File: figures/Client_Server2.pdf Graphic file (type pdf)
 
 <use figures/Client_Server2.pdf>
-Package pdftex.def Info: figures/Client_Server2.pdf used on input line 742.
+Package pdftex.def Info: figures/Client_Server2.pdf used on input line 739.
 (pdftex.def)             Requested size: 378.42174pt x 267.12463pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[37 <./figures/Client_Server1.pdf>]
-Overfull \hbox (2.10144pt too wide) in paragraph at lines 752--753
+[36]
+Overfull \hbox (2.10144pt too wide) in paragraph at lines 749--750
 []\OT1/pnc/m/n/10.95 Le pro-to-cole TCP[] est l'op-pos[]e de l'UDP, il est ori-
 ent[]e con-nex-ion. Lorsque
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 752--753
+Underfull \hbox (badness 10000) in paragraph at lines 749--750
 
  []
 
-[38 <./figures/Client_Server2.pdf>]
+[37 <./figures/Client_Server1.pdf>] [38 <./figures/Client_Server2.pdf>]
 (/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2004/09/05 1.3 listings language file
 )
-(./code/JavaExConnection.txt) (./code/JavaExConnectionServer.txt [39])
-Overfull \hbox (5.94754pt too wide) in paragraph at lines 766--767
+(./code/JavaExConnection.txt) (./code/JavaExConnectionServer.txt) [39]
+Overfull \hbox (5.94754pt too wide) in paragraph at lines 763--764
 []\OT1/pnc/m/n/10.95 Puisque il est dans une boucle while, il se remet en at-te
 nte de la prochaine
  []
 
-(./code/JavaExRequestList [40])
-<figures/RequestHandler.pdf, id=225, 597.23125pt x 285.065pt>
+(./code/JavaExRequestList)
+<figures/RequestHandler.pdf, id=222, 597.23125pt x 285.065pt>
 File: figures/RequestHandler.pdf Graphic file (type pdf)
 
 <use figures/RequestHandler.pdf>
-Package pdftex.def Info: figures/RequestHandler.pdf used on input line 779.
+Package pdftex.def Info: figures/RequestHandler.pdf used on input line 776.
 (pdftex.def)             Requested size: 378.42174pt x 180.62714pt.
 
-Overfull \hbox (0.22047pt too wide) in paragraph at lines 785--786
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+Overfull \hbox (0.22047pt too wide) in paragraph at lines 782--783
 []\OT1/pnc/m/n/10.95 Afin de pou-voir com-mu-ni-quer en-tre l'Ar-duino et le Ra
 sp-ber-ryPi via USB,
  []
 
-
-Overfull \hbox (5.85802pt too wide) in paragraph at lines 787--788
+[40]
+Overfull \hbox (5.85802pt too wide) in paragraph at lines 784--785
 []\OT1/pnc/m/n/10.95 etablir une con-nec-tion []a cette ap-pareil et lui en-voy
 er des donn[]ees. Le syst[]eme
  []
 
-[41 <./figures/RequestHandler.pdf>]
-Overfull \hbox (16.56744pt too wide) in paragraph at lines 793--794
+
+Overfull \hbox (16.56744pt too wide) in paragraph at lines 790--791
 \OT1/pnc/m/n/10.95 d[]epourvu de haut-parleurs (voir fig.4.4[]). Pour chat-ter,
  l'u-til-isa-teur du t[]el[]ephone
  []
 
+[41 <./figures/RequestHandler.pdf>]
 <figures/EventProgramming1.pdf, id=245, 597.23125pt x 285.065pt>
 File: figures/EventProgramming1.pdf Graphic file (type pdf)
 
 <use figures/EventProgramming1.pdf>
-Package pdftex.def Info: figures/EventProgramming1.pdf used on input line 796.
+Package pdftex.def Info: figures/EventProgramming1.pdf used on input line 793.
 (pdftex.def)             Requested size: 378.42174pt x 180.62714pt.
 
-Underfull \hbox (badness 3568) in paragraph at lines 797--797
+Underfull \hbox (badness 3568) in paragraph at lines 794--794
 []\OT1/cmr/m/sc/10.95 Figure \OT1/cmr/m/n/10.95 4.4 { []L'u-til-isa-teur du t^^
 Sel^^Sephone sans haut-parleur contr^olera
  []
@@ -1017,10 +1022,13 @@ Sel^^Sephone sans haut-parleur contr^olera
 File: figures/EventProgramming2.pdf Graphic file (type pdf)
 
 <use figures/EventProgramming2.pdf>
-Package pdftex.def Info: figures/EventProgramming2.pdf used on input line 803.
+Package pdftex.def Info: figures/EventProgramming2.pdf used on input line 800.
 (pdftex.def)             Requested size: 378.42174pt x 267.12463pt.
- [42 <./figures/EventProgramming1.pdf>]
-[43 <./figures/EventProgramming2.pdf>]
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[42 <./figures/EventProgramming1.pdf>] [43 <./figures/EventProgramming2.pdf>]
 (/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2004/09/05 1.3 listings language file
 )
@@ -1030,31 +1038,31 @@ File: lstlang1.sty 2004/09/05 1.3 listings language file
 (/usr/share/texlive/texmf-dist/tex/latex/listings/lstmisc.sty
 File: lstmisc.sty 2007/02/22 1.4 (Carsten Heinz)
 )
-(./code/client-exemple.cpp) (./code/client-exemple.cpp) [44]
+(./code/client-exemple.cpp) (./code/client-exemple.cpp)
 (./code/client-exemple.cpp)
-Overfull \hbox (3.60887pt too wide) in paragraph at lines 832--833
+Overfull \hbox (3.60887pt too wide) in paragraph at lines 829--830
 \OT1/pnc/m/n/10.95 pre-mier, \OT1/pnc/b/n/10.95 AF[]INET \OT1/pnc/m/n/10.95 est
  la famille de pro-to-cole utilis[]ee, elle utilise une adresse
  []
 
 
-Overfull \hbox (31.1932pt too wide) in paragraph at lines 832--833
+Overfull \hbox (31.1932pt too wide) in paragraph at lines 829--830
 \OT1/pnc/m/n/10.95 ment d[]etermine le type de com-mu-ni-ca-tion []a faire, dan
 s notre cas, \OT1/pnc/b/n/10.95 SOCK[]DGRAM
  []
 
 
-Overfull \hbox (4.8681pt too wide) in paragraph at lines 832--833
+Overfull \hbox (4.8681pt too wide) in paragraph at lines 829--830
 \OT1/pnc/m/n/10.95 sig-ni-fie que nous sommes en UDP. Le troisi[]eme ar-gu-ment
  per-met de sp[]ecifier
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 832--833
+Underfull \hbox (badness 10000) in paragraph at lines 829--830
 
  []
 
-(./code/client-exemple.cpp) [45] (./rendu_final.bbl [46
+[44] (./code/client-exemple.cpp) [45] (./rendu_final.bbl [46
 
 ]
 Underfull \hbox (badness 4647) in paragraph at lines 4--8
@@ -1114,11 +1122,11 @@ LaTeX Warning: There were undefined references.
 Here is how much of TeX's memory you used:
  6604 strings out of 495059
  88451 string characters out of 3182031
- 224867 words of memory out of 3000000
+ 239644 words of memory out of 3000000
  9589 multiletter control sequences out of 15000+200000
  24297 words of font info for 62 fonts, out of 3000000 for 9000
  14 hyphenation exceptions out of 8191
- 38i,12n,61p,1336b,1864s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 38i,12n,61p,1336b,1338s stack positions out of 5000i,500n,10000p,200000b,50000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</us
 r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/shar
 e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texl
@@ -1136,7 +1144,7 @@ b></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti9.pfb></usr
 re/texlive/texmf-dist/fonts/type1/urw/ncntrsbk/uncb8a.pfb></usr/share/texlive/t
 exmf-dist/fonts/type1/urw/ncntrsbk/uncr8a.pfb></usr/share/texlive/texmf-dist/fo
 nts/type1/urw/ncntrsbk/uncri8a.pfb>
-Output written on rendu_final.pdf (52 pages, 1961055 bytes).
+Output written on rendu_final.pdf (52 pages, 1960269 bytes).
 PDF statistics:
  352 PDF objects out of 1000 (max. 8388607)
  223 compressed objects within 3 object streams
