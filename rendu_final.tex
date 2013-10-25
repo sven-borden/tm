@@ -142,9 +142,25 @@ Nous avons décidé d'initier le rapport avec le chapitre concernant le hardware
 \chapter{Hardware}
 
 
-\lettrine{P}{our} réaliser ce projet, nous avons dû faire des choix au niveau du hardware.Le hardware est tout ce qui touche la partie physique du drone, néanmoins, dans ce chapitre, nous ne traiterons pas de la mécanique, ce sujet sera abordé dans le chapitre 2. Notre choix s'est porté sur deux systèmes. Le premier, l'Arduino, est un micro-contrôleur qui permet de contrôler presque ce qu'on veut grâce à un langage de programmation proche du C.\\
-Le second est le Raspberry Pi, qui est un ordinateur bon marché (trente-cinq francs) qui est récemment sorti sur le marché. 
+\lettrine{P}{our} réaliser ce projet, nous avons dû faire des choix au niveau
+du hardware. Le hardware est tout ce qui touche à la partie physique du drone.
+Néanmoins, dans ce chapitre, nous ne traiterons pas de la mécanique et de
+l'électronique pure, ces sujets
+seront abordés dans le chapitre 2. Le drône est basé sur deux éléments centraux. Le
+premier, l'Arduino, est un micro-contrôleur qui permet de lire et d'émettre
+des signaux électriques. Il est programmé en un langage proche du C.
+Le second est le Raspberry Pi, qui est un petit ordinateur bon marché
+(trente-cinq francs), récemment sorti sur le marché. 
 
+La figure
+\ref{SchemaProjet} est une première vue d'ensemble des différents composants
+utilisés dans ce projet. Comme dit précédemment, tout ce qui concerne moteur,
+servo et senseurs sera spécifié dans le chapitre suivant. 
+
+\begin{figure}[h]
+\includegraphics[width = 1.0\textwidth]{SchemaPres.pdf}
+\caption[Schéma du hardware]{\label{SchemaProjet}}
+\end{figure}
 
 \section{Arduino}
 L'Arduino \label{Arduino} \cite{Arduino} est un micro-contrôleur \textit{Open Source}, ce qui veut dire que tout le monde peut non seulement avoir accès aux plans et aux codes, mais peut aussi les modifier. Ce micro-contrôleur se programme avec un langage proche du C. 
@@ -205,13 +221,34 @@ Bien qu'à première vue la Framboise ne semble pas très performante, il faut p
 Une quinzaine de systèmes d'exploitations fonctionnant sur le Raspberry Pi existent. Parmi les plus connus, il y a Androïd, Arch Linux ARM et Debian/Raspbian. 
 Notre choix à été porté sur Raspbian, qui est un dérivé de Debian, pour plusieurs raisons. Tout d'abord, cet OS a été développé spécialement pour le Raspberry Pi, c'est donc un OS actif et vivant continuellement développé par la communauté Raspberry. Cet OS est basé sur un environnement Linux, ce qui offre un grand nombre de libertés afin de travailler dessus. Egalement, Raspbian est gratuit, ce qui est à prendre en compte puisque nous essayons de réduire les coûts.  
 
+\section{Sans fil}
+
+Au niveau hardware, afin que le Raspberry Pi puisse se connecter sur le réseau
+sans fil, nous utilisons un \textit{dongle} (fig:\ref{Edimax})
+Wi-Fi \footnote{Le modèle utilisé est le suivant: EW7811Un fabriqué par
+  Edimax} connecté par USB. Cet accessoire ne nécessitant pas de \textit{driver} \footnote{Un
+  driver est un petit logiciel permettant de faire l'interface entre les
+  périfériques et l'ordinateur.},il est directement reconnu et peut rapidement être configuré par le Raspberry Pi. 
+\begin{figure}[!h]
+\begin{center}
+\includegraphics[scale=0.38, trim=300 300 300 0, clip=true]{Edimax}
+\caption[\textit{Dongle} Edimax EW7811Un]{\textit{Dongle} Edimax EW7811Un. Connecté par USB à la Framboise, il permet au Raspberry Pi de se connecter via Wi-Fi à une borne\label{Edimax}}
+\end{center}
+\end{figure} 
+
+
 
 \chapter{La mécanique et l'électronique}
 
-\section{Caractéristiques du véhicule \label{TableDesc}}
+
 \lettrine{N}{ous} nous basons sur un modèle réduit
-télécommandé de type 4x4. Le tableau suivant est un inventaire de 
-ses caractéristiques dans son état actuel:
+télécommandé de type 4x4. Le tableau (\ref{caracteristiquesDuVehicule}) est un
+inventaire de ses caractéristiques dans son état actuel. Dans ce chapitre nous
+allons aborder tout ce qui se réfère aux actuateurs (moteur et servo-moteur),
+comment ils ont été installés et comment les utiliser. Nous commençerons par
+le plus gros travail, la conception d'un circuit électrique imprimé, dit aussi PCB. 
+
+
 \begin{table}[h!]
 \begin{center}
   \begin{tabular}{|p{4cm}|p{4cm}|c|}
@@ -430,22 +467,22 @@ servo-moteur très rudimentaire. Il en comptait toutes les caractéristiques, ma
 un état simplifié, en particulier le système de positionnement. Dans un servo-moteur
 classique, il s'agit d'un potentiomètre (résistance variable) qui permet
 de savoir en tout moment la position de la corne \footnote{La corne est le bras qui sort du servo-moteur et qui permet de déplacer des masses}. Par contre, dans le cas de
-la voiture, un système de balais (voir image) assure cette tâche. Il en
+la voiture, un système de balais assure cette tâche. Il en
 résulte une identification de position très basique: gauche,devant ou
-droite.\\
-(ins\'erer images)\\
+droite.
+
 Sachant que nous avons retiré l'électronique de la voiture, il nous restait
 deux possibilités: utiliser le système de guidage rudimentaire, mais
-déjà en place ou tout remplacer avec un servo-moteur plus conventionnel.\\
+déjà en place ou tout remplacer avec un servo-moteur conventionnel.\\
 Apr\`es beaucoup de temps perdu à tenter de contrôler le guidage de base
 avec notre électronique importée, nous avons décidé de passer à un servo-moteur. Nous avons
 acheté un puissant servo-moteur de haute qualité chez une connaissance qui en
 avait commandé un gros lot pour la modique somme de 10.- CHF.
 
 \subsection{Remplacement du Système de guidage}
-Une installation fiable d'un objet étranger dans un ensemble usiné tel la
+Une installation fiable d'un objet étranger dans un ensemble usiné tel que la
 voiture n'est pas une tâche facile. Il fallait pourtant que le résultat final
-soit solide, si l'on voulait pouvoir compter dessus. C'est pour cela que nous avons
+soit solide si l'on voulait pouvoir compter dessus. C'est pour cela que nous avons
 créé une base en contreplaqué pour y loger le servo-moteur.
 
 Ce montage permet de retirer le servo-moteur en cas de besoin, donc de pouvoir le
@@ -456,17 +493,17 @@ la voiture pour un maximum de rigidité. La transmission de la force aux
 roues se fait par l'intermédiaire d'une tige métallique. Celle-ci est
 fixée à la corne du servo-moteur et possède une boucle soudée à l'ancien axe de
 transmission. Nous utilisons justement l'ancien axe de transmission pour une
-raison développée plus tard.\footnote{voir :
+raison de géométrie.\footnote{voir :
 http://en.wikipedia.org/wiki/Ackermann\_steering\_geometry sur
 ``Ackerman steering''}
 
-\subsection{Géométrie d'Ackermann}
-%TODO
+%\subsection{Géométrie d'Ackermann}
+%%TODO
 %http://en.wikipedia.org/wiki/Ackermann_steering_geometry
 
 \subsection{Contrôle du servo}\label{servosection}
 Le contrôle d'un servo-moteur est une tâche qu'un micro-contrôleur tel que
-l'Arduino (sec: \ref{Arduino}) effectue avec aisance. On peut indiquer à un servo-moteur de se rendre vers
+l'Arduino (section: \ref{Arduino}) effectue avec aisance. On peut indiquer à un servo-moteur de se rendre vers
 un de ses $180^{\circ}$ de liberté en lui envoyant un signal électrique dit
 modulé. Ce signal est modulé d'une manière compréhensible pour le
 servo-moteur. L'illustration suivante
@@ -500,17 +537,7 @@ Le programme se trouvant en annexe (\ref{SketchExServo}) est un exemple propos\'
 ``Servo'' installée avec l'IDE Arduino. Ce que font les méthodes de cette
 classe est de produire un signal comme celui discuté à la section
 précédente en l'émettant par un des pins de l'Arduino capable de cette
-modulation. 
-
-%--------------- Temporaire ---------------%
-% Il ne faut pas oublier de parler de ce problème!!!!
-\subsection{Etat actuel du système de guidage}
-Le servo-moteur n'est pas fonctionnel sur la plaque électronique que nous avons conçu
-nous-même. Selon nos diagnostiques, il s'agit d'une mauvaise soudure et donc
-le servo-moteur ne peut pas être alimenté en courant. Ce problème devrait se
-résoudre lorsque nous recevrons le PCB.
-
-
+modulation.
 D'ailleurs, ce programme est tr\`es pratique pour tester le fonctionnement d'un servo-moteur. 
 
 \section{Moteur de propulsion}
@@ -538,9 +565,7 @@ moteur sans intervention manuelle?
 
 La r\'eponse est donn\'ee par un astucieux circuit compos\'e de
 transistors. Il permet, au moyen de deux signaux actionnant les transistors,
-de contr\^oler le sens du courant passant dans le moteur.
-
-Le schéma suivant pourra d'avantage \'eclairer le lecteur.
+de contr\^oler le sens du courant passant dans le moteur. La figure \ref{H-Bridge} pourra d'avantage éclairer le lecteur.
 
 \begin{figure}[h]
 \centering
@@ -548,22 +573,21 @@ Le schéma suivant pourra d'avantage \'eclairer le lecteur.
     \caption[H-Bridge]{\label{H-bridge}Sch\'ema d'un H-bridge}
 \end{figure}
 
-\textbf{Explications}
-
 Pour fabriquer un H-bridge, il faut utiliser entre autres des transistor NPN \footnote{Négatif-Positif-Négatif} et PNP \footnote{Positif-Négatif-Positif}.  La diff\'erence pratique
 entre ces deux types de transistors est que l'un demande un signal
 d\'eclencheur haut pour \^etre ouvert tandis que l'autre en demande un
 bas ou la terre. Dans ce cas, on utilise deux types de transistors
 diff\'erents (en grande partie pour clarifier le sch\'ema), mais l'on pourrait
 tr\`es bien utiliser uniquement des transistors du m\^eme type. On obtiendrait
-le m\^eme r\'esultat en connectant les \emph{INPUT} \`a des transistors
-diagonalement oppos\'es\cite{RobotRoom}.
+le m\^eme r\'esultat en connectant chaque \emph{INPUT} \`a une paire de transistors
+diagonalement oppos\'es\cite{RobotRoom} dans la figure \ref{H-Bridge}.
 
 On peut voir que selon le \emph{INPUT}, on obtiendra des tensions au bornes du
 moteur ou \emph{OUTPUT} variables.
 \subsubsection{Table de V\'erit\'e}
 R\'edigeons un tableau de v\'erit\'e pour mieux illustrer la situation, o\`u H
-(\textit{high}) signifie haut et L (\textit{low}) signifie bas :
+(\textit{high}) signifie haut et L (\textit{low}) signifie bas (voir tableau
+\ref{tableDeVerite}). 
 
 
 \begin{table}%[!h]
@@ -654,15 +678,6 @@ Sans les logiciels, notre projet aurait bien du mal à se réaliser. Dans cette 
 
 
 
-\subsection{Sans fil}
-
-Au niveau hardware, afin que le Raspberry Pi puisse se connecter sur le réseau sans fil, nous utilisons un \textit{dongle} (fig:\ref{Edimax}) Wi-Fi \footnote{Le modèle utilisé est le suivant: EW7811Un fabriqué par Edimax}. Cet accessoire ne nécessitant pas de \textit{driver} \footnote{Un driver est un petit logiciel permettant d'exploiter le Hardware},il est donc directement reconnu et peut rapidement être configurer par le Raspberry Pi. 
-\begin{figure}[!h]
-\begin{center}
-\includegraphics[scale=0.38, trim=300 300 300 0, clip=true]{Edimax}
-\caption[\textit{Dongle} Edimax EW7811Un]{\textit{Dongle} Edimax EW7811Un. Connecté par USB à la Framboise, il permet au Raspberry Pi de se connecter via Wi-Fi à une borne\label{Edimax}}
-\end{center}
-\end{figure} 
 
 \subsubsection{Partage sécurisé}
 
@@ -724,6 +739,8 @@ quoi ressemble notre programme Java et ce qu'il fait. Avant de parler
 de la vidéo avec OpenCV. 
 
 \section{Client/Serveur\label{ClientServeur}}
+
+
 Le model client-serveur est composé de deux partis: les serveurs qui fournissent un service et les clients qui bénéficient de celui-ci. Un client ne partage pas ses ressources avec les autres, mais profite de celles du serveur. Le Serveur attend qu'un client vienne se connecter et faire des requêtes auxquels il répond. Il doit généralement être capable de gérer plusieurs clients à la fois.
 
 \begin{figure}[h]
@@ -744,7 +761,7 @@ Un Thread est initié pour chaque nouvelle demande de connexion. C'est à dire q
 \section{UDP ou TCP\label{UDPTCP}}
 Avant de parler de notre choix, nous allons un peu expliquer ce que sont les protocoles UDP et TCP et leurs différences. UDP et TCP sont deux protocoles de communication réseau qui permettent d'envoyer des données, (\textit{Packets}), d'un ordinateur à un autre.
 
-Le protocole UDP\footnote{\textit{User Datagram Protocol}, soit protocole des datagrammes d'utilisateurs} est un protocole qui n'est pas orienté connexion. Les paquets qui transitent via un protocole UDP ont l'adresse IP du récepteur, comme la poste, mais il n'y a aucune garantie que les paquets soient bien arrivés sans parler de leur ordre. Par contre, il n'y a pas le souci de perte de connexion puisque il n'y en a pas. Ce protocol est particulièrement adapté pour la transmission de vidéo. Tandis que, our contrôler les mouvements du véhicule il est impératif qu'il sache à tous moment si il y a au moins un client qui est au contrôle, au risque que le véhicule soit livré à lui même. Ici rentre en jeu le protocole TCP. 
+Le protocole UDP\footnote{\textit{User Datagram Protocol}, soit protocole des datagrammes d'utilisateurs} est un protocole qui n'est pas orienté connexion. Les paquets qui transitent via un protocole UDP ont l'adresse IP du récepteur, comme la poste, mais il n'y a aucune garantie que les paquets soient bien arrivés sans parler de leur ordre. Par contre, il n'y a pas le souci de perte de connexion puisque il n'y en a pas. Ce protocol est particulièrement adapté pour la transmission de vidéo. Pour contrôler les mouvements du véhicule il est impératif qu'il sache à tous moment si il y a au moins un client qui est au contrôle, au risque que le véhicule soit livré à lui même. Ici rentre en jeu le protocole TCP. 
 
 Le protocole TCP\footnote{\textit{Transmission Control Protocol}, soit protocole de contrôle des transmissions} est l'opposé de l'UDP, il est orienté connexion. Lorsque le client envoie des données au serveur, ce premier est informé de l'arrivée des dites données. Il y a donc un système de reçu qui confirme la réception des packets. S'il y a des fichiers corrompus, l'expéditeur va renvoyer les fichiers manquants. On peut, par analogie, comparer ce protocole à la communication téléphonique: on remarque assez rapidement quand il y a une coupure dans la ligne.\\
 
@@ -770,7 +787,7 @@ De l'autre côté, le serveur attend les demandes de connexion, ceci grâce à l
  Ce qui voudrait dire: "Rouler vers l'avant à 20cm/s".  Pour bien comprendre la demande d'un client le serveur a également cette même liste de requêtes prédéfinies dont il sait s'occuper. Une fois que le serveur a trouvé la requête dans sa liste, il exécute l'opération prévue pour cette situation. Le schéma \ref{RequestHandler} illustre cette procédure.
   Le tableau de requêtes est enfait un HashMap, les identifiants des requêtes se trouvent à gauche en majuscule et les références aux fonctions à exécuter se trouvent à droite.
  
- \lstinputlisting[language=Java]{code/JavaExRequestList}
+ \lstinputlisting[language=Java]{code/JavaExRequestList.txt}
  
  \begin{figure}[!h]
 \includegraphics[width=1.0\textwidth]{figures/RequestHandler.pdf}
@@ -785,7 +802,7 @@ Grâce à cette librairie nous avons pu écrire notre propre classe qui permet d
 
 \subsection{Evènements usb et écoute d'un Stream\label{Event}}
 
-La programmation événementielle permet dans certains cas d'améliorer l'efficacité d'une application. Elle est basée sur des évènements ou changements d'états qui déclenchent des autres morceaux de code. Ce type de programmation s'oppose à la programmation dite séquentielle.
+La programmation événementielle permet dans certains cas d'améliorer l'efficacité d'une application. Elle est basée sur des évènements ou changements d'états qui déclenchent des autres morceaux de code. Ce type de programmation s'oppose à la programmation dite séquentielle.\cite{EventProgramming}
 
 Pour illustrer cette architecture, imaginons deux téléphones, l'un est dépourvu de haut-parleurs (voir fig.\ref{ChatExample}). Pour chatter, l'utilisateur du téléphone déféctueux devra régulièrment contrôler si il a reçu un nouveau message et souvent il contrôlera pour rien, tandis que l'autre sera averti d'un nouveau message (changement d'état, événement!) et contrôlera uniquement à ce moment là.  
 

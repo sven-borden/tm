@@ -1,25 +1,26 @@
 \select@language {french}
 \contentsline {figure}{\numberline {}Image de courverture}{1}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {1.1}{\ignorespaces Arduino Uno R3}}{8}
+\contentsline {figure}{\numberline {1.1}{\ignorespaces Sch\IeC {\'e}ma du hardware}}{9}
+\contentsline {figure}{\numberline {1.2}{\ignorespaces Arduino Uno R3}}{10}
+\contentsline {figure}{\numberline {1.3}{\ignorespaces \textit {Dongle} Edimax EW7811Un}}{14}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {2.1}{\ignorespaces Le PCB. }}{14}
-\contentsline {figure}{\numberline {2.2}{\ignorespaces Exemple de plaque RX2}}{15}
-\contentsline {figure}{\numberline {2.3}{\ignorespaces Prototype du PCB}}{16}
-\contentsline {figure}{\numberline {2.4}{\ignorespaces Sch\IeC {\'e}ma sommaire du prototype. }}{17}
-\contentsline {figure}{\numberline {2.5}{\ignorespaces Strip- board}}{18}
-\contentsline {figure}{\numberline {2.6}{\ignorespaces Sch\IeC {\'e}ma complet du PCB }}{19}
-\contentsline {figure}{\numberline {2.7}{\ignorespaces Design final du PCB}}{20}
-\contentsline {figure}{\numberline {2.8}{\ignorespaces Utilisation de la diode Zener}}{21}
-\contentsline {figure}{\numberline {2.9}{\ignorespaces Signal modul\IeC {\'e}}}{24}
-\contentsline {figure}{\numberline {2.10}{\ignorespaces H-Bridge}}{26}
+\contentsline {figure}{\numberline {2.1}{\ignorespaces Le PCB. }}{17}
+\contentsline {figure}{\numberline {2.2}{\ignorespaces Exemple de plaque RX2}}{18}
+\contentsline {figure}{\numberline {2.3}{\ignorespaces Prototype du PCB}}{19}
+\contentsline {figure}{\numberline {2.4}{\ignorespaces Sch\IeC {\'e}ma sommaire du prototype. }}{20}
+\contentsline {figure}{\numberline {2.5}{\ignorespaces Strip- board}}{21}
+\contentsline {figure}{\numberline {2.6}{\ignorespaces Sch\IeC {\'e}ma complet du PCB }}{22}
+\contentsline {figure}{\numberline {2.7}{\ignorespaces Design final du PCB}}{23}
+\contentsline {figure}{\numberline {2.8}{\ignorespaces Utilisation de la diode Zener}}{24}
+\contentsline {figure}{\numberline {2.9}{\ignorespaces Signal modul\IeC {\'e}}}{27}
+\contentsline {figure}{\numberline {2.10}{\ignorespaces H-Bridge}}{29}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {3.1}{\ignorespaces Environnement de programmation Arduino}}{30}
-\contentsline {figure}{\numberline {3.2}{\ignorespaces \textit {Dongle} Edimax EW7811Un}}{31}
-\contentsline {figure}{\numberline {3.3}{\ignorespaces Interface graphique Python}}{34}
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Environnement de programmation Arduino}}{33}
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Interface graphique Python}}{36}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {4.1}{\ignorespaces Structure client-serveur}}{37}
-\contentsline {figure}{\numberline {4.2}{\ignorespaces Connexion d'un nouveau client}}{38}
-\contentsline {figure}{\numberline {4.3}{\ignorespaces Gestion de requ\IeC {\^e}te au serveur}}{41}
-\contentsline {figure}{\numberline {4.4}{\ignorespaces Analogie \IeC {\`a} la programmation \IeC {\'e}v\IeC {\'e}nementielle}}{42}
-\contentsline {figure}{\numberline {4.5}{\ignorespaces Ev\IeC {\'e}nements dans notr architecture}}{43}
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Structure client-serveur}}{39}
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Connexion d'un nouveau client}}{40}
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Gestion de requ\IeC {\^e}te au serveur}}{43}
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Analogie \IeC {\`a} la programmation \IeC {\'e}v\IeC {\'e}nementielle}}{44}
+\contentsline {figure}{\numberline {4.5}{\ignorespaces Ev\IeC {\'e}nements dans notr architecture}}{45}
