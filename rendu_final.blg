@@ -1,6 +1,4 @@
-This is BibTeX, Version 0.99d (TeX Live 2012/Debian)
-Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
-The top-level auxiliary file: rendu_final.aux
+This is BibTeX, Version 0.99dThe top-level auxiliary file: rendu_final.aux
 The style file: plain.bst
 Database file #1: references.bib
 I was expecting a `,' or a `}'---line 120 of file references.bib
@@ -8,45 +6,4 @@ I was expecting a `,' or a `}'---line 120 of file references.bib
  :  note ="\url{https://docs.google.com/document/d/1Y-yZnNhMYy7rwhAgyL_pfa39RsB-x2qR4vP8saG73rE/edit}"
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-You've used 14 entries,
-            2118 wiz_defined-function locations,
-            571 strings with 5595 characters,
-and the built_in function-call counts, 2911 in all, are:
-= -- 264
-> -- 98
-< -- 0
-+ -- 42
-- -- 28
-* -- 100
-:= -- 485
-add.period$ -- 41
-call.type$ -- 14
-change.case$ -- 56
-chr.to.int$ -- 0
-cite$ -- 14
-duplicate$ -- 98
-empty$ -- 309
-format.name$ -- 28
-if$ -- 629
-int.to.chr$ -- 0
-int.to.str$ -- 14
-missing$ -- 0
-newline$ -- 72
-num.names$ -- 28
-pop$ -- 126
-preamble$ -- 1
-purify$ -- 42
-quote$ -- 0
-skip$ -- 98
-stack$ -- 0
-substring$ -- 70
-swap$ -- 14
-text.length$ -- 0
-text.prefix$ -- 0
-top$ -- 0
-type$ -- 56
-warning$ -- 0
-while$ -- 28
-width$ -- 16
-write$ -- 140
 (There was 1 error message)
