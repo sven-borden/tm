@@ -137,8 +137,29 @@ Au terme de ce projet nous avons acquis des connaissances dans plusieurs domaine
 
 \section*{Introduction}
 \addcontentsline{toc}{section}{\protect\numberline{}Introduction}
-Le but de ce projet est de construire un véhicule roulant que l'on peut commander à distance. Plus qu'une simple voiture télécommandée, ce drone est capable d'être contrôlé sans avoir une vue directe sur celui-ci, car il possède des capteurs tel qu'une caméra et des capteurs de distances. Ce type d'engin se nomme \textit{UGV (Unmanned Ground Vehicle)} soit "véhicule roulant sans équipage". Surtout utilisés dans l'armée, les modèles qu'on peut trouver sur le marché sont très coûteux, ils varient entre trois cents et mille trois cents francs. Notre but est donc de pouvoir construire un appareil semblable pour moins de deux cent francs. Équipé d'un répétiteur, un groupe d'UGV peut couvrir une grande surface sans mettre en danger ses pilotes puisqu'ils restent à l'écart. Ce drone peut servir en cas de catastrophes naturelles, néanmoins, notre modèle ne peut pas rouler sur les terrains trop accidentés, mais pour corriger ce problème, il suffit tout simplement d'implémenter notre système dans un autre type de véhicule. Le développement d'une interface graphique simplifiant l'utilisation est é\-ga\-le\-ment un but du projet. En effet, cela ne sert pas à grand chose d'avoir un drone que personne ne sait utiliser à moins de s'être entraîné durant des mois.\\
-Nous avons décidé d'initier le rapport avec le chapitre concernant le hardware car il est étroitement lié à la mécanique et il permet une meilleure compréhension du reste. Ce chapitre décrit principalement l'ordinateur et le micro-contrôleur \cite{microcontroleur} embarqués sur le drone. Ensuite, vient le chapitre mé\-ca\-ni\-que et électronique qui détaille les modifications faites à la voiture ra\-dio-\-com\-man\-dée et les recherches faites dans ce domaine. Les deux chapitres qui suivent sont consacrés aux différentes versions des logiciels que nous avons créées. Finalement, un dernier chapitre clôt ce rapport.
+Le but de ce projet est de construire un véhicule roulant que l'on peut
+commander à distance. Plus qu'une simple voiture télécommandée, ce drone est
+capable d'être contrôlé sans avoir une vue directe sur celui-ci, car il
+possède des capteurs tel qu'une caméra et des capteurs de distances. Ce type
+d'engin se nomme \textit{UGV (Unmanned Ground Vehicle)} soit "véhicule roulant
+sans équipage". Surtout utilisés dans l'armée, les modèles qu'on peut trouver
+sur le marché sont très coûteux, ils varient entre trois cents et mille trois
+cents francs. Notre but est donc de pouvoir construire un appareil semblable
+pour moins de deux cent francs. Équipé de répétiteurs, un groupe d'UGV
+pourraient couvrir une grande zone sans mettre en danger ses pilotes
+puisqu'ils restent à l'écart. Ce drone peut servir en cas de catastrophes
+naturelles, néanmoins, notre modèle ne peut pas rouler sur les terrains trop
+accidentés, mais pour corriger ce problème, il suffit tout simplement
+d'implémenter notre système électronique dans un autre type de véhicule. Le développement d'une interface graphique simplifiant l'utilisation est é\-ga\-le\-ment un but du projet. En effet, cela ne sert pas à grand chose d'avoir un drone que personne ne sait utiliser à moins de s'être entraîné durant des mois.\\
+Nous avons décidé d'initier le rapport avec le chapitre concernant le hardware
+car il est étroitement lié à la mécanique et il permet une meilleure
+compréhension du reste. Ce chapitre décrit principalement l'ordinateur et le
+micro-contrôleur \cite{microcontroleur} embarqués sur le drone. Ensuite, vient
+le chapitre mé\-ca\-ni\-que et électronique qui détaille les modifications
+faites à la voiture ra\-dio-\-com\-man\-dée et les recherches faites dans ce
+domaine. Les deux chapitres qui suivent sont consacrés aux différentes
+versions des logiciels que nous avons créés et utilisés. Finalement, un dernier chapitre
+de conclusion clôt ce rapport.
 \clearpage
 
 
@@ -174,8 +195,12 @@ Pour ce projet, nous avons choisi l'Arduino Uno, c'est l'Arduino de base.  Nous 
 
 \begin{figure}[h]
 \begin{center}
-\includegraphics[scale=0.38]{arduino_uno.jpg}
-\caption[Arduino Uno R3]{Arduino Uno R3\label{fig:ArduinoUnoR3}, On peut remarquer les pin  \label{pin} qui se trouvent de part et d'autre de l'Arduino. On peut remarquer au centre le micro-contrôleur ATmega328 ainsi que le port USB tout en haut de l'image}
+\includegraphics[width = 0.7\textwidth]{arduino_uno_official.jpg}
+\caption[Arduino Uno R3]{Arduino Uno R3\label{fig:ArduinoUnoR3}, on peut
+  remarquer les pins  \label{pin} qui se trouvent de part et d'autre de
+  l'Arduino. Au centre à droite, le micro-contrôleur ATmega328, ainsi
+  que le port USB tout en haut à gauche de l'image. Ceci est l'image
+  officielle du produit disponible sur: \small{\emph{http://arduino.cc/en/uploads/Main/ArduinoUno\_R3\_Front.jpg}}} 
 \end{center}
 \end{figure}
 
@@ -375,7 +400,7 @@ Eagle. Les symboles utilisés sont donc standardisés.
 
 \begin{figure}[h!]
 \centering
-\includegraphics[angle=90, width=1.1\textwidth]{figures/schema_CHI.png}
+\includegraphics[angle=90, width=1.1\textwidth]{figures/schema_CHI_annotated.png}
 \caption{\label{schemaChineComplet}Schéma complet du PCB
 }
 \end{figure}
@@ -391,8 +416,9 @@ Quelques indications pour lire le schéma:
 \subsection{Design}
 \begin{figure}[h]
 \centering
-\includegraphics[width=1\textwidth]{figures/board_CHI.png}
-\caption[Design final du PCB]{\label{BoardChine}Image du design final à l'ordinateur.
+\includegraphics[width=1\textwidth]{figures/board_CHI_annotated.png}
+\caption[Design final du PCB]{\label{BoardChine}Image du design final à
+  l'ordinateur. (Voir figure \ref{schemaChineComplet} pour les annotations)
 }
 \end{figure}
 
@@ -726,13 +752,13 @@ total & 10 & 186.00\\
 \lettrine{L}{a} première version du software consistait en une étape préliminaire dont le but était de prouver qu'on pouvait contrôler la voiture à distance par un réseau local Wi-Fi. Sa simplicité relative réside dans le fait que nous avons légué tout ce qui est transmission de données par le réseau à un logiciel tiers. Nous nous sommes surtout occupés ici de la communication Raspberry Pi, Arduino par USB et de trouver une première solution pour transmettre la vidéo.
 
 \section{Software de l'Arduino}
-Pour programmer l'Arduino, nous utilisons le logiciel dédié, \textit{Arduino IDE}\footnote{IDE signifie \textit{Integrated Development Environment}. C'est un ensemble d'outils qui sont mis à la disposition des programmeurs afin de simplifier et augmenter leur productivité.} (fig: \ref{Environnement Arduino}). C'est un environnement \textit{Open source} qui fonctionne sur Windows, Linux et Mac OS X. Il a été écrit en Java et est basé sur le logiciel Processing.
-\begin{figure}[h!]
-\begin{center}
-\includegraphics[scale=0.5]{arduino-environnement-1}\\
-\caption[Environnement de programmation Arduino]{Environnement Arduino\label{Environnement Arduino}, C'est la fenêtre qui nous permet d'écrire un code dans un pseudo C, de le compiler et le téléverser sur l'Arduino. Ce programme a une sorte de petit déboggeur qui est très basique, mais très souvent suffisant.}
-\end{center}
-\end{figure}
+Pour programmer l'Arduino, nous utilisons le logiciel dédié, \textit{Arduino IDE}\footnote{IDE signifie \textit{Integrated Development Environment}. C'est un ensemble d'outils qui sont mis à la disposition des programmeurs afin de simplifier et augmenter leur productivité.}. C'est un environnement \textit{Open source} qui fonctionne sur Windows, Linux et Mac OS X. Il a été écrit en Java et est basé sur le logiciel Processing.
+%% \begin{figure}[h!]
+%% \begin{center}
+%% \includegraphics[scale=0.5]{arduino-environnement-1}\\
+%% \caption[Environnement de programmation Arduino]{Environnement Arduino\label{Environnement Arduino}, C'est la fenêtre qui nous permet d'écrire un code dans un pseudo C, de le compiler et le téléverser sur l'Arduino. Ce programme a une sorte de petit déboggeur qui est très basique, mais très souvent suffisant.}
+%% \end{center}
+%% \end{figure}
 Ce logiciel nous permet de programmer, de compiler et de téléverser un code à un Arduino. Il possède aussi des exemples de codes afin de pouvoir apprendre à utiliser un Arduino sans avoir à chercher sur le web. Il prend en compte des librairies qu'on peut rajouter simplement en mettant la librairie dans le dossier "\textit{\textbackslash arduino\textbackslash librairies}". Ce software permet aussi à l'utilisateur d'envoyer des caractères ou des chaînes de caractères à l'Arduino par le biais du port \textit{Serial}, il faut néanmoins appuyer sur entrée pour envoyer le caractère ou la chaîne de caractères.
 
 
@@ -744,9 +770,9 @@ Sans les logiciels, notre projet aurait bien du mal à se réaliser. Dans cette 
 
 
 
-\subsubsection{Partage sécurisé}
+\subsection{Partage sécurisé}
 
-Au niveau software, nous utilisons un type de partage sécurisé entre deux ordinateurs, qui se nomme \textit{ssh} pour \textit{Secure Shell}. C'est un protocole permettant à un ordinateur de faire une connexion sécurisée avec un autre afin de le contrôler. Meilleur que VNC (\textit{Virtual Network Computing}) dans le sens où il ne demande pas au Raspberry Pi de dupliquer le \textit{Desktop} (bureau), ce qui nous permet d'améliorer les performances, tant du côté de la réactivité des commandes, que du nombre d'images par secondes de la caméra envoyé par le Raspberry Pi. Il y a deux inconvénients majeurs à ces solutions, la première, c'est qu'il faut établir la connexion et lancer les programmes manuellement. Le deuxième inconvénient, c'est qu'il est beaucoup plus compliqué, voire impossible à un utilisateur n'utilisant pas un système UNIX de se connecter au Raspberry Pi. Ce qui fait en sorte que notre drone ne toucherait pas un grand public.
+Nous utilisons un type de partage sécurisé entre deux ordinateurs, qui se nomme \textit{ssh} pour \textit{Secure Shell}. C'est un protocole permettant à un ordinateur de faire une connexion sécurisée avec un autre afin de le contrôler. Meilleur que VNC (\textit{Virtual Network Computing}) dans le sens où il ne demande pas au Raspberry Pi de dupliquer le \textit{Desktop} (bureau), ce qui nous permet d'améliorer les performances, tant du côté de la réactivité des commandes, que du nombre d'images par secondes de la caméra envoyé par le Raspberry Pi. Il y a deux inconvénients majeurs à ces solutions, la première, c'est qu'il faut établir la connexion et lancer les programmes manuellement. Le deuxième inconvénient, c'est qu'il est beaucoup plus compliqué, voire impossible à un utilisateur n'utilisant pas un système UNIX de se connecter au Raspberry Pi. Ce qui fait en sorte que notre drone ne toucherait pas un grand public.
 
 \subsection{Guvcview}
 
@@ -958,15 +984,15 @@ Concernant le prix du drone, nous arrivons à un total de 186.- CHF, ce qui rest
 
 \appendix
 
-\section{Sketchbook}
+\chapter{Sketchbook}
 
-\subsection{Sketch exemple pour le moteur}
+\section{Sketch exemple pour le moteur}
 \lstinputlisting[language=Java]{code/motor.java}
 
-\subsection{Sketch exemple pour le servo \label{SketchExServo}}\cite{ServoSweep}
+\section{Sketch exemple pour le servo \label{SketchExServo}}\cite{ServoSweep}
 \lstinputlisting[language=Java]{code/ServoExample.java}
 
-\subsection{Sketch exemple pour le senseur HC-SR04 \label{EXcodeHC-SR04}}
+\section{Sketch exemple pour le senseur HC-SR04 \label{EXcodeHC-SR04}}
 \lstinputlisting[language=Java]{code/HC_SR04.java}
 %
 %\textbf{Commentaires}
