@@ -1,6 +1,6 @@
 \select@language {french}
-\contentsline {section}{\numberline {}Avant-propos}{1}
-\contentsline {section}{\numberline {}Remerciements}{2}
+\contentsline {section}{\numberline {}Avant-propos}{i}
+\contentsline {section}{\numberline {}Remerciements}{ii}
 \contentsline {section}{\numberline {}R\IeC {\'e}sum\IeC {\'e}}{1}
 \contentsline {section}{\numberline {}Introduction}{7}
 \contentsline {chapter}{\numberline {1}Hardware}{8}
@@ -31,7 +31,7 @@
 \contentsline {subsection}{\numberline {2.3.2}H-bridge}{29}
 \contentsline {subsubsection}{Table de V\'erit\'e}{30}
 \contentsline {section}{\numberline {2.4}Senseur de Distance}{31}
-\contentsline {subsection}{\numberline {2.4.1}programmation pour utiliser le senseur}{32}
+\contentsline {subsection}{\numberline {2.4.1}Programmation pour utiliser le senseur}{32}
 \contentsline {section}{\numberline {2.5}Co\IeC {\^u}t des composants}{33}
 \contentsline {chapter}{\numberline {3}Software \\ Premi\IeC {\`e}re version des syst\IeC {\`e}mes embarqu\IeC {\'e}s}{35}
 \contentsline {section}{\numberline {3.1}Software de l'Arduino}{35}
@@ -40,19 +40,21 @@
 \contentsline {subsection}{\numberline {3.2.1}Guvcview}{38}
 \contentsline {section}{\numberline {3.3}Python}{38}
 \contentsline {section}{\numberline {3.4}\IeC {\'E}valuation de la premi\IeC {\`e}re version}{39}
-\contentsline {chapter}{\numberline {4}Software \\ Deuxi\IeC {\`e}me version des syst\IeC {\`e}me embarqu\IeC {\'e}s}{41}
+\contentsline {chapter}{\numberline {4}Software \\ Deuxi\IeC {\`e}me version des syst\IeC {\`e}mes embarqu\IeC {\'e}s}{41}
 \contentsline {section}{\numberline {4.1}Client/Serveur}{42}
 \contentsline {section}{\numberline {4.2}UDP ou TCP}{43}
 \contentsline {section}{\numberline {4.3}Java}{44}
-\contentsline {subsection}{\numberline {4.3.1}Gestion des Requ\IeC {\^e}tes de connexion}{45}
-\contentsline {subsection}{\numberline {4.3.2}gestion des Requ\IeC {\^e}tes suivantes}{46}
-\contentsline {subsection}{\numberline {4.3.3}librxtx}{47}
+\contentsline {subsection}{\numberline {4.3.1}Gestion des Requ\IeC {\^e}tes de connexion}{44}
+\contentsline {subsection}{\numberline {4.3.2}Gestion des requ\IeC {\^e}tes suivantes}{46}
+\contentsline {subsection}{\numberline {4.3.3}librxtx}{46}
 \contentsline {subsection}{\numberline {4.3.4}Ev\IeC {\'e}nements et \IeC {\'e}coute d'un Stream}{47}
+\contentsline {subsection}{\numberline {4.3.5}IHM}{49}
 \contentsline {section}{\numberline {4.4}C++ et vid\IeC {\'e}o}{50}
-\contentsline {subsection}{\numberline {4.4.1}Client serveur}{50}
-\contentsline {subsection}{\numberline {4.4.2}OpenCV}{53}
-\contentsline {chapter}{\numberline {5}Conclusion}{54}
-\contentsline {section}{\numberline {.1}Sketchbook}{55}
-\contentsline {subsection}{\numberline {.1.1}Sketch exemple pour le moteur}{55}
-\contentsline {subsection}{\numberline {.1.2}Sketch exemple pour le servo }{57}
-\contentsline {subsection}{\numberline {.1.3}Sketch exemple pour le senseur HC-SR04 }{58}
+\contentsline {subsection}{\numberline {4.4.1}Client/Serveur}{52}
+\contentsline {subsection}{\numberline {4.4.2}OpenCV}{54}
+\contentsline {section}{\numberline {4.5}Codes}{55}
+\contentsline {chapter}{\numberline {5}Conclusion}{56}
+\contentsline {section}{\numberline {.1}Sketchbook}{58}
+\contentsline {subsection}{\numberline {.1.1}Sketch exemple pour le moteur}{58}
+\contentsline {subsection}{\numberline {.1.2}Sketch exemple pour le servo }{60}
+\contentsline {subsection}{\numberline {.1.3}Sketch exemple pour le senseur HC-SR04 }{61}

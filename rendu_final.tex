@@ -6,6 +6,7 @@
 \usepackage{array}
 \usepackage{listings}
 \usepackage{url}%références avec lien url
+\usepackage{lmodern}
 \usepackage{amsmath}
 \usepackage{multicol}%plusieurs colones
 \usepackage{fancyheadings} %%%%logo
@@ -15,13 +16,13 @@
 \usepackage{multirow}
 \usepackage{listings}%%pour faire des listes
 \usepackage{lettrine}%%lettrine (grosse lettre d'entrée de chapitre)
-
-%\pagestyle{fancy} %: Numérotation des pages.
+\usepackage{caption}%%pour régler les captions
+\pagestyle{fancy} %: Numérotation des pages.
 \lhead{Sven Borden \& Eric Brunner}% :	On personnalisera cette en-tête. haut de page gauche
-\chead{2M03} %: On personnalisera cette en-tête. haut de page centre
-\rhead{\today} %: On personnalisera cette en-tête. haut de page droite
+\chead{} %: On personnalisera cette en-tête. haut de page centre
+\rhead{3M03} %: On personnalisera cette en-tête. haut de page droite
 \lfoot{Travail de Maturité} %:	On personnalisera cette en-tête. pied de page gauche
-\cfoot{\textbf{Page \thepage/\pageref{LastPage}}} %: On personnalisera cette en-tête. pied de page centre
+%\cfoot{\textbf{Page \thepage/\pageref{LastPage}}} %: On personnalisera cette en-tête. pied de page centre
 \rfoot{Robotique} %: On personnalisera cette en-tête. pied de page droite
 \renewcommand{\headrulewidth}{0.4pt} % Trace un trait de séparation de largeur 0,4 point. Mettre 0pt pour supprimer le trait.
 \renewcommand{\footrulewidth}{0.4pt} %: Trace un trait de séparation de largeur 0,4 point. Mettre 0pt pour supprimer le trait.
@@ -68,34 +69,36 @@ xrightmargin=-2cm, %
 xleftmargin=-2cm 
 } 
 
-\begin{document}
 
+\captionsetup{width=12cm}
+\begin{document}
+\pagenumbering{roman}
 
 {\fontfamily{pnc}\selectfont %%%% attention, ne pas oublier la dernière accolade en fin de texte!!!!
 \title{UGV \\(Unmanned Ground Vehicle)}
 \author{Sven Borden\\ \small Travail de maturité \and  Eric Brunner\\ \small Gymnase de Morges}
-\date{\today \\ ~\\
+\date{2013 \\ ~\\
 \begin{centering}
-\includegraphics[width=1.0\textwidth]{DSC_8469res}
+\includegraphics[width=0.85\textwidth]{titre}
 \end{centering}
-\addcontentsline{lof}{figure}{\protect\numberline{}Image de courverture}
+\addcontentsline{lof}{figure}{\protect\numberline{}Image de couverture}
 }
 \maketitle
 
 
-
+\setcounter{page}{1}
 \section*{Avant-propos}
 \addcontentsline{toc}{section}{\protect\numberline{}Avant-propos}
 
-Ce dossier est le résultat de onze mois de recherches effectuées dans le cadre du travail de maturité du gymnase de Morges. Ayant déjà quelques notions en informatique, nous nous sommes dirigés  vers un domaine parallèle, la robotique. Le choix de ce sujet est dérivé des quadcopter (hélicoptères à quatre hélices). Bien que très attrayant, nous avons estimé que le travail de réalisation mécanique d'un drone volant risquait de demander trop de ressources économiques et temporelles. Nous avons préféré garder du temps pour l'aspect informatique.
+Ce dossier est le résultat de onze mois de recherches effectuées dans le cadre du travail de maturité du gymnase de Morges. Ayant déjà quelques notions en informatique, nous nous sommes dirigés  vers un domaine parallèle, la robotique. Le choix de ce sujet est dérivé des quadcopters (hé\-li\-cop\-tè\-res à quatre hélices). Bien que très attrayant, nous avons estimé que le travail de réalisation mécanique d'un drone volant risquait de demander trop de ressources économiques et temporelles. Nous avons préféré garder du temps pour l'aspect informatique.
 
 %Plutot que de se lancer dans un projet dont nous savons que nous n'allons pas réussir à terminer dans les délais, nous nous sommes plutôt focalisé sur les véhicules terrestres ce qui nous a permis d'aller beaucoup plus loin que le quadcopter.
 
 \clearpage
-
+\setcounter{page}{2}
 \section*{Remerciements}
 \addcontentsline{toc}{section}{\protect\numberline{}Remerciements}
-Ce projet n'aurait pu aboutir sans l'aide de nombreuses personnes. Voici l'occasion de les remercier:  Mr. Julien Dominski pour le suivi qu'il a fait pour nous ainsi que pour ses conseils en informatiques qui nous ont été grandement utiles. Mr. Denis Rochat et Mr. Phillipe Rochat pour leur disponibilité, leurs renseignements ainsi que les prêts matériels. Mr. Jean Rossier, Karl Kangur, Michaël Bolay et Mr. Marco Pagnamenta pour leurs conseils techniques, surtout à propos de la plaque électronique à imprimer. Mr. Frederic Genevey ainsi que son site edurobot.ch pour avoir promu notre projet sur son site internet. Merci à Mr. Frédéric Chaberlot pour ses prêts matériels. Merci à Chloé Berthet pour ses corrections orthographiques. Nous tenions aussi à remercier Stefano Varricchio pour ses informations utiles.
+Ce projet n'aurait pu aboutir sans l'aide de nombreuses personnes. Voici l'occasion de les remercier:  Mr. Julien Dominski pour le suivi qu'il a fait pour nous ainsi que pour ses conseils en informatique qui nous ont été grandement utiles. Mr. Denis Rochat et Mr. Phillipe Rochat pour leur disponibilité, leurs renseignements ainsi que les prêts matériels. Mr. Jean Rossier, Karl Kangur, Michaël Bolay et Mr. Marco Pagnamenta pour leurs conseils techniques, surtout à propos de la plaque électronique à imprimer. Mr. Frederic Genevey ainsi que son site edurobot.ch pour avoir promu notre projet sur son site internet. Merci à Mr. Frédéric Chaberlot pour ses prêts matériels. Merci à Chloé Berthet pour ses corrections orthographiques. Nous tenions aussi à remercier Stefano Varricchio pour ses informations utiles.
 
 \clearpage
 
@@ -103,27 +106,28 @@ Ce projet n'aurait pu aboutir sans l'aide de nombreuses personnes. Voici l'occas
 %Parti dans l'idée de concevoir un objet déjà existant mais à moindre prix, nous avons choisi des technologies récemment sorties, ce qui fait que nous étions dans les premiers à évoluer dans ce milieu. Néanmoins, un support de développeur à toujours été là pour nous débloquer en cas de pépin. C'est entre autre grâce à eux que nous sommes parvenu a atteindre l'objectif souhaité. 
 
 Les UGV sont des drones roulants qui sont principalement utilisés par les militaires ou la police. Ils permettent de remplir des missions qu'il serait
-difficile voire impossible à faire pour l'homme ou mettant sa vie en péril. Ce type de drone existe également sur le marché des jouets, par exemple le \textit{Beewi WiFi Camera Buggy BWZ200-A1} \cite{beewi}, qui coûte septante-neuf francs.
+difficile voire impossible à faire pour l'homme ou qui mettraient sa vie en péril. Ce type de drone existe également sur le marché des jouets, par exemple le \textit{Beewi WiFi Camera Buggy BWZ200-A1} \cite{beewi}, qui coûte septante-neuf francs.
 %mais pour notre travail de maturité, son autonomie est insuffisante (une dizaine de minute tout au plus) et sa portée ne dépasse guère les 25 mètres en extérieur, ce qui rend la caméra inutile puisque le Beewi est nettement visible par le pilote. 
-Notre projet ne consiste pas à fabriquer un drone ayant un fusil permettant de "dégommer" tous ce qui
+Notre projet ne consiste pas à fabriquer un drone ayant un fusil permettant de "dégommer" tout ce qui
 bouge, mais de faire un drone de reconnaissance à moindre coûts. Les drones
-existants sont soit trop cher, soit peu performants.  L'objectif de ce projet est de développer un prototype qui aurait des avantages face à un produit tel que le Beewi\cite{beewi} (une portée améliorée, une meilleure autonomie et une meilleure qualité vidéo) . En effet, si nous parvenons avoir un ensemble possédant un
+existants sont soit trop cher, soit peu performants.  L'objectif de ce projet est de développer un prototype qui aurait des avantages face à un produit tel que le Beewi\cite{beewi} (une portée améliorée, une meilleure autonomie et une meilleure qualité vidéo) . En effet, si nous parvenons à avoir un ensemble possédant un
 véhicule tout terrain, une interface graphique claire et un guidage simple et efficace, à un prix abordable,  
 nous aurions des arguments de poids face aux autres produits disponibles sur le
 marché.
 
-Dans la lancée de ce projet, nous nous sommes inscrit au concours
-suisse de science \textit{La science appelle les jeunes}\footnote{http://fr.sjf.ch/}. Ce concours réunis presque tous les domaines, pourvu que
+Dans la lancée de ce projet, nous nous sommes inscrits au concours
+suisse de science \textit{La science appelle les jeunes}\footnote{http://fr.sjf.ch/}. Ce concours réunit presque tous les domaines, pourvu que
 certains critères soient respectés. Tous les concurrents continuent un projet
 qu'ils avaient commencé durant leur travail de maturité/diplôme et la démarche
 utilisée doit être scientifique. Ce concours pourrait, selon les résultats,
 nous aider à promouvoir notre drone.
 
-Au terme de ce projet nous avons acquis des connaissances dans plusieurs domaines de l'informatique, de l'électronique et de la mécanique. Le résultat final est un véhicule contrôlable à distance, avec une caméra et des senseurs, en plus d'un programme client-serveur Java et C++ pour le transfert du flux vidéo, des commandes de direction et des informations reccueillies par les senseurs.  
-
+Au terme de ce projet nous avons acquis des connaissances dans plusieurs domaines de l'informatique, de l'électronique et de la mécanique. Le résultat final est un véhicule contrôlable à distance, avec une caméra et des senseurs, en plus d'un programme client-serveur Java et C++ pour le transfert du flux vidéo, des commandes de direction et des informations recueillies par les senseurs.  
+\setcounter{page}{3}
 \end{abstract}
 \addcontentsline{toc}{section}{\protect\numberline{}Résumé}
 \clearpage
+\pagenumbering{arabic}
 \tableofcontents
 \clearpage
 \listoffigures
@@ -131,11 +135,31 @@ Au terme de ce projet nous avons acquis des connaissances dans plusieurs domaine
 \listoftables 
 \clearpage
 
-
 \section*{Introduction}
 \addcontentsline{toc}{section}{\protect\numberline{}Introduction}
-Le but de ce projet est de construire un véhicule roulant que l'on peut commander à distance. Plus qu'une simple voiture télécommandée, ce drone est capable d'être contrôlé sans avoir une vue directe sur celui-ci, car il possède des capteurs tel qu'une caméra et des capteurs de distances. Ce type d'engin se nomme \textit{UGV (Unmanned Ground Vehicle)} soit "véhicule roulant sans équipage". Surtout utilisés dans l'armée, les modèles qu'on peut trouver sur le marché sont très coûteux, ils varient entre trois cents et mille trois cents francs. Notre but est donc de pouvoir construire un appareil semblable pour moins de deux cent francs. Équipé d'un répétiteur, un groupe d'UGV peut couvrir une grande surface sans mettre en danger ses pilotes puisqu'ils restent à l'écart. Il peut servir en cas de catastrophe naturelle, néanmoins, notre modèle ne peut pas rouler sur les terrains trop accidentés, mais pour corriger ce problème, il suffit tout simplement d'implémenter notre système dans un autre type de véhicule. Le développement d'une interface graphique simplifiant l'utilisation est également un but du projet. En effet, cela ne sert pas à grand chose d'avoir un drone que personne ne sait utiliser à moins de s'être entraîné durant des mois.\\
-Nous avons décidé d'initier le rapport avec le chapitre concernant le hardware car il est étroitement lié à la mécanique et il permet une meilleure compréhension du reste. Ce chapitre décrit principalement l'ordinateur et le micro-contrôleur \cite{microcontroleur} embarqués sur le drone. Ensuite, le chapitre mécanique et électronique qui détaille les modifications faites à la voiture radio-commandée et les recherches faites dans ce domaine. Finalement, les deux derniers chapitres sont consacrés aux différentes versions des logiciels que nous avons créées.
+Le but de ce projet est de construire un véhicule roulant que l'on peut
+commander à distance. Plus qu'une simple voiture télécommandée, ce drone est
+capable d'être contrôlé sans avoir une vue directe sur celui-ci, car il
+possède des capteurs tel qu'une caméra et des capteurs de distances. Ce type
+d'engin se nomme \textit{UGV (Unmanned Ground Vehicle)} soit "véhicule roulant
+sans équipage". Surtout utilisés dans l'armée, les modèles qu'on peut trouver
+sur le marché sont très coûteux, ils varient entre trois cents et mille trois
+cents francs. Notre but est donc de pouvoir construire un appareil semblable
+pour moins de deux cent francs. Équipé de répétiteurs, un groupe d'UGV
+pourraient couvrir une grande zone sans mettre en danger ses pilotes
+puisqu'ils restent à l'écart. Ce drone peut servir en cas de catastrophes
+naturelles, néanmoins, notre modèle ne peut pas rouler sur les terrains trop
+accidentés, mais pour corriger ce problème, il suffit tout simplement
+d'implémenter notre système électronique dans un autre type de véhicule. Le développement d'une interface graphique simplifiant l'utilisation est é\-ga\-le\-ment un but du projet. En effet, cela ne sert pas à grand chose d'avoir un drone que personne ne sait utiliser à moins de s'être entraîné durant des mois.\\
+Nous avons décidé d'initier le rapport avec le chapitre concernant le hardware
+car il est étroitement lié à la mécanique et il permet une meilleure
+compréhension du reste. Ce chapitre décrit principalement l'ordinateur et le
+micro-contrôleur \cite{microcontroleur} embarqués sur le drone. Ensuite, vient
+le chapitre mé\-ca\-ni\-que et électronique qui détaille les modifications
+faites à la voiture ra\-dio-\-com\-man\-dée et les recherches faites dans ce
+domaine. Les deux chapitres qui suivent sont consacrés aux différentes
+versions des logiciels que nous avons créés et utilisés. Finalement, un dernier chapitre
+de conclusion clôt ce rapport.
 \clearpage
 
 
@@ -146,9 +170,9 @@ Nous avons décidé d'initier le rapport avec le chapitre concernant le hardware
 du hardware. Le hardware est tout ce qui touche à la partie physique du drone.
 Néanmoins, dans ce chapitre, nous ne traiterons pas de la mécanique et de
 l'électronique pure, ces sujets
-seront abordés dans le chapitre 2. Le drône est basé sur deux éléments centraux. Le
+seront abordés dans le chapitre 2. Le drone est basé sur deux éléments centraux. Le
 premier, l'Arduino, est un micro-contrôleur qui permet de lire et d'émettre
-des signaux électriques. Il est programmé en un langage proche du C.
+des signaux électriques
 Le second est le Raspberry Pi, qui est un petit ordinateur bon marché
 (trente-cinq francs), récemment sorti sur le marché. 
 
@@ -167,23 +191,27 @@ L'Arduino \label{Arduino} \cite{Arduino} est un micro-contrôleur \textit{Open S
 
 
 \subsection{Choix du type d'Arduino}
-Pour ce projet, nous avons choisi l'Arduino Uno, c'est l'Arduino de base.  Nous avons hésité à prendre l'Arduino Mega, mais les avantages qu'il offre ne sont pas très utiles pour notre projet. Bien qu'il ait une puissance de calcul supérieure à celle de l'Arduino Uno, il est plus coûteux et prend plus de place pour des avantages dont nous n'avons pas besoin. Dans le cadre de ce projet le coût et la place sont des facteurs déterminants.  Puisque nous n'avons pas besoin d'une grande puissance de calcul, nous avons choisi l'Arduino Uno (fig: \ref{fig:ArduinoUnoR3}). L'Arduino Uno est un micro-contrôleur.\\
+Pour ce projet, nous avons choisi l'Arduino Uno, c'est l'Arduino de base.  Nous avons hésité à prendre l'Arduino Mega, mais les avantages qu'il offre ne sont pas très utiles pour notre projet. Bien qu'il ait une puissance de calcul supérieure à celle de l'Arduino Uno, il est plus coûteux et prend plus de place pour des avantages dont nous n'avons pas besoin. Dans le cadre de ce projet le coût et la place sont des facteurs déterminants.  Puisque nous n'avons pas besoin d'une grande puissance de calcul, nous avons choisi l'Arduino Uno (fig: \ref{fig:ArduinoUnoR3}).\\
 
 \begin{figure}[h]
 \begin{center}
-\includegraphics[scale=0.38]{arduino_uno.jpg}
-\caption[Arduino Uno R3]{Arduino Uno R3\label{fig:ArduinoUnoR3}, On peut remarquer les pin  \label{pin} qui se trouvent de part et d'autre de l'Arduino. On peut remarquer au centre le micro-contrôleur ATmega328 ainsi que le port USB tout en haut de l'image}
+\includegraphics[width = 0.7\textwidth]{arduino_uno_official.jpg}
+\caption[Arduino Uno R3]{Arduino Uno R3\label{fig:ArduinoUnoR3}, on peut
+  remarquer les pins  \label{pin} qui se trouvent de part et d'autre de
+  l'Arduino. Au centre à droite, le micro-contrôleur ATmega328, ainsi
+  que le port USB tout en haut à gauche de l'image. Ceci est l'image
+  officielle du produit disponible sur: \small{\emph{http://arduino.cc/en/uploads/Main/ArduinoUno\_R3\_Front.jpg}}} 
 \end{center}
-\end{figure}\footnote{Les pin sont des trous où on peut y glisser des fils métalliques. Ce sont les liaisons entre le contrôleur et les senseurs}
+\end{figure}
 
 
 \subsection{Détails techniques de l'Arduino}
 
 Voici une liste des caractéristiques techniques de l'Arduino Uno R3 \cite{Arduino}:
 \begin{enumerate}
-\item 14 pin digitaux (signal haut ou bas) qu'on peut définit en INPUT ou en OUPUT dont 6 d'entres eux peuvent moduler le signal lorsqu'ils sont utilisé en OUTPUT
-\item  6 pin analogiques  en INPUT
-\item connexion USB
+\item 14 pin\footnote{Les pin sont des trous où on peut y glisser des fils métalliques. Ce sont les liaisons entre le contrôleur et les senseurs} digitaux (signal haut ou bas) qu'on peut définir en INPUT ou en OUPUT dont 6 d'entres eux peuvent moduler le signal lorsqu'ils sont utilisé en OUTPUT
+\item  6 pin analogiques en INPUT
+\item Connexion USB
 \item Oscillateur à quartz cadencé à 16MHz
 \item Courant continu sur les pin digitaux (40mA)
 \item Une sortie 3.3V et une sortie 5V en courant continu
@@ -195,7 +223,7 @@ Voici une liste des caractéristiques techniques de l'Arduino Uno R3 \cite{Ardui
 Nous n'allons pas faire une analyse approfondie des micro-contrôleurs mais il faut se rappeler qu'ils ne doivent pas faire fonctionner un système d'exploitation, mais qu'ils doivent simplement traiter des mesures et envoyer des signaux digitaux ou analogiques. Sa programmation en pseudo C le rend rapide. L'avantage de l'Arduino Uno est qu'il n'y a pas besoin de faire de soudure, les pin sont directement accessibles et on peut y glisser un fil métallique. Dans le cas où nous souhaiterions commercialiser notre produit, nous choisirons probablement l'Arduino mini car il est encore plus petit et nous pouvons directement souder les fils sur le micro-contrôleur.
 
 \section{Raspberry Pi}
-Le Raspberry Pi \cite{RaspberryPiCaracteristiques}, ou la Framboise pour les francophones, est un ordinateur de la taille d'une carte de crédit sur lequel on peut installer différents systèmes d'exploitations dérivés de UNIX/Linux. Le Raspberry Pi est acheté nu, c'est-à-dire que cet ordinateur ne possède pas d'écran, ni de clavier ou de souris, néanmoins le Raspberry Pi possède plusieurs ports où on peut brancher écran (via l'interface HDMI ou Composite), un câble Ethernet et presque ce qu'on veut grâce aux deux ports USB. Le Raspberry Pi est très intéressant non pas du point de vue de sa puissance calculatoire, mais du point de vue rapport qualité-prix (35.- CHF).
+Le Raspberry Pi \cite{RaspberryPiCaracteristiques}, ou la Framboise pour les francophones, est un ordinateur de la taille d'une carte de crédit sur lequel on peut installer différents systèmes d'exploitations dérivés de UNIX/Linux. Le Raspberry Pi est acheté nu, c'est-à-dire que cet ordinateur ne possède pas d'écran, ni de clavier ou de souris, néanmoins le Raspberry Pi possède plusieurs ports où on peut brancher un écran (via l'interface HDMI ou Composite), un câble Ethernet et presque ce qu'on veut grâce aux deux ports USB. Le Raspberry Pi est très intéressant non pas du point de vue de sa puissance de calcul, mais du point de vue rapport qualité-prix (35.- CHF).
 
 \subsection{Détails techniques du Raspberry Pi}
 Voici une liste des caractéristiques techniques du Raspberry Pi modèle B \cite{RaspberryPiCaracteristiques}:
@@ -209,13 +237,13 @@ Voici une liste des caractéristiques techniques du Raspberry Pi modèle B \cite
 \item 2 ports USB 2.0 et 1 port Ethernet
 \item Alimentation par câble micro USB
 \item Faible consommation (5W, 5V, 1A)
-\item Communication possible via les Pin GPIO
-\item Décodeur permettant de lire le FullHD  1080p
+\item Communication possible via les pin GPIO
+\item Décodeur permettant de lire le Full HD  1080p
 \item API logiciel vidéo (OpenGL)
 \end{enumerate}
 
 \subsection{Avantages et utilisations}
-Bien qu'à première vue la Framboise ne semble pas très performante, il faut prendre en compte son prix qui est bas, sa taille ainsi que les possibilités qui sont presque infinies. Les projets qu'on peut mener grâce au Raspberry Pi sont des plus varié. En effet, il peut être utilisé pour la photographie, comme base centrale d'un système de surveillance. 
+Bien qu'à première vue la Framboise ne semble pas très performante, il faut prendre en compte son prix qui est bas, sa taille ainsi que les possibilités qui sont presque infinies. Les projets qu'on peut mener grâce au Raspberry Pi sont des plus variés. En effet, il peut être utilisé pour la photographie, comme base centrale d'un système de surveillance ou comme ordinateur central pour un drone par exemple.
 
 \subsection{Choix de l'OS}
 Une quinzaine de systèmes d'exploitations fonctionnant sur le Raspberry Pi existent. Parmi les plus connus, il y a Androïd, Arch Linux ARM et Debian/Raspbian. 
@@ -228,26 +256,26 @@ sans fil, nous utilisons un \textit{dongle} (fig:\ref{Edimax})
 Wi-Fi \footnote{Le modèle utilisé est le suivant: EW7811Un fabriqué par
   Edimax} connecté par USB. Cet accessoire ne nécessitant pas de \textit{driver} \footnote{Un
   driver est un petit logiciel permettant de faire l'interface entre les
-  périfériques et l'ordinateur.},il est directement reconnu et peut rapidement être configuré par le Raspberry Pi. 
+  périphériques et l'ordinateur.}, il est directement reconnu et peut rapidement être configuré par le Raspberry Pi. 
 \begin{figure}[!h]
 \begin{center}
 \includegraphics[scale=0.38, trim=300 300 300 0, clip=true]{Edimax}
-\caption[\textit{Dongle} Edimax EW7811Un]{\textit{Dongle} Edimax EW7811Un. Connecté par USB à la Framboise, il permet au Raspberry Pi de se connecter via Wi-Fi à une borne\label{Edimax}}
+\caption[\textit{Dongle} Edimax EW7811Un]{\textit{Dongle} Edimax EW7811Un. Connecté par USB à la Framboise, il permet au Raspberry Pi de se connecter via Wi-Fi à une borne\label{Edimax}.}
 \end{center}
 \end{figure} 
 
 \section{Webcam}
 
-La webcam utilisée dans notre projet est tout à fait standard. D'ailleurs, la grande majorité des caméras usb récentes pourraient fonctionner. Il faut juste s'assurer qu'elles utilisent le driver uvc (Usb Vidéo Class)\cite{uvc}. Le model est la c270 de Logitech qui a une résolution de 720p.
+La webcam utilisée dans notre projet est tout à fait standard. D'ailleurs, la grande majorité des caméras USB récentes pourraient fonctionner. Il faut juste s'assurer qu'elles utilisent le driver UVC (USB Vidéo Class)\cite{uvc}. Le modèle est la C270 de Logitech qui a une résolution de 720p et qui coûte 35.- CHF.
 
 \chapter{La mécanique et l'électronique}
 
 
 \lettrine{N}{ous} nous basons sur un modèle réduit
 télécommandé de type 4x4. Le tableau (\ref{caracteristiquesDuVehicule}) est un
-inventaire de ses caractéristiques dans son état actuel. Dans ce chapitre nous
+inventaire de ses caractéristiques dans son état avant d'implémenter notre système. Dans ce chapitre nous
 allons aborder tout ce qui se réfère aux actuateurs (moteur et servo-moteur),
-comment ils ont été installés et comment les utiliser. Nous commençerons par
+comment ils ont été installés et comment les utiliser. Nous commencerons par
 le plus gros travail, la conception d'un circuit électrique imprimé, dit aussi PCB. 
 
 
@@ -274,7 +302,7 @@ le plus gros travail, la conception d'un circuit électrique imprimé, dit aussi
  \hline
 	\end{tabular}
 \end{center}
-\label{caracteristiquesDuVehicule}\caption{Caractéristiques du véhicule}
+\caption{Caractéristiques du véhicule\label{caracteristiquesDuVehicule}}
 \end{table}
 
 \section{PCB}
@@ -282,7 +310,7 @@ le plus gros travail, la conception d'un circuit électrique imprimé, dit aussi
 \begin{figure}[h!]
 \centering
 \includegraphics[width=1.0\textwidth]{figures/PCB.jpg}
-    \caption{\label{PCB} Le PCB.
+    \caption{\label{PCB} Le PCB que nous avons nous avons conçu grâce au logiciel Eagle.
     }
 \end{figure}
 
@@ -299,14 +327,14 @@ télécommande (TX pour "Transmit" et RX pour "Receive").
 \begin{figure}[h]
 \centering
 \includegraphics[width=0.6\textwidth]{figures/rx2_ex2.jpg}
-    \caption[Exemple de plaque RX2]{\label{rx2.2}Exemple de plaque similaire à ce qu'on a pu trouver
+    \caption[Exemple de plaque RX2]{\label{rx2.2}Exemple de plaque similaire à celle qu'on a pu trouver
       dans le véhicule.}
 \end{figure}
 
 La nature simple du chip RX2 ne lui permet que d'émettre un signal bas ou haut
 (0 ou 5V), à la différence de l'Arduino qui a la possibilité de moduler le
 signal (voir: \ref{servosection}). Cette caractéristique spécifique nous permet
-d'avoir un large éventail de vitesses du moteur et d'angles de braquage
+d'avoir un large éventail de vitesses du moteur et des angles de braquage
 différents. 
 
 
@@ -342,18 +370,18 @@ Quelques explications sur le contenu et la conception de la plaque prototype:
           la batterie en 5V. 
 
 	\item Le régulateur est entouré de capacités pour lisser d'éventuels
-          sauts de tension,mais remarquez que ils seraient probablement
+          sauts de tension, mais remarquez qu'ils seraient probablement
           inutiles lors de hauts sauts de voltage. 
 
 	\item Un chip L293D (H-bridge (sec: \ref{h-bridge})) contrôle le
           moteur de propulsion. Ici, deux chips sont empilés, donc en
-          parallèle, pour pouvoir supporter la charge importante du moteur. 
+          parallèles, pour pouvoir supporter la charge importante du moteur. 
 \end{enumerate}
 
 Tous ces composants, en plus des câbles et des connecteurs vers les actuateurs
-et batterie, sont soudés sur une \textit{strip-board} semblable à celle dans
-la photo \ref{StripBoard}.C'est essentiellement des bandes conductrices avec des trous pour placer les
-composants. les trous ont une distance standard de 0.5 pouces. Le détail des
+et la batterie, sont soudés sur une \textit{strip-board} semblable à celle dans
+la photo (\ref{StripBoard}). C'est essentiellement des bandes conductrices avec des trous pour placer les
+composants. Les trous ont une distance standard de 0.5 pouces. Le détail des
 connexions ne sera pas précisé ici, mais il ressemble évidemment 
 au design de la plaque qui est illustré plus tard.   
 
@@ -367,12 +395,12 @@ au design de la plaque qui est illustré plus tard.
 
 \subsection{Schema électronique}
 Le schéma a été dessiné à l'aide d'un programme dédié gratuit (version light),
-Eagle. Les symbols utilisés sont donc standardisés.
+Eagle. Les symboles utilisés sont donc standardisés.
 (voir fig: \ref{schemaChineComplet})
 
 \begin{figure}[h!]
 \centering
-\includegraphics[angle=90, width=1.1\textwidth]{figures/schema_CHI.png}
+\includegraphics[angle=90, width=1.1\textwidth]{figures/schema_CHI_annotated.png}
 \caption{\label{schemaChineComplet}Schéma complet du PCB
 }
 \end{figure}
@@ -380,51 +408,52 @@ Eagle. Les symbols utilisés sont donc standardisés.
 Quelques indications pour lire le schéma:
 
 \begin{itemize}
-\item les fils portant le même nom sont connectés
-\item toutes les terres sont connectées ensemble
+\item Les fils portant le même nom sont connectés
+\item Toutes les terres sont connectées ensemble
 \item Il y a un circuit 9V et un circuit 5V
 \end{itemize}
 
 \subsection{Design}
 \begin{figure}[h]
 \centering
-\includegraphics[width=1\textwidth]{figures/board_CHI.png}
-\caption[Design final du PCB]{\label{BoardChine}Image du design final à l'ordinateur.
+\includegraphics[width=1\textwidth]{figures/board_CHI_annotated.png}
+\caption[Design final du PCB]{\label{BoardChine}Image du design final à
+  l'ordinateur. (Voir figure \ref{schemaChineComplet} pour les annotations)
 }
 \end{figure}
 
-Une fois le schéma dessiné, Eagle crée une plaque sur laquelle il faut disposer chaque composant. Le programme se charge de contrôler que tout est relié comme dans le schéma. Il pourrait même faire le "routing" lui-même, mais le résultat est très décevant. Des étudiants de l'EPFL nous ont conseillé de faire ça nous-mêmes. Ceci demande de la patience et de la réflexion, comme un puzzle. Nous voulions essayer d'imprimer une version à l'EPFL, il fallait donc faire un design dont les routes se trouvaient uniquement sur le derrière de la plaque (routes bleues)... Le jeu ce complique! en effet, la meilleure solution que nous avons trouvée nous laisse avec une connexion à faire à la main et un connecteur pour senseur en moins.
+Une fois le schéma dessiné, Eagle crée une plaque sur laquelle il faut disposer chaque composant. Le programme se charge de contrôler que tout est relié comme dans le schéma. Il pourrait même faire le "routing" lui-même, mais le résultat est très décevant. Des étudiants de l'EPFL nous ont conseillé de faire ça nous-mêmes. Ceci demande de la patience et de la réflexion, comme un puzzle. Nous voulions essayer d'imprimer une version à l'EPFL, il fallait donc faire un design dont les routes se trouvaient uniquement sur le derrière de la plaque (routes bleues)... Le jeu ce complique! En effet, la meilleure solution que nous avons trouvée nous laisse avec une connexion à faire à la main et un connecteur pour senseur en moins.
 
 D'ailleurs, il faut remarquer que la plaque maison ne permet pas au robot d'interagir avec son environnement. En effet, elle peut juste contrôler des moteurs. La plaque usinée prévoit trois connecteurs pour des senseurs de distance.
 
 
 \subsection{Composants}
 
-Plus que de comprendre comment les composants sont connectés ensemble il est important de bien discerner à quoi sert chacun d'entre eux. Ici, nous détaillerons, un à un,chaque composant, ses propriétés et sa fonction.
+Plus que de comprendre comment les composants sont connectés ensemble il est important de bien discerner à quoi sert chacun d'entre eux. Ici, nous détaillerons, un à un, chaque composant, ses propriétés et sa fonction.
 
-(SCHÉMA/PHOTO qui montre où chaque composant est placé)
 
 \begin{enumerate}
 \item L293D
 
-Le L293D est à un chip à seize pattes qui encapsule effectivement deux H-bridge comme illustré dans la section \ref{h-bridge}. Chaque moitié du pont peut fournir 0.6A de courant continu et 1.2A en pic	 \cite{l293dDataSheet}. Sachant que le moteur peut tirer jusqu'à 3A lorsque la roue est bloquée, il est clair qu'un seul de ces demi-chip est loin d'être à la hauteur. Les avis sont partagés si il est possible de mettre ces chips en parallèle (certains transistors et autres composants ne se partagent pas la charge comme prévu lorsqu'ils sont mis en parallèle), mais, basé sur les indications d'un grand producteur d'électronique pour amateurs \cite{adafruitMotorShield}, nous avons décidé d'empiler deux L293D et de mettre leurs moitiés en parallèle, ce qui s'additionne à 2.4A de courant continu et 4.8A en pic. Nous avons pu tester et valider cette configuration avec la plaque prototype. 
+Le L293D est à un chip à seize pattes qui encapsule effectivement deux H-bridge comme illustré dans la section \ref{h-bridge}. Chaque moitié du pont peut fournir 0.6A de courant continu et 1.2A en pic \cite{l293dDataSheet}. Sachant que le moteur peut tirer jusqu'à 3A lorsque la roue est bloquée, il est clair qu'un seul de ces demi-chip est loin d'être à la hauteur. Les avis sont partagés s'il est possible de mettre ces chips en parallèle (certains transistors et autres composants ne se partagent pas la charge comme prévu lorsqu'ils sont mis en parallèle), mais, basé sur les indications d'un grand producteur d'électronique pour amateurs \cite{adafruitMotorShield}, nous avons décidé d'empiler deux L293D et de mettre leurs moitiés en parallèle, ce qui s'additionne à 2.4A de courant continu et 4.8A en pic. Nous avons pu tester et valider cette configuration avec la plaque prototype. 
 
 \item 7805T
 
-Le 7805T est un régulateur 5V. Il approvisionne les composants fonctionnant à 5V en courant. Il peut prendre jusqu'à 35V de tension en entrée \cite{7805T}. Il faut savoir que c'est un appareil très peu efficace car la tension non utilisée est dissipée en chaleur. Il est donc nécessaire de s'assurer que le composant arrive à dissiper suffisamment de courant. Selon les graphes il a une dissipation d'environ 2.5W. Si on somme les courants des différents composants fonctionnant à 5V on trouve qu'ils requièrent environ 1A au maximum. La plus grande partie de la consommation vient du servo-moteur qui ne demande pas un approvisionnent continu. On calcule donc une dissipation de 5W (5V*1A) ce qui excède largement les spécification du composant \cite{7805T}. Mais, les tests jusqu'à ce jour montrent que il n'y a pas de problème vu que le servo-moteur n'a pas besoin d'un approvisionnement régulier. Pour être sûr on pourrait fixer un \textit{heatsink}\footnote{un \textit{heatsink} est une pièce métallique qui permet de dissiper plus rapidement la chaleur d'un composant.} sur le composant.
+Le 7805T est un régulateur 5V. Il approvisionne les composants fonctionnant à 5V en courant continu. Il peut prendre jusqu'à 35V de tension en entrée \cite{7805T}. Il faut savoir que c'est un appareil très peu efficace car la tension non utilisée est dissipée en chaleur. Il est donc nécessaire de s'assurer que le composant arrive à dissiper suffisamment de courant en chaleur sans griller. Selon les graphes, il a une dissipation d'environ 2.5W. Si on somme les courants des différents composants fonctionnant à 5V on trouve qu'ils requièrent environ 1A au maximum. La plus grande partie de la consommation vient du servo-moteur qui ne demande pas un approvisionnent continu. On calcule donc une dissipation de 5W (5V*1A) ce qui excède largement les spécification du composant \cite{7805T}. Mais, les tests jusqu'à ce jour montrent qu'il n'y a pas de problème vu que le servo-moteur n'a pas besoin d'un approvisionnement régulier. Pour être sûr, on pourrait fixer un \textit{heatsink}\footnote{un \textit{heatsink} est une pièce métallique qui permet de dissiper plus rapidement la chaleur d'un composant.} sur le composant.
 
 \item Condensateur $200\mu f$ ou $500\mu f$
 
-Cette capacité travaille en parallèle avec la diode Zener pour lisser le signal vers le  moteur et absorber de forts sauts de tension à la suite, par
+Cette capacité travaille en parallèle avec la diode Zener (fig: \ref{zener}) pour lisser le signal vers le  moteur et absorber de forts sauts de tension à la suite, par
 exemple, d'un blocage soudain des roues.
 
 \item Condensateur $100pf$
 
-Ces petites capacités servent surtout à lisser les petites variations dans le signal, connues par exemple en sortie du régulateur de voltage.
+Ces petites capacités servent surtout à lisser les petites variations dans le signal, comme par exemple en sortie du régulateur de voltage.
 
 \item Diode Zener
 
 La diode Zener a la particularité, en plus d'être une diode, d'avoir une tension seuil au-delà de laquelle elle ne remplit plus sa fonction de diode et laisse librement passer le courant. Ceci est très pratique en cas de forts sauts de tension (fig: \ref{zener}). 
+
 \begin{figure}[h]
 \centering
 \includegraphics[width=1.0\textwidth]{CircuitZener.pdf} 
@@ -433,31 +462,34 @@ La diode Zener a la particularité, en plus d'être une diode, d'avoir une tensi
 \end{figure}
 
 
-\item connecteurs senseurs
+\item Connecteurs senseurs
 
-Ces connecteurs facilitent simplement la connectique et le remplacement d'un senseur au cas où il était cassé. Il y a quatre pins: deux pour l'alimentation (5v, ~15mA, pour un senseur ultrasonic HC-SR04) \cite{HC-SR04}, un pour envoyer le signal et le dernier pour recevoir l'écho.
+Ces connecteurs facilitent simplement la connectique et le remplacement d'un senseur au cas où il était cassé. Il y a quatre pins: deux pour l'alimentation (5v, ~15mA, pour un senseur à ultrason HC-SR04) \cite{HC-SR04}, un pour envoyer le signal et le dernier pour recevoir l'écho.
 
-\item connecteur servo-moteur
+\item Connecteur servo-moteur
 
-Tout comme les connecteurs pour senseurs à la différence qu'il n'y a que trois pins: deux pour l'alimentation (5V, ~600mA) (tab: \ref{caracteristiquesDuVehicule}
+Tout comme les connecteurs pour senseurs à la différence qu'il n'y a que trois pins: deux pour l'alimentation (5V, ~600mA) (tab:
+\ref{caracteristiquesDuVehicule})
 
-\item prises block
+
+\item Prises block
 
 Ces connecteurs peuvent connecter de façon provisoire des plus gros câbles (moteur, batterie). Les câbles sont immobilisés au moyen de vis.
 
 \end{enumerate}
+
 \subsection{Commande et conception}
 Une fois le design terminé et les composants choisis, nous pouvons envoyer
 notre projet à une fabrique spécialisée. Des étudiants de l'EPFL, du club
 RoboPoly, nous ont conseillé une compagnie basée en chine, SeeStudio, qui imprime des
-plaques à bon prix. La procédure de perçage et d'impression est évidemment
+plaques à de bons prix. La procédure de perçage et d'impression est évidemment
 standardisée. Le fabriquant requiert donc des fichiers bien précis à donner à
 ses machines, dénommés fichiers Gerber. Ces fichiers contiennent de
 l'information en coordonnées x,y et en commandes que la machine interprète. Il
 serait évidemment très complexe d'écrire un tel fichier à la
 main. Heureusement, le CAD que nous utilisons prévoit des scripts capable de
 transformer notre design en de tels fichiers. Le fabriquant requiert
-exactement huit fichiers différents, stockés dans un zip et envoyés avec la commande.  
+exactement huit fichiers différents, compressés dans un zip et envoyés avec la commande.  
 
 
 \section{Système de guidage}
@@ -511,7 +543,7 @@ Le montage final est illustré par les figures (\ref{InstallServo}) et (\ref{Ins
 \begin{figure}[h]
 \centering
 \includegraphics[width=0.6\textwidth, angle = 90]{figures/InstallationServo2.jpg}
-    \caption[Installation du servo (2)]{\label{InstallServo2} Vue aérienne du montage pour le système de direction, avec le couvercle entr'ouvert. 
+    \caption[Installation du servo (2)]{\label{InstallServo2} Vue aérienne du montage pour le système de direction, avec le couvercle entrouvert. 
     }
 \end{figure}
 %\subsection{Géométrie d'Ackermann}
@@ -522,9 +554,9 @@ Le montage final est illustré par les figures (\ref{InstallServo}) et (\ref{Ins
 Le contrôle d'un servo-moteur est une tâche qu'un micro-contrôleur tel que
 l'Arduino (section: \ref{Arduino}) effectue avec aisance. On peut indiquer à un servo-moteur de se rendre vers
 un de ses $180^{\circ}$ de liberté en lui envoyant un signal électrique dit
-modulé. Ce signal est modulé d'une manière compréhensible pour le
-servo-moteur. L'illustration suivante
-pourrait d'avantage éclairer le lecteur.
+modulé. Ce signal est modulé d'une manière com\-pré\-hen\-si\-ble pour le
+servo-moteur. L'illustration \ref{ServoPwm}
+pourrait davantage éclairer le lecteur.
 
 \begin{figure}[h]
 \centering
@@ -535,10 +567,10 @@ pourrait d'avantage éclairer le lecteur.
     }
 \end{figure}
 
-Comme l'on peut voir, le dit signal, est form\'e de hauts et de
+Comme l'on peut voir, le dit signal est form\'e de hauts et de
 bas. Lorsqu'il est \emph{BAS}, cela veut dire que la tension est basse ou égale
 à 0V. Lorsqu'il est
-\emph{HAUT}, cela veut dire que la tension est a une valeur définie auparavant,
+\emph{HAUT}, cela veut dire que la tension est à une valeur définie auparavant,
 standard, différente de 0V. Dans notre cas, le \emph{HAUT} est à 5V (standard
 pour le modélisme et l'électronique en général). On appelle la
 période pendant laquelle le signal est \emph{HAUT} une pulsation.
@@ -553,7 +585,7 @@ Le programme se trouvant en annexe (\ref{SketchExServo}) est un exemple propos\'
 ``apprentissage'' du site officiel d'Arduino \cite{ServoSweep}. Il utilise la librairie
 ``Servo'' installée avec l'IDE Arduino. Ce que font les méthodes de cette
 classe est de produire un signal comme celui discuté à la section
-précédente en l'émettant par un des pins de l'Arduino capable de cette
+précédente en l'émettant par un des pins de l'Arduino capable de faire cette
 modulation.
 D'ailleurs, ce programme est tr\`es pratique pour tester le fonctionnement d'un servo-moteur. 
 
@@ -562,12 +594,12 @@ D'ailleurs, ce programme est tr\`es pratique pour tester le fonctionnement d'un 
 \subsection{Descriptif}
 
 Le moteur de propulsion, au contraire du servo, n'a pas été changé.
- Ses caractéristiques électriques (données que nous avon mesuré à l'aide
-d'un multimètre du gymnase) se trouvent \`a la section
-(\ref{TableDesc}). Le moteur est muni d'une boite \`a vitesse ainsi qu'un
+ Ses caractéristiques électriques (données que nous avons mesurées à l'aide
+d'un multimètre du gymnase) se trouvent dans le tableau
+(\ref{caracteristiquesDuVehicule}). Le moteur est muni d'une boîte \`a vitesse ainsi qu'un
 différentiel. Nous avons estimé qu'il aurait été
 inutilement compliqué d'y apporter des modifications. La
-configuration déjà existante, à l'exception de l'éléctronique
+configuration déjà existante, à l'exception de l'électronique
 subvient tout à fait à nos besoins.  
 
 \subsection{H-bridge}\label{h-bridge}
@@ -582,7 +614,7 @@ moteur sans intervention manuelle?
 
 La r\'eponse est donn\'ee par un astucieux circuit compos\'e de
 transistors. Il permet, au moyen de deux signaux actionnant les transistors,
-de contr\^oler le sens du courant passant dans le moteur. La figure \ref{H-Bridge} pourra d'avantage éclairer le lecteur.
+de contr\^oler le sens du courant passant dans le moteur. La figure \ref{H-bridge} pourra d'avantage éclairer le lecteur.
 
 \begin{figure}[h]
 \centering
@@ -590,14 +622,14 @@ de contr\^oler le sens du courant passant dans le moteur. La figure \ref{H-Bridg
     \caption[H-Bridge]{\label{H-bridge}Sch\'ema d'un H-bridge}
 \end{figure}
 
-Pour fabriquer un H-bridge, il faut utiliser entre autres des transistor NPN \footnote{Négatif-Positif-Négatif} et PNP \footnote{Positif-Négatif-Positif}.  La diff\'erence pratique
+Pour fabriquer un H-bridge, il faut utiliser entre autres des transistors NPN(Négatif-Positif-Négatif) et PNP(Positif-Négatif-Positif).  La diff\'erence pratique
 entre ces deux types de transistors est que l'un demande un signal
 d\'eclencheur haut pour \^etre ouvert tandis que l'autre en demande un
 bas ou la terre. Dans ce cas, on utilise deux types de transistors
 diff\'erents (en grande partie pour clarifier le sch\'ema), mais l'on pourrait
 tr\`es bien utiliser uniquement des transistors du m\^eme type. On obtiendrait
 le m\^eme r\'esultat en connectant chaque \emph{INPUT} \`a une paire de transistors
-diagonalement oppos\'es\cite{RobotRoom} dans la figure \ref{H-Bridge}.
+diagonalement oppos\'es \cite{RobotRoom} dans la figure \ref{H-bridge}.
 
 On peut voir que selon le \emph{INPUT}, on obtiendra des tensions au bornes du
 moteur ou \emph{OUTPUT} variables.
@@ -633,18 +665,18 @@ ou dans l'autre.\normalsize
 \begin{figure}[h!]
 \centering
 \includegraphics[width=0.5\textwidth]{figures/HC-SR04.jpg}
-    \caption[HC-SR04, senseur de distance]{\label{PingSensor}Le senseur de distance ultrasonic HC-SR04}
+    \caption[HC-SR04, senseur de distance]{\label{PingSensor}Le senseur de distance à ultrason HC-SR04}
 \end{figure}
 
-Nous utilisons un senseur de distance nommé HC-SR04. Son fonctionnement est basé sur l'émission puis la détection d'ultrassons. En d'autres termes, c'est un sonar. Les dauphins et les chauve-souris utilisent le même système pour s'orienter. Son spectre d'oppération s'étend de 2 à 400cm et n'est pas influencé par les conditions de lumière. Une matière avec des propriétés sonores particulières, tel que le tissus, peuvent biaiser les mesures du senseur.\cite{HC-SR04}
+Nous utilisons un senseur de distance nommé HC-SR04. Son fonctionnement est basé sur l'émission puis la détection d'ultrasons. En d'autres termes, c'est un sonar. Les dauphins et les chauve-souris utilisent le même système pour s'orienter. Son spectre d'opération s'étend de 2 à 400cm et n'est pas influencé par les conditions de lumière. Une matière avec des propriétés sonores particulières, tel que le tissu, peut biaiser les mesures du senseur.\cite{HC-SR04}
 
 L'idée, c'est que les senseurs puissent nous apporter des informations supplémentaires à celles apportées par la caméra sur l'environnement dans lequel se trouve le véhicule. De plus, c'est de l'information simple, juste une distance, un entier, donc la transmission de cette donnée est très rapide par rapport à celle d'une image vidéo.
 
 Quelques caractéristiques intéressantes:
 \begin{enumerate}
 \item Voltage de fonctionnement: 5V
-\item Courrant en veille: $<$ 2mA
-\item Courrant en utilisation: 15mA
+\item Courant en veille: $<$ 2mA
+\item Courant en utilisation: 15mA
 \item Angle de mesure efficace: $<$ 15°
 \item Angle de mesure total: 30°
 \item Spectre d'opération: 2-400cm
@@ -652,7 +684,7 @@ Quelques caractéristiques intéressantes:
 \item Dimensions: 45mm x 20mm x 15mm
 \end{enumerate}
 
-La figure (\ref{PingSensorTimingDiagram}) montre tout d'abord le signal à donner au senseur pour qu'il lance l'émission de la pulsation ultrasson, soit un signal \emph{HAUT} de 10$u$s. Ensuite, le senseur va effectivement émettre un signal ultrassonic modulé. Lorsqu'il reçoit le son en retour, le senseur va donner un signal \emph{HAUT} de longueure proportionelle au temps qu'il a attendu pour recevoir l'écho.
+La figure (\ref{PingSensorTimingDiagram}) montre tout d'abord le signal à donner au senseur pour qu'il lance l'émission de la pulsation ultrason, soit un signal \emph{HAUT} de 10$u$s. Ensuite, le senseur va effectivement émettre un signal d'ultrason modulé. Lorsqu'il reçoit le son en retour, le senseur va donner un signal \emph{HAUT} de longueur proportionnelle au temps qu'il a attendu pour recevoir l'écho.
 
 \begin{figure}[h]
 \centering
@@ -660,9 +692,9 @@ La figure (\ref{PingSensorTimingDiagram}) montre tout d'abord le signal à donne
     \caption[Fonctionnement du HC-SR04 en fonction du temps]{\label{PingSensorTimingDiagram}Fonctionnement du HC-SR04 en fonction du temps}
 \end{figure}
 
-\subsection{programmation pour utiliser le senseur}
+\subsection{Programmation pour utiliser le senseur}
 
-Le code Arduino exemple se trouve en annexe, section \ref{EXcodeHC-SR04}. Comme expliqué précédemment, l'Arduino va recevoir un signal d'une longueure dans le temps proportionelle à la distance mesurée par le senseur. Plus précisément, c'est le temps $t$ en microsecondes que le senseur a pris pour recevoir l'écho en retour. Sachant que la vitesse du son est de 343.5m/s (donc le temps pour franchir 1cm équivaut à 29.1 us)  et que il doit faire un allé retour du véhicule à l'obstacle, on en déduit que la distance $d$ en fonction du temps s'écrit comme suit:
+Le code Arduino exemple se trouve en annexe, section \ref{EXcodeHC-SR04}. Comme expliqué précédemment, l'Arduino va recevoir un signal d'une longueur dans le temps proportionnel à la distance mesurée par le senseur. Plus pré\-ci\-sé\-ment, c'est le temps $t$ en microsecondes que le senseur a pris pour recevoir l'écho en retour. Sachant que la vitesse du son est de 343.5m/s (donc le temps pour franchir 1cm équivaut à 29.1 us)  et que il doit faire un aller-retour du véhicule à l'obstacle, on en déduit que la distance $d$ en fonction du temps s'écrit comme suit:
 
 \begin{equation}
 d(t)=\frac{t}{2*29.1}
@@ -670,10 +702,10 @@ d(t)=\frac{t}{2*29.1}
 
 
 \section{Coût des composants}
-Le tableau \ref{TableCout} contient les éléments clefs que nous avons utilisé pour construire notre drone.
+Le tableau \ref{TableCout} contient les éléments clefs que nous avons utilisés pour construire notre drone.
 
-\begin{centering}
-\begin{table}[ht]
+\begin{center}
+\begin{table}[h]
 \begin{tabular}{| l | c | r |}
 \hline
 Composant & Quantité & Prix [CHF] \\
@@ -692,7 +724,7 @@ Edimax EW7811Un (wi-fi) & 1 & 18.40\\
 \hline
 Hub USB & 1 & 5.60\\
 \hline
-Capteur de distance (HC-SR04) & 1 & 3.20\\
+Capteur de distance (HC-SR04) & 3 & 9.60\\
 \hline
 L293D & 1 & 3.00\\
 \hline
@@ -702,13 +734,13 @@ Câble micro USB & 1 & 1.40\\
 
 \hline
 \hline
-total & 10 & 179.60\\
+total & 10 & 186.00\\
 \hline
 
 \end{tabular}
-\caption{\label{TableCout}Synthèse des composants clef, leur prix et le prix total.}
+\caption{\label{TableCout}Synthèse des composants clés, leur prix et le prix total.}
 \end{table}
-\end{centering}
+\end{center}
 
 
 
@@ -717,17 +749,17 @@ total & 10 & 179.60\\
 \chapter{Software \\  Première version des systèmes embarqués}
 %\addcontentsline{toc}{chapter}{\protect\numberline{}\normalsize Software Première version des systèmes embarqués}
 
-\lettrine{L}{a} première version du software consistait en une étape préliminaire dont le but était de prouver qu'on pouvait contrôler la voiture à distance par un réseau local wi-fi. Sa simplicité relative réside dans le fait que nous avons légué tout ce qui est transmission de donées par le réseau à un logiciel tierce. Nous nous sommes surtout occupés ici de la communication Raspberry Pi, Arduino par USB et de trouver une première solution pour transmettre la vidéo.
+\lettrine{L}{a} première version du software consistait en une étape préliminaire dont le but était de prouver qu'on pouvait contrôler la voiture à distance par un réseau local Wi-Fi. Sa simplicité relative réside dans le fait que nous avons légué tout ce qui est transmission de données par le réseau à un logiciel tiers. Nous nous sommes surtout occupés ici de la communication Raspberry Pi, Arduino par USB et de trouver une première solution pour transmettre la vidéo.
 
 \section{Software de l'Arduino}
-Pour programmer l'Arduino, nous utilisons le logiciel dédié, \textit{Arduino IDE}\footnote{IDE signifie \textit{Integrated Development Environment}. C'est une ensemble d'outils qui sont mis à la disposition des programmeurs afin de simplifier et augmenter leur productivité.} (fig: \ref{Environnement Arduino}). C'est un environnement \textit{open source} qui fonctionne sur Windows, Linux et Mac OS X. Il a été écrit en Java et est basé sur le logiciel Processing.
-\begin{figure}[h!]
-\begin{center}
-\includegraphics[scale=0.5]{arduino-environnement-1}\\
-\caption[Environnement de programmation Arduino]{Environnement Arduino\label{Environnement Arduino}, C'est la fenêtre qui nous permet d'écrire un code dans un pseudo C, de le compiler et le téléverser sur l'Arduino. Ce programme a un sorte de petit déboggeur qui est très basique, mais très souvent suffisant.}
-\end{center}
-\end{figure}
-Ce logiciel nous permet de programmer, de compiler et de téléverser un code à un Arduino. Il possède aussi des exemples de codes afin de pouvoir apprendre à utiliser un Arduino sans avoir à chercher sur le web. Il prend en compte des librairies qu'on peut rajouter simplement en mettant la librairie dans le dossier "\textit{\textbackslash arduino\textbackslash librairies}". Ce software permet aussi à l'utilisateur d'envoyer des caractères ou des chaînes de caractères à l'Arduino par le biai du port \textit{Serial}, il faut néanmoins appuyer sur entrée pour envoyer le caractère ou la chaîne de caractères.
+Pour programmer l'Arduino, nous utilisons le logiciel dédié, \textit{Arduino IDE}\footnote{IDE signifie \textit{Integrated Development Environment}. C'est un ensemble d'outils qui sont mis à la disposition des programmeurs afin de simplifier et augmenter leur productivité.}. C'est un environnement \textit{Open source} qui fonctionne sur Windows, Linux et Mac OS X. Il a été écrit en Java et est basé sur le logiciel Processing.
+%% \begin{figure}[h!]
+%% \begin{center}
+%% \includegraphics[scale=0.5]{arduino-environnement-1}\\
+%% \caption[Environnement de programmation Arduino]{Environnement Arduino\label{Environnement Arduino}, C'est la fenêtre qui nous permet d'écrire un code dans un pseudo C, de le compiler et le téléverser sur l'Arduino. Ce programme a une sorte de petit déboggeur qui est très basique, mais très souvent suffisant.}
+%% \end{center}
+%% \end{figure}
+Ce logiciel nous permet de programmer, de compiler et de téléverser un code à un Arduino. Il possède aussi des exemples de codes afin de pouvoir apprendre à utiliser un Arduino sans avoir à chercher sur le web. Il prend en compte des librairies qu'on peut rajouter simplement en mettant la librairie dans le dossier "\textit{\textbackslash arduino\textbackslash librairies}". Ce software permet aussi à l'utilisateur d'envoyer des caractères ou des chaînes de caractères à l'Arduino par le biais du port \textit{Serial}, il faut néanmoins appuyer sur entrée pour envoyer le caractère ou la chaîne de caractères.
 
 
 \section{Software du Raspberry Pi}
@@ -738,9 +770,9 @@ Sans les logiciels, notre projet aurait bien du mal à se réaliser. Dans cette 
 
 
 
-\subsubsection{Partage sécurisé}
+\subsection{Partage sécurisé}
 
-Au niveau software, nous utilisons un type de partage sécurisé entre deux ordinateurs, qui se nomme \textit{ssh} pour \textit{Secure Shell}. C'est un protocole permettant à un ordinateur de faire une connexion sécurisée avec un autre afin de le contrôler. Meilleur que VNC (\textit{Virtual Network Computing}) dans le sens où il ne demande pas au Raspberry Pi de dupliquer le \textit{Desktop} (bureau), ce qui nous permet d'améliorer les performances, tant du côté de la réactivité des commandes, que du nombre d'images par secondes de la caméra envoyées par le Raspberry Pi. Il y a deux inconvénients majeurs à ces solutions, la première, c'est qu'il faut établir la connexion et lancer les programmes manuellement. Le deuxième inconvénient, c'est qu'il est beaucoup plus compliqué, voire impossible à un utilisateur n'utilisant pas un système UNIX de se connecter au Raspberry Pi. Ce qui fait en sorte que notre drone ne toucherais pas un grand public.
+Nous utilisons un type de partage sécurisé entre deux ordinateurs, qui se nomme \textit{ssh} pour \textit{Secure Shell}. C'est un protocole permettant à un ordinateur de faire une connexion sécurisée avec un autre afin de le contrôler. Meilleur que VNC (\textit{Virtual Network Computing}) dans le sens où il ne demande pas au Raspberry Pi de dupliquer le \textit{Desktop} (bureau), ce qui nous permet d'améliorer les performances, tant du côté de la réactivité des commandes, que du nombre d'images par secondes de la caméra envoyé par le Raspberry Pi. Il y a deux inconvénients majeurs à ces solutions, la première, c'est qu'il faut établir la connexion et lancer les programmes manuellement. Le deuxième inconvénient, c'est qu'il est beaucoup plus compliqué, voire impossible à un utilisateur n'utilisant pas un système UNIX de se connecter au Raspberry Pi. Ce qui fait en sorte que notre drone ne toucherait pas un grand public.
 
 \subsection{Guvcview}
 
@@ -750,7 +782,7 @@ Guvcview\label{Guvcview} est un software permettant d'enregistrer des séquences
 Outre les programmes mentionnés auparavant, nous avons développé notre propre
 code python qui permet de contrôler le
 véhicule. L'interface graphique est très simple
-(fig: \ref{python environnement}). Il s'agit simplement d'une fenêtre qui est à
+(fig: \ref{pythonenvironnement}). Il s'agit simplement d'une fenêtre qui est à
 l'écoute du clavier et qui, lorsque l'utilisateur presse une touche, va
 envoyer le caractère à l'Arduino via le port de communication
 \textit{Serial}. L'Arduino va ensuite, grâce à son propre code définir quelle action le
@@ -758,56 +790,49 @@ véhicule doit faire. Ce programme permet non seulement de choisir la direction
 à prendre, mais aussi de régler l'angle de braquage ou la vitesse maximale. Le programme ne prend pas en
 compte l'utilisation de capteurs, tel que le capteur de distance. Il permet
 simplement de diriger le véhicule. Une zone de texte non éditable par
-l'utilisateur permet d'afficher des messages, avertissant, par exemple, que le
+l'utilisateur permet d'afficher des messages, signalant, par exemple, que le
 pilote a atteint le braquage maximal. Le programme n'est pas conscient de
 l'état physique de la voiture, mais se base uniquement sur les paramètres
 sélectionnés par le pilote pour imprimer de tels messages. 
 
 \begin{center}
 \begin{figure}[!h]
-\includegraphics[scale=1]{python-environnement}\label{python environnement}
-\caption[Interface graphique Python]{Fenêtre X du code python qui permet la lecture du clavier. Cette fenêtre permet de contrôler le drone. Le programme affiche sur la colonne de droite l'angle de rotation des roues ainsi que la vitesse maximale du drone fixée par le pilot.}
+\includegraphics[scale=1]{python-environnement}
+\caption[Interface graphique Python]{Fenêtre X du code python qui permet la lecture du clavier. Cette fenêtre permet de contrôler le drone. Le programme affiche sur la colonne de droite l'angle de rotation des roues ainsi que la vitesse maximale du drone fixée par le pilote.\label{pythonenvironnement}}
 \end{figure}
 \end{center}
 
 
 \section{Évaluation de la première version}
 
-Avant de commencer à parler de la deuxième version, nous allons analyser quels sont les points forts ou points faibles de cette première version. Les avantages de cette versions sont surtout au niveau des programmeurs. En effet, cette version est assez simple à programmer, dans le sens où nous utilisons déjà des programmes qui existent déjà et nous nous sommes surtout occupé de l'interface humain machine. Les communications (ssh ou serial) sont très simple a utiliser. Les inconvénients se placent surtout au niveau de l'utilisateur. En effet, il n'est pas très pratique de devoir ouvrir un Terminal, se connecter au drone via ssh, lancer trois programmes manuellement avant de pouvoir utiliser le drone. De plus, la connexion cryptée fait baisser la rapidité de la connexion (qui est surtout visible avec l'image de la caméra). C'est pourquoi nous nous sommes lancés dans une deuxième version du drone, qui, en plus d'avoir de nouvelles fonctions, est plus simple d'utilisation et plus fluide. 
+Avant de commencer à parler de la deuxième version, nous allons analyser quels sont les points forts ou points faibles de cette première version. Les avantages de cette version sont surtout au niveau des programmeurs. En effet, cette version est assez simple à programmer, dans le sens où nous utilisons des programmes qui existent déjà et nous nous sommes surtout occupé de l'IHM (Interface Homme Machine). Les communications (ssh ou serial) sont très simple à utiliser. Les inconvénients se placent surtout au niveau de l'utilisateur. En effet, il n'est pas très pratique de devoir ouvrir un Terminal, se connecter au drone via ssh, lancer trois programmes manuellement avant de pouvoir utiliser le drone. De plus, la connexion cryptée fait baisser la rapidité du transfert de données (qui est surtout visible avec l'image de la caméra). C'est pourquoi nous nous sommes lancés dans une deuxième version du drone, qui, en plus d'avoir de nouvelles fonctions, est plus simple d'utilisation et plus fluide. 
 
 \clearpage
 
-\chapter{Software \\ Deuxième version des système embarqués}
+\chapter{Software \\ Deuxième version des systèmes embarqués}
 
 \lettrine{D}{ans} notre projet, nous avons prévu une deuxième version du drone, 
 dans le sens où la première version ne remplissait pas tout à fait les buts que nous 
 nous étions fixés. Cette version, principalement programmée en Java et en C++, 
-nous permet de faire nous même la connexion entre l'ordinateur et le Raspberry Pi. Le C++ a été utilisé dans tout ce qui touche la caméra. Il a été choisi car il est beaucoup plus rapide que le Java, et donc essentiel au niveau de l'image, où nous cherchons les meilleures performances. Le reste à été codé en Java. Nous avons choisis ce langage pour plusieurs raisons. Tout d'abord, nous avions des notions en Java, 
-ce qui n'est pas négligeable quand on doit choisir un programme, c'est aussi un langage constamment mis à jour et il possède une large communauté, ce qui fait que de nombreuses classes existent, notamment du côté des interfaces graphiques,
-sans lesquelles nous aurions de la peine à rendre le programme agréable à utiliser. Dans ce chapitre, nous allons tout d'abord aborder le type de structure employée et le choix de protocole
+nous permet de faire nous-même la connexion entre l'ordinateur et le Raspberry Pi. Le C++ a été utilisé dans tout ce qui touche la caméra. Il a été choisi car il est beaucoup plus rapide que le Java, et donc essentiel au niveau de l'image, où nous cherchons les meilleures performances. Le reste a été codé en Java. Nous avons choisi ce langage pour plusieurs raisons. Tout d'abord, nous avions des notions en Java, 
+ce qui n'est pas négligeable quand on doit choisir un langage de programmation, c'est aussi un langage constamment mis à jour et il possède une large communauté, ce qui fait que de nombreuses classes existent, notamment du côté des interfaces graphiques,
+sans lesquelles nous aurions de la peine à rendre le programme agréable à utiliser. Dans ce chapitre, nous allons tout d'abord aborder le type de structure employé et le choix de protocole
 que nous avons adopté, nous allons ensuite voir à quoi ressemble notre programme Java et ce qu'il fait. Avant de parler
 de la vidéo avec le programme en C++ ainsi que OpenCV.
-langage constamment mis à jour et il possède une large communauté, ce qui fait
-que de nombreuses classes existent, notamment du côté des interfaces graphiques,
-sans lesquelles nous aurions de la peine à rendre le programme agréable à 
-utiliser. Dans ce chapitre, nous allons tout d'abord aborder le type de structure employée et le choix de protocole
-que nous avons adopté, nous allons ensuite voir à 
-quoi ressemble notre programme Java et ce qu'il fait. Avant de parler
-de la vidéo avec OpenCV. 
 
 \section{Client/Serveur\label{ClientServeur}}
 
 
-Le model client-serveur est composé de deux partis: les serveurs qui fournissent un service et les clients qui bénéficient de celui-ci. Un client ne partage pas ses ressources avec les autres, mais profite de celles du serveur. Le Serveur attend qu'un client vienne se connecter et faire des requêtes auxquels il répond. Il doit généralement être capable de gérer plusieurs clients à la fois.
+Le modèle client-serveur est composé de deux parties: les serveurs qui fournissent un service et les clients qui bénéficient de celui-ci. Un client ne partage pas ses ressources avec les autres, mais profite de celles du serveur. Le serveur attend qu'un client vienne se connecter et faire des requêtes auxquelles il répond. Il doit généralement être capable de gérer plusieurs clients à la fois.
 
 \begin{figure}[h]
 \includegraphics[width=1.0\textwidth]{figures/Client_Server1.pdf}
 \caption[Structure client-serveur]{\label{ClientServer1}Structure client-serveur.}
 \end{figure}
 
-Nous avons établi que la voiture occupe le rôle de serveur qui est exécuté sur le RaspberryPi. Il contrôle les mouvements de la voiture par l'intermède de l'Arduino. Le client peut être n'importe quelle machine sur le réseau local utilisant le côté client du code. Le code est effectivement constitué de deux "main class", c'est à dire des applets, "Server" et "Client". 
+Nous avons établi que la voiture occupe le rôle de serveur qui est exécuté sur le RaspberryPi. Il contrôle les mouvements de la voiture par l'intermède de l'Arduino. Le client peut être n'importe quelle machine sur le réseau local utilisant le côté client du code. Le code est effectivement constitué de deux "main class", c'est à dire des applets, "Server" et "Client".  
 
-Un Thread est initié pour chaque nouvelle demande de connexion. C'est à dire que le serveur peut s'occuper en parallèle des requêtes de différents clients (voir fig. \ref{ClientServer2}). 
+Un Thread est initié pour chaque nouvelle demande de connexion. C'est-à-dire que le serveur peut s'occuper en parallèle des requêtes de différents clients (voir fig. \ref{ClientServer2}). 
 
 \begin{figure}[h]
 \includegraphics[width=1.0\textwidth]{figures/Client_Server2.pdf}
@@ -818,31 +843,31 @@ Un Thread est initié pour chaque nouvelle demande de connexion. C'est à dire q
 \section{UDP ou TCP\label{UDPTCP}}
 Avant de parler de notre choix, nous allons un peu expliquer ce que sont les protocoles UDP et TCP et leurs différences. UDP et TCP sont deux protocoles de communication réseau qui permettent d'envoyer des données, (\textit{Packets}), d'un ordinateur à un autre.
 
-Le protocole UDP\footnote{\textit{User Datagram Protocol}, soit protocole des datagrammes d'utilisateurs} est un protocole qui n'est pas orienté connexion. Les paquets qui transitent via un protocole UDP ont l'adresse IP du récepteur, comme la poste, mais il n'y a aucune garantie que les paquets soient bien arrivés sans parler de leur ordre. Par contre, il n'y a pas le souci de perte de connexion puisque il n'y en a pas. Ce protocol est particulièrement adapté pour la transmission de vidéo. Pour contrôler les mouvements du véhicule il est impératif qu'il sache à tous moment si il y a au moins un client qui est au contrôle, au risque que le véhicule soit livré à lui même. Ici rentre en jeu le protocole TCP. 
+Le protocole UDP\footnote{\textit{User Datagram Protocol}, soit protocole des datagrammes d'utilisateurs} est un protocole qui n'est pas orienté connexion. Les paquets qui transitent via un protocole UDP ont l'adresse IP du récepteur, comme la poste, mais il n'y a aucune garantie que les paquets soient bien arrivés sans parler de leur ordre. Par contre, il n'y a pas le souci de perte de connexion puisque il n'y en a pas. Ce protocole est particulièrement adapté pour la transmission de vidéo. Pour contrôler les mouvements du véhicule, il est impératif qu'il sache à tout moment s'il y a au moins un client qui est au contrôle, au risque que le véhicule soit livré à lui-même. Ici rentre en jeu le protocole TCP. 
 
 Le protocole TCP\footnote{\textit{Transmission Control Protocol}, soit protocole de contrôle des transmissions} est l'opposé de l'UDP, il est orienté connexion. Lorsque le client envoie des données au serveur, ce premier est informé de l'arrivée des dites données. Il y a donc un système de reçu qui confirme la réception des packets. S'il y a des fichiers corrompus, l'expéditeur va renvoyer les fichiers manquants. On peut, par analogie, comparer ce protocole à la communication téléphonique: on remarque assez rapidement quand il y a une coupure dans la ligne.\\
 
 \section{Java}
-Le code complet Java est très long et est composé de beaucoup de classes. Plutôt que de tout détailler ou pire, juste mettre le code cru, nous avons sélectionné les thèmes les plus intéressants que nous avons rencontré pendant l'écriture du programme. Nous allons expliquer comment nous avons structuré le système, selon l'architecture et le protocole discutés en section \ref{ClientServeur} et \ref{UDPTCP}.
+Le code complet Java est très long et est composé de beaucoup de classes. Plutôt que de tout détailler ou pire, juste mettre le code cru, nous avons sélectionné les thèmes les plus intéressants que nous avons rencontrés pendant l'écriture du programme. Nous allons expliquer comment nous avons structuré le système, selon l'architecture et le protocole discutés en section \ref{ClientServeur} et \ref{UDPTCP}.
 
 \subsection{Gestion des Requêtes de connexion}
 Pour établir une connexion avec le serveur, un client va ouvrir un port de communication avec lui, appelé "Socket". Une fois cette opération complétée avec succès, il sera possible d'obtenir les "Streams"\footnote{Tuyau pour transmettre des bytes} entrant et sortant pour effectivement envoyer des données.
 
 \lstinputlisting[language=Java]{code/JavaExConnection.txt}
 
-De l'autre côté, le serveur attend les demandes de connexion, ceci grâce à la classe welcomeSocket qui s'occupe de ce genre de requêtes. Une fois la requête de connexion acceptée le socket de communication est récupéré et un thread est lancé avec en argument le socket de communication pour pouvoir poursuivre l'échange de données. Finalement, le thread est stocké dans une liste, ainsi quand le serveur doit envoyer un message aux clients il itère simplement à travers la liste de thread.
+De l'autre côté, le serveur attend les demandes de connexion, ceci grâce à la classe welcomeSocket qui s'occupe de ce genre de requêtes. Une fois la requête de connexion acceptée le socket de communication est récupéré et un thread est lancé avec en argument le socket de communication pour pouvoir poursuivre l'échange de données. Finalement, le thread est stocké dans une liste, ainsi, quand le serveur doit envoyer un message aux clients il itère simplement à travers la liste de thread.
 
  \lstinputlisting[language=Java]{code/JavaExConnectionServer.txt}
  
- Puisque il est dans une boucle while, il se remet en attente de la prochaine requête.
+ Puisqu'il est dans une boucle while, il se remet en attente de la prochaine requête de connexion.
  
- \subsection{gestion des Requêtes suivantes}
- Le Client dispose d'une variété de requêtes prédifinies. A titre d'exemple on va définir des pseudos requêtes avancer, reculer et s'arrêter. De plus, lié à la requête vient s'ajouter une option pour donner plus de précision sur, dans ce cas, la vitesse. Une pseudo requête se présenterait alors sous cette forme:
+ \subsection{Gestion des requêtes suivantes}
+ Le Client dispose d'une variété de requêtes prédéfinies. A titre d'exemple on va définir des pseudos requêtes avancer, reculer et s'arrêter. De plus, lié à la requête vient s'ajouter une option pour donner plus de précision sur, dans ce cas, la vitesse. Une pseudo requête se présenterait alors sous cette forme:
  
  \indent{Avancer(20)}
  
  Ce qui voudrait dire: "Rouler vers l'avant à 20cm/s".  Pour bien comprendre la demande d'un client le serveur a également cette même liste de requêtes prédéfinies dont il sait s'occuper. Une fois que le serveur a trouvé la requête dans sa liste, il exécute l'opération prévue pour cette situation. Le schéma \ref{RequestHandler} illustre cette procédure.
-  Le tableau de requêtes est enfait un HashMap, les identifiants des requêtes se trouvent à gauche en majuscule et les références aux fonctions à exécuter se trouvent à droite.
+  Le tableau de requêtes est en fait un HashMap, les identifiants des requêtes se trouvent à gauche en majuscule et les références aux fonctions à exécuter se trouvent à droite.
  
  \lstinputlisting[language=Java]{code/JavaExRequestList.txt}
  
@@ -853,34 +878,53 @@ De l'autre côté, le serveur attend les demandes de connexion, ceci grâce à l
  
 \subsection{librxtx}
 
-Afin de pouvoir communiquer entre l'Arduino et le RaspberryPi via USB, nous avons fait appel à une librairie java supplémentaire qu'il a fallu installer. librxtx s'occupe de gérer les ports de communication usb et d'effectivement établir une communication avec un appareil connecté par ce moyen.
+Afin de pouvoir communiquer entre l'Arduino et le RaspberryPi via USB, nous avons fait appel à une librairie Java supplémentaire qu'il a fallu installer. librxtx s'occupe de gérer les ports de communication USB et d'établir une communication avec un appareil connecté par ce moyen.
 
-Grâce à cette librairie nous avons pu écrire notre propre classe qui permet de facilement sonder le système pour un appareil tel que l'arduino, établir une connection à cette appareil et lui envoyer des données. Le système de réception de messages usb est basé sur un model évènementiel, expliqué dans la section \ref{Event}.
+Grâce à cette librairie nous avons pu écrire notre propre classe qui permet de facilement sonder le sys\-tè\-me pour un appareil tel que l'arduino, établir une connexion à cette appareil et lui envoyer des données. Le système de réception de messages USB est basé sur un modèle évènementiel, expliqué dans la section \ref{Event}.
 
 \subsection{Evénements et écoute d'un Stream\label{Event}}
 
 La programmation événementielle permet dans certains cas d'améliorer l'efficacité d'une application. Elle est basée sur des évènements ou changements d'états qui déclenchent des autres morceaux de code. Ce type de programmation s'oppose à la programmation dite séquentielle.\cite{EventProgramming}
 
-Pour illustrer cette architecture, imaginons deux téléphones, l'un est dépourvu de haut-parleurs (voir fig.\ref{ChatExample}). Pour chatter, l'utilisateur du téléphone déféctueux devra régulièrment contrôler si il a reçu un nouveau message et souvent il contrôlera pour rien, tandis que l'autre sera averti d'un nouveau message (changement d'état, événement!) et contrôlera uniquement à ce moment là.  
+Pour illustrer cette architecture, imaginons deux téléphones, l'un est dépourvu de haut-parleurs (voir fig.\ref{ChatExample}). Pour chatter, l'utilisateur du té\-lé\-pho\-ne défectueux devra régulièrement contrôler s'il a reçu un nouveau message et souvent il contrôlera pour rien, tandis que l'autre sera averti d'un nouveau message (changement d'état, événement!) et contrôlera uniquement à ce moment là.  
 
 \begin{figure}[h]
 \includegraphics[width=1.0\textwidth]{figures/EventProgramming1.pdf}
 \caption[Analogie à la programmation événementielle]{\label{ChatExample}L'utilisateur du téléphone sans haut-parleur contrôlera régulièrement son téléphone et souvent pour rien.}
 \end{figure}
 
-Notre code java utilise ce système pour tout ce qui concerne la réception de message, donc l'écoute de Stream, c'est à dire que dès qu'un message est reçu, aussi bien par le client que par le serveur, le code pour gérer ce message est exécuté. L'interface graphique (GUI) est basée par principe sur des événements, par exemple: "boutton pressé", "champ de text modifié", "touche enfoncée". Voici justement un exemple de programmation événementielle pour l'interface graphique:
+Notre code java utilise ce système pour tout ce qui concerne la réception de message, donc l'écoute de Stream, c'est à dire que dès qu'un message est reçu, aussi bien par le client que par le serveur, le code pour gérer ce message est exécuté. L'interface graphique (GUI) est basée par principe sur des événements, par exemple: "boutton pressé", "champ de texte modifié", "touche enfoncée". Voici justement un exemple de programmation événementielle pour l'interface graphique:
 
 \lstinputlisting[language=Java]{code/JavaExEvent.txt}
 
 \begin{figure}[h]
 \includegraphics[width=1.0\textwidth]{figures/EventProgramming2.pdf}
-\caption[Evénements dans notr architecture]{\label{SuiteEvent}Cette figure illustre la suite d'événements possible dans l'architecture de notre projet}
+\caption[Evénements dans notre architecture]{\label{SuiteEvent}Cette figure illustre une suite d'événements possible dans l'architecture de notre projet}
 \end{figure}
+
+\subsection{IHM}
+\begin{figure}[h]
+\includegraphics[width=1.0\textwidth]{figures/IHM_connexion.PNG}
+\caption[Onglet de connexion]{\label{IHM_connexion}
+Onglet de connexion de l'interface graphique Java}
+\end{figure}
+
+Pour faciliter l'utilisation du programme Java et pour capter les événements du clavier afin de contrôler la voiture, nous avons créé une interface graphique en Swing\footnote{Swing est un package qui rassemble les classes nécessaires à créer une interface graphique.}. Au travers de l'onglet connexion (voir fig. \ref{IHM_connexion}) de l'IHM, l'utilisateur peut se connecter au serveur en entrant l'adresse IP de celui-ci. Une fois la connexion établie, le pilote se dirige ensuite vers l'onglet contrôle pour commencer à guider le véhicule (voir fig. \ref{IHM_controle}).
+
+Les paramètres par défaut pour guider le véhicule sont les touches flé\-chées pour avancer, reculer et tourner, ainsi que les touches a, s, d, et w pour changer la vitesse et le braquage des roues. Ces derniers paramètres sont représentés par des glisseurs que l'on peut aussi modifier à l'aide de la souris.
+
+\begin{figure}[h!]
+\includegraphics[width=1.0\textwidth]{figures/IHM_controle.PNG}
+\caption[Onglet de contrôle]{\label{IHM_controle}
+Onglet de contrôle de l'interface graphique Java, permettant à l'utilisateur de guider la voiture.}
+\end{figure}
+
+
 \section{C++ et vidéo}
 
-Après avoir parlé de ce que faisait notre code Java, nous allons ici aborder la partie touchant à la vidéo, et par conséquent, au code C++.  Comme dit précédemment, nous utilisons le protocole de réseau UDP  pour transmettre la vidéo. La raison du choix de ce langage réside dans le fait que c'est un langage qui est exécuté beaucoup plus rapidement que un langage de haut niveau tel que Java (la communauté considère que cette différence de rapidité équivaut à un facteur trois). Le programme en C++ est un programme invisible par l'utilisateur. En effet, il fonctionne en arrière plan. Voici le plan du programme:
+Après avoir parlé de ce que faisait notre code Java, nous allons ici aborder la partie touchant à la vidéo, et par conséquent, au code C++.  Comme dit précédemment, nous utilisons le protocole de réseau UDP  pour transmettre la vidéo. La raison du choix de ce langage réside dans le fait que c'est un langage qui est exécuté beaucoup plus rapidement qu'un langage de haut niveau tel que Java (la communauté considère que cette différence de rapidité équivaut à un facteur trois tant que le programme est codé en C++ de bas niveau). Le programme en C++ est un programme invisible par l'utilisateur. En effet, il fonctionne en arrière plan. Voici le plan du programme:
 \begin{enumerate}
-\item Ouverture d'une socket du côté du Raspberry Pi et de l'ordinateur distant
+\item Ouverture d'un socket du côté du Raspberry Pi et de l'ordinateur distant
 \item Capture du flux vidéo de la caméra connectée à la Framboise
 \item Compression du flux video
 \item Envoi du flux vers l'ordinateur distant
@@ -890,15 +934,14 @@ Après avoir parlé de ce que faisait notre code Java, nous allons ici aborder l
 
 
 
-\subsection{Client serveur}
+\subsection{Client/Serveur}
 
-Nous allons maintenant aborder une petite présentation du code pour comprendre comment fonctionne notre client serveur. Par soucis de simplicité, nous n'allons que parler du code écrit pour Windows. Mais nous avons annexé le code fonctionnant avec les système UNIX en annexe [annexe à venir].
-%TODO Rajouter l'annexe du code client serveur en c++ pour UNIX
+Nous allons maintenant aborder une petite présentation du code pour comprendre comment fonctionne notre client serveur. Par soucis de simplicité, nous n'allons que parler du code écrit pour le système Windows. 
 
-Tout d'abord, il faut indiquer quelles librairies nous utilisons, c'est les lignes suivantes. La première ligne permet d'utiliser les socket Windows. Les autres lignes sont des librairies standards en C++.
+Tout d'abord, il faut indiquer quelles librairies nous utilisons, ce sont les lignes suivantes. La première ligne permet d'utiliser les socket Windows. Les autres lignes sont des librairies standards en C++.
 \lstinputlisting[language=C++, firstline=3, lastline=7]{code/client.cpp}
 
-Une fois que ceci est fait, nous initialisions quelques variables dont il n'est pas utile de préciser à quoi elle vont servir. Ensuite, nous initialisons deux objets aux deux lignes ci-dessous. Nous verrons un peu plus tard à quoi elle servent. 
+Une fois que ceci est fait, nous initialisons quelques variables dont il n'est pas utile de préciser à quoi elle vont servir. Ensuite, nous initialisons deux objets aux deux lignes ci-dessous. Nous verrons un peu plus tard à quoi ils servent. 
 \lstinputlisting[language=C++, firstline=19, lastline=20]{code/client.cpp}
 Le premier objet va se voir attribuer les données contenues dans la fonction \textbf{socket()}
 \lstinputlisting[language=C++, firstline=55, lastline=56]{code/client.cpp}
@@ -908,42 +951,48 @@ Le code suivant explique comment envoyer des données à une adresse et un port 
 
 \lstinputlisting[language=C++, firstline=79, lastline=81]{code/client.cpp}
 
-Vient en suite la fonction \textbf{sendto()} qui prend les argument comme mentionné à la ligne 3 du code. Une petite explication sur les arguments. Comme vu précédemment, l'argument \textbf{socketId} contient les indications sur la destination. L'argument buffer représente un tampon\footnote{Un tampon, ou plutôt une mémoire tampon est une allocation d'une partie de la mémoire vive (RAM) qui est utilisée pour stocker temporairement les données. Il est utilisé dans ce cas car le processus d'envoi est plus lent que le processus d'écriture} qui contient les octets à envoyer. L'argument \textbf{strlen(buffer)} indique le nombre d'octets à envoyer, soit la taille du tableau. Le quatrième argument spécifie le type d'envoi, dans notre cas, l'envoi est normal, donc nous assignons la valeur $0$ à cet argument. L'argument suivant (soit le cinquième) permet de pointer sur la structure \textbf{destInfo} qui contient des informations sur la destination. Enfin, le dernier argument spécifie la longueur de la structure \textbf{destInfo}.
+Vient ensuite la fonction \textbf{sendto()} qui prend les arguments comme mentionné à la ligne 3 du code. Une petite explication sur ces arguments. Comme vu précédemment, l'argument \textbf{socketId} contient les indications sur la destination. L'argument \textbf{buffer} représente un tampon\footnote{Un tampon, ou plutôt une mémoire tampon est une allocation d'une partie de la mémoire vive (RAM) qui est utilisée pour stocker temporairement les données. Il est utilisé dans ce cas car le processus d'envoi est plus lent que le processus de lecture} qui contient les octets à envoyer. L'argument \textbf{strlen(buffer)} indique le nombre d'octets à envoyer, soit la taille du tableau. Le quatrième argument spécifie le type d'envoi, dans notre cas, l'envoi est normal, donc nous assignons la valeur $0$ à cet argument. L'argument suivant (soit le cinquième) permet de pointer sur la structure \textbf{destInfo} qui contient des informations sur la destination. Enfin, le dernier argument spécifie la longueur de la structure \textbf{destInfo}.
 
-Nous allons maintenant voir la fonction qui permet au serveur d'ouvrir une socket et se mettre en écoute. Le code suivant permet de créer une socket. Elle se construit de la manière suivante, \textbf{bind(int socket, socketaddr * description, int len)}. En d'autres termes, ces arguments permettent de savoir sur quel port il faut ouvrir une socket et quel type d'adresse utiliser. 
+Nous allons maintenant voir la fonction qui permet au serveur d'ouvrir un socket et se mettre en écoute. Le code suivant permet de créer un socket. Elle se construit de la manière suivante, \textbf{bind(int socket, socketaddr * description, int len)}. En d'autres termes, ces arguments permettent de savoir sur quel port il faut ouvrir un socket et quel type d'adresse utiliser. 
 
 \lstinputlisting[language=C++, firstline=44, lastline=44]{code/serveur.cpp}
 
-Le code suivant correspond a la réception de donnée. Nous utilison la fonction \textbf{recvfrom()} qui contient les arguments comme écrit à la ligne 3 du code. Le nombre maximum de bytes que le serveur va accepter de lire en un envoie à été arbitrairement choisi puisqu'il est plus grand que un bloc de bytes (soit 1024 bytes). 
+Le code suivant correspond a la réception de donnée. Nous utilison la fonction \textbf{recvfrom()} qui contient les arguments comme écrit à la ligne 3 du code. Le nombre maximum de bytes que le serveur va accepter de lire en un envoi à été arbitrairement choisi puisqu'il est plus grand que un bloc de bytes (soit 1024 bytes). 
 
 \lstinputlisting[language=C++, firstline=55, lastline=58]{code/serveur.cpp}
-La dernière ligne du code permet de fermer le tableu après avoir reçu les données car la fonction \textbf{recvfrom()} ne le fait pas.
+La dernière ligne du code permet de fermer le tableau après avoir reçu les données car la fonction \textbf{recvfrom()} ne le fait pas.
 
 
 
 
 \subsection{OpenCV}
-Ces programmes client/serveur ont pour but de transmettre l'image de la caméra, mais jusqu'ici, nous n'avons pas parlé de l'image en soit, c'est ce dont nous allons aborder maintenant. Ce sujet n'a pas encore abouti pour l'instant, c'est pourquoi le conditionnel sera utilisé dans cette section. Nous aimerions utiliser OpenCV pour pouvoir capturer le flux vidéo de la caméra. OpenCV est un ensemble de librairies qui sont utilisées pour le traitement d'image. Ces librairies sont écrites en C et C++. Non seulement, elle nous permettraient d'avoir l'image de la caméra, mais en plus, de pouvoir faire du traitement sur celle-ci (aucun traitement d'image ne se ferait sur le Raspberry Pi car il ne possède pas la puissance nécessaire  pour le faire). Un problème que nous avons rencontré est la difficulté d'installer ces libraries sur les ordinateur, en particulier sur l'OS Raspbian où chaque compilation dure plusieurs heures. Néanmoins, nous comptons continuer dans cette voie car ce sont les meilleures librairies que nous avons trouvés.
+Ces programmes client/serveur ont pour but de transmettre l'image de la caméra, mais jusqu'ici, nous n'avons pas parlé de l'image en soit, c'est ce dont nous allons aborder maintenant. Ce sujet n'a pas encore abouti pour l'instant, c'est pourquoi le conditionnel sera utilisé dans cette section. Nous aimerions utiliser OpenCV pour pouvoir capturer le flux vidéo de la caméra. OpenCV est un ensemble de librairies qui sont utilisées pour le traitement d'image. Ces librairies sont écrites en C et C++. Non seulement, elle nous permettraient d'avoir l'image de la caméra, mais en plus, de pouvoir faire du traitement sur celle-ci (aucun traitement d'image ne se ferait sur le Raspberry Pi car il ne possède pas la puissance nécessaire  pour le faire). Un problème que nous avons rencontré est la difficulté d'installer ces librairies sur les ordinateur, en particulier sur l'OS Raspbian où chaque compilation dure plusieurs heures. Néanmoins, nous comptons continuer dans cette voie car ce sont les meilleures librairies que nous avons trouvés.
+
+\section{Codes}
+
+Concernant les codes complets, le lecteur intéressé pourra les trouver dans le projet publique UGV sur \url{http://github.com/rico500/UGV} .
 
 \chapter{Conclusion}
 
-\lettrine{}{} Débuté il y a maintenant une année, ce projet n'était qu'un rêve avant de devenir un travail de maturité pour finalement se concrétiser. Le véhicule a beaucoup évolué depuis sa première ébauche et a pris autant de directions aussi inattendues qu'intéressantes et instructives. Bien que le résultat final ne soit pas aussi rafiné qu'on l'espérait, il est tout de même le témoin de l'important investissement de temps et d'énergie dans ce travail.
+\lettrine{D}{ébuté} il y a maintenant une année, ce projet n'était qu'un rêve avant de devenir un travail de maturité pour finalement se concrétiser. Le véhicule a beaucoup évolué depuis sa première ébauche et a pris autant de directions aussi inattendues qu'intéressantes et instructives. Bien que le résultat final ne soit pas aussi raffiné qu'on l'espérait, il est tout de même le témoin de l'important investissement de temps et d'énergie dans ce travail.
 
-Au point où nous en sommes, le drone ne pourrait pas mener de vrais missions de reconnaissance ou de recherche. Limité par sa construction fragile et sa portée qui laisse à désirer. Par contre, grâce à ce prototype, nous avons pu comprendre, en profondeur, ce que ça demande de construire un engin pareil. Nous avons développé une structure informatique et appris à concevoir des circuits imprimés. De ce fait, nous pouvons transposer ces connaissances à un autre véhicule plus solide que le notre. De plus, ce travail nous ouvre des portes sur des projets plus complexes, tel que des véhicules colaborateurs qui étendraient la zone de couverture wi-fi avec des répétiteurs mobiles et donc d'élargir... 
+Au point où nous en sommes, le drone ne pourrait pas mener de vraies missions de reconnaissance ou de recherche. Limité par sa construction fragile et sa portée qui laisse à désirer. Par contre, grâce à ce prototype, nous avons pu comprendre, en profondeur, l'investissement qui demande la construction d'un engin pareil. Nous avons développé une structure informatique et appris à concevoir des circuits imprimés. De ce fait, nous pouvons transposer ces connaissances à un autre véhicule plus solide que le notre. De plus, ce travail nous ouvre des portes sur des projets plus complexes, tel que des véhicules collaborateurs qui pourraient étendre la zone de couverture WI-FI avec des répétiteurs mobiles ou un robot capable de cartographier son environnement.
+
+Concernant le prix du drone, nous arrivons à un total de 186.- CHF, ce qui reste tout de même en dessous de la barre des 200.- CHF. Nous pourrions encore améliorer ce prix tout en gardant les mêmes fonctionnalités. Ceci, en utilisant un Arduino plus petit ou en s'en débarrassant totalement et tenter de tout faire avec le Raspberry Pi. 
 
 \clearpage
 
 \appendix
 
-\section{Sketchbook}
+\chapter{Sketchbook}
 
-\subsection{Sketch exemple pour le moteur}
+\section{Sketch exemple pour le moteur}
 \lstinputlisting[language=Java]{code/motor.java}
 
-\subsection{Sketch exemple pour le servo \label{SketchExServo}}\cite{ServoSweep}
+\section{Sketch exemple pour le servo \label{SketchExServo}}\cite{ServoSweep}
 \lstinputlisting[language=Java]{code/ServoExample.java}
 
-\subsection{Sketch exemple pour le senseur HC-SR04 \label{EXcodeHC-SR04}}
+\section{Sketch exemple pour le senseur HC-SR04 \label{EXcodeHC-SR04}}
 \lstinputlisting[language=Java]{code/HC_SR04.java}
 %
 %\textbf{Commentaires}
@@ -968,6 +1017,9 @@ Au point où nous en sommes, le drone ne pourrait pas mener de vrais missions de
 
 
 %}
+
+
+
 
 \end{document}
 
