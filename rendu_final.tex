@@ -1,3 +1,5 @@
+%%DATE: 7 mars 2014
+
 \documentclass[a4paper,11pt]{report}
 \usepackage{color}
 \usepackage[french]{babel}
@@ -116,7 +118,7 @@ nous aurions des arguments de poids face aux autres produits disponibles sur le
 marché.
 
 Dans la lancée de ce projet, nous nous sommes inscrits au concours
-suisse de science \textit{La science appelle les jeunes}\footnote{http://fr.sjf.ch/}. Ce concours réunit presque tous les domaines, pourvu que
+Suisse de science \textit{La science appelle les jeunes}\footnote{http://fr.sjf.ch/}. Ce concours réunit presque tous les domaines, pourvu que
 certains critères soient respectés. Tous les concurrents continuent un projet
 qu'ils avaient commencé durant leur travail de maturité/diplôme et la démarche
 utilisée doit être scientifique. Ce concours pourrait, selon les résultats,
@@ -145,21 +147,23 @@ d'engin se nomme \textit{UGV (Unmanned Ground Vehicle)} soit "véhicule roulant
 sans équipage". Surtout utilisés dans l'armée, les modèles qu'on peut trouver
 sur le marché sont très coûteux, ils varient entre trois cents et mille trois
 cents francs. Notre but est donc de pouvoir construire un appareil semblable
-pour moins de deux cent francs. Équipé de répétiteurs, un groupe d'UGV
-pourraient couvrir une grande zone sans mettre en danger ses pilotes
-puisqu'ils restent à l'écart. Ce drone peut servir en cas de catastrophes
+pour moins de deux cent francs. 
+%Équipé de répétiteurs, un groupe d'UGV
+%pourraient couvrir une grande zone sans mettre en danger ses pilotes
+%puisqu'ils restent à l'écart. 
+Ce drone peut servir en cas de catastrophes
 naturelles, néanmoins, notre modèle ne peut pas rouler sur les terrains trop
-accidentés, mais pour corriger ce problème, il suffit tout simplement
+accidentés, mais pour corriger ce problème, il suffirait tout simplement
 d'implémenter notre système électronique dans un autre type de véhicule. Le développement d'une interface graphique simplifiant l'utilisation est é\-ga\-le\-ment un but du projet. En effet, cela ne sert pas à grand chose d'avoir un drone que personne ne sait utiliser à moins de s'être entraîné durant des mois.\\
 Nous avons décidé d'initier le rapport avec le chapitre concernant le hardware
-car il est étroitement lié à la mécanique et il permet une meilleure
-compréhension du reste. Ce chapitre décrit principalement l'ordinateur et le
+car il permet une meilleure
+compréhension du reste et introduit quel\-ques idées et éléments clefs du projet. Ce chapitre décrit principalement l'ordinateur et le
 micro-contrôleur \cite{microcontroleur} embarqués sur le drone. Ensuite, vient
 le chapitre mé\-ca\-ni\-que et électronique qui détaille les modifications
 faites à la voiture ra\-dio-\-com\-man\-dée et les recherches faites dans ce
 domaine. Les deux chapitres qui suivent sont consacrés aux différentes
 versions des logiciels que nous avons créés et utilisés. Finalement, un dernier chapitre
-de conclusion clôt ce rapport.
+de conclusion clôt ce rapport et ouvre de nouvelles perspectives de développement.
 \clearpage
 
 
@@ -170,9 +174,11 @@ de conclusion clôt ce rapport.
 du hardware. Le hardware est tout ce qui touche à la partie physique du drone.
 Néanmoins, dans ce chapitre, nous ne traiterons pas de la mécanique et de
 l'électronique pure, ces sujets
-seront abordés dans le chapitre 2. Le drone est basé sur deux éléments centraux. Le
+seront abordés dans le chapitre 2. 
+
+Le drone est basé sur deux éléments centraux. Le
 premier, l'Arduino, est un micro-contrôleur qui permet de lire et d'émettre
-des signaux électriques
+des signaux électriques.
 Le second est le Raspberry Pi, qui est un petit ordinateur bon marché
 (trente-cinq francs), récemment sorti sur le marché. 
 
@@ -225,6 +231,11 @@ Nous n'allons pas faire une analyse approfondie des micro-contrôleurs mais il f
 \section{Raspberry Pi}
 Le Raspberry Pi \cite{RaspberryPiCaracteristiques}, ou la Framboise pour les francophones, est un ordinateur de la taille d'une carte de crédit sur lequel on peut installer différents systèmes d'exploitations dérivés de UNIX/Linux. Le Raspberry Pi est acheté nu, c'est-à-dire que cet ordinateur ne possède pas d'écran, ni de clavier ou de souris, néanmoins le Raspberry Pi possède plusieurs ports où on peut brancher un écran (via l'interface HDMI ou Composite), un câble Ethernet et presque ce qu'on veut grâce aux deux ports USB. Le Raspberry Pi est très intéressant non pas du point de vue de sa puissance de calcul, mais du point de vue rapport qualité-prix (35.- CHF).
 
+\begin{figure}[h]
+\includegraphics[width = 1.0\textwidth]{RaspberryPi.jpg}
+\caption[Raspberry Pi]{\label{RaspberryPi} Le Raspberry Pi est un petit ordinateur linux. Il est de la taille d'une carte de crédit.}
+\end{figure}
+
 \subsection{Détails techniques du Raspberry Pi}
 Voici une liste des caractéristiques techniques du Raspberry Pi modèle B \cite{RaspberryPiCaracteristiques}:
 \begin{enumerate}
@@ -257,12 +268,12 @@ Wi-Fi \footnote{Le modèle utilisé est le suivant: EW7811Un fabriqué par
   Edimax} connecté par USB. Cet accessoire ne nécessitant pas de \textit{driver} \footnote{Un
   driver est un petit logiciel permettant de faire l'interface entre les
   périphériques et l'ordinateur.}, il est directement reconnu et peut rapidement être configuré par le Raspberry Pi. 
-\begin{figure}[!h]
-\begin{center}
-\includegraphics[scale=0.38, trim=300 300 300 0, clip=true]{Edimax}
-\caption[\textit{Dongle} Edimax EW7811Un]{\textit{Dongle} Edimax EW7811Un. Connecté par USB à la Framboise, il permet au Raspberry Pi de se connecter via Wi-Fi à une borne\label{Edimax}.}
-\end{center}
-\end{figure} 
+%%\begin{figure}[!h]
+%%\begin{center}
+%%\includegraphics[scale=0.38, trim=300 300 300 0, clip=true]{Edimax}
+%%\caption[\textit{Dongle} Edimax EW7811Un]{\textit{Dongle} Edimax EW7811Un. Connecté par USB à la Framboise, il permet au Raspberry Pi de se connecter via Wi-Fi à une borne\label{Edimax}.}
+%%\end{center}
+%%\end{figure} 
 
 \section{Webcam}
 
@@ -278,7 +289,7 @@ allons aborder tout ce qui se réfère aux actuateurs (moteur et servo-moteur),
 comment ils ont été installés et comment les utiliser. Nous commencerons par
 le plus gros travail, la conception d'un circuit électrique imprimé, dit aussi PCB. 
 
-
+E
 \begin{table}[h!]
 \begin{center}
   \begin{tabular}{|p{4cm}|p{4cm}|c|}
@@ -379,19 +390,18 @@ Quelques explications sur le contenu et la conception de la plaque prototype:
 \end{enumerate}
 
 Tous ces composants, en plus des câbles et des connecteurs vers les actuateurs
-et la batterie, sont soudés sur une \textit{strip-board} semblable à celle dans
-la photo (\ref{StripBoard}). C'est essentiellement des bandes conductrices avec des trous pour placer les
+et la batterie, sont soudés sur une strip-board. C'est essentiellement un alignement des bandes conductrices avec des trous pour placer les
 composants. Les trous ont une distance standard de 0.5 pouces. Le détail des
 connexions ne sera pas précisé ici, mais il ressemble évidemment 
 au design de la plaque qui est illustré plus tard.   
 
-\begin{figure}[h]
-\centering
-\includegraphics[width=0.3\textwidth]{figures/StripBoard}
-    \caption[Strip-	board]{\label{StripBoard}Exemple de dessous de plaque de prototypage
-      similaire à la notre. http://www.verotl.com/images/images/veroboards/l-01-0033.jpg
-    }
-\end{figure}
+%\begin{figure}[h]
+%\centering
+%\includegraphics[width=0.3\textwidth]{figures/StripBoard}
+%    \caption[Strip-	board]{\label{StripBoard}Exemple de dessous de plaque de prototypage
+%      similaire à la notre.
+%    }
+%\end{figure}
 
 \subsection{Schema électronique}
 Le schéma a été dessiné à l'aide d'un programme dédié gratuit (version light),
@@ -797,7 +807,7 @@ sélectionnés par le pilote pour imprimer de tels messages.
 
 \begin{center}
 \begin{figure}[!h]
-\includegraphics[scale=1]{python-environnement}
+\includegraphics[scale=0.7]{Python_GUI_screen_example.png}
 \caption[Interface graphique Python]{Fenêtre X du code python qui permet la lecture du clavier. Cette fenêtre permet de contrôler le drone. Le programme affiche sur la colonne de droite l'angle de rotation des roues ainsi que la vitesse maximale du drone fixée par le pilote.\label{pythonenvironnement}}
 \end{figure}
 \end{center}

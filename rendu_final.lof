@@ -3,31 +3,30 @@
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {1.1}{\ignorespaces Sch\IeC {\'e}ma du hardware}}{9}
 \contentsline {figure}{\numberline {1.2}{\ignorespaces Arduino Uno R3}}{10}
-\contentsline {figure}{\numberline {1.3}{\ignorespaces \textit {Dongle} Edimax EW7811Un}}{14}
+\contentsline {figure}{\numberline {1.3}{\ignorespaces Raspberry Pi}}{12}
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {2.1}{\ignorespaces Le PCB que nous avons nous avons con\IeC {\c c}u gr\IeC {\^a}ce au logiciel Eagle. \relax }}{17}
 \contentsline {figure}{\numberline {2.2}{\ignorespaces Exemple de plaque RX2}}{18}
 \contentsline {figure}{\numberline {2.3}{\ignorespaces Prototype du PCB}}{19}
 \contentsline {figure}{\numberline {2.4}{\ignorespaces Sch\IeC {\'e}ma sommaire du prototype. \relax }}{20}
-\contentsline {figure}{\numberline {2.5}{\ignorespaces Strip- board}}{21}
-\contentsline {figure}{\numberline {2.6}{\ignorespaces Sch\IeC {\'e}ma complet du PCB \relax }}{22}
-\contentsline {figure}{\numberline {2.7}{\ignorespaces Design final du PCB}}{23}
-\contentsline {figure}{\numberline {2.8}{\ignorespaces Utilisation de la diode Zener}}{24}
-\contentsline {figure}{\numberline {2.9}{\ignorespaces Installation du servo (1)}}{27}
-\contentsline {figure}{\numberline {2.10}{\ignorespaces Installation du servo (2)}}{28}
-\contentsline {figure}{\numberline {2.11}{\ignorespaces Signal modul\IeC {\'e}}}{29}
-\contentsline {figure}{\numberline {2.12}{\ignorespaces H-Bridge}}{30}
-\contentsline {figure}{\numberline {2.13}{\ignorespaces HC-SR04, senseur de distance}}{31}
-\contentsline {figure}{\numberline {2.14}{\ignorespaces Fonctionnement du HC-SR04 en fonction du temps}}{33}
+\contentsline {figure}{\numberline {2.5}{\ignorespaces Sch\IeC {\'e}ma complet du PCB \relax }}{21}
+\contentsline {figure}{\numberline {2.6}{\ignorespaces Design final du PCB}}{22}
+\contentsline {figure}{\numberline {2.7}{\ignorespaces Utilisation de la diode Zener}}{24}
+\contentsline {figure}{\numberline {2.8}{\ignorespaces Installation du servo (1)}}{27}
+\contentsline {figure}{\numberline {2.9}{\ignorespaces Installation du servo (2)}}{28}
+\contentsline {figure}{\numberline {2.10}{\ignorespaces Signal modul\IeC {\'e}}}{29}
+\contentsline {figure}{\numberline {2.11}{\ignorespaces H-Bridge}}{30}
+\contentsline {figure}{\numberline {2.12}{\ignorespaces HC-SR04, senseur de distance}}{31}
+\contentsline {figure}{\numberline {2.13}{\ignorespaces Fonctionnement du HC-SR04 en fonction du temps}}{33}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {3.1}{\ignorespaces Environnement de programmation Arduino}}{36}
-\contentsline {figure}{\numberline {3.2}{\ignorespaces Interface graphique Python}}{39}
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Interface graphique Python}}{38}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {4.1}{\ignorespaces Structure client-serveur}}{42}
-\contentsline {figure}{\numberline {4.2}{\ignorespaces Connexion d'un nouveau client}}{43}
-\contentsline {figure}{\numberline {4.3}{\ignorespaces Gestion de requ\IeC {\^e}te au serveur}}{47}
-\contentsline {figure}{\numberline {4.4}{\ignorespaces Analogie \IeC {\`a} la programmation \IeC {\'e}v\IeC {\'e}nementielle}}{48}
-\contentsline {figure}{\numberline {4.5}{\ignorespaces Ev\IeC {\'e}nements dans notre architecture}}{49}
-\contentsline {figure}{\numberline {4.6}{\ignorespaces Onglet de connexion}}{50}
-\contentsline {figure}{\numberline {4.7}{\ignorespaces Onglet de contr\IeC {\^o}le}}{51}
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Structure client-serveur}}{41}
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Connexion d'un nouveau client}}{42}
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Gestion de requ\IeC {\^e}te au serveur}}{46}
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Analogie \IeC {\`a} la programmation \IeC {\'e}v\IeC {\'e}nementielle}}{47}
+\contentsline {figure}{\numberline {4.5}{\ignorespaces Ev\IeC {\'e}nements dans notre architecture}}{48}
+\contentsline {figure}{\numberline {4.6}{\ignorespaces Onglet de connexion}}{49}
+\contentsline {figure}{\numberline {4.7}{\ignorespaces Onglet de contr\IeC {\^o}le}}{50}
+\addvspace {10\p@ }
 \addvspace {10\p@ }

@@ -1,21 +1,15 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2013.8.31)  3 NOV 2013 13:43
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/Debian) (format=pdflatex 2013.1.6)  7 MAR 2014 19:09
 entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
 **rendu_final.tex
-(C:\Users\DXS\Documents\GitHub\tm\rendu_final.tex
+(./rendu_final.tex
 LaTeX2e <2011/06/27>
-Babel <v3.8m> and hyphenation patterns for english, afrikaans, ancientgreek, ar
-abic, armenian, assamese, basque, bengali, bokmal, bulgarian, catalan, coptic, 
-croatian, czech, danish, dutch, esperanto, estonian, farsi, finnish, french, ga
-lician, german, german-x-2012-05-30, greek, gujarati, hindi, hungarian, iceland
-ic, indonesian, interlingua, irish, italian, kannada, kurmanji, latin, latvian,
- lithuanian, malayalam, marathi, mongolian, mongolianlmc, monogreek, ngerman, n
-german-x-2012-05-30, nynorsk, oriya, panjabi, pinyin, polish, portuguese, roman
-ian, russian, sanskrit, serbian, slovak, slovenian, spanish, swedish, swissgerm
-an, tamil, telugu, turkish, turkmen, ukenglish, ukrainian, uppersorbian, usengl
-ishmax, welsh, loaded.
-("C:\Program Files\MiKTeX 2.9\tex\latex\base\report.cls"
+Babel <v3.8m> and hyphenation patterns for english, dumylang, nohyphenation, lo
+aded.
+(/usr/share/texlive/texmf-dist/tex/latex/base/report.cls
 Document Class: report 2007/10/19 v1.4h Standard LaTeX document class
-("C:\Program Files\MiKTeX 2.9\tex\latex\base\size11.clo"
+(/usr/share/texlive/texmf-dist/tex/latex/base/size11.clo
 File: size11.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
 )
 \c@part=\count79
@@ -31,78 +25,77 @@ File: size11.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
 \belowcaptionskip=\skip42
 \bibindent=\dimen102
 )
-("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\color.sty"
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/color.sty
 Package: color 2005/11/14 v1.0j Standard LaTeX Color (DPC)
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\00miktex\color.cfg"
+(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/color.cfg
 File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
 )
 Package color Info: Driver file: pdftex.def on input line 130.
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\pdftex-def\pdftex.def"
+(/usr/share/texlive/texmf-dist/tex/latex/pdftex-def/pdftex.def
 File: pdftex.def 2011/05/27 v0.06d Graphics/color for pdfTeX
 
-("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\infwarerr.sty"
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/infwarerr.sty
 Package: infwarerr 2010/04/08 v1.3 Providing info/warning/error messages (HO)
 )
-("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\ltxcmds.sty"
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
 Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
 )
 \Gread@gobject=\count88
 ))
-("C:\Program Files\MiKTeX 2.9\tex\generic\babel\babel.sty"
+(/usr/share/texlive/texmf-dist/tex/generic/babel/babel.sty
 Package: babel 2008/07/08 v3.8m The Babel package
 
-*************************************
-* Local config file bblopts.cfg used
-*
-("C:\Program Files\MiKTeX 2.9\tex\latex\00miktex\bblopts.cfg"
-File: bblopts.cfg 2006/07/31 v1.0 MiKTeX 'babel' configuration
-)
-("C:\Program Files\MiKTeX 2.9\tex\generic\babel\frenchb.ldf"
-Language: frenchb 2009/03/16 v2.3d French support from the babel system
+(/usr/share/texlive/texmf-dist/tex/generic/babel/frenchb.ldf
+Language: frenchb 2010/08/21 v2.5a French support from the babel system
 
-("C:\Program Files\MiKTeX 2.9\tex\generic\babel\babel.def"
+(/usr/share/texlive/texmf-dist/tex/generic/babel/babel.def
 File: babel.def 2008/07/08 v3.8m Babel common definitions
 \babel@savecnt=\count89
 \U@D=\dimen103
 )
-Package babel Info: Making : an active character on input line 120.
-Package babel Info: Making ; an active character on input line 121.
-Package babel Info: Making ! an active character on input line 122.
-Package babel Info: Making ? an active character on input line 123.
+
+Package babel Warning: No hyphenation patterns were loaded for
+(babel)                the language `French'
+(babel)                I will use the patterns loaded for \language=0 instead.
+
+\l@french = a dialect from \language0
+Package babel Info: Making : an active character on input line 234.
+Package babel Info: Making ; an active character on input line 235.
+Package babel Info: Making ! an active character on input line 236.
+Package babel Info: Making ? an active character on input line 237.
 \FB@Mht=\dimen104
 \std@mcc=\count90
 \dec@mcc=\count91
 \parindentFFN=\dimen105
-
 *************************************
 * Local config file frenchb.cfg used
 *
-("C:\Program Files\MiKTeX 2.9\tex\generic\babel\frenchb.cfg")))
-("C:\Program Files\MiKTeX 2.9\tex\latex\carlisle\scalefnt.sty")
-("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\keyval.sty"
+(/usr/share/texlive/texmf-dist/tex/generic/babel/frenchb.cfg)))
+(/usr/share/texlive/texmf-dist/tex/latex/carlisle/scalefnt.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty
 Package: keyval 1999/03/16 v1.13 key=value parser (DPC)
 \KV@toks@=\toks14
 )
-("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\graphicx.sty"
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
 Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\graphics.sty"
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty
 Package: graphics 2009/02/05 v1.0o Standard LaTeX Graphics (DPC,SPQR)
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\trig.sty"
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/trig.sty
 Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
 )
-("C:\Program Files\MiKTeX 2.9\tex\latex\00miktex\graphics.cfg"
-File: graphics.cfg 2007/01/18 v1.5 graphics configuration of teTeX/TeXLive
+(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/graphics.cfg
+File: graphics.cfg 2010/04/23 v1.9 graphics configuration of TeX Live
 )
 Package graphics Info: Driver file: pdftex.def on input line 91.
 )
 \Gin@req@height=\dimen106
 \Gin@req@width=\dimen107
 )
-("C:\Program Files\MiKTeX 2.9\tex\latex\tools\array.sty"
+(/usr/share/texlive/texmf-dist/tex/latex/tools/array.sty
 Package: array 2008/09/09 v2.4c Tabular extension package (FMi)
 \col@sep=\dimen108
 \extrarowheight=\dimen109
@@ -110,7 +103,7 @@ Package: array 2008/09/09 v2.4c Tabular extension package (FMi)
 \extratabsurround=\skip43
 \backup@length=\skip44
 )
-(C:\Users\DXS\AppData\Roaming\MiKTeX\2.9\tex\latex\listings\listings.sty
+(/usr/share/texlive/texmf-dist/tex/latex/listings/listings.sty
 \lst@mode=\count92
 \lst@gtempboxa=\box26
 \lst@token=\toks16
@@ -124,22 +117,22 @@ Package: array 2008/09/09 v2.4c Tabular extension package (FMi)
 \lst@lineno=\count97
 \lst@maxwidth=\dimen113
 
-(C:\Users\DXS\AppData\Roaming\MiKTeX\2.9\tex\latex\listings\lstmisc.sty
-File: lstmisc.sty 2013/08/05 1.5a (Carsten Heinz)
+(/usr/share/texlive/texmf-dist/tex/latex/listings/lstmisc.sty
+File: lstmisc.sty 2007/02/22 1.4 (Carsten Heinz)
 \c@lstnumber=\count98
 \lst@skipnumbers=\count99
 \lst@framebox=\box27
 )
-(C:\Users\DXS\AppData\Roaming\MiKTeX\2.9\tex\latex\listings\listings.cfg
-File: listings.cfg 2013/08/05 1.5a listings configuration
+(/usr/share/texlive/texmf-dist/tex/latex/listings/listings.cfg
+File: listings.cfg 2007/02/22 1.4 listings configuration
 ))
-Package: listings 2013/08/05 1.5a (Carsten Heinz)
+Package: listings 2007/02/22 1.4 (Carsten Heinz)
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\ltxmisc\url.sty"
+(/usr/share/texlive/texmf-dist/tex/latex/url/url.sty
 \Urlmuskip=\muskip10
 Package: url 2006/04/12  ver 3.3  Verb mode for urls, etc.
 )
-("C:\Program Files\MiKTeX 2.9\tex\latex\lm\lmodern.sty"
+(/usr/share/texmf/tex/latex/lm/lmodern.sty
 Package: lmodern 2009/10/30 v1.6 Latin Modern Fonts
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
 (Font)                  OT1/cmr/m/n --> OT1/lmr/m/n on input line 22.
@@ -174,41 +167,41 @@ LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
 (Font)                  OT1/cmtt/m/n --> OT1/lmtt/m/n on input line 38.
 )
-("C:\Program Files\MiKTeX 2.9\tex\latex\amsmath\amsmath.sty"
-Package: amsmath 2013/01/14 v2.14 AMS math features
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsmath.sty
+Package: amsmath 2000/07/18 v2.13 AMS math features
 \@mathmargin=\skip45
 
 For additional information on amsmath, use the `?' option.
-("C:\Program Files\MiKTeX 2.9\tex\latex\amsmath\amstext.sty"
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amstext.sty
 Package: amstext 2000/06/29 v2.01
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\amsmath\amsgen.sty"
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsgen.sty
 File: amsgen.sty 1999/11/30 v2.0
 \@emptytoks=\toks17
 \ex@=\dimen114
 ))
-("C:\Program Files\MiKTeX 2.9\tex\latex\amsmath\amsbsy.sty"
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsbsy.sty
 Package: amsbsy 1999/11/29 v1.2d
 \pmbraise@=\dimen115
 )
-("C:\Program Files\MiKTeX 2.9\tex\latex\amsmath\amsopn.sty"
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsopn.sty
 Package: amsopn 1999/12/14 v2.01 operator names
 )
 \inf@bad=\count100
-LaTeX Info: Redefining \frac on input line 210.
+LaTeX Info: Redefining \frac on input line 211.
 \uproot@=\count101
 \leftroot@=\count102
-LaTeX Info: Redefining \overline on input line 306.
+LaTeX Info: Redefining \overline on input line 307.
 \classnum@=\count103
 \DOTSCASE@=\count104
-LaTeX Info: Redefining \ldots on input line 378.
-LaTeX Info: Redefining \dots on input line 381.
-LaTeX Info: Redefining \cdots on input line 466.
+LaTeX Info: Redefining \ldots on input line 379.
+LaTeX Info: Redefining \dots on input line 382.
+LaTeX Info: Redefining \cdots on input line 467.
 \Mathstrutbox@=\box28
 \strutbox@=\box29
 \big@size=\dimen116
-LaTeX Font Info:    Redeclaring font encoding OML on input line 566.
-LaTeX Font Info:    Redeclaring font encoding OMS on input line 567.
+LaTeX Font Info:    Redeclaring font encoding OML on input line 567.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 568.
 \macc@depth=\count105
 \c@MaxMatrixCols=\count106
 \dotsspace@=\muskip11
@@ -229,10 +222,10 @@ LaTeX Font Info:    Redeclaring font encoding OMS on input line 567.
 \multlinegap=\skip46
 \multlinetaggap=\skip47
 \mathdisplay@stack=\toks21
-LaTeX Info: Redefining \[ on input line 2665.
-LaTeX Info: Redefining \] on input line 2666.
+LaTeX Info: Redefining \[ on input line 2666.
+LaTeX Info: Redefining \] on input line 2667.
 )
-("C:\Program Files\MiKTeX 2.9\tex\latex\tools\multicol.sty"
+(/usr/share/texlive/texmf-dist/tex/latex/tools/multicol.sty
 Package: multicol 2011/06/27 v1.7a multicolumn formatting (FMi)
 \c@tracingmulticols=\count112
 \mult@box=\box30
@@ -280,7 +273,7 @@ Package: multicol 2011/06/27 v1.7a multicolumn formatting (FMi)
 \colbreak@box=\box55
 \multicol@sort@counter=\count120
 )
-(C:\Users\DXS\AppData\Roaming\MiKTeX\2.9\tex\latex\fancyhdr\fancyheadings.sty
+(/usr/share/texlive/texmf-dist/tex/latex/fancyhdr/fancyheadings.sty
 Package: fancyheadings 2008/02/04 1.99 Dummy package to call fancyhdr
 
 
@@ -296,7 +289,7 @@ Package fancyheadings Warning: Please stop using fancyheadings!
 (fancyheadings)                parameters, but normal macros (to be changed
 (fancyheadings)                with \renewcommand rather than \setlength)..
 
-(C:\Users\DXS\AppData\Roaming\MiKTeX\2.9\tex\latex\fancyhdr\fancyhdr.sty
+(/usr/share/texlive/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
 \fancy@headwidth=\skip50
 \f@ncyO@elh=\skip51
 \f@ncyO@erh=\skip52
@@ -307,19 +300,19 @@ Package fancyheadings Warning: Please stop using fancyheadings!
 \f@ncyO@olf=\skip57
 \f@ncyO@orf=\skip58
 ))
-("C:\Program Files\MiKTeX 2.9\tex\latex\base\inputenc.sty"
+(/usr/share/texlive/texmf-dist/tex/latex/base/inputenc.sty
 Package: inputenc 2008/03/30 v1.1d Input encoding file
 \inpenc@prehook=\toks22
 \inpenc@posthook=\toks23
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\base\utf8.def"
+(/usr/share/texlive/texmf-dist/tex/latex/base/utf8.def
 File: utf8.def 2008/04/05 v1.1m UTF-8 support for inputenc
 Now handling font encoding OML ...
 ... no UTF-8 mapping file for font encoding OML
 Now handling font encoding T1 ...
 ... processing UTF-8 mapping file for font encoding T1
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\base\t1enc.dfu"
+(/usr/share/texlive/texmf-dist/tex/latex/base/t1enc.dfu
 File: t1enc.dfu 2008/04/05 v1.1m UTF-8 support for inputenc
    defining Unicode char U+00A1 (decimal 161)
    defining Unicode char U+00A3 (decimal 163)
@@ -469,7 +462,7 @@ File: t1enc.dfu 2008/04/05 v1.1m UTF-8 support for inputenc
 Now handling font encoding OT1 ...
 ... processing UTF-8 mapping file for font encoding OT1
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\base\ot1enc.dfu"
+(/usr/share/texlive/texmf-dist/tex/latex/base/ot1enc.dfu
 File: ot1enc.dfu 2008/04/05 v1.1m UTF-8 support for inputenc
    defining Unicode char U+00A1 (decimal 161)
    defining Unicode char U+00A3 (decimal 163)
@@ -500,7 +493,7 @@ File: ot1enc.dfu 2008/04/05 v1.1m UTF-8 support for inputenc
 Now handling font encoding OMS ...
 ... processing UTF-8 mapping file for font encoding OMS
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\base\omsenc.dfu"
+(/usr/share/texlive/texmf-dist/tex/latex/base/omsenc.dfu
 File: omsenc.dfu 2008/04/05 v1.1m UTF-8 support for inputenc
    defining Unicode char U+00A7 (decimal 167)
    defining Unicode char U+00B6 (decimal 182)
@@ -524,11 +517,11 @@ Now handling font encoding U ...
    defining Unicode char U+2122 (decimal 8482)
    defining Unicode char U+2423 (decimal 9251)
 ))
-("C:\Program Files\MiKTeX 2.9\tex\latex\multirow\multirow.sty"
+(/usr/share/texlive/texmf-dist/tex/latex/multirow/multirow.sty
 \bigstrutjot=\dimen131
 )
-(C:\Users\DXS\AppData\Roaming\MiKTeX\2.9\tex\latex\lettrine\lettrine.sty
-File: lettrine.sty 2013/03/14 v1.64 (Daniel Flipo)
+(/usr/share/texlive/texmf-dist/tex/latex/lettrine/lettrine.sty
+File: lettrine.sty 2007/08/08 v1.62 (Daniel Flipo)
 \c@DefaultLines=\count121
 \DefaultFindent=\dimen132
 \DefaultNindent=\dimen133
@@ -547,36 +540,36 @@ File: lettrine.sty 2013/03/14 v1.64 (Daniel Flipo)
 \LettrineWidth=\dimen143
 
 Loading lettrine.cfg
-(C:\Users\DXS\AppData\Roaming\MiKTeX\2.9\tex\latex\lettrine\lettrine.cfg))
-(C:\Users\DXS\AppData\Roaming\MiKTeX\2.9\tex\latex\caption\caption.sty
-Package: caption 2013/05/02 v3.3-89 Customizing captions (AR)
+(/usr/share/texlive/texmf-dist/tex/latex/lettrine/lettrine.cfg))
+(/usr/share/texlive/texmf-dist/tex/latex/caption/caption.sty
+Package: caption 2012/02/19 v3.2f Customizing captions (AR)
 
-(C:\Users\DXS\AppData\Roaming\MiKTeX\2.9\tex\latex\caption\caption3.sty
-Package: caption3 2013/05/02 v1.6-88 caption3 kernel (AR)
-Package caption3 Info: TeX engine: e-TeX on input line 57.
+(/usr/share/texlive/texmf-dist/tex/latex/caption/caption3.sty
+Package: caption3 2012/01/12 v1.4b caption3 kernel (AR)
 \captionmargin=\dimen144
 \captionmargin@=\dimen145
 \captionwidth=\dimen146
-\caption@tempdima=\dimen147
-\caption@indent=\dimen148
-\caption@parindent=\dimen149
-\caption@hangindent=\dimen150
+\caption@indent=\dimen147
+\caption@parindent=\dimen148
+\caption@hangindent=\dimen149
 )
 \c@ContinuedFloat=\count123
 Package caption Info: listings package is loaded.
 )
-(C:\Users\DXS\AppData\Roaming\MiKTeX\2.9\tex\latex\ucs\ucs.sty
-Package: ucs 2013/05/11 v2.2 UCS: Unicode input support
+(/usr/share/texlive/texmf-dist/tex/latex/ucs/ucs.sty
+Package: ucs 2004/10/17 UCS: Unicode input support
 
-(C:\Users\DXS\AppData\Roaming\MiKTeX\2.9\tex\latex\ucs\uni-global.def
-File: uni-global.def 2013/05/13 UCS: Unicode global data
+(/usr/share/texlive/texmf-dist/tex/latex/ucs/data/uni-global.def
+File: uni-global.def 2012/04/20 UCS: Unicode global data
 )
 \uc@secondtry=\count124
 \uc@combtoks=\toks24
 \uc@combtoksb=\toks25
 \uc@temptokena=\toks26
 )
-(C:\Users\DXS\Documents\GitHub\tm\rendu_final.aux)
+(./rendu_final.aux)
+\openout1 = `rendu_final.aux'.
+
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 74.
 LaTeX Font Info:    ... okay on input line 74.
 LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 74.
@@ -590,20 +583,19 @@ LaTeX Font Info:    ... okay on input line 74.
 LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 74.
 LaTeX Font Info:    ... okay on input line 74.
 LaTeX Font Info:    Try loading font information for OT1+lmr on input line 74.
-
-("C:\Program Files\MiKTeX 2.9\tex\latex\lm\ot1lmr.fd"
+ (/usr/share/texmf/tex/latex/lm/ot1lmr.fd
 File: ot1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-(C:\Users\DXS\AppData\Roaming\MiKTeX\2.9\tex\context\base\supp-pdf.mkii
+(/usr/share/texlive/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count125
-\scratchdimen=\dimen151
+\scratchdimen=\dimen150
 \scratchbox=\box58
 \nofMPsegments=\count126
 \nofMParguments=\count127
 \everyMPshowfont=\toks27
 \MPscratchCnt=\count128
-\MPscratchDim=\dimen152
+\MPscratchDim=\dimen151
 \MPnumerator=\count129
 \makeMPintoPDFobject=\count130
 \everyMPtoPDFconversion=\toks28
@@ -617,10 +609,59 @@ Package frenchb.ldf Warning: OT1 encoding should not be used for French.
 (frenchb.ldf)                Add \usepackage[T1]{fontenc} to the preamble
 (frenchb.ldf)                of your document, on input line 74.
 
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
+Package: pdftexcmds 2011/11/29 v0.20 Utility functions of pdfTeX for LuaTeX (HO
+)
+
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifluatex.sty
+Package: ifluatex 2010/03/01 v1.3 Provides the ifluatex switch (HO)
+Package ifluatex Info: LuaTeX not detected.
+)
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifpdf.sty
+Package: ifpdf 2011/01/30 v2.3 Provides the ifpdf switch (HO)
+Package ifpdf Info: pdfTeX in PDF mode is detected.
+)
+Package pdftexcmds Info: LuaTeX not detected.
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+)
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
+Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
+
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/grfext.sty
+Package: grfext 2010/08/19 v1.1 Manage graphics extensions (HO)
+
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/kvdefinekeys.sty
+Package: kvdefinekeys 2011/04/07 v1.3 Define keys (HO)
+))
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/kvoptions.sty
+Package: kvoptions 2011/06/30 v3.11 Key value format for package options (HO)
+
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/kvsetkeys.sty
+Package: kvsetkeys 2012/04/25 v1.16 Key value parser (HO)
+
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/etexcmds.sty
+Package: etexcmds 2011/02/16 v1.5 Avoid name clashes with e-TeX commands (HO)
+Package etexcmds Info: Could not find \expanded.
+(etexcmds)             That can mean that you are not using pdfTeX 1.50 or
+(etexcmds)             that some package has redefined \expanded.
+(etexcmds)             In the latter case, load this package earlier.
+)))
+Package grfext Info: Graphics extension search list:
+(grfext)             [.png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,.PNG,.PDF,.JPG,.JPE
+G,.JBIG2,.JB2,.eps]
+(grfext)             \AppendGraphicsExtensions on input line 452.
+
+(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
+e
+))
 \c@lstlisting=\count131
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: End \AtBeginDocument code.
-(C:\Users\DXS\AppData\Roaming\MiKTeX\2.9\tex\latex\ucs\ucsencs.def
+
+(/usr/share/texlive/texmf-dist/tex/latex/ucs/ucsencs.def
 File: ucsencs.def 2011/01/21 Fixes to fontencodings LGR, T3
 )
 
@@ -641,29 +682,29 @@ Package ucs Warning: ***************************
 (ucs)                ***************************
 (ucs)                 on input line 74.
 
-(C:\Users\DXS\AppData\Roaming\MiKTeX\2.9\tex\latex\ucs\utf8x.def
+(/usr/share/texlive/texmf-dist/tex/latex/ucs/utf8x.def
 File: utf8x.def 2004/10/17 UCS: Input encoding UTF-8
 )
 LaTeX Font Info:    Try loading font information for OT1+pnc on input line 77.
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\psnfss\ot1pnc.fd"
+(/usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1pnc.fd
 File: ot1pnc.fd 2001/06/04 font definitions for OT1/pnc.
 )
 LaTeX Font Info:    Try loading font information for OML+lmm on input line 86.
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\lm\omllmm.fd"
+(/usr/share/texmf/tex/latex/lm/omllmm.fd
 File: omllmm.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    Try loading font information for OMS+lmsy on input line 86.
 
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\lm\omslmsy.fd"
+(/usr/share/texmf/tex/latex/lm/omslmsy.fd
 File: omslmsy.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    Try loading font information for OMX+lmex on input line 86.
 
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\lm\omxlmex.fd"
+(/usr/share/texmf/tex/latex/lm/omxlmex.fd
 File: omxlmex.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
@@ -673,8 +714,8 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <6> on input line 86.
 
-(C:\Users\DXS\AppData\Roaming\MiKTeX\2.9\tex\latex\ucs\uni-0.def
-File: uni-0.def 2013/05/13 UCS: Unicode data U+0000..U+00FF
+(/usr/share/texlive/texmf-dist/tex/latex/ucs/data/uni-0.def
+File: uni-0.def 2012/04/20 UCS: Unicode data U+0000..U+00FF
 )
 <figures/titre.jpg, id=1, 765.86125pt x 709.65125pt>
 File: figures/titre.jpg Graphic file (type jpg)
@@ -684,92 +725,125 @@ Package pdftex.def Info: figures/titre.jpg used on input line 86.
 
 [1
 
-{C:/Users/DXS/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map} <C:/Users/DXS/
-Documents/GitHub/tm/figures/titre.jpg>] [1] [2
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <./figures/titre.jpg>]
+[1]
+Overfull \hbox (7.0597pt too wide) in paragraph at lines 101--102
+\OT1/pnc/m/n/10.95 grande-ment utiles. Mr. De-nis Rochat et Mr. Phillipe Rochat
+ pour leur disponi-
+ []
+
+
+Overfull \hbox (2.6425pt too wide) in paragraph at lines 101--102
+\OT1/pnc/m/n/10.95 mat[]eriels. Merci []a Chlo[]e Berthet pour ses cor-rec-tion
+s or-thographiques. Nous
+ []
+
+[2
 
 ]
 LaTeX Font Info:    Font shape `OT1/pnc/bx/n' in size <10.95> not available
 (Font)              Font shape `OT1/pnc/b/n' tried instead on input line 105.
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <10.95> on input line 119.
- [3
 
-] [4]
-(C:\Users\DXS\Documents\GitHub\tm\rendu_final.toc [1
+Overfull \hbox (5.0599pt too wide) in paragraph at lines 125--127
+[]\OT1/pnc/m/n/10.95 Au terme de ce pro-jet nous avons ac-quis des con-nais-san
+ces dans plusieurs
+ []
+
+
+Overfull \hbox (0.31757pt too wide) in paragraph at lines 125--127
+\OT1/pnc/m/n/10.95 do-maines de l'in-for-ma-tique, de l'[]electronique et de la
+ m[]ecanique. Le r[]esultat
+ []
+
+
+Overfull \hbox (1.6932pt too wide) in paragraph at lines 125--127
+\OT1/pnc/m/n/10.95 fi-nal est un v[]ehicule contr[]olable []a dis-tance, avec u
+ne cam[]era et des senseurs,
+ []
+
+[3
+
+] [4] (./rendu_final.toc [1
 
 
 ] [2])
 \tf@toc=\write3
- [3]
-(C:\Users\DXS\Documents\GitHub\tm\rendu_final.lof [4
+\openout3 = `rendu_final.toc'.
+
+ [3] (./rendu_final.lof [4
 
 
 ])
 \tf@lof=\write4
+\openout4 = `rendu_final.lof'.
+
  [5]
-(C:\Users\DXS\Documents\GitHub\tm\rendu_final.lot)
+(./rendu_final.lot)
 \tf@lot=\write5
+\openout5 = `rendu_final.lot'.
+
  [6
 
 ] [7
 
 ]
 Chapitre 1.
-<figures/SchemaPres.pdf, id=47, 597.23125pt x 569.12625pt>
+<figures/SchemaPres.pdf, id=48, 597.23125pt x 569.12625pt>
 File: figures/SchemaPres.pdf Graphic file (type pdf)
 
 <use figures/SchemaPres.pdf>
-Package pdftex.def Info: figures/SchemaPres.pdf used on input line 164.
+Package pdftex.def Info: figures/SchemaPres.pdf used on input line 189.
 (pdftex.def)             Requested size: 378.42174pt x 360.61827pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 173--174
+Underfull \hbox (badness 10000) in paragraph at lines 198--199
 
  []
 
 [8
 
 
-] <figures/arduino_uno.jpg, id=52, 856.19875pt x 643.40375pt>
-File: figures/arduino_uno.jpg Graphic file (type jpg)
+] <figures/arduino_uno_official.jpg, id=53, 1806.75pt x 1248.665pt>
+File: figures/arduino_uno_official.jpg Graphic file (type jpg)
 
-<use figures/arduino_uno.jpg>
-Package pdftex.def Info: figures/arduino_uno.jpg used on input line 177.
-(pdftex.def)             Requested size: 325.3589pt x 244.49596pt.
- [9 <C:/Users/DXS/Documents/GitHub/tm/figures/SchemaPres.pdf>] [10 <C:/Users/DX
-S/Documents/GitHub/tm/figures/arduino_uno.jpg>]
-[11] [12] <figures/Edimax.jpg, id=79, 1283.79625pt x 962.59625pt>
-File: figures/Edimax.jpg Graphic file (type jpg)
+<use figures/arduino_uno_official.jpg>
+Package pdftex.def Info: figures/arduino_uno_official.jpg used on input line 20
+2.
+(pdftex.def)             Requested size: 264.89406pt x 183.06189pt.
+ [9 <./figures/SchemaPres.pdf>] [10 <./figures/arduino_uno_official.jpg>]
+<figures/RaspberryPi.jpg, id=75, 1881.0275pt x 1404.24625pt>
+File: figures/RaspberryPi.jpg Graphic file (type jpg)
 
-<use figures/Edimax.jpg>
-Package pdftex.def Info: figures/Edimax.jpg used on input line 237.
-(pdftex.def)             Requested size: 258.9897pt x 251.3614pt.
+<use figures/RaspberryPi.jpg>
+Package pdftex.def Info: figures/RaspberryPi.jpg used on input line 233.
+(pdftex.def)             Requested size: 378.42174pt x 282.49416pt.
 
 
-LaTeX Warning: `!h' float specifier changed to `!ht'.
+LaTeX Warning: `h' float specifier changed to `ht'.
 
-[13] [14 <C:/Users/DXS/Documents/GitHub/tm/figures/Edimax.jpg>]
+[11] [12 <./figures/RaspberryPi.jpg>]
+
+LaTeX Warning: Reference `Edimax' on page 13 undefined on input line 264.
+
+[13] [14]
 Chapitre 2.
 
-Underfull \hbox (badness 10000) in paragraph at lines 263--263
-[]|\OT1/lmr/m/n/10.95 Longueur (centre de
+Underfull \hbox (badness 10000) in paragraph at lines 297--297
+[]|\OT1/lmr/m/n/10.95 Longueur (cen-tre de
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 269--269
-[]|\OT1/lmr/m/n/10.95 Courant min (roue
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 270--270
+Underfull \hbox (badness 10000) in paragraph at lines 304--304
 []|\OT1/lmr/m/n/10.95 Courant max (roue
  []
 
 
-Overfull \hbox (4.87451pt too wide) in paragraph at lines 271--272
+Overfull \hbox (4.87451pt too wide) in paragraph at lines 305--306
 []|[]| 
  []
 
@@ -779,7 +853,7 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 <figures/PCB.jpg, id=90, 1282.7925pt x 722.7pt>
 File: figures/PCB.jpg Graphic file (type jpg)
  <use figures/PCB.jpg>
-Package pdftex.def Info: figures/PCB.jpg used on input line 287.
+Package pdftex.def Info: figures/PCB.jpg used on input line 321.
 (pdftex.def)             Requested size: 378.42174pt x 213.19464pt.
 
 
@@ -788,7 +862,7 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 <figures/rx2_ex2.jpg, id=91, 758.835pt x 686.565pt>
 File: figures/rx2_ex2.jpg Graphic file (type jpg)
  <use figures/rx2_ex2.jpg>
-Package pdftex.def Info: figures/rx2_ex2.jpg used on input line 304.
+Package pdftex.def Info: figures/rx2_ex2.jpg used on input line 338.
 (pdftex.def)             Requested size: 227.05534pt x 205.42633pt.
 
 
@@ -800,12 +874,12 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 File: figures/DSC_1116res.jpg Graphic file (type jpg)
 
 <use figures/DSC_1116res.jpg>
-Package pdftex.def Info: figures/DSC_1116res.jpg used on input line 329.
+Package pdftex.def Info: figures/DSC_1116res.jpg used on input line 363.
 (pdftex.def)             Requested size: 378.42174pt x 250.23486pt.
 
-Underfull \hbox (badness 1122) in paragraph at lines 331--331
-[]\OT1/lmr/m/sc/10.95 Figure \OT1/lmr/m/n/10.95 2.3 { |[]Premiere plaque ras-s
-em-blant differents com-po-sants
+Underfull \hbox (badness 1122) in paragraph at lines 365--365
+[]\OT1/lmr/m/sc/10.95 Figure \OT1/lmr/m/n/10.95 2.3 { |[]Premi^^Rere plaque ras
+sem-blant diff^^Serents com-posants
  []
 
 
@@ -815,88 +889,77 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 File: figures/SchemaPlaqueMaison.png Graphic file (type png)
 
 <use figures/SchemaPlaqueMaison.png>
-Package pdftex.def Info: figures/SchemaPlaqueMaison.png used on input line 336.
+Package pdftex.def Info: figures/SchemaPlaqueMaison.png used on input line 370.
 
 (pdftex.def)             Requested size: 378.42174pt x 266.42288pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[17 <C:/Users/DXS/Documents/GitHub/tm/figures/PCB.jpg>]
-<figures/StripBoard.jpg, id=103, 120.45pt x 118.5228pt>
-File: figures/StripBoard.jpg Graphic file (type jpg)
+[17 <./figures/PCB.jpg>]
+<figures/schema_CHI_annotated.png, id=103, 650.43pt x 505.89pt>
+File: figures/schema_CHI_annotated.png Graphic file (type png)
 
-<use figures/StripBoard.jpg>
-Package pdftex.def Info: figures/StripBoard.jpg used on input line 365.
-(pdftex.def)             Requested size: 113.52766pt x 111.71526pt.
+<use figures/schema_CHI_annotated.png>
+Package pdftex.def Info: figures/schema_CHI_annotated.png used on input line 41
+1.
+(pdftex.def)             Requested size: 650.4284pt x 505.88875pt.
 
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-<figures/schema_CHI.png, id=104, 429.95256pt x 335.67796pt>
-File: figures/schema_CHI.png Graphic file (type png)
-
-<use figures/schema_CHI.png>
-Package pdftex.def Info: figures/schema_CHI.png used on input line 378.
-(pdftex.def)             Requested size: 429.9515pt x 335.67712pt.
-
-Overfull \hbox (37.86583pt too wide) in paragraph at lines 378--380
+Overfull \hbox (37.85423pt too wide) in paragraph at lines 411--413
  [][] 
  []
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<figures/board_CHI.png, id=105, 214.62827pt x 159.81215pt>
-File: figures/board_CHI.png Graphic file (type png)
+<figures/board_CHI_annotated.png, id=104, 289.08pt x 267.24844pt>
+File: figures/board_CHI_annotated.png Graphic file (type png)
 
-<use figures/board_CHI.png>
-Package pdftex.def Info: figures/board_CHI.png used on input line 394.
-(pdftex.def)             Requested size: 378.42174pt x 281.77501pt.
+<use figures/board_CHI_annotated.png>
+Package pdftex.def Info: figures/board_CHI_annotated.png used on input line 427
+.
+(pdftex.def)             Requested size: 378.42174pt x 349.8615pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[18 <C:/Users/DXS/Documents/GitHub/tm/figures/rx2_ex2.jpg>] [19 <C:/Users/DXS/D
-ocuments/GitHub/tm/figures/DSC_1116res.jpg>] [20 <C:/Users/DXS/Documents/GitHub
-/tm/figures/SchemaPlaqueMaison.png>] [21 <C:/Users/DXS/Documents/GitHub/tm/figu
-res/StripBoard.jpg>]
+[18 <./figures/rx2_ex2.jpg>] [19 <./figures/DSC_1116res.jpg>] [20 <./figures/Sc
+hemaPlaqueMaison.png>]
 
-LaTeX Warning: Text page 22 contains only floats.
+LaTeX Warning: Text page 21 contains only floats.
 
-[22 <C:/Users/DXS/Documents/GitHub/tm/figures/schema_CHI.png>] [23 <C:/Users/DX
-S/Documents/GitHub/tm/figures/board_CHI.png>]
-<figures/CircuitZener.pdf, id=127, 597.23125pt x 421.575pt>
+[21 <./figures/schema_CHI_annotated.png>] [22 <./figures/board_CHI_annotated.pn
+g>] <figures/CircuitZener.pdf, id=121, 597.23125pt x 421.575pt>
 File: figures/CircuitZener.pdf Graphic file (type pdf)
 
 <use figures/CircuitZener.pdf>
-Package pdftex.def Info: figures/CircuitZener.pdf used on input line 433.
+Package pdftex.def Info: figures/CircuitZener.pdf used on input line 467.
 (pdftex.def)             Requested size: 378.42174pt x 267.12463pt.
- [24 <C:/Users/DXS/Documents/GitHub/tm/figures/CircuitZener.pdf>] [25]
-Overfull \hbox (2.57988pt too wide) in paragraph at lines 482--489
-\OT1/pnc/m/n/10.95 une connais-sance qui en avait com-mand[]e un gros lot pour 
-la mo-dique somme
+ [23] [24 <./figures/CircuitZener.pdf>]
+Overfull \hbox (2.57988pt too wide) in paragraph at lines 516--523
+\OT1/pnc/m/n/10.95 une con-nais-sance qui en avait com-mand[]e un gros lot pour
+ la mod-ique somme
  []
 
-<figures/InstallationServo.jpg, id=143, 1281.78876pt x 720.6925pt>
+[25] <figures/InstallationServo.jpg, id=142, 1281.78876pt x 720.6925pt>
 File: figures/InstallationServo.jpg Graphic file (type jpg)
 
 <use figures/InstallationServo.jpg>
-Package pdftex.def Info: figures/InstallationServo.jpg used on input line 512.
+Package pdftex.def Info: figures/InstallationServo.jpg used on input line 546.
 (pdftex.def)             Requested size: 340.57724pt x 191.48846pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<figures/InstallationServo2.jpg, id=144, 722.7pt x 1282.7925pt>
+<figures/InstallationServo2.jpg, id=143, 722.7pt x 1282.7925pt>
 File: figures/InstallationServo2.jpg Graphic file (type jpg)
 
 <use figures/InstallationServo2.jpg>
-Package pdftex.def Info: figures/InstallationServo2.jpg used on input line 519.
+Package pdftex.def Info: figures/InstallationServo2.jpg used on input line 553.
 
 (pdftex.def)             Requested size: 227.05534pt x 403.0248pt.
 
-Overfull \hbox (24.60306pt too wide) in paragraph at lines 519--521
+Overfull \hbox (24.60306pt too wide) in paragraph at lines 553--555
  [][] 
  []
 
@@ -907,48 +970,45 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 File: figures/ServoPwm.pdf Graphic file (type pdf)
 
 <use figures/ServoPwm.pdf>
-Package pdftex.def Info: figures/ServoPwm.pdf used on input line 537.
+Package pdftex.def Info: figures/ServoPwm.pdf used on input line 571.
 (pdftex.def)             Requested size: 378.42174pt x 151.37692pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[27 <C:/Users/DXS/Documents/GitHub/tm/figures/InstallationServo.jpg>] [28 <C:/U
-sers/DXS/Documents/GitHub/tm/figures/InstallationServo2.jpg>]
-<figures/H-bridge.pdf, id=157, 297.49544pt x 144.53197pt>
-File: figures/H-bridge.pdf Graphic file (type pdf)
-
-<use figures/H-bridge.pdf>
-Package pdftex.def Info: figures/H-bridge.pdf used on input line 595.
-(pdftex.def)             Requested size: 378.42174pt x 183.86229pt.
+[27 <./figures/InstallationServo.jpg>] [28 <./figures/InstallationServo2.jpg>]
+<figures/H-bridge.jpg, id=156, 297.11pt x 144.54pt>
+File: figures/H-bridge.jpg Graphic file (type jpg)
+ <use figures/H-bridge.jpg>
+Package pdftex.def Info: figures/H-bridge.jpg used on input line 629.
+(pdftex.def)             Requested size: 378.42174pt x 184.10628pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[29 <C:/Users/DXS/Documents/GitHub/tm/figures/ServoPwm.pdf>]
-<figures/HC-SR04.jpg, id=165, 631.35875pt x 631.35875pt>
+[29 <./figures/ServoPwm.pdf>]
+<figures/HC-SR04.jpg, id=164, 631.35875pt x 631.35875pt>
 File: figures/HC-SR04.jpg Graphic file (type jpg)
 
 <use figures/HC-SR04.jpg>
-Package pdftex.def Info: figures/HC-SR04.jpg used on input line 641.
+Package pdftex.def Info: figures/HC-SR04.jpg used on input line 675.
 (pdftex.def)             Requested size: 189.21086pt x 189.20677pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[30 <C:/Users/DXS/Documents/GitHub/tm/figures/H-bridge.pdf>] [31 <C:/Users/DXS/
-Documents/GitHub/tm/figures/HC-SR04.jpg>]
+[30 <./figures/H-bridge.jpg>] [31 <./figures/HC-SR04.jpg>]
 
 Package frenchb.ldf Warning: Degrees would look better in TS1-encoding: 
 (frenchb.ldf)                add \usepackage{textcomp} to the preamble. 
-(frenchb.ldf)                Degrees used on input line 654.
+(frenchb.ldf)                Degrees used on input line 688.
 
-<figures/HC-SR04-timing-diagram.png, id=177, 410.2828pt x 264.23718pt>
+<figures/HC-SR04-timing-diagram.png, id=171, 410.2828pt x 264.23718pt>
 File: figures/HC-SR04-timing-diagram.png Graphic file (type png)
 
 <use figures/HC-SR04-timing-diagram.png>
 Package pdftex.def Info: figures/HC-SR04-timing-diagram.png used on input line 
-665.
+699.
 (pdftex.def)             Requested size: 340.57724pt x 219.34099pt.
 
 
@@ -958,268 +1018,266 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[33 <C:/Users/DXS/Documents/GitHub/tm/figures/HC-SR04-timing-diagram.png>]
-[34]
+[33 <./figures/HC-SR04-timing-diagram.png>] [34]
 Chapitre 3.
-<figures/arduino-environnement-1.png, id=189, 511.15968pt x 543.53062pt>
-File: figures/arduino-environnement-1.png Graphic file (type png)
+LaTeX Font Info:    Try loading font information for OMS+pnc on input line 770.
 
-<use figures/arduino-environnement-1.png>
-Package pdftex.def Info: figures/arduino-environnement-1.png used on input line
- 732.
-(pdftex.def)             Requested size: 255.57921pt x 271.76463pt.
-LaTeX Font Info:    Try loading font information for OMS+pnc on input line 736.
-
-
-("C:\Program Files\MiKTeX 2.9\tex\latex\psnfss\omspnc.fd"
+(/usr/share/texlive/texmf-dist/tex/latex/psnfss/omspnc.fd
 File: omspnc.fd 
 )
 LaTeX Font Info:    Font shape `OMS/pnc/m/it' in size <10.95> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 736.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 770.
  [35
 
-] [36 <C:/Users/DXS/Documents/GitHub/tm/figures/arduino-environnement-1.png>] [
-37]
-<figures/python-environnement.png, id=202, 386.94562pt x 291.33844pt>
-File: figures/python-environnement.png Graphic file (type png)
+] [36] [37]
+<figures/Python_GUI_screen_example.png, id=193, 434.62375pt x 339.2675pt>
+File: figures/Python_GUI_screen_example.png Graphic file (type png)
 
-<use figures/python-environnement.png>
-Package pdftex.def Info: figures/python-environnement.png used on input line 77
-4.
-(pdftex.def)             Requested size: 386.94467pt x 291.33772pt.
-
-Overfull \hbox (8.52293pt too wide) in paragraph at lines 774--775
-[][] 
- []
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-[38] [39 <C:/Users/DXS/Documents/GitHub/tm/figures/python-environnement.png>]
-[40]
+<use figures/Python_GUI_screen_example.png>
+Package pdftex.def Info: figures/Python_GUI_screen_example.png used on input li
+ne 808.
+(pdftex.def)             Requested size: 304.23454pt x 237.48563pt.
+ [38 <./figures/Python_GUI_screen_example.png>] [39]
 Chapitre 4.
-[41
+[40
 
 
-] <figures/Client_Server1.pdf, id=217, 597.23125pt x 285.065pt>
+] <figures/Client_Server1.pdf, id=205, 597.23125pt x 285.065pt>
 File: figures/Client_Server1.pdf Graphic file (type pdf)
 
 <use figures/Client_Server1.pdf>
-Package pdftex.def Info: figures/Client_Server1.pdf used on input line 803.
+Package pdftex.def Info: figures/Client_Server1.pdf used on input line 837.
 (pdftex.def)             Requested size: 378.42174pt x 180.62714pt.
- [42 <C:/Users/DXS/Documents/GitHub/tm/figures/Client_Server1.pdf>]
-<figures/Client_Server2.pdf, id=234, 597.23125pt x 421.575pt>
+ [41 <./figures/Client_Server1.pdf>]
+<figures/Client_Server2.pdf, id=222, 597.23125pt x 421.575pt>
 File: figures/Client_Server2.pdf Graphic file (type pdf)
 
 <use figures/Client_Server2.pdf>
-Package pdftex.def Info: figures/Client_Server2.pdf used on input line 812.
+Package pdftex.def Info: figures/Client_Server2.pdf used on input line 846.
 (pdftex.def)             Requested size: 378.42174pt x 267.12463pt.
-
-Underfull \hbox (badness 1102) in paragraph at lines 813--813
-[]\OT1/lmr/m/sc/10.95 Figure \OT1/lmr/m/n/10.95 4.2 { |[]Schema de la procedu
-re sui-vie a chaque nou-velle
- []
-
-[43 <C:/Users/DXS/Documents/GitHub/tm/figures/Client_Server2.pdf>]
-Overfull \hbox (2.10138pt too wide) in paragraph at lines 822--823
-[]\OT1/pnc/m/n/10.95 Le pro-to-cole TCP[] est l'op-pos[]e de l'UDP, il est orie
-nt[]e connexion. Lorsque
+ [42 <./figures/Client_Server2.pdf>]
+Overfull \hbox (2.10138pt too wide) in paragraph at lines 856--857
+[]\OT1/pnc/m/n/10.95 Le pro-to-cole TCP[] est l'op-pos[]e de l'UDP, il est ori-
+ent[]e con-nex-ion. Lorsque
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 822--823
+Underfull \hbox (badness 10000) in paragraph at lines 856--857
 
  []
 
-[44] (C:\Users\DXS\AppData\Roaming\MiKTeX\2.9\tex\latex\listings\lstlang1.sty
-File: lstlang1.sty 2013/08/05 1.5a listings language file
+[43] (/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
+File: lstlang1.sty 2004/09/05 1.3 listings language file
 )
-LaTeX Font Info:    Try loading font information for OT1+lmtt on input line 830
+LaTeX Font Info:    Try loading font information for OT1+lmtt on input line 864
 .
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\lm\ot1lmtt.fd"
+(/usr/share/texmf/tex/latex/lm/ot1lmtt.fd
 File: ot1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
-)
-(C:\Users\DXS\Documents\GitHub\tm\code/JavaExConnection.txt)
-(C:\Users\DXS\Documents\GitHub\tm\code/JavaExConnectionServer.txt) [45]
-(C:\Users\DXS\Documents\GitHub\tm\code/JavaExRequestList.txt)
-<figures/RequestHandler.pdf, id=261, 597.23125pt x 285.065pt>
+) (./code/JavaExConnection.txt)
+(./code/JavaExConnectionServer.txt)
+Overfull \hbox (0.38486pt too wide) in paragraph at lines 870--871
+[]\OT1/pnc/m/n/10.95 Puisqu'il est dans une boucle while, il se remet en at-ten
+te de la prochaine
+ []
+
+[44] (./code/JavaExRequestList.txt)
+<figures/RequestHandler.pdf, id=249, 597.23125pt x 285.065pt>
 File: figures/RequestHandler.pdf Graphic file (type pdf)
 
 <use figures/RequestHandler.pdf>
-Package pdftex.def Info: figures/RequestHandler.pdf used on input line 849.
+Package pdftex.def Info: figures/RequestHandler.pdf used on input line 883.
 (pdftex.def)             Requested size: 378.42174pt x 180.62714pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
-Overfull \hbox (0.22047pt too wide) in paragraph at lines 855--856
-[]\OT1/pnc/m/n/10.95 Afin de pou-voir com-mu-ni-quer entre l'Ar-duino et le Ras
-p-ber-ryPi via USB,
+Overfull \hbox (0.22047pt too wide) in paragraph at lines 889--890
+[]\OT1/pnc/m/n/10.95 Afin de pou-voir com-mu-ni-quer en-tre l'Ar-duino et le Ra
+sp-ber-ryPi via USB,
  []
 
-[46]
-Overfull \hbox (2.617pt too wide) in paragraph at lines 857--858
-[]\OT1/pnc/m/n/10.95 etablir une connexion []a cette ap-pa-reil et lui en-voyer
- des donn[]ees. Le syst[]eme
+[45]
+Overfull \hbox (2.617pt too wide) in paragraph at lines 891--892
+[]\OT1/pnc/m/n/10.95 etablir une con-nex-ion []a cette ap-pareil et lui en-voye
+r des donn[]ees. Le syst[]eme
  []
 
-<figures/EventProgramming1.pdf, id=265, 597.23125pt x 285.065pt>
+<figures/EventProgramming1.pdf, id=253, 597.23125pt x 285.065pt>
 File: figures/EventProgramming1.pdf Graphic file (type pdf)
 
 <use figures/EventProgramming1.pdf>
-Package pdftex.def Info: figures/EventProgramming1.pdf used on input line 866.
+Package pdftex.def Info: figures/EventProgramming1.pdf used on input line 900.
 (pdftex.def)             Requested size: 378.42174pt x 180.62714pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[47 <C:/Users/DXS/Documents/GitHub/tm/figures/RequestHandler.pdf>]
-(C:\Users\DXS\Documents\GitHub\tm\code/JavaExEvent.txt [48 <C:/Users/DXS/Docume
-nts/GitHub/tm/figures/EventProgramming1.pdf>])
-<figures/EventProgramming2.pdf, id=297, 597.23125pt x 421.575pt>
+
+Overfull \hbox (26.34563pt too wide) in paragraph at lines 904--905
+\OT1/pnc/m/n/10.95 "touche en-fonc[]ee". Voici juste-ment un ex-em-ple de pro-g
+ram-ma-tion []ev[]enementielle
+ []
+
+[46 <./figures/RequestHandler.pdf>] (./code/JavaExEvent.txt [47 <./figures/Even
+tProgramming1.pdf>])
+<figures/EventProgramming2.pdf, id=285, 597.23125pt x 421.575pt>
 File: figures/EventProgramming2.pdf Graphic file (type pdf)
 
 <use figures/EventProgramming2.pdf>
-Package pdftex.def Info: figures/EventProgramming2.pdf used on input line 875.
+Package pdftex.def Info: figures/EventProgramming2.pdf used on input line 909.
 (pdftex.def)             Requested size: 378.42174pt x 267.12463pt.
 
-<figures/IHM_connexion.PNG, id=298, 374.90062pt x 262.73157pt>
+<figures/IHM_connexion.PNG, id=286, 374.90062pt x 262.73157pt>
 File: figures/IHM_connexion.PNG Graphic file (type png)
 
 <use figures/IHM_connexion.PNG>
-Package pdftex.def Info: figures/IHM_connexion.PNG used on input line 881.
+Package pdftex.def Info: figures/IHM_connexion.PNG used on input line 915.
 (pdftex.def)             Requested size: 378.42174pt x 265.21646pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 
-Overfull \hbox (17.4986pt too wide) in paragraph at lines 886--887
-[]\OT1/pnc/m/n/10.95 Pour fa-ci-li-ter l'uti-li-sa-tion du pro-gramme Java et p
-our cap-ter les []ev[]enements
+Overfull \hbox (17.4986pt too wide) in paragraph at lines 920--921
+[]\OT1/pnc/m/n/10.95 Pour fa-ciliter l'u-til-i-sa-tion du pro-gramme Java et po
+ur capter les []ev[]enements
  []
 
-[49 <C:/Users/DXS/Documents/GitHub/tm/figures/EventProgramming2.pdf>]
-<figures/IHM_controle.PNG, id=318, 376.40625pt x 264.23718pt>
+
+Overfull \hbox (10.26768pt too wide) in paragraph at lines 920--921
+\OT1/pnc/m/n/10.95 du clavier afin de contr[]oler la voiture, nous avons cr[]e[
+]e une in-ter-face graphique
+ []
+
+[48 <./figures/EventProgramming2.pdf>]
+<figures/IHM_controle.PNG, id=307, 376.40625pt x 264.23718pt>
 File: figures/IHM_controle.PNG Graphic file (type png)
 
 <use figures/IHM_controle.PNG>
-Package pdftex.def Info: figures/IHM_controle.PNG used on input line 891.
+Package pdftex.def Info: figures/IHM_controle.PNG used on input line 925.
 (pdftex.def)             Requested size: 378.42174pt x 265.67189pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[50 <C:/Users/DXS/Documents/GitHub/tm/figures/IHM_connexion.PNG>] [51 <C:/Users
-/DXS/Documents/GitHub/tm/figures/IHM_controle.PNG>]
-(C:\Users\DXS\AppData\Roaming\MiKTeX\2.9\tex\latex\listings\lstlang1.sty
-File: lstlang1.sty 2013/08/05 1.5a listings language file
+[49 <./figures/IHM_connexion.PNG>] [50 <./figures/IHM_controle.PNG>]
+(/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
+File: lstlang1.sty 2004/09/05 1.3 listings language file
 )
-(C:\Users\DXS\AppData\Roaming\MiKTeX\2.9\tex\latex\listings\lstlang1.sty
-File: lstlang1.sty 2013/08/05 1.5a listings language file
+(/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
+File: lstlang1.sty 2004/09/05 1.3 listings language file
 )
-(C:\Users\DXS\AppData\Roaming\MiKTeX\2.9\tex\latex\listings\lstmisc.sty
-File: lstmisc.sty 2013/08/05 1.5a (Carsten Heinz)
+(/usr/share/texlive/texmf-dist/tex/latex/listings/lstmisc.sty
+File: lstmisc.sty 2007/02/22 1.4 (Carsten Heinz)
 )
-(C:\Users\DXS\Documents\GitHub\tm\code/client.cpp)
-(C:\Users\DXS\Documents\GitHub\tm\code/client.cpp)
-(C:\Users\DXS\Documents\GitHub\tm\code/client.cpp)
-Overfull \hbox (3.60887pt too wide) in paragraph at lines 922--923
+(./code/client.cpp) (./code/client.cpp) (./code/client.cpp)
+Overfull \hbox (3.60887pt too wide) in paragraph at lines 956--957
 \OT1/pnc/m/n/10.95 pre-mier, \OT1/pnc/b/n/10.95 AF[]INET \OT1/pnc/m/n/10.95 est
- la fa-mille de pro-to-cole uti-lis[]ee, elle uti-lise une adresse
+ la famille de pro-to-cole utilis[]ee, elle utilise une adresse
  []
 
 
-Overfull \hbox (31.1932pt too wide) in paragraph at lines 922--923
+Overfull \hbox (31.1932pt too wide) in paragraph at lines 956--957
 \OT1/pnc/m/n/10.95 ment d[]etermine le type de com-mu-ni-ca-tion []a faire, dan
 s notre cas, \OT1/pnc/b/n/10.95 SOCK[]DGRAM
  []
 
 
-Overfull \hbox (4.8681pt too wide) in paragraph at lines 922--923
-\OT1/pnc/m/n/10.95 si-gni-fie que nous sommes en UDP. Le troisi[]eme ar-gu-ment
+Overfull \hbox (4.8681pt too wide) in paragraph at lines 956--957
+\OT1/pnc/m/n/10.95 sig-ni-fie que nous sommes en UDP. Le troisi[]eme ar-gu-ment
  per-met de sp[]ecifier
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 922--923
+Underfull \hbox (badness 10000) in paragraph at lines 956--957
 
  []
 
-[52] (C:\Users\DXS\Documents\GitHub\tm\code/client.cpp)
-Overfull \hbox (1.9093pt too wide) in paragraph at lines 928--929
+[51] (./code/client.cpp)
+Overfull \hbox (1.9093pt too wide) in paragraph at lines 962--963
 \OT1/pnc/m/n/10.95 tionn[]e []a la ligne 3 du code. Une pe-tite ex-pli-ca-tion 
 sur ces ar-gu-ments. Comme
  []
 
-[53] (C:\Users\DXS\Documents\GitHub\tm\code/serveur.cpp)
-(C:\Users\DXS\Documents\GitHub\tm\code/serveur.cpp) [54] [55]
+[52] (./code/serveur.cpp) (./code/serveur.cpp) [53] [54]
 Chapitre 5.
-[56
+[55
 
-] [57] (C:\Users\DXS\Documents\GitHub\tm\code/motor.java [58
+] [56]
+Annexe A.
+(./code/motor.java [57
 
-] [59])
-(C:\Users\DXS\Documents\GitHub\tm\code/ServoExample.java [60])
-(C:\Users\DXS\Documents\GitHub\tm\code/HC_SR04.java [61])
-(C:\Users\DXS\Documents\GitHub\tm\rendu_final.bbl [62]
+
+] [58]) (./code/ServoExample.java [59])
+(./code/HC_SR04.java [60] [61]) (./rendu_final.bbl [62]
+Underfull \hbox (badness 1062) in paragraph at lines 13--17
+[]\OT1/pnc/m/n/10.95 Futurlec.  Tech-ni-cal in-for-ma-tion - na-tional semi-con
+-duc-tor 7805t
+ []
+
+
 Underfull \hbox (badness 1365) in paragraph at lines 45--48
 []\OT1/pnc/m/n/10.95 Arduino Team.  Ar-duino spec.,??  $\OT1/lmtt/m/n/10.95 htt
-p : / / arduino . cc / en / Main /$
+p : / / arduino . cc / en / Main /
  []
 
 [63
 
 ]
 Underfull \hbox (badness 1902) in paragraph at lines 65--68
-[]\OT1/pnc/m/n/10.95 From Wi-ki-pe-dia the free en-cy-clo-pe-dia.  Event-driven
- pro-gram-
+[]\OT1/pnc/m/n/10.95 From Wikipedia the free en-cy-clo-pe-dia.  Event-driven pr
+o-gram-
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 70--74
-$\OT1/lmtt/m/n/10.95 / / www . bee-[]wi . com / buggy-[]wifi-[]avec-[]camera-[]
-bwz200-[]a1-[]beewi ,[] fr ,[]$
+\OT1/lmtt/m/n/10.95 / / www . bee-[]wi . com / buggy-[]wifi-[]avec-[]camera-[]b
+wz200-[]a1-[]beewi ,[] fr ,[]
  []
 
-) [64] (C:\Users\DXS\Documents\GitHub\tm\rendu_final.aux) )
+) [64] (./rendu_final.aux)
+
+LaTeX Warning: There were undefined references.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+ )
 (\end occurred inside a group at level 1)
 
 ### simple group (level 1) entered at line 77 ({)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 7290 strings out of 493921
- 104220 string characters out of 3147288
- 277466 words of memory out of 3000000
- 10370 multiletter control sequences out of 15000+200000
+ 7610 strings out of 495059
+ 108292 string characters out of 3182031
+ 279438 words of memory out of 3000000
+ 10552 multiletter control sequences out of 15000+200000
  76047 words of font info for 62 fonts, out of 3000000 for 9000
- 841 hyphenation exceptions out of 8191
- 36i,12n,61p,1348b,1969s stack positions out of 5000i,500n,10000p,200000b,50000s
-{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/lm/lm-rmtt.enc}{C:
-/Program Files/MiKTeX 2.9/fonts/enc/dvips/lm/lm-rm.enc}{C:/Program Files/MiKTeX
- 2.9/fonts/enc/dvips/lm/lm-mathsy.enc}{C:/Program Files/MiKTeX 2.9/fonts/enc/dv
-ips/lm/lm-mathit.enc}{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/lm/lm-rmsc.en
-c}{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/fontname/8r.enc}<C:/Program File
-s/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX
- 2.9/fonts/type1/public/amsfonts/latxfont/lcircle1.pfb><C:/Program Files/MiKTeX
- 2.9/fonts/type1/public/lm/lmbx10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/
-public/lm/lmbx12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmcsc10
-.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmmi10.pfb><C:/Program 
-Files/MiKTeX 2.9/fonts/type1/public/lm/lmr10.pfb><C:/Program Files/MiKTeX 2.9/f
-onts/type1/public/lm/lmr6.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/l
-m/lmr8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmr9.pfb><C:/Prog
-ram Files/MiKTeX 2.9/fonts/type1/public/lm/lmri10.pfb><C:/Program Files/MiKTeX 
-2.9/fonts/type1/public/lm/lmri9.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/pu
-blic/lm/lmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmsy8.pfb
-><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmtt10.pfb><C:/Program File
-s/MiKTeX 2.9/fonts/type1/urw/ncntrsbk/uncb8a.pfb><C:/Program Files/MiKTeX 2.9/f
-onts/type1/urw/ncntrsbk/uncr8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw
-/ncntrsbk/uncri8a.pfb>
-Output written on rendu_final.pdf (69 pages, 2888575 bytes).
+ 14 hyphenation exceptions out of 8191
+ 38i,12n,61p,1188b,1968s stack positions out of 5000i,500n,10000p,200000b,50000s
+{/usr/share/texmf/fonts/enc/dvips/lm/lm-rmtt.enc}{/usr/share/te
+xmf/fonts/enc/dvips/lm/lm-rm.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathsy
+.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/share/texmf/fonts
+/enc/dvips/lm/lm-rmsc.enc}{/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8
+r.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
+</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/latxfont/lcircle1.pf
+b></usr/share/texmf/fonts/type1/public/lm/lmbx10.pfb></usr/share/texmf/fonts/ty
+pe1/public/lm/lmbx12.pfb></usr/share/texmf/fonts/type1/public/lm/lmcsc10.pfb></
+usr/share/texmf/fonts/type1/public/lm/lmmi10.pfb></usr/share/texmf/fonts/type1/
+public/lm/lmr10.pfb></usr/share/texmf/fonts/type1/public/lm/lmr6.pfb></usr/shar
+e/texmf/fonts/type1/public/lm/lmr8.pfb></usr/share/texmf/fonts/type1/public/lm/
+lmr9.pfb></usr/share/texmf/fonts/type1/public/lm/lmri10.pfb></usr/share/texmf/f
+onts/type1/public/lm/lmri9.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy10.p
+fb></usr/share/texmf/fonts/type1/public/lm/lmsy8.pfb></usr/share/texmf/fonts/ty
+pe1/public/lm/lmtt10.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/ncntrsb
+k/uncb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/ncntrsbk/uncr8a.pfb
+></usr/share/texlive/texmf-dist/fonts/type1/urw/ncntrsbk/uncri8a.pfb>
+Output written on rendu_final.pdf (69 pages, 3878772 bytes).
 PDF statistics:
- 433 PDF objects out of 1000 (max. 8388607)
+ 427 PDF objects out of 1000 (max. 8388607)
+ 271 compressed objects within 3 object streams
  0 named destinations out of 1000 (max. 500000)
- 142 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 126 words of extra memory for PDF output out of 10000 (max. 10000000)
 
