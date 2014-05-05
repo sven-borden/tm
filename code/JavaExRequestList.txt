@@ -1,9 +1,0 @@
-public static HashMap<String, RequestHandler> RequestHandlers = new HashMap<String, RequestHandler>();
-RequestHandlers.put("ON", new ONRequestHandler());
-RequestHandlers.put("OFF", new OFFRequestHandler());
-RequestHandlers.put("FOR", new FORRequestHandler());
-RequestHandlers.put("BAK", new BAKRequestHandler());
-RequestHandlers.put("STO", new STORequestHandler());
-RequestHandlers.put("LEF", new LEFRequestHandler());
-RequestHandlers.put("RIG", new RIGRequestHandler());
-RequestHandlers.put("CNT", new CNTRequestHandler());

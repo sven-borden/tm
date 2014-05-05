@@ -1,0 +1,10 @@
+ServerSocket welcomeSocket = new ServerSocket(4444);		
+System.out.println("Server is running...");	
+while(true){
+	// Socket de transfert de donnees
+	final Socket clientSocket = welcomeSocket.accept(); 
+	// Creation d'un nouveau Thread	
+	ServerThread st = new ServerThread( clientSocket );
+	st.start();
+	serverThreads.add(st);
+}

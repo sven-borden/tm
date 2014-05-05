@@ -1,5 +1,0 @@
-//ouverture du port de communication avec le host(Adresse IP ou domain name)
-Socket serverSocket = new Socket(host, port);
-//Obtention des Input et Output Stream encapsules dans un PrintStream et un BufferedReader
-PrintStream out = new PrintStream(serverSocket.getOutputStream());
-BufferedReader in = new BufferedReader(new InputStreamReader(serverSocket.getInputStream()));

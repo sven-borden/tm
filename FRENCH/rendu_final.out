@@ -1,0 +1,57 @@
+\BOOKMARK [1][-]{section*.1}{Avant-propos}{}% 1
+\BOOKMARK [1][-]{section*.2}{Remerciements}{}% 2
+\BOOKMARK [1][-]{section*.2}{R\351sum\351}{}% 3
+\BOOKMARK [1][-]{section*.6}{Introduction}{}% 4
+\BOOKMARK [0][-]{chapter.1}{Hardware}{}% 5
+\BOOKMARK [1][-]{section.1.1}{Arduino}{chapter.1}% 6
+\BOOKMARK [2][-]{subsection.1.1.1}{Choix du type d'Arduino}{section.1.1}% 7
+\BOOKMARK [2][-]{subsection.1.1.2}{D\351tails techniques de l'Arduino}{section.1.1}% 8
+\BOOKMARK [2][-]{subsection.1.1.3}{Avantages et alternatives}{section.1.1}% 9
+\BOOKMARK [1][-]{section.1.2}{Raspberry Pi}{chapter.1}% 10
+\BOOKMARK [2][-]{subsection.1.2.1}{D\351tails techniques du Raspberry Pi}{section.1.2}% 11
+\BOOKMARK [2][-]{subsection.1.2.2}{Avantages et utilisations}{section.1.2}% 12
+\BOOKMARK [2][-]{subsection.1.2.3}{Choix de l'OS}{section.1.2}% 13
+\BOOKMARK [1][-]{section.1.3}{Sans fil}{chapter.1}% 14
+\BOOKMARK [1][-]{section.1.4}{Webcam}{chapter.1}% 15
+\BOOKMARK [0][-]{chapter.2}{La m\351canique et l'\351lectronique}{}% 16
+\BOOKMARK [1][-]{section.2.1}{PCB}{chapter.2}% 17
+\BOOKMARK [2][-]{subsection.2.1.1}{Plaque personnelle}{section.2.1}% 18
+\BOOKMARK [2][-]{subsection.2.1.2}{Schema \351lectronique}{section.2.1}% 19
+\BOOKMARK [2][-]{subsection.2.1.3}{Design}{section.2.1}% 20
+\BOOKMARK [2][-]{subsection.2.1.4}{Composants}{section.2.1}% 21
+\BOOKMARK [2][-]{subsection.2.1.5}{Commande et conception}{section.2.1}% 22
+\BOOKMARK [1][-]{section.2.2}{Syst\350me de guidage}{chapter.2}% 23
+\BOOKMARK [2][-]{subsection.2.2.1}{Syst\350me directionel initial}{section.2.2}% 24
+\BOOKMARK [2][-]{subsection.2.2.2}{Remplacement du Syst\350me de guidage}{section.2.2}% 25
+\BOOKMARK [2][-]{subsection.2.2.3}{Contr\364le du servo}{section.2.2}% 26
+\BOOKMARK [2][-]{subsection.2.2.4}{Programmation pour contr\364ler un servo}{section.2.2}% 27
+\BOOKMARK [1][-]{section.2.3}{Moteur de propulsion}{chapter.2}% 28
+\BOOKMARK [2][-]{subsection.2.3.1}{Descriptif}{section.2.3}% 29
+\BOOKMARK [2][-]{subsection.2.3.2}{H-bridge}{section.2.3}% 30
+\BOOKMARK [1][-]{section.2.4}{Senseur de Distance}{chapter.2}% 31
+\BOOKMARK [2][-]{subsection.2.4.1}{Programmation pour utiliser le senseur}{section.2.4}% 32
+\BOOKMARK [1][-]{section.2.5}{Co\373t des composants}{chapter.2}% 33
+\BOOKMARK [0][-]{chapter.3}{Software \040Premi\350re version des syst\350mes embarqu\351s}{}% 34
+\BOOKMARK [1][-]{section.3.1}{Software de l'Arduino}{chapter.3}% 35
+\BOOKMARK [1][-]{section.3.2}{Software du Raspberry Pi}{chapter.3}% 36
+\BOOKMARK [2][-]{subsection.3.2.1}{Guvcview}{section.3.2}% 37
+\BOOKMARK [1][-]{section.3.3}{Python}{chapter.3}% 38
+\BOOKMARK [1][-]{section.3.4}{\311valuation de la premi\350re version}{chapter.3}% 39
+\BOOKMARK [0][-]{chapter.4}{Software \040Deuxi\350me version des syst\350mes embarqu\351s}{}% 40
+\BOOKMARK [1][-]{section.4.1}{Client/Serveur}{chapter.4}% 41
+\BOOKMARK [1][-]{section.4.2}{UDP ou TCP}{chapter.4}% 42
+\BOOKMARK [1][-]{section.4.3}{Java}{chapter.4}% 43
+\BOOKMARK [2][-]{subsection.4.3.1}{Gestion des Requ\352tes de connexion}{section.4.3}% 44
+\BOOKMARK [2][-]{subsection.4.3.2}{Gestion des requ\352tes suivantes}{section.4.3}% 45
+\BOOKMARK [2][-]{subsection.4.3.3}{librxtx}{section.4.3}% 46
+\BOOKMARK [2][-]{subsection.4.3.4}{Ev\351nements et \351coute d'un Stream}{section.4.3}% 47
+\BOOKMARK [2][-]{subsection.4.3.5}{IHM}{section.4.3}% 48
+\BOOKMARK [1][-]{section.4.4}{C++ et vid\351o}{chapter.4}% 49
+\BOOKMARK [2][-]{subsection.4.4.1}{Client/Serveur}{section.4.4}% 50
+\BOOKMARK [2][-]{subsection.4.4.2}{OpenCV}{section.4.4}% 51
+\BOOKMARK [1][-]{section.4.5}{Codes}{chapter.4}% 52
+\BOOKMARK [0][-]{chapter.5}{Conclusion}{}% 53
+\BOOKMARK [1][-]{section.Alph0.1}{Sketchbook}{chapter.5}% 54
+\BOOKMARK [2][-]{subsection.Alph0.1.1}{Sketch exemple pour le moteur}{section.Alph0.1}% 55
+\BOOKMARK [2][-]{subsection.Alph0.1.2}{Sketch exemple pour le servo }{section.Alph0.1}% 56
+\BOOKMARK [2][-]{subsection.Alph0.1.3}{Sketch exemple pour le senseur HC-SR04 }{section.Alph0.1}% 57
