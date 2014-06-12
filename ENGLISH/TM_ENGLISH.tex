@@ -110,28 +110,30 @@ This project could not have succeeded without the help of many people. Here's ou
 \clearpage
 
 \begin{abstract}
+ UGVs (Unmanned Ground Vehicle) are drones who take action on the ground. They
+ are unmanned, which doesn't necesseraly implie they are autonomous. Infact,
+ their is generaly a pilot driving it from a distance. UGVs are used in
+ situations too dangerous or tedious for humans, like scouting and repairing
+ dangerous objects, or in a military context. As we set out to build our own
+ drone, we discovoured that private-use oriented UGVs are expensive and
+ astonishingly weak for the price. We decided to do our own take on
+ UGVs, starting by doing research in electonics, informatics, network
+ communication and car dynamics. The goal was to build a prototype model,
+ controllable through wi-fi, with sensors to scan the car's environment and
+ return information to the pilot.
 
-UGV's are grounded drones which are mainly used by the military or the police. They allow to perform missions that would be difficult or impossible	to do for a man or that would implie to take a risk on his life. This type of drone is also on the toy market, eg \textit{Beewi\cite{beewi} WiFi Camera Buggy BWZ200-A1}, which costs seventy-nine francs.
+During the project we signed up for a national science competition for young
+scientists in our country (Switzerland) and won a special prize which led us
+to "Expo Science Europe" in 2014.
 
-Our project is not to make a drone with a gun to shot everything that moves around, but to make a 
-%Les UGV sont des drones roulants qui sont principalement utilisés par les militaires ou la police. Ils permettent de remplir des missions qu'il serait
-%difficile voire impossible à faire pour l'homme ou qui mettraient sa vie en péril. Ce type de drone existe également sur le marché des jouets, par exemple le \textit{Beewi WiFi Camera Buggy BWZ200-A1} \cite{beewi}, qui coûte septante-neuf francs.
-%
-%Notre projet ne consiste pas à fabriquer un drone ayant un fusil permettant de "dégommer" tout ce qui
-%bouge, mais de faire un drone de reconnaissance à moindre coûts. Les drones
-%existants sont soit trop cher, soit peu performants.  L'objectif de ce projet est de développer un prototype qui aurait des avantages face à un produit tel que le Beewi\cite{beewi} (une portée améliorée, une meilleure autonomie et une meilleure qualité vidéo) . En effet, si nous parvenons à avoir un ensemble possédant un
-%véhicule tout terrain, une interface graphique claire et un guidage simple et efficace, à un prix abordable,  
-%nous aurions des arguments de poids face aux autres produits disponibles sur le
-%marché.
-%
-%Dans la lancée de ce projet, nous nous sommes inscrits au concours
-%Suisse de science \textit{La science appelle les jeunes}\footnote{http://fr.sjf.ch/}. Ce concours réunit presque tous les domaines, pourvu que
-%certains critères soient respectés. Tous les concurrents continuent un projet
-%qu'ils avaient commencé durant leur travail de maturité/diplôme et la démarche
-%utilisée doit être scientifique. Ce concours pourrait, selon les résultats,
-%nous aider à promouvoir notre drone.
-%
-%Au terme de ce projet nous avons acquis des connaissances dans plusieurs domaines de l'informatique, de l'électronique et de la mécanique. Le résultat final est un véhicule contrôlable à distance, avec une caméra et des senseurs, en plus d'un programme client-serveur Java et C++ pour le transfert du flux vidéo, des commandes de direction et des informations recueillies par les senseurs.  
+We have yet much to learn at this stage, but ,through the project, we have
+already had many 
+practical experiences in informatics, electronics and mecanical
+engineering. The vehicle is now remotely controlable from a normal computer by
+simply running a java applet. Sensor readings and a video stream are sent back
+to the pilot allowing him to drive the drone without a direct line of sight on
+it.
+     
 \setcounter{page}{3}
 \end{abstract}
 \addcontentsline{toc}{section}{\protect\numberline{}Résumé}
@@ -327,7 +329,7 @@ E
 
 \begin{figure}[h!]
 \centering
-\includegraphics[width=1.0\textwidth]{figures/PCB.jpg}
+\includegraphics[width=1.0\textwidth]{PCB.jpg}
     \caption{\label{PCB} Le PCB que nous avons nous avons conçu grâce au logiciel Eagle.
     }
 \end{figure}
@@ -344,7 +346,7 @@ télécommande (TX pour "Transmit" et RX pour "Receive").
 
 \begin{figure}[h]
 \centering
-\includegraphics[width=0.6\textwidth]{figures/rx2_ex2.jpg}
+\includegraphics[width=0.6\textwidth]{rx2_ex2.jpg}
     \caption[Exemple de plaque RX2]{\label{rx2.2}Exemple de plaque similaire à celle qu'on a pu trouver
       dans le véhicule.}
 \end{figure}
@@ -369,14 +371,14 @@ principaux, voir la figure \ref{SchemaPlaqueMaison}.
 
 \begin{figure}[h]
 \centering
-\includegraphics[width=1.0\textwidth]{figures/DSC_1116res}
+\includegraphics[width=1.0\textwidth]{DSC_1116res}
     \caption[Prototype du PCB]{\label{PPFigure}Première plaque rassemblant différents composants électriques. 
     }
 \end{figure}
  
 \begin{figure}[h]
 \centering
-\includegraphics[width=1.0\textwidth]{figures/SchemaPlaqueMaison}
+\includegraphics[width=1.0\textwidth]{SchemaPlaqueMaison}
     \caption{\label{SchemaPlaqueMaison}Schéma sommaire du prototype.
     }
 \end{figure}
@@ -404,7 +406,7 @@ au design de la plaque qui est illustré plus tard.
 
 %\begin{figure}[h]
 %\centering
-%\includegraphics[width=0.3\textwidth]{figures/StripBoard}
+%\includegraphics[width=0.3\textwidth]{StripBoard}
 %    \caption[Strip-	board]{\label{StripBoard}Exemple de dessous de plaque de prototypage
 %      similaire à la notre.
 %    }
@@ -417,7 +419,7 @@ Eagle. Les symboles utilisés sont donc standardisés.
 
 \begin{figure}[h!]
 \centering
-\includegraphics[angle=90, width=1.1\textwidth]{figures/schema_CHI_annotated.png}
+\includegraphics[angle=90, width=1.1\textwidth]{schema_CHI_annotated.png}
 \caption{\label{schemaChineComplet}Schéma complet du PCB
 }
 \end{figure}
@@ -433,7 +435,7 @@ Quelques indications pour lire le schéma:
 \subsection{Design}
 \begin{figure}[h]
 \centering
-\includegraphics[width=1\textwidth]{figures/board_CHI_annotated.png}
+\includegraphics[width=1\textwidth]{board_CHI_annotated.png}
 \caption[Design final du PCB]{\label{BoardChine}Image du design final à
   l'ordinateur. (Voir figure \ref{schemaChineComplet} pour les annotations)
 }
@@ -552,14 +554,14 @@ Le montage final est illustré par les figures (\ref{InstallServo}) et (\ref{Ins
 
 \begin{figure}[h]
 \centering
-\includegraphics[width=0.9\textwidth]{figures/InstallationServo.jpg}
+\includegraphics[width=0.9\textwidth]{InstallationServo.jpg}
     \caption[Installation du servo (1)]{\label{InstallServo} Vue frontale du montage pour le système de direction. 
     }
 \end{figure}
 
 \begin{figure}[h]
 \centering
-\includegraphics[width=0.6\textwidth, angle = 90]{figures/InstallationServo2.jpg}
+\includegraphics[width=0.6\textwidth, angle = 90]{InstallationServo2.jpg}
     \caption[Installation du servo (2)]{\label{InstallServo2} Vue aérienne du montage pour le système de direction, avec le couvercle entrouvert. 
     }
 \end{figure}
@@ -577,7 +579,7 @@ pourrait davantage éclairer le lecteur.
 
 \begin{figure}[h]
 \centering
-\includegraphics[width=1.0\textwidth]{figures/ServoPwm}
+\includegraphics[width=1.0\textwidth]{ServoPwm}
     \caption[Signal modulé]{\label{ServoPwm}Schéma de la modulation du signal
       \'electrique \protect
       \cite{WikiServo}
@@ -635,7 +637,7 @@ de contr\^oler le sens du courant passant dans le moteur. La figure \ref{H-bridg
 
 \begin{figure}[h]
 \centering
-\includegraphics[width=1.0\textwidth]{figures/H-bridge}
+\includegraphics[width=1.0\textwidth]{H-bridge}
     \caption[H-Bridge]{\label{H-bridge}Sch\'ema d'un H-bridge}
 \end{figure}
 
@@ -681,7 +683,7 @@ ou dans l'autre.\normalsize
 
 \begin{figure}[h!]
 \centering
-\includegraphics[width=0.5\textwidth]{figures/HC-SR04.jpg}
+\includegraphics[width=0.5\textwidth]{HC-SR04.jpg}
     \caption[HC-SR04, senseur de distance]{\label{PingSensor}Le senseur de distance à ultrason HC-SR04}
 \end{figure}
 
@@ -705,7 +707,7 @@ La figure (\ref{PingSensorTimingDiagram}) montre tout d'abord le signal à donne
 
 \begin{figure}[h]
 \centering
-\includegraphics[width=0.9\textwidth]{figures/HC-SR04-timing-diagram.png}
+\includegraphics[width=0.9\textwidth]{HC-SR04-timing-diagram.png}
     \caption[Fonctionnement du HC-SR04 en fonction du temps]{\label{PingSensorTimingDiagram}Fonctionnement du HC-SR04 en fonction du temps}
 \end{figure}
 
@@ -843,7 +845,7 @@ de la vidéo avec le programme en C++ ainsi que OpenCV.
 Le modèle client-serveur est composé de deux parties: les serveurs qui fournissent un service et les clients qui bénéficient de celui-ci. Un client ne partage pas ses ressources avec les autres, mais profite de celles du serveur. Le serveur attend qu'un client vienne se connecter et faire des requêtes auxquelles il répond. Il doit généralement être capable de gérer plusieurs clients à la fois.
 
 \begin{figure}[h]
-\includegraphics[width=1.0\textwidth]{figures/Client_Server1.pdf}
+\includegraphics[width=1.0\textwidth]{Client_Server1.pdf}
 \caption[Structure client-serveur]{\label{ClientServer1}Structure client-serveur.}
 \end{figure}
 
@@ -852,7 +854,7 @@ Nous avons établi que la voiture occupe le rôle de serveur qui est exécuté s
 Un Thread est initié pour chaque nouvelle demande de connexion. C'est-à-dire que le serveur peut s'occuper en parallèle des requêtes de différents clients (voir fig. \ref{ClientServer2}). 
 
 \begin{figure}[h]
-\includegraphics[width=1.0\textwidth]{figures/Client_Server2.pdf}
+\includegraphics[width=1.0\textwidth]{Client_Server2.pdf}
 \caption[Connexion d'un nouveau client]{\label{ClientServer2}Schéma de la procédure suivie à chaque nouvelle connexion.}
 \end{figure}
 
@@ -889,7 +891,7 @@ De l'autre côté, le serveur attend les demandes de connexion, ceci grâce à l
  \lstinputlisting[language=Java]{code/JavaExRequestList.txt}
  
  \begin{figure}[!h]
-\includegraphics[width=1.0\textwidth]{figures/RequestHandler.pdf}
+\includegraphics[width=1.0\textwidth]{RequestHandler.pdf}
 \caption[Gestion de requête au serveur]{\label{RequestHandler}Schéma de la procédure suivie pour une requête au serveur.}
 \end{figure}
  
@@ -906,7 +908,7 @@ La programmation événementielle permet dans certains cas d'améliorer l'effica
 Pour illustrer cette architecture, imaginons deux téléphones, l'un est dépourvu de haut-parleurs (voir fig.\ref{ChatExample}). Pour chatter, l'utilisateur du té\-lé\-pho\-ne défectueux devra régulièrement contrôler s'il a reçu un nouveau message et souvent il contrôlera pour rien, tandis que l'autre sera averti d'un nouveau message (changement d'état, événement!) et contrôlera uniquement à ce moment là.  
 
 \begin{figure}[h]
-\includegraphics[width=1.0\textwidth]{figures/EventProgramming1.pdf}
+\includegraphics[width=1.0\textwidth]{EventProgramming1.pdf}
 \caption[Analogie à la programmation événementielle]{\label{ChatExample}L'utilisateur du téléphone sans haut-parleur contrôlera régulièrement son téléphone et souvent pour rien.}
 \end{figure}
 
@@ -915,13 +917,13 @@ Notre code java utilise ce système pour tout ce qui concerne la réception de m
 \lstinputlisting[language=Java]{code/JavaExEvent.txt}
 
 \begin{figure}[h]
-\includegraphics[width=1.0\textwidth]{figures/EventProgramming2.pdf}
+\includegraphics[width=1.0\textwidth]{EventProgramming2.pdf}
 \caption[Evénements dans notre architecture]{\label{SuiteEvent}Cette figure illustre une suite d'événements possible dans l'architecture de notre projet}
 \end{figure}
 
 \subsection{IHM}
 \begin{figure}[h]
-\includegraphics[width=1.0\textwidth]{figures/IHM_connexion.PNG}
+\includegraphics[width=1.0\textwidth]{IHM_connexion.PNG}
 \caption[Onglet de connexion]{\label{IHM_connexion}
 Onglet de connexion de l'interface graphique Java}
 \end{figure}
@@ -931,7 +933,7 @@ Pour faciliter l'utilisation du programme Java et pour capter les événements d
 Les paramètres par défaut pour guider le véhicule sont les touches flé\-chées pour avancer, reculer et tourner, ainsi que les touches a, s, d, et w pour changer la vitesse et le braquage des roues. Ces derniers paramètres sont représentés par des glisseurs que l'on peut aussi modifier à l'aide de la souris.
 
 \begin{figure}[h!]
-\includegraphics[width=1.0\textwidth]{figures/IHM_controle.PNG}
+\includegraphics[width=1.0\textwidth]{IHM_controle.PNG}
 \caption[Onglet de contrôle]{\label{IHM_controle}
 Onglet de contrôle de l'interface graphique Java, permettant à l'utilisateur de guider la voiture.}
 \end{figure}
