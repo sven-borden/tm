@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/TeX Live for SUSE Linux) (format=pdflatex 2013.8.11)  12 JUN 2014 21:14
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/TeX Live for SUSE Linux) (format=pdflatex 2013.8.11)  12 JUN 2014 22:02
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -713,15 +713,15 @@ File: uni-0.def 2012/04/20 UCS: Unicode data U+0000..U+00FF
 
 ]
 LaTeX Font Info:    Font shape `OT1/pnc/bx/n' in size <10.95> not available
-(Font)              Font shape `OT1/pnc/b/n' tried instead on input line 112.
+(Font)              Font shape `OT1/pnc/b/n' tried instead on input line 114.
 
-Overfull \hbox (7.95659pt too wide) in paragraph at lines 113--124
+Overfull \hbox (7.95659pt too wide) in paragraph at lines 115--126
 \OT1/pnc/m/n/10.95 UGVs (Un-manned Ground Ve-hi-cle) are drones who take ac-tio
 n on the ground.
  []
 
 
-Overfull \hbox (0.78621pt too wide) in paragraph at lines 113--124
+Overfull \hbox (0.78621pt too wide) in paragraph at lines 115--126
 \OT1/pnc/m/n/10.95 They are un-manned, which doesn't necesser-aly im-plie they 
 are au-tonomous.
  []
@@ -751,33 +751,28 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 
  [6
 
-]
-
-LaTeX Warning: Citation `microcontroleur' on page 7 undefined on input line 170
-.
-
-[7
+] [7
 
 ]
 Chapter 1.
-<Figures/SchemaPres.pdf, id=44, 597.23125pt x 569.12625pt>
+<Figures/SchemaPres.pdf, id=42, 597.23125pt x 569.12625pt>
 File: Figures/SchemaPres.pdf Graphic file (type pdf)
 
 <use Figures/SchemaPres.pdf>
-Package pdftex.def Info: Figures/SchemaPres.pdf used on input line 200.
+Package pdftex.def Info: Figures/SchemaPres.pdf used on input line 195.
 (pdftex.def)             Requested size: 378.42174pt x 360.61827pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 
-LaTeX Warning: Citation `Arduino' on page 8 undefined on input line 205.
+LaTeX Warning: Citation `Arduino' on page 8 undefined on input line 200.
 
 
-LaTeX Warning: Citation `openSource' on page 8 undefined on input line 205.
+LaTeX Warning: Citation `openSource' on page 8 undefined on input line 200.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 209--210
+Underfull \hbox (badness 10000) in paragraph at lines 204--205
 
  []
 
@@ -788,29 +783,29 @@ Underfull \hbox (badness 10000) in paragraph at lines 209--210
 File: Figures/arduino_uno_official.jpg Graphic file (type jpg)
 
 <use Figures/arduino_uno_official.jpg>
-Package pdftex.def Info: Figures/arduino_uno_official.jpg used on input line 21
-3.
+Package pdftex.def Info: Figures/arduino_uno_official.jpg used on input line 20
+8.
 (pdftex.def)             Requested size: 264.89406pt x 183.06189pt.
  [9 <./Figures/SchemaPres.pdf>]
 
-LaTeX Warning: Citation `Arduino' on page 10 undefined on input line 225.
+LaTeX Warning: Citation `Arduino' on page 10 undefined on input line 220.
 
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <9> on input line 227.
+(Font)              <9> on input line 222.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <5> on input line 227.
+(Font)              <5> on input line 222.
 [10 <./Figures/arduino_uno_official.jpg>]
-Overfull \hbox (31.68384pt too wide) in paragraph at lines 238--239
+Overfull \hbox (31.68384pt too wide) in paragraph at lines 233--234
 \OT1/pnc/m/n/10.95 il faut se rap-peler qu'ils ne doivent pas faire fonc-tion-n
 er un syst[]eme d'exploitation,
  []
 
 
 LaTeX Warning: Citation `RaspberryPiCaracteristiques' on page 11 undefined on i
-nput line 241.
+nput line 236.
 
 
-Overfull \hbox (1.52766pt too wide) in paragraph at lines 241--242
+Overfull \hbox (1.52766pt too wide) in paragraph at lines 236--237
 \OT1/pnc/m/n/10.95 syst[]emes d'exploitations d[]eriv[]es de UNIX/Linux. Le Ras
 p-berry Pi est achet[]e
  []
@@ -819,7 +814,7 @@ p-berry Pi est achet[]e
 File: Figures/raspberrypi.jpg Graphic file (type jpg)
 
 <use Figures/raspberrypi.jpg>
-Package pdftex.def Info: Figures/raspberrypi.jpg used on input line 244.
+Package pdftex.def Info: Figures/raspberrypi.jpg used on input line 239.
 (pdftex.def)             Requested size: 378.42174pt x 282.49416pt.
 
 
@@ -827,30 +822,30 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 
 
 LaTeX Warning: Citation `RaspberryPiCaracteristiques' on page 11 undefined on i
-nput line 249.
+nput line 244.
 
 [11] [12 <./Figures/raspberrypi.jpg>]
 
-LaTeX Warning: Reference `Edimax' on page 13 undefined on input line 275.
+LaTeX Warning: Reference `Edimax' on page 13 undefined on input line 270.
 
 [13]
 
-LaTeX Warning: Citation `uvc' on page 14 undefined on input line 289.
+LaTeX Warning: Citation `uvc' on page 14 undefined on input line 284.
 
 [14]
 Chapter 2.
 
-Underfull \hbox (badness 10000) in paragraph at lines 308--308
+Underfull \hbox (badness 10000) in paragraph at lines 303--303
 []|\OT1/lmr/m/n/10.95 Longueur (cen-tre de
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 315--315
+Underfull \hbox (badness 10000) in paragraph at lines 310--310
 []|\OT1/lmr/m/n/10.95 Courant max (roue
  []
 
 
-Overfull \hbox (4.87451pt too wide) in paragraph at lines 316--317
+Overfull \hbox (4.87451pt too wide) in paragraph at lines 311--312
 []|[]| 
  []
 
@@ -860,14 +855,14 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 <Figures/PCB.jpg, id=86, 1282.7925pt x 722.7pt>
 File: Figures/PCB.jpg Graphic file (type jpg)
  <use Figures/PCB.jpg>
-Package pdftex.def Info: Figures/PCB.jpg used on input line 332.
+Package pdftex.def Info: Figures/PCB.jpg used on input line 327.
 (pdftex.def)             Requested size: 378.42174pt x 213.19464pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
-Overfull \hbox (16.68309pt too wide) in paragraph at lines 337--345
+Overfull \hbox (16.68309pt too wide) in paragraph at lines 332--340
 \OT1/pnc/m/n/10.95 La d[]ecision de re-tirer l'[]electronique de base du v[]ehi
 cule t[]el[]ecommand[]e provient
  []
@@ -875,7 +870,7 @@ cule t[]el[]ecommand[]e provient
 <Figures/rx2_ex2.jpg, id=87, 758.835pt x 686.565pt>
 File: Figures/rx2_ex2.jpg Graphic file (type jpg)
  <use Figures/rx2_ex2.jpg>
-Package pdftex.def Info: Figures/rx2_ex2.jpg used on input line 349.
+Package pdftex.def Info: Figures/rx2_ex2.jpg used on input line 344.
 (pdftex.def)             Requested size: 227.05534pt x 205.42633pt.
 
 
@@ -887,10 +882,10 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 File: Figures/DSC_1116res.jpg Graphic file (type jpg)
 
 <use Figures/DSC_1116res.jpg>
-Package pdftex.def Info: Figures/DSC_1116res.jpg used on input line 374.
+Package pdftex.def Info: Figures/DSC_1116res.jpg used on input line 369.
 (pdftex.def)             Requested size: 378.42174pt x 250.23486pt.
 
-Underfull \hbox (badness 3098) in paragraph at lines 376--376
+Underfull \hbox (badness 3098) in paragraph at lines 371--371
 []\OT1/lmr/m/n/10.95 Figure 2.3: |[]Premi^^Rere plaque rassem-blant diff^^Seren
 ts com-posants
  []
@@ -902,7 +897,7 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 File: Figures/SchemaPlaqueMaison.png Graphic file (type png)
 
 <use Figures/SchemaPlaqueMaison.png>
-Package pdftex.def Info: Figures/SchemaPlaqueMaison.png used on input line 381.
+Package pdftex.def Info: Figures/SchemaPlaqueMaison.png used on input line 376.
 
 (pdftex.def)             Requested size: 378.42174pt x 266.42288pt.
 
@@ -914,30 +909,30 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 File: Figures/schema_CHI_annotated.png Graphic file (type png)
 
 <use Figures/schema_CHI_annotated.png>
-Package pdftex.def Info: Figures/schema_CHI_annotated.png used on input line 42
-2.
+Package pdftex.def Info: Figures/schema_CHI_annotated.png used on input line 41
+7.
 (pdftex.def)             Requested size: 650.4284pt x 505.88875pt.
 
-Overfull \hbox (37.85423pt too wide) in paragraph at lines 422--424
+Overfull \hbox (37.85423pt too wide) in paragraph at lines 417--419
  [][] 
  []
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-LaTeX Font Info:    Try loading font information for OMS+pnc on input line 430.
+LaTeX Font Info:    Try loading font information for OMS+pnc on input line 425.
 
 (/usr/share/texmf/tex/latex/psnfss/omspnc.fd
 File: omspnc.fd 
 )
 LaTeX Font Info:    Font shape `OMS/pnc/m/n' in size <10.95> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 430.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 425.
 
 <Figures/board_CHI_annotated.png, id=101, 289.08pt x 267.24844pt>
 File: Figures/board_CHI_annotated.png Graphic file (type png)
 
 <use Figures/board_CHI_annotated.png>
-Package pdftex.def Info: Figures/board_CHI_annotated.png used on input line 438
+Package pdftex.def Info: Figures/board_CHI_annotated.png used on input line 433
 .
 (pdftex.def)             Requested size: 378.42174pt x 349.8615pt.
  [18 <./Figures/rx2_ex2.jpg>]
@@ -946,12 +941,12 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 
 [19 <./Figures/DSC_1116res.jpg>]
 
-LaTeX Warning: Citation `l293dDataSheet' on page 20 undefined on input line 457
+LaTeX Warning: Citation `l293dDataSheet' on page 20 undefined on input line 452
 .
 
 
 LaTeX Warning: Citation `adafruitMotorShield' on page 20 undefined on input lin
-e 457.
+e 452.
 
 [20 <./Figures/SchemaPlaqueMaison.png>]
 
@@ -959,28 +954,28 @@ LaTeX Warning: Text page 21 contains only floats.
 
 [21 <./Figures/schema_CHI_annotated.png>]
 
-LaTeX Warning: Citation `7805T' on page 22 undefined on input line 461.
+LaTeX Warning: Citation `7805T' on page 22 undefined on input line 456.
 
 
-LaTeX Warning: Citation `7805T' on page 22 undefined on input line 461.
+LaTeX Warning: Citation `7805T' on page 22 undefined on input line 456.
 
 [22 <./Figures/board_CHI_annotated.png>] [23]
 <Figures/CircuitZener.pdf, id=124, 597.23125pt x 421.575pt>
 File: Figures/CircuitZener.pdf Graphic file (type pdf)
 
 <use Figures/CircuitZener.pdf>
-Package pdftex.def Info: Figures/CircuitZener.pdf used on input line 478.
+Package pdftex.def Info: Figures/CircuitZener.pdf used on input line 473.
 (pdftex.def)             Requested size: 378.42174pt x 267.12463pt.
 
 
-LaTeX Warning: Citation `HC-SR04' on page 24 undefined on input line 486.
+LaTeX Warning: Citation `HC-SR04' on page 24 undefined on input line 481.
 
 [24 <./Figures/CircuitZener.pdf>] [25]
 <Figures/InstallationServo.jpg, id=140, 1281.78876pt x 720.6925pt>
 File: Figures/InstallationServo.jpg Graphic file (type jpg)
 
 <use Figures/InstallationServo.jpg>
-Package pdftex.def Info: Figures/InstallationServo.jpg used on input line 557.
+Package pdftex.def Info: Figures/InstallationServo.jpg used on input line 552.
 (pdftex.def)             Requested size: 340.57724pt x 191.48846pt.
 
 
@@ -990,11 +985,11 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 File: Figures/InstallationServo2.jpg Graphic file (type jpg)
 
 <use Figures/InstallationServo2.jpg>
-Package pdftex.def Info: Figures/InstallationServo2.jpg used on input line 564.
+Package pdftex.def Info: Figures/InstallationServo2.jpg used on input line 559.
 
 (pdftex.def)             Requested size: 227.05534pt x 403.0248pt.
 
-Overfull \hbox (24.60306pt too wide) in paragraph at lines 564--566
+Overfull \hbox (24.60306pt too wide) in paragraph at lines 559--561
  [][] 
  []
 
@@ -1005,23 +1000,23 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 File: Figures/ServoPwm.pdf Graphic file (type pdf)
 
 <use Figures/ServoPwm.pdf>
-Package pdftex.def Info: Figures/ServoPwm.pdf used on input line 582.
+Package pdftex.def Info: Figures/ServoPwm.pdf used on input line 577.
 (pdftex.def)             Requested size: 378.42174pt x 151.37692pt.
 
 
-LaTeX Warning: Citation `WikiServo' on page 27 undefined on input line 586.
+LaTeX Warning: Citation `WikiServo' on page 27 undefined on input line 581.
 
 
-LaTeX Warning: Citation `WikiServo' on page 27 undefined on input line 586.
+LaTeX Warning: Citation `WikiServo' on page 27 undefined on input line 581.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 
-LaTeX Warning: Citation `ServoSweep' on page 27 undefined on input line 604.
+LaTeX Warning: Citation `ServoSweep' on page 27 undefined on input line 599.
 
 [27 <./Figures/InstallationServo.jpg>] [28 <./Figures/InstallationServo2.jpg>]
-Overfull \hbox (19.65218pt too wide) in paragraph at lines 625--630
+Overfull \hbox (19.65218pt too wide) in paragraph at lines 620--625
 \OT1/pnc/m/n/10.95 le faire tourner dans le sens in-verse, il vous suf-fira d'[
 ]echanger les fils []electriques
  []
@@ -1030,28 +1025,28 @@ Overfull \hbox (19.65218pt too wide) in paragraph at lines 625--630
 File: Figures/H-bridge.jpg Graphic file (type jpg)
 
 <use Figures/H-bridge.jpg>
-Package pdftex.def Info: Figures/H-bridge.jpg used on input line 640.
+Package pdftex.def Info: Figures/H-bridge.jpg used on input line 635.
 (pdftex.def)             Requested size: 378.42174pt x 183.53621pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 
-LaTeX Warning: Citation `RobotRoom' on page 29 undefined on input line 651.
+LaTeX Warning: Citation `RobotRoom' on page 29 undefined on input line 646.
 
 [29 <./Figures/ServoPwm.pdf>]
 <Figures/HC-SR04.jpg, id=162, 631.35875pt x 631.35875pt>
 File: Figures/HC-SR04.jpg Graphic file (type jpg)
 
 <use Figures/HC-SR04.jpg>
-Package pdftex.def Info: Figures/HC-SR04.jpg used on input line 686.
+Package pdftex.def Info: Figures/HC-SR04.jpg used on input line 681.
 (pdftex.def)             Requested size: 189.21086pt x 189.20677pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
-LaTeX Warning: Citation `HC-SR04' on page 30 undefined on input line 690.
+LaTeX Warning: Citation `HC-SR04' on page 30 undefined on input line 685.
 
 [30 <./Figures/H-bridge.jpg>] [31 <./Figures/HC-SR04.jpg>]
 <Figures/HC-SR04-timing-diagram.png, id=169, 410.2828pt x 264.23718pt>
@@ -1059,7 +1054,7 @@ File: Figures/HC-SR04-timing-diagram.png Graphic file (type png)
 
 <use Figures/HC-SR04-timing-diagram.png>
 Package pdftex.def Info: Figures/HC-SR04-timing-diagram.png used on input line 
-710.
+705.
 (pdftex.def)             Requested size: 340.57724pt x 219.34099pt.
 
 
@@ -1072,11 +1067,11 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 [33 <./Figures/HC-SR04-timing-diagram.png>] [34]
 Chapter 3.
 LaTeX Font Info:    Font shape `OMS/pnc/m/it' in size <10.95> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 781.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 776.
 [35
 
 ] [36]
-Overfull \hbox (4.60564pt too wide) in paragraph at lines 801--816
+Overfull \hbox (4.60564pt too wide) in paragraph at lines 796--811
 \OT1/pnc/m/n/10.95 pro-pre code python qui per-met de contr[]oler le v[]ehicule
 . L'interface graphique
  []
@@ -1086,7 +1081,7 @@ File: Figures/Python_GUI_screen_example.png Graphic file (type png)
 
 <use Figures/Python_GUI_screen_example.png>
 Package pdftex.def Info: Figures/Python_GUI_screen_example.png used on input li
-ne 819.
+ne 814.
 (pdftex.def)             Requested size: 304.23454pt x 237.48563pt.
  [38 <./Figures/Python_GUI_screen_example.png>] [39]
 Chapter 4.
@@ -1097,37 +1092,37 @@ Chapter 4.
 File: Figures/Client_Server1.pdf Graphic file (type pdf)
 
 <use Figures/Client_Server1.pdf>
-Package pdftex.def Info: Figures/Client_Server1.pdf used on input line 848.
+Package pdftex.def Info: Figures/Client_Server1.pdf used on input line 843.
 (pdftex.def)             Requested size: 378.42174pt x 180.62714pt.
  [41 <./Figures/Client_Server1.pdf>]
 <Figures/Client_Server2.pdf, id=219, 597.23125pt x 421.575pt>
 File: Figures/Client_Server2.pdf Graphic file (type pdf)
 
 <use Figures/Client_Server2.pdf>
-Package pdftex.def Info: Figures/Client_Server2.pdf used on input line 857.
+Package pdftex.def Info: Figures/Client_Server2.pdf used on input line 852.
 (pdftex.def)             Requested size: 378.42174pt x 267.12463pt.
  [42 <./Figures/Client_Server2.pdf>]
-Overfull \hbox (1.47601pt too wide) in paragraph at lines 867--868
+Overfull \hbox (1.47601pt too wide) in paragraph at lines 862--863
 []\OT1/pnc/m/n/10.95 Le pro-to-cole TCP[] est l'oppos[]e de l'UDP, il est ori-e
 nt[]e con-nex-ion. Lorsque
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 867--868
+Underfull \hbox (badness 10000) in paragraph at lines 862--863
 
  []
 
 (/usr/share/texmf/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2004/09/05 1.3 listings language file
 ) [43]
-LaTeX Font Info:    Try loading font information for OT1+lmtt on input line 875
+LaTeX Font Info:    Try loading font information for OT1+lmtt on input line 870
 .
 
 (/usr/share/texmf/tex/latex/lm/ot1lmtt.fd
 File: ot1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
 ) (./code/JavaExConnection.txt)
 (./code/JavaExConnectionServer.txt)
-Overfull \hbox (0.52866pt too wide) in paragraph at lines 881--882
+Overfull \hbox (0.52866pt too wide) in paragraph at lines 876--877
 []\OT1/pnc/m/n/10.95 Puisqu'il est dans une boucle while, il se remet en at-ten
 te de la prochaine
  []
@@ -1137,20 +1132,20 @@ te de la prochaine
 File: Figures/RequestHandler.pdf Graphic file (type pdf)
 
 <use Figures/RequestHandler.pdf>
-Package pdftex.def Info: Figures/RequestHandler.pdf used on input line 894.
+Package pdftex.def Info: Figures/RequestHandler.pdf used on input line 889.
 (pdftex.def)             Requested size: 378.42174pt x 180.62714pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
-Overfull \hbox (0.86969pt too wide) in paragraph at lines 900--901
+Overfull \hbox (0.86969pt too wide) in paragraph at lines 895--896
 \OT1/pnc/m/n/10.95 staller. li-brxtx s'occupe de g[]erer les ports de com-mu-ni
 -ca-tion USB et d'[]etablir
  []
 
 
-Overfull \hbox (3.81702pt too wide) in paragraph at lines 902--903
+Overfull \hbox (3.81702pt too wide) in paragraph at lines 897--898
 []\OT1/pnc/m/n/10.95 etablir une con-nex-ion []a cette ap-pareil et lui en-voye
 r des donn[]ees. Le syst[]eme
  []
@@ -1158,13 +1153,13 @@ r des donn[]ees. Le syst[]eme
 [45]
 
 LaTeX Warning: Citation `EventProgramming' on page 46 undefined on input line 9
-06.
+01.
 
 <Figures/EventProgramming1.pdf, id=249, 597.23125pt x 285.065pt>
 File: Figures/EventProgramming1.pdf Graphic file (type pdf)
 
 <use Figures/EventProgramming1.pdf>
-Package pdftex.def Info: Figures/EventProgramming1.pdf used on input line 911.
+Package pdftex.def Info: Figures/EventProgramming1.pdf used on input line 906.
 (pdftex.def)             Requested size: 378.42174pt x 180.62714pt.
 
 
@@ -1175,7 +1170,7 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 File: Figures/EventProgramming2.pdf Graphic file (type pdf)
 
 <use Figures/EventProgramming2.pdf>
-Package pdftex.def Info: Figures/EventProgramming2.pdf used on input line 920.
+Package pdftex.def Info: Figures/EventProgramming2.pdf used on input line 915.
 (pdftex.def)             Requested size: 378.42174pt x 267.12463pt.
 
 
@@ -1185,26 +1180,26 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 File: Figures/IHM_connexion.PNG Graphic file (type png)
 
 <use Figures/IHM_connexion.PNG>
-Package pdftex.def Info: Figures/IHM_connexion.PNG used on input line 926.
+Package pdftex.def Info: Figures/IHM_connexion.PNG used on input line 921.
 (pdftex.def)             Requested size: 378.42174pt x 265.21646pt.
  [47 <./Figures/EventProgramming1.pdf>]
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 
-Overfull \hbox (0.4986pt too wide) in paragraph at lines 931--932
+Overfull \hbox (0.4986pt too wide) in paragraph at lines 926--927
 \OT1/pnc/m/n/10.95 Pour fa-ciliter l'utilisation du pro-gramme Java et pour cap
 ter les []ev[]enements
  []
 
 
-Overfull \hbox (10.41148pt too wide) in paragraph at lines 931--932
+Overfull \hbox (10.41148pt too wide) in paragraph at lines 926--927
 \OT1/pnc/m/n/10.95 du clavier afin de contr[]oler la voiture, nous avons cr[]e[
 ]e une in-ter-face graphique
  []
 
 
-Overfull \hbox (14.9281pt too wide) in paragraph at lines 931--932
+Overfull \hbox (14.9281pt too wide) in paragraph at lines 926--927
 \OT1/pnc/m/n/10.95 en Swing[]. Au travers de l'onglet con-nex-ion (voir fig. 4.
 6[]) de l'IHM, l'utilisateur
  []
@@ -1213,7 +1208,7 @@ Overfull \hbox (14.9281pt too wide) in paragraph at lines 931--932
 File: Figures/IHM_controle.PNG Graphic file (type png)
 
 <use Figures/IHM_controle.PNG>
-Package pdftex.def Info: Figures/IHM_controle.PNG used on input line 936.
+Package pdftex.def Info: Figures/IHM_controle.PNG used on input line 931.
 (pdftex.def)             Requested size: 378.42174pt x 265.67189pt.
  [48 <./Figures/EventProgramming2.pdf>]
 
@@ -1230,25 +1225,25 @@ File: lstlang1.sty 2004/09/05 1.3 listings language file
 File: lstmisc.sty 2007/02/22 1.4 (Carsten Heinz)
 ) (./code/client.cpp)
 (./code/client.cpp) (./code/client.cpp)
-Overfull \hbox (3.89647pt too wide) in paragraph at lines 967--968
+Overfull \hbox (3.89647pt too wide) in paragraph at lines 962--963
 \OT1/pnc/m/n/10.95 pre-mier, \OT1/pnc/b/n/10.95 AF[]INET \OT1/pnc/m/n/10.95 est
  la famille de pro-to-cole utilis[]ee, elle utilise une adresse
  []
 
 
-Overfull \hbox (44.05138pt too wide) in paragraph at lines 967--968
+Overfull \hbox (44.05138pt too wide) in paragraph at lines 962--963
 \OT1/pnc/m/n/10.95 gu-ment d[]etermine le type de com-mu-ni-ca-tion []a faire, 
 dans notre cas, \OT1/pnc/b/n/10.95 SOCK[]DGRAM
  []
 
 
-Overfull \hbox (4.8681pt too wide) in paragraph at lines 967--968
+Overfull \hbox (4.8681pt too wide) in paragraph at lines 962--963
 \OT1/pnc/m/n/10.95 sig-ni-fie que nous sommes en UDP. Le troisi[]eme ar-gu-ment
  per-met de sp[]ecifier
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 967--968
+Underfull \hbox (badness 10000) in paragraph at lines 962--963
 
  []
 
@@ -1264,7 +1259,7 @@ Appendix A.
 
 ] [58])
 
-LaTeX Warning: Citation `ServoSweep' on page 59 undefined on input line 1011.
+LaTeX Warning: Citation `ServoSweep' on page 59 undefined on input line 1006.
 
 (./code/ServoExample.java [59]) (./code/HC_SR04.java [60] [61])
 No file TM_ENGLISH.bbl.
@@ -1278,10 +1273,10 @@ LaTeX Warning: There were undefined references.
 ### simple group (level 1) entered at line 80 ({)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 7227 strings out of 493607
- 100659 string characters out of 3149945
+ 7226 strings out of 493607
+ 100642 string characters out of 3149945
  272820 words of memory out of 3500000
- 10297 multiletter control sequences out of 15000+200000
+ 10296 multiletter control sequences out of 15000+200000
  77539 words of font info for 66 fonts, out of 3000000 for 9000
  831 hyphenation exceptions out of 8191
  38i,12n,61p,1187b,1957s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -1300,7 +1295,7 @@ public/lm/lmsy10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy8.pfb></usr/sh
 are/texmf/fonts/type1/public/lm/lmtt10.pfb></usr/share/texmf/fonts/type1/urw/nc
 ntrsbk/uncb8a.pfb></usr/share/texmf/fonts/type1/urw/ncntrsbk/uncr8a.pfb></usr/s
 hare/texmf/fonts/type1/urw/ncntrsbk/uncri8a.pfb>
-Output written on TM_ENGLISH.pdf (66 pages, 12336035 bytes).
+Output written on TM_ENGLISH.pdf (66 pages, 12334792 bytes).
 PDF statistics:
  412 PDF objects out of 1000 (max. 8388607)
  260 compressed objects within 3 object streams

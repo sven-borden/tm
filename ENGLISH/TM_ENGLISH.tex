@@ -90,22 +90,24 @@ xleftmargin=-2cm
 
 
 \setcounter{page}{1}
-\section*{Avant-propos}
+\section*{Foreword}
 \addcontentsline{toc}{section}{\protect\numberline{}Preface}
 
-This record is the result of eighteen months of research mostly done for the personal maturity project in Morges. Having already some knowledge about informatic, we headed to a paralell field in robotic. The choice of this topic is derived from quadcopters (which are helicopters with four propellers). Although very attractive, we flet that the mecanical realisation of a flying vehicule might require to much time and economic resources. We prefered to keep time for computing appearance.
-
-%Ce dossier est le résultat de onze mois de recherches effectuées dans le cadre du travail de maturité du gymnase de Morges. Ayant déjà quelques notions en informatique, nous nous sommes dirigés  vers un domaine parallèle, la robotique. Le choix de ce sujet est dérivé des quadcopters (hé\-li\-cop\-tè\-res à quatre hélices). Bien que très attrayant, nous avons estimé que le travail de réalisation mécanique d'un drone volant risquait de demander trop de ressources économiques et temporelles. Nous avons préféré garder du temps pour l'aspect informatique.
+This record is the result of eighteen months of research mostly done for the
+personal maturity project in Morges. Having already some knowledge about
+informatic, we headed to a paralell field in robotics. The choice of this
+topic is derived from quadcopters (which are helicopters with four
+propellers). Although very attractive, we felt that the mecanical complications
+of a flying vehicle might require to much time and economic resources. We
+prefered to keep time for computing appearance. 
 
 
 \clearpage
 \setcounter{page}{2}
-\section*{Remerciements}
+\section*{Thanks}
 \addcontentsline{toc}{section}{\protect\numberline{}Acknowledgement}
 
 This project could not have succeeded without the help of many people. Here's our occasion to thank: Mr. Julien Dominski for monitoring he has done for us and for his computer consulting which were greatly helpful. Mr. denis Rochat and Me. Philipe Rochat for their availability, informations and equipment leans. Mr. Jean Rossier, Karl Kangur, Michael Bolay and Mr. Marco Pagnamenta for their technical advice, especially about PCB's. Mr Frederic Genevey for having promoted our project on its website edurobot.ch. Thank to Mr. Frédéric Chaberlot for its equipment loans. Thank to Chloé Berthet for her text corrections. We also wanted to thank Stefano Varricchio for his useful informations. 
-
-%Ce projet n'aurait pu aboutir sans l'aide de nombreuses personnes. Voici l'occasion de les remercier:  Mr. Julien Dominski pour le suivi qu'il a fait pour nous ainsi que pour ses conseils en informatique qui nous ont été grandement utiles. Mr. Denis Rochat et Mr. Phillipe Rochat pour leur disponibilité, leurs renseignements ainsi que les prêts matériels. Mr. Jean Rossier, Karl Kangur, Michaël Bolay et Mr. Marco Pagnamenta pour leurs conseils techniques, surtout à propos de la plaque électronique à imprimer. Mr. Frederic Genevey ainsi que son site edurobot.ch pour avoir promu notre projet sur son site internet. Merci à Mr. Frédéric Chaberlot pour ses prêts matériels. Merci à Chloé Berthet pour ses corrections orthographiques. Nous tenions aussi à remercier Stefano Varricchio pour ses informations utiles.
 
 \clearpage
 
@@ -148,31 +150,24 @@ it.
 
 \section*{Introduction}
 \addcontentsline{toc}{section}{\protect\numberline{}Introduction}
-Le but de ce projet est de construire un véhicule roulant que l'on peut
-commander à distance. Plus qu'une simple voiture télécommandée, ce drone est
-capable d'être contrôlé sans avoir une vue directe sur celui-ci, car il
-possède des capteurs tel qu'une caméra et des capteurs de distances. Ce type
-d'engin se nomme \textit{UGV (Unmanned Ground Vehicle)} soit "véhicule roulant
-sans équipage". Surtout utilisés dans l'armée, les modèles qu'on peut trouver
-sur le marché sont très coûteux, ils varient entre trois cents et mille trois
-cents francs. Notre but est donc de pouvoir construire un appareil semblable
-pour moins de deux cent francs. 
-%Équipé de répétiteurs, un groupe d'UGV
-%pourraient couvrir une grande zone sans mettre en danger ses pilotes
-%puisqu'ils restent à l'écart. 
-Ce drone peut servir en cas de catastrophes
-naturelles, néanmoins, notre modèle ne peut pas rouler sur les terrains trop
-accidentés, mais pour corriger ce problème, il suffirait tout simplement
-d'implémenter notre système électronique dans un autre type de véhicule. Le développement d'une interface graphique simplifiant l'utilisation est é\-ga\-le\-ment un but du projet. En effet, cela ne sert pas à grand chose d'avoir un drone que personne ne sait utiliser à moins de s'être entraîné durant des mois.\\
-Nous avons décidé d'initier le rapport avec le chapitre concernant le hardware
-car il permet une meilleure
-compréhension du reste et introduit quel\-ques idées et éléments clefs du projet. Ce chapitre décrit principalement l'ordinateur et le
-micro-contrôleur \cite{microcontroleur} embarqués sur le drone. Ensuite, vient
-le chapitre mé\-ca\-ni\-que et électronique qui détaille les modifications
-faites à la voiture ra\-dio-\-com\-man\-dée et les recherches faites dans ce
-domaine. Les deux chapitres qui suivent sont consacrés aux différentes
-versions des logiciels que nous avons créés et utilisés. Finalement, un dernier chapitre
-de conclusion clôt ce rapport et ouvre de nouvelles perspectives de développement.
+
+The goal of this project is to build a ground vehicle which can be
+remote-controlled. UGVs available on the public market start at 300\$. We
+wanted to 
+stay under that price for our own prototype. The Prototype isn't capable of
+going on any type of serious missions but is a great platform for testing and
+developping new techniques. The Vehicle is equiped with a
+webcam and distance sensors so the pilot can drive from any point covered
+by the WLAN. A graphical interface helps the Pilot in the connection
+steps. With the applet, the pilot can control the vehicle and see the video
+stream of the webcam. The graphical interface makes it possible to quickly
+start driving with little forhand experience.
+To have a better understanding on how all these aspects of the project have
+been achieved, the report will start out with some information on the
+components chosen to build the vehicle along with some explanations on why we
+chose them. Detailed explanations on the electronical and mechanical
+modifications applied to the remote controlled car shall be revealed in the
+second chapter, followed by some programming elements before concluding the report.
 \clearpage
 
 
