@@ -174,185 +174,223 @@ second chapter, followed by some programming elements before concluding the repo
 \chapter{Hardware}
 
 
-\lettrine{P}{our} réaliser ce projet, nous avons dû faire des choix au niveau
-du hardware. Le hardware est tout ce qui touche à la partie physique du drone.
-Néanmoins, dans ce chapitre, nous ne traiterons pas de la mécanique et de
-l'électronique pure, ces sujets
-seront abordés dans le chapitre 2. 
+\lettrine{I}{n} this chapter we shall discuss which pieces of hardware we chose
+to use. The drone is based on two principal elements: a Raspberry Pi and an
+Arduino. A Raspberry Pi is a credit card sized computer, with enough power
+to run a light linux OS. Along with it's size, it's price is also one of it's
+perks. An Arduino is an equally cheap and small piece of equipment, known as a
+microcontroler. It could be considered as a lower level processor than what
+can be found on the Raspberry, but it excels in reading and generating 5v
+analog and digital signals with trustworthy precision.
 
-Le drone est basé sur deux éléments centraux. Le
-premier, l'Arduino, est un micro-contrôleur qui permet de lire et d'émettre
-des signaux électriques.
-Le second est le Raspberry Pi, qui est un petit ordinateur bon marché
-(trente-cinq francs), récemment sorti sur le marché. 
-
-La figure
-\ref{SchemaProjet} est une première vue d'ensemble des différents composants
-utilisés dans ce projet. Comme dit précédemment, tout ce qui concerne moteur,
-servo et senseurs sera spécifié dans le chapitre suivant. 
+Figure (\ref{SchemaProjet}) is a scheme of all the components that are used
+and how they are connected together. Explanations for each of them are to be
+found in this chapter and the following one on mechanics and electronics.
 
 \begin{figure}[h]
-\includegraphics[width = 1.0\textwidth]{SchemaPres.pdf}
+  \includegraphics[width = 1.0\textwidth]{SchemaPres.pdf}
 \caption[Schéma du hardware]{\label{SchemaProjet}}
 \end{figure}
 
 \section{Arduino}
-L'Arduino \label{Arduino} \cite{Arduino} est un micro-contrôleur \textit{Open Source}, ce qui veut dire que tout le monde peut non seulement avoir accès aux plans et aux codes, mais peut aussi les modifier.\cite{openSource} Ce micro-contrôleur se programme avec un langage proche du C. 
-
-
-\subsection{Choix du type d'Arduino}
-Pour ce projet, nous avons choisi l'Arduino Uno, c'est l'Arduino de base.  Nous avons hésité à prendre l'Arduino Mega, mais les avantages qu'il offre ne sont pas très utiles pour notre projet. Bien qu'il ait une puissance de calcul supérieure à celle de l'Arduino Uno, il est plus coûteux et prend plus de place pour des avantages dont nous n'avons pas besoin. Dans le cadre de ce projet le coût et la place sont des facteurs déterminants.  Puisque nous n'avons pas besoin d'une grande puissance de calcul, nous avons choisi l'Arduino Uno (fig: \ref{fig:ArduinoUnoR3}).\\
+Arduino is an \textit{Open Source} microcontroller. It is programmed through
+an IDE in a language similar to C. We chose the Arduino Uno model because it's
+the most commun (we had a couple already), relatively small and easy to
+prototype with. In the futur we might move to a somwhat smaller model of the
+microcontroller. We use the Arduino to drive motors, servo-motors and analyse
+sensor Data. 
 
 \begin{figure}[h]
 \begin{center}
 \includegraphics[width = 0.7\textwidth]{arduino_uno_official.jpg}
-\caption[Arduino Uno R3]{Arduino Uno R3\label{fig:ArduinoUnoR3}, on peut
-  remarquer les pins  \label{pin} qui se trouvent de part et d'autre de
-  l'Arduino. Au centre à droite, le micro-contrôleur ATmega328, ainsi
-  que le port USB tout en haut à gauche de l'image. Ceci est l'image
-  officielle du produit disponible sur: \small{\emph{http://arduino.cc/en/uploads/Main/ArduinoUno\_R3\_Front.jpg}}} 
+\caption[Arduino Uno R3]{Arduino Uno R3\label{fig:ArduinoUnoR3}: The pins are
+  visible on each side of the board and the Atmega Processor sits in the
+  middle of it.} 
 \end{center}
 \end{figure}
 
 
-\subsection{Détails techniques de l'Arduino}
+\subsection{Technical data}
 
-Voici une liste des caractéristiques techniques de l'Arduino Uno R3 \cite{Arduino}:
+An Arduino Uno microcontroller, named Atmega328, has:
 \begin{enumerate}
-\item 14 pin\footnote{Les pin sont des trous où on peut y glisser des fils métalliques. Ce sont les liaisons entre le contrôleur et les senseurs} digitaux (signal haut ou bas) qu'on peut définir en INPUT ou en OUPUT dont 6 d'entres eux peuvent moduler le signal lorsqu'ils sont utilisé en OUTPUT
-\item  6 pin analogiques en INPUT
-\item Connexion USB
-\item Oscillateur à quartz cadencé à 16MHz
-\item Courant continu sur les pin digitaux (40mA)
-\item Une sortie 3.3V et une sortie 5V en courant continu
-\item 32KB de mémoire flash
-\item 2KB de RAM
-\item Micro-contrôleur ATmega328
-\end{enumerate}
+\item 14 digital pins which can be defined as INPUT or OUTPUT while
+  programming, 6 of which are capable of PWM\footnote{Pule Width Modulation: A
+  pin capable of PWM can simulate an analog voltage by emitting brief 5V
+  Pulses}
+\item 6 analog input pins
+\item 1 USB connexion (Serial protocol)
+\item 16 MHz predifined clock rate
+\item 3.3V and 5V output
+\item 32Kb flash memory
+\item 2Kb RAM
+\end{enuerate}
+
 \subsection{Avantages et alternatives}
-Nous n'allons pas faire une analyse approfondie des micro-contrôleurs mais il faut se rappeler qu'ils ne doivent pas faire fonctionner un système d'exploitation, mais qu'ils doivent simplement traiter des mesures et envoyer des signaux digitaux ou analogiques. Sa programmation en pseudo C le rend rapide. L'avantage de l'Arduino Uno est qu'il n'y a pas besoin de faire de soudure, les pin sont directement accessibles et on peut y glisser un fil métallique. Dans le cas où nous souhaiterions commercialiser notre produit, nous choisirons probablement l'Arduino mini car il est encore plus petit et nous pouvons directement souder les fils sur le micro-contrôleur.
+The goal here is not to go trough a thorough analysis on microcontrollers, but
+it's important to understand that the Arduino can't run any complexe operating
+systems. It's made for low level operations, thus to interact directly with
+electronic components such as sensors. It's apparent simplicity makes it a
+reliable piece of equipement. The size could be smaller, but as we mentioned
+before, it's ideal for prototyping. If we were to bring the project to a
+higher level we would look into more miniaturized Arduino models. 
 
 \section{Raspberry Pi}
-Le Raspberry Pi \cite{RaspberryPiCaracteristiques}, ou la Framboise pour les francophones, est un ordinateur de la taille d'une carte de crédit sur lequel on peut installer différents systèmes d'exploitations dérivés de UNIX/Linux. Le Raspberry Pi est acheté nu, c'est-à-dire que cet ordinateur ne possède pas d'écran, ni de clavier ou de souris, néanmoins le Raspberry Pi possède plusieurs ports où on peut brancher un écran (via l'interface HDMI ou Composite), un câble Ethernet et presque ce qu'on veut grâce aux deux ports USB. Le Raspberry Pi est très intéressant non pas du point de vue de sa puissance de calcul, mais du point de vue rapport qualité-prix (35.- CHF).
+A Raspberry Pi is a credit card sized computer capable of running light
+weight, UNIX/Linux derived operating systems. It has a couple of useful ports
+such as USB and ethernet which allowed us to connect a webcam, the Arduino and
+later on a Wi-Fi dongle.
 
 \begin{figure}[h]
 \includegraphics[width = 1.0\textwidth]{raspberrypi.jpg}
-\caption[Raspberry Pi]{\label{RaspberryPi} Le Raspberry Pi est un petit ordinateur linux. Il est de la taille d'une carte de crédit.}
+\caption[Raspberry Pi]{\label{RaspberryPi} The Raspberry Pi is a Linux
+  computer the size of a credit card.}
 \end{figure}
 
-\subsection{Détails techniques du Raspberry Pi}
-Voici une liste des caractéristiques techniques du Raspberry Pi modèle B \cite{RaspberryPiCaracteristiques}:
+\subsection{Technical data \cite{RaspberryPiCaracteristiques}}
+ 
 \begin{enumerate}
-\item 45g environ
-\item Processeur ARM1176JZF-S (ARMv6) 700MHz Broadcom 2835
-\item 512Mo de RAM (sur la version B, soit celle que nous avons choisie)
-\item 2 sorties vidéo (HDMI et Composite) 
-\item Sortie audio stéréo Jack (3.5mm) (le son passe aussi par le HDMI en sortie 5.1)
-\item Écriture et lecture possible sur une carte mémoire sous forme de carte SD (supporte les formats: SDHC, MMC et SDIO)
-\item 2 ports USB 2.0 et 1 port Ethernet
-\item Alimentation par câble micro USB
-\item Faible consommation (5W, 5V, 1A)
-\item Communication possible via les pin GPIO
-\item Décodeur permettant de lire le Full HD  1080p
-\item API logiciel vidéo (OpenGL)
+\item weight: about 45g
+\item ARMv6 700mHz Processor
+\item 512Mo RAM
+\item 2 vidéo ouputs (HDMI and Composite)
+\item 3.5 audio jack
+\item SD card slot for operating system and data storage
+\item 2 USB 2.0 ports
+\item 1 Ethernet port
+\item micro USB connection for power
+\item Power: 5W (5V at 1A)
+\item 26 I/O pins (GPIO)
 \end{enumerate}
 
-\subsection{Avantages et utilisations}
-Bien qu'à première vue la Framboise ne semble pas très performante, il faut prendre en compte son prix qui est bas, sa taille ainsi que les possibilités qui sont presque infinies. Les projets qu'on peut mener grâce au Raspberry Pi sont des plus variés. En effet, il peut être utilisé pour la photographie, comme base centrale d'un système de surveillance ou comme ordinateur central pour un drone par exemple.
+\subsection{Pros and Cons}
+The Raspberry may seem a bit weak for tasks like streaming video, but it's
+cheap, small and offers infinite possibilities. What we needed is a solution
+to communicate in a local network and support webcam video streaming. Being
+able to work with a full linux system (Debian like) makes the matter much
+easier. 
 
-\subsection{Choix de l'OS}
-Une quinzaine de systèmes d'exploitations fonctionnant sur le Raspberry Pi existent. Parmi les plus connus, il y a Androïd, Arch Linux ARM et Debian/Raspbian. 
-Notre choix à été porté sur Raspbian, qui est un dérivé de Debian, pour plusieurs raisons. Tout d'abord, cet OS a été développé spécialement pour le Raspberry Pi, c'est donc un OS actif et vivant continuellement développé par la communauté Raspberry. Cet OS est basé sur un environnement Linux, ce qui offre un grand nombre de libertés afin de travailler dessus. Egalement, Raspbian est gratuit, ce qui est à prendre en compte puisque nous essayons de réduire les coûts.  
+\subsection{OS}
+There are about 15 aproved operating systems working on the Raspberry Pi such
+as Android, Arch Linux ARM and Debian/Raspbian. We chose Raspbian because of
+the large community working with it and it's similarities with other known
+distributions of Linux. It's a real Linux OS capable of running Java and do
+video streaming. Finally it's important to remember that it's freeware like
+many Linux systems.
 
-\section{Sans fil}
+\section{Wireless}
 
-Au niveau hardware, afin que le Raspberry Pi puisse se connecter sur le réseau
-sans fil, nous utilisons un \textit{dongle} (fig:\ref{Edimax})
-Wi-Fi \footnote{Le modèle utilisé est le suivant: EW7811Un fabriqué par
-  Edimax} connecté par USB. Cet accessoire ne nécessitant pas de \textit{driver} \footnote{Un
-  driver est un petit logiciel permettant de faire l'interface entre les
-  périphériques et l'ordinateur.}, il est directement reconnu et peut rapidement être configuré par le Raspberry Pi. 
-%%\begin{figure}[!h]
-%%\begin{center}
-%%\includegraphics[scale=0.38, trim=300 300 300 0, clip=true]{Edimax}
-%%\caption[\textit{Dongle} Edimax EW7811Un]{\textit{Dongle} Edimax EW7811Un. Connecté par USB à la Framboise, il permet au Raspberry Pi de se connecter via Wi-Fi à une borne\label{Edimax}.}
-%%\end{center}
-%%\end{figure} 
+To get the Raspberry connected on the WLAN we used a USB Wi-Fi dongle. A small
+antenna which plugs into a USB port. The particular model we used is the
+Edimax EW7811Un which is known to be a compatible dongle. It works out of the
+box meaning no additional drivers are necessary. Setting up a connection is
+yet another matter...
 
 \section{Webcam}
 
-La webcam utilisée dans notre projet est tout à fait standard. D'ailleurs, la grande majorité des caméras USB récentes pourraient fonctionner. Il faut juste s'assurer qu'elles utilisent le driver UVC (USB Vidéo Class)\cite{uvc}. Le modèle est la C270 de Logitech qui a une résolution de 720p et qui coûte 35.- CHF.
+We used a standard Logitech (C270) webcam, which costed 35\$. Any Kind of
+recent webcam should work as long as it is compatible with the UVC driver (USB
+video class). This specific model has a 720p resolution, which is more than
+enough and actualy more than what we can stream.
 
-\chapter{La mécanique et l'électronique}
+\chapter{Mechanics and electronics}
 
 
-\lettrine{N}{ous} nous basons sur un modèle réduit
-télécommandé de type 4x4. Le tableau (\ref{caracteristiquesDuVehicule}) est un
-inventaire de ses caractéristiques dans son état avant d'implémenter notre système. Dans ce chapitre nous
-allons aborder tout ce qui se réfère aux actuateurs (moteur et servo-moteur),
-comment ils ont été installés et comment les utiliser. Nous commencerons par
-le plus gros travail, la conception d'un circuit électrique imprimé, dit aussi PCB. 
+\lettrine{O}{ur} drone is based on a toy RC pickup truck. A technical
+description of the vehicle can be found in
+table(\ref{caracteristiquesDuVehicule}). This chapter refers to everything
+that has to do with motors and servo motors, including how they were mounted
+and how they are driven. We shall also discuss the electronic challenges we've
+encountered and the making of our very own printed circuit board(PCB). 
 
-E
 \begin{table}[h!]
 \begin{center}
   \begin{tabular}{|p{4cm}|p{4cm}|c|}
     \hline
-    \multirow{5}{*}{Grandeurs}
-    &Longueur & 35 cm \\ \cline{2-3}
-    &Longueur (centre de roue \`a centre de roue)& 17 cm \\ \cline{2-3}
-    &Largeur & 22 cm \\ \cline{2-3}
-    &Largeur (centre de roue \`a centre de roue) & 17 cm \\ \cline{2-3}
-    & Hauteur au sol & 4 cm\\ \hline
-    \multirow{3}{*}{Moteur de propulsion}
-    & Voltage de marche & \~{}5V - \~{}10V  \\ \cline{2-3}
-    & Courant min (roue libre) & \~{}2A \\ \cline{2-3}
-    & Courant max (roue bloqu\'ee) & \~{}3A \\ \hline
-    \multirow{5}{*}{Servo-moteur de guidage}
-    & Fabriquant & Corona \\ \cline{2 - 3}
-    & Modèle & Metal gear DS558HV\\ \cline{2-3}
-    & Voltage de marche & \~{}6V - \~{}7.4V  \\ \cline{2-3}
-    & Courant & 300mA - 400mA \\ \cline{2-3}
-    & Charge maximale & 12kg - 14kg \\  
+    \multirow{5}{*}{Size}
+    &Length & 35 cm \\ \cline{2-3}
+    &Length (wheel center to wheel center)& 17 cm \\ \cline{2-3}
+    &Width & 22 cm \\ \cline{2-3}
+    &Width (wheel center to wheel center) & 17 cm \\ \cline{2-3}
+    & Clearance & 4 cm\\ \hline
+    \multirow{3}{*}{Motor}
+    & Working voltage & \~{}5V - \~{}10V  \\ \cline{2-3}
+    & Current min & \~{}2A \\ \cline{2-3}
+    & Current max (stalled) & \~{}3A \\ \hline
+    \multirow{5}{*}{Servo-motor}
+    & Manufacturer & Corona \\ \cline{2 - 3}
+    & Model & Metal gear DS558HV\\ \cline{2-3}
+    & Working voltage & \~{}6V - \~{}7.4V  \\ \cline{2-3}
+    & Current & 300mA - 400mA \\ \cline{2-3}
+    & maximum load (1 cm from axis) & 12kg - 14kg \\  
  \hline
 	\end{tabular}
 \end{center}
-\caption{Caractéristiques du véhicule\label{caracteristiquesDuVehicule}}
+\caption{Vehicle's technical data\label{caracteristiquesDuVehicule}}
 \end{table}
 
-\section{PCB}
+\section{Considerations on electronics}
 
 \begin{figure}[h!]
 \centering
 \includegraphics[width=1.0\textwidth]{PCB.jpg}
-    \caption{\label{PCB} Le PCB que nous avons nous avons conçu grâce au logiciel Eagle.
+    \caption{\label{PCB} The PCB we made, which is actually an Arduino shield.
     }
 \end{figure}
 
-La décision de retirer l'électronique de base du véhicule télécommandé
-provient d'une curiosité de comprendre comment elle est faite et surtout, du
-besoin d'avoir un degré supérieur de contrôle sur la voiture. A la base, le
-cerveau de la voiture se trouvait dans un petit chip. Très courant dans les
-jouets radio-commandés bas de gamme, le RX2 ou similaire (fig. \ref{rx2.2}), permet d'interpréter
-un signal radio et émettre des signaux pour actionner des moteurs, par
-exemple. Ce micro-chip va de paire avec le TX2, qui se trouverait dans la
-télécommande (TX pour "Transmit" et RX pour "Receive").
-
+We initially decided to extract the original electronics in the pickup truck
+because of our longing to fully understand it's workings and above all to
+place our own and more andvanced system.
+As we found out, the toy car had a very commun radio setup which holds in it's
+heart a simple radio receiver or RX2 chip. The RX2 can be found in a broad
+range of cheap RC cars. It works in pair with the TX2 (transmitter) found in
+the remote control. The first problem with this setup is that it's radio and
+not Wi-Fi. Secondly, the chip isn't capable of any signal modulation which
+implies that motors run full speed or don't spin at all, which could be a
+problem when precise maneuvers are necessary. Finally we wouldn't
+be able to add any additional functionalities such as distance
+sensors. Analysing the original board we found out that we would need a
+special circuit to drive the motor, called an H-bridge.
+The solution to network connection is the Raspberry Pi and for everything
+concerning  motor control and sensor data collection, the Arduino is at it's
+best. To Acheive our goal we must make them collaborate. But first, let's take
+a look at how the Arduino is connected to the vehicle.   
 
 \begin{figure}[h]
 \centering
 \includegraphics[width=0.6\textwidth]{rx2_ex2.jpg}
-    \caption[Exemple de plaque RX2]{\label{rx2.2}Exemple de plaque similaire à celle qu'on a pu trouver
-      dans le véhicule.}
+    \caption[Exemple de plaque RX2]{\label{rx2.2}Example of a RX2 driven PCB.}
 \end{figure}
 
-La nature simple du chip RX2 ne lui permet que d'émettre un signal bas ou haut
-(0 ou 5V), à la différence de l'Arduino qui a la possibilité de moduler le
-signal (voir: \ref{servosection}). Cette caractéristique spécifique nous permet
-d'avoir un large éventail de vitesses du moteur et des angles de braquage
-différents. 
+\section{PCB}
+Many steps are involved in the making of a printed circuit. The first step is
+to know what the board is expected to do. In our case it makes the connection
+between the Arduino and the electronic components like distance sensors and
+motors. It helps the Arduino to drive the main motor and makes sure that every
+component is corectly powered with the correct voltage. To power the whole
+vehicle we used the stock 9.6V battery and 7000mAh cell phone booster for the
+raspberry Pi.
+Thus, the PCB must have the following circuits:
+\begin{enumerate}
+\item An H-bridge circuit to drive the motor.
+\item A 5V converter to power the servo motor and sensors.
+\item Connectors and solder points to each motor and sensor.
+\item A security against voltage surges (Zener circuit).
 
+\subsection{H-Bridge}
+An H-Bridge (Fig. \ref{H-bridge}) is essentially a circuit made up of transistors. It's purpose is
+to change the direction of the current flowing through the motor. The
+direction of the current relies on two logical inputs so it is not necessary
+to manualy exchange the cables on the motor in order to move the car forward
+or backwards. In fact, the two logical signals are provided by the Arduino and
+can therefor be controlled by an algorithm.
 
+\begin{figure}[h]
+\centering
+\includegraphics[width=1.0\textwidth]{H-bridge}
+    \caption[H-Bridge]{\label{H-bridge}Schematic of a basic H-bridge with a
+      motor in the middle}
+\end{figure} 
 
 \subsection{Plaque personnelle}
 En attendant de recevoir la plaque sortie d'usine et pour tester une partie
